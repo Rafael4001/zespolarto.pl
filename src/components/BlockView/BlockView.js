@@ -21,14 +21,7 @@ class BlockView extends Component {
             }}>Nasza muzyka</Typography>
         </div>
         <div>
-          {/*<img*/}
-          {/*  // onClick={onImageClick}*/}
-          {/*  src={IMAGE_1}*/}
-          {/*  alt={'dodane zdjęcie'}*/}
-          {/*  // className={classes.image}*/}
-          {/*/>*/}
           <Typography
-            typeof={'p'}
             classes={{
               root: this.props.classes.title2,
             }}>

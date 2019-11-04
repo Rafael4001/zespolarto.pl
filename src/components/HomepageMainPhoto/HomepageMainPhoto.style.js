@@ -6,9 +6,10 @@ const styles = {
   mainContainer: {
     display: ' flex',
     justifyContent: 'center',
+    width: '100%',
   },
   photoContainer: {
-    // width: '10rem',
+    maxWidth: '100%',
   }
 };
 

@@ -7,6 +7,7 @@ const styles = {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
     padding: '3rem',
+    borderBottom: 'solid 0.05rem #6C7279',
   },
   textContainer: {
     backgroundColor: '#FFFFFF',
