@@ -6,6 +6,7 @@ import BlockView from "../components/BlockView";
 import BlockViewWithImage from "../components/BlockViewWithImage";
 import BlockViewWithImage_2 from "../components/BlockViewWithImage_2";
 import OpinionsContainer from "../components/OpinionsContainer";
+import ContactContainer from "../components/ContactContainer";
 
 
 class Mainpage extends Component {
@@ -17,6 +18,7 @@ class Mainpage extends Component {
         <BlockViewWithImage/>
         <BlockViewWithImage_2/>
         <OpinionsContainer/>
+        <ContactContainer/>
       </Fragment>
     )
   }
