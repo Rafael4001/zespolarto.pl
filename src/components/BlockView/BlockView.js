@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import Typography from '@material-ui/core/Typography';
+import PropTypes from "prop-types";
 
+import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
+
 
 class BlockView extends Component {
   render() {
@@ -50,5 +52,13 @@ class BlockView extends Component {
     )
   }
 }
+
+BlockView.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+BlockView.defaultProps = {};
+
+BlockView.displayName = 'BlockView';
 
 export default BlockView

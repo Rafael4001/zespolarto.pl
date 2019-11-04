@@ -1,2 +1,3 @@
-export const IMAGE_1 = '/stat'
-// export const IMAGE_1 = '/static/image/defaultPictureCategory/zdjecie_kategorie_sportowe.jpg'
+import photo1 from './static/image/mainBackground.png'
+
+export const IMAGE_1 = photo1;
