@@ -1,14 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-.node_modules/
-/.pnp
-.pnp.js
 ./idea/workspace.xml
-.node_modules
-package-lock.json
 .idea/
+.next/
+.node_modules
+.node_modules/
+.pnp.js
+/.pnp
+/node_modules
+package-lock.json
 yarn.lock
 
 # testing
