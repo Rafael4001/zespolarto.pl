@@ -16,6 +16,7 @@ const Homepage = (props) => (
     <HomepageMainPhoto/>
     <BlockView/>
     <BlockViewWithImage/>
+    <BlockViewWithImage_2/>
     <OpinionsContainer/>
     <ContactContainer/>
   </PageWrapper>
