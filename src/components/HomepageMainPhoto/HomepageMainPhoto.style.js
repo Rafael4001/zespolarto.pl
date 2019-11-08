@@ -9,18 +9,25 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     width: '100%',
+    alignItems: 'center',
+    position: 'relative',
   },
   logoContainer: {
     width: '100%',
     display: ' flex',
     justifyContent: 'center',
+    flexDirection: 'column'
   },
   photoContainer: {
-    maxWidth: '100%',
-    top: '-30rem',
+    zIndex: 10,
   },
   logo: {
+    position: 'absolute',
+    top: '0.5rem',
     width: '30rem',
+    zIndex: 20,
+    marginLeft: '6rem',
+
   }
 };
 

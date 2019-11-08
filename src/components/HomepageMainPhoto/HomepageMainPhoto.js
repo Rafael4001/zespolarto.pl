@@ -11,19 +11,15 @@ class HomepageMainPhoto extends Component {
 
     return (
       <div className={classes.mainContainer}>
-        <div className={classes.logoContainer}>
-          <img
-            src={LOGO}
-            alt={'arto'}
-            className={classes.logo}
-          />
-        </div>
-
-        <div>
+        <img
+          src={LOGO}
+          alt={'arto'}
+          className={classes.logo}
+        />
+        <div className={classes.photoContainer}>
           <img
             src={IMAGE_1}
             alt={'backgroundPhoto'}
-            className={classes.photoContainer}
           />
         </div>
       </div>
