@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Media, Player, controls } from 'react-media-player'
 import PlayPause from '../../mp3Player/withMediaProps'
-import CustomPlayPause from "../CustomPlayPause";
+// import CustomPlayPause from "../CustomPlayPause";
 // import MuteUnmute from './MuteUnmute'
 
 const {

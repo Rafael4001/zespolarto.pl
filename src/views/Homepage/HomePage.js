@@ -14,6 +14,7 @@ import PlayerCustomized from "../../components/PlayerCustomized";
 
 const Homepage = (props) => (
   <PageWrapper>
+
     <HomepageMainPhoto/>
     <BlockView/>
     <BlockViewWithImage/>

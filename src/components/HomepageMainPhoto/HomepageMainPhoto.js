@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types";
 
-import { IMAGE_1 } from '../../constants'
+import { IMAGE_1, LOGO } from '../../constants'
 
 
 class HomepageMainPhoto extends Component {
@@ -11,11 +11,21 @@ class HomepageMainPhoto extends Component {
 
     return (
       <div className={classes.mainContainer}>
-        <img
-          src={IMAGE_1}
-          alt={'dodane zdjęcie'}
-          className={classes.photoContainer}
-        />
+        <div className={classes.logoContainer}>
+          <img
+            src={LOGO}
+            alt={'arto'}
+            className={classes.logo}
+          />
+        </div>
+
+        <div>
+          <img
+            src={IMAGE_1}
+            alt={'backgroundPhoto'}
+            className={classes.photoContainer}
+          />
+        </div>
       </div>
     )
   }
