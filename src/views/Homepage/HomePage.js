@@ -8,7 +8,6 @@ import BlockViewWithImage from "../../components/BlockViewWithImage";
 import BlockViewWithImage_2 from "../../components/BlockViewWithImage_2";
 import OpinionsContainer from "../../components/OpinionsContainer";
 import ContactContainer from "../../components/ContactContainer";
-import PlayerCustomized from "../../components/PlayerCustomized";
 import MenuComponent from "../../components/MenuComponent";
 import PropTypes from "prop-types";
 
@@ -16,21 +15,24 @@ import PropTypes from "prop-types";
 const Homepage = (props) => (
   <PageWrapper>
     <div className={props.classes.mainContainer}>
+      <div className={props.classes.menuHomepage}>
         <MenuComponent/>
+      </div>
+      <div className={props.classes.webRightContent}>
         <HomepageMainPhoto/>
+        <BlockView/>
+        <BlockViewWithImage/>
+        <BlockViewWithImage_2/>
+        <OpinionsContainer/>
+        <ContactContainer/>
+      </div>
     </div>
-    <BlockView/>
-    <BlockViewWithImage/>
-    <BlockViewWithImage_2/>
-    <OpinionsContainer/>
-    <ContactContainer/>
-    <PlayerCustomized/>
   </PageWrapper>
 );
 
 
 Homepage.propTypes = {
-    classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 Homepage.displayName = 'Homepage';

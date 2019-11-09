@@ -18,6 +18,7 @@ const {
 
 // const {formatTime} = utils;
 
+
 class Panner {
   constructor({source, audioContext, panningAmount = 0}) {
     this._source = source;
@@ -96,6 +97,24 @@ class PlayerCustomized extends Component {
     return this.panner.connect()
   };
 
+  getBLabla=()=>(
+    tracks.map(track => {
+      return (
+        <li>
+          <button
+            key={track.name}
+            onClick={() =>
+              this.setState({   //change this place to the function
+                currentTrack: track.name,
+                autoplay: true
+              })}
+          >
+            {track.name}
+          </button>
+        </li>
+      )
+    })
+  )
   render() {
     return (
       <Media ref={c => (this.media = c)}>
@@ -110,13 +129,13 @@ class PlayerCustomized extends Component {
             // onEnded={}
           />
           <div>
-            <PlayPause />
+            <PlayPause/>
             {/*<CustomPlayPause />*/}
             <CurrentTime/>
             <SeekBar/>
             <Duration/>
             <MuteUnmute/>
-            <isPlaying/>
+            {/*<isPlaying/>*/}
           </div>
           <Volume className={this.props.volume}/>
           {/*<input   // this input is responsible for music balance input
@@ -131,20 +150,7 @@ class PlayerCustomized extends Component {
           */}
 
           <ul>
-            {tracks.map(track => (
-              <li>
-                <button
-                  key={track.id}
-                  onClick={() =>
-                    this.setState({   //change this place to the function
-                      currentTrack: track.name,
-                      autoplay: true
-                    })}
-                >
-                  {track.name}
-                </button>
-              </li>
-            ))}
+            {this.getBLabla()}
           </ul>
         </div>
       </Media>

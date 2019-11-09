@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import PropTypes from "prop-types";
 
 import MenuItem from '../MenuItem'
-import { DEMO_ITEMS } from '../../constants';
+import { MENU_ITEMS, LOGO_ON_THE_FLOWERS } from '../../constants';
 
 
 class MenuComponent extends Component {
   getDemoItems = () => (
-    DEMO_ITEMS.map((item) => (
-      <MenuItem title={item.name}/>
+    MENU_ITEMS.map(({name, link}) => (
+      <MenuItem key={name} title={name} href={link}/>
     ))
   );
 
@@ -17,6 +17,13 @@ class MenuComponent extends Component {
 
     return (
       <div className={classes.mainContainer}>
+        <div className={classes.photoContainer}>
+          <img
+            src={LOGO_ON_THE_FLOWERS}
+            alt={'photo 1'}
+            className={classes.photo}
+          />
+        </div>
         {this.getDemoItems()}
       </div>
     )

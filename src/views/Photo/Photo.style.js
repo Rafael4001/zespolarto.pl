@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 
-import HomePage from './HomePage'
+import Photo from './Photo'
 
 
 const styles = {
@@ -21,4 +21,4 @@ const styles = {
   }
 };
 
-export default withStyles(styles)(HomePage);
+export default withStyles(styles)(Photo);

@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types";
-import { Typography } from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
+import Link from 'next/link'
 
 
 class MenuItem extends Component {
   render() {
-    const {classes,title} = this.props;
+    const {classes, title, href} = this.props;
 
     return (
-      <div className={classes.mainContainer}>
-        <Typography  className={classes.text}>{title}</Typography>
-      </div>
+      <Link href={href}>
+        <button className={classes.mainContainer}>
+          <Typography className={classes.text}>{title}</Typography>
+        </button>
+      </Link>
     )
   }
 }
@@ -18,6 +21,7 @@ class MenuItem extends Component {
 MenuItem.propTypes = {
   classes: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
 };
 
 MenuItem.defaultProps = {};
