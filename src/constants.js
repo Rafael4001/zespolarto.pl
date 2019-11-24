@@ -5,6 +5,17 @@ import logo from '../static/image/logo.png';
 import LogoOnTheFlowers from '../static/image/LogoWKwiatach_342x300.png';
 
 
+import song_1 from '../static/image/songsImages/song_1.jpg';
+import song_2 from '../static/image/songsImages/song_2.jpg';
+import song_3 from '../static/image/songsImages/song_3.jpg';
+import song_4 from '../static/image/songsImages/song_4.jpg';
+
+export const SONG_1 = song_1;
+export const SONG_2 = song_2;
+export const SONG_3 = song_3;
+export const SONG_4 = song_4;
+
+
 export const IMAGE_1 = photo1;
 export const IMAGE_2 = photo2;
 export const IMAGE_3 = photo3;

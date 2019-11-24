@@ -15,14 +15,30 @@ const styles = {
       textDecoration: 'none',
     },
   },
-
-  volume: {
-    backgroundColor: 'yellow',
-    width: 250,
+  volumeContainer: {
+    fontSize: '1rem',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  blabla: {
-    backgroundColor: 'red',
-    fontSize: '2rem'
+  volume: {
+    width: 50,
+  },
+  volumeText: {
+    marginRight: '1rem',
+  },
+  playerToolsContainer: {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr 2fr',
+    alignItems: 'center',
+    justifyContent: 'center',
+    // backgroundColor: ,
+    fontSize: '1.2rem'
+  },
+  playerTime: {
+    display: 'flex',
+    flexDirection: 'row',
+    // gridTemplateColumns: '1fr 1fr 1fr',
   }
 };
 

@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 
 import PageWrapper from '../../components/PageWrapper';
 import MenuComponent from "../../components/MenuComponent";
+import PlayerCustomized from "../../components/PlayerCustomized";
+import SongImage from "../../components/SongImage";
+import { SONG_1 } from "../../constants";
 
 
 
@@ -13,7 +16,9 @@ const Demo = (props) => (
         <MenuComponent/>
       </div>
       <div className={props.classes.webRightContent}>
-        DEMO już wkrótce
+
+        <SongImage imgSrc={SONG_1}/>
+        <PlayerCustomized/>
       </div>
     </div>
   </PageWrapper>

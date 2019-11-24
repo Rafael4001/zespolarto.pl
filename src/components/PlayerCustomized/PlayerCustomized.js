@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Media, Player, controls } from 'react-media-player'
 import PlayPause from '../../mp3Player/withMediaProps'
+import CustomPlayPause from "../CustomPlayPause/CustomPlayPause";
+import Typography from "@material-ui/core/Typography";
+import TrackContainer from "../TrackContainer";
 // import CustomPlayPause from "../CustomPlayPause";
 // import MuteUnmute from './MuteUnmute'
 
@@ -67,6 +70,7 @@ const tracks = [
   {
     id: 0,
     name: 'Lato-Naydis',
+    imgSrc: 'Lato-Naydis',
   },
   {
     id: 1,
@@ -83,39 +87,48 @@ class PlayerCustomized extends Component {
   state = {
     currentTrack: tracks[0].name,
     autoplay: false,
+    isPlaying: false,
   };
 
-  _handlePannerChange = ({target}) => {
-    const x = +target.value;
-    const y = 0;
-    const z = 1 - Math.abs(x);
-    this.panner.setPosition(x, y, z)
-  };
+  componentDidMount() {
+    this.setState({})
+  }
+
 
   _connectSource = (source, audioContext) => {
     this.panner = new Panner({source, audioContext});
     return this.panner.connect()
   };
 
-  getBLabla=()=>(
+
+
+
+  trackList = () => (
     tracks.map(track => {
       return (
         <li>
-          <button
-            key={track.name}
+          <TrackContainer
+            track={track}
             onClick={() =>
               this.setState({   //change this place to the function
                 currentTrack: track.name,
-                autoplay: true
+                autoplay: true,
+                isPlaying: true,
               })}
-          >
-            {track.name}
-          </button>
+          />
         </li>
       )
     })
   )
+
+
+
+
+
   render() {
+    const {classes} = this.props;
+
+
     return (
       <Media ref={c => (this.media = c)}>
         <div>
@@ -125,32 +138,30 @@ class PlayerCustomized extends Component {
             connectSource={this._connectSource}
             useAudioObject
             autoPlay={this.state.autoplay}
-            isPlaying={true}
-            // onEnded={}
+            isPlaying={this.state.isPlaying}
+            onEnded={
+              //tutaj zrobic wlaczanie kolejnego kawalka
+              () => console.log('zakonczylem odtwarzanie')}
           />
-          <div>
+          <div className={classes.volumeContainer}>
+            <div className={classes.volumeText}>Volume</div>
+            <Volume className={this.props.volume}/>
+          </div>
+
+
+          <div className={classes.playerToolsContainer}>
             <PlayPause/>
             {/*<CustomPlayPause />*/}
-            <CurrentTime/>
-            <SeekBar/>
-            <Duration/>
-            <MuteUnmute/>
+            <div className={classes.playerTime}>
+              <CurrentTime/>{/*obecny czas*/}/<Duration/> {/*czas pozostały*/}
+            </div>
+            <SeekBar/>{/* aktualny moment utworu*/}
+            {/*<MuteUnmute/>*/}
             {/*<isPlaying/>*/}
+
           </div>
-          <Volume className={this.props.volume}/>
-          {/*<input   // this input is responsible for music balance input
-            type="range"
-            defaultValue="0"
-            min="-1"
-            max="1"
-            step="any"
-            onChange={this._handlePannerChange}
-
-          />
-          */}
-
           <ul>
-            {this.getBLabla()}
+            {this.trackList()}
           </ul>
         </div>
       </Media>
