@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Media, Player, controls } from 'react-media-player'
 import PlayPause from '../../mp3Player/withMediaProps'
-import CustomPlayPause from "../CustomPlayPause/CustomPlayPause";
-import Typography from "@material-ui/core/Typography";
 import TrackContainer from "../TrackContainer";
-// import CustomPlayPause from "../CustomPlayPause";
-// import MuteUnmute from './MuteUnmute'
+import { SONGS_IMAGES } from "../../constants";
+
+import Image from "../Image";
+
 
 const {
   CurrentTime,
@@ -18,8 +18,6 @@ const {
   // autoplay,
   // isPlaying
 } = controls;
-
-// const {formatTime} = utils;
 
 
 class Panner {
@@ -70,28 +68,36 @@ const tracks = [
   {
     id: 0,
     name: 'Lato-Naydis',
-    imgSrc: 'Lato-Naydis',
+    imgSrc: 'song_1',
+    artist: 'Naydis',
   },
   {
     id: 1,
     name: 'ZycieToSaChwile',
+    imgSrc: 'song_2',
+    artist: 'Akcent',
   },
   {
     id: 2,
     name: 'Tressure',
+    imgSrc: 'song_3',
+    artist: 'Bruno Mars',
   },
 ];
 
 
 class PlayerCustomized extends Component {
   state = {
-    currentTrack: tracks[0].name,
+    actualPlayingTrack: tracks[0].name,
     autoplay: false,
     isPlaying: false,
+    actualSongImage: '',
   };
 
   componentDidMount() {
-    this.setState({})
+    this.setState({
+      actualSongImage: tracks[0].imgSrc
+    })
   }
 
 
@@ -101,70 +107,74 @@ class PlayerCustomized extends Component {
   };
 
 
-
-
   trackList = () => (
     tracks.map(track => {
       return (
         <li>
           <TrackContainer
             track={track}
+            actualPlayingTrack={this.state.actualPlayingTrack}
             onClick={() =>
               this.setState({   //change this place to the function
-                currentTrack: track.name,
+                actualPlayingTrack: track.name,
                 autoplay: true,
                 isPlaying: true,
+                actualSongImage: track.imgSrc,
               })}
           />
         </li>
       )
     })
-  )
-
-
-
+  );
 
 
   render() {
     const {classes} = this.props;
 
-
     return (
-      <Media ref={c => (this.media = c)}>
-        <div>
-          <Player
-            ref={c => (this._player = c)}
-            src={`/mp3/${this.state.currentTrack}.mp3`}
-            connectSource={this._connectSource}
-            useAudioObject
-            autoPlay={this.state.autoplay}
-            isPlaying={this.state.isPlaying}
-            onEnded={
-              //tutaj zrobic wlaczanie kolejnego kawalka
-              () => console.log('zakonczylem odtwarzanie')}
-          />
-          <div className={classes.volumeContainer}>
-            <div className={classes.volumeText}>Volume</div>
-            <Volume className={this.props.volume}/>
-          </div>
-
-
-          <div className={classes.playerToolsContainer}>
-            <PlayPause/>
-            {/*<CustomPlayPause />*/}
-            <div className={classes.playerTime}>
-              <CurrentTime/>{/*obecny czas*/}/<Duration/> {/*czas pozostały*/}
-            </div>
-            <SeekBar/>{/* aktualny moment utworu*/}
-            {/*<MuteUnmute/>*/}
-            {/*<isPlaying/>*/}
-
-          </div>
-          <ul>
-            {this.trackList()}
-          </ul>
+      <div>
+        <div className={classes.songImage}>
+          <Image imgSrc={`${SONGS_IMAGES[this.state.actualSongImage]}`}/>
         </div>
-      </Media>
+
+        <Media ref={c => (this.media = c)}>
+          <div>
+            <Player
+              ref={c => (this._player = c)}
+              src={`/mp3/${this.state.actualPlayingTrack}.mp3`}
+              connectSource={this._connectSource}
+              useAudioObject
+              autoPlay={this.state.autoplay}
+              isPlaying={this.state.isPlaying}
+              onEnded={
+                //tutaj zrobic wlaczanie kolejnego kawalka
+                () => console.log('zakonczylem odtwarzanie')}
+            />
+            <div className={classes.volumeContainer}>
+              <div className={classes.volumeText}>Volume</div>
+              <Volume className={this.props.volume}/>
+            </div>
+
+
+            <div className={classes.playerToolsContainer}>
+              <PlayPause/>
+              {/*<CustomPlayPause />*/}
+              <div className={classes.playerTime}>
+                <CurrentTime/>{/*obecny czas*/}/<Duration/> {/*czas pozostały*/}
+              </div>
+              <SeekBar/>{/* aktualny moment utworu*/}
+              {/*<MuteUnmute/>*/}
+              {/*<isPlaying/>*/}
+
+            </div>
+            <ul>
+              {this.trackList()}
+            </ul>
+          </div>
+        </Media>
+      </div>
+
+
     )
   }
 }

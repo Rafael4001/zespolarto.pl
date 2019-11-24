@@ -1,5 +1,5 @@
 import { withStyles } from '@material-ui/core/styles';
-import SongImage from './SongImage';
+import Image from './Image';
 
 
 const styles = (theme) => ({
@@ -11,4 +11,4 @@ const styles = (theme) => ({
   }
 });
 
-export default withStyles(styles)(SongImage);
+export default withStyles(styles)(Image);

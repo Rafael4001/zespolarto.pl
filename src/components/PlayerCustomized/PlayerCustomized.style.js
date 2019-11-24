@@ -38,8 +38,10 @@ const styles = {
   playerTime: {
     display: 'flex',
     flexDirection: 'row',
-    // gridTemplateColumns: '1fr 1fr 1fr',
-  }
+  },
+  songImage: {
+    width: '20rem',
+  },
 };
 
 export default withStyles(styles)(PlayerCustomized);

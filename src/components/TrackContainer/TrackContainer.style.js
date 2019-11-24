@@ -5,10 +5,19 @@ import TrackContainer from './TrackContainer'
 
 const styles = {
   mainContainer:{
-    backgroundColor: '',
-    border: 'solid 1px #E3DDD8'
-  }
-
+    display: 'flex',
+    alignItems: 'center',
+  },
+  myButton:{
+    width: '1rem',
+    padding: '0.1rem',
+  },
+  buttonIcon:{
+    fontSize: '2rem',
+  },
+  songImage:{
+    width: '5rem',
+  },
 };
 
 export default withStyles(styles)(TrackContainer);
