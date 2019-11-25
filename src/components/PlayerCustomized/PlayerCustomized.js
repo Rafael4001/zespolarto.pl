@@ -5,6 +5,7 @@ import TrackContainer from "../TrackContainer";
 import { SONGS_IMAGES } from "../../constants";
 
 import Image from "../Image";
+import { Typography } from "@material-ui/core";
 
 
 const {
@@ -67,20 +68,22 @@ class Panner {
 const tracks = [
   {
     id: 0,
-    name: 'Lato-Naydis',
+    name: 'Lato 99',
+    mp3Name: 'Lato_99',
     artist: 'Naydis',
-    imgSrc: 'song_1',
+    imgSrc: 'Naydis',
   },
   {
     id: 1,
     name: 'ZycieToSaChwile',
     artist: 'Akcent',
+    mp3Name: 'ZycieToSaChwile',
     imgSrc: 'Akcent',
   },
   {
     id: 2,
     name: 'Tressure',
-    artist: 'Bruno Mars',
+    mp3Name: 'Tressure',
     imgSrc: 'Bruno_Mars',
   },
 ];
@@ -88,10 +91,11 @@ const tracks = [
 
 class PlayerCustomized extends Component {
   state = {
-    actualPlayingTrack: tracks[0].name,
+    actualPlayingTrackMp3Name: tracks[0].mp3Name,
     autoplay: false,
     isPlaying: false,
     actualSongImage: '',
+    actualSongName: '',
   };
 
   componentDidMount() {
@@ -111,12 +115,13 @@ class PlayerCustomized extends Component {
     tracks.map(track => {
       return (
         <TrackContainer
-          key={track.name}
+          key={track.mp3Name}
           track={track}
-          actualPlayingTrack={this.state.actualPlayingTrack}
+          actualPlayingTrackMp3Name={this.state.actualPlayingTrackMp3Name}
           onClick={() =>
             this.setState({
-              actualPlayingTrack: track.name,
+              actualPlayingTrackMp3Name: track.mp3Name,
+              actualSongName: track.name,
               autoplay: true,
               isPlaying: true,
               actualSongImage: track.imgSrc,
@@ -131,16 +136,18 @@ class PlayerCustomized extends Component {
     const {classes} = this.props;
 
     return (
-      <div>
-        <div className={classes.songImage}>
-          <Image imgSrc={`${SONGS_IMAGES[this.state.actualSongImage]}`}/>
+      <div className={classes.mainContainer}>
+        <div>
+          <div className={classes.songImage}>
+            <Image imgSrc={`${SONGS_IMAGES[this.state.actualSongImage]}`}/>
+          </div>
+          <Typography>{this.state.actualSongName}</Typography>
         </div>
-
         <Media ref={c => (this.media = c)}>
           <div>
             <Player
               ref={c => (this._player = c)}
-              src={`/mp3/${this.state.actualPlayingTrack}.mp3`}
+              src={`/mp3/${this.state.actualPlayingTrackMp3Name}.mp3`}
               connectSource={this._connectSource}
               useAudioObject
               autoPlay={this.state.autoplay}

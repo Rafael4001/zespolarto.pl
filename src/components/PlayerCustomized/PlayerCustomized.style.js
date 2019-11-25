@@ -3,6 +3,9 @@ import PlayerCustomized from './PlayerCustomized'
 
 
 const styles = {
+  mainContainer:{
+    width: '40rem',
+  },
   main: {
     backgroundColor: '#f5f5f5',
     width: '80%',
@@ -42,6 +45,7 @@ const styles = {
   },
   songImage: {
     width: '20rem',
+    height: '20rem',
   },
 
 };
