@@ -75,7 +75,7 @@ const tracks = [
   },
   {
     id: 1,
-    name: 'ZycieToSaChwile',
+    name: 'Życie To Są Chwile',
     artist: 'Akcent',
     mp3Name: 'ZycieToSaChwile',
     imgSrc: 'Akcent',
@@ -125,7 +125,13 @@ class PlayerCustomized extends Component {
               autoplay: true,
               isPlaying: true,
               actualSongImage: track.imgSrc,
-            })}
+            })
+          }
+          onUnClick={() =>
+            this.setState({
+              isPlaying: false,
+            })
+          }
         />
       )
     })
@@ -141,7 +147,7 @@ class PlayerCustomized extends Component {
           <div className={classes.songImage}>
             <Image imgSrc={`${SONGS_IMAGES[this.state.actualSongImage]}`}/>
           </div>
-          <Typography>{this.state.actualSongName}</Typography>
+          <Typography>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
         </div>
         <Media ref={c => (this.media = c)}>
           <div>
@@ -152,6 +158,7 @@ class PlayerCustomized extends Component {
               useAudioObject
               autoPlay={this.state.autoplay}
               isPlaying={this.state.isPlaying}
+              onPause={()=>console.log('pause')}
               onEnded={
                 //tutaj zrobic wlaczanie kolejnego kawalka
                 () => console.log('zakonczylem odtwarzanie')}
@@ -169,7 +176,7 @@ class PlayerCustomized extends Component {
                 <CurrentTime/>/<Duration/>
               </div>
               <SeekBar/>
-              {/*<isPlaying/>*/}
+              <isPlaying/>
 
             </div>
             {this.trackList()}
