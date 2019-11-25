@@ -18,6 +18,7 @@ class TrackContainer extends Component {
     return this.props.media.isPlaying !== media.isPlaying
   }
 
+  //tym sie zajaz na drugim kliknieciu pause -> play
   _handlePlayPause = () => {
     this.props.media.playPause()
   }
