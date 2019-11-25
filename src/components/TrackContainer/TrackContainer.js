@@ -9,7 +9,6 @@ import { SONGS_IMAGES } from "../../constants";
 
 import Image from "../Image";
 
-
 const TrackContainer = (props) => {
   const {classes, track, actualPlayingTrack} = props;
 

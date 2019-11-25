@@ -7,12 +7,13 @@ const styles = {
     backgroundColor: '#f5f5f5',
     width: '80%',
 
-    ul: {
-      textDecoration: 'none'
+    trackListStyle: {
+      listStyleType: 'none',
     },
 
-    li: {
+    trackListItem: {
       textDecoration: 'none',
+      margin: '2rem',
     },
   },
   volumeContainer: {
@@ -42,6 +43,7 @@ const styles = {
   songImage: {
     width: '20rem',
   },
+
 };
 
 export default withStyles(styles)(PlayerCustomized);

@@ -68,20 +68,20 @@ const tracks = [
   {
     id: 0,
     name: 'Lato-Naydis',
-    imgSrc: 'song_1',
     artist: 'Naydis',
+    imgSrc: 'song_1',
   },
   {
     id: 1,
     name: 'ZycieToSaChwile',
-    imgSrc: 'song_2',
     artist: 'Akcent',
+    imgSrc: 'Akcent',
   },
   {
     id: 2,
     name: 'Tressure',
-    imgSrc: 'song_3',
     artist: 'Bruno Mars',
+    imgSrc: 'Bruno_Mars',
   },
 ];
 
@@ -110,19 +110,18 @@ class PlayerCustomized extends Component {
   trackList = () => (
     tracks.map(track => {
       return (
-        <li>
-          <TrackContainer
-            track={track}
-            actualPlayingTrack={this.state.actualPlayingTrack}
-            onClick={() =>
-              this.setState({   //change this place to the function
-                actualPlayingTrack: track.name,
-                autoplay: true,
-                isPlaying: true,
-                actualSongImage: track.imgSrc,
-              })}
-          />
-        </li>
+        <TrackContainer
+          key={track.name}
+          track={track}
+          actualPlayingTrack={this.state.actualPlayingTrack}
+          onClick={() =>
+            this.setState({
+              actualPlayingTrack: track.name,
+              autoplay: true,
+              isPlaying: true,
+              actualSongImage: track.imgSrc,
+            })}
+        />
       )
     })
   );
@@ -160,16 +159,13 @@ class PlayerCustomized extends Component {
               <PlayPause/>
               {/*<CustomPlayPause />*/}
               <div className={classes.playerTime}>
-                <CurrentTime/>{/*obecny czas*/}/<Duration/> {/*czas pozostały*/}
+                <CurrentTime/>/<Duration/>
               </div>
-              <SeekBar/>{/* aktualny moment utworu*/}
-              {/*<MuteUnmute/>*/}
+              <SeekBar/>
               {/*<isPlaying/>*/}
 
             </div>
-            <ul>
-              {this.trackList()}
-            </ul>
+            {this.trackList()}
           </div>
         </Media>
       </div>

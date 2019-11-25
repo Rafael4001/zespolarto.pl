@@ -9,6 +9,8 @@ import song_1 from '../static/image/songsImages/song_1.jpg';
 import song_2 from '../static/image/songsImages/song_2.jpg';
 import song_3 from '../static/image/songsImages/song_3.jpg';
 import song_4 from '../static/image/songsImages/song_4.jpg';
+import Bruno_Mars from '../static/image/songsImages/Bruno_Mars.jpg';
+import Akcent from '../static/image/songsImages/Akcent.jpg';
 
 
 export const SONGS_IMAGES={
@@ -16,6 +18,8 @@ export const SONGS_IMAGES={
   song_2: song_2,
   song_3: song_3,
   song_4: song_4,
+  Bruno_Mars: Bruno_Mars,
+  Akcent: Akcent,
 };
 
 
