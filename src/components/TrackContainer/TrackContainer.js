@@ -12,14 +12,14 @@ import Image from "../Image";
 
 
 const TrackContainer = (props) => {
-  const {classes, track, actualPlayingTrack} = props;
+  const {classes, track, actualPlayingTrackMp3Name} = props;
 
   return (
-    <div className={classNames(classes.mainContainer, {[classes.activeBackground]: actualPlayingTrack === track.name})}>
+    <div className={classNames(classes.mainContainer, {[classes.activeBackground]: actualPlayingTrackMp3Name === track.name})}>
       <div className={classes.songImage}>
         <Image imgSrc={`${SONGS_IMAGES[track.imgSrc]}`}/>
       </div>
-      {actualPlayingTrack === track.mp3Name ?
+      {actualPlayingTrackMp3Name === track.mp3Name ?
         (<Button
           className={classes.myButton}
           key={track.mp3Name}
@@ -47,7 +47,7 @@ TrackContainer.propTypes = {
   classes: PropTypes.object.isRequired,
   track: PropTypes.object.isRequired,
   onClick: PropTypes.func.isRequired,
-  actualPlayingTrack: PropTypes.string,
+  actualPlayingTrackMp3Name: PropTypes.string,
 };
 
 TrackContainer.displayName = 'TrackContainer';
