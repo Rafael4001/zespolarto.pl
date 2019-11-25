@@ -119,6 +119,7 @@ class PlayerCustomized extends Component {
           track={track}
           actualPlayingTrackMp3Name={this.state.actualPlayingTrackMp3Name}
           onClick={() =>
+
             this.setState({
               actualPlayingTrackMp3Name: track.mp3Name,
               actualSongName: track.name,
@@ -158,7 +159,6 @@ class PlayerCustomized extends Component {
               useAudioObject
               autoPlay={this.state.autoplay}
               isPlaying={this.state.isPlaying}
-              onPause={()=>console.log('pause')}
               onEnded={
                 //tutaj zrobic wlaczanie kolejnego kawalka
                 () => console.log('zakonczylem odtwarzanie')}
