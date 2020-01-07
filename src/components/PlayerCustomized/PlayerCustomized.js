@@ -3,6 +3,7 @@ import { Media, Player, controls } from 'react-media-player'
 import PlayPause from '../../mp3Player/withMediaProps'
 import TrackContainer from "../TrackContainer";
 import { SONGS_IMAGES } from "../../constants";
+import VolumeUpIcon from '@material-ui/icons/VolumeUp';
 
 import Image from "../Image";
 import { Typography } from "@material-ui/core";
@@ -118,25 +119,25 @@ class PlayerCustomized extends Component {
           key={track.mp3Name}
           track={track}
           actualPlayingTrackMp3Name={this.state.actualPlayingTrackMp3Name}
-          onClick={() =>
-
-            this.setState({
-              actualPlayingTrackMp3Name: track.mp3Name,
-              actualSongName: track.name,
-              autoplay: true,
-              isPlaying: true,
-              actualSongImage: track.imgSrc,
-            })
-          }
-          onUnClick={() =>
-            this.setState({
-              isPlaying: false,
-            })
-          }
+          onClickPlay={() => {
+            return (
+              this.setState({
+                actualPlayingTrackMp3Name: track.mp3Name,
+                actualSongName: track.name,
+                autoplay: true,
+                isPlaying: true,
+                actualSongImage: track.imgSrc,
+              })
+            )
+          }}
         />
       )
     })
   );
+
+  playNextSong = () => {
+    console.log('wlaczam kolejny numer')
+  };
 
 
   render() {
@@ -152,32 +153,25 @@ class PlayerCustomized extends Component {
         </div>
         <Media ref={c => (this.media = c)}>
           <div>
-            <Player
-              ref={c => (this._player = c)}
-              src={`/mp3/${this.state.actualPlayingTrackMp3Name}.mp3`}
-              connectSource={this._connectSource}
-              useAudioObject
-              autoPlay={this.state.autoplay}
-              isPlaying={this.state.isPlaying}
-              onEnded={
-                //tutaj zrobic wlaczanie kolejnego kawalka
-                () => console.log('zakonczylem odtwarzanie')}
-            />
-            <div className={classes.volumeContainer}>
-              <div className={classes.volumeText}>Volume</div>
-              <Volume className={this.props.volume}/>
-            </div>
-
-
-            <div className={classes.playerToolsContainer}>
+            <div className={classes.actualSongPlayer}>
               <PlayPause/>
-              {/*<CustomPlayPause />*/}
+              <Player
+                ref={c => (this._player = c)}
+                src={`/mp3/${this.state.actualPlayingTrackMp3Name}.mp3`}
+                connectSource={this._connectSource}
+                useAudioObject
+                autoPlay={this.state.autoplay}
+                isPlaying={this.state.isPlaying}
+                onEnded={this.playNextSong}
+              />
               <div className={classes.playerTime}>
                 <CurrentTime/>/<Duration/>
               </div>
               <SeekBar/>
-              <isPlaying/>
-
+              <div className={classes.volumeContainer}>
+                <div className={classes.volumeText}><VolumeUpIcon/></div>
+                <Volume className={this.props.volume}/>
+              </div>
             </div>
             {this.trackList()}
           </div>

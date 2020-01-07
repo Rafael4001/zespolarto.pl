@@ -31,11 +31,17 @@ const styles = {
   volumeText: {
     marginRight: '1rem',
   },
-  playerToolsContainer: {
+  actualSongPlayer: {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr 2fr',
+    gridTemplateColumns: '5rem 6rem 1fr 1fr',
     alignItems: 'center',
-    justifyContent: 'center',
+  },
+  playerToolsContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    // gridTemplateColumns: '1fr 1fr 2fr',
+    alignItems: 'center',
+    // justifyContent: 'center',
     // backgroundColor: ,
     fontSize: '1.2rem'
   },
