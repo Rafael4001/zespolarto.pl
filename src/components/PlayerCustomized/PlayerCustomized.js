@@ -222,8 +222,16 @@ class PlayerCustomized extends Component {
             </div>
             <Typography>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
 
+            <PlayPause/>
+            {/*<div className={classes.volumeContainer}>*/}
+            {/*  <div className={classes.volumeText}><VolumeUpIcon/></div>*/}
+            {/*  <Volume className={this.props.volume}/>*/}
+            {/*</div>*/}
+            <div className={classes.seekBarContainer} >
+              <div className={classes.playerTime}><CurrentTime/>/<Duration/></div>
+              <div className={classes.seekBar}><SeekBar style={{width: '100%'}}/></div>
+            </div>
             <div className={classes.actualSongPlayer}>
-              <PlayPause/>
               <Player
                 ref={c => (this._player = c)}
                 src={`/mp3/${this.state.actualPlayingTrackMp3Name}.mp3`}
@@ -233,19 +241,10 @@ class PlayerCustomized extends Component {
                 isPlaying={this.state.isPlaying}
                 onEnded={this.playNextSong}
               />
-              <div className={classes.playerTime}>
-                <CurrentTime/>/<Duration/>
-              </div>
-              <SeekBar/>
-              <div className={classes.volumeContainer}>
-                <div className={classes.volumeText}><VolumeUpIcon/></div>
-                <Volume className={this.props.volume}/>
-              </div>
             </div>
           </div>
 
           <div>
-
             <div className={classes.trackList}>
               {this.trackList()}
             </div>

@@ -69,6 +69,16 @@ const styles = {
     alignItems: 'center',
     border: `solid 1px ${COLORS.grey.dark}`,
     padding: '1rem',
+  },
+  seekBarContainer:{
+    width: '30rem',
+    display: 'grid',
+    gridTemplateColumns: '4rem auto',
+    gridGap: '1rem',
+  },
+  seekBar:{
+    width: '100%'
+
   }
 };
 
