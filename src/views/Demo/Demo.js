@@ -11,13 +11,8 @@ import { SONG_1 } from "../../constants";
 
 const Demo = (props) => (
   <PageWrapper>
-    <div className={props.classes.mainContainer}>
-      <div className={props.classes.menuHomepage}>
-        <MenuComponent/>
-      </div>
-      <div className={props.classes.webRightContent}>
-        <PlayerCustomized/>
-      </div>
+    <div className={props.classes.bodyHomepage}>
+      <PlayerCustomized/>
     </div>
   </PageWrapper>
 );

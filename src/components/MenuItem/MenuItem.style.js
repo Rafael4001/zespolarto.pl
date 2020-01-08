@@ -1,40 +1,30 @@
 import { withStyles } from '@material-ui/core/styles';
 
 import MenuItem from './MenuItem'
+import { COLORS } from "../../constants";
 
-import { MENU_ITEM_WIDTH } from '../../constants'
 
-
-const styles = {
+const styles = (theme) => ({
   mainContainer: {
-    height: '4rem',
-    width: `${MENU_ITEM_WIDTH}rem`,
-    backgroundColor: '#c11616',
-    display: 'flex',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    padding: '0 1rem',
+    height: '3rem',
     border: 'none',
-    margin: '0.2rem 0',
-    borderRadius: '',
-    // boxShadow: '0.01rem 0.01rem 0.1rem #C6C6C6',
+    backgroundColor: theme.palette.common.white,
+    display: 'flex',
+    alignItems: 'center',
+    padding: '0 2rem',
+    margin: '0.2rem 0.2rem',
 
     '&:hover': {
-      transition: '0.3s',
-      backgroundColor: '#b41616',
-      paddingRight: '0.9rem',
-
-      // boxShadow: '5px 10px #888888',
+      transition: 'paddingTop 0.3s',
+      color: COLORS.red.main,
+      borderBottom: `solid 1px ${COLORS.red.main}`
     },
 
   },
   text: {
-    fontSize: '1.7rem',
-    color: '#FFF',
-    fontWeight: 400,
+    fontSize: '1.3rem',
+    fontWeight: 500,
   }
-
-
-};
+});
 
 export default withStyles(styles)(MenuItem);

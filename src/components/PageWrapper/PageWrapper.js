@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import MenuComponent from "../MenuComponent/MenuComponent.style";
 
 const PageWrapper = ({ classes, children }) => (
   <div className={classes.pageWrapperOuter}>
+    <div className={classes.menuHomepage}><MenuComponent/></div>
     <div className={classes.pageWrapperInner}>{children}</div>
   </div>
 );

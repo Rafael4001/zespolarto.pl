@@ -10,7 +10,7 @@ import Akcent from '../static/image/songsImages/Akcent.jpg';
 import Naydis from '../static/image/songsImages/Naydis.jpg';
 
 
-export const SONGS_IMAGES={
+export const SONGS_IMAGES = {
   Bruno_Mars: Bruno_Mars,
   Akcent: Akcent,
   Naydis: Naydis,
@@ -24,6 +24,9 @@ export const LOGO = logo;
 export const LOGO_ON_THE_FLOWERS = LogoOnTheFlowers;
 
 
+export const MAX_PAGE_WIDTH = '80rem';
+
+
 const MAIN_PAGE = 'Strona Główna';
 const PHOTO = 'Zdjęcia';
 const MEDIA = 'Media';
@@ -32,12 +35,24 @@ const OFERTA = 'Oferta';
 const KALENDARZ = 'Kalendarz';
 
 export const MENU_ITEMS = [
-  {name: MAIN_PAGE, link: './'},
+  // {name: MAIN_PAGE, link: './'},
   {name: DEMO, link: './demo'},
   {name: PHOTO, link: './photo'},
   {name: MEDIA, link: './media'},
   {name: OFERTA, link: './oferta'},
-  {name: KALENDARZ, link: './kalendarz'},
+  // {name: KALENDARZ, link: './kalendarz'},
 ];
 
 export const MENU_ITEM_WIDTH = 20;
+
+
+export const COLORS = {
+  grey: {
+    light: '#F2F2F2',
+    medium: '#F5F5F5',
+    dark: '#CFCFCF',
+  },
+  red: {
+    main: '#b41616',
+  }
+};

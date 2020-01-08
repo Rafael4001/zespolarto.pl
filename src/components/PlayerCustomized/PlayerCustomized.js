@@ -87,6 +87,76 @@ const tracks = [
     mp3Name: 'Tressure',
     imgSrc: 'Bruno_Mars',
   },
+  {
+    // id: 0,
+    name: 'Lato 99',
+    mp3Name: 'Lato_99',
+    artist: 'Naydis',
+    imgSrc: 'Naydis',
+  },
+  {
+    // id: 1,
+    name: 'Życie To Są Chwile',
+    artist: 'Akcent',
+    mp3Name: 'ZycieToSaChwile',
+    imgSrc: 'Akcent',
+  },
+  {
+    // id: 2,
+    name: 'Tressure',
+    mp3Name: 'Tressure',
+    imgSrc: 'Bruno_Mars',
+  },
+  {
+    // id: 1,
+    name: 'Życie To Są Chwile',
+    artist: 'Akcent',
+    mp3Name: 'ZycieToSaChwile',
+    imgSrc: 'Akcent',
+  },
+  {
+    // id: 2,
+    name: 'Tressure',
+    mp3Name: 'Tressure',
+    imgSrc: 'Bruno_Mars',
+  },
+  {
+    // id: 1,
+    name: 'Życie To Są Chwile',
+    artist: 'Akcent',
+    mp3Name: 'ZycieToSaChwile',
+    imgSrc: 'Akcent',
+  },
+  {
+    // id: 2,
+    name: 'Tressure',
+    mp3Name: 'Tressure',
+    imgSrc: 'Bruno_Mars',
+  },
+  {
+    // id: 2,
+    name: 'Tressure',
+    mp3Name: 'Tressure',
+    imgSrc: 'Bruno_Mars',
+  },
+  {
+    // id: 2,
+    name: 'Tressure',
+    mp3Name: 'Tressure',
+    imgSrc: 'Bruno_Mars',
+  },
+  {
+    // id: 2,
+    name: 'Tressure',
+    mp3Name: 'Tressure',
+    imgSrc: 'Bruno_Mars',
+  },
+  {
+    // id: 2,
+    name: 'Tressure',
+    mp3Name: 'Tressure',
+    imgSrc: 'Bruno_Mars',
+  },
 ];
 
 
@@ -144,15 +214,14 @@ class PlayerCustomized extends Component {
     const {classes} = this.props;
 
     return (
-      <div className={classes.mainContainer}>
-        <div>
-          <div className={classes.songImage}>
-            <Image imgSrc={`${SONGS_IMAGES[this.state.actualSongImage]}`}/>
-          </div>
-          <Typography>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
-        </div>
-        <Media ref={c => (this.media = c)}>
-          <div>
+      <Media ref={c => (this.media = c)}>
+        <div className={classes.mainContainer}>
+          <div className={classes.albumImageContainer}>
+            <div className={classes.songImage}>
+              <Image imgSrc={`${SONGS_IMAGES[this.state.actualSongImage]}`}/>
+            </div>
+            <Typography>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
+
             <div className={classes.actualSongPlayer}>
               <PlayPause/>
               <Player
@@ -173,11 +242,17 @@ class PlayerCustomized extends Component {
                 <Volume className={this.props.volume}/>
               </div>
             </div>
-            {this.trackList()}
           </div>
-        </Media>
-      </div>
 
+          <div>
+
+            <div className={classes.trackList}>
+              {this.trackList()}
+            </div>
+          </div>
+
+        </div>
+      </Media>
 
     )
   }

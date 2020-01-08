@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import MenuItem from '../MenuItem'
 import { MENU_ITEMS, LOGO_ON_THE_FLOWERS } from '../../constants';
+import Link from "next/link";
 
 
 class MenuComponent extends Component {
@@ -17,14 +18,18 @@ class MenuComponent extends Component {
 
     return (
       <div className={classes.mainContainer}>
-        <div className={classes.photoContainer}>
-          <img
-            src={LOGO_ON_THE_FLOWERS}
-            alt={'photo 1'}
-            className={classes.photo}
-          />
+        <Link href={'./'}>
+            <div className={classes.photoContainer}>
+              <img
+                src={LOGO_ON_THE_FLOWERS}
+                alt={'photo 1'}
+                className={classes.photo}
+              />
+            </div>
+        </Link>
+        <div className={classes.menuContainer}>
+          {this.getDemoItems()}
         </div>
-        {this.getDemoItems()}
       </div>
     )
   }

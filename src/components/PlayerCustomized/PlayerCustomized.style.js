@@ -1,10 +1,16 @@
 import { withStyles } from '@material-ui/core/styles';
 import PlayerCustomized from './PlayerCustomized'
+import { COLORS, IMAGE_1 } from "../../constants";
 
 
 const styles = {
   mainContainer:{
-    width: '40rem',
+    // width: '40rem',
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gridGap: '1rem'
+    // backgroundImage: `url(${IMAGE_1})`,
+
   },
   main: {
     backgroundColor: '#f5f5f5',
@@ -50,10 +56,20 @@ const styles = {
     flexDirection: 'row',
   },
   songImage: {
-    width: '20rem',
-    height: '20rem',
+    width: '30rem',
+    maxHeight: '30rem',
   },
-
+  trackList:{
+    height: '80vh',
+    overflowY: 'auto'
+  },
+  albumImageContainer:{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    border: `solid 1px ${COLORS.grey.dark}`,
+    padding: '1rem',
+  }
 };
 
 export default withStyles(styles)(PlayerCustomized);

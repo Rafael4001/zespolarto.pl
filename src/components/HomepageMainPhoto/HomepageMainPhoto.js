@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from "prop-types";
 
 import { IMAGE_1, LOGO } from '../../constants'
+import Typography from "@material-ui/core/Typography";
 
 
 class HomepageMainPhoto extends Component {
@@ -11,15 +12,21 @@ class HomepageMainPhoto extends Component {
 
     return (
       <div className={classes.mainContainer}>
-        <img
-          src={LOGO}
-          alt={'arto'}
-          className={classes.logo}
-        />
+        <div className={this.props.classes.textContainer}>
+          <Typography
+            classes={{
+              root: this.props.classes.subTitle1,
+            }}>Twoje wesele...</Typography>
+          <Typography
+            classes={{
+              root: this.props.classes.subTitle2,
+            }}>Nasza muzyka</Typography>
+        </div>
         <div className={classes.photoContainer}>
           <img
             src={IMAGE_1}
             alt={'backgroundPhoto'}
+            className={classes.photo}
           />
         </div>
       </div>
