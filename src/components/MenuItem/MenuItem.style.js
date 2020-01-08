@@ -13,6 +13,7 @@ const styles = (theme) => ({
     alignItems: 'center',
     padding: '0 2rem',
     margin: '0.2rem 0.2rem',
+    borderBottom: `solid 1px ${COLORS.grey.light}`,
 
     '&:hover': {
       transition: 'paddingTop 0.3s',

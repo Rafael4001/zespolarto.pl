@@ -39,7 +39,7 @@ export const MENU_ITEMS = [
   {name: DEMO, link: './demo'},
   {name: PHOTO, link: './photo'},
   {name: MEDIA, link: './media'},
-  {name: OFERTA, link: './oferta'},
+  // {name: OFERTA, link: './oferta'},
   // {name: KALENDARZ, link: './kalendarz'},
 ];
 
