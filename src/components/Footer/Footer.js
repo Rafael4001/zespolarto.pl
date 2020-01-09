@@ -24,11 +24,12 @@ class Footer extends Component {
             />
           </div>
 
-          <div className={classes.link}>
+          <div className={classes.contactContainer}>
             <Link className={{root: classes.link}} href={CONTACT_LINK}>
               KONTAKT
             </Link>
           </div>
+
           <div>
             <div className={classNames(classes.phoneContainer, classes.marginBottomContainer)}>
               <Typography className={classes.phoneText}>Rafał</Typography>
@@ -42,7 +43,6 @@ class Footer extends Component {
             </div>
           </div>
 
-
           <div className={classes.socialMediaContainer}>
             <a href={FACEBOOK_URL} target={'_blank'} className={classes.socialLink}>
               <img
@@ -52,8 +52,6 @@ class Footer extends Component {
               />
             </a>
           </div>
-
-
         </div>
         <div className={classes.rightsContainer}>R.C. &copy; 2020 All rights reserved</div>
         <div className={classes.iconMessageContainer}>

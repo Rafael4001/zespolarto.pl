@@ -13,12 +13,17 @@ const styles = (theme) => ({
       textDecoration: 'none',
       color: `${COLORS.blue.main}`,
     },
+
     width: '100%',
     backgroundColor: `${COLORS.grey.medium}`,
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingBottom: '1rem',
+
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+    },
   },
   socialMediaContainer: {
     padding: '1rem',
@@ -35,11 +40,19 @@ const styles = (theme) => ({
       color: `${COLORS.blue.main}`,
     }
   },
+  contactContainer:{
+    margin: '0 0 1.3rem 0',
+    // width: '100%',
+  },
   iconFacebook: {
     width: '1.8rem',
     height: '1.8rem',
   },
-  logoContainer: {},
+  logoContainer: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
+  },
   iconArto: {
     width: '2rem',
     height: '2rem',
