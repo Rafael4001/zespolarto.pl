@@ -26,7 +26,8 @@ const useStyles = makeStyles(theme => ({
     margin: '1rem',
     width: 'auto',
     border: 'solid 1px black',
-    backgroundColor: 'rgb(0,0,0,0.1)',
+    backgroundColor: 'rgb(0,0,0,0.05)',
+    boxShadow: `1px 0 5px 1px rgb(0,0,0,0.2)`,
   },
 }));
 

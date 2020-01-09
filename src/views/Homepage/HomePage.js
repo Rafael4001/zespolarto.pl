@@ -22,7 +22,6 @@ const Homepage = (props) => (
       {/*<OpinionsContainer/>*/}
       {/*<ContactContainer/>*/}
       <Footer/>
-      {/**/}
     </div>
   </PageWrapper>
 );

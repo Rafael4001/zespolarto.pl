@@ -11,12 +11,6 @@ const styles = (theme) => ({
     backgroundColor: '#FFF',
     width: '100%',
   },
-  bodyHomepage: {
-    // position: 'absolute',
-    // top: '5rem',
-    // width: '80rem',
-    // zIndex: 10000
-  }
 });
 
 export default withStyles(styles)(Demo);

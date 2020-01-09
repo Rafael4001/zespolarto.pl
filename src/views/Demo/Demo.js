@@ -2,10 +2,7 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 import PageWrapper from '../../components/PageWrapper';
-import MenuComponent from "../../components/MenuComponent";
 import PlayerCustomized from "../../components/PlayerCustomized";
-import SongImage from "../../components/Image";
-import { SONG_1 } from "../../constants";
 
 
 
@@ -22,6 +19,6 @@ Demo.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-Demo.displayName = 'Homepage';
+Demo.displayName = 'Demo';
 
 export default Demo;
