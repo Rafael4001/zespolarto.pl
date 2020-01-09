@@ -46,8 +46,8 @@ export const CONTACT_LINK='./media';
 export const MENU_ITEMS = [
   {name: HOME, link: './'},
   {name: DEMO, link: './demo'},
-  {name: PHOTO, link: './photo'},
-  {name: MEDIA, link: './media'},
+  // {name: PHOTO, link: './photo'},
+  // {name: MEDIA, link: './media'},
   // {name: OFERTA, link: './oferta'},
   // {name: KALENDARZ, link: './kalendarz'},
   // {name: KONTAKT, link: CONTACT_LINK},
