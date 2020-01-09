@@ -3,15 +3,18 @@ import { withStyles } from '@material-ui/core/styles';
 import HomepageMainPhoto from './HomepageMainPhoto'
 
 
-const styles = {
+const styles = (theme) => ({
+
   mainContainer: {
-    display: ' flex',
-    // gridTemplateColumns: '1fr 1fr',
-    // flexDirection: 'column',
-    // justifyContent: 'center',
+    display: ' grid',
+    gridTemplateColumns: '1fr',
     width: '100%',
     alignItems: 'center',
-    // position: 'relative',
+    paddingBottom: '1rem',
+
+    [theme.breakpoints.up('sm')]: {
+      gridTemplateColumns: '1fr 1.5fr',
+    },
   },
   logoContainer: {
     width: '100%',
@@ -31,25 +34,41 @@ const styles = {
   },
   textContainer: {
     backgroundColor: '#FFFFFF',
-    fontSize: '2rem',
     padding: '1rem',
+
+    [theme.breakpoints.down('xs')]: {
+      display: 'none'
+    },
+
   },
-  subTitle1: {
-    fontSize: '3rem',
-    fontFamily: '\'Courgette\', cursive;',
-    fontWeight: 700,
+  subTitle: {
+    fontSize: '2rem',
+    fontFamily: 'Parisienne',
+    fontWeight: 500,
+    // color: 'radial-gradient(circle at 100px 100px, #5cabff, #000)',
+
+    [theme.breakpoints.up('md')]: {
+      fontSize: '3rem',
+    },
   },
-  subTitle2: {
-    fontSize: '3rem',
-    // fontFamily: '\'Lobster\', regular;',
-    fontFamily: '\'Dancing Script\', cursive;',
-    // font-family: 'Dancing Script', cursive;
-    fontWeight: 700,
-    marginLeft: '7rem',
+  subTitleLeft: {
+    display: 'flex',
+    justifyContent: 'flex-end',
   },
   photo: {
     width: '100%',
   },
-};
+  loversImageStyle: {
+    width: '6rem',
+    [theme.breakpoints.up('md')]: {
+      width: '10rem',
+    },
+  },
+  loversImageContainer: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+});
 
 export default withStyles(styles)(HomepageMainPhoto);

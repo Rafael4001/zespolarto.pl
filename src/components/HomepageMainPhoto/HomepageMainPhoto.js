@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types";
+import classNames from 'classnames';
+import Divider from '@material-ui/core/Divider';
 
-import { IMAGE_1, LOGO } from '../../constants'
+import { IMAGE_1, LOGO, LOVERS } from '../../constants'
 import Typography from "@material-ui/core/Typography";
 
 
@@ -11,24 +13,31 @@ class HomepageMainPhoto extends Component {
     const {classes} = this.props;
 
     return (
-      <div className={classes.mainContainer}>
-        <div className={this.props.classes.textContainer}>
-          <Typography
-            classes={{
-              root: this.props.classes.subTitle1,
-            }}>Twoje wesele...</Typography>
-          <Typography
-            classes={{
-              root: this.props.classes.subTitle2,
-            }}>Nasza muzyka</Typography>
+      <div>
+        <div className={classes.mainContainer}>
+
+          <div className={this.props.classes.textContainer}>
+            <Typography classes={{root: this.props.classes.subTitle,}}>Twoje wesele...</Typography>
+            <div className={classes.loversImageContainer}>
+              <img
+                src={LOVERS}
+                alt={'backgroundPhoto'}
+                className={classes.loversImageStyle}
+              />
+            </div>
+            <Typography classes={{root: classNames(classes.subTitle, classes.subTitleLeft),}}>Nasza muzyka</Typography>
+          </div>
+
+          <div className={classes.photoContainer}>
+            <img
+              src={IMAGE_1}
+              alt={'backgroundPhoto'}
+              className={classes.photo}
+            />
+          </div>
+
         </div>
-        <div className={classes.photoContainer}>
-          <img
-            src={IMAGE_1}
-            alt={'backgroundPhoto'}
-            className={classes.photo}
-          />
-        </div>
+        <Divider/>
       </div>
     )
   }

@@ -2,7 +2,7 @@ import { withStyles } from '@material-ui/core/styles';
 import BlockViewWithImage from './BlockViewWithImage'
 
 
-const styles = {
+const styles = (theme)=>({
   mainContainer: {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
@@ -17,11 +17,21 @@ const styles = {
   },
   text: {
     fontSize: '1rem',
+    fontFamily: '\'Baskervville\',serif',
   },
-  cytat: {
+  quotationContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+  },
+  quotation: {
+    fontSize: '2.2rem',
+    fontFamily: 'Parisienne',
+  },
+  author: {
     fontSize: '1rem',
-    fontFamily: '\'Courgette\', cursive',//TODO font zaladować
+    fontFamily: 'Parisienne',
   },
-};
+});
 
 export default withStyles(styles)(BlockViewWithImage);

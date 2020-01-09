@@ -21,7 +21,6 @@ const styles = (theme) => ({
     top: '0rem',
     zIndex: 10000,
     backgroundColor: '#FFF',
-    borderBottom: `solid 1px ${COLORS.grey.medium}`,
     width: '100%',
     maxWidth: MAX_PAGE_WIDTH,
   },

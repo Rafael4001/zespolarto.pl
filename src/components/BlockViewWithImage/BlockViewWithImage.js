@@ -20,20 +20,18 @@ class BlockViewWithImage extends Component {
             className={classes.photo}
           />
         </div>
+
         <div>
-          <Typography
-            classes={{
-              root: this.props.classes.text,
-            }}>
-            "Takt jest muzyką duszy."
-            -Anita Daniel
-          </Typography>
+          <div className={classes.quotationContainer}>
+            <Typography classes={{root: classes.quotation,}}>"Takt jest muzyką duszy."</Typography>
+            <Typography classes={{root: classes.author,}}>-Anita Daniel</Typography>
+          </div>
           <Divider/>
-          <Typography classes={{root: this.props.classes.text,}}>Skład zespołu:</Typography>
-          <Typography classes={{root: this.props.classes.text,}}>- Daria - wokal</Typography>
-          <Typography classes={{root: this.props.classes.text,}}>- Adrian - gitara basowa, wokal</Typography>
-          <Typography classes={{root: this.props.classes.text,}}>- Rafał - instrumenty klawiszowe, gitara, wokal</Typography>
-          <Typography classes={{root: this.props.classes.text,}}>- Tomek - perkusja</Typography>
+          <Typography classes={{root: classes.text,}}>Skład zespołu:</Typography>
+          <Typography classes={{root: classes.text,}}>- Daria - wokal</Typography>
+          <Typography classes={{root: classes.text,}}>- Rafał - instrumenty klawiszowe, gitara, wokal</Typography>
+          <Typography classes={{root: classes.text,}}>- Adrian - gitara basowa, wokal</Typography>
+          <Typography classes={{root: classes.text,}}>- Tomek - perkusja</Typography>
         </div>
       </div>
     )

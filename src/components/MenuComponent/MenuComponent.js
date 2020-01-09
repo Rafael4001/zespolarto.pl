@@ -7,7 +7,7 @@ import Link from "next/link";
 
 
 class MenuComponent extends Component {
-  getDemoItems = () => (
+  getMenuItems = () => (
     MENU_ITEMS.map(({name, link}) => (
       <MenuItem key={name} title={name} href={link}/>
     ))
@@ -28,7 +28,7 @@ class MenuComponent extends Component {
             </div>
         </Link>
         <div className={classes.menuContainer}>
-          {this.getDemoItems()}
+          {this.getMenuItems()}
         </div>
       </div>
     )

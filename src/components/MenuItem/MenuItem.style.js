@@ -16,7 +16,7 @@ const styles = (theme) => ({
     borderBottom: `solid 1px ${COLORS.grey.light}`,
 
     '&:hover': {
-      transition: 'paddingTop 0.3s',
+      transition: '0.7s',
       color: COLORS.red.main,
       borderBottom: `solid 1px ${COLORS.red.main}`
     },
@@ -24,7 +24,8 @@ const styles = (theme) => ({
   },
   text: {
     fontSize: '1.3rem',
-    fontWeight: 500,
+    fontWeight: 300,
+    fontFamily: '\'Baskervville\',serif',
   }
 });
 
