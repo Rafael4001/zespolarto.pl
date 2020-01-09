@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import Link from 'next/link'
 
 import PhoneIcon from '@material-ui/icons/Phone';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import Typography from "@material-ui/core/Typography";
 
 import { FACEBOOK_URL, FACEBOOK, LOGO_ON_THE_FLOWERS, CONTACT_LINK } from "../../constants";
@@ -28,6 +29,12 @@ class Footer extends Component {
             <Link className={{root: classes.link}} href={CONTACT_LINK}>
               KONTAKT
             </Link>
+          </div>
+
+          <div className={classNames(classes.phoneContainer, classes.marginBottomContainer)}>
+            <Typography className={classes.phoneText}>e-mail</Typography>
+            <MailOutlineIcon/>
+            <a href = "mailto:zespolarto@gmail.com?subject = Feedback&body = Message">zespolarto@gmail</a>
           </div>
 
           <div>
