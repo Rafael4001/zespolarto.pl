@@ -56,13 +56,30 @@ const styles = (theme) => (
       display: 'flex',
       flexDirection: 'row',
     },
-    songImage: {
-      width: '30rem',
-      maxHeight: '30rem',
+    songImageContainer: {
+      height: '10rem',
+      width: '15rem',
+
+      [theme.breakpoints.up('sm')]: {
+        width: 'auto',
+        maxWidth: '30rem',
+        height: 'auto',
+        maxHeight: '30rem',
+      }
     },
     trackList: {
       height: '80vh',
-      overflowY: 'auto'
+
+      [theme.breakpoints.up('sm')]: {
+        overflowY: 'auto',
+      },
+    },
+    actualImage: {
+      height: '10rem',
+
+      [theme.breakpoints.up('sm')]: {
+        height: '20rem'
+      },
     },
     albumImageContainer: {
       display: 'flex',

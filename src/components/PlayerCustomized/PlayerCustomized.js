@@ -217,8 +217,11 @@ class PlayerCustomized extends Component {
       <Media ref={c => (this.media = c)}>
         <div className={classes.mainContainer}>
           <div className={classes.albumImageContainer}>
-            <div className={classes.songImage}>
-              <Image imgSrc={`${SONGS_IMAGES[this.state.actualSongImage]}`}/>
+            <div className={classes.songImageContainer}>
+              <Image
+                imgSrc={`${SONGS_IMAGES[this.state.actualSongImage]}`}
+                className={classes.actualImage}
+              />
             </div>
             <Typography>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
 

@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames'
 
 const Image = (props) => {
-  const {imgSrc, classes}=props;
+  const {imgSrc, classes} = props;
 
-  return(
+  return (
     <img
       src={imgSrc}
       alt={'photo 1'}
-      className={classes.image}
+      className={classNames(classes.image, props.className)}
     />
   )
 };
