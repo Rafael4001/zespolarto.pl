@@ -60,7 +60,18 @@ const styles = (theme) => ({
   },
   marginBottomContainer: {
     marginBottom: '1rem',
-  }
+  },
+  iconMessageContainer: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+  },
+  iconMessage: {
+    fontSize: '8px',
+    '& a': {
+      textDecoration: 'none',
+      color: `${COLORS.blue.main}`,
+    }
+  },
 });
 
 export default withStyles(styles)(Footer);

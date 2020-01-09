@@ -1,5 +1,5 @@
 import { withStyles } from '@material-ui/core/styles';
-import BlockViewWithImage_2 from './BlockViewWithImage_2'
+import PlayedWeddingInformationContainer from './PlayedWeddingInformationContainer'
 
 
 const styles = (theme) => ({
@@ -29,7 +29,7 @@ const styles = (theme) => ({
   },
   cytat: {
     fontSize: '1rem',
-    fontFamily: '\'Courgette\', cursive',//TODO font zaladować
+    fontFamily: '\'Courgette\', cursive',
   },
   brideIcon: {
     width: '5rem',
@@ -44,4 +44,4 @@ const styles = (theme) => ({
   }
 });
 
-export default withStyles(styles)(BlockViewWithImage_2);
+export default withStyles(styles)(PlayedWeddingInformationContainer);

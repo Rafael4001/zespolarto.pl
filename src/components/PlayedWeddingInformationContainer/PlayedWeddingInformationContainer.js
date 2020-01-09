@@ -7,7 +7,7 @@ import { SMILE, IMAGE_3 } from "../../constants";
 import Divider from "@material-ui/core/Divider";
 
 
-class BlockViewWithImage_2 extends Component {
+class PlayedWeddingInformationContainer extends Component {
   render() {
     const {classes} = this.props;
 
@@ -46,12 +46,12 @@ class BlockViewWithImage_2 extends Component {
   }
 }
 
-BlockViewWithImage_2.propTypes = {
+PlayedWeddingInformationContainer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-BlockViewWithImage_2.defaultProps = {};
+PlayedWeddingInformationContainer.defaultProps = {};
 
-BlockViewWithImage_2.displayName = 'BlockViewWithImage_2';
+PlayedWeddingInformationContainer.displayName = 'PlayedWeddingInformationContainer';
 
-export default BlockViewWithImage_2
+export default PlayedWeddingInformationContainer

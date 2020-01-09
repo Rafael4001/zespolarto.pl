@@ -56,6 +56,10 @@ class Footer extends Component {
 
         </div>
         <div className={classes.rightsContainer}>R.C. &copy; 2020 All rights reserved</div>
+        <div className={classes.iconMessageContainer}>
+          <div className={classes.iconMessage}>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
       </div>
     )
   }

@@ -26,6 +26,6 @@ MenuItem.propTypes = {
 
 MenuItem.defaultProps = {};
 
-MenuItem.displayName = 'MenuComponent';
+MenuItem.displayName = 'MenuItem';
 
 export default MenuItem
