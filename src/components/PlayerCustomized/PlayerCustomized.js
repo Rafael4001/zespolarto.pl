@@ -244,10 +244,8 @@ class PlayerCustomized extends Component {
             </div>
           </div>
 
-          <div>
-            <div className={classes.trackList}>
-              {this.trackList()}
-            </div>
+          <div className={classes.trackList}>
+            {this.trackList()}
           </div>
 
         </div>

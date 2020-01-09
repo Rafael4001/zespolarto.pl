@@ -11,6 +11,7 @@ const styles = {
   },
   photo: {
     width: '100%',
+    height: '100%',
   },
   photoContainer: {
     padding: '1rem',
