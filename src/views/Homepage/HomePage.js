@@ -20,7 +20,7 @@ const Homepage = (props) => (
       <BandMembers/>
       <PlayedWeddingInformationContainer/>
       {/*<OpinionsContainer/>*/}
-      <ContactContainer/>
+      {/*<ContactContainer/>*/}
       <Footer/>
       {/**/}
     </div>

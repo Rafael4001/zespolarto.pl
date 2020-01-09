@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from 'classnames';
 import Divider from '@material-ui/core/Divider';
 
-import { IMAGE_1, LOGO, LOVERS } from '../../constants'
+import { IMAGE_1, LOVERS } from '../../constants'
 import Typography from "@material-ui/core/Typography";
 
 

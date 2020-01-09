@@ -33,7 +33,7 @@ export const SMILE = Smile;
 export const MAX_PAGE_WIDTH = '80rem';
 
 
-const MAIN_PAGE = 'Strona Główna';
+const HOME = 'Home';
 const PHOTO = 'Zdjęcia';
 const MEDIA = 'Media';
 const DEMO = 'Demo';
@@ -44,7 +44,7 @@ const KALENDARZ = 'Kalendarz';
 export const CONTACT_LINK='./media';
 
 export const MENU_ITEMS = [
-  // {name: MAIN_PAGE, link: './'},
+  {name: HOME, link: './'},
   {name: DEMO, link: './demo'},
   {name: PHOTO, link: './photo'},
   {name: MEDIA, link: './media'},

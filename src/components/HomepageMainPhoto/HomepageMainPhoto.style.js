@@ -11,9 +11,11 @@ const styles = (theme) => ({
     width: '100%',
     alignItems: 'center',
     paddingBottom: '1rem',
+    marginTop: '5rem',
 
     [theme.breakpoints.up('sm')]: {
       gridTemplateColumns: '1fr 1.5fr',
+      marginTop: 0,
     },
   },
   logoContainer: {

@@ -6,10 +6,14 @@ const styles = (theme) => ({
   pageWrapperOuter: {
     width: '100%',
     minHeight: '100vh',
-    backgroundColor: theme.palette.common.white,
     display: 'flex',
     justifyContent: 'center',
+    backgroundColor: theme.palette.common.white,
     paddingTop: '6rem',
+
+    [theme.breakpoints.down('xs')]: {
+      paddingTop: 0,
+    },
   },
   pageWrapperInner: {
     width: '100%',
@@ -20,9 +24,12 @@ const styles = (theme) => ({
     position: 'fixed',
     top: '0rem',
     zIndex: 10000,
-    backgroundColor: '#FFF',
     width: '100%',
     maxWidth: MAX_PAGE_WIDTH,
+
+    [theme.breakpoints.up('sm')]: {
+      backgroundColor: '#FFF',
+    },
   },
 });
 

@@ -6,6 +6,11 @@ import { COLORS } from "../../constants";
 
 const styles = (theme) => ({
   mainContainer: {
+
+    [theme.breakpoints.down('sm')]: {
+      padding: '0 1rem',
+    },
+
     height: '3rem',
     border: 'none',
     backgroundColor: theme.palette.common.white,
@@ -15,6 +20,7 @@ const styles = (theme) => ({
     margin: '0.2rem 0.2rem',
     borderBottom: `solid 1px ${COLORS.grey.light}`,
     outline: 'none',
+
 
     '&:hover': {
       transition: '0.7s',
