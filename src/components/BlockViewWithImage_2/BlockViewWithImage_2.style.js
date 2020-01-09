@@ -7,7 +7,6 @@ const styles = (theme) => ({
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
     padding: '1rem',
-    borderBottom: 'solid 0.05rem #6C7279',
 
     [theme.breakpoints.down('sm')]: {
       gridTemplateColumns: '1fr',

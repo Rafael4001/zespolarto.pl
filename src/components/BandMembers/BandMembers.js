@@ -47,6 +47,6 @@ BandMembers.propTypes = {
 
 BandMembers.defaultProps = {};
 
-BandMembers.displayName = 'BlockView';
+BandMembers.displayName = 'BandMembers';
 
 export default BandMembers

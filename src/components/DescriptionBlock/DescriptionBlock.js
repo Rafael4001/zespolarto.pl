@@ -22,6 +22,8 @@ class DescriptionBlock extends Component {
             Zgrany zespół przypadł do gustu już nie jednej osobie, robiąc to, co lubi, z pasją i precyzją.
             <br/>Dysponujemy wysokiej klasy sprzętem, który zapewni dobrą jakość dźwięku w każdych warunkach.
             <p>Zespół pochodzi z Werbkowic.</p>
+          {/*  TODO Napisac cos o zasiegu w jakim gramy*/}
+
           </Typography>
         </div>
         <Divider/>

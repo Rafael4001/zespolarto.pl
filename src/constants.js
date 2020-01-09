@@ -38,7 +38,10 @@ const PHOTO = 'Zdjęcia';
 const MEDIA = 'Media';
 const DEMO = 'Demo';
 const OFERTA = 'Oferta';
+const KONTAKT = 'Kontakt';
 const KALENDARZ = 'Kalendarz';
+
+export const CONTACT_LINK='./media';
 
 export const MENU_ITEMS = [
   // {name: MAIN_PAGE, link: './'},
@@ -47,6 +50,7 @@ export const MENU_ITEMS = [
   {name: MEDIA, link: './media'},
   // {name: OFERTA, link: './oferta'},
   // {name: KALENDARZ, link: './kalendarz'},
+  // {name: KONTAKT, link: CONTACT_LINK},
 ];
 
 export const MENU_ITEM_WIDTH = 20;
@@ -60,5 +64,13 @@ export const COLORS = {
   },
   red: {
     main: '#b41616',
+  },
+  blue: {
+    main: '#3B5897',
   }
 };
+
+export const FACEBOOK = '/static/image/facebook_logo.svg';
+
+
+export const FACEBOOK_URL = 'https://www.facebook.com/Zesp%C3%B3%C5%82-ARTO-203075696487749/';
