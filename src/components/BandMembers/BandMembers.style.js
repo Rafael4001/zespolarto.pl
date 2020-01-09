@@ -1,13 +1,16 @@
 import { withStyles } from '@material-ui/core/styles';
-import BlockViewWithImage from './BlockViewWithImage'
+import BandMembers from './BandMembers'
 
 
 const styles = (theme)=>({
   mainContainer: {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
+    gridTemplateColumns: '1fr',
     padding: '1rem',
-    borderBottom: 'solid 0.05rem #6C7279',
+
+    [theme.breakpoints.up(750)]: {
+      gridTemplateColumns: '1fr 1fr',
+    },
   },
   photo: {
     width: '100%',
@@ -34,4 +37,4 @@ const styles = (theme)=>({
   },
 });
 
-export default withStyles(styles)(BlockViewWithImage);
+export default withStyles(styles)(BandMembers);

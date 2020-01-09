@@ -4,6 +4,8 @@ import photo3 from '../static/image/photo_2.jpg';
 import logo from '../static/image/logo.png';
 import LogoOnTheFlowers from '../static/image/LogoWKwiatach_342x300.png';
 import Lovers from '../static/image/lovers.png';
+import Bride from '../static/image/icons/bride.svg';
+import Smile from '../static/image/icons/smile.svg';
 
 
 import Bruno_Mars from '../static/image/songsImages/Bruno_Mars.jpg';
@@ -24,6 +26,8 @@ export const IMAGE_3 = photo3;
 export const LOGO = logo;
 export const LOGO_ON_THE_FLOWERS = LogoOnTheFlowers;
 export const LOVERS = Lovers;
+export const BRIDE = Bride;
+export const SMILE = Smile;
 
 
 export const MAX_PAGE_WIDTH = '80rem';

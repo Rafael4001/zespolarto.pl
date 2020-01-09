@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import Typography from '@material-ui/core/Typography';
 
-import { IMAGE_3 } from "../../constants";
+import { SMILE, IMAGE_3 } from "../../constants";
 
 
 class BlockViewWithImage_2 extends Component {
@@ -14,14 +14,20 @@ class BlockViewWithImage_2 extends Component {
     return (
       <div className={this.props.classes.mainContainer}>
         <div>
-          <Typography
-            classes={{
-              root: this.props.classes.text,
-            }}>
-            Zaufało nam już ponad 250 par młodych
-            Kilkanaście lat doświadczenia, które zbudowały wiele pozytywnych wspomnień sprawiło, że doskonale wiemy jak poprowadzić Waszą uroczystość, tak jak sobie wymarzyliście...
-            To z Tobą ustalamy jak ma wyglądać Twoje wesele...
-            To dla Ciebie gramy...
+          <div className={this.props.classes.iconContainer}>
+            <img
+              src={SMILE}
+              alt={'Bride'}
+              className={classes.brideIcon}
+            />
+          </div>
+          <Typography classes={{root: classes.text,}}>
+            <p>Zaufało nam już <span className={classes.happyPairs}>ponad 250 par młodych</span></p>
+            Kilkanaście lat doświadczenia, które zbudowały wiele pozytywnych wspomnień sprawiło, że doskonale wiemy jak poprowadzić Waszą uroczystość,
+            tak jak sobie wymarzyliście...
+
+            <p> To z Tobą ustalamy jak ma wyglądać Twoje wesele...</p>
+            <p> To dla Ciebie gramy...</p>
           </Typography>
 
         </div>

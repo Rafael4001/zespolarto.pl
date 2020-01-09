@@ -10,7 +10,7 @@ class ContactContainer extends Component {
 
     return (
       <div className={this.props.classes.mainContainer}>
-        <Typography classes={{root: this.props.classes.text,}}>Kontak już wkrótce</Typography>
+        <Typography classes={{root: classes.text,}}>Kontak już wkrótce</Typography>
       </div>
     )
   }

@@ -1,5 +1,5 @@
 import { withStyles } from '@material-ui/core/styles';
-import BlockView from './BlockView'
+import DescriptionBlock from './DescriptionBlock'
 
 
 const styles = (theme) => ({
@@ -8,7 +8,6 @@ const styles = (theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     padding: '1rem 1rem',
-    borderBottom: 'solid 0.05rem #6C7279',
   },
   titleContainer: {
     display: 'flex',
@@ -19,9 +18,13 @@ const styles = (theme) => ({
     fontSize: '2rem',
   },
   title: {
-    fontSize: '6rem',
+    fontSize: '4rem',
     fontFamily: 'Parisienne',
     fontWeight: 500,
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '6rem',
+    },
   },
   text: {
     fontSize: '1rem',
@@ -29,4 +32,4 @@ const styles = (theme) => ({
   },
 });
 
-export default withStyles(styles)(BlockView);
+export default withStyles(styles)(DescriptionBlock);
