@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types";
+import classNames from 'classnames';
 import Link from 'next/link'
+
 import PhoneIcon from '@material-ui/icons/Phone';
-import { FACEBOOK_URL, FACEBOOK, LOGO_ON_THE_FLOWERS, CONTACT_LINK } from "../../constants";
 import Typography from "@material-ui/core/Typography";
+
+import { FACEBOOK_URL, FACEBOOK, LOGO_ON_THE_FLOWERS, CONTACT_LINK } from "../../constants";
 
 
 class Footer extends Component {
@@ -27,7 +30,7 @@ class Footer extends Component {
             </Link>
           </div>
           <div>
-            <div className={classes.phoneContainer}>
+            <div className={classNames(classes.phoneContainer, classes.marginBottomContainer)}>
               <Typography className={classes.phoneText}>Rafał</Typography>
               <PhoneIcon/>
               <a href="tel:+48661204475">661 204 475</a>

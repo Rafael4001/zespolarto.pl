@@ -30,7 +30,6 @@ const styles = (theme) => ({
     alignItems: 'center',
   },
   link: {
-
     '& a': {
       textDecoration: 'none',
       color: `${COLORS.blue.main}`,
@@ -54,13 +53,14 @@ const styles = (theme) => ({
   phoneContainer: {
     display: 'grid',
     gridGap: '1rem 0',
-    gridTemplateColumns: '1fr 2rem 1fr',
-    // alignItems: 'center',
-    // padding: '0.2rem',
+    gridTemplateColumns: '3.2rem 2rem 1fr',
   },
   phoneText: {
     fontSize: '1rem',
   },
+  marginBottomContainer: {
+    marginBottom: '1rem',
+  }
 });
 
 export default withStyles(styles)(Footer);
