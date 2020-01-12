@@ -3,6 +3,7 @@
 # dependencies
 ./idea/workspace.xml
 .idea/
+ ./out
 .next/
 .node_modules
 .node_modules/
