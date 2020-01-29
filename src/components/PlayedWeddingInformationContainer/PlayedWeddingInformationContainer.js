@@ -24,8 +24,11 @@ class PlayedWeddingInformationContainer extends Component {
               />
             </div>
             <Typography classes={{root: classes.text,}}>
-              <p>Zaufało nam już <span className={classes.happyPairs}>ponad 250 par młodych</span></p>
-              Kilkanaście lat doświadczenia, które zbudowały wiele pozytywnych wspomnień sprawiło, że doskonale wiemy jak poprowadzić Waszą uroczystość,
+              <p>Zaufało nam już <span className={classes.happyPairs}>ponad
+                <span className={classes.happyPairsTextNUmber}> 250 </span>
+                par młodych</span></p>
+              Kilkanaście lat doświadczenia, które zbudowały wiele pozytywnych wspomnień sprawiło, że doskonale wiemy jak poprowadzić Waszą
+              uroczystość,
               tak jak sobie wymarzyliście...
 
               <p> To z Wami ustalamy jak ma wyglądać Wasze wesele...</p>

@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 import PlayerCustomized from './PlayerCustomized'
-import { COLORS, IMAGE_1 } from "../../constants";
+import { COLORS, IMAGE_1, MARGIN_TOP_UNDER_MENU } from "../../constants";
 
 
 const styles = (theme) => (
@@ -8,8 +8,10 @@ const styles = (theme) => (
     mainContainer: {
       display: 'flex',
       flexDirection: 'column',
+      marginTop: MARGIN_TOP_UNDER_MENU,
 
       [theme.breakpoints.up('sm')]: {
+        marginTop: 0,
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         gridGap: '1rem',
@@ -87,7 +89,6 @@ const styles = (theme) => (
       alignItems: 'center',
       border: `solid 1px ${COLORS.grey.dark}`,
       padding: '1rem',
-      boxShadow: `0 0 0.3rem 0.01rem ${COLORS.grey.dark}`
     },
     seekBarContainer: {
       width: '100%',

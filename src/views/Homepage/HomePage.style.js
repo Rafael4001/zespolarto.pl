@@ -2,7 +2,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 import HomePage from './HomePage'
 
-import { COLORS, MAX_PAGE_WIDTH } from "../../constants";
+import { COLORS, MARGIN_TOP_UNDER_MENU, MAX_PAGE_WIDTH } from "../../constants";
 
 
 const styles = (theme) => ({
@@ -18,7 +18,7 @@ const styles = (theme) => ({
   bodyHomepage: {
     display: 'flex',
     flexDirection: 'column',
-    top: '5rem',
+    top: MARGIN_TOP_UNDER_MENU,
     maxWidth: '80rem',
   }
 });

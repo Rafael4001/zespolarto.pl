@@ -25,7 +25,6 @@ const useStyles = makeStyles(theme => ({
     height: '3rem',
     margin: '1rem',
     width: 'auto',
-    border: 'solid 1px black',
     boxShadow: `1px 0 5px 1px rgb(0,0,0,0.2)`,
   },
 }));

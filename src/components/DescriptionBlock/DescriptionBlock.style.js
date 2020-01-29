@@ -13,10 +13,6 @@ const styles = (theme) => ({
     display: 'flex',
     justifyContent: 'center',
   },
-  textContainer: {
-    backgroundColor: '#FFFFFF',
-    fontSize: '2rem',
-  },
   title: {
     fontSize: '4rem',
     fontFamily: 'Parisienne',
@@ -27,7 +23,7 @@ const styles = (theme) => ({
     },
   },
   text: {
-    fontSize: '1rem',
+    fontSize: '1.1rem',
     fontFamily: '\'Baskervville\',serif',
   },
 });

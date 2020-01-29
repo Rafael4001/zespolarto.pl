@@ -24,7 +24,7 @@ const styles = (theme) => ({
     },
   },
   text: {
-    fontSize: '1rem',
+    fontSize: '1.1rem',
     fontFamily: '\'Baskervville\',serif',
   },
   cytat: {
@@ -41,6 +41,10 @@ const styles = (theme) => ({
   happyPairs: {
     fontSize: '1.5rem',
     fontWeight: 700,
+  },
+  happyPairsTextNUmber: {
+    fontSize: '2rem',
+    fontFamily: 'Parisienne',
   }
 });
 

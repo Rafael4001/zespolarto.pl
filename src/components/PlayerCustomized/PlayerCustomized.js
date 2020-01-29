@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import { Media, Player, controls } from 'react-media-player'
 import PlayPause from '../../mp3Player/withMediaProps'
 import TrackContainer from "../TrackContainer";
-import { SONGS_IMAGES } from "../../constants";
+import { MUSIC, SONGS_IMAGES } from "../../constants";
 import VolumeUpIcon from '@material-ui/icons/VolumeUp';
+import AlbumIcon from '@material-ui/icons/Album';
 
 import Image from "../Image";
 import { Typography } from "@material-ui/core";
@@ -72,91 +73,27 @@ const tracks = [
     name: 'Lato 99',
     mp3Name: 'Lato_99',
     artist: 'Naydis',
-    imgSrc: 'Naydis',
+    imgSrc: SONGS_IMAGES.Naydis,
   },
   {
     id: 1,
     name: 'Życie To Są Chwile',
     artist: 'Akcent',
     mp3Name: 'ZycieToSaChwile',
-    imgSrc: 'Akcent',
+    imgSrc: SONGS_IMAGES.Akcent,
   },
   {
     id: 2,
     name: 'Tressure',
     mp3Name: 'Tressure',
-    imgSrc: 'Bruno_Mars',
+    imgSrc: SONGS_IMAGES.Bruno_Mars,
   },
   {
-    // id: 0,
-    name: 'Lato 99',
-    mp3Name: 'Lato_99',
-    artist: 'Naydis',
-    imgSrc: 'Naydis',
-  },
-  {
-    // id: 1,
-    name: 'Życie To Są Chwile',
-    artist: 'Akcent',
-    mp3Name: 'ZycieToSaChwile',
-    imgSrc: 'Akcent',
-  },
-  {
-    // id: 2,
-    name: 'Tressure',
+    id: 3,
+    name: 'BrunoMarsBezFoto',
     mp3Name: 'Tressure',
-    imgSrc: 'Bruno_Mars',
   },
-  {
-    // id: 1,
-    name: 'Życie To Są Chwile',
-    artist: 'Akcent',
-    mp3Name: 'ZycieToSaChwile',
-    imgSrc: 'Akcent',
-  },
-  {
-    // id: 2,
-    name: 'Tressure',
-    mp3Name: 'Tressure',
-    imgSrc: 'Bruno_Mars',
-  },
-  {
-    // id: 1,
-    name: 'Życie To Są Chwile',
-    artist: 'Akcent',
-    mp3Name: 'ZycieToSaChwile',
-    imgSrc: 'Akcent',
-  },
-  {
-    // id: 2,
-    name: 'Tressure',
-    mp3Name: 'Tressure',
-    imgSrc: 'Bruno_Mars',
-  },
-  {
-    // id: 2,
-    name: 'Tressure',
-    mp3Name: 'Tressure',
-    imgSrc: 'Bruno_Mars',
-  },
-  {
-    // id: 2,
-    name: 'Tressure',
-    mp3Name: 'Tressure',
-    imgSrc: 'Bruno_Mars',
-  },
-  {
-    // id: 2,
-    name: 'Tressure',
-    mp3Name: 'Tressure',
-    imgSrc: 'Bruno_Mars',
-  },
-  {
-    // id: 2,
-    name: 'Tressure',
-    mp3Name: 'Tressure',
-    imgSrc: 'Bruno_Mars',
-  },
+
 ];
 
 
@@ -186,7 +123,7 @@ class PlayerCustomized extends Component {
     tracks.map(track => {
       return (
         <TrackContainer
-          key={track.mp3Name}
+          key={track.name}
           track={track}
           actualPlayingTrackMp3Name={this.state.actualPlayingTrackMp3Name}
           onClickPlay={() => {
@@ -196,7 +133,7 @@ class PlayerCustomized extends Component {
                 actualSongName: track.name,
                 autoplay: true,
                 isPlaying: true,
-                actualSongImage: track.imgSrc,
+                actualSongImage: track.imgSrc ? track.imgSrc : SONGS_IMAGES.DefaultSongImage,
               })
             )
           }}
@@ -219,7 +156,7 @@ class PlayerCustomized extends Component {
           <div className={classes.albumImageContainer}>
             <div className={classes.songImageContainer}>
               <Image
-                imgSrc={`${SONGS_IMAGES[this.state.actualSongImage]}`}
+                imgSrc={this.state.actualSongImage}
                 className={classes.actualImage}
               />
             </div>
@@ -230,7 +167,7 @@ class PlayerCustomized extends Component {
             {/*  <div className={classes.volumeText}><VolumeUpIcon/></div>*/}
             {/*  <Volume className={this.props.volume}/>*/}
             {/*</div>*/}
-            <div className={classes.seekBarContainer} >
+            <div className={classes.seekBarContainer}>
               <div className={classes.playerTime}><CurrentTime/>/<Duration/></div>
               <div className={classes.seekBar}><SeekBar style={{width: '100%'}}/></div>
             </div>

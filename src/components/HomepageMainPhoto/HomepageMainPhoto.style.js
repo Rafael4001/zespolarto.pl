@@ -1,6 +1,7 @@
 import { withStyles } from '@material-ui/core/styles';
 
 import HomepageMainPhoto from './HomepageMainPhoto'
+import { MARGIN_TOP_UNDER_MENU } from "../../constants";
 
 
 const styles = (theme) => ({
@@ -11,7 +12,7 @@ const styles = (theme) => ({
     width: '100%',
     alignItems: 'center',
     paddingBottom: '1rem',
-    marginTop: '5rem',
+    marginTop: MARGIN_TOP_UNDER_MENU,
 
     [theme.breakpoints.up('sm')]: {
       gridTemplateColumns: '1fr 1.5fr',

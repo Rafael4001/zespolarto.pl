@@ -31,10 +31,12 @@ class TrackContainer extends Component {
   render() {
     const {classes, track, actualPlayingTrackMp3Name, media} = this.props;
 
+    const trackImage = track.imgSrc ? track.imgSrc : SONGS_IMAGES.DefaultSongImage;
+
     return (
       <div className={classNames(classes.mainContainer, {[classes.activeBackground]: actualPlayingTrackMp3Name === track.name})}>
         <div className={classes.songImage}>
-          <Image imgSrc={`${SONGS_IMAGES[track.imgSrc]}`}/>
+          <Image imgSrc={trackImage}/>
         </div>
         {actualPlayingTrackMp3Name === track.mp3Name && media.isPlaying ?
           (<Button
@@ -53,8 +55,8 @@ class TrackContainer extends Component {
             <PlayCircleFilledIcon className={classes.buttonIcon}/>
           </Button>)
         }
-        {track.name}-
-        {track.artist}
+        {track.name}
+        {track.artist && ` - ${track.artist}`}
       </div>
     )
   }

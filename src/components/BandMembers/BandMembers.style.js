@@ -1,5 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 import BandMembers from './BandMembers'
+import { SCREEN_SIZE } from "../../constants";
 
 
 const styles = (theme)=>({
@@ -8,7 +9,7 @@ const styles = (theme)=>({
     gridTemplateColumns: '1fr',
     padding: '1rem',
 
-    [theme.breakpoints.up(750)]: {
+    [theme.breakpoints.up(SCREEN_SIZE.POINT_750)]: {
       gridTemplateColumns: '1fr 1fr',
     },
   },
@@ -19,7 +20,7 @@ const styles = (theme)=>({
     padding: '1rem',
   },
   text: {
-    fontSize: '1rem',
+    fontSize: '1.1rem',
     fontFamily: '\'Baskervville\',serif',
   },
   quotationContainer: {
