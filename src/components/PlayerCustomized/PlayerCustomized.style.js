@@ -9,6 +9,7 @@ const styles = (theme) => (
       display: 'flex',
       flexDirection: 'column',
       marginTop: MARGIN_TOP_UNDER_MENU,
+      marginBottom: '1rem',
 
       [theme.breakpoints.up('sm')]: {
         marginTop: 0,
