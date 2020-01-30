@@ -11,6 +11,8 @@ import Music from '../static/image/icons/music.svg';
 import Info_Icon from '../static/image/icons/info_icon.svg';
 import facebookPage from '../static/image/icons/facebookPage.svg';
 import lublinMap from '../static/image/WojLubelskie.jpg';
+import videoImage from '../static/image/videoImage.jpeg';
+import photoGallery from '../static/image/photoPhoto.jpeg';
 
 
 import Bruno_Mars from '../static/image/songsImages/Bruno_Mars.jpg';
@@ -40,6 +42,8 @@ export const MUSIC = Music;
 export const INFO_ICON = Info_Icon;
 export const FACEBOOK_PAGE = facebookPage;
 export const LUBLIN_MAP = lublinMap;
+export const VIDEO_IMAGE = videoImage;
+export const PHOTO_GALLERY = photoGallery;
 
 
 export const MAX_PAGE_WIDTH = '80rem';
