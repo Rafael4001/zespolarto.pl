@@ -18,7 +18,7 @@ class FilmPhotoChoice extends Component {
           <img
             src={LEAF}
             alt={'leaf'}
-            className={classes.info_icon}
+            className={classes.leaf_icon}
           />
         </div>
 

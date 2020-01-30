@@ -8,8 +8,14 @@ const radiusCorner = '1.5rem';
 const styles = (theme) => ({
   mediaHeader: {
     display: 'flex',
+    alignItems: 'center',
     justifyContent: 'center',
     padding: '1rem 0 0 0',
+    flexDirection: 'column',
+
+    [theme.breakpoints.up('md')]: {
+      flexDirection: 'row',
+    },
   },
   textHeader: {
     fontSize: '2.5rem',
@@ -49,18 +55,25 @@ const styles = (theme) => ({
     },
   },
   mediaCard: {
-    width: '22rem',
+    width: '18rem',
     height: '25rem',
     border: `solid ${COLORS.grey.dark} 1px`,
     borderRadius: `${radiusCorner} ${radiusCorner} 0 0`,
     fontSize: '2rem',
     textAlign: 'center',
-    margin: '2rem',
+    margin: '2rem 0',
     fontFamily: 'Parisienne',
 
     '&:hover': {
       backgroundColor: `${COLORS.grey.light}`
     },
+
+    [theme.breakpoints.up('sm')]: {
+      width: '22rem',
+      height: '25rem',
+      margin: '2rem',
+    },
+
   },
   photoCard: {
     width: '100%',
@@ -89,10 +102,14 @@ const styles = (theme) => ({
     fontSize: '1rem',
     fontFamily: 'Parisienne',
   },
-  info_icon: {
-    marginLeft: '1rem',
+  leaf_icon: {
     width: '2.3rem',
-    marginRight: '0.3rem',
+    margin: '1rem 0 0 1rem ',
+
+    [theme.breakpoints.up('md')]: {
+      margin: '0 0 0 1rem ',
+    },
+
   },
 });
 

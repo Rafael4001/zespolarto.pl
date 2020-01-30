@@ -11,8 +11,8 @@ const styles = (theme) => ({
     backgroundColor: theme.palette.common.white,
     paddingTop: '6rem',
 
-    [theme.breakpoints.down('xs')]: {
-      paddingTop: 0,
+    [theme.breakpoints.down('sm')]: {
+      paddingTop: '3rem',
     },
   },
   pageWrapperInner: {
