@@ -1,6 +1,7 @@
 import { withStyles } from '@material-ui/core/styles';
 
 import TrackContainer from './TrackContainer'
+import { COLORS } from "../../constants";
 
 
 const styles = {
@@ -9,7 +10,7 @@ const styles = {
     alignItems: 'center',
     margin: '0.1rem',
     padding: '0.1rem',
-    backgroundColor: '#C11616',
+    backgroundColor: `${COLORS.red.medium}`,
     color: "#FFF",
   },
   myButton:{
@@ -25,7 +26,7 @@ const styles = {
     height: '3rem',
   },
   activeBackground:{
-    backgroundColor: '#ab1616',
+    // backgroundColor: 'yellow',  //TODO naprawic tutaj BUGa z odtwarzaczem
   }
 };
 

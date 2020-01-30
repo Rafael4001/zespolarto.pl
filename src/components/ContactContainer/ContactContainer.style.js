@@ -110,9 +110,10 @@ const styles = (theme) => ({
     alignItems: 'center',
   },
   FacebookMainContainer: {
-    margin: '2rem',
+    margin: '2rem 0',
     display: 'flex',
     flexDirection: "column",
+    backgroundColor: `${COLORS.grey.grey_1}`
   },
   FacebookContainer: {
     display: 'flex',

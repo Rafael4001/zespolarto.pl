@@ -57,13 +57,14 @@ export const LINKS= {
   HOME: './',
   DEMO: './demo',
   CONTACT: './contact',
+  MEDIA: './media',
 };
 
 export const MENU_ITEMS = [
   {name: HOME, link: LINKS.HOME},
   {name: DEMO, link: LINKS.DEMO},
   // {name: PHOTO, link: './photo'},
-  // {name: MEDIA, link: './media'},
+  {name: MEDIA, link: LINKS.MEDIA},
   // {name: OFERTA, link: './oferta'},
   // {name: KALENDARZ, link: './kalendarz'},
   {name: KONTAKT, link: LINKS.CONTACT},
@@ -77,6 +78,7 @@ export const COLORS = {
     light: '#F2F2F2',
     medium: '#F5F5F5',
     dark: '#CFCFCF',
+    grey_1: '#91919117',
   },
   red: {
     main: '#b41616',

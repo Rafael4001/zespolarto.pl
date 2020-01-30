@@ -9,10 +9,8 @@ import Footer from "../../components/Footer";
 
 const Contact = (props) => (
   <PageWrapper>
-    <div className={props.classes.bodyHomepage}>
-      <ContactContainer/>
-      <Footer/>
-    </div>
+    <ContactContainer/>
+    <Footer/>
   </PageWrapper>
 );
 

@@ -9,10 +9,8 @@ import Footer from "../../components/Footer/Footer.style";
 
 const Demo = (props) => (
   <PageWrapper>
-    <div className={props.classes.bodyHomepage}>
-      <PlayerCustomized/>
-      <Footer/>
-    </div>
+    <PlayerCustomized/>
+    <Footer/>
   </PageWrapper>
 );
 
