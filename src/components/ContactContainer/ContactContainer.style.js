@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 import ContactContainer from './ContactContainer'
-import { COLORS, MARGIN_TOP_UNDER_MENU } from "../../constants";
+import { COLORS, MARGIN_TOP_UNDER_MENU, SCREEN_SIZE } from "../../constants";
 
 
 const styles = (theme) => ({
@@ -44,6 +44,11 @@ const styles = (theme) => ({
     '&:focus': {
       outline: 'none',
     },
+  },
+  titleTextContactPage: {
+    fontSize: '2.2rem',
+    fontFamily: 'Parisienne',
+    display: 'flex',
   },
   phoneNumberText: {
     fontSize: '1.2rem',
@@ -104,6 +109,84 @@ const styles = (theme) => ({
     display: 'flex',
     alignItems: 'center',
   },
+  FacebookMainContainer: {
+    margin: '2rem',
+    display: 'flex',
+    flexDirection: "column",
+  },
+  FacebookContainer: {
+    display: 'flex',
+    flexDirection: "column",
+    alignItems: 'center',
+  },
+  facebookIcon: {
+    marginTop: '1rem',
+    fontSize: '4rem',
+  },
+  facebookPageIcon: {
+    width: '6rem',
+  },
+  facebookFaceIconContainer: {
+    display: 'grid',
+    gridTemplateColumns: '3fr 1fr',
+    alignItems: 'center',
+    // justifyContent: '3fr 1fr',
+  },
+  lublinMapContainer: {
+    display: 'grid',
+    gridTemplateColumns: '1fr',
+    padding: '1rem',
+
+    [theme.breakpoints.up(SCREEN_SIZE.POINT_750)]: {
+      gridTemplateColumns: '1fr 1fr',
+    },
+  },
+  lublinMap: {
+    width: '100%',
+    padding: '1rem',
+  },
+
+
+
+//  --------------------------
+  mainContainerMap: {
+    display: 'grid',
+    gridTemplateColumns: '1fr',
+    padding: '1rem',
+
+    [theme.breakpoints.up(SCREEN_SIZE.POINT_750)]: {
+      gridTemplateColumns: '1fr 1fr',
+    },
+  },
+  photoMap: {
+    width: '100%',
+    // maxWidth: '30rem',
+  },
+  photoMapContainer: {
+    padding: '1rem',
+  },
+  text: {
+    fontSize: '1.1rem',
+    fontFamily: '\'Baskervville\',serif',
+  },
+  tileContainer: {
+    display: 'flex',
+    alignItems: 'flex-end',
+  },
+  titleLublinMap: {
+    textAlign: 'end',
+    fontSize: '1.5rem',
+    fontFamily: '\'Baskervville\',serif',
+
+
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '2.2rem',
+    },
+
+  },
+
+
 
 });
 
