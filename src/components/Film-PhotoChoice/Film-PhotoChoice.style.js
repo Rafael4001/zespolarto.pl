@@ -3,7 +3,19 @@ import FilmPhotoChoice from './Film-PhotoChoice'
 import { COLORS } from "../../constants";
 
 
+const radiusCorner = '1.5rem';
+
 const styles = (theme) => ({
+  mediaHeader: {
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '1rem 0 0 0',
+  },
+  textHeader: {
+    fontSize: '2.5rem',
+    fontWeight: 300,
+    fontFamily: 'Parisienne',
+  },
   mainContainer: {
     display: 'flex',
     justifyContent: 'center',
@@ -13,9 +25,13 @@ const styles = (theme) => ({
   },
   mediaBookmark: {
     display: 'flex',
-    padding: '2rem 0',
+    padding: '1rem 0',
     justifyContent: 'center',
+    flexDirection: 'column',
 
+    [theme.breakpoints.up('md')]: {
+      flexDirection: 'row',
+    },
   },
   positionRelative: {
     position: 'relative',
@@ -36,7 +52,7 @@ const styles = (theme) => ({
     width: '22rem',
     height: '25rem',
     border: `solid ${COLORS.grey.dark} 1px`,
-    borderRadius: '1.2rem',
+    borderRadius: `${radiusCorner} ${radiusCorner} 0 0`,
     fontSize: '2rem',
     textAlign: 'center',
     margin: '2rem',
@@ -48,7 +64,7 @@ const styles = (theme) => ({
   },
   photoCard: {
     width: '100%',
-    borderRadius: '1.2rem 1.2rem 0 0',
+    borderRadius: `${radiusCorner} ${radiusCorner} 0 0`,
   },
   textContainer: {
     padding: '0.5rem',
@@ -73,7 +89,11 @@ const styles = (theme) => ({
     fontSize: '1rem',
     fontFamily: 'Parisienne',
   },
-
+  info_icon: {
+    marginLeft: '1rem',
+    width: '2.3rem',
+    marginRight: '0.3rem',
+  },
 });
 
 export default withStyles(styles)(FilmPhotoChoice);

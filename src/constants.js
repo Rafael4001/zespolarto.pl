@@ -9,10 +9,11 @@ import Bride from '../static/image/icons/bride.svg';
 import Smile from '../static/image/icons/smile.svg';
 import Music from '../static/image/icons/music.svg';
 import Info_Icon from '../static/image/icons/info_icon.svg';
+import leaf from '../static/image/icons/leaf.svg';
 import facebookPage from '../static/image/icons/facebookPage.svg';
 import lublinMap from '../static/image/WojLubelskie.jpg';
-import videoImage from '../static/image/videoImage.jpeg';
-import photoGallery from '../static/image/photoPhoto.jpeg';
+import galleryCardPhoto from '../static/image/GalleryCardPhoto.jpeg';
+import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
 
 
 import Bruno_Mars from '../static/image/songsImages/Bruno_Mars.jpg';
@@ -40,10 +41,11 @@ export const BRIDE = Bride;
 export const SMILE = Smile;
 export const MUSIC = Music;
 export const INFO_ICON = Info_Icon;
+export const LEAF = leaf;
 export const FACEBOOK_PAGE = facebookPage;
 export const LUBLIN_MAP = lublinMap;
-export const VIDEO_IMAGE = videoImage;
-export const PHOTO_GALLERY = photoGallery;
+export const VIDEO_CARD_IMAGE = videoCardPhoto;
+export const PHOTO_CARD_IMAGE = galleryCardPhoto;
 
 
 export const MAX_PAGE_WIDTH = '80rem';
