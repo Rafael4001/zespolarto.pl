@@ -21,6 +21,7 @@ const styles = (theme) => ({
     fontSize: '2.5rem',
     fontWeight: 300,
     fontFamily: 'Parisienne',
+    textAlign: 'center',
   },
   mainContainer: {
     display: 'flex',
