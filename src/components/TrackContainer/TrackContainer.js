@@ -33,6 +33,8 @@ class TrackContainer extends Component {
 
     const trackImage = track.imgSrc ? track.imgSrc : SONGS_IMAGES.DefaultSongImage;
 
+    console.log('track.name',track.name);
+
     return (
       <div className={classNames(classes.mainContainer, {[classes.activeBackground]: actualPlayingTrackMp3Name === track.name})}>
         <div className={classes.songImage}>

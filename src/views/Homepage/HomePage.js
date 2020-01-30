@@ -14,15 +14,13 @@ import PropTypes from "prop-types";
 
 const Homepage = (props) => (
   <PageWrapper>
-    <div className={props.classes.bodyHomepage}>
-      <HomepageMainPhoto/>
-      <DescriptionBlock/>
-      <BandMembers/>
-      <PlayedWeddingInformationContainer/>
-      {/*<OpinionsContainer/>*/}
-      {/*<ContactContainer/>*/}
-      <Footer/>
-    </div>
+    <HomepageMainPhoto/>
+    <DescriptionBlock/>
+    <BandMembers/>
+    <PlayedWeddingInformationContainer/>
+    {/*<OpinionsContainer/>*/}
+    {/*<ContactContainer/>*/}
+    <Footer/>
   </PageWrapper>
 );
 

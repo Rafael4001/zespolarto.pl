@@ -63,7 +63,7 @@ class ContactContainer extends Component {
         </div>
         <div className={classNames(classes.FacebookMainContainer)}>
           <div className={classNames(classes.FacebookContainer)}>
-            <Typography className={classes.textContactPage}>Chcesz Poznać nas lepiej?</Typography>
+            <Typography className={classes.textContactPage}>Chcesz poznać nas lepiej?</Typography>
             <Typography className={classes.textContactPage}>Zobacz nasz funpage na facebooku</Typography>
             <div className={classes.emailIconContainer}>
               <a target={'_blank'} href={FACEBOOK_URL}>

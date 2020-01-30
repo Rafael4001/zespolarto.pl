@@ -2,20 +2,14 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 import PageWrapper from '../../components/PageWrapper';
-import MenuComponent from "../../components/MenuComponent";
-
+import Footer from "../../components/Footer/Footer.style";
+import FilmPhotoChoice from "../../components/Film-PhotoChoice";
 
 
 const Media = (props) => (
   <PageWrapper>
-    <div className={props.classes.mainContainer}>
-      <div className={props.classes.menuHomepage}>
-        <MenuComponent/>
-      </div>
-      <div className={props.classes.webRightContent}>
-        MEDIA już wkrótce
-      </div>
-    </div>
+    <FilmPhotoChoice/>
+    <Footer/>
   </PageWrapper>
 );
 
@@ -24,6 +18,6 @@ Media.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-Media.displayName = 'Homepage';
+Media.displayName = 'Media';
 
 export default Media;
