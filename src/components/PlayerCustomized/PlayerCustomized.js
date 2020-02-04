@@ -70,29 +70,67 @@ class Panner {
 const tracks = [
   {
     id: 0,
-    name: 'Lato 99',
-    mp3Name: 'Lato_99',
-    artist: 'Naydis',
+    name: 'Do Tanńca Kawałek',
+    mp3Name: 'do_tanca_kawalek',
+    artist: 'Poparzeni kawą trzy',
     imgSrc: SONGS_IMAGES.Naydis,
   },
-  // {
-  //   id: 1,
-  //   name: 'Życie To Są Chwile',
-  //   artist: 'Akcent',
-  //   mp3Name: 'ZycieToSaChwile',
-  //   // imgSrc: SONGS_IMAGES.Akcent,
-  // },
-  // {
-  //   id: 2,
-  //   name: 'Tressure',
-  //   mp3Name: 'Tressure',
-  //   // imgSrc: SONGS_IMAGES.Bruno_Mars,
-  // },
-  // {
-  //   id: 3,
-  //   name: 'BrunoMarsBezFoto',
-  //   mp3Name: 'Tressure',
-  // },
+  {
+    id: 1,
+    name: 'Kici Kici miał',
+    mp3Name: 'kici_kici_mial',
+    artist: 'Marcus',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    id: 2,
+    name: 'Konik na biegunach',
+    mp3Name: 'konik_na_biegunach',
+    artist: 'Urszula',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    id: 3,
+    name: 'Mama ostrzegała',
+    mp3Name: 'mama_ostrzegala',
+    artist: 'Daj to głośniej',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    id: 4,
+    name: 'Miła ma',
+    mp3Name: 'mila_ma',
+    artist: 'Power Play',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    id: 5,
+    name: 'Miłość w Zakopanem',
+    mp3Name: 'milosc_w_zakopanem',
+    artist: 'Sławomir',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    id: 6,
+    name: 'Ona by tak chciała',
+    mp3Name: 'ona_by_tak_chciala',
+    artist: 'Ronnie Ferrari',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    id: 7,
+    name: 'Remedium',
+    mp3Name: 'remedium',
+    artist: 'Maryla Rodowicz',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    id: 8,
+    name: 'Sway',
+    mp3Name: 'sway',
+    artist: 'Michael Buble',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
 
 ];
 

@@ -65730,29 +65730,59 @@ function () {
 
 var tracks = [{
   id: 0,
-  name: 'Lato 99',
-  mp3Name: 'Lato_99',
-  artist: 'Naydis',
+  name: 'Do Tanńca Kawałek',
+  mp3Name: 'do_tanca_kawalek',
+  artist: 'Poparzeni kawą trzy',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_11__["SONGS_IMAGES"].Naydis
-} // {
-//   id: 1,
-//   name: 'Życie To Są Chwile',
-//   artist: 'Akcent',
-//   mp3Name: 'ZycieToSaChwile',
-//   // imgSrc: SONGS_IMAGES.Akcent,
-// },
-// {
-//   id: 2,
-//   name: 'Tressure',
-//   mp3Name: 'Tressure',
-//   // imgSrc: SONGS_IMAGES.Bruno_Mars,
-// },
-// {
-//   id: 3,
-//   name: 'BrunoMarsBezFoto',
-//   mp3Name: 'Tressure',
-// },
-];
+}, {
+  id: 1,
+  name: 'Kici Kici miał',
+  mp3Name: 'kici_kici_mial',
+  artist: 'Marcus' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  id: 2,
+  name: 'Konik na biegunach',
+  mp3Name: 'konik_na_biegunach',
+  artist: 'Urszula' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  id: 3,
+  name: 'Mama ostrzegała',
+  mp3Name: 'mama_ostrzegala',
+  artist: 'Daj to głośniej' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  id: 4,
+  name: 'Miła ma',
+  mp3Name: 'mila_ma',
+  artist: 'Power Play' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  id: 5,
+  name: 'Miłość w Zakopanem',
+  mp3Name: 'milosc_w_zakopanem',
+  artist: 'Sławomir' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  id: 6,
+  name: 'Ona by tak chciała',
+  mp3Name: 'ona_by_tak_chciala',
+  artist: 'Ronnie Ferrari' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  id: 7,
+  name: 'Remedium',
+  mp3Name: 'remedium',
+  artist: 'Maryla Rodowicz' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  id: 8,
+  name: 'Sway',
+  mp3Name: 'sway',
+  artist: 'Michael Buble' // imgSrc: SONGS_IMAGES.Naydis,
+
+}];
 
 var PlayerCustomized =
 /*#__PURE__*/
@@ -65805,7 +65835,7 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 125
+            lineNumber: 163
           },
           __self: this
         });
@@ -65838,28 +65868,28 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 154
+          lineNumber: 192
         },
         __self: this
       }, __jsx("div", {
         className: classes.mainContainer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 155
+          lineNumber: 193
         },
         __self: this
       }, __jsx("div", {
         className: classes.albumImageContainer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156
+          lineNumber: 194
         },
         __self: this
       }, __jsx("div", {
         className: classes.songImageContainer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 195
         },
         __self: this
       }, __jsx(_Image__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -65867,52 +65897,52 @@ function (_Component) {
         className: classes.actualImage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158
+          lineNumber: 196
         },
         __self: this
       })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_15__["Typography"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163
+          lineNumber: 201
         },
         __self: this
       }, this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'), __jsx(_mp3Player_withMediaProps__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 203
         },
         __self: this
       }), __jsx("div", {
         className: classes.seekBarContainer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 208
         },
         __self: this
       }, __jsx("div", {
         className: classes.playerTime,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 209
         },
         __self: this
       }, __jsx(CurrentTime, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 209
         },
         __self: this
       }), "/", __jsx(Duration, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 209
         },
         __self: this
       })), __jsx("div", {
         className: classes.seekBar,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 210
         },
         __self: this
       }, __jsx(SeekBar, {
@@ -65921,14 +65951,14 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 172
+          lineNumber: 210
         },
         __self: this
       }))), __jsx("div", {
         className: classes.actualSongPlayer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 212
         },
         __self: this
       }, __jsx(react_media_player__WEBPACK_IMPORTED_MODULE_8__["Player"], {
@@ -65943,14 +65973,14 @@ function (_Component) {
         onEnded: this.playNextSong,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 213
         },
         __self: this
       }))), __jsx("div", {
         className: classes.trackList,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 187
+          lineNumber: 225
         },
         __self: this
       }, this.trackList())));
