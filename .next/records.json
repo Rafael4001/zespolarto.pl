@@ -1,0 +1,40 @@
+{
+  "modules": {
+    "byIdentifier": {},
+    "usedIds": {}
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/runtime/main.js": 2,
+      "static\\TltAxSnJZs6RuyTf29kYQ\\pages\\_app.js": 3,
+      "static\\TltAxSnJZs6RuyTf29kYQ\\pages\\_error.js": 4,
+      "static\\TltAxSnJZs6RuyTf29kYQ\\pages\\contact.js": 5,
+      "static\\TltAxSnJZs6RuyTf29kYQ\\pages\\demo.js": 6,
+      "static\\TltAxSnJZs6RuyTf29kYQ\\pages\\index.js": 7,
+      "static\\TltAxSnJZs6RuyTf29kYQ\\pages\\media.js": 8,
+      "static\\TltAxSnJZs6RuyTf29kYQ\\pages\\photo.js": 9,
+      "static\\1yDDSWVqqe7PoxgRrXw25\\pages\\_app.js": 10,
+      "static\\1yDDSWVqqe7PoxgRrXw25\\pages\\_error.js": 11,
+      "static\\1yDDSWVqqe7PoxgRrXw25\\pages\\contact.js": 12,
+      "static\\1yDDSWVqqe7PoxgRrXw25\\pages\\demo.js": 13,
+      "static\\1yDDSWVqqe7PoxgRrXw25\\pages\\index.js": 14,
+      "static\\1yDDSWVqqe7PoxgRrXw25\\pages\\media.js": 15,
+      "static\\1yDDSWVqqe7PoxgRrXw25\\pages\\photo.js": 16
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      2
+    ]
+  }
+}

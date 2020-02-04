@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { withStyles } from '@material-ui/core/styles';\nimport Photo from './Photo';\nvar styles = {\n  menuHomepage: {\n    position: 'fixed',\n    top: '0rem',\n    zIndex: 10000,\n    backgroundColor: '#FFF',\n    width: '100%'\n  }\n};\nexport default withStyles(styles)(Photo);","map":null,"metadata":{},"sourceType":"module"}
