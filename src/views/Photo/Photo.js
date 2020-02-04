@@ -6,7 +6,7 @@ import PageWrapper from '../../components/PageWrapper';
 
 const Photo = (props) => (
   <PageWrapper>
-    <div className={props.classes.bodyHomepage}>
+    <div>
       Photo
     </div>
   </PageWrapper>
