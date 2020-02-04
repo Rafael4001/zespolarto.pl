@@ -16,15 +16,11 @@ import galleryCardPhoto from '../static/image/GalleryCardPhoto.jpeg';
 import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
 
 
-import Bruno_Mars from '../static/image/songsImages/Bruno_Mars.jpg';
-import Akcent from '../static/image/lovers_small.png';
 import Naydis from '../static/image/songsImages/Naydis.jpg';
 import DefaultSongImage from '../static/image/songsImages/defaultSongImage.jpg';
 
 
 export const SONGS_IMAGES = {
-  Bruno_Mars: Bruno_Mars,
-  Akcent: Akcent,
   Naydis: Naydis,
   DefaultSongImage: DefaultSongImage,
 };

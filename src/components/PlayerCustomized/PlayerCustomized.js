@@ -75,24 +75,24 @@ const tracks = [
     artist: 'Naydis',
     imgSrc: SONGS_IMAGES.Naydis,
   },
-  {
-    id: 1,
-    name: 'Życie To Są Chwile',
-    artist: 'Akcent',
-    mp3Name: 'ZycieToSaChwile',
-    imgSrc: SONGS_IMAGES.Akcent,
-  },
-  {
-    id: 2,
-    name: 'Tressure',
-    mp3Name: 'Tressure',
-    imgSrc: SONGS_IMAGES.Bruno_Mars,
-  },
-  {
-    id: 3,
-    name: 'BrunoMarsBezFoto',
-    mp3Name: 'Tressure',
-  },
+  // {
+  //   id: 1,
+  //   name: 'Życie To Są Chwile',
+  //   artist: 'Akcent',
+  //   mp3Name: 'ZycieToSaChwile',
+  //   // imgSrc: SONGS_IMAGES.Akcent,
+  // },
+  // {
+  //   id: 2,
+  //   name: 'Tressure',
+  //   mp3Name: 'Tressure',
+  //   // imgSrc: SONGS_IMAGES.Bruno_Mars,
+  // },
+  // {
+  //   id: 3,
+  //   name: 'BrunoMarsBezFoto',
+  //   mp3Name: 'Tressure',
+  // },
 
 ];
 

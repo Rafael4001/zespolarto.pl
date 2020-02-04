@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport PageWrapper from '../../components/PageWrapper';\n\nconst Photo = props => __jsx(PageWrapper, null, __jsx(\"div\", {\n  className: props.classes.bodyHomepage\n}, \"Photo\"));\n\nPhoto.displayName = 'Photo';\nexport default Photo;","map":null,"metadata":{},"sourceType":"module"}

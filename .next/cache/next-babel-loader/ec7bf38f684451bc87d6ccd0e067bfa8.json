@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Demo from '../src/views/Demo';\nexport default Demo;","map":{"version":3,"sources":["C:/IT_projects_Edu-Lab/arto_WWW/www.arto.boo.pl/pages/demo.js"],"names":["Demo"],"mappings":"AAAA,OAAOA,IAAP,MAAiB,mBAAjB;AAEA,eAAeA,IAAf","sourcesContent":["import Demo from '../src/views/Demo';\r\n\r\nexport default Demo;\r\n"]},"metadata":{},"sourceType":"module"}
