@@ -17,12 +17,22 @@ import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
 
 
 import Naydis from '../static/image/songsImages/Naydis.jpg';
+import poparzeniKawaTrzy from '../static/image/songsImages/poparzeniKawaTrzy.jpg';
+import marcus from '../static/image/songsImages/marcus.jpg';
+import powerPLay from '../static/image/songsImages/powerPLay.jpg';
+import urszula from '../static/image/songsImages/urszula.jpg';
+import dajToGlosniej from '../static/image/songsImages/dajToGlosniej.jpg';
 import DefaultSongImage from '../static/image/songsImages/defaultSongImage.jpg';
 
 
 export const SONGS_IMAGES = {
-  Naydis: Naydis,
   DefaultSongImage: DefaultSongImage,
+  dajToGlosniej: dajToGlosniej,
+  marcus: marcus,
+  Naydis: Naydis,
+  powerPLay: powerPLay,
+  poparzeniKawaTrzy: poparzeniKawaTrzy,
+  urszula: urszula,
 };
 
 
@@ -66,7 +76,7 @@ export const MENU_ITEMS = [
   {name: HOME, link: LINKS.HOME},
   {name: DEMO, link: LINKS.DEMO},
   // {name: PHOTO, link: './photo'},
-  {name: MEDIA, link: LINKS.MEDIA},
+  // {name: MEDIA, link: LINKS.MEDIA},
   // {name: OFERTA, link: './oferta'},
   // {name: KALENDARZ, link: './kalendarz'},
   {name: KONTAKT, link: LINKS.CONTACT},

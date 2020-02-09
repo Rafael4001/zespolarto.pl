@@ -6321,7 +6321,7 @@ var defaultTheme = Object(_createMuiTheme__WEBPACK_IMPORTED_MODULE_0__["default"
 /*!************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/index.js ***!
   \************************************************************/
-/*! exports provided: createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, easing, duration, formatMs, isString, isNumber */
+/*! exports provided: hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, easing, duration, formatMs, isString, isNumber, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28056,13 +28056,7 @@ function (_Component) {
           lineNumber: 31
         },
         __self: this
-      }, __jsx("strong", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: this
-      }, "Sk\u0142ad zespo\u0142u:")), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, "Sk\u0142ad zespo\u0142u:"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
         classes: {
           root: classes.text
         },
@@ -28071,7 +28065,13 @@ function (_Component) {
           lineNumber: 32
         },
         __self: this
-      }, "Daria - wokal"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, __jsx("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, "Daria"), " - wokal"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
         classes: {
           root: classes.text
         },
@@ -28080,7 +28080,13 @@ function (_Component) {
           lineNumber: 33
         },
         __self: this
-      }, "Rafa\u0142 - instrumenty klawiszowe, gitara, wokal"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, __jsx("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, "Rafa\u0142"), " - wokal, instrumenty klawiszowe, gitara"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
         classes: {
           root: classes.text
         },
@@ -28089,7 +28095,13 @@ function (_Component) {
           lineNumber: 34
         },
         __self: this
-      }, "Adrian - gitara basowa, wokal"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, __jsx("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, "Adrian"), " - wokal,gitara basowa"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
         classes: {
           root: classes.text
         },
@@ -28098,7 +28110,13 @@ function (_Component) {
           lineNumber: 35
         },
         __self: this
-      }, "Tomek - perkusja"))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }, __jsx("strong", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, "Tomasz"), " - perkusja"))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 38
@@ -28536,7 +28554,7 @@ function (_Component) {
           lineNumber: 90
         },
         __self: this
-      }, "Zesp\xF3l pochodzi z malowniczej miejscowo\u015Bci Webkowice ale mo\u017Cesz nas us\u0142ysze\u0107 w ca\u0142ym wojew\xF3dztwie lubelskim."))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }, "Zesp\xF3l pochodzi z malowniczej miejscowo\u015Bci Werbkowice ale mo\u017Cesz nas us\u0142ysze\u0107 w ca\u0142ym wojew\xF3dztwie lubelskim."))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 96
@@ -28828,10 +28846,8 @@ function (_Component) {
           lineNumber: 16
         },
         __self: this
-      }, "Arto")), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        classes: {
-          root: classes.text
-        },
+      }, "Arto")), __jsx("div", {
+        className: classes.text,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
@@ -28855,16 +28871,10 @@ function (_Component) {
           lineNumber: 23
         },
         __self: this
-      }), "Dysponujemy wysokiej klasy sprz\u0119tem, kt\xF3ry zapewni dobr\u0105 jako\u015B\u0107 d\u017Awi\u0119ku w ka\u017Cdych warunkach.", __jsx("p", {
+      }), "Dysponujemy wysokiej klasy sprz\u0119tem, kt\xF3ry zapewni dobr\u0105 jako\u015B\u0107 d\u017Awi\u0119ku w ka\u017Cdych warunkach.")), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
-        },
-        __self: this
-      }, "Zesp\xF3\u0142 pochodzi z Werbkowic."))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 26
         },
         __self: this
       }));
@@ -29696,7 +29706,8 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_9__["ma
       height: '3rem',
       margin: '1rem',
       width: 'auto',
-      boxShadow: "1px 0 5px 1px rgb(0,0,0,0.2)"
+      boxShadow: "1px 0 5px 1px rgb(0,0,0,0.2)" // borderRadius: '50%',
+
     }
   };
 });
@@ -29711,7 +29722,7 @@ var getMenuItems = function getMenuItems() {
       href: link,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 35
       },
       __self: this
     });
@@ -29762,13 +29773,13 @@ function MenuListComposition() {
     className: classes.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 74
     },
     __self: this
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 75
     },
     __self: this
   }, __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -29779,13 +29790,13 @@ function MenuListComposition() {
     className: classes.buttonBurgerMenu,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 76
     },
     __self: this
   }, __jsx(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_10___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 83
     },
     __self: this
   }))), __jsx(_material_ui_core_Popper__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -29796,7 +29807,7 @@ function MenuListComposition() {
     disablePortal: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 87
     },
     __self: this
   }, function (_ref2) {
@@ -29808,20 +29819,20 @@ function MenuListComposition() {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 89
       },
       __self: this
     }), __jsx(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_6__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92
+        lineNumber: 93
       },
       __self: this
     }, __jsx(_material_ui_core_ClickAwayListener__WEBPACK_IMPORTED_MODULE_4__["default"], {
       onClickAway: handleClose,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93
+        lineNumber: 94
       },
       __self: this
     }, __jsx(_material_ui_core_MenuList__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -29830,7 +29841,7 @@ function MenuListComposition() {
       onKeyDown: handleListKeyDown,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 95
       },
       __self: this
     }, getMenuItems()))));
@@ -30839,8 +30850,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var _static_image_songsImages_Naydis_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../static/image/songsImages/Naydis.jpg */ "./static/image/songsImages/Naydis.jpg");
 /* harmony import */ var _static_image_songsImages_Naydis_jpg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_Naydis_jpg__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../static/image/songsImages/defaultSongImage.jpg */ "./static/image/songsImages/defaultSongImage.jpg");
-/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../static/image/songsImages/poparzeniKawaTrzy.jpg */ "./static/image/songsImages/poparzeniKawaTrzy.jpg");
+/* harmony import */ var _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../static/image/songsImages/marcus.jpg */ "./static/image/songsImages/marcus.jpg");
+/* harmony import */ var _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../static/image/songsImages/powerPLay.jpg */ "./static/image/songsImages/powerPLay.jpg");
+/* harmony import */ var _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../static/image/songsImages/urszula.jpg */ "./static/image/songsImages/urszula.jpg");
+/* harmony import */ var _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../static/image/songsImages/dajToGlosniej.jpg */ "./static/image/songsImages/dajToGlosniej.jpg");
+/* harmony import */ var _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../static/image/songsImages/defaultSongImage.jpg */ "./static/image/songsImages/defaultSongImage.jpg");
+/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22__);
+
+
+
+
+
 
 
 
@@ -30860,8 +30886,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var SONGS_IMAGES = {
+  DefaultSongImage: _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22___default.a,
+  dajToGlosniej: _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_21___default.a,
+  marcus: _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_18___default.a,
   Naydis: _static_image_songsImages_Naydis_jpg__WEBPACK_IMPORTED_MODULE_16___default.a,
-  DefaultSongImage: _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_17___default.a
+  powerPLay: _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_19___default.a,
+  poparzeniKawaTrzy: _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_17___default.a,
+  urszula: _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_20___default.a
 };
 var IMAGE_1 = _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0___default.a;
 var IMAGE_2 = _static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1___default.a;
@@ -30900,10 +30931,8 @@ var MENU_ITEMS = [{
   name: DEMO,
   link: LINKS.DEMO
 }, // {name: PHOTO, link: './photo'},
-{
-  name: MEDIA,
-  link: LINKS.MEDIA
-}, // {name: OFERTA, link: './oferta'},
+// {name: MEDIA, link: LINKS.MEDIA},
+// {name: OFERTA, link: './oferta'},
 // {name: KALENDARZ, link: './kalendarz'},
 {
   name: KONTAKT,
@@ -30994,16 +31023,10 @@ var Homepage = function Homepage(props) {
       lineNumber: 19
     },
     __self: this
-  }), __jsx(_components_PlayedWeddingInformationContainer__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
   }), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }));
@@ -31231,6 +31254,17 @@ module.exports = __webpack_require__.p + "static/image/songsImages/Naydis.jpg";
 
 /***/ }),
 
+/***/ "./static/image/songsImages/dajToGlosniej.jpg":
+/*!****************************************************!*\
+  !*** ./static/image/songsImages/dajToGlosniej.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/dajToGlosniej.jpg";
+
+/***/ }),
+
 /***/ "./static/image/songsImages/defaultSongImage.jpg":
 /*!*******************************************************!*\
   !*** ./static/image/songsImages/defaultSongImage.jpg ***!
@@ -31239,6 +31273,50 @@ module.exports = __webpack_require__.p + "static/image/songsImages/Naydis.jpg";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/image/songsImages/defaultSongImage.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/marcus.jpg":
+/*!*********************************************!*\
+  !*** ./static/image/songsImages/marcus.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/marcus.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/poparzeniKawaTrzy.jpg":
+/*!********************************************************!*\
+  !*** ./static/image/songsImages/poparzeniKawaTrzy.jpg ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/poparzeniKawaTrzy.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/powerPLay.jpg":
+/*!************************************************!*\
+  !*** ./static/image/songsImages/powerPLay.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/powerPLay.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/urszula.jpg":
+/*!**********************************************!*\
+  !*** ./static/image/songsImages/urszula.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/urszula.jpg";
 
 /***/ }),
 
@@ -31253,7 +31331,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!*******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Carto_WWW%5Cwww.arto.boo.pl%5Cpages%5Cindex.js ***!
   \*******************************************************************************************************************************************/
@@ -31276,5 +31354,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

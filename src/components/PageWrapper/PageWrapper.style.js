@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 import PageWrapper from './PageWrapper';
-import { COLORS, MAX_PAGE_WIDTH } from "../../constants";
+import { MAX_PAGE_WIDTH } from "../../constants";
 
 const styles = (theme) => ({
   pageWrapperOuter: {

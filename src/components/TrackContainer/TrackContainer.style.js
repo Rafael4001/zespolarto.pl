@@ -27,6 +27,13 @@ const styles = {
   },
   activeBackground:{
     // backgroundColor: 'yellow',  //TODO naprawic tutaj BUGa z odtwarzaczem
+  },
+  trackName:{
+  fontSize: '1.1rem',
+  },
+  trackArtistText:{
+  fontSize: '0.8rem',
+    color: COLORS.grey.dark
   }
 };
 

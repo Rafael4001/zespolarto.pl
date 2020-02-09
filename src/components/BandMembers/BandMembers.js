@@ -28,11 +28,11 @@ class BandMembers extends Component {
               <Typography classes={{root: classes.author,}}>-Anita Daniel</Typography>
             </div>
             <Divider/>
-            <Typography classes={{root: classes.text,}}><strong>Skład zespołu:</strong></Typography>
-            <Typography classes={{root: classes.text,}}>Daria - wokal</Typography>
-            <Typography classes={{root: classes.text,}}>Rafał - instrumenty klawiszowe, gitara, wokal</Typography>
-            <Typography classes={{root: classes.text,}}>Adrian - gitara basowa, wokal</Typography>
-            <Typography classes={{root: classes.text,}}>Tomek - perkusja</Typography>
+            <Typography classes={{root: classes.text,}}>Skład zespołu:</Typography>
+            <Typography classes={{root: classes.text,}}><strong>Daria</strong> - wokal</Typography>
+            <Typography classes={{root: classes.text,}}><strong>Rafał</strong> - wokal, instrumenty klawiszowe, gitara</Typography>
+            <Typography classes={{root: classes.text,}}><strong>Adrian</strong> - wokal,gitara basowa</Typography>
+            <Typography classes={{root: classes.text,}}><strong>Tomasz</strong> - perkusja</Typography>
           </div>
         </div>
         <Divider/>

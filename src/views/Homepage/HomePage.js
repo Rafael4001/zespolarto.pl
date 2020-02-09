@@ -17,7 +17,8 @@ const Homepage = (props) => (
     <HomepageMainPhoto/>
     <DescriptionBlock/>
     <BandMembers/>
-    <PlayedWeddingInformationContainer/>
+    {/*trzeba sie zastanowic czy dodaj to ponizej*/}
+    {/*<PlayedWeddingInformationContainer/>*/}
     {/*<OpinionsContainer/>*/}
     {/*<ContactContainer/>*/}
     <Footer/>

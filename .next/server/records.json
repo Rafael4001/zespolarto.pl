@@ -7,8 +7,9 @@
       "multi private-next-pages/index.js": 3,
       "multi private-next-pages/media.js": 4,
       "multi private-next-pages/photo.js": 5,
-      "multi next/dist/pages/_app": 6,
-      "multi next/dist/pages/_error": 7
+      "multi private-next-pages/terms.js": 6,
+      "multi next/dist/pages/_app": 7,
+      "multi next/dist/pages/_error": 8
     },
     "usedIds": {
       "0": 0,
@@ -18,38 +19,33 @@
       "4": 4,
       "5": 5,
       "6": 6,
-      "7": 7
+      "7": 7,
+      "8": 8
     }
   },
   "chunks": {
     "byName": {
-      "static\\Xs33i-0MYBbhmUeEbFmeB\\pages\\_app.js": 0,
-      "static\\Xs33i-0MYBbhmUeEbFmeB\\pages\\_document.js": 1,
-      "static\\Xs33i-0MYBbhmUeEbFmeB\\pages\\_error.js": 2,
-      "static\\Xs33i-0MYBbhmUeEbFmeB\\pages\\contact.js": 3,
-      "static\\Xs33i-0MYBbhmUeEbFmeB\\pages\\demo.js": 4,
-      "static\\Xs33i-0MYBbhmUeEbFmeB\\pages\\index.js": 5,
-      "static\\Xs33i-0MYBbhmUeEbFmeB\\pages\\media.js": 6,
-      "static\\Xs33i-0MYBbhmUeEbFmeB\\pages\\photo.js": 7,
-      "static\\kfmYekj0nrMENzJjnBsyh\\pages\\_app.js": 8,
-      "static\\kfmYekj0nrMENzJjnBsyh\\pages\\_document.js": 9,
-      "static\\kfmYekj0nrMENzJjnBsyh\\pages\\_error.js": 10,
-      "static\\kfmYekj0nrMENzJjnBsyh\\pages\\contact.js": 11,
-      "static\\kfmYekj0nrMENzJjnBsyh\\pages\\demo.js": 12,
-      "static\\kfmYekj0nrMENzJjnBsyh\\pages\\index.js": 13,
-      "static\\kfmYekj0nrMENzJjnBsyh\\pages\\media.js": 14,
-      "static\\kfmYekj0nrMENzJjnBsyh\\pages\\photo.js": 15
+      "static\\OMEJ3Aub9Ie1l6ZFtol3A\\pages\\_app.js": 0,
+      "static\\OMEJ3Aub9Ie1l6ZFtol3A\\pages\\_document.js": 1,
+      "static\\OMEJ3Aub9Ie1l6ZFtol3A\\pages\\_error.js": 2,
+      "static\\OMEJ3Aub9Ie1l6ZFtol3A\\pages\\contact.js": 3,
+      "static\\OMEJ3Aub9Ie1l6ZFtol3A\\pages\\demo.js": 4,
+      "static\\OMEJ3Aub9Ie1l6ZFtol3A\\pages\\index.js": 5,
+      "static\\OMEJ3Aub9Ie1l6ZFtol3A\\pages\\media.js": 6,
+      "static\\OMEJ3Aub9Ie1l6ZFtol3A\\pages\\photo.js": 7,
+      "static\\OMEJ3Aub9Ie1l6ZFtol3A\\pages\\terms.js": 8
     },
     "bySource": {},
     "usedIds": [
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      8,
-      9
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   }
 }

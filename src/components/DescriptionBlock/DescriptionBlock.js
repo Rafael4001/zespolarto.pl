@@ -16,13 +16,12 @@ class DescriptionBlock extends Component {
             <Typography classes={{root: classes.title}}>Arto</Typography>
           </div>
 
-          <Typography classes={{root: classes.text}}>
+          <div className={classes.text}>
             <p>To więcej niż zespół muzyczny, to grupa przyjaciół, którzy mają to szczęście łączenia hobby z pracą.</p>
             Arto niesie ze sobą talent, profesjonalizm i brzmienie.<br/>
             Zgrany zespół przypadł do gustu już nie jednej osobie, robiąc to, co lubi, z pasją i precyzją.
             <br/>Dysponujemy wysokiej klasy sprzętem, który zapewni dobrą jakość dźwięku w każdych warunkach.
-            <p>Zespół pochodzi z Werbkowic.</p>
-          </Typography>
+          </div>
         </div>
         <Divider/>
       </div>

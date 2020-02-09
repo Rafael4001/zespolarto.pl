@@ -88,7 +88,7 @@ class ContactContainer extends Component {
               </div>
               <Divider/>
               <Typography classes={{root: classes.text,}}>
-                Zespól pochodzi z malowniczej miejscowości Webkowice
+                Zespól pochodzi z malowniczej miejscowości Werbkowice
                 ale możesz nas usłyszeć w całym województwie lubelskim.
               </Typography>
             </div>

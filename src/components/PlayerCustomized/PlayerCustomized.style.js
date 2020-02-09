@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 import PlayerCustomized from './PlayerCustomized'
-import { COLORS, IMAGE_1, MARGIN_TOP_UNDER_MENU } from "../../constants";
+import { COLORS, } from "../../constants";
 
 
 const styles = (theme) => (
@@ -8,7 +8,7 @@ const styles = (theme) => (
     mainContainer: {
       display: 'flex',
       flexDirection: 'column',
-      marginTop: MARGIN_TOP_UNDER_MENU,
+      marginTop: '1rem',
       marginBottom: '1rem',
 
       [theme.breakpoints.up('sm')]: {
