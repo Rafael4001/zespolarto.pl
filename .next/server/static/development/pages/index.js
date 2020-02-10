@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2144,218 +2144,211 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/terms.js":
+/***/ "./pages/index.js":
 /*!************************!*\
-  !*** ./pages/terms.js ***!
+  !*** ./pages/index.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _src_views_Terms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/views/Terms */ "./src/views/Terms/index.js");
+/* harmony import */ var _src_views_Homepage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/views/Homepage */ "./src/views/Homepage/index.js");
 
-/* harmony default export */ __webpack_exports__["default"] = (_src_views_Terms__WEBPACK_IMPORTED_MODULE_0__["default"]);
+/* harmony default export */ __webpack_exports__["default"] = (_src_views_Homepage__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
-/***/ "./src/components/CustomBodyOfMonth/CustomBodyOfMonth.js":
-/*!***************************************************************!*\
-  !*** ./src/components/CustomBodyOfMonth/CustomBodyOfMonth.js ***!
-  \***************************************************************/
+/***/ "./src/components/BandMembers/BandMembers.js":
+/*!***************************************************!*\
+  !*** ./src/components/BandMembers/BandMembers.js ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Divider */ "@material-ui/core/Divider");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\BandMembers\\BandMembers.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\CustomBodyOfMonth\\CustomBodyOfMonth.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-const STATUS = {
-  BUSY: "busy",
-  EMPTY: "empty",
-  RESERVATION: "reservation",
-  HOLIDAY: "holiday",
-  UNDEFINED: "undefined"
-};
-const empty = STATUS.EMPTY;
-const busy = STATUS.BUSY;
-const holiday = STATUS.HOLIDAY;
 
-class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
-  constructor(...args) {
-    super(...args);
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "state", {
-      showDetails: this.props.showDetails //Tutaj jest do poprawy architektura TODO
-
-    });
-  }
-
+class BandMembers extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
     const {
-      classes,
-      place,
-      status
+      classes
     } = this.props;
-    const classNameMain = classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.main, {
-      [classes.busy]: status === STATUS.BUSY,
-      [classes.holiday]: status === STATUS.HOLIDAY,
-      [classes.emptyContainer]: status === STATUS.EMPTY || STATUS.UNDEFINED
-    });
-
-    const getView = status => {
-      switch (status) {
-        case busy:
-          return __jsx("div", {
-            className: classes.infoBusy,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 39
-            },
-            __self: this
-          }, place);
-
-        case empty:
-          return __jsx("div", {
-            className: classes.infoEmpty,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 41
-            },
-            __self: this
-          }, "BRAK");
-
-        case holiday:
-          return __jsx("div", {
-            className: classes.infoHoliday,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 43
-            },
-            __self: this
-          }, "Wakacje");
-      }
-    };
-
-    function toggleDetails(item) {
-      alert(item);
-      this.setState((state, props) => {
-        return {
-          showDetails: !state.showDetails
-        };
-      });
-    }
-
     return __jsx("div", {
-      className: classNameMain // onClick={() => {
-      //   toggleDetails(this.props.day)
-      // }}
-      ,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 15
       },
       __self: this
     }, __jsx("div", {
-      className: classes.rowContainer,
+      className: this.props.classes.mainContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 16
       },
       __self: this
     }, __jsx("div", {
+      className: classes.photoContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 17
       },
       __self: this
-    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "span",
-      className: classes.day,
+    }, __jsx("img", {
+      src: _constants__WEBPACK_IMPORTED_MODULE_4__["IMAGE_2"],
+      alt: 'photo 1',
+      className: classes.photo,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 18
       },
       __self: this
-    }, this.props.day), this.props.status === busy ? __jsx("div", {
+    })), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 25
       },
       __self: this
-    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "p",
-      className: classes.details,
+    }, __jsx("div", {
+      className: classes.quotationContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 26
       },
       __self: this
-    }, "hotel: ", this.props.hotel), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "p",
-      className: classes.details,
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.quotation
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73
+        lineNumber: 27
       },
       __self: this
-    }, "adres: ", this.props.address)) : __jsx("div", {
+    }, "\"Takt jest muzyk\u0105 duszy.\""), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.author
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78
+        lineNumber: 28
       },
       __self: this
-    }, "WOLNE"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "p",
-      className: classes.details,
+    }, "-Anita Daniel")), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 30
       },
       __self: this
-    }, this.props.description)), __jsx("div", {
+    }), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.text
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82
+        lineNumber: 31
       },
       __self: this
-    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    }, "Sk\u0142ad zespo\u0142u:"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.text
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83
+        lineNumber: 32
       },
       __self: this
-    }, getView(this.props.status)))), this.props.children);
+    }, __jsx("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, "Daria"), " - wokal"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.text
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, __jsx("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, "Rafa\u0142"), " - wokal, instrumenty klawiszowe, gitara"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.text
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, __jsx("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, "Adrian"), " - wokal,gitara basowa"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.text
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, __jsx("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, "Tomasz"), " - perkusja"))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }));
   }
 
 }
 
-CustomBodyOfMonth.defaultProps = {
-  address: '',
-  description: '',
-  hotel: '',
-  place: ''
+BandMembers.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
 };
-CustomBodyOfMonth.displayName = 'CustomBodyOfMonth';
-/* harmony default export */ __webpack_exports__["default"] = (CustomBodyOfMonth);
+BandMembers.defaultProps = {};
+BandMembers.displayName = 'BandMembers';
+/* harmony default export */ __webpack_exports__["default"] = (BandMembers);
 
 /***/ }),
 
-/***/ "./src/components/CustomBodyOfMonth/CustomBodyOfMonth.style.js":
-/*!*********************************************************************!*\
-  !*** ./src/components/CustomBodyOfMonth/CustomBodyOfMonth.style.js ***!
-  \*********************************************************************/
+/***/ "./src/components/BandMembers/BandMembers.style.js":
+/*!*********************************************************!*\
+  !*** ./src/components/BandMembers/BandMembers.style.js ***!
+  \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2363,88 +2356,772 @@ CustomBodyOfMonth.displayName = 'CustomBodyOfMonth';
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CustomBodyOfMonth */ "./src/components/CustomBodyOfMonth/CustomBodyOfMonth.js");
+/* harmony import */ var _BandMembers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BandMembers */ "./src/components/BandMembers/BandMembers.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+
 
 
 
 const styles = theme => ({
-  main: {
-    fontSize: '1.2rem',
-    padding: '0.35rem',
-    border: 'solid #ddd 0.001rem'
-  },
-  number: {
-    color: '#aeaeae',
-    paddingRight: '0.5rem',
-    fontSize: '1.5rem'
-  },
-  day: {
-    paddingLeft: '0.5rem'
-  },
-  busy: {
-    backgroundColor: '#dff0d8',
-    color: '#3c763d'
-  },
-  emptyContainer: {
-    background: 'none'
-  },
-  holiday: {
-    backgroundColor: '#5bc0de',
-    color: 'white'
-  },
-  infoEmpty: {
-    fontSize: '1rem',
-    borderRadius: '0.5rem',
-    padding: '0.2rem 0.4rem',
-    float: 'right',
-    marginRight: '1rem',
-    backgroundColor: '#ff747e'
-  },
-  infoBusy: {
-    fontSize: '1rem',
-    borderRadius: '0.5rem',
-    padding: '0.2rem 0.4rem',
-    float: 'right',
-    marginRight: '1rem',
-    backgroundColor: '#55c7bd',
-    color: 'black'
-  },
-  infoHoliday: {
-    fontSize: '1rem',
-    borderRadius: '0.5rem',
-    padding: '0.2rem 0.4rem',
-    float: 'right',
-    marginRight: '1rem',
-    backgroundColor: 'white',
-    color: 'black'
-  },
-  details: {
-    fontSize: '0.75rem',
-    margin: '0.2rem'
-  },
-  rowContainer: {
+  mainContainer: {
     display: 'grid',
-    gridTemplateColumns: '5fr 1fr',
-    border: '1px solid black'
+    gridTemplateColumns: '1fr',
+    padding: '1rem',
+    [theme.breakpoints.up(_constants__WEBPACK_IMPORTED_MODULE_2__["SCREEN_SIZE"].POINT_750)]: {
+      gridTemplateColumns: '1fr 1fr'
+    }
+  },
+  photo: {
+    width: '100%'
+  },
+  photoContainer: {
+    padding: '1rem'
+  },
+  text: {
+    fontSize: '1.1rem',
+    fontFamily: '\'Baskervville\',serif'
+  },
+  quotationContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end'
+  },
+  quotation: {
+    fontSize: '2.2rem',
+    fontFamily: 'Parisienne'
+  },
+  author: {
+    fontSize: '1rem',
+    fontFamily: 'Parisienne'
   }
 });
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_1__["default"]));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_BandMembers__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
 /***/ }),
 
-/***/ "./src/components/CustomBodyOfMonth/index.js":
-/*!***************************************************!*\
-  !*** ./src/components/CustomBodyOfMonth/index.js ***!
-  \***************************************************/
+/***/ "./src/components/BandMembers/index.js":
+/*!*********************************************!*\
+  !*** ./src/components/BandMembers/index.js ***!
+  \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CustomBodyOfMonth_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CustomBodyOfMonth.style */ "./src/components/CustomBodyOfMonth/CustomBodyOfMonth.style.js");
+/* harmony import */ var _BandMembers_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BandMembers.style */ "./src/components/BandMembers/BandMembers.style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _BandMembers_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
-/* harmony default export */ __webpack_exports__["default"] = (_CustomBodyOfMonth_style__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+
+/***/ }),
+
+/***/ "./src/components/ContactContainer/ContactContainer.js":
+/*!*************************************************************!*\
+  !*** ./src/components/ContactContainer/ContactContainer.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Divider */ "@material-ui/core/Divider");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Facebook */ "@material-ui/icons/Facebook");
+/* harmony import */ var _material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_MailOutline__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/MailOutline */ "@material-ui/icons/MailOutline");
+/* harmony import */ var _material_ui_icons_MailOutline__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MailOutline__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_Phone__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Phone */ "@material-ui/icons/Phone");
+/* harmony import */ var _material_ui_icons_Phone__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Phone__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\ContactContainer\\ContactContainer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+
+
+
+class ContactContainer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    const {
+      classes
+    } = this.props;
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classes.mainContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classes.photoContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, __jsx("img", {
+      src: _constants__WEBPACK_IMPORTED_MODULE_8__["IMAGE_4"],
+      alt: 'Arto_photo_4',
+      className: classes.photo,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    })), __jsx("div", {
+      className: classes.dataContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classes.photoLoversContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, __jsx("img", {
+      src: _constants__WEBPACK_IMPORTED_MODULE_8__["LOVERS"],
+      alt: 'Arto_LOVERS',
+      className: classes.photoLovers,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    })), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.subContainer, classes.textContactPage),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      className: classes.textContactPage,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }, "e-mail"), __jsx("div", {
+      className: classes.emailIconContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: this
+    }, __jsx(_material_ui_icons_MailOutline__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      className: classes.textContactPage,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42
+      },
+      __self: this
+    })), __jsx("a", {
+      href: "mailto:zespolarto@gmail.com?subject = Feedback&body = Message",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44
+      },
+      __self: this
+    }, "zespolarto@gmail.com")), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47
+      },
+      __self: this
+    }), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.subContainer, classes.textContactPage),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      className: classes.textContactPage,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51
+      },
+      __self: this
+    }, "Rafa\u0142"), __jsx(_material_ui_icons_Phone__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      className: classes.PhoneIcon,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }), __jsx("a", {
+      className: classes.phoneNumberText,
+      href: "tel:+48661204475",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }, "661 204 475")), __jsx("div", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.subContainer, classes.textContactPage),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      className: classes.textContactPage,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 56
+      },
+      __self: this
+    }, "Adrian"), __jsx(_material_ui_icons_Phone__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      className: classes.PhoneIcon,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: this
+    }), __jsx("a", {
+      className: classes.phoneNumberText,
+      href: "tel:+48796642598",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58
+      },
+      __self: this
+    }, "796 642 598")))))), __jsx("div", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.FacebookMainContainer),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.FacebookContainer),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      className: classes.textContactPage,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }, "Chcesz pozna\u0107 nas lepiej?"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      className: classes.textContactPage,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: this
+    }, "Zobacz nasz funpage na facebooku"), __jsx("div", {
+      className: classes.emailIconContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 68
+      },
+      __self: this
+    }, __jsx("a", {
+      target: '_blank',
+      href: _constants__WEBPACK_IMPORTED_MODULE_8__["FACEBOOK_URL"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 69
+      },
+      __self: this
+    }, __jsx(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      style: {
+        color: '#3b5998'
+      },
+      className: classes.facebookIcon,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70
+      },
+      __self: this
+    }))))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76
+      },
+      __self: this
+    }, __jsx("div", {
+      className: this.props.classes.mainContainerMap,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classes.photoMapContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    }, __jsx("img", {
+      src: _constants__WEBPACK_IMPORTED_MODULE_8__["LUBLIN_MAP"],
+      alt: 'Lubelskie 1',
+      className: classes.photoMap,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79
+      },
+      __self: this
+    })), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classes.tileContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      classes: {
+        root: classes.titleLublinMap
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87
+      },
+      __self: this
+    }, "Gramy w wojew\xF3dztwie lubelskim")), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89
+      },
+      __self: this
+    }), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      classes: {
+        root: classes.text
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90
+      },
+      __self: this
+    }, "Zesp\xF3l pochodzi z malowniczej miejscowo\u015Bci Werbkowice ale mo\u017Cesz nas us\u0142ysze\u0107 w ca\u0142ym wojew\xF3dztwie lubelskim."))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 96
+      },
+      __self: this
+    })));
+  }
+
+}
+
+ContactContainer.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
+};
+ContactContainer.defaultProps = {};
+ContactContainer.displayName = 'ContactContainer';
+/* harmony default export */ __webpack_exports__["default"] = (ContactContainer);
+
+/***/ }),
+
+/***/ "./src/components/ContactContainer/ContactContainer.style.js":
+/*!*******************************************************************!*\
+  !*** ./src/components/ContactContainer/ContactContainer.style.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ContactContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactContainer */ "./src/components/ContactContainer/ContactContainer.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+
+
+
+
+const styles = theme => ({
+  mainContainer: {
+    '& a': {
+      textDecoration: 'none',
+      color: `#000`
+    },
+    display: 'flex',
+    flexDirection: 'column',
+    marginTop: _constants__WEBPACK_IMPORTED_MODULE_2__["MARGIN_TOP_UNDER_MENU"],
+    [theme.breakpoints.up('sm')]: {
+      marginTop: 0
+    },
+    [theme.breakpoints.up('md')]: {
+      marginTop: 0,
+      display: 'grid',
+      gridGap: '1rem',
+      gridTemplateColumns: '1fr 1fr'
+    }
+  },
+  subContainer: {
+    display: 'grid',
+    gridGap: '1rem 0.5rem',
+    gridTemplateColumns: '3.5rem 1.5rem 1fr',
+    margin: '0.6rem 1rem'
+  },
+  PhoneIcon: {
+    color: '#000'
+  },
+  textContactPage: {
+    fontSize: '1.2rem',
+    fontWeight: 300,
+    fontFamily: '\'Baskervville\',serif',
+    '&:focus': {
+      outline: 'none'
+    }
+  },
+  titleTextContactPage: {
+    fontSize: '2.2rem',
+    fontFamily: 'Parisienne',
+    display: 'flex'
+  },
+  phoneNumberText: {
+    fontSize: '1.2rem',
+    fontWeight: 300,
+    fontFamily: "Poppins",
+    '&:focus': {
+      outline: 'none'
+    }
+  },
+  photoContainer: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'flex',
+      justifyContent: 'center'
+    }
+  },
+  photo: {
+    width: '80%',
+    padding: '0.5rem',
+    border: `solid 1px ${_constants__WEBPACK_IMPORTED_MODULE_2__["COLORS"].grey.dark}`,
+    [theme.breakpoints.up('sm')]: {
+      padding: '1.5rem'
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '90%'
+    }
+  },
+  dataContainer: {
+    display: 'flex',
+    flexDirection: 'column-reverse',
+    [theme.breakpoints.up('sm')]: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      justifyContent: 'flex-end'
+    },
+    [theme.breakpoints.up('md')]: {
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  },
+  photoLoversContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    [theme.breakpoints.up('md')]: {
+      justifyContent: 'flex-end'
+    }
+  },
+  photoLovers: {
+    width: '10rem',
+    padding: '1rem'
+  },
+  emailIconContainer: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  FacebookMainContainer: {
+    margin: '2rem 0',
+    display: 'flex',
+    flexDirection: "column",
+    backgroundColor: `${_constants__WEBPACK_IMPORTED_MODULE_2__["COLORS"].grey.grey_1}`
+  },
+  FacebookContainer: {
+    display: 'flex',
+    flexDirection: "column",
+    alignItems: 'center'
+  },
+  facebookIcon: {
+    marginTop: '1rem',
+    fontSize: '4rem'
+  },
+  facebookPageIcon: {
+    width: '6rem'
+  },
+  facebookFaceIconContainer: {
+    display: 'grid',
+    gridTemplateColumns: '3fr 1fr',
+    alignItems: 'center' // justifyContent: '3fr 1fr',
+
+  },
+  lublinMapContainer: {
+    display: 'grid',
+    gridTemplateColumns: '1fr',
+    padding: '1rem',
+    [theme.breakpoints.up(_constants__WEBPACK_IMPORTED_MODULE_2__["SCREEN_SIZE"].POINT_750)]: {
+      gridTemplateColumns: '1fr 1fr'
+    }
+  },
+  lublinMap: {
+    width: '100%',
+    padding: '1rem'
+  },
+  //  --------------------------
+  mainContainerMap: {
+    display: 'grid',
+    gridTemplateColumns: '1fr',
+    padding: '1rem',
+    [theme.breakpoints.up(_constants__WEBPACK_IMPORTED_MODULE_2__["SCREEN_SIZE"].POINT_750)]: {
+      gridTemplateColumns: '1fr 1fr'
+    }
+  },
+  photoMap: {
+    width: '100%' // maxWidth: '30rem',
+
+  },
+  photoMapContainer: {
+    padding: '1rem'
+  },
+  text: {
+    fontSize: '1.1rem',
+    fontFamily: '\'Baskervville\',serif'
+  },
+  tileContainer: {
+    display: 'flex',
+    alignItems: 'flex-end'
+  },
+  titleLublinMap: {
+    textAlign: 'end',
+    fontSize: '1.5rem',
+    fontFamily: '\'Baskervville\',serif',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '2.2rem'
+    }
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_ContactContainer__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./src/components/ContactContainer/index.js":
+/*!**************************************************!*\
+  !*** ./src/components/ContactContainer/index.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ContactContainer_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactContainer.style */ "./src/components/ContactContainer/ContactContainer.style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _ContactContainer_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/DescriptionBlock/DescriptionBlock.js":
+/*!*************************************************************!*\
+  !*** ./src/components/DescriptionBlock/DescriptionBlock.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Divider */ "@material-ui/core/Divider");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\DescriptionBlock\\DescriptionBlock.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+class DescriptionBlock extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    const {
+      classes
+    } = this.props;
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, __jsx("div", {
+      className: this.props.classes.mainContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, __jsx("div", {
+      className: this.props.classes.titleContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.title
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, "Arto")), __jsx("div", {
+      className: classes.text,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, "To wi\u0119cej ni\u017C zesp\xF3\u0142 muzyczny, to grupa przyjaci\xF3\u0142, kt\xF3rzy maj\u0105 to szcz\u0119\u015Bcie \u0142\u0105czenia hobby z prac\u0105."), "Arto niesie ze sob\u0105 talent, profesjonalizm i brzmienie.", __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }), "Zgrany zesp\xF3\u0142 przypad\u0142 do gustu ju\u017C nie jednej osobie, robi\u0105c to, co lubi, z pasj\u0105 i precyzj\u0105.", __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }), "Dysponujemy wysokiej klasy sprz\u0119tem, kt\xF3ry zapewni dobr\u0105 jako\u015B\u0107 d\u017Awi\u0119ku w ka\u017Cdych warunkach.")), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }));
+  }
+
+}
+
+DescriptionBlock.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
+};
+DescriptionBlock.defaultProps = {};
+DescriptionBlock.displayName = 'DescriptionBlock';
+/* harmony default export */ __webpack_exports__["default"] = (DescriptionBlock);
+
+/***/ }),
+
+/***/ "./src/components/DescriptionBlock/DescriptionBlock.style.js":
+/*!*******************************************************************!*\
+  !*** ./src/components/DescriptionBlock/DescriptionBlock.style.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _DescriptionBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DescriptionBlock */ "./src/components/DescriptionBlock/DescriptionBlock.js");
+
+
+
+const styles = theme => ({
+  mainContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    padding: '1rem 1rem'
+  },
+  titleContainer: {
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  title: {
+    fontSize: '4rem',
+    fontFamily: 'Parisienne',
+    fontWeight: 500,
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '6rem'
+    }
+  },
+  text: {
+    fontSize: '1.1rem',
+    fontFamily: '\'Baskervville\',serif'
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_DescriptionBlock__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./src/components/DescriptionBlock/index.js":
+/*!**************************************************!*\
+  !*** ./src/components/DescriptionBlock/index.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _DescriptionBlock_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DescriptionBlock.style */ "./src/components/DescriptionBlock/DescriptionBlock.style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _DescriptionBlock_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
 
 /***/ }),
 
@@ -2863,6 +3540,248 @@ const styles = theme => ({
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_Footer__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./src/components/Footer/index.js":
+/*!****************************************!*\
+  !*** ./src/components/Footer/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Footer_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.style */ "./src/components/Footer/Footer.style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Footer_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/HomepageMainPhoto/HomepageMainPhoto.js":
+/*!***************************************************************!*\
+  !*** ./src/components/HomepageMainPhoto/HomepageMainPhoto.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Divider */ "@material-ui/core/Divider");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\HomepageMainPhoto\\HomepageMainPhoto.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+class HomepageMainPhoto extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    const {
+      classes
+    } = this.props;
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classes.mainContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, __jsx("div", {
+      className: this.props.classes.textContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      classes: {
+        root: this.props.classes.subTitle
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, "Twoje wesele..."), __jsx("div", {
+      className: classes.loversImageContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, __jsx("img", {
+      src: _constants__WEBPACK_IMPORTED_MODULE_4__["LOVERS"],
+      alt: 'backgroundPhoto',
+      className: classes.loversImageStyle,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    })), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      classes: {
+        root: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.subTitle, classes.subTitleLeft)
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, "Nasza muzyka")), __jsx("div", {
+      className: classes.photoContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, __jsx("img", {
+      src: _constants__WEBPACK_IMPORTED_MODULE_4__["IMAGE_1"],
+      alt: 'backgroundPhoto',
+      className: classes.photo,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }));
+  }
+
+}
+
+HomepageMainPhoto.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
+};
+HomepageMainPhoto.defaultProps = {};
+HomepageMainPhoto.displayName = 'HomepageMainPhoto';
+/* harmony default export */ __webpack_exports__["default"] = (HomepageMainPhoto);
+
+/***/ }),
+
+/***/ "./src/components/HomepageMainPhoto/HomepageMainPhoto.style.js":
+/*!*********************************************************************!*\
+  !*** ./src/components/HomepageMainPhoto/HomepageMainPhoto.style.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _HomepageMainPhoto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomepageMainPhoto */ "./src/components/HomepageMainPhoto/HomepageMainPhoto.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+
+
+
+
+const styles = theme => ({
+  mainContainer: {
+    display: ' grid',
+    gridTemplateColumns: '1fr',
+    width: '100%',
+    alignItems: 'center',
+    paddingBottom: '1rem',
+    marginTop: _constants__WEBPACK_IMPORTED_MODULE_2__["MARGIN_TOP_UNDER_MENU"],
+    [theme.breakpoints.up('sm')]: {
+      gridTemplateColumns: '1fr 1.5fr',
+      marginTop: 0
+    }
+  },
+  logoContainer: {
+    width: '100%',
+    display: ' flex',
+    justifyContent: 'center',
+    flexDirection: 'column'
+  },
+  photoContainer: {
+    zIndex: 10
+  },
+  logo: {
+    position: 'absolute',
+    top: '0.5rem',
+    width: '30rem',
+    zIndex: 20,
+    marginLeft: '15rem'
+  },
+  textContainer: {
+    backgroundColor: '#FFFFFF',
+    padding: '1rem',
+    [theme.breakpoints.down('xs')]: {
+      display: 'none'
+    }
+  },
+  subTitle: {
+    fontSize: '2rem',
+    fontFamily: 'Parisienne',
+    fontWeight: 500,
+    // color: 'radial-gradient(circle at 100px 100px, #5cabff, #000)',
+    [theme.breakpoints.up('md')]: {
+      fontSize: '3rem'
+    }
+  },
+  subTitleLeft: {
+    display: 'flex',
+    justifyContent: 'flex-end'
+  },
+  photo: {
+    width: '100%'
+  },
+  loversImageStyle: {
+    width: '6rem',
+    [theme.breakpoints.up('md')]: {
+      width: '10rem'
+    }
+  },
+  loversImageContainer: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center'
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_HomepageMainPhoto__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./src/components/HomepageMainPhoto/index.js":
+/*!***************************************************!*\
+  !*** ./src/components/HomepageMainPhoto/index.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _HomepageMainPhoto_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomepageMainPhoto.style */ "./src/components/HomepageMainPhoto/HomepageMainPhoto.style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _HomepageMainPhoto_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
 
 /***/ }),
 
@@ -3453,81 +4372,66 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/components/Months/Months.js":
-/*!*****************************************!*\
-  !*** ./src/components/Months/Months.js ***!
-  \*****************************************/
+/***/ "./src/components/OpinionsContainer/OpinionsContainer.js":
+/*!***************************************************************!*\
+  !*** ./src/components/OpinionsContainer/OpinionsContainer.js ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../CustomBodyOfMonth */ "./src/components/CustomBodyOfMonth/index.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__);
-
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\Months\\Months.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\OpinionsContainer\\OpinionsContainer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Months = props => {
-  const {
-    classes,
-    table
-  } = props;
 
-  const getMonthsDays = days => days.map(day => __jsx(_CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    key: day.day
-  }, day, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  })));
+class OpinionsContainer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    const {
+      classes
+    } = this.props;
+    return __jsx("div", {
+      className: this.props.classes.mainContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: this.props.classes.text
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, "Opinie ju\u017C wkr\xF3tce"));
+  }
 
-  const getMonths = months => months.map(month => __jsx("li", {
-    key: month.id,
-    className: classes.dayContainer,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
-    className: classes.monthName,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }, month.name), getMonthsDays(month.days)));
+}
 
-  return __jsx("ul", {
-    className: classes.monthContainer,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: undefined
-  }, getMonths(table));
+OpinionsContainer.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
 };
-
-Months.defaultProps = {};
-Months.displayName = 'Months';
-/* harmony default export */ __webpack_exports__["default"] = (Months);
+OpinionsContainer.defaultProps = {};
+OpinionsContainer.displayName = 'OpinionsContainer';
+/* harmony default export */ __webpack_exports__["default"] = (OpinionsContainer);
 
 /***/ }),
 
-/***/ "./src/components/Months/Months.style.js":
-/*!***********************************************!*\
-  !*** ./src/components/Months/Months.style.js ***!
-  \***********************************************/
+/***/ "./src/components/OpinionsContainer/OpinionsContainer.style.js":
+/*!*********************************************************************!*\
+  !*** ./src/components/OpinionsContainer/OpinionsContainer.style.js ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3535,43 +4439,27 @@ Months.displayName = 'Months';
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Months__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Months */ "./src/components/Months/Months.js");
+/* harmony import */ var _OpinionsContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OpinionsContainer */ "./src/components/OpinionsContainer/OpinionsContainer.js");
 
 
-const styles = {
-  // '&:li': {
-  //   textDecoration: 'none',
-  monthName: {
-    color: 'red',
-    fontSize: '2rem',
-    border: '1px solid black'
-  },
-  monthContainer: {
-    margin: 0,
-    textDecoration: 'none',
-    padding: 0
-  },
-  dayContainer: {
-    margin: 0,
-    textDecoration: 'none'
-  }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_Months__WEBPACK_IMPORTED_MODULE_1__["default"]));
+const styles = {};
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_OpinionsContainer__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
 /***/ }),
 
-/***/ "./src/components/Months/index.js":
-/*!****************************************!*\
-  !*** ./src/components/Months/index.js ***!
-  \****************************************/
+/***/ "./src/components/OpinionsContainer/index.js":
+/*!***************************************************!*\
+  !*** ./src/components/OpinionsContainer/index.js ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Months_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Months.style */ "./src/components/Months/Months.style.js");
+/* harmony import */ var _OpinionsContainer_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OpinionsContainer.style */ "./src/components/OpinionsContainer/OpinionsContainer.style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _OpinionsContainer_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
-/* harmony default export */ __webpack_exports__["default"] = (_Months_style__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
 
 /***/ }),
 
@@ -3697,6 +4585,228 @@ const styles = theme => ({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PageWrapper_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PageWrapper.style */ "./src/components/PageWrapper/PageWrapper.style.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _PageWrapper_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/PlayedWeddingInformationContainer/PlayedWeddingInformationContainer.js":
+/*!***********************************************************************************************!*\
+  !*** ./src/components/PlayedWeddingInformationContainer/PlayedWeddingInformationContainer.js ***!
+  \***********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Divider */ "@material-ui/core/Divider");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\PlayedWeddingInformationContainer\\PlayedWeddingInformationContainer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+class PlayedWeddingInformationContainer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    const {
+      classes
+    } = this.props;
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, __jsx("div", {
+      className: this.props.classes.mainContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, __jsx("div", {
+      className: this.props.classes.iconContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, __jsx("img", {
+      src: _constants__WEBPACK_IMPORTED_MODULE_3__["SMILE"],
+      alt: 'Bride',
+      className: classes.brideIcon,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    })), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.text
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, "Zaufa\u0142o nam ju\u017C ", __jsx("span", {
+      className: classes.happyPairs,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, "ponad", __jsx("span", {
+      className: classes.happyPairsTextNUmber,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, " 250 "), "par m\u0142odych")), "Kilkana\u015Bcie lat do\u015Bwiadczenia, kt\xF3re zbudowa\u0142y wiele pozytywnych wspomnie\u0144 sprawi\u0142o, \u017Ce doskonale wiemy jak poprowadzi\u0107 Wasz\u0105 uroczysto\u015B\u0107, tak jak sobie wymarzyli\u015Bcie...", __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, " To z Wami ustalamy jak ma wygl\u0105da\u0107 Wasze wesele..."), __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, " To dla Was gramy..."))), __jsx("div", {
+      className: classes.photoContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, __jsx("img", {
+      src: _constants__WEBPACK_IMPORTED_MODULE_3__["IMAGE_3"],
+      alt: 'photo 1',
+      className: classes.photo,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }));
+  }
+
+}
+
+PlayedWeddingInformationContainer.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
+};
+PlayedWeddingInformationContainer.defaultProps = {};
+PlayedWeddingInformationContainer.displayName = 'PlayedWeddingInformationContainer';
+/* harmony default export */ __webpack_exports__["default"] = (PlayedWeddingInformationContainer);
+
+/***/ }),
+
+/***/ "./src/components/PlayedWeddingInformationContainer/PlayedWeddingInformationContainer.style.js":
+/*!*****************************************************************************************************!*\
+  !*** ./src/components/PlayedWeddingInformationContainer/PlayedWeddingInformationContainer.style.js ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _PlayedWeddingInformationContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PlayedWeddingInformationContainer */ "./src/components/PlayedWeddingInformationContainer/PlayedWeddingInformationContainer.js");
+
+
+
+const styles = theme => ({
+  mainContainer: {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    padding: '1rem',
+    [theme.breakpoints.down('sm')]: {
+      gridTemplateColumns: '1fr'
+    }
+  },
+  photo: {
+    width: '100%',
+    height: '100%'
+  },
+  photoContainer: {
+    padding: '1rem',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  },
+  text: {
+    fontSize: '1.1rem',
+    fontFamily: '\'Baskervville\',serif'
+  },
+  cytat: {
+    fontSize: '1rem',
+    fontFamily: '\'Courgette\', cursive'
+  },
+  brideIcon: {
+    width: '5rem'
+  },
+  iconContainer: {
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  happyPairs: {
+    fontSize: '1.5rem',
+    fontWeight: 700
+  },
+  happyPairsTextNUmber: {
+    fontSize: '2rem',
+    fontFamily: 'Parisienne'
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_PlayedWeddingInformationContainer__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./src/components/PlayedWeddingInformationContainer/index.js":
+/*!*******************************************************************!*\
+  !*** ./src/components/PlayedWeddingInformationContainer/index.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PlayedWeddingInformationContainer_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PlayedWeddingInformationContainer.style */ "./src/components/PlayedWeddingInformationContainer/PlayedWeddingInformationContainer.style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _PlayedWeddingInformationContainer_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 
 
@@ -3886,21 +4996,10 @@ const SCREEN_SIZE = {
 
 /***/ }),
 
-/***/ "./src/termsJSON/terminy2020.json":
+/***/ "./src/views/Homepage/HomePage.js":
 /*!****************************************!*\
-  !*** ./src/termsJSON/terminy2020.json ***!
+  !*** ./src/views/Homepage/HomePage.js ***!
   \****************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[{\"id\":1,\"name\":\"Styczeń\",\"days\":[{\"id\":1,\"day\":\"04.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":2,\"day\":\"11.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":3,\"day\":\"18.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":4,\"day\":\"25.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"id\":2,\"name\":\"Luty\",\"days\":[{\"id\":1,\"day\":\"01.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":2,\"day\":\"08.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":3,\"day\":\"15.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":4,\"day\":\"22.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":5,\"day\":\"29.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"id\":3,\"name\":\"Marzec\",\"days\":[{\"id\":1,\"day\":\"07.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":2,\"day\":\"14.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":3,\"day\":\"21.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":4,\"day\":\"28.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"id\":4,\"name\":\"Kwiecień\",\"days\":[{\"id\":1,\"day\":\"04.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":2,\"day\":\"11.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":3,\"day\":\"18.04.2020\",\"free\":true,\"place\":\"Tyszowce\",\"hotel\":\"Orfeusz\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\"},{\"id\":4,\"day\":\"25.04.2020\",\"free\":true,\"place\":\"Zamość\",\"hotel\":\"Hotel Koronny\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"Zamość\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"16.00\"}]},{\"id\":5,\"name\":\"Maj\",\"days\":[{\"id\":0,\"day\":\"01.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"id\":1,\"day\":\"02.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"id\":25,\"day\":\"03.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"id\":2,\"day\":\"09.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":3,\"day\":\"16.05.2020\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"address\":\"ul. kolejowa\",\"status\":\"busy\"},{\"id\":4,\"day\":\"23.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":5,\"day\":\"30.05.2020\",\"free\":false,\"place\":\"Krasnobród\",\"hotel\":\"Karczma Zacisze\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"}]},{\"id\":6,\"name\":\"Czerwiec\",\"days\":[{\"id\":1,\"day\":\"06.06.2020\",\"free\":false,\"place\":\"Bogucin\",\"hotel\":\"Dwór Bogucin\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"id\":2,\"day\":\"11.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":3,\"day\":\"13.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":4,\"day\":\"20.06.2020\",\"free\":false,\"place\":\"Rozłopy (kolo Szczebrzeszyna)\",\"hotel\":\"Kamienny Zajazd\",\"address\":\"ul. Rozłopy 20\",\"status\":\"busy\"},{\"id\":5,\"day\":\"27.06.2020\",\"free\":false,\"place\":\"Chełm\",\"hotel\":\"Dom weselny JAMBA\",\"address\":\"\",\"status\":\"busy\"}]},{\"id\":7,\"name\":\"Lipiec\",\"days\":[{\"id\":1,\"day\":\"04.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":2,\"day\":\"11.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":3,\"day\":\"18.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":4,\"day\":\"25.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"}]},{\"id\":8,\"name\":\"Sierpien\",\"days\":[{\"id\":1,\"day\":\"01.08.2020\",\"free\":false,\"place\":\"Różaniec Pierwszy\",\"hotel\":\"Zajazd \\\"Gospoda\\\" \",\"address\":\"Różaniec Pierwszy 99A\"},{\"id\":2,\"day\":\"08.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":3,\"day\":\"15.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":4,\"day\":\"22.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":4,\"day\":\"29.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"}]},{\"id\":9,\"name\":\"Wrzesień\",\"days\":[{\"id\":1,\"day\":\"05.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":2,\"day\":\"12.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":3,\"day\":\"19.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":4,\"day\":\"26.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"}]},{\"id\":10,\"name\":\"Październik\",\"days\":[{\"id\":1,\"day\":\"03.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":2,\"day\":\"10.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":3,\"day\":\"17.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":4,\"day\":\"24.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":5,\"day\":\"31.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"}]},{\"id\":11,\"name\":\"Listopad\",\"days\":[{\"id\":1,\"day\":\"07.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":2,\"day\":\"14.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":3,\"day\":\"21.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":4,\"day\":\"28.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":5,\"day\":\"31.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"}]},{\"id\":12,\"name\":\"Grudzień\",\"days\":[{\"id\":1,\"day\":\"05.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":2,\"day\":\"12.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":3,\"day\":\"19.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"id\":4,\"day\":\"26.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"}]}]");
-
-/***/ }),
-
-/***/ "./src/views/Terms/Terms.js":
-/*!**********************************!*\
-  !*** ./src/views/Terms/Terms.js ***!
-  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3908,16 +5007,17 @@ module.exports = JSON.parse("[{\"id\":1,\"name\":\"Styczeń\",\"days\":[{\"id\":
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../termsJSON/terminy2020 */ "./src/termsJSON/terminy2020.json");
-var _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../termsJSON/terminy2020 */ "./src/termsJSON/terminy2020.json", 1);
-/* harmony import */ var _components_Months__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Months */ "./src/components/Months/index.js");
-/* harmony import */ var _components_PageWrapper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/PageWrapper */ "./src/components/PageWrapper/index.js");
-/* harmony import */ var _components_Footer_Footer_style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/Footer/Footer.style */ "./src/components/Footer/Footer.style.js");
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\views\\Terms\\Terms.js";
+/* harmony import */ var _components_PageWrapper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/PageWrapper */ "./src/components/PageWrapper/index.js");
+/* harmony import */ var _components_HomepageMainPhoto__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/HomepageMainPhoto */ "./src/components/HomepageMainPhoto/index.js");
+/* harmony import */ var _components_DescriptionBlock__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/DescriptionBlock */ "./src/components/DescriptionBlock/index.js");
+/* harmony import */ var _components_BandMembers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/BandMembers */ "./src/components/BandMembers/index.js");
+/* harmony import */ var _components_PlayedWeddingInformationContainer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/PlayedWeddingInformationContainer */ "./src/components/PlayedWeddingInformationContainer/index.js");
+/* harmony import */ var _components_OpinionsContainer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/OpinionsContainer */ "./src/components/OpinionsContainer/index.js");
+/* harmony import */ var _components_ContactContainer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/ContactContainer */ "./src/components/ContactContainer/index.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/Footer */ "./src/components/Footer/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\views\\Homepage\\HomePage.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -3926,43 +5026,54 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const YEAR_TITLE = "2020";
 
-const Terms = props => __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
-}, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  type: 'h2',
+
+
+
+const Homepage = props => __jsx(_components_PageWrapper__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 16
   },
   __self: undefined
-}, "Rok ", YEAR_TITLE), __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  table: _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_3__,
-  year: YEAR_TITLE,
+}, __jsx(_components_HomepageMainPhoto__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 17
   },
   __self: undefined
+}), __jsx(_components_DescriptionBlock__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 18
+  },
+  __self: undefined
+}), __jsx(_components_BandMembers__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 19
+  },
+  __self: undefined
+}), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 24
+  },
+  __self: undefined
 }));
 
-Terms.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
+Homepage.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.object.isRequired
 };
-Terms.displayName = 'Terms';
-/* harmony default export */ __webpack_exports__["default"] = (Terms);
+Homepage.displayName = 'Homepage';
+/* harmony default export */ __webpack_exports__["default"] = (Homepage);
 
 /***/ }),
 
-/***/ "./src/views/Terms/Terms.style.js":
-/*!****************************************!*\
-  !*** ./src/views/Terms/Terms.style.js ***!
-  \****************************************/
+/***/ "./src/views/Homepage/HomePage.style.js":
+/*!**********************************************!*\
+  !*** ./src/views/Homepage/HomePage.style.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3970,27 +5081,27 @@ Terms.displayName = 'Terms';
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Terms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Terms */ "./src/views/Terms/Terms.js");
+/* harmony import */ var _HomePage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomePage */ "./src/views/Homepage/HomePage.js");
 
 
 
 const styles = theme => ({});
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_Terms__WEBPACK_IMPORTED_MODULE_1__["default"]));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_HomePage__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
 /***/ }),
 
-/***/ "./src/views/Terms/index.js":
-/*!**********************************!*\
-  !*** ./src/views/Terms/index.js ***!
-  \**********************************/
+/***/ "./src/views/Homepage/index.js":
+/*!*************************************!*\
+  !*** ./src/views/Homepage/index.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Terms_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Terms.style */ "./src/views/Terms/Terms.style.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Terms_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+/* harmony import */ var _HomePage_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomePage.style */ "./src/views/Homepage/HomePage.style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _HomePage_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 
 
@@ -4249,26 +5360,15 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
-  !*** multi ./pages/terms.js ***!
+  !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\IT_projects_Edu-Lab\arto_WWW\www.arto.boo.pl\pages\terms.js */"./pages/terms.js");
+module.exports = __webpack_require__(/*! C:\IT_projects_Edu-Lab\arto_WWW\www.arto.boo.pl\pages\index.js */"./pages/index.js");
 
-
-/***/ }),
-
-/***/ "@material-ui/core":
-/*!************************************!*\
-  !*** external "@material-ui/core" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core");
 
 /***/ }),
 
@@ -4291,6 +5391,17 @@ module.exports = require("@material-ui/core/Button");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/ClickAwayListener");
+
+/***/ }),
+
+/***/ "@material-ui/core/Divider":
+/*!********************************************!*\
+  !*** external "@material-ui/core/Divider" ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Divider");
 
 /***/ }),
 
@@ -4548,4 +5659,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=terms.js.map
+//# sourceMappingURL=index.js.map

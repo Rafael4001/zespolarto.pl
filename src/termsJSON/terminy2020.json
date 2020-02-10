@@ -214,7 +214,8 @@
         "day": "23.05.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 5,
@@ -237,23 +238,30 @@
       {
         "id": 1,
         "day": "06.06.2020",
-        "free": true,
-        "place": "",
-        "hotel": ""
+        "free": false,
+        "place": "Bogucin",
+        "hotel": "Dwór Bogucin",
+        "weekDay": 6,
+        "status": "busy",
+        "blessing": "noInfo",
+        "blessingTime": "noInfo",
+        "weddingHour": "noInfo"
       },
       {
         "id": 2,
         "day": "11.06.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 3,
         "day": "13.06.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 4,
@@ -261,14 +269,17 @@
         "free": false,
         "place": "Rozłopy (kolo Szczebrzeszyna)",
         "hotel": "Kamienny Zajazd",
-        "address": "ul. Rozłopy 20"
+        "address": "ul. Rozłopy 20",
+        "status": "busy"
       },
       {
         "id": 5,
         "day": "27.06.2020",
-        "free": true,
-        "place": "",
-        "hotel": ""
+        "free": false,
+        "place": "Chełm",
+        "hotel": "Dom weselny JAMBA",
+        "address": "",
+        "status": "busy"
       }
     ]
   },
