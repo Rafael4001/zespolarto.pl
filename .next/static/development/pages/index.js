@@ -30466,11 +30466,13 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_9__["ma
 var getMenuItems = function getMenuItems() {
   return _constants__WEBPACK_IMPORTED_MODULE_11__["MENU_ITEMS"].map(function (_ref) {
     var name = _ref.name,
-        link = _ref.link;
+        link = _ref.link,
+        as = _ref.as;
     return __jsx(_MenuItem_MenuItem_style__WEBPACK_IMPORTED_MODULE_12__["default"], {
       key: name,
       title: name,
       href: link,
+      as: as,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 35
@@ -30679,11 +30681,13 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "getMenuItems", function () {
       return _constants__WEBPACK_IMPORTED_MODULE_10__["MENU_ITEMS"].map(function (_ref) {
         var name = _ref.name,
-            link = _ref.link;
+            link = _ref.link,
+            as = _ref.as;
         return __jsx(_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
           key: name,
           title: name,
           href: link,
+          as: as,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 14
@@ -30944,9 +30948,11 @@ function (_Component) {
           classes = _this$props.classes,
           title = _this$props.title,
           href = _this$props.href,
-          onClick = _this$props.onClick;
+          onClick = _this$props.onClick,
+          as = _this$props.as;
       return __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: href,
+        as: as,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 12
@@ -31670,24 +31676,43 @@ var OFERTA = 'Oferta';
 var KONTAKT = 'Kontakt';
 var KALENDARZ = 'Kalendarz';
 var LINKS = {
-  HOME: './',
-  DEMO: './demo',
-  CONTACT: './contact',
-  MEDIA: './media'
+  HOME: {
+    HREF: './',
+    AS: './'
+  },
+  DEMO: {
+    HREF: './demo',
+    AS: './demo'
+  },
+  CONTACT: {
+    HREF: './contact',
+    AS: './contact'
+  },
+  MEDIA: {
+    HREF: './media',
+    AS: './media'
+  },
+  TERMS: {
+    HREF: './terminy',
+    AS: './terminy'
+  }
 };
 var MENU_ITEMS = [{
   name: HOME,
-  link: LINKS.HOME
+  link: LINKS.HOME.HREF,
+  as: LINKS.HOME.AS
 }, {
   name: DEMO,
-  link: LINKS.DEMO
+  link: LINKS.DEMO.HREF,
+  as: LINKS.DEMO.AS
 }, // {name: PHOTO, link: './photo'},
 // {name: MEDIA, link: LINKS.MEDIA},
 // {name: OFERTA, link: './oferta'},
 // {name: KALENDARZ, link: './kalendarz'},
 {
   name: KONTAKT,
-  link: LINKS.CONTACT
+  link: LINKS.CONTACT.HREF,
+  as: LINKS.CONTACT.AS
 }];
 var MENU_ITEM_WIDTH = 20;
 var COLORS = {
@@ -32082,7 +32107,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Carto_WWW%5Cwww.arto.boo.pl%5Cpages%5Cindex.js ***!
   \*******************************************************************************************************************************************/
@@ -32105,5 +32130,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

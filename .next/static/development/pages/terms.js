@@ -32420,7 +32420,7 @@ var yellow = {
 /*!*****************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/index.js ***!
   \*****************************************************/
-/*! exports provided: colors, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, easing, duration, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider, AppBar, Avatar, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, styleFunction, Breadcrumbs, Button, ButtonBase, ButtonGroup, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, ExpansionPanelSummary, Fab, Fade, FilledInput, FormControl, useFormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, Grid, GridList, GridListTile, GridListTileBar, Grow, Hidden, Icon, IconButton, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Paper, Popover, Popper, Portal, Radio, RadioGroup, useRadioGroup, RootRef, Select, Slide, Slider, Snackbar, SnackbarContent, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper, SvgIcon, SwipeableDrawer, Switch, Tab, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, Toolbar, Tooltip, Typography, useMediaQuery, useScrollTrigger, withMobileDialog, withWidth, Zoom, isWidthUp, isWidthDown */
+/*! exports provided: colors, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, easing, duration, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider, AppBar, Avatar, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, ExpansionPanelSummary, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, Grid, GridList, GridListTile, GridListTileBar, Grow, Hidden, Icon, IconButton, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, NativeSelect, NoSsr, OutlinedInput, Paper, Popover, Popper, Portal, Radio, RadioGroup, RootRef, Select, Slide, Slider, Snackbar, SnackbarContent, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper, SvgIcon, SwipeableDrawer, Switch, Tab, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, Toolbar, Tooltip, Typography, useMediaQuery, useScrollTrigger, withMobileDialog, withWidth, Zoom, styleFunction, useFormControl, ModalManager, useRadioGroup, isWidthUp, isWidthDown */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43323,7 +43323,7 @@ var grid = Object(_compose__WEBPACK_IMPORTED_MODULE_1__["default"])(gridGap, gri
 /*!*******************************************************!*\
   !*** ./node_modules/@material-ui/system/esm/index.js ***!
   \*******************************************************/
-/*! exports provided: borders, border, borderTop, borderRight, borderBottom, borderLeft, borderColor, borderRadius, breakpoints, compose, css, display, flexbox, flexBasis, flexDirection, flexWrap, justifyContent, alignItems, alignContent, order, flex, flexGrow, flexShrink, alignSelf, justifyItems, justifySelf, grid, gridGap, gridColumnGap, gridRowGap, gridColumn, gridRow, gridAutoFlow, gridAutoColumns, gridAutoRows, gridTemplateColumns, gridTemplateRows, gridTemplateAreas, gridArea, palette, color, bgcolor, positions, position, zIndex, top, right, bottom, left, shadows, sizing, width, maxWidth, minWidth, height, maxHeight, minHeight, sizeWidth, sizeHeight, spacing, style, typography, fontFamily, fontSize, fontStyle, fontWeight, letterSpacing, lineHeight, textAlign */
+/*! exports provided: borders, breakpoints, compose, css, display, flexbox, grid, palette, positions, shadows, sizing, spacing, style, typography, border, borderTop, borderRight, borderBottom, borderLeft, borderColor, borderRadius, flexBasis, flexDirection, flexWrap, justifyContent, alignItems, alignContent, order, flex, flexGrow, flexShrink, alignSelf, justifyItems, justifySelf, gridGap, gridColumnGap, gridRowGap, gridColumn, gridRow, gridAutoFlow, gridAutoColumns, gridAutoRows, gridTemplateColumns, gridTemplateRows, gridTemplateAreas, gridArea, color, bgcolor, position, zIndex, top, right, bottom, left, width, maxWidth, minWidth, height, maxHeight, minHeight, sizeWidth, sizeHeight, fontFamily, fontSize, fontStyle, fontWeight, letterSpacing, lineHeight, textAlign */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60810,11 +60810,13 @@ var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_9__["ma
 var getMenuItems = function getMenuItems() {
   return _constants__WEBPACK_IMPORTED_MODULE_11__["MENU_ITEMS"].map(function (_ref) {
     var name = _ref.name,
-        link = _ref.link;
+        link = _ref.link,
+        as = _ref.as;
     return __jsx(_MenuItem_MenuItem_style__WEBPACK_IMPORTED_MODULE_12__["default"], {
       key: name,
       title: name,
       href: link,
+      as: as,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 35
@@ -61023,11 +61025,13 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "getMenuItems", function () {
       return _constants__WEBPACK_IMPORTED_MODULE_10__["MENU_ITEMS"].map(function (_ref) {
         var name = _ref.name,
-            link = _ref.link;
+            link = _ref.link,
+            as = _ref.as;
         return __jsx(_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
           key: name,
           title: name,
           href: link,
+          as: as,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 14
@@ -61288,9 +61292,11 @@ function (_Component) {
           classes = _this$props.classes,
           title = _this$props.title,
           href = _this$props.href,
-          onClick = _this$props.onClick;
+          onClick = _this$props.onClick,
+          as = _this$props.as;
       return __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
         href: href,
+        as: as,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 12
@@ -61786,24 +61792,43 @@ var OFERTA = 'Oferta';
 var KONTAKT = 'Kontakt';
 var KALENDARZ = 'Kalendarz';
 var LINKS = {
-  HOME: './',
-  DEMO: './demo',
-  CONTACT: './contact',
-  MEDIA: './media'
+  HOME: {
+    HREF: './',
+    AS: './'
+  },
+  DEMO: {
+    HREF: './demo',
+    AS: './demo'
+  },
+  CONTACT: {
+    HREF: './contact',
+    AS: './contact'
+  },
+  MEDIA: {
+    HREF: './media',
+    AS: './media'
+  },
+  TERMS: {
+    HREF: './terminy',
+    AS: './terminy'
+  }
 };
 var MENU_ITEMS = [{
   name: HOME,
-  link: LINKS.HOME
+  link: LINKS.HOME.HREF,
+  as: LINKS.HOME.AS
 }, {
   name: DEMO,
-  link: LINKS.DEMO
+  link: LINKS.DEMO.HREF,
+  as: LINKS.DEMO.AS
 }, // {name: PHOTO, link: './photo'},
 // {name: MEDIA, link: LINKS.MEDIA},
 // {name: OFERTA, link: './oferta'},
 // {name: KALENDARZ, link: './kalendarz'},
 {
   name: KONTAKT,
-  link: LINKS.CONTACT
+  link: LINKS.CONTACT.HREF,
+  as: LINKS.CONTACT.AS
 }];
 var MENU_ITEM_WIDTH = 20;
 var COLORS = {
@@ -62196,7 +62221,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fterms&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Carto_WWW%5Cwww.arto.boo.pl%5Cpages%5Cterms.js ***!
   \************************************************************************************************************************************************/
@@ -62219,5 +62244,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=terms.js.map

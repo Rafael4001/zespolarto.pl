@@ -10,8 +10,8 @@ import MenuBurger from './MenuBurger'
 
 class MenuComponent extends Component {
   getMenuItems = () => (
-    MENU_ITEMS.map(({name, link}) => (
-      <MyMenuItem key={name} title={name} href={link}/>
+    MENU_ITEMS.map(({name, link, as}) => (
+      <MyMenuItem key={name} title={name} href={link} as={as}/>
     ))
   );
 

@@ -31,8 +31,8 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const getMenuItems = () => (
-  MENU_ITEMS.map(({name, link}) => (
-    <MyMenuItem key={name} title={name} href={link}/>
+  MENU_ITEMS.map(({name, link, as}) => (
+    <MyMenuItem key={name} title={name} href={link} as={as}/>
   ))
 );
 

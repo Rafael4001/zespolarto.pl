@@ -66,20 +66,21 @@ const KONTAKT = 'Kontakt';
 const KALENDARZ = 'Kalendarz';
 
 export const LINKS= {
-  HOME: './',
-  DEMO: './demo',
-  CONTACT: './contact',
-  MEDIA: './media',
+  HOME: {HREF: './', AS: './'},
+  DEMO: {HREF: './demo', AS: './demo'},
+  CONTACT: {HREF: './contact', AS: './contact'},
+  MEDIA: {HREF: './media', AS: './media'},
+  TERMS: {HREF: './terminy', AS: './terminy'},
 };
 
 export const MENU_ITEMS = [
-  {name: HOME, link: LINKS.HOME},
-  {name: DEMO, link: LINKS.DEMO},
+  {name: HOME, link: LINKS.HOME.HREF, as: LINKS.HOME.AS },
+  {name: DEMO, link: LINKS.DEMO.HREF, as: LINKS.DEMO.AS},
   // {name: PHOTO, link: './photo'},
   // {name: MEDIA, link: LINKS.MEDIA},
   // {name: OFERTA, link: './oferta'},
   // {name: KALENDARZ, link: './kalendarz'},
-  {name: KONTAKT, link: LINKS.CONTACT},
+  {name: KONTAKT, link: LINKS.CONTACT.HREF, as: LINKS.CONTACT.AS},
 ];
 
 export const MENU_ITEM_WIDTH = 20;

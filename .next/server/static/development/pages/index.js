@@ -3849,11 +3849,13 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__["
 
 const getMenuItems = () => _constants__WEBPACK_IMPORTED_MODULE_10__["MENU_ITEMS"].map(({
   name,
-  link
+  link,
+  as
 }) => __jsx(_MenuItem_MenuItem_style__WEBPACK_IMPORTED_MODULE_11__["default"], {
   key: name,
   title: name,
   href: link,
+  as: as,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 35
@@ -4025,11 +4027,13 @@ class MenuComponent extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "getMenuItems", () => _constants__WEBPACK_IMPORTED_MODULE_4__["MENU_ITEMS"].map(({
       name,
-      link
+      link,
+      as
     }) => __jsx(_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
       key: name,
       title: name,
       href: link,
+      as: as,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 14
@@ -4261,10 +4265,12 @@ class MenuItem extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       classes,
       title,
       href,
-      onClick
+      onClick,
+      as
     } = this.props;
     return __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
       href: href,
+      as: as,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 12
@@ -4951,24 +4957,43 @@ const OFERTA = 'Oferta';
 const KONTAKT = 'Kontakt';
 const KALENDARZ = 'Kalendarz';
 const LINKS = {
-  HOME: './',
-  DEMO: './demo',
-  CONTACT: './contact',
-  MEDIA: './media'
+  HOME: {
+    HREF: './',
+    AS: './'
+  },
+  DEMO: {
+    HREF: './demo',
+    AS: './demo'
+  },
+  CONTACT: {
+    HREF: './contact',
+    AS: './contact'
+  },
+  MEDIA: {
+    HREF: './media',
+    AS: './media'
+  },
+  TERMS: {
+    HREF: './terminy',
+    AS: './terminy'
+  }
 };
 const MENU_ITEMS = [{
   name: HOME,
-  link: LINKS.HOME
+  link: LINKS.HOME.HREF,
+  as: LINKS.HOME.AS
 }, {
   name: DEMO,
-  link: LINKS.DEMO
+  link: LINKS.DEMO.HREF,
+  as: LINKS.DEMO.AS
 }, // {name: PHOTO, link: './photo'},
 // {name: MEDIA, link: LINKS.MEDIA},
 // {name: OFERTA, link: './oferta'},
 // {name: KALENDARZ, link: './kalendarz'},
 {
   name: KONTAKT,
-  link: LINKS.CONTACT
+  link: LINKS.CONTACT.HREF,
+  as: LINKS.CONTACT.AS
 }];
 const MENU_ITEM_WIDTH = 20;
 const COLORS = {

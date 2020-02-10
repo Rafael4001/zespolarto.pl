@@ -6,10 +6,10 @@ import Link from 'next/link'
 
 class MenuItem extends Component {
   render() {
-    const {classes, title, href, onClick} = this.props;
+    const {classes, title, href, onClick, as} = this.props;
 
     return (
-      <Link href={href}>
+      <Link href={href} as={as}>
         <button className={classes.mainContainer} onClick={onClick}>
           <Typography className={classes.text}>{title}</Typography>
         </button>

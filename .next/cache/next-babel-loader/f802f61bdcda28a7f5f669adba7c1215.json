@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { withStyles } from '@material-ui/core/styles';\nimport Terms from './Terms';\n\nconst styles = theme => ({});\n\nexport default withStyles(styles)(Terms);","map":null,"metadata":{},"sourceType":"module"}
