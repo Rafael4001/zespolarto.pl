@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
-// import { ServerStyleSheets } from '@material-ui/core/styles';
+import { ServerStyleSheets } from '@material-ui/core/styles';
 import theme from '../config/theme';
 // import { initGTM, renderGTM } from '../src/utilities/analytics';
 // import { FAVICON } from '../src/constants';
@@ -66,13 +66,13 @@ MyDocument.getInitialProps = async (ctx) => {
   // 4. page.render
 
   // Render app and page and get the context of the page with collected side effects.
-  // const sheets = new ServerStyleSheets();
+  const sheets = new ServerStyleSheets();
   const originalRenderPage = ctx.renderPage;
 
-  // ctx.renderPage = () =>
-  //   originalRenderPage({
-  //     enhanceApp: App => props => sheets.collect(<App {...props} />),
-  //   });
+  ctx.renderPage = () =>
+    originalRenderPage({
+      enhanceApp: App => props => sheets.collect(<App {...props} />),
+    });
 
   const initialProps = await Document.getInitialProps(ctx);
 

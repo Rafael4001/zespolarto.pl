@@ -10,6 +10,7 @@ const styles = ({
   monthName: {
     color: 'red',
     fontSize: '2rem',
+    border: '1px solid black'
   },
   monthContainer: {
     margin: 0,

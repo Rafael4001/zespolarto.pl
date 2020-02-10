@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2424,7 +2424,8 @@ const styles = theme => ({
   },
   rowContainer: {
     display: 'grid',
-    gridTemplateColumns: '5fr 1fr'
+    gridTemplateColumns: '5fr 1fr',
+    border: '1px solid black'
   }
 });
 
@@ -3542,7 +3543,8 @@ const styles = {
   //   textDecoration: 'none',
   monthName: {
     color: 'red',
-    fontSize: '2rem'
+    fontSize: '2rem',
+    border: '1px solid black'
   },
   monthContainer: {
     margin: 0,
@@ -4247,7 +4249,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/terms.js ***!
   \******************************/

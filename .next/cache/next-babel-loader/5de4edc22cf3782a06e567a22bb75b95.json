@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from './Film-PhotoChoice.style';","map":{"version":3,"sources":["C:/IT_projects_Edu-Lab/arto_WWW/www.arto.boo.pl/src/components/Film-PhotoChoice/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,0BAAxB","sourcesContent":["export { default } from './Film-PhotoChoice.style';\r\n\r\n"]},"metadata":{},"sourceType":"module"}

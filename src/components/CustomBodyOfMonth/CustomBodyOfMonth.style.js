@@ -77,6 +77,7 @@ const styles = (theme) => ({
   rowContainer: {
     display: 'grid',
     gridTemplateColumns: '5fr 1fr',
+    border: '1px solid black'
   },
 });
 
