@@ -22,11 +22,11 @@ const useStyles = makeStyles(theme => ({
   },
 
   buttonBurgerMenu: {
-    height: '3rem',
+    height: '4rem',
     margin: '1rem',
     width: 'auto',
     boxShadow: `1px 0 5px 1px rgb(0,0,0,0.2)`,
-    // borderRadius: '50%',
+    borderRadius: '100%',
   },
 }));
 

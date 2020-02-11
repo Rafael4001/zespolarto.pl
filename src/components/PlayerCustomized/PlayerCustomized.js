@@ -8,6 +8,7 @@ import AlbumIcon from '@material-ui/icons/Album';
 
 import Image from "../Image";
 import { Typography } from "@material-ui/core";
+import { TRACK_LIST } from "../../trackList";
 
 
 const {
@@ -67,149 +68,7 @@ class Panner {
   }
 }
 
-const tracks = [
-  {
-    name: 'Do Tańca Kawałek',
-    mp3Name: 'do_tanca_kawalek',
-    artist: 'Poparzeni kawą trzy',
-    imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
-  },
-  {
-    name: 'Kici Kici miał',
-    mp3Name: 'kici_kici_mial',
-    artist: 'Marcus',
-    imgSrc: SONGS_IMAGES.marcus,
-  },
-  {
-    name: 'Konik na biegunach',
-    mp3Name: 'konik_na_biegunach',
-    artist: 'Urszula',
-    imgSrc: SONGS_IMAGES.urszula,
-  },
-  {
-    name: 'Mama ostrzegała',
-    mp3Name: 'mama_ostrzegala',
-    artist: 'Daj to głośniej',
-    imgSrc: SONGS_IMAGES.dajToGlosniej,
-  },
-  {
-    name: 'Miła ma',
-    mp3Name: 'mila_ma',
-    artist: 'Power Play',
-    imgSrc: SONGS_IMAGES.powerPLay,
-  },
-  {
-    name: 'Miłość w Zakopanem',
-    mp3Name: 'milosc_w_zakopanem',
-    artist: 'Sławomir',
-    // imgSrc: SONGS_IMAGES.Naydis,
-  },
-  {
-    name: 'Ona by tak chciała',
-    mp3Name: 'ona_by_tak_chciala',
-    artist: 'Ronnie Ferrari',
-    // imgSrc: SONGS_IMAGES.Naydis,
-  },
-  {
-    name: 'Remedium',
-    mp3Name: 'remedium',
-    artist: 'Maryla Rodowicz',
-    // imgSrc: SONGS_IMAGES.Naydis,
-  },
-  {
-    name: 'Sway',
-    mp3Name: 'sway',
-    artist: 'Michael Buble',
-    // imgSrc: SONGS_IMAGES.Naydis,
-  },
-  {
-    name: 'Bananowa Agnieszka',
-    mp3Name: 'bananowa_agnieszka',
-    artist: 'After Party',
-    // imgSrc: SONGS_IMAGES.Naydis,
-  },
-  {
-    name: 'Autostop',
-    mp3Name: 'autoStop',
-    artist: 'Karin Stanek',
-    // imgSrc: SONGS_IMAGES.Naydis,
-  },
-  {
-    name: 'Bałkanica',
-    mp3Name: 'balkanica',
-    artist: 'Piersi',
-    // imgSrc: SONGS_IMAGES.Naydis,
-  },
-  {
-    name: 'Baśka',
-    mp3Name: 'Baska',
-    artist: 'Wilki',
-    // imgSrc: SONGS_IMAGES.Naydis,
-  },
-  {
-    name: 'Bukiet róż',
-    mp3Name: 'BukietRoz',
-    artist: 'Veegas',
-    // imgSrc: SONGS_IMAGES.Naydis,
-  },
-  {
-    name: 'Byłaś dla mnie wszystkim',
-    mp3Name: 'BylasDlaMnieWszystkim',
-    artist: 'Poparzeni kawą trzy',
-    imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
-  },
-  {
-    name: 'Co tu się dzieje',
-    mp3Name: 'CoTuSieDzieje',
-    artist: 'PowerPlay',
-    imgSrc: SONGS_IMAGES.powerPLay,
-  },
-  {
-    name: 'Cała sala śpiewa z nami',
-    mp3Name: 'CalaSala',
-    artist: 'Jerzy Połomski',
-  },
-  {
-    name: 'Chałupy welcome to',
-    mp3Name: 'ChalupyWelcomeTo',
-    artist: 'Zbigniew Wodecki',
-  },
-  {
-    name: 'Co ma być to będzie',
-    mp3Name: 'CoMaBycToBedzie',
-    artist: 'PowerPlay',
-    imgSrc: SONGS_IMAGES.powerPLay,
-  },
-  {
-    name: 'Czarownica',
-    mp3Name: 'Czarownica',
-    artist: 'Fanatic',
-    imgSrc: SONGS_IMAGES.Fanatic,
-  },
-  {
-    name: 'Czy ten Pan i Pani',
-    mp3Name: 'CzyTenPanIPani',
-    artist: 'Ania Wyszkoni',
-  },
-  {
-    name: 'Do białego rana',
-    mp3Name: 'DoBialegoRana',
-    artist: 'Freaky Boys',
-  },
-  {
-    name: 'Honey Honey',
-    mp3Name: 'HoneyHoney',
-    artist: 'Abba',
-  },
-  {
-    name: 'Hula ula',
-    mp3Name: 'HulaHula',
-    artist: 'Marcus',
-    imgSrc: SONGS_IMAGES.marcus,
-  },
-
-];
-
+const tracks = TRACK_LIST;
 
 class PlayerCustomized extends Component {
   state = {

@@ -74,6 +74,8 @@ const styles = (theme) => ({
   },
   iconArto: {
     width: '5rem',
+    borderRadius: '100%',
+
   },
   rightsContainer: {
     display: 'flex',

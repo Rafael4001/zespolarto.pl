@@ -79,10 +79,8 @@ class CustomBodyOfMonth extends Component {
             }
             <Typography type={"p"} className={classes.details}>{this.props.description}</Typography>
           </div>
-          <div>
-            <Typography>
-              {getView(this.props.status)}
-            </Typography>
+          <div className={classes.statusContainer}>
+            {getView(this.props.status)}
           </div>
         </div>
 

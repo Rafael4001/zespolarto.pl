@@ -292,28 +292,35 @@
         "day": "04.07.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 2,
         "day": "11.07.2020",
-        "free": true,
-        "place": "",
-        "hotel": ""
+        "free": false,
+        "place": "Tomaszow Lub.",
+        "hotel": "Zacisze",
+        "address": "",
+        "status": "busy"
       },
       {
         "id": 3,
         "day": "18.07.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
+
       {
-        "id": 4,
+        "id": 12333,
         "day": "25.07.2020",
-        "free": true,
-        "place": "",
-        "hotel": ""
+        "free": false,
+        "place": "Zamość",
+        "hotel": "Koronny",
+        "address": "",
+        "status": "busy"
       }
     ]
   },
@@ -327,35 +334,41 @@
         "free": false,
         "place": "Różaniec Pierwszy",
         "hotel": "Zajazd \"Gospoda\" ",
-        "address": "Różaniec Pierwszy 99A"
+        "address": "Różaniec Pierwszy 99A",
+        "status": "busy"
       },
       {
         "id": 2,
         "day": "08.08.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 3,
         "day": "15.08.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 4,
         "day": "22.08.2020",
-        "free": true,
-        "place": "",
-        "hotel": ""
+        "free": false,
+        "place": "Wojciechów",
+        "hotel": "Dom weselny \"Czerniecówka\"",
+        "address": "",
+        "status": "busy"
       },
       {
         "id": 4,
         "day": "29.08.2020",
         "free": true,
-        "place": "",
-        "hotel": ""
+        "place": "Boruń",
+        "hotel": "Dom weselny \"Sylwia\"",
+        "status": "busy"
       }
     ]
   },
@@ -368,28 +381,32 @@
         "day": "05.09.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 2,
         "day": "12.09.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 3,
         "day": "19.09.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 4,
         "day": "26.09.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       }
     ]
   },
@@ -400,37 +417,45 @@
       {
         "id": 1,
         "day": "03.10.2020",
-        "free": true,
-        "place": "",
-        "hotel": ""
+        "free": false,
+        "place": "Wysokie",
+        "hotel": "Zajazd \"Alfred\"",
+        "address": "",
+        "status": "busy"
       },
       {
         "id": 2,
         "day": "10.10.2020",
-        "free": true,
-        "place": "",
-        "hotel": ""
+        "free": false,
+        "place": "Hrubieszów",
+        "hotel": "U Chłopa",
+        "address": "",
+        "status": "busy"
       },
       {
         "id": 3,
         "day": "17.10.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 4,
         "day": "24.10.2020",
-        "free": true,
-        "place": "",
-        "hotel": ""
+        "free": false,
+        "place": "Tyszowce",
+        "hotel": "Szewska Pasja (sala na dole)",
+        "address": "",
+        "status": "busy"
       },
       {
         "id": 5,
         "day": "31.10.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       }
     ]
   },
@@ -443,35 +468,40 @@
         "day": "07.11.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 2,
         "day": "14.11.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 3,
         "day": "21.11.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 4,
         "day": "28.11.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 5,
         "day": "31.11.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       }
     ]
   },
@@ -484,28 +514,32 @@
         "day": "05.11.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 2,
         "day": "12.11.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 3,
         "day": "19.11.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "id": 4,
         "day": "26.11.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       }
     ]
   }

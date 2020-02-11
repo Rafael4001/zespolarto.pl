@@ -79,6 +79,9 @@ const styles = (theme) => ({
     gridTemplateColumns: '5fr 1fr',
     border: '1px solid black'
   },
+  statusContainer: {
+    display: 'flex',
+  }
 });
 
 export default withStyles(styles)(CustomBodyOfMonth);

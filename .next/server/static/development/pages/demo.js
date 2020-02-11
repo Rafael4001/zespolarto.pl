@@ -2532,7 +2532,8 @@ const styles = theme => ({
     }
   },
   iconArto: {
-    width: '5rem'
+    width: '5rem',
+    borderRadius: '100%'
   },
   rightsContainer: {
     display: 'flex',
@@ -2722,11 +2723,11 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_8__["
     marginRight: theme.spacing(2)
   },
   buttonBurgerMenu: {
-    height: '3rem',
+    height: '4rem',
     margin: '1rem',
     width: 'auto',
-    boxShadow: `1px 0 5px 1px rgb(0,0,0,0.2)` // borderRadius: '50%',
-
+    boxShadow: `1px 0 5px 1px rgb(0,0,0,0.2)`,
+    borderRadius: '100%'
   }
 }));
 
@@ -3412,9 +3413,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Image__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Image */ "./src/components/Image/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _trackList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../trackList */ "./src/trackList.js");
 
 var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\PlayerCustomized\\PlayerCustomized.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
@@ -3473,122 +3476,7 @@ class Panner {
 
 }
 
-const tracks = [{
-  name: 'Do Tańca Kawałek',
-  mp3Name: 'do_tanca_kawalek',
-  artist: 'Poparzeni kawą trzy',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].poparzeniKawaTrzy
-}, {
-  name: 'Kici Kici miał',
-  mp3Name: 'kici_kici_mial',
-  artist: 'Marcus',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].marcus
-}, {
-  name: 'Konik na biegunach',
-  mp3Name: 'konik_na_biegunach',
-  artist: 'Urszula',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].urszula
-}, {
-  name: 'Mama ostrzegała',
-  mp3Name: 'mama_ostrzegala',
-  artist: 'Daj to głośniej',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].dajToGlosniej
-}, {
-  name: 'Miła ma',
-  mp3Name: 'mila_ma',
-  artist: 'Power Play',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].powerPLay
-}, {
-  name: 'Miłość w Zakopanem',
-  mp3Name: 'milosc_w_zakopanem',
-  artist: 'Sławomir' // imgSrc: SONGS_IMAGES.Naydis,
-
-}, {
-  name: 'Ona by tak chciała',
-  mp3Name: 'ona_by_tak_chciala',
-  artist: 'Ronnie Ferrari' // imgSrc: SONGS_IMAGES.Naydis,
-
-}, {
-  name: 'Remedium',
-  mp3Name: 'remedium',
-  artist: 'Maryla Rodowicz' // imgSrc: SONGS_IMAGES.Naydis,
-
-}, {
-  name: 'Sway',
-  mp3Name: 'sway',
-  artist: 'Michael Buble' // imgSrc: SONGS_IMAGES.Naydis,
-
-}, {
-  name: 'Bananowa Agnieszka',
-  mp3Name: 'bananowa_agnieszka',
-  artist: 'After Party' // imgSrc: SONGS_IMAGES.Naydis,
-
-}, {
-  name: 'Autostop',
-  mp3Name: 'autoStop',
-  artist: 'Karin Stanek' // imgSrc: SONGS_IMAGES.Naydis,
-
-}, {
-  name: 'Bałkanica',
-  mp3Name: 'balkanica',
-  artist: 'Piersi' // imgSrc: SONGS_IMAGES.Naydis,
-
-}, {
-  name: 'Baśka',
-  mp3Name: 'Baska',
-  artist: 'Wilki' // imgSrc: SONGS_IMAGES.Naydis,
-
-}, {
-  name: 'Bukiet róż',
-  mp3Name: 'BukietRoz',
-  artist: 'Veegas' // imgSrc: SONGS_IMAGES.Naydis,
-
-}, {
-  name: 'Byłaś dla mnie wszystkim',
-  mp3Name: 'BylasDlaMnieWszystkim',
-  artist: 'Poparzeni kawą trzy',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].poparzeniKawaTrzy
-}, {
-  name: 'Co tu się dzieje',
-  mp3Name: 'CoTuSieDzieje',
-  artist: 'PowerPlay',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].powerPLay
-}, {
-  name: 'Cała sala śpiewa z nami',
-  mp3Name: 'CalaSala',
-  artist: 'Jerzy Połomski'
-}, {
-  name: 'Chałupy welcome to',
-  mp3Name: 'ChalupyWelcomeTo',
-  artist: 'Zbigniew Wodecki'
-}, {
-  name: 'Co ma być to będzie',
-  mp3Name: 'CoMaBycToBedzie',
-  artist: 'PowerPlay',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].powerPLay
-}, {
-  name: 'Czarownica',
-  mp3Name: 'Czarownica',
-  artist: 'Fanatic',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].Fanatic
-}, {
-  name: 'Czy ten Pan i Pani',
-  mp3Name: 'CzyTenPanIPani',
-  artist: 'Ania Wyszkoni'
-}, {
-  name: 'Do białego rana',
-  mp3Name: 'DoBialegoRana',
-  artist: 'Freaky Boys'
-}, {
-  name: 'Honey Honey',
-  mp3Name: 'HoneyHoney',
-  artist: 'Abba'
-}, {
-  name: 'Hula ula',
-  mp3Name: 'HulaHula',
-  artist: 'Marcus',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_5__["SONGS_IMAGES"].marcus
-}];
+const tracks = _trackList__WEBPACK_IMPORTED_MODULE_10__["TRACK_LIST"];
 
 class PlayerCustomized extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
   constructor(...args) {
@@ -3626,7 +3514,7 @@ class PlayerCustomized extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 239
+          lineNumber: 98
         },
         __self: this
       });
@@ -3664,28 +3552,28 @@ class PlayerCustomized extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       ref: c => this.media = c,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 283
+        lineNumber: 142
       },
       __self: this
     }, __jsx("div", {
       className: classes.mainContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 284
+        lineNumber: 143
       },
       __self: this
     }, __jsx("div", {
       className: classes.albumImageContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 285
+        lineNumber: 144
       },
       __self: this
     }, __jsx("div", {
       className: classes.songImageContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 286
+        lineNumber: 145
       },
       __self: this
     }, __jsx(_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -3693,52 +3581,52 @@ class PlayerCustomized extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       className: classes.actualImage,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 287
+        lineNumber: 146
       },
       __self: this
     })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["Typography"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 292
+        lineNumber: 151
       },
       __self: this
     }, this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'), __jsx(_mp3Player_withMediaProps__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 294
+        lineNumber: 153
       },
       __self: this
     }), __jsx("div", {
       className: classes.seekBarContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 299
+        lineNumber: 158
       },
       __self: this
     }, __jsx("div", {
       className: classes.playerTime,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 300
+        lineNumber: 159
       },
       __self: this
     }, __jsx(CurrentTime, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 300
+        lineNumber: 159
       },
       __self: this
     }), "/", __jsx(Duration, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 300
+        lineNumber: 159
       },
       __self: this
     })), __jsx("div", {
       className: classes.seekBar,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 301
+        lineNumber: 160
       },
       __self: this
     }, __jsx(SeekBar, {
@@ -3747,14 +3635,14 @@ class PlayerCustomized extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 301
+        lineNumber: 160
       },
       __self: this
     }))), __jsx("div", {
       className: classes.actualSongPlayer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 303
+        lineNumber: 162
       },
       __self: this
     }, __jsx(react_media_player__WEBPACK_IMPORTED_MODULE_2__["Player"], {
@@ -3767,14 +3655,14 @@ class PlayerCustomized extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       onEnded: this.playNextSong,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 304
+        lineNumber: 163
       },
       __self: this
     }))), __jsx("div", {
       className: classes.trackList,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 316
+        lineNumber: 175
       },
       __self: this
     }, this.trackList())));
@@ -4188,8 +4076,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_image_photo_4_small_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_image_photo_4_small_jpg__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _static_image_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/image/logo.png */ "./static/image/logo.png");
 /* harmony import */ var _static_image_logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_static_image_logo_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _static_image_LogoWKwiatach_342x300_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../static/image/LogoWKwiatach_342x300.png */ "./static/image/LogoWKwiatach_342x300.png");
-/* harmony import */ var _static_image_LogoWKwiatach_342x300_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_static_image_LogoWKwiatach_342x300_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../static/image/LogoWKwiatach_342x300_nowe.png */ "./static/image/LogoWKwiatach_342x300_nowe.png");
+/* harmony import */ var _static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/image/lovers_small.png */ "./static/image/lovers_small.png");
 /* harmony import */ var _static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _static_image_icons_bride_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../static/image/icons/bride.svg */ "./static/image/icons/bride.svg");
@@ -4226,6 +4114,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_22__);
 /* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../static/image/songsImages/defaultSongImage.jpg */ "./static/image/songsImages/defaultSongImage.jpg");
 /* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../static/image/songsImages/lombard.jpg */ "./static/image/songsImages/lombard.jpg");
+/* harmony import */ var _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../static/image/songsImages/czadoman.jpg */ "./static/image/songsImages/czadoman.jpg");
+/* harmony import */ var _static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../static/image/songsImages/buble.jpg */ "./static/image/songsImages/buble.jpg");
+/* harmony import */ var _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_26__);
 
 
 
@@ -4238,6 +4132,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+ //==============Songs images===============
 
 
 
@@ -4252,20 +4150,23 @@ __webpack_require__.r(__webpack_exports__);
 
 const SONGS_IMAGES = {
   DefaultSongImage: _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_23___default.a,
-  dajToGlosniej: _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_21___default.a,
+  DAJ_TO_GLOSNIEJ: _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_21___default.a,
   marcus: _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_18___default.a,
   Naydis: _static_image_songsImages_Naydis_jpg__WEBPACK_IMPORTED_MODULE_16___default.a,
   powerPLay: _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_19___default.a,
   poparzeniKawaTrzy: _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_17___default.a,
   urszula: _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_20___default.a,
-  Fanatic: _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_22___default.a
+  Fanatic: _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_22___default.a,
+  lombard: _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_24___default.a,
+  czadoman: _static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_25___default.a,
+  buble: _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_26___default.a
 };
 const IMAGE_1 = _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0___default.a;
 const IMAGE_2 = _static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1___default.a;
 const IMAGE_3 = _static_image_photo_3_small_jpg__WEBPACK_IMPORTED_MODULE_2___default.a;
 const IMAGE_4 = _static_image_photo_4_small_jpg__WEBPACK_IMPORTED_MODULE_3___default.a;
 const LOGO = _static_image_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a;
-const LOGO_ON_THE_FLOWERS = _static_image_LogoWKwiatach_342x300_png__WEBPACK_IMPORTED_MODULE_5___default.a;
+const LOGO_ON_THE_FLOWERS = _static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5___default.a;
 const LOVERS = _static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6___default.a;
 const BRIDE = _static_image_icons_bride_svg__WEBPACK_IMPORTED_MODULE_7___default.a;
 const SMILE = _static_image_icons_smile_svg__WEBPACK_IMPORTED_MODULE_8___default.a;
@@ -4495,6 +4396,282 @@ class PlayPause extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
 /***/ }),
 
+/***/ "./src/trackList.js":
+/*!**************************!*\
+  !*** ./src/trackList.js ***!
+  \**************************/
+/*! exports provided: TRACK_LIST */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TRACK_LIST", function() { return TRACK_LIST; });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./src/constants.js");
+
+const TRACK_LIST = [{
+  name: 'Do Tańca Kawałek',
+  mp3Name: 'do_tanca_kawalek',
+  artist: 'Poparzeni kawą trzy',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].poparzeniKawaTrzy
+}, {
+  name: 'Kici Kici miał',
+  mp3Name: 'kici_kici_mial',
+  artist: 'Marcus',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].marcus
+}, {
+  name: 'Konik na biegunach',
+  mp3Name: 'konik_na_biegunach',
+  artist: 'Urszula',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].urszula
+}, {
+  name: 'Weź nie pytaj',
+  mp3Name: 'WezNiePytaj',
+  artist: 'Paweł Domagała' // imgSrc: SONGS_IMAGES.urszula,
+
+}, {
+  name: 'Mama ostrzegała',
+  mp3Name: 'mama_ostrzegala',
+  artist: 'Daj to głośniej',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].DAJ_TO_GLOSNIEJ
+}, {
+  name: 'Miła ma',
+  mp3Name: 'mila_ma',
+  artist: 'Power Play',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
+}, {
+  name: 'Miłość w Zakopanem',
+  mp3Name: 'milosc_w_zakopanem',
+  artist: 'Sławomir' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  name: 'Ona by tak chciała',
+  mp3Name: 'ona_by_tak_chciala',
+  artist: 'Ronnie Ferrari' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  name: 'Remedium',
+  mp3Name: 'remedium',
+  artist: 'Maryla Rodowicz' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  name: 'Sway',
+  mp3Name: 'sway',
+  artist: 'Michael Buble',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].buble
+}, {
+  name: 'Bananowa Agnieszka',
+  mp3Name: 'bananowa_agnieszka',
+  artist: 'After Party' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  name: 'Autostop',
+  mp3Name: 'autoStop',
+  artist: 'Karin Stanek' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  name: 'Bałkanica',
+  mp3Name: 'balkanica',
+  artist: 'Piersi' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  name: 'Baśka',
+  mp3Name: 'Baska',
+  artist: 'Wilki' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  name: 'Bukiet róż',
+  mp3Name: 'BukietRoz',
+  artist: 'Veegas' // imgSrc: SONGS_IMAGES.Naydis,
+
+}, {
+  name: 'Byłaś dla mnie wszystkim',
+  mp3Name: 'BylasDlaMnieWszystkim',
+  artist: 'Poparzeni kawą trzy',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].poparzeniKawaTrzy
+}, {
+  name: 'Co tu się dzieje',
+  mp3Name: 'CoTuSieDzieje',
+  artist: 'PowerPlay',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
+}, {
+  name: 'Cała sala śpiewa z nami',
+  mp3Name: 'CalaSala',
+  artist: 'Jerzy Połomski'
+}, {
+  name: 'Chałupy welcome to',
+  mp3Name: 'ChalupyWelcomeTo',
+  artist: 'Zbigniew Wodecki'
+}, {
+  name: 'Co ma być to będzie',
+  mp3Name: 'CoMaBycToBedzie',
+  artist: 'PowerPlay',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
+}, {
+  name: 'Czarownica',
+  mp3Name: 'Czarownica',
+  artist: 'Fanatic',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].Fanatic
+}, {
+  name: 'Czy ten Pan i Pani',
+  mp3Name: 'CzyTenPanIPani',
+  artist: 'Ania Wyszkoni'
+}, {
+  name: 'Do białego rana',
+  mp3Name: 'DoBialegoRana',
+  artist: 'Freaky Boys'
+}, {
+  name: 'Honey Honey',
+  mp3Name: 'HoneyHoney',
+  artist: 'Abba'
+}, {
+  name: 'Hula ula',
+  mp3Name: 'HulaHula',
+  artist: 'Marcus',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].marcus
+}, {
+  name: 'Jaki piękny świat',
+  mp3Name: 'JakiPieknySwiat',
+  artist: 'Boys' // imgSrc: SONGS_IMAGES.marcus,
+
+}, {
+  name: 'Kawiarenki',
+  mp3Name: 'Kawiarenki',
+  artist: 'Irena Jarocka' // imgSrc: SONGS_IMAGES.marcus,
+
+}, {
+  name: 'Kochaj mnie',
+  mp3Name: 'KochajMnie',
+  artist: 'Power Play',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
+}, {
+  name: 'Za tobą pójdę jak ba bal',
+  mp3Name: 'ZaTobaPojdeJakNaBal',
+  artist: 'Krzysztof Krawczyk' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: 'Łobuz',
+  mp3Name: 'Lobuz',
+  artist: 'Boys' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: 'Małgośka',
+  mp3Name: 'Malgoska',
+  artist: 'Maryla Rodowicz' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: 'Lubisz to',
+  mp3Name: 'LubiszTo',
+  artist: 'Power Play',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
+}, {
+  name: "Mamma mia He's italiano",
+  mp3Name: 'MammaMiaHisItaliano',
+  artist: 'Elena Gheorghe' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: "Mazureczka",
+  mp3Name: 'Mazureczka',
+  artist: 'Masters' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: "Miod malina",
+  mp3Name: 'MiodMalina',
+  artist: 'MIG' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: "Mleczko",
+  mp3Name: 'Mleczko',
+  artist: 'Energy Girls' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: "Najpiękne",
+  mp3Name: 'Najpiekne',
+  artist: 'Power play',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
+}, {
+  name: "Nie chce spać",
+  mp3Name: 'NieChceSpac',
+  artist: 'Enej' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: "Nie płacz Ewka",
+  mp3Name: 'NiePlaczEwka',
+  artist: 'Perfect' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: "Niech żyje bal",
+  mp3Name: 'NiechZyjeBal',
+  artist: 'Maryla Rodowicz' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: "Okrutna zła i podła",
+  mp3Name: 'OkrutnaZlaIPodla',
+  artist: 'Poparzeni kawą trzy',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].poparzeniKawaTrzy
+}, {
+  name: "Ona czuje we mnie piniądz",
+  mp3Name: 'OnaCzujeWeMniePiniadz',
+  artist: 'Łobuzy' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}, {
+  name: "Ona czuje we mnie piniądz",
+  mp3Name: 'OnaCzujeWeMniePiniadz',
+  artist: 'Łobuzy' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}, {
+  name: "Ona jest taka cudowna",
+  mp3Name: 'OnaJestTakaCudowna',
+  artist: 'Piękni i młodzi' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}, {
+  name: "Piąty bieg",
+  mp3Name: 'PiatyBieg',
+  artist: 'Budka suflera' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}, {
+  name: "Prywatki",
+  mp3Name: 'Prywatki',
+  artist: 'Piotr Gąsowski' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}, {
+  name: "Przekorny Los",
+  mp3Name: 'PrzekornyLos',
+  artist: 'Akcent' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}, {
+  name: "Prześliczna wiolączelistka",
+  mp3Name: 'PrzeslicznaWiolaczelistka',
+  artist: 'Skaldowie' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}, {
+  name: "Przeżyj to sam",
+  mp3Name: 'PrzezyjToSam',
+  artist: 'Lombard',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].lombard
+}, {
+  name: "Rock&Roll",
+  mp3Name: 'Rock&Roll',
+  artist: 'Electric Light Orchestra' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}, {
+  name: "Ruda tańczy jak szalona",
+  mp3Name: 'Rock&RudaTanczyJakSzalona',
+  artist: 'Czadomen',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].czadoman
+}, {
+  name: "W kinie w Lublinie",
+  mp3Name: 'WKinieWLublinie',
+  artist: 'Brathanki' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}, {
+  name: "Waterloo",
+  mp3Name: 'Waterloo',
+  artist: 'Abba' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+
+}];
+
+/***/ }),
+
 /***/ "./src/views/Demo/Demo.js":
 /*!********************************!*\
   !*** ./src/views/Demo/Demo.js ***!
@@ -4595,14 +4772,14 @@ module.exports = __webpack_require__.p + "static/image/GalleryCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ "./static/image/LogoWKwiatach_342x300.png":
-/*!************************************************!*\
-  !*** ./static/image/LogoWKwiatach_342x300.png ***!
-  \************************************************/
+/***/ "./static/image/LogoWKwiatach_342x300_nowe.png":
+/*!*****************************************************!*\
+  !*** ./static/image/LogoWKwiatach_342x300_nowe.png ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/image/LogoWKwiatach_342x300.png";
+module.exports = __webpack_require__.p + "static/image/LogoWKwiatach_342x300_nowe.png";
 
 /***/ }),
 
@@ -4760,6 +4937,28 @@ module.exports = __webpack_require__.p + "static/image/songsImages/Naydis.jpg";
 
 /***/ }),
 
+/***/ "./static/image/songsImages/buble.jpg":
+/*!********************************************!*\
+  !*** ./static/image/songsImages/buble.jpg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/buble.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/czadoman.jpg":
+/*!***********************************************!*\
+  !*** ./static/image/songsImages/czadoman.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/czadoman.jpg";
+
+/***/ }),
+
 /***/ "./static/image/songsImages/dajToGlosniej.jpg":
 /*!****************************************************!*\
   !*** ./static/image/songsImages/dajToGlosniej.jpg ***!
@@ -4790,6 +4989,17 @@ module.exports = __webpack_require__.p + "static/image/songsImages/defaultSongIm
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/image/songsImages/fanatic.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/lombard.jpg":
+/*!**********************************************!*\
+  !*** ./static/image/songsImages/lombard.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/lombard.jpg";
 
 /***/ }),
 

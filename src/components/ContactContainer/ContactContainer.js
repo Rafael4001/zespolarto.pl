@@ -95,9 +95,7 @@ class ContactContainer extends Component {
           </div>
           <Divider/>
         </div>
-
       </div>
-
     )
   }
 }

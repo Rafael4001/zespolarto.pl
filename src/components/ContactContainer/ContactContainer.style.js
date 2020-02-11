@@ -147,8 +147,6 @@ const styles = (theme) => ({
     padding: '1rem',
   },
 
-
-
 //  --------------------------
   mainContainerMap: {
     display: 'grid',
@@ -179,16 +177,10 @@ const styles = (theme) => ({
     fontSize: '1.5rem',
     fontFamily: '\'Baskervville\',serif',
 
-
-
     [theme.breakpoints.up('sm')]: {
       fontSize: '2.2rem',
     },
-
   },
-
-
-
 });
 
 export default withStyles(styles)(ContactContainer);

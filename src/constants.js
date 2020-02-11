@@ -3,7 +3,7 @@ import photo2 from '../static/image/photo_2_small.jpg';
 import photo3 from '../static/image/photo_3_small.jpg';
 import photo4 from '../static/image/photo_4_small.jpg';
 import logo from '../static/image/logo.png';
-import LogoOnTheFlowers from '../static/image/LogoWKwiatach_342x300.png';
+import LogoOnTheFlowers from '../static/image/LogoWKwiatach_342x300_nowe.png';
 import Lovers from '../static/image/lovers_small.png';
 import Bride from '../static/image/icons/bride.svg';
 import Smile from '../static/image/icons/smile.svg';
@@ -16,6 +16,9 @@ import galleryCardPhoto from '../static/image/GalleryCardPhoto.jpeg';
 import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
 
 
+
+//==============Songs images===============
+
 import Naydis from '../static/image/songsImages/Naydis.jpg';
 import poparzeniKawaTrzy from '../static/image/songsImages/poparzeniKawaTrzy.jpg';
 import marcus from '../static/image/songsImages/marcus.jpg';
@@ -24,19 +27,24 @@ import urszula from '../static/image/songsImages/urszula.jpg';
 import dajToGlosniej from '../static/image/songsImages/dajToGlosniej.jpg';
 import fanatic from '../static/image/songsImages/fanatic.jpg';
 import DefaultSongImage from '../static/image/songsImages/defaultSongImage.jpg';
+import lombard from '../static/image/songsImages/lombard.jpg';
+import czadoman from '../static/image/songsImages/czadoman.jpg';
+import buble from '../static/image/songsImages/buble.jpg';
 
 
 export const SONGS_IMAGES = {
   DefaultSongImage: DefaultSongImage,
-  dajToGlosniej: dajToGlosniej,
+  DAJ_TO_GLOSNIEJ: dajToGlosniej,
   marcus: marcus,
   Naydis: Naydis,
   powerPLay: powerPLay,
   poparzeniKawaTrzy: poparzeniKawaTrzy,
   urszula: urszula,
   Fanatic: fanatic,
+  lombard: lombard,
+  czadoman: czadoman,
+  buble: buble,
 };
-
 
 export const IMAGE_1 = photo1;
 export const IMAGE_2 = photo2;

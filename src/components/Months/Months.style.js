@@ -8,18 +8,21 @@ const styles = ({
   // '&:li': {
   //   textDecoration: 'none',
   monthName: {
-    color: 'red',
     fontSize: '2rem',
-    border: '1px solid black'
+    backgroundColor: '#c6c6c6'
   },
   monthContainer: {
     margin: 0,
     textDecoration: 'none',
     padding: 0,
+    backgroundColor: '#69a53e'
   },
   dayContainer: {
     margin: 0,
     textDecoration: 'none',
+  },
+  icon: {
+    margin: '0 1rem',
   },
 });
 
