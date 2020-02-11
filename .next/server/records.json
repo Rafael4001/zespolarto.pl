@@ -1,0 +1,51 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/_document.js": 0,
+      "multi private-next-pages/contact.js": 1,
+      "multi private-next-pages/demo.js": 2,
+      "multi private-next-pages/index.js": 3,
+      "multi private-next-pages/media.js": 4,
+      "multi private-next-pages/photo.js": 5,
+      "multi private-next-pages/terms.js": 6,
+      "multi next/dist/pages/_app": 7,
+      "multi next/dist/pages/_error": 8
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static\\l5nR31QMnVZhJaBxb2EMJ\\pages\\_app.js": 0,
+      "static\\l5nR31QMnVZhJaBxb2EMJ\\pages\\_document.js": 1,
+      "static\\l5nR31QMnVZhJaBxb2EMJ\\pages\\_error.js": 2,
+      "static\\l5nR31QMnVZhJaBxb2EMJ\\pages\\contact.js": 3,
+      "static\\l5nR31QMnVZhJaBxb2EMJ\\pages\\demo.js": 4,
+      "static\\l5nR31QMnVZhJaBxb2EMJ\\pages\\index.js": 5,
+      "static\\l5nR31QMnVZhJaBxb2EMJ\\pages\\media.js": 6,
+      "static\\l5nR31QMnVZhJaBxb2EMJ\\pages\\photo.js": 7,
+      "static\\l5nR31QMnVZhJaBxb2EMJ\\pages\\terms.js": 8
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}
