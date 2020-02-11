@@ -22,6 +22,7 @@ import marcus from '../static/image/songsImages/marcus.jpg';
 import powerPLay from '../static/image/songsImages/powerPLay.jpg';
 import urszula from '../static/image/songsImages/urszula.jpg';
 import dajToGlosniej from '../static/image/songsImages/dajToGlosniej.jpg';
+import fanatic from '../static/image/songsImages/fanatic.jpg';
 import DefaultSongImage from '../static/image/songsImages/defaultSongImage.jpg';
 
 
@@ -33,6 +34,7 @@ export const SONGS_IMAGES = {
   powerPLay: powerPLay,
   poparzeniKawaTrzy: poparzeniKawaTrzy,
   urszula: urszula,
+  Fanatic: fanatic,
 };
 
 

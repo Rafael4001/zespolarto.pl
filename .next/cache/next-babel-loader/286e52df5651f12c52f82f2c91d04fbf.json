@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './Demo.style';","map":{"version":3,"sources":["C:/IT_projects_Edu-Lab/arto_WWW/www.arto.boo.pl/src/views/Demo/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,cAAxB","sourcesContent":["export { default } from './Demo.style';\r\n"]},"metadata":{},"sourceType":"module"}

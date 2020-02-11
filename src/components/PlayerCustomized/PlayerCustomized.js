@@ -69,67 +69,143 @@ class Panner {
 
 const tracks = [
   {
-    id: 0,
     name: 'Do Tańca Kawałek',
     mp3Name: 'do_tanca_kawalek',
     artist: 'Poparzeni kawą trzy',
     imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
   },
   {
-    id: 1,
     name: 'Kici Kici miał',
     mp3Name: 'kici_kici_mial',
     artist: 'Marcus',
     imgSrc: SONGS_IMAGES.marcus,
   },
   {
-    id: 2,
     name: 'Konik na biegunach',
     mp3Name: 'konik_na_biegunach',
     artist: 'Urszula',
     imgSrc: SONGS_IMAGES.urszula,
   },
   {
-    id: 3,
     name: 'Mama ostrzegała',
     mp3Name: 'mama_ostrzegala',
     artist: 'Daj to głośniej',
     imgSrc: SONGS_IMAGES.dajToGlosniej,
   },
   {
-    id: 4,
     name: 'Miła ma',
     mp3Name: 'mila_ma',
     artist: 'Power Play',
     imgSrc: SONGS_IMAGES.powerPLay,
   },
   {
-    id: 5,
     name: 'Miłość w Zakopanem',
     mp3Name: 'milosc_w_zakopanem',
     artist: 'Sławomir',
     // imgSrc: SONGS_IMAGES.Naydis,
   },
   {
-    id: 6,
     name: 'Ona by tak chciała',
     mp3Name: 'ona_by_tak_chciala',
     artist: 'Ronnie Ferrari',
     // imgSrc: SONGS_IMAGES.Naydis,
   },
   {
-    id: 7,
     name: 'Remedium',
     mp3Name: 'remedium',
     artist: 'Maryla Rodowicz',
     // imgSrc: SONGS_IMAGES.Naydis,
   },
   {
-    id: 8,
     name: 'Sway',
     mp3Name: 'sway',
     artist: 'Michael Buble',
     // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    name: 'Bananowa Agnieszka',
+    mp3Name: 'bananowa_agnieszka',
+    artist: 'After Party',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    name: 'Autostop',
+    mp3Name: 'autoStop',
+    artist: 'Karin Stanek',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    name: 'Bałkanica',
+    mp3Name: 'balkanica',
+    artist: 'Piersi',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    name: 'Baśka',
+    mp3Name: 'Baska',
+    artist: 'Wilki',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    name: 'Bukiet róż',
+    mp3Name: 'BukietRoz',
+    artist: 'Veegas',
+    // imgSrc: SONGS_IMAGES.Naydis,
+  },
+  {
+    name: 'Byłaś dla mnie wszystkim',
+    mp3Name: 'BylasDlaMnieWszystkim',
+    artist: 'Poparzeni kawą trzy',
+    imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
+  },
+  {
+    name: 'Co tu się dzieje',
+    mp3Name: 'CoTuSieDzieje',
+    artist: 'PowerPlay',
+    imgSrc: SONGS_IMAGES.powerPLay,
+  },
+  {
+    name: 'Cała sala śpiewa z nami',
+    mp3Name: 'CalaSala',
+    artist: 'Jerzy Połomski',
+  },
+  {
+    name: 'Chałupy welcome to',
+    mp3Name: 'ChalupyWelcomeTo',
+    artist: 'Zbigniew Wodecki',
+  },
+  {
+    name: 'Co ma być to będzie',
+    mp3Name: 'CoMaBycToBedzie',
+    artist: 'PowerPlay',
+    imgSrc: SONGS_IMAGES.powerPLay,
+  },
+  {
+    name: 'Czarownica',
+    mp3Name: 'Czarownica',
+    artist: 'Fanatic',
+    imgSrc: SONGS_IMAGES.Fanatic,
+  },
+  {
+    name: 'Czy ten Pan i Pani',
+    mp3Name: 'CzyTenPanIPani',
+    artist: 'Ania Wyszkoni',
+  },
+  {
+    name: 'Do białego rana',
+    mp3Name: 'DoBialegoRana',
+    artist: 'Freaky Boys',
+  },
+  {
+    name: 'Honey Honey',
+    mp3Name: 'HoneyHoney',
+    artist: 'Abba',
+  },
+  {
+    name: 'Hula ula',
+    mp3Name: 'HulaHula',
+    artist: 'Marcus',
+    imgSrc: SONGS_IMAGES.marcus,
   },
 
 ];
@@ -180,8 +256,23 @@ class PlayerCustomized extends Component {
     })
   );
 
+  showWhatSongIsPlaying = (song) => {
+    return song.mp3Name === this.state.actualPlayingTrackMp3Name
+  };
+
+
   playNextSong = () => {
-    console.log('wlaczam kolejny numer')
+    const actualSongIndex = tracks.findIndex(this.showWhatSongIsPlaying);
+    const newSongIndex = actualSongIndex + 1;
+    const nextSong = tracks[newSongIndex];
+
+    this.setState({
+      actualPlayingTrackMp3Name: nextSong.mp3Name,
+      actualSongName: nextSong.name,
+      autoplay: true,
+      isPlaying: true,
+      actualSongImage: nextSong.imgSrc ? nextSong.imgSrc : SONGS_IMAGES.DefaultSongImage,
+    })
   };
 
 

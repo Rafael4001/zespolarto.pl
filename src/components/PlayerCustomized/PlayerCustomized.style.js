@@ -12,7 +12,7 @@ const styles = (theme) => (
       marginBottom: '1rem',
 
       [theme.breakpoints.up('sm')]: {
-        marginTop: 0,
+        marginTop: '2rem',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         gridGap: '1rem',
@@ -71,10 +71,9 @@ const styles = (theme) => (
       }
     },
     trackList: {
-      height: '80vh',
-
       [theme.breakpoints.up('sm')]: {
         overflowY: 'auto',
+        height: '80vh',
       },
     },
     actualImage: {
@@ -88,8 +87,13 @@ const styles = (theme) => (
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      border: `solid 1px ${COLORS.grey.dark}`,
+
       padding: '1rem',
+
+      [theme.breakpoints.up('sm')]: {
+        border: `solid 1px ${COLORS.grey.dark}`,
+      },
+
     },
     seekBarContainer: {
       width: '100%',
