@@ -81,6 +81,11 @@ const styles = (theme) => ({
   },
   statusContainer: {
     display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  rowInfo: {
+    fontSize: '1rem',
   }
 });
 

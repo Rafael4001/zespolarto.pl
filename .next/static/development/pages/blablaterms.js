@@ -60042,6 +60042,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Table */ "./node_modules/@material-ui/core/esm/Table/index.js");
+/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/TableBody */ "./node_modules/@material-ui/core/esm/TableBody/index.js");
+/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/TableCell */ "./node_modules/@material-ui/core/esm/TableCell/index.js");
+/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/TableContainer */ "./node_modules/@material-ui/core/esm/TableContainer/index.js");
+/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/TableHead */ "./node_modules/@material-ui/core/esm/TableHead/index.js");
+/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/core/TableRow */ "./node_modules/@material-ui/core/esm/TableRow/index.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/index.js");
 
 
 
@@ -60051,6 +60058,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\CustomBodyOfMonth\\CustomBodyOfMonth.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
+
+
+
+
+
+
+
 
 
 
@@ -60094,7 +60108,8 @@ function (_Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(CustomBodyOfMonth, [{
     key: "render",
     value: function render() {
-      var _classNames;
+      var _classNames,
+          _this2 = this;
 
       var _this$props = this.props,
           classes = _this$props.classes,
@@ -60109,7 +60124,7 @@ function (_Component) {
               className: classes.infoBusy,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 39
+                lineNumber: 47
               },
               __self: this
             }, place);
@@ -60119,7 +60134,7 @@ function (_Component) {
               className: classes.infoEmpty,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 41
+                lineNumber: 49
               },
               __self: this
             }, "BRAK");
@@ -60129,12 +60144,24 @@ function (_Component) {
               className: classes.infoHoliday,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 43
+                lineNumber: 51
               },
               __self: this
             }, "Wakacje");
         }
       };
+
+      function createData(date, place, fat, carbs, protein) {
+        return {
+          date: date,
+          place: place,
+          fat: fat,
+          carbs: carbs,
+          protein: protein
+        };
+      }
+
+      var rows = [createData('Frozen yoghurt', 159, 6.0, 24, 4.0), createData('Ice cream sandwich', 237, 9.0, 37, 4.3), createData('Eclair', 262, 16.0, 24, 6.0), createData('Cupcake', 305, 3.7, 67, 4.3), createData('Gingerbread', 356, 16.0, 49, 3.9)];
 
       function toggleDetails(item) {
         alert(item);
@@ -60145,6 +60172,45 @@ function (_Component) {
         });
       }
 
+      var getDetails = function getDetails() {
+        return __jsx("div", {
+          className: classes.rowInfo,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 78
+          },
+          __self: this
+        }, _this2.props.status === busy ? __jsx("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 80
+          },
+          __self: this
+        }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          type: "p",
+          className: classes.details,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 81
+          },
+          __self: this
+        }, "hotel: ", _this2.props.hotel), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          type: "p",
+          className: classes.details,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 82
+          },
+          __self: this
+        }, "adres: ", _this2.props.address)) : __jsx("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 84
+          },
+          __self: this
+        }, "WOLNE"));
+      };
+
       return __jsx("div", {
         className: classNameMain // onClick={() => {
         //   toggleDetails(this.props.day)
@@ -60152,20 +60218,20 @@ function (_Component) {
         ,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 89
         },
         __self: this
       }, __jsx("div", {
         className: classes.rowContainer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 95
         },
         __self: this
       }, __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 96
         },
         __self: this
       }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -60173,50 +60239,22 @@ function (_Component) {
         className: classes.day,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 97
         },
         __self: this
-      }, this.props.day), this.props.status === busy ? __jsx("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: this
-      }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, this.props.day), getDetails(), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
         type: "p",
         className: classes.details,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
-        },
-        __self: this
-      }, "hotel: ", this.props.hotel), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        type: "p",
-        className: classes.details,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 73
-        },
-        __self: this
-      }, "adres: ", this.props.address)) : __jsx("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 78
-        },
-        __self: this
-      }, "WOLNE"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        type: "p",
-        className: classes.details,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 99
         },
         __self: this
       }, this.props.description)), __jsx("div", {
         className: classes.statusContainer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 101
         },
         __self: this
       }, getView(this.props.status))), this.props.children);
@@ -60313,7 +60351,12 @@ var styles = function styles(theme) {
       border: '1px solid black'
     },
     statusContainer: {
-      display: 'flex'
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    rowInfo: {
+      fontSize: '1rem'
     }
   };
 };

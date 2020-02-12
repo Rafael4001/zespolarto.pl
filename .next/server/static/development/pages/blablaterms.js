@@ -2175,9 +2175,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Table */ "@material-ui/core/Table");
+/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TableBody */ "@material-ui/core/TableBody");
+/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/TableCell */ "@material-ui/core/TableCell");
+/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/TableContainer */ "@material-ui/core/TableContainer");
+/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/TableHead */ "@material-ui/core/TableHead");
+/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/TableRow */ "@material-ui/core/TableRow");
+/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10__);
 
 var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\CustomBodyOfMonth\\CustomBodyOfMonth.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+
+
 
 
 
@@ -2221,7 +2242,7 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
             className: classes.infoBusy,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 39
+              lineNumber: 47
             },
             __self: this
           }, place);
@@ -2231,7 +2252,7 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
             className: classes.infoEmpty,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 41
+              lineNumber: 49
             },
             __self: this
           }, "BRAK");
@@ -2241,12 +2262,24 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
             className: classes.infoHoliday,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 43
+              lineNumber: 51
             },
             __self: this
           }, "Wakacje");
       }
     };
+
+    function createData(date, place, fat, carbs, protein) {
+      return {
+        date,
+        place,
+        fat,
+        carbs,
+        protein
+      };
+    }
+
+    const rows = [createData('Frozen yoghurt', 159, 6.0, 24, 4.0), createData('Ice cream sandwich', 237, 9.0, 37, 4.3), createData('Eclair', 262, 16.0, 24, 6.0), createData('Cupcake', 305, 3.7, 67, 4.3), createData('Gingerbread', 356, 16.0, 49, 3.9)];
 
     function toggleDetails(item) {
       alert(item);
@@ -2257,41 +2290,17 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
       });
     }
 
-    return __jsx("div", {
-      className: classNameMain // onClick={() => {
-      //   toggleDetails(this.props.day)
-      // }}
-      ,
+    const getDetails = () => __jsx("div", {
+      className: classes.rowInfo,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 78
       },
       __self: this
-    }, __jsx("div", {
-      className: classes.rowContainer,
+    }, this.props.status === busy ? __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
-      },
-      __self: this
-    }, __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 64
-      },
-      __self: this
-    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "span",
-      className: classes.day,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65
-      },
-      __self: this
-    }, this.props.day), this.props.status === busy ? __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 80
       },
       __self: this
     }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -2299,7 +2308,7 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
       className: classes.details,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 81
       },
       __self: this
     }, "hotel: ", this.props.hotel), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -2307,28 +2316,61 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
       className: classes.details,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73
+        lineNumber: 82
       },
       __self: this
     }, "adres: ", this.props.address)) : __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78
+        lineNumber: 84
       },
       __self: this
-    }, "WOLNE"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    }, "WOLNE"));
+
+    return __jsx("div", {
+      className: classNameMain // onClick={() => {
+      //   toggleDetails(this.props.day)
+      // }}
+      ,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89
+      },
+      __self: this
+    }, __jsx("div", {
+      className: classes.rowContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 96
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "span",
+      className: classes.day,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97
+      },
+      __self: this
+    }, this.props.day), getDetails(), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
       type: "p",
       className: classes.details,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 99
       },
       __self: this
     }, this.props.description)), __jsx("div", {
       className: classes.statusContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82
+        lineNumber: 101
       },
       __self: this
     }, getView(this.props.status))), this.props.children);
@@ -2423,7 +2465,12 @@ const styles = theme => ({
     border: '1px solid black'
   },
   statusContainer: {
-    display: 'flex'
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  rowInfo: {
+    fontSize: '1rem'
   }
 });
 
@@ -4435,6 +4482,72 @@ module.exports = require("@material-ui/core/Paper");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Popper");
+
+/***/ }),
+
+/***/ "@material-ui/core/Table":
+/*!******************************************!*\
+  !*** external "@material-ui/core/Table" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Table");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableBody":
+/*!**********************************************!*\
+  !*** external "@material-ui/core/TableBody" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableBody");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableCell":
+/*!**********************************************!*\
+  !*** external "@material-ui/core/TableCell" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableCell");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableContainer":
+/*!***************************************************!*\
+  !*** external "@material-ui/core/TableContainer" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableContainer");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableHead":
+/*!**********************************************!*\
+  !*** external "@material-ui/core/TableHead" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableHead");
+
+/***/ }),
+
+/***/ "@material-ui/core/TableRow":
+/*!*********************************************!*\
+  !*** external "@material-ui/core/TableRow" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/TableRow");
 
 /***/ }),
 

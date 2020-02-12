@@ -4491,7 +4491,7 @@ const TRACK_LIST = [{
 }, {
   name: 'Co tu się dzieje',
   mp3Name: 'CoTuSieDzieje',
-  artist: 'PowerPlay',
+  artist: 'Power Play',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
 }, {
   name: 'Cała sala śpiewa z nami',
@@ -4504,7 +4504,7 @@ const TRACK_LIST = [{
 }, {
   name: 'Co ma być to będzie',
   mp3Name: 'CoMaBycToBedzie',
-  artist: 'PowerPlay',
+  artist: 'Power Play',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
 }, {
   name: 'Czarownica',
@@ -4586,7 +4586,7 @@ const TRACK_LIST = [{
 }, {
   name: "Najpiękne",
   mp3Name: 'Najpiekne',
-  artist: 'Power play',
+  artist: 'Power Play',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
 }, {
   name: "Nie chce spać",

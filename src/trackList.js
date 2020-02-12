@@ -81,17 +81,24 @@ export const TRACK_LIST = [
     // imgSrc: SONGS_IMAGES.Naydis,
   },
   {
+    name: 'Małgośka',
+    mp3Name: 'Malgoska',
+    artist: 'Maryla Rodowicz',
+    // imgSrc: SONGS_IMAGES.powerPLay,
+  },
+  {
     name: 'Baśka',
     mp3Name: 'Baska',
     artist: 'Wilki',
     // imgSrc: SONGS_IMAGES.Naydis,
   },
   {
-    name: 'Bukiet róż',
-    mp3Name: 'BukietRoz',
-    artist: 'Veegas',
-    // imgSrc: SONGS_IMAGES.Naydis,
+    name: "Przekorny Los",
+    mp3Name: 'PrzekornyLos',
+    artist: 'Akcent',
+    // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
   },
+
   {
     name: 'Byłaś dla mnie wszystkim',
     mp3Name: 'BylasDlaMnieWszystkim',
@@ -101,7 +108,7 @@ export const TRACK_LIST = [
   {
     name: 'Co tu się dzieje',
     mp3Name: 'CoTuSieDzieje',
-    artist: 'PowerPlay',
+    artist: 'Power Play',
     imgSrc: SONGS_IMAGES.powerPLay,
   },
   {
@@ -117,7 +124,7 @@ export const TRACK_LIST = [
   {
     name: 'Co ma być to będzie',
     mp3Name: 'CoMaBycToBedzie',
-    artist: 'PowerPlay',
+    artist: 'Power Play',
     imgSrc: SONGS_IMAGES.powerPLay,
   },
   {
@@ -130,6 +137,12 @@ export const TRACK_LIST = [
     name: 'Czy ten Pan i Pani',
     mp3Name: 'CzyTenPanIPani',
     artist: 'Ania Wyszkoni',
+  },
+  {
+    name: 'Kochaj mnie',
+    mp3Name: 'KochajMnie',
+    artist: 'Power Play',
+    imgSrc: SONGS_IMAGES.powerPLay,
   },
   {
     name: 'Do białego rana',
@@ -160,11 +173,12 @@ export const TRACK_LIST = [
     // imgSrc: SONGS_IMAGES.marcus,
   },
   {
-    name: 'Kochaj mnie',
-    mp3Name: 'KochajMnie',
-    artist: 'Power Play',
-    imgSrc: SONGS_IMAGES.powerPLay,
+    name: 'Bukiet róż',
+    mp3Name: 'BukietRoz',
+    artist: 'Veegas',
+    // imgSrc: SONGS_IMAGES.Naydis,
   },
+
   {
     name: 'Za tobą pójdę jak ba bal',
     mp3Name: 'ZaTobaPojdeJakNaBal',
@@ -178,12 +192,6 @@ export const TRACK_LIST = [
     // imgSrc: SONGS_IMAGES.powerPLay,
   },
   {
-    name: 'Małgośka',
-    mp3Name: 'Malgoska',
-    artist: 'Maryla Rodowicz',
-    // imgSrc: SONGS_IMAGES.powerPLay,
-  },
-  {
     name: 'Lubisz to',
     mp3Name: 'LubiszTo',
     artist: 'Power Play',
@@ -194,6 +202,12 @@ export const TRACK_LIST = [
     mp3Name: 'MammaMiaHisItaliano',
     artist: 'Elena Gheorghe',
     // imgSrc: SONGS_IMAGES.powerPLay,
+  },
+  {
+    name: "Rock&Roll",
+    mp3Name: 'Rock&Roll',
+    artist: 'Electric Light Orchestra',
+    // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
   },
   {
     name: "Mazureczka",
@@ -216,7 +230,7 @@ export const TRACK_LIST = [
   {
     name: "Najpiękne",
     mp3Name: 'Najpiekne',
-    artist: 'Power play',
+    artist: 'Power Play',
     imgSrc: SONGS_IMAGES.powerPLay,
   },
   {
@@ -250,12 +264,6 @@ export const TRACK_LIST = [
     // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
   },
   {
-    name: "Ona czuje we mnie piniądz",
-    mp3Name: 'OnaCzujeWeMniePiniadz',
-    artist: 'Łobuzy',
-    // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
-  },
-  {
     name: "Ona jest taka cudowna",
     mp3Name: 'OnaJestTakaCudowna',
     artist: 'Piękni i młodzi',
@@ -274,12 +282,6 @@ export const TRACK_LIST = [
     // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
   },
   {
-    name: "Przekorny Los",
-    mp3Name: 'PrzekornyLos',
-    artist: 'Akcent',
-    // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
-  },
-  {
     name: "Prześliczna wiolączelistka",
     mp3Name: 'PrzeslicznaWiolaczelistka',
     artist: 'Skaldowie',
@@ -292,15 +294,9 @@ export const TRACK_LIST = [
     imgSrc: SONGS_IMAGES.lombard,
   },
   {
-    name: "Rock&Roll",
-    mp3Name: 'Rock&Roll',
-    artist: 'Electric Light Orchestra',
-    // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
-  },
-  {
     name: "Ruda tańczy jak szalona",
     mp3Name: 'Rock&RudaTanczyJakSzalona',
-    artist: 'Czadomen',
+    artist: 'Czadoman',
     imgSrc: SONGS_IMAGES.czadoman,
   },
   {
