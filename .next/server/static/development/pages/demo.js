@@ -2185,7 +2185,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\Footer\\Footer.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\Footer\\Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2593,7 +2593,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\Image\\Image.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\Image\\Image.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2701,7 +2701,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../constants */ "./src/constants.js");
 /* harmony import */ var _MenuItem_MenuItem_style__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../MenuItem/MenuItem.style */ "./src/components/MenuItem/MenuItem.style.js");
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\MenuComponent\\MenuBurger\\MenuBurger.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\MenuComponent\\MenuBurger\\MenuBurger.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -2896,7 +2896,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _MenuBurger__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./MenuBurger */ "./src/components/MenuComponent/MenuBurger/index.js");
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\MenuComponent\\MenuComponent.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\MenuComponent\\MenuComponent.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -3136,7 +3136,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\MenuItem\\MenuItem.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\MenuItem\\MenuItem.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -3276,7 +3276,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _MenuComponent_MenuComponent_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MenuComponent/MenuComponent.style */ "./src/components/MenuComponent/MenuComponent.style.js");
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\PageWrapper\\PageWrapper.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\PageWrapper\\PageWrapper.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -3415,7 +3415,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _trackList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../trackList */ "./src/trackList.js");
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\PlayerCustomized\\PlayerCustomized.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\PlayerCustomized\\PlayerCustomized.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -3832,7 +3832,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
 /* harmony import */ var _Image__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Image */ "./src/components/Image/index.js");
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\components\\TrackContainer\\TrackContainer.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\TrackContainer\\TrackContainer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -4267,7 +4267,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_motion_ui_pack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-motion-ui-pack */ "react-motion-ui-pack");
 /* harmony import */ var react_motion_ui_pack__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_motion_ui_pack__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\mp3Player\\withMediaProps.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\mp3Player\\withMediaProps.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -4474,14 +4474,19 @@ const TRACK_LIST = [{
   artist: 'Piersi' // imgSrc: SONGS_IMAGES.Naydis,
 
 }, {
+  name: 'Małgośka',
+  mp3Name: 'Malgoska',
+  artist: 'Maryla Rodowicz' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
   name: 'Baśka',
   mp3Name: 'Baska',
   artist: 'Wilki' // imgSrc: SONGS_IMAGES.Naydis,
 
 }, {
-  name: 'Bukiet róż',
-  mp3Name: 'BukietRoz',
-  artist: 'Veegas' // imgSrc: SONGS_IMAGES.Naydis,
+  name: "Przekorny Los",
+  mp3Name: 'PrzekornyLos',
+  artist: 'Akcent' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
 
 }, {
   name: 'Byłaś dla mnie wszystkim',
@@ -4516,6 +4521,11 @@ const TRACK_LIST = [{
   mp3Name: 'CzyTenPanIPani',
   artist: 'Ania Wyszkoni'
 }, {
+  name: 'Kochaj mnie',
+  mp3Name: 'KochajMnie',
+  artist: 'Power Play',
+  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
+}, {
   name: 'Do białego rana',
   mp3Name: 'DoBialegoRana',
   artist: 'Freaky Boys'
@@ -4539,10 +4549,10 @@ const TRACK_LIST = [{
   artist: 'Irena Jarocka' // imgSrc: SONGS_IMAGES.marcus,
 
 }, {
-  name: 'Kochaj mnie',
-  mp3Name: 'KochajMnie',
-  artist: 'Power Play',
-  imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].powerPLay
+  name: 'Bukiet róż',
+  mp3Name: 'BukietRoz',
+  artist: 'Veegas' // imgSrc: SONGS_IMAGES.Naydis,
+
 }, {
   name: 'Za tobą pójdę jak ba bal',
   mp3Name: 'ZaTobaPojdeJakNaBal',
@@ -4554,11 +4564,6 @@ const TRACK_LIST = [{
   artist: 'Boys' // imgSrc: SONGS_IMAGES.powerPLay,
 
 }, {
-  name: 'Małgośka',
-  mp3Name: 'Malgoska',
-  artist: 'Maryla Rodowicz' // imgSrc: SONGS_IMAGES.powerPLay,
-
-}, {
   name: 'Lubisz to',
   mp3Name: 'LubiszTo',
   artist: 'Power Play',
@@ -4567,6 +4572,11 @@ const TRACK_LIST = [{
   name: "Mamma mia He's italiano",
   mp3Name: 'MammaMiaHisItaliano',
   artist: 'Elena Gheorghe' // imgSrc: SONGS_IMAGES.powerPLay,
+
+}, {
+  name: "Rock&Roll",
+  mp3Name: 'Rock&Roll',
+  artist: 'Electric Light Orchestra' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
 
 }, {
   name: "Mazureczka",
@@ -4614,11 +4624,6 @@ const TRACK_LIST = [{
   artist: 'Łobuzy' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
 
 }, {
-  name: "Ona czuje we mnie piniądz",
-  mp3Name: 'OnaCzujeWeMniePiniadz',
-  artist: 'Łobuzy' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
-
-}, {
   name: "Ona jest taka cudowna",
   mp3Name: 'OnaJestTakaCudowna',
   artist: 'Piękni i młodzi' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
@@ -4634,11 +4639,6 @@ const TRACK_LIST = [{
   artist: 'Piotr Gąsowski' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
 
 }, {
-  name: "Przekorny Los",
-  mp3Name: 'PrzekornyLos',
-  artist: 'Akcent' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
-
-}, {
   name: "Prześliczna wiolączelistka",
   mp3Name: 'PrzeslicznaWiolaczelistka',
   artist: 'Skaldowie' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
@@ -4649,14 +4649,9 @@ const TRACK_LIST = [{
   artist: 'Lombard',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].lombard
 }, {
-  name: "Rock&Roll",
-  mp3Name: 'Rock&Roll',
-  artist: 'Electric Light Orchestra' // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
-
-}, {
   name: "Ruda tańczy jak szalona",
-  mp3Name: 'Rock&RudaTanczyJakSzalona',
-  artist: 'Czadomen',
+  mp3Name: 'RudaTanczyJakSzalona',
+  artist: 'Czadoman',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].czadoman
 }, {
   name: "W kinie w Lublinie",
@@ -4688,7 +4683,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_PageWrapper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/PageWrapper */ "./src/components/PageWrapper/index.js");
 /* harmony import */ var _components_PlayerCustomized__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/PlayerCustomized */ "./src/components/PlayerCustomized/index.js");
 /* harmony import */ var _components_Footer_Footer_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Footer/Footer.style */ "./src/components/Footer/Footer.style.js");
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\src\\views\\Demo\\Demo.js";
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\views\\Demo\\Demo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -5065,7 +5060,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\IT_projects_Edu-Lab\arto_WWW\www.arto.boo.pl\pages\demo.js */"./pages/demo.js");
+module.exports = __webpack_require__(/*! C:\IT_projects_Edu-Lab\www.zespolarto.pl\pages\demo.js */"./pages/demo.js");
 
 
 /***/ }),

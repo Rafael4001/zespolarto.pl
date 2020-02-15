@@ -17,16 +17,15 @@ const styles = (theme) => ({
   },
 
   day: {
-    paddingLeft: '0.5rem'
+    // padding: '0 0.5rem',
   },
 
   busy: {
-    backgroundColor: '#dff0d8',
-    color: '#3c763d',
+    backgroundColor: '#5ef05a',
   },
 
   emptyContainer: {
-    background: 'none',
+    background: '#9ce2ef',
   },
 
   holiday: {
@@ -70,14 +69,17 @@ const styles = (theme) => ({
   },
 
   details: {
-    fontSize: '0.75rem',
+    fontSize: '0.7rem',
     margin: '0.2rem',
   },
 
   rowContainer: {
     display: 'grid',
     gridTemplateColumns: '5fr 1fr',
-    border: '1px solid black'
+  },
+  detailsMainContainer: {
+    display: 'flex',
+    flexDirection: 'column',
   },
   statusContainer: {
     display: 'flex',
@@ -85,7 +87,7 @@ const styles = (theme) => ({
     alignItems: 'center'
   },
   rowInfo: {
-    fontSize: '1rem',
+    fontSize: '0.7rem',
   }
 });
 

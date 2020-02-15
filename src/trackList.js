@@ -295,7 +295,7 @@ export const TRACK_LIST = [
   },
   {
     name: "Ruda tańczy jak szalona",
-    mp3Name: 'Rock&RudaTanczyJakSzalona',
+    mp3Name: 'RudaTanczyJakSzalona',
     artist: 'Czadoman',
     imgSrc: SONGS_IMAGES.czadoman,
   },

@@ -1625,7 +1625,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.10' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -5119,7 +5119,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\IT_projects_Edu-Lab\\arto_WWW\\www.arto.boo.pl\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\.next");
       return error;
     }
   };
@@ -8657,11 +8657,11 @@ function () {
         // navigating back from an external site
         if (history.state) {
           var _history$state = history.state,
-              url = _history$state.url,
+              _url2 = _history$state.url,
               _as2 = _history$state.as,
               options = _history$state.options;
 
-          _this.changeState('replaceState', url, _as2, _Object$assign({}, options, {
+          _this.changeState('replaceState', _url2, _as2, _Object$assign({}, options, {
             fromExternal: true
           }));
         }

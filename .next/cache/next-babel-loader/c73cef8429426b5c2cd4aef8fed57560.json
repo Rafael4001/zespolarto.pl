@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from './Footer.style';","map":{"version":3,"sources":["C:/IT_projects_Edu-Lab/arto_WWW/www.arto.boo.pl/src/components/Footer/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,gBAAxB","sourcesContent":["export { default } from './Footer.style';\r\n\r\n"]},"metadata":{},"sourceType":"module"}

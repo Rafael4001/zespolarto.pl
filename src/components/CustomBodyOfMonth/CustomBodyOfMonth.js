@@ -52,18 +52,6 @@ class CustomBodyOfMonth extends Component {
       }
     };
 
-    function createData(date, place, fat, carbs, protein) {
-      return {date, place, fat, carbs, protein};
-    }
-
-    const rows = [
-      createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-      createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-      createData('Eclair', 262, 16.0, 24, 6.0),
-      createData('Cupcake', 305, 3.7, 67, 4.3),
-      createData('Gingerbread', 356, 16.0, 49, 3.9),
-    ];
-
 
     function toggleDetails(item) {
       alert(item);
@@ -76,12 +64,12 @@ class CustomBodyOfMonth extends Component {
 
     const getDetails = () => (
       <div className={classes.rowInfo}>
-        {this.props.status === busy ?
-          <div>
-            <Typography type={"p"} className={classes.details}>hotel: {this.props.hotel}</Typography>
-            <Typography type={"p"} className={classes.details}>adres: {this.props.address}</Typography>
-          </div>
-          : <div>WOLNE</div>}
+        {this.props.status === busy &&
+        <div>
+          <Typography type={"p"} className={classes.details}>hotel: {this.props.hotel}</Typography>
+          <Typography type={"p"} className={classes.details}>adres: {this.props.address}</Typography>
+        </div>
+        }
       </div>
     );
 
@@ -93,14 +81,12 @@ class CustomBodyOfMonth extends Component {
         // }}
       >
         <div className={classes.rowContainer}>
-          <div>
+          <div className={classes.detailsMainContainer}>
             <Typography type={"span"} className={classes.day}>{this.props.day}</Typography>
             {getDetails()}
             <Typography type={"p"} className={classes.details}>{this.props.description}</Typography>
           </div>
-          <div className={classes.statusContainer}>
-            {getView(this.props.status)}
-          </div>
+          <div className={classes.statusContainer}>{getView(this.props.status)}</div>
         </div>
         {this.props.children}
       </div>

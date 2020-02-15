@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from './OpinionsContainer.style';","map":{"version":3,"sources":["C:/IT_projects_Edu-Lab/arto_WWW/www.arto.boo.pl/src/components/OpinionsContainer/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,2BAAxB","sourcesContent":["export { default } from './OpinionsContainer.style';\r\n\r\n"]},"metadata":{},"sourceType":"module"}
