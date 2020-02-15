@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { withStyles } from '@material-ui/core/styles';\nimport Media from './Media';\nvar styles = {\n  mainContainer: {}\n};\nexport default withStyles(styles)(Media);","map":null,"metadata":{},"sourceType":"module"}

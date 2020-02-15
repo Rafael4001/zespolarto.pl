@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { withStyles } from '@material-ui/core/styles';\nimport Image from './Image';\n\nvar styles = function styles(theme) {\n  return {\n    mainContainer: {\n      width: '20rem'\n    },\n    image: {\n      width: '100%'\n    }\n  };\n};\n\nexport default withStyles(styles)(Image);","map":null,"metadata":{},"sourceType":"module"}

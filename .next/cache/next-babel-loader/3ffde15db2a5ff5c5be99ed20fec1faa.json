@@ -1,0 +1,1 @@
+{"ast":null,"code":"import photo from '../src/views/photo';\nexport default photo;","map":null,"metadata":{},"sourceType":"module"}
