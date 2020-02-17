@@ -172,7 +172,8 @@
         "day": "09.05.2020",
         "free": true,
         "place": "",
-        "hotel": ""
+        "hotel": "",
+        "status": "empty"
       },
       {
         "day": "16.05.2020",

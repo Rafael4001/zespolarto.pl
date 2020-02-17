@@ -224,7 +224,7 @@ export const TRACK_LIST = [
   {
     name: "Mleczko",
     mp3Name: 'Mleczko',
-    artist: 'Energy Girls',
+    artist: 'Top Girls',
     // imgSrc: SONGS_IMAGES.powerPLay,
   },
   {
@@ -278,7 +278,7 @@ export const TRACK_LIST = [
   {
     name: "Prywatki",
     mp3Name: 'Prywatki',
-    artist: 'Piotr Gąsowski',
+    artist: 'Wojciech Gąsowski',
     // imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
   },
   {

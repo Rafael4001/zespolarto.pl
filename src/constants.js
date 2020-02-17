@@ -19,7 +19,6 @@ import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
 
 //==============Songs images===============
 
-import Naydis from '../static/image/songsImages/Naydis.jpg';
 import poparzeniKawaTrzy from '../static/image/songsImages/poparzeniKawaTrzy.jpg';
 import marcus from '../static/image/songsImages/marcus.jpg';
 import powerPLay from '../static/image/songsImages/powerPLay.jpg';
@@ -36,7 +35,6 @@ export const SONGS_IMAGES = {
   DefaultSongImage: DefaultSongImage,
   DAJ_TO_GLOSNIEJ: dajToGlosniej,
   marcus: marcus,
-  Naydis: Naydis,
   powerPLay: powerPLay,
   poparzeniKawaTrzy: poparzeniKawaTrzy,
   urszula: urszula,
