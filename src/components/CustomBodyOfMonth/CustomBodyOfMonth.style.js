@@ -41,13 +41,11 @@ const styles = (theme) => ({
     fontSize: '0.9rem',
     borderRadius: '0.5rem',
     padding: '0.1rem 0.4rem',
-    // float: 'right',
     textAlign: 'right',
 
     [theme.breakpoints.up('sm')]: {
       marginRight: '1rem',
     },
-
   },
 
   infoBusy: {

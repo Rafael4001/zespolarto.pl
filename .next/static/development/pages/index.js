@@ -6492,7 +6492,7 @@ var defaultTheme = Object(_createMuiTheme__WEBPACK_IMPORTED_MODULE_0__["default"
 /*!************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/index.js ***!
   \************************************************************/
-/*! exports provided: createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, easing, duration */
+/*! exports provided: hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, easing, duration, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29260,7 +29260,7 @@ function (_Component) {
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: _constants__WEBPACK_IMPORTED_MODULE_13__["LINKS"].HOME,
+        href: _constants__WEBPACK_IMPORTED_MODULE_13__["LINKS"].HOME.HREF,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
@@ -29289,7 +29289,7 @@ function (_Component) {
         },
         __self: this
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: _constants__WEBPACK_IMPORTED_MODULE_13__["LINKS"].CONTACT,
+        href: _constants__WEBPACK_IMPORTED_MODULE_13__["LINKS"].CONTACT.HREF,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34

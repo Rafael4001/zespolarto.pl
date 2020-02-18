@@ -3190,7 +3190,7 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      href: _constants__WEBPACK_IMPORTED_MODULE_8__["LINKS"].HOME,
+      href: _constants__WEBPACK_IMPORTED_MODULE_8__["LINKS"].HOME.HREF,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 22
@@ -3219,7 +3219,7 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      href: _constants__WEBPACK_IMPORTED_MODULE_8__["LINKS"].CONTACT,
+      href: _constants__WEBPACK_IMPORTED_MODULE_8__["LINKS"].CONTACT.HREF,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 34

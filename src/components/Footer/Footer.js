@@ -19,7 +19,7 @@ class Footer extends Component {
       <div className={classes.footerContainer}>
         <div className={classes.mainContainer}>
           <div className={classes.logoContainer}>
-            <Link href={LINKS.HOME}>
+            <Link href={LINKS.HOME.HREF}>
               <a>
                 <img
                   src={LOGO_ON_THE_FLOWERS}
@@ -31,14 +31,14 @@ class Footer extends Component {
           </div>
 
           <div className={classes.contactContainer}>
-            <Link href={LINKS.CONTACT}>
+            <Link href={LINKS.CONTACT.HREF}>
               <a className={classes.contactTextContainer}>
-                <img
-                  src={INFO_ICON}
-                  alt={'Bride'}
-                  className={classes.info_icon}
-                />
-                <Typography>KONTAKT</Typography>
+              <img
+                src={INFO_ICON}
+                alt={'Bride'}
+                className={classes.info_icon}
+              />
+              <Typography>KONTAKT</Typography>
               </a>
             </Link>
           </div>
