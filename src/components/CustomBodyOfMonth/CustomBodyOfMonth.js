@@ -70,7 +70,7 @@ class CustomBodyOfMonth extends Component {
 
     const getDetails = () => (
       <div className={classes.rowInfo}>
-        {this.props.status === busy &&
+        {this.props.status === STATUS.BUSY || this.props.status === STATUS.HOLIDAY &&
         <div>
           {this.props.hotel && <Typography type={"p"} className={classes.details}><strong>hotel: </strong>{this.props.hotel}</Typography>}
           {this.props.information &&

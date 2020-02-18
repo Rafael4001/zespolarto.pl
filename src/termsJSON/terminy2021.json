@@ -165,14 +165,14 @@
         "free": true,
         "place": "",
         "hotel": "",
-        "status": "holiday"
+        "status": "empty"
       },
       {
         "day": "22.05.2021",
         "free": true,
         "place": "",
         "hotel": "",
-        "status": "holiday"
+        "status": "empty"
       },
       {
         "day": "29.05.2021",
@@ -282,10 +282,11 @@
       {
         "day": "14.08.2021",
         "free": false,
-        "place": "ZOSTAWIć WOLNY KONIECZNIE",
+        "place": "",
         "hotel": "",
         "weekDay": 6,
-        "status": "busy",
+        "status": "holiday",
+        "information": "zostawić koniecznie wolne",
         "blessing": "noInfo",
         "blessingTime": "noInfo",
         "weddingHour": "noInfo"
