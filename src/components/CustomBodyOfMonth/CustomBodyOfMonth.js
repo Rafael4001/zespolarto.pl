@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import Typography from '@material-ui/core/Typography';
 
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import EventAvailableIcon from '@material-ui/icons/EventAvailable';
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import EventBusyIcon from '@material-ui/icons/EventBusy';
 
 
 const STATUS = {
@@ -44,11 +40,21 @@ class CustomBodyOfMonth extends Component {
     const getView = (status) => {
       switch (status) {
         case busy:
-          return (<div className={classes.infoBusy}>{place}</div>);
+          return (<div className={classNames(classes.info, classes.infoBusy,)}>{place}</div>);
         case empty:
-          return (<div className={classes.infoEmpty}>BRAK</div>);
+          return (<div className={classNames(classes.info, classes.infoEmpty,)}>BRAK</div>);
         case holiday:
-          return (<div className={classes.infoHoliday}>Wakacje</div>)
+          return (<div className={classNames(classes.info, classes.infoHoliday,)}>Wakacje</div>)
+      }
+    };
+    const getIcon = (status) => {
+      switch (status) {
+        case STATUS.BUSY:
+          return <EventAvailableIcon classes={{root: classes.icon}}/>;
+        case STATUS.EMPTY:
+          return <CalendarTodayIcon classes={{root: classes.icon}}/>;
+        case STATUS.HOLIDAY:
+          return <EventBusyIcon classes={{root: classes.icon}}/>;
       }
     };
 
@@ -66,8 +72,9 @@ class CustomBodyOfMonth extends Component {
       <div className={classes.rowInfo}>
         {this.props.status === busy &&
         <div>
-          <Typography type={"p"} className={classes.details}>hotel: {this.props.hotel}</Typography>
-          <Typography type={"p"} className={classes.details}>adres: {this.props.address}</Typography>
+          {this.props.hotel && <Typography type={"p"} className={classes.details}><strong>hotel: </strong>{this.props.hotel}</Typography>}
+          {this.props.information &&
+          <Typography type={"p"} className={classes.details}><strong>informacje dodatkowe: </strong>{this.props.information}</Typography>}
         </div>
         }
       </div>
@@ -82,7 +89,10 @@ class CustomBodyOfMonth extends Component {
       >
         <div className={classes.rowContainer}>
           <div className={classes.detailsMainContainer}>
-            <Typography type={"span"} className={classes.day}>{this.props.day}</Typography>
+            <div className={classes.termIconContainer}>
+              {getIcon(this.props.status)}
+              <Typography type={"span"} className={classes.day}>{this.props.day}</Typography>
+            </div>
             {getDetails()}
             <Typography type={"p"} className={classes.details}>{this.props.description}</Typography>
           </div>
@@ -95,10 +105,10 @@ class CustomBodyOfMonth extends Component {
 }
 
 CustomBodyOfMonth.defaultProps = {
-  address: '',
   description: '',
   hotel: '',
   place: '',
+  information: '',
 };
 
 CustomBodyOfMonth.displayName = 'CustomBodyOfMonth';

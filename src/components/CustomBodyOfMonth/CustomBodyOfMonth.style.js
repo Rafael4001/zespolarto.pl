@@ -1,6 +1,7 @@
 import { withStyles } from '@material-ui/core/styles';
 
 import CustomBodyOfMonth from './CustomBodyOfMonth';
+import { SCREEN_SIZE } from "../../constants";
 
 
 const styles = (theme) => ({
@@ -21,12 +22,10 @@ const styles = (theme) => ({
   },
 
   busy: {
-    backgroundColor: '#5ef05a',
+    backgroundColor: 'rgba(77,184,74,0.43)',
   },
 
-  emptyContainer: {
-    background: '#9ce2ef',
-  },
+  emptyContainer: {},
 
   holiday: {
     backgroundColor: '#5bc0de',
@@ -35,37 +34,29 @@ const styles = (theme) => ({
 
 
   infoEmpty: {
-    fontSize: '1rem',
-
-    borderRadius: '0.5rem',
-    padding: '0.2rem 0.4rem',
-    float: 'right',
-    marginRight: '1rem',
     backgroundColor: '#ff747e',
   },
 
-  infoBusy: {
-    fontSize: '1rem',
-
+  info: {
+    fontSize: '0.9rem',
     borderRadius: '0.5rem',
-    padding: '0.2rem 0.4rem',
-    float: 'right',
-    marginRight: '1rem',
+    padding: '0.1rem 0.4rem',
+    // float: 'right',
+    textAlign: 'right',
 
+    [theme.breakpoints.up('sm')]: {
+      marginRight: '1rem',
+    },
+
+  },
+
+  infoBusy: {
     backgroundColor: '#55c7bd',
-    color: 'black',
   },
 
   infoHoliday: {
-    fontSize: '1rem',
-
-    borderRadius: '0.5rem',
-    padding: '0.2rem 0.4rem',
-    float: 'right',
-    marginRight: '1rem',
-
     backgroundColor: 'white',
-    color: 'black',
+    color: 'black'
   },
 
   details: {
@@ -74,8 +65,9 @@ const styles = (theme) => ({
   },
 
   rowContainer: {
-    display: 'grid',
-    gridTemplateColumns: '5fr 1fr',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   detailsMainContainer: {
     display: 'flex',
@@ -88,6 +80,14 @@ const styles = (theme) => ({
   },
   rowInfo: {
     fontSize: '0.7rem',
+  },
+  icon: {
+    fontSize: '1.2rem',
+    marginRight: '0.2rem'
+  },
+  termIconContainer: {
+    display: 'flex',
+    alignItems: 'center'
   }
 });
 

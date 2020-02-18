@@ -14,7 +14,7 @@ const styles = ({
     padding: 0,
   },
   dayContainer: {
-    margin: 0,
+    marginTop: '1rem',
     listStyle:'none',
   },
   icon: {

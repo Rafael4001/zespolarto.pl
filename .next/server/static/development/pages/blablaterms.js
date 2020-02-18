@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -299,27 +299,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Table */ "@material-ui/core/Table");
-/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/TableBody */ "@material-ui/core/TableBody");
-/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/TableCell */ "@material-ui/core/TableCell");
-/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/TableContainer */ "@material-ui/core/TableContainer");
-/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/TableHead */ "@material-ui/core/TableHead");
-/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/TableRow */ "@material-ui/core/TableRow");
-/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/EventAvailable */ "@material-ui/icons/EventAvailable");
+/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/CalendarToday */ "@material-ui/icons/CalendarToday");
+/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/EventBusy */ "@material-ui/icons/EventBusy");
+/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6__);
 
 var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\CustomBodyOfMonth\\CustomBodyOfMonth.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-
 
 
 
@@ -363,33 +351,73 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
       switch (status) {
         case busy:
           return __jsx("div", {
-            className: classes.infoBusy,
+            className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoBusy),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 47
+              lineNumber: 43
             },
             __self: this
           }, place);
 
         case empty:
           return __jsx("div", {
-            className: classes.infoEmpty,
+            className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoEmpty),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 49
+              lineNumber: 45
             },
             __self: this
           }, "BRAK");
 
         case holiday:
           return __jsx("div", {
-            className: classes.infoHoliday,
+            className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoHoliday),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 51
+              lineNumber: 47
             },
             __self: this
           }, "Wakacje");
+      }
+    };
+
+    const getIcon = status => {
+      switch (status) {
+        case STATUS.BUSY:
+          return __jsx(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4___default.a, {
+            classes: {
+              root: classes.icon
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 53
+            },
+            __self: this
+          });
+
+        case STATUS.EMPTY:
+          return __jsx(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5___default.a, {
+            classes: {
+              root: classes.icon
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 55
+            },
+            __self: this
+          });
+
+        case STATUS.HOLIDAY:
+          return __jsx(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6___default.a, {
+            classes: {
+              root: classes.icon
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 57
+            },
+            __self: this
+          });
       }
     };
 
@@ -406,32 +434,44 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
       className: classes.rowInfo,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 72
       },
       __self: this
     }, this.props.status === busy && __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 74
       },
       __self: this
-    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    }, this.props.hotel && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
       type: "p",
       className: classes.details,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 75
       },
       __self: this
-    }, "hotel: ", this.props.hotel), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    }, __jsx("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }, "hotel: "), this.props.hotel), this.props.information && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
       type: "p",
       className: classes.details,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 77
       },
       __self: this
-    }, "adres: ", this.props.address)));
+    }, __jsx("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      },
+      __self: this
+    }, "informacje dodatkowe: "), this.props.information)));
 
     return __jsx("div", {
       className: classNameMain // onClick={() => {
@@ -440,44 +480,51 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
       ,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 84
       },
       __self: this
     }, __jsx("div", {
       className: classes.rowContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83
+        lineNumber: 90
       },
       __self: this
     }, __jsx("div", {
       className: classes.detailsMainContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84
+        lineNumber: 91
       },
       __self: this
-    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    }, __jsx("div", {
+      className: classes.termIconContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 92
+      },
+      __self: this
+    }, getIcon(this.props.status), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
       type: "span",
       className: classes.day,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 94
       },
       __self: this
-    }, this.props.day), getDetails(), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    }, this.props.day)), getDetails(), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
       type: "p",
       className: classes.details,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87
+        lineNumber: 97
       },
       __self: this
     }, this.props.description)), __jsx("div", {
       className: classes.statusContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89
+        lineNumber: 99
       },
       __self: this
     }, getView(this.props.status))), this.props.children);
@@ -486,10 +533,10 @@ class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] 
 }
 
 CustomBodyOfMonth.defaultProps = {
-  address: '',
   description: '',
   hotel: '',
-  place: ''
+  place: '',
+  information: ''
 };
 CustomBodyOfMonth.displayName = 'CustomBodyOfMonth';
 /* harmony default export */ __webpack_exports__["default"] = (CustomBodyOfMonth);
@@ -508,6 +555,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CustomBodyOfMonth */ "./src/components/CustomBodyOfMonth/CustomBodyOfMonth.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+
 
 
 
@@ -525,38 +574,30 @@ const styles = theme => ({
   day: {// padding: '0 0.5rem',
   },
   busy: {
-    backgroundColor: '#5ef05a'
+    backgroundColor: 'rgba(77,184,74,0.43)'
   },
-  emptyContainer: {
-    background: '#9ce2ef'
-  },
+  emptyContainer: {},
   holiday: {
     backgroundColor: '#5bc0de',
     color: 'white'
   },
   infoEmpty: {
-    fontSize: '1rem',
-    borderRadius: '0.5rem',
-    padding: '0.2rem 0.4rem',
-    float: 'right',
-    marginRight: '1rem',
     backgroundColor: '#ff747e'
   },
-  infoBusy: {
-    fontSize: '1rem',
+  info: {
+    fontSize: '0.9rem',
     borderRadius: '0.5rem',
-    padding: '0.2rem 0.4rem',
-    float: 'right',
-    marginRight: '1rem',
-    backgroundColor: '#55c7bd',
-    color: 'black'
+    padding: '0.1rem 0.4rem',
+    // float: 'right',
+    textAlign: 'right',
+    [theme.breakpoints.up('sm')]: {
+      marginRight: '1rem'
+    }
+  },
+  infoBusy: {
+    backgroundColor: '#55c7bd'
   },
   infoHoliday: {
-    fontSize: '1rem',
-    borderRadius: '0.5rem',
-    padding: '0.2rem 0.4rem',
-    float: 'right',
-    marginRight: '1rem',
     backgroundColor: 'white',
     color: 'black'
   },
@@ -565,8 +606,9 @@ const styles = theme => ({
     margin: '0.2rem'
   },
   rowContainer: {
-    display: 'grid',
-    gridTemplateColumns: '5fr 1fr'
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   },
   detailsMainContainer: {
     display: 'flex',
@@ -579,6 +621,14 @@ const styles = theme => ({
   },
   rowInfo: {
     fontSize: '0.7rem'
+  },
+  icon: {
+    fontSize: '1.2rem',
+    marginRight: '0.2rem'
+  },
+  termIconContainer: {
+    display: 'flex',
+    alignItems: 'center'
   }
 });
 
@@ -616,8 +666,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../CustomBodyOfMonth */ "./src/components/CustomBodyOfMonth/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/CalendarToday */ "@material-ui/icons/CalendarToday");
-/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_CalendarViewDay__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/CalendarViewDay */ "@material-ui/icons/CalendarViewDay");
+/* harmony import */ var _material_ui_icons_CalendarViewDay__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CalendarViewDay__WEBPACK_IMPORTED_MODULE_4__);
 
 var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\Months\\Months.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -657,7 +707,7 @@ const Months = props => {
       lineNumber: 16
     },
     __self: undefined
-  }, __jsx(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, __jsx(_material_ui_icons_CalendarViewDay__WEBPACK_IMPORTED_MODULE_4___default.a, {
     classes: {
       root: classes.icon
     },
@@ -709,7 +759,7 @@ const styles = {
     padding: 0
   },
   dayContainer: {
-    margin: 0,
+    marginTop: '1rem',
     listStyle: 'none'
   },
   icon: {
@@ -735,6 +785,222 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/constants.js":
+/*!**************************!*\
+  !*** ./src/constants.js ***!
+  \**************************/
+/*! exports provided: SONGS_IMAGES, IMAGE_1, IMAGE_2, IMAGE_3, IMAGE_4, LOGO, LOGO_ON_THE_FLOWERS, LOVERS, BRIDE, SMILE, MUSIC, INFO_ICON, LEAF, FACEBOOK_PAGE, LUBLIN_MAP, VIDEO_CARD_IMAGE, PHOTO_CARD_IMAGE, MAX_PAGE_WIDTH, LINKS, MENU_ITEMS, MENU_ITEM_WIDTH, COLORS, FACEBOOK, FACEBOOK_URL, RAFAL_CIESIELCZUK_LINKED_IN, MARGIN_TOP_UNDER_MENU, SCREEN_SIZE */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SONGS_IMAGES", function() { return SONGS_IMAGES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IMAGE_1", function() { return IMAGE_1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IMAGE_2", function() { return IMAGE_2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IMAGE_3", function() { return IMAGE_3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IMAGE_4", function() { return IMAGE_4; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOGO", function() { return LOGO; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOGO_ON_THE_FLOWERS", function() { return LOGO_ON_THE_FLOWERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOVERS", function() { return LOVERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BRIDE", function() { return BRIDE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SMILE", function() { return SMILE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MUSIC", function() { return MUSIC; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "INFO_ICON", function() { return INFO_ICON; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LEAF", function() { return LEAF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FACEBOOK_PAGE", function() { return FACEBOOK_PAGE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LUBLIN_MAP", function() { return LUBLIN_MAP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VIDEO_CARD_IMAGE", function() { return VIDEO_CARD_IMAGE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PHOTO_CARD_IMAGE", function() { return PHOTO_CARD_IMAGE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MAX_PAGE_WIDTH", function() { return MAX_PAGE_WIDTH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LINKS", function() { return LINKS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MENU_ITEMS", function() { return MENU_ITEMS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MENU_ITEM_WIDTH", function() { return MENU_ITEM_WIDTH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COLORS", function() { return COLORS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FACEBOOK", function() { return FACEBOOK; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FACEBOOK_URL", function() { return FACEBOOK_URL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RAFAL_CIESIELCZUK_LINKED_IN", function() { return RAFAL_CIESIELCZUK_LINKED_IN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MARGIN_TOP_UNDER_MENU", function() { return MARGIN_TOP_UNDER_MENU; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SCREEN_SIZE", function() { return SCREEN_SIZE; });
+/* harmony import */ var _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../static/image/photo_1.png */ "./static/image/photo_1.png");
+/* harmony import */ var _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../static/image/photo_2_small.jpg */ "./static/image/photo_2_small.jpg");
+/* harmony import */ var _static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _static_image_photo_3_small_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../static/image/photo_3_small.jpg */ "./static/image/photo_3_small.jpg");
+/* harmony import */ var _static_image_photo_3_small_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_static_image_photo_3_small_jpg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _static_image_photo_4_small_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../static/image/photo_4_small.jpg */ "./static/image/photo_4_small.jpg");
+/* harmony import */ var _static_image_photo_4_small_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_image_photo_4_small_jpg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _static_image_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../static/image/logo.png */ "./static/image/logo.png");
+/* harmony import */ var _static_image_logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_static_image_logo_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../static/image/LogoWKwiatach_342x300_nowe.png */ "./static/image/LogoWKwiatach_342x300_nowe.png");
+/* harmony import */ var _static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/image/lovers_small.png */ "./static/image/lovers_small.png");
+/* harmony import */ var _static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _static_image_icons_bride_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../static/image/icons/bride.svg */ "./static/image/icons/bride.svg");
+/* harmony import */ var _static_image_icons_bride_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_static_image_icons_bride_svg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _static_image_icons_smile_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../static/image/icons/smile.svg */ "./static/image/icons/smile.svg");
+/* harmony import */ var _static_image_icons_smile_svg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_static_image_icons_smile_svg__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _static_image_icons_music_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/image/icons/music.svg */ "./static/image/icons/music.svg");
+/* harmony import */ var _static_image_icons_music_svg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_static_image_icons_music_svg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _static_image_icons_info_icon_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/image/icons/info_icon.svg */ "./static/image/icons/info_icon.svg");
+/* harmony import */ var _static_image_icons_info_icon_svg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_static_image_icons_info_icon_svg__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _static_image_icons_leaf_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/image/icons/leaf.svg */ "./static/image/icons/leaf.svg");
+/* harmony import */ var _static_image_icons_leaf_svg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_static_image_icons_leaf_svg__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _static_image_icons_facebookPage_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../static/image/icons/facebookPage.svg */ "./static/image/icons/facebookPage.svg");
+/* harmony import */ var _static_image_icons_facebookPage_svg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_static_image_icons_facebookPage_svg__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _static_image_WojLubelskie_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../static/image/WojLubelskie.jpg */ "./static/image/WojLubelskie.jpg");
+/* harmony import */ var _static_image_WojLubelskie_jpg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_static_image_WojLubelskie_jpg__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _static_image_GalleryCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../static/image/GalleryCardPhoto.jpeg */ "./static/image/GalleryCardPhoto.jpeg");
+/* harmony import */ var _static_image_GalleryCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_static_image_GalleryCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../static/image/videoCardPhoto.jpeg */ "./static/image/videoCardPhoto.jpeg");
+/* harmony import */ var _static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../static/image/songsImages/poparzeniKawaTrzy.jpg */ "./static/image/songsImages/poparzeniKawaTrzy.jpg");
+/* harmony import */ var _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../static/image/songsImages/marcus.jpg */ "./static/image/songsImages/marcus.jpg");
+/* harmony import */ var _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../static/image/songsImages/powerPLay.jpg */ "./static/image/songsImages/powerPLay.jpg");
+/* harmony import */ var _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../static/image/songsImages/urszula.jpg */ "./static/image/songsImages/urszula.jpg");
+/* harmony import */ var _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../static/image/songsImages/dajToGlosniej.jpg */ "./static/image/songsImages/dajToGlosniej.jpg");
+/* harmony import */ var _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../static/image/songsImages/fanatic.jpg */ "./static/image/songsImages/fanatic.jpg");
+/* harmony import */ var _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../static/image/songsImages/defaultSongImage.jpg */ "./static/image/songsImages/defaultSongImage.jpg");
+/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../static/image/songsImages/lombard.jpg */ "./static/image/songsImages/lombard.jpg");
+/* harmony import */ var _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../static/image/songsImages/czadoman.jpg */ "./static/image/songsImages/czadoman.jpg");
+/* harmony import */ var _static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../static/image/songsImages/buble.jpg */ "./static/image/songsImages/buble.jpg");
+/* harmony import */ var _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_25__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //==============Songs images===============
+
+
+
+
+
+
+
+
+
+
+
+const SONGS_IMAGES = {
+  DefaultSongImage: _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22___default.a,
+  DAJ_TO_GLOSNIEJ: _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_20___default.a,
+  marcus: _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_17___default.a,
+  powerPLay: _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_18___default.a,
+  poparzeniKawaTrzy: _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_16___default.a,
+  urszula: _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_19___default.a,
+  Fanatic: _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_21___default.a,
+  lombard: _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_23___default.a,
+  czadoman: _static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_24___default.a,
+  buble: _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_25___default.a
+};
+const IMAGE_1 = _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0___default.a;
+const IMAGE_2 = _static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1___default.a;
+const IMAGE_3 = _static_image_photo_3_small_jpg__WEBPACK_IMPORTED_MODULE_2___default.a;
+const IMAGE_4 = _static_image_photo_4_small_jpg__WEBPACK_IMPORTED_MODULE_3___default.a;
+const LOGO = _static_image_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a;
+const LOGO_ON_THE_FLOWERS = _static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5___default.a;
+const LOVERS = _static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6___default.a;
+const BRIDE = _static_image_icons_bride_svg__WEBPACK_IMPORTED_MODULE_7___default.a;
+const SMILE = _static_image_icons_smile_svg__WEBPACK_IMPORTED_MODULE_8___default.a;
+const MUSIC = _static_image_icons_music_svg__WEBPACK_IMPORTED_MODULE_9___default.a;
+const INFO_ICON = _static_image_icons_info_icon_svg__WEBPACK_IMPORTED_MODULE_10___default.a;
+const LEAF = _static_image_icons_leaf_svg__WEBPACK_IMPORTED_MODULE_11___default.a;
+const FACEBOOK_PAGE = _static_image_icons_facebookPage_svg__WEBPACK_IMPORTED_MODULE_12___default.a;
+const LUBLIN_MAP = _static_image_WojLubelskie_jpg__WEBPACK_IMPORTED_MODULE_13___default.a;
+const VIDEO_CARD_IMAGE = _static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15___default.a;
+const PHOTO_CARD_IMAGE = _static_image_GalleryCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_14___default.a;
+const MAX_PAGE_WIDTH = '80rem';
+const HOME = 'Home';
+const PHOTO = 'Zdjęcia';
+const MEDIA = 'Media';
+const DEMO = 'Demo';
+const OFERTA = 'Oferta';
+const KONTAKT = 'Kontakt';
+const KALENDARZ = 'Kalendarz';
+const LINKS = {
+  HOME: {
+    HREF: './',
+    AS: './'
+  },
+  DEMO: {
+    HREF: './demo',
+    AS: './demo'
+  },
+  CONTACT: {
+    HREF: './contact',
+    AS: './contact'
+  },
+  MEDIA: {
+    HREF: './media',
+    AS: './media'
+  },
+  TERMS: {
+    HREF: './terminy',
+    AS: './terminy'
+  }
+};
+const MENU_ITEMS = [{
+  name: HOME,
+  link: LINKS.HOME.HREF,
+  as: LINKS.HOME.AS
+}, {
+  name: DEMO,
+  link: LINKS.DEMO.HREF,
+  as: LINKS.DEMO.AS
+}, // {name: PHOTO, link: './photo'},
+// {name: MEDIA, link: LINKS.MEDIA},
+// {name: OFERTA, link: './oferta'},
+// {name: KALENDARZ, link: './kalendarz'},
+{
+  name: KONTAKT,
+  link: LINKS.CONTACT.HREF,
+  as: LINKS.CONTACT.AS
+}];
+const MENU_ITEM_WIDTH = 20;
+const COLORS = {
+  grey: {
+    light: '#F2F2F2',
+    medium: '#F5F5F5',
+    dark: '#CFCFCF',
+    grey_1: '#91919117'
+  },
+  red: {
+    main: '#b41616',
+    medium: '#a81b1b'
+  },
+  blue: {
+    main: '#3B5897'
+  }
+};
+const FACEBOOK = '/static/image/facebook_logo.svg';
+const FACEBOOK_URL = 'https://www.facebook.com/Zesp%C3%B3%C5%82-ARTO-203075696487749/';
+const RAFAL_CIESIELCZUK_LINKED_IN = 'https://www.linkedin.com/in/rafa%C5%82-ciesielczuk-33578391/';
+const MARGIN_TOP_UNDER_MENU = '4rem';
+const SCREEN_SIZE = {
+  POINT_750: 750
+};
+
+/***/ }),
+
 /***/ "./src/termsJSON/terminy2020.json":
 /*!****************************************!*\
   !*** ./src/termsJSON/terminy2020.json ***!
@@ -742,7 +1008,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"04.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Luty\",\"days\":[{\"day\":\"01.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"08.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"29.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Marzec\",\"days\":[{\"day\":\"07.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"14.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"21.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Kwiecień\",\"days\":[{\"day\":\"04.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.04.2020\",\"free\":true,\"place\":\"Tyszowce\",\"hotel\":\"Orfeusz\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\"},{\"day\":\"25.04.2020\",\"free\":true,\"place\":\"Zamość\",\"hotel\":\"Hotel Koronny\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"Zamość\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"16.00\"}]},{\"name\":\"Maj\",\"days\":[{\"day\":\"01.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"02.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"03.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"09.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\"},{\"day\":\"16.05.2020\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"address\":\"ul. kolejowa\",\"status\":\"busy\"},{\"day\":\"23.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.05.2020\",\"free\":false,\"place\":\"Krasnobród\",\"hotel\":\"Karczma Zacisze\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"}]},{\"name\":\"Czerwiec\",\"days\":[{\"day\":\"06.06.2020\",\"free\":false,\"place\":\"Bogucin\",\"hotel\":\"Dwór Bogucin\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"11.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.06.2020\",\"free\":false,\"place\":\"Rozłopy (kolo Szczebrzeszyna)\",\"hotel\":\"Kamienny Zajazd\",\"address\":\"ul. Rozłopy 20\",\"status\":\"busy\"},{\"day\":\"27.06.2020\",\"free\":false,\"place\":\"Chełm\",\"hotel\":\"Dom weselny JAMBA\",\"address\":\"\",\"status\":\"busy\"}]},{\"name\":\"Lipiec\",\"days\":[{\"day\":\"04.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.07.2020\",\"free\":false,\"place\":\"Tomaszow Lub.\",\"hotel\":\"Zacisze\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"18.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.07.2020\",\"free\":false,\"place\":\"Zamość\",\"hotel\":\"Koronny\",\"address\":\"\",\"status\":\"busy\"}]},{\"name\":\"Sierpien\",\"days\":[{\"day\":\"01.08.2020\",\"free\":false,\"place\":\"Różaniec Pierwszy\",\"hotel\":\"Zajazd \\\"Gospoda\\\" \",\"address\":\"Różaniec Pierwszy 99A\",\"status\":\"busy\"},{\"day\":\"08.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.08.2020\",\"free\":false,\"place\":\"Wojciechów\",\"hotel\":\"Dom weselny \\\"Czerniecówka\\\"\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"29.08.2020\",\"free\":true,\"place\":\"Boruń\",\"hotel\":\"Dom weselny \\\"Sylwia\\\"\",\"status\":\"busy\"}]},{\"name\":\"Wrzesień\",\"days\":[{\"day\":\"05.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Październik\",\"days\":[{\"day\":\"03.10.2020\",\"free\":false,\"place\":\"Wysokie\",\"hotel\":\"Zajazd \\\"Alfred\\\"\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"10.10.2020\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"U Chłopa\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"17.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.10.2020\",\"free\":false,\"place\":\"Tyszowce\",\"hotel\":\"Szewska Pasja (sala na dole)\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"31.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Listopad\",\"days\":[{\"day\":\"07.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"14.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"21.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":5,\"day\":\"31.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Grudzień\",\"days\":[{\"day\":\"05.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]}]");
+module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"04.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Luty\",\"days\":[{\"day\":\"01.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"08.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"29.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Marzec\",\"days\":[{\"day\":\"07.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"14.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"21.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Kwiecień\",\"days\":[{\"day\":\"04.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.04.2020\",\"free\":true,\"place\":\"Tyszowce\",\"hotel\":\"Orfeusz\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\"},{\"day\":\"25.04.2020\",\"free\":true,\"place\":\"Zamość\",\"hotel\":\"Hotel Koronny\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"Zamość\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"16.00\"}]},{\"name\":\"Maj\",\"days\":[{\"day\":\"01.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"02.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"03.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"09.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"16.05.2020\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"address\":\"ul. kolejowa\",\"status\":\"busy\"},{\"day\":\"23.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.05.2020\",\"free\":false,\"place\":\"Krasnobród\",\"hotel\":\"Karczma Zacisze\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"}]},{\"name\":\"Czerwiec\",\"days\":[{\"day\":\"06.06.2020\",\"free\":false,\"place\":\"Bogucin\",\"hotel\":\"Dwór Bogucin\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"11.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.06.2020\",\"free\":false,\"place\":\"Rozłopy (kolo Szczebrzeszyna)\",\"hotel\":\"Kamienny Zajazd\",\"address\":\"ul. Rozłopy 20\",\"status\":\"busy\"},{\"day\":\"27.06.2020\",\"free\":false,\"place\":\"Chełm\",\"hotel\":\"Dom weselny JAMBA\",\"address\":\"\",\"status\":\"busy\"}]},{\"name\":\"Lipiec\",\"days\":[{\"day\":\"04.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.07.2020\",\"free\":false,\"place\":\"Tomaszow Lub.\",\"hotel\":\"Zacisze\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"18.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.07.2020\",\"free\":false,\"place\":\"Zamość\",\"hotel\":\"Koronny\",\"address\":\"\",\"status\":\"busy\"}]},{\"name\":\"Sierpien\",\"days\":[{\"day\":\"01.08.2020\",\"free\":false,\"place\":\"Różaniec Pierwszy\",\"hotel\":\"Zajazd \\\"Gospoda\\\" \",\"address\":\"Różaniec Pierwszy 99A\",\"status\":\"busy\"},{\"day\":\"08.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.08.2020\",\"free\":false,\"place\":\"Wojciechów\",\"hotel\":\"Dom weselny \\\"Czerniecówka\\\"\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"29.08.2020\",\"free\":true,\"place\":\"Boruń\",\"hotel\":\"Dom weselny \\\"Sylwia\\\"\",\"status\":\"busy\"}]},{\"name\":\"Wrzesień\",\"days\":[{\"day\":\"05.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Październik\",\"days\":[{\"day\":\"03.10.2020\",\"free\":false,\"place\":\"Wysokie\",\"hotel\":\"Zajazd \\\"Alfred\\\"\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"10.10.2020\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"U Chłopa\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"17.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.10.2020\",\"free\":false,\"place\":\"Tyszowce\",\"hotel\":\"Szewska Pasja (sala na dole)\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"31.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Listopad\",\"days\":[{\"day\":\"07.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"14.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"21.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":5,\"day\":\"31.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Grudzień\",\"days\":[{\"day\":\"05.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]}]");
 
 /***/ }),
 
@@ -753,7 +1019,114 @@ module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"04.01.
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"02.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"09.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"16.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"23.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Luty\",\"days\":[{\"day\":\"06.02.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.02.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.02.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"27.02.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Marzec\",\"days\":[{\"day\":\"06.03.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.03.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.03.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"27.03.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Kwiecień\",\"days\":[{\"day\":\"03.04.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"03.04.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"17.04.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.04.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Maj\",\"days\":[{\"day\":\"01.05.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"08.05.2021\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"15.05.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"22.05.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"29.05.2021\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"}]},{\"name\":\"Czerwiec\",\"days\":[{\"day\":\"05.06.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.06.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.06.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.06.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Lipiec\",\"days\":[{\"day\":\"03.07.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"10.07.2021\",\"free\":false,\"place\":\"Pawłów\",\"hotel\":\"Regent\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"17.07.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.07.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"31.07.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Sierpien\",\"days\":[{\"day\":\"07.08.2021\",\"free\":false,\"place\":\"Mircze\",\"hotel\":\"Jaśko\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"14.08.2021\",\"free\":false,\"place\":\"ZOSTAWIć WOLNY KONIECZNIE\",\"hotel\":\"\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"21.08.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.08.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Wrzesień\",\"days\":[{\"day\":\"04.09.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.09.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.09.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.09.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Październik\",\"days\":[{\"day\":\"02.10.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"09.10.2021\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"16.10.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"23.10.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.10.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Listopad\",\"days\":[{\"day\":\"06.11.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.11.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.11.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"27.11.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Grudzień\",\"days\":[{\"day\":\"04.12.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.12.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.12.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.12.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]}]");
+module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"02.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"09.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"16.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"23.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.01.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Luty\",\"days\":[{\"day\":\"06.02.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.02.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.02.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"27.02.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Marzec\",\"days\":[{\"day\":\"06.03.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.03.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.03.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"27.03.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Kwiecień\",\"days\":[{\"day\":\"03.04.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"03.04.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"17.04.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.04.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Maj\",\"days\":[{\"day\":\"01.05.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"08.05.2021\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"15.05.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"22.05.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"29.05.2021\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"}]},{\"name\":\"Czerwiec\",\"days\":[{\"day\":\"05.06.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.06.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.06.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.06.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Lipiec\",\"days\":[{\"day\":\"03.07.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"10.07.2021\",\"free\":false,\"place\":\"Pawłów\",\"hotel\":\"Regent\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"17.07.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.07.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"31.07.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Sierpien\",\"days\":[{\"day\":\"07.08.2021\",\"free\":false,\"place\":\"Mircze\",\"hotel\":\"Jaśko\",\"weekDay\":6,\"status\":\"busy\",\"information\":\"Nie będzie Rafała i Darii --> wesele Patrycji Sz.\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"14.08.2021\",\"free\":false,\"place\":\"ZOSTAWIć WOLNY KONIECZNIE\",\"hotel\":\"\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"21.08.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.08.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Wrzesień\",\"days\":[{\"day\":\"04.09.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.09.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.09.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.09.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Październik\",\"days\":[{\"day\":\"02.10.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"09.10.2021\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"16.10.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"23.10.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.10.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Listopad\",\"days\":[{\"day\":\"06.11.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.11.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.11.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"27.11.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Grudzień\",\"days\":[{\"day\":\"04.12.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.12.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.12.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.12.2021\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]}]");
+
+/***/ }),
+
+/***/ "./src/views/Terms/TabPanel/TabPanel.js":
+/*!**********************************************!*\
+  !*** ./src/views/Terms/TabPanel/TabPanel.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__);
+
+
+var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\views\\Terms\\TabPanel\\TabPanel.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+
+
+const TabPanel = props => {
+  const {
+    children,
+    value,
+    index,
+    classes
+  } = props,
+        other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "value", "index", "classes"]);
+
+  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    component: "div",
+    role: "tabpanel",
+    hidden: value !== index,
+    id: `simple-tabpanel-${index}`,
+    "aria-labelledby": `simple-tab-${index}`
+  }, other, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }), value === index && __jsx("div", {
+    className: classes.tabContainer,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, children));
+};
+
+TabPanel.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
+  index: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any.isRequired,
+  value: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any.isRequired
+};
+TabPanel.displayName = 'TabPanel';
+/* harmony default export */ __webpack_exports__["default"] = (TabPanel);
+
+/***/ }),
+
+/***/ "./src/views/Terms/TabPanel/TabPanel.style.js":
+/*!****************************************************!*\
+  !*** ./src/views/Terms/TabPanel/TabPanel.style.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _TabPanel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TabPanel */ "./src/views/Terms/TabPanel/TabPanel.js");
+
+
+
+const styles = theme => ({
+  tabContainer: {
+    paddingTop: '2rem'
+  }
+});
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_TabPanel__WEBPACK_IMPORTED_MODULE_1__["default"]));
+
+/***/ }),
+
+/***/ "./src/views/Terms/TabPanel/index.js":
+/*!*******************************************!*\
+  !*** ./src/views/Terms/TabPanel/index.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TabPanel_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TabPanel.style */ "./src/views/Terms/TabPanel/TabPanel.style.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _TabPanel_style__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
 
 /***/ }),
 
@@ -766,34 +1139,28 @@ module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"02.01.
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Box */ "@material-ui/core/Box");
-/* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Tab */ "@material-ui/core/Tab");
-/* harmony import */ var _material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Tabs */ "@material-ui/core/Tabs");
-/* harmony import */ var _material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../termsJSON/terminy2020 */ "./src/termsJSON/terminy2020.json");
-var _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../termsJSON/terminy2020 */ "./src/termsJSON/terminy2020.json", 1);
-/* harmony import */ var _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../termsJSON/terminy2021 */ "./src/termsJSON/terminy2021.json");
-var _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_11___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../termsJSON/terminy2021 */ "./src/termsJSON/terminy2021.json", 1);
-/* harmony import */ var _components_Months__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/Months */ "./src/components/Months/index.js");
-
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/AppBar */ "@material-ui/core/AppBar");
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Tab */ "@material-ui/core/Tab");
+/* harmony import */ var _material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Tabs */ "@material-ui/core/Tabs");
+/* harmony import */ var _material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../termsJSON/terminy2020 */ "./src/termsJSON/terminy2020.json");
+var _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../termsJSON/terminy2020 */ "./src/termsJSON/terminy2020.json", 1);
+/* harmony import */ var _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../termsJSON/terminy2021 */ "./src/termsJSON/terminy2021.json");
+var _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../termsJSON/terminy2021 */ "./src/termsJSON/terminy2021.json", 1);
+/* harmony import */ var _components_Months__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/Months */ "./src/components/Months/index.js");
+/* harmony import */ var _TabPanel_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./TabPanel/index */ "./src/views/Terms/TabPanel/index.js");
 
 
 var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\views\\Terms\\Terms.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
@@ -806,42 +1173,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 const YEAR_2020_TITLE_TEXT = "2020";
 const YEAR_2021_TITLE_TEXT = "2021";
 
-function TabPanel(props) {
-  const {
-    children,
-    value,
-    index
-  } = props,
-        other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, ["children", "value", "index"]);
-
-  return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    component: "div",
-    role: "tabpanel",
-    hidden: value !== index,
-    id: `simple-tabpanel-${index}`,
-    "aria-labelledby": `simple-tab-${index}`
-  }, other, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }), value === index && __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    p: 3,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, children));
-}
-
-TabPanel.propTypes = {
-  children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node,
-  index: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.any.isRequired,
-  value: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.any.isRequired
-};
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
@@ -849,15 +1180,15 @@ function a11yProps(index) {
   };
 }
 
-class Terms extends react__WEBPACK_IMPORTED_MODULE_3__["Component"] {
+class Terms extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
   constructor(...args) {
     super(...args);
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "state", {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "state", {
       value: 0
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handleChange", (event, newValue) => {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "handleChange", (event, newValue) => {
       this.setState({
         value: newValue
       });
@@ -875,71 +1206,69 @@ class Terms extends react__WEBPACK_IMPORTED_MODULE_3__["Component"] {
       className: classes.root,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 39
       },
       __self: this
-    }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      position: "static",
+    }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      position: "fixed",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 40
       },
       __self: this
-    }, __jsx(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_8___default.a, {
+    }, __jsx(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_6___default.a, {
       value: value,
       onChange: this.handleChange,
       "aria-label": "simple tabs example",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 41
       },
       __self: this
-    }, __jsx(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_7___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    }, __jsx(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       label: YEAR_2020_TITLE_TEXT
     }, a11yProps(0), {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
+        lineNumber: 42
       },
       __self: this
-    })), __jsx(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_7___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    })), __jsx(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       label: YEAR_2021_TITLE_TEXT
     }, a11yProps(1), {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 43
       },
       __self: this
-    })))), __jsx(TabPanel, {
+    })))), __jsx(_TabPanel_index__WEBPACK_IMPORTED_MODULE_10__["default"], {
       value: value,
       index: 0,
-      className: classes.tabContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72
+        lineNumber: 47
       },
       __self: this
-    }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      table: _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_10__,
+    }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      table: _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_7__,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73
+        lineNumber: 48
       },
       __self: this
-    })), __jsx(TabPanel, {
+    })), __jsx(_TabPanel_index__WEBPACK_IMPORTED_MODULE_10__["default"], {
       value: value,
       index: 1,
-      className: classes.tabContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
+        lineNumber: 50
       },
       __self: this
-    }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      table: _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_11__,
+    }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      table: _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_8__,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76
+        lineNumber: 51
       },
       __self: this
     })));
@@ -949,7 +1278,7 @@ class Terms extends react__WEBPACK_IMPORTED_MODULE_3__["Component"] {
 
 ;
 Terms.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired
 };
 Terms.displayName = 'Terms';
 /* harmony default export */ __webpack_exports__["default"] = (Terms);
@@ -974,9 +1303,12 @@ __webpack_require__.r(__webpack_exports__);
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper
+    backgroundColor: theme.palette.background.paper,
+    padding: 0
   },
-  tabContainer: {}
+  tabContainer: {
+    paddingTop: '2rem'
+  }
 });
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_Terms__WEBPACK_IMPORTED_MODULE_1__["default"]));
@@ -999,7 +1331,293 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 5:
+/***/ "./static/image/GalleryCardPhoto.jpeg":
+/*!********************************************!*\
+  !*** ./static/image/GalleryCardPhoto.jpeg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/GalleryCardPhoto.jpeg";
+
+/***/ }),
+
+/***/ "./static/image/LogoWKwiatach_342x300_nowe.png":
+/*!*****************************************************!*\
+  !*** ./static/image/LogoWKwiatach_342x300_nowe.png ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/LogoWKwiatach_342x300_nowe.png";
+
+/***/ }),
+
+/***/ "./static/image/WojLubelskie.jpg":
+/*!***************************************!*\
+  !*** ./static/image/WojLubelskie.jpg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/WojLubelskie.jpg";
+
+/***/ }),
+
+/***/ "./static/image/icons/bride.svg":
+/*!**************************************!*\
+  !*** ./static/image/icons/bride.svg ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/icons/bride.svg";
+
+/***/ }),
+
+/***/ "./static/image/icons/facebookPage.svg":
+/*!*********************************************!*\
+  !*** ./static/image/icons/facebookPage.svg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/icons/facebookPage.svg";
+
+/***/ }),
+
+/***/ "./static/image/icons/info_icon.svg":
+/*!******************************************!*\
+  !*** ./static/image/icons/info_icon.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/icons/info_icon.svg";
+
+/***/ }),
+
+/***/ "./static/image/icons/leaf.svg":
+/*!*************************************!*\
+  !*** ./static/image/icons/leaf.svg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/icons/leaf.svg";
+
+/***/ }),
+
+/***/ "./static/image/icons/music.svg":
+/*!**************************************!*\
+  !*** ./static/image/icons/music.svg ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/icons/music.svg";
+
+/***/ }),
+
+/***/ "./static/image/icons/smile.svg":
+/*!**************************************!*\
+  !*** ./static/image/icons/smile.svg ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/icons/smile.svg";
+
+/***/ }),
+
+/***/ "./static/image/logo.png":
+/*!*******************************!*\
+  !*** ./static/image/logo.png ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/logo.png";
+
+/***/ }),
+
+/***/ "./static/image/lovers_small.png":
+/*!***************************************!*\
+  !*** ./static/image/lovers_small.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/lovers_small.png";
+
+/***/ }),
+
+/***/ "./static/image/photo_1.png":
+/*!**********************************!*\
+  !*** ./static/image/photo_1.png ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/photo_1.png";
+
+/***/ }),
+
+/***/ "./static/image/photo_2_small.jpg":
+/*!****************************************!*\
+  !*** ./static/image/photo_2_small.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/photo_2_small.jpg";
+
+/***/ }),
+
+/***/ "./static/image/photo_3_small.jpg":
+/*!****************************************!*\
+  !*** ./static/image/photo_3_small.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/photo_3_small.jpg";
+
+/***/ }),
+
+/***/ "./static/image/photo_4_small.jpg":
+/*!****************************************!*\
+  !*** ./static/image/photo_4_small.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/photo_4_small.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/buble.jpg":
+/*!********************************************!*\
+  !*** ./static/image/songsImages/buble.jpg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/buble.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/czadoman.jpg":
+/*!***********************************************!*\
+  !*** ./static/image/songsImages/czadoman.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/czadoman.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/dajToGlosniej.jpg":
+/*!****************************************************!*\
+  !*** ./static/image/songsImages/dajToGlosniej.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/dajToGlosniej.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/defaultSongImage.jpg":
+/*!*******************************************************!*\
+  !*** ./static/image/songsImages/defaultSongImage.jpg ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/defaultSongImage.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/fanatic.jpg":
+/*!**********************************************!*\
+  !*** ./static/image/songsImages/fanatic.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/fanatic.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/lombard.jpg":
+/*!**********************************************!*\
+  !*** ./static/image/songsImages/lombard.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/lombard.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/marcus.jpg":
+/*!*********************************************!*\
+  !*** ./static/image/songsImages/marcus.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/marcus.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/poparzeniKawaTrzy.jpg":
+/*!********************************************************!*\
+  !*** ./static/image/songsImages/poparzeniKawaTrzy.jpg ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/poparzeniKawaTrzy.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/powerPLay.jpg":
+/*!************************************************!*\
+  !*** ./static/image/songsImages/powerPLay.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/powerPLay.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/urszula.jpg":
+/*!**********************************************!*\
+  !*** ./static/image/songsImages/urszula.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/urszula.jpg";
+
+/***/ }),
+
+/***/ "./static/image/videoCardPhoto.jpeg":
+/*!******************************************!*\
+  !*** ./static/image/videoCardPhoto.jpeg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
+
+/***/ }),
+
+/***/ 4:
 /*!************************************!*\
   !*** multi ./pages/blablaterms.js ***!
   \************************************/
@@ -1033,28 +1651,6 @@ module.exports = require("@material-ui/core/AppBar");
 
 /***/ }),
 
-/***/ "@material-ui/core/Box":
-/*!****************************************!*\
-  !*** external "@material-ui/core/Box" ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/Box");
-
-/***/ }),
-
-/***/ "@material-ui/core/Paper":
-/*!******************************************!*\
-  !*** external "@material-ui/core/Paper" ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/Paper");
-
-/***/ }),
-
 /***/ "@material-ui/core/Tab":
 /*!****************************************!*\
   !*** external "@material-ui/core/Tab" ***!
@@ -1063,72 +1659,6 @@ module.exports = require("@material-ui/core/Paper");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Tab");
-
-/***/ }),
-
-/***/ "@material-ui/core/Table":
-/*!******************************************!*\
-  !*** external "@material-ui/core/Table" ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/Table");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableBody":
-/*!**********************************************!*\
-  !*** external "@material-ui/core/TableBody" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableBody");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableCell":
-/*!**********************************************!*\
-  !*** external "@material-ui/core/TableCell" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableCell");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableContainer":
-/*!***************************************************!*\
-  !*** external "@material-ui/core/TableContainer" ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableContainer");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableHead":
-/*!**********************************************!*\
-  !*** external "@material-ui/core/TableHead" ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableHead");
-
-/***/ }),
-
-/***/ "@material-ui/core/TableRow":
-/*!*********************************************!*\
-  !*** external "@material-ui/core/TableRow" ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/TableRow");
 
 /***/ }),
 
@@ -1173,6 +1703,39 @@ module.exports = require("@material-ui/core/styles");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/CalendarToday");
+
+/***/ }),
+
+/***/ "@material-ui/icons/CalendarViewDay":
+/*!*****************************************************!*\
+  !*** external "@material-ui/icons/CalendarViewDay" ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/CalendarViewDay");
+
+/***/ }),
+
+/***/ "@material-ui/icons/EventAvailable":
+/*!****************************************************!*\
+  !*** external "@material-ui/icons/EventAvailable" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/EventAvailable");
+
+/***/ }),
+
+/***/ "@material-ui/icons/EventBusy":
+/*!***********************************************!*\
+  !*** external "@material-ui/icons/EventBusy" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/EventBusy");
 
 /***/ }),
 

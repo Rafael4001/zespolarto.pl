@@ -1,7 +1,7 @@
 import React from 'react';
 import CustomBodyOfMonth from "../CustomBodyOfMonth";
 import { Typography } from "@material-ui/core";
-import CalendarToday from '@material-ui/icons/CalendarToday';
+import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay';
 
 const Months = (props) => {
   const {classes, table} = props;
@@ -13,7 +13,7 @@ const Months = (props) => {
   const getMonths = (months) => (
     months.map((month) => (
       <li key={month.name} className={classes.dayContainer}>
-        <Typography className={classes.monthName}><CalendarToday classes={{ root: classes.icon }}/>{month.name}</Typography>
+        <Typography className={classes.monthName}><CalendarViewDayIcon classes={{ root: classes.icon }}/>{month.name}</Typography>
         {getMonthsDays(month.days)}
       </li>
     ))
