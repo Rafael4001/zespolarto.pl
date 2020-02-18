@@ -2184,30 +2184,92 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+const BAND_MEMBERS = [{
+  name: 'Daria',
+  description: 'wokal'
+}, {
+  name: 'Rafał',
+  description: 'wokal, instrumenty klawiszowe, gitara'
+}, {
+  name: 'Adrian',
+  description: 'wokal, gitara basowa'
+}, {
+  name: 'Tomasz',
+  description: 'perkusja'
+}];
 
 class BandMembers extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
     const {
       classes
     } = this.props;
+
+    const getMembers = bandMembers => bandMembers.map(member => __jsx("div", {
+      className: classes.memberContainer,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.textName
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, __jsx("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, member.name)), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.textName
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, __jsx("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, " - ")), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      classes: {
+        root: classes.text
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }, member.description)));
+
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 46
       },
       __self: this
     }, __jsx("div", {
       className: this.props.classes.mainContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 47
       },
       __self: this
     }, __jsx("div", {
       className: classes.photoContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 48
       },
       __self: this
     }, __jsx("img", {
@@ -2216,20 +2278,20 @@ class BandMembers extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       className: classes.photo,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 49
       },
       __self: this
     })), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 56
       },
       __self: this
     }, __jsx("div", {
       className: classes.quotationContainer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 57
       },
       __self: this
     }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2238,7 +2300,7 @@ class BandMembers extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 58
       },
       __self: this
     }, "\"Takt jest muzyk\u0105 duszy.\""), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2247,13 +2309,13 @@ class BandMembers extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 59
       },
       __self: this
     }, "-Anita Daniel")), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 61
       },
       __self: this
     }), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -2262,73 +2324,13 @@ class BandMembers extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 62
       },
       __self: this
-    }, "Sk\u0142ad zespo\u0142u:"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      classes: {
-        root: classes.text
-      },
+    }, "Sk\u0142ad zespo\u0142u:"), getMembers(BAND_MEMBERS))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
-      },
-      __self: this
-    }, __jsx("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32
-      },
-      __self: this
-    }, "Daria"), " - wokal"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      classes: {
-        root: classes.text
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33
-      },
-      __self: this
-    }, __jsx("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33
-      },
-      __self: this
-    }, "Rafa\u0142"), " - wokal, instrumenty klawiszowe, gitara"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      classes: {
-        root: classes.text
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 34
-      },
-      __self: this
-    }, __jsx("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 34
-      },
-      __self: this
-    }, "Adrian"), " - wokal,gitara basowa"), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      classes: {
-        root: classes.text
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35
-      },
-      __self: this
-    }, __jsx("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35
-      },
-      __self: this
-    }, "Tomasz"), " - perkusja"))), __jsx(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 66
       },
       __self: this
     }));
@@ -2377,7 +2379,16 @@ const styles = theme => ({
   photoContainer: {
     padding: '1rem'
   },
+  memberContainer: {
+    paddingLeft: '0.5rem',
+    display: 'grid',
+    gridTemplateColumns: 'minmax(2rem, 5rem) 1rem auto'
+  },
   text: {
+    fontSize: '1.1rem',
+    fontFamily: '\'Baskervville\',serif'
+  },
+  textName: {
     fontSize: '1.1rem',
     fontFamily: '\'Baskervville\',serif'
   },

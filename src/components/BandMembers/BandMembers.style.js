@@ -19,7 +19,17 @@ const styles = (theme)=>({
   photoContainer: {
     padding: '1rem',
   },
+  memberContainer: {
+    paddingLeft: '0.5rem',
+    display: 'grid',
+    gridTemplateColumns: 'minmax(2rem, 5rem) 1rem auto',
+
+  },
   text: {
+    fontSize: '1.1rem',
+    fontFamily: '\'Baskervville\',serif',
+  },
+  textName: {
     fontSize: '1.1rem',
     fontFamily: '\'Baskervville\',serif',
   },

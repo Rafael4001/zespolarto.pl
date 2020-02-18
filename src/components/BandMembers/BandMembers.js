@@ -6,10 +6,41 @@ import Divider from '@material-ui/core/Divider';
 import { IMAGE_2 } from "../../constants";
 
 
+const BAND_MEMBERS = [
+  {
+    name: 'Daria',
+    description: 'wokal'
+  },
+  {
+    name: 'Rafał',
+    description: 'wokal, instrumenty klawiszowe, gitara'
+  },
+  {
+    name: 'Adrian',
+    description: 'wokal, gitara basowa'
+  },
+  {
+    name: 'Tomasz',
+    description: 'perkusja'
+  },
+];
+
+
 class BandMembers extends Component {
+
+
   render() {
     const {classes} = this.props;
 
+    const getMembers = (bandMembers) => (
+      bandMembers.map((member) => (
+        <div className={classes.memberContainer}>
+          <Typography classes={{root: classes.textName,}}><strong>{member.name}</strong></Typography>
+          <Typography classes={{root: classes.textName,}}><strong> - </strong></Typography>
+          <Typography classes={{root: classes.text,}}>{member.description}</Typography>
+        </div>
+      ))
+    );
 
     return (
       <div>
@@ -29,10 +60,7 @@ class BandMembers extends Component {
             </div>
             <Divider/>
             <Typography classes={{root: classes.text,}}>Skład zespołu:</Typography>
-            <Typography classes={{root: classes.text,}}><strong>Daria</strong> - wokal</Typography>
-            <Typography classes={{root: classes.text,}}><strong>Rafał</strong> - wokal, instrumenty klawiszowe, gitara</Typography>
-            <Typography classes={{root: classes.text,}}><strong>Adrian</strong> - wokal,gitara basowa</Typography>
-            <Typography classes={{root: classes.text,}}><strong>Tomasz</strong> - perkusja</Typography>
+            {getMembers(BAND_MEMBERS)}
           </div>
         </div>
         <Divider/>

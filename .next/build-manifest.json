@@ -16,15 +16,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/blablaterms": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/contact": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/demo": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
