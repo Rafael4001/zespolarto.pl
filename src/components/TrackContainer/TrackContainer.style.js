@@ -22,6 +22,7 @@ const styles = {
     color: '#FFF',
   },
   songImage:{
+    display: 'flex',
     width: '3rem',
     height: '3rem',
   },
