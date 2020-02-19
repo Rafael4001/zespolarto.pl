@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3928,26 +3928,88 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_image_GalleryCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_static_image_GalleryCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../static/image/videoCardPhoto.jpeg */ "./static/image/videoCardPhoto.jpeg");
 /* harmony import */ var _static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../static/image/songsImages/poparzeniKawaTrzy.jpg */ "./static/image/songsImages/poparzeniKawaTrzy.jpg");
-/* harmony import */ var _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../static/image/songsImages/marcus.jpg */ "./static/image/songsImages/marcus.jpg");
-/* harmony import */ var _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../static/image/songsImages/powerPLay.jpg */ "./static/image/songsImages/powerPLay.jpg");
-/* harmony import */ var _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../static/image/songsImages/urszula.jpg */ "./static/image/songsImages/urszula.jpg");
-/* harmony import */ var _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../static/image/songsImages/dajToGlosniej.jpg */ "./static/image/songsImages/dajToGlosniej.jpg");
-/* harmony import */ var _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../static/image/songsImages/fanatic.jpg */ "./static/image/songsImages/fanatic.jpg");
-/* harmony import */ var _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../static/image/songsImages/defaultSongImage.jpg */ "./static/image/songsImages/defaultSongImage.jpg");
-/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../static/image/songsImages/lombard.jpg */ "./static/image/songsImages/lombard.jpg");
-/* harmony import */ var _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _static_image_songsImages_abba_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../static/image/songsImages/abba.jpg */ "./static/image/songsImages/abba.jpg");
+/* harmony import */ var _static_image_songsImages_abba_jpg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_abba_jpg__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _static_image_songsImages_afterParty_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../static/image/songsImages/afterParty.jpg */ "./static/image/songsImages/afterParty.jpg");
+/* harmony import */ var _static_image_songsImages_afterParty_jpg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_afterParty_jpg__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _static_image_songsImages_akcent_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../static/image/songsImages/akcent.jpg */ "./static/image/songsImages/akcent.jpg");
+/* harmony import */ var _static_image_songsImages_akcent_jpg__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_akcent_jpg__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _static_image_songsImages_aniaWyszkoni_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../static/image/songsImages/aniaWyszkoni.jpg */ "./static/image/songsImages/aniaWyszkoni.jpg");
+/* harmony import */ var _static_image_songsImages_aniaWyszkoni_jpg__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_aniaWyszkoni_jpg__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _static_image_songsImages_boys_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../static/image/songsImages/boys.jpg */ "./static/image/songsImages/boys.jpg");
+/* harmony import */ var _static_image_songsImages_boys_jpg__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_boys_jpg__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _static_image_songsImages_brathanki_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../static/image/songsImages/brathanki.jpg */ "./static/image/songsImages/brathanki.jpg");
+/* harmony import */ var _static_image_songsImages_brathanki_jpg__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_brathanki_jpg__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../static/image/songsImages/buble.jpg */ "./static/image/songsImages/buble.jpg");
+/* harmony import */ var _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _static_image_songsImages_budkaSuflera_jpeg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../static/image/songsImages/budkaSuflera.jpeg */ "./static/image/songsImages/budkaSuflera.jpeg");
+/* harmony import */ var _static_image_songsImages_budkaSuflera_jpeg__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_budkaSuflera_jpeg__WEBPACK_IMPORTED_MODULE_23__);
 /* harmony import */ var _static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../static/image/songsImages/czadoman.jpg */ "./static/image/songsImages/czadoman.jpg");
 /* harmony import */ var _static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_24__);
-/* harmony import */ var _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../static/image/songsImages/buble.jpg */ "./static/image/songsImages/buble.jpg");
-/* harmony import */ var _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../static/image/songsImages/dajToGlosniej.jpg */ "./static/image/songsImages/dajToGlosniej.jpg");
+/* harmony import */ var _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../static/image/songsImages/defaultSongImage.jpg */ "./static/image/songsImages/defaultSongImage.jpg");
+/* harmony import */ var _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_26__);
+/* harmony import */ var _static_image_songsImages_electricLightOrchestra_jpg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../static/image/songsImages/electricLightOrchestra.jpg */ "./static/image/songsImages/electricLightOrchestra.jpg");
+/* harmony import */ var _static_image_songsImages_electricLightOrchestra_jpg__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_electricLightOrchestra_jpg__WEBPACK_IMPORTED_MODULE_27__);
+/* harmony import */ var _static_image_songsImages_elenaGheorghe_jpg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../static/image/songsImages/elenaGheorghe.jpg */ "./static/image/songsImages/elenaGheorghe.jpg");
+/* harmony import */ var _static_image_songsImages_elenaGheorghe_jpg__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_elenaGheorghe_jpg__WEBPACK_IMPORTED_MODULE_28__);
+/* harmony import */ var _static_image_songsImages_enej_jpg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../static/image/songsImages/enej.jpg */ "./static/image/songsImages/enej.jpg");
+/* harmony import */ var _static_image_songsImages_enej_jpg__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_enej_jpg__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../static/image/songsImages/fanatic.jpg */ "./static/image/songsImages/fanatic.jpg");
+/* harmony import */ var _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_30__);
+/* harmony import */ var _static_image_songsImages_freakyBoys_jpg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../static/image/songsImages/freakyBoys.jpg */ "./static/image/songsImages/freakyBoys.jpg");
+/* harmony import */ var _static_image_songsImages_freakyBoys_jpg__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_freakyBoys_jpg__WEBPACK_IMPORTED_MODULE_31__);
+/* harmony import */ var _static_image_songsImages_irenaJarocka_jpg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../static/image/songsImages/irenaJarocka.jpg */ "./static/image/songsImages/irenaJarocka.jpg");
+/* harmony import */ var _static_image_songsImages_irenaJarocka_jpg__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_irenaJarocka_jpg__WEBPACK_IMPORTED_MODULE_32__);
+/* harmony import */ var _static_image_songsImages_jerzyPolomski_jpg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../static/image/songsImages/jerzyPolomski.jpg */ "./static/image/songsImages/jerzyPolomski.jpg");
+/* harmony import */ var _static_image_songsImages_jerzyPolomski_jpg__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_jerzyPolomski_jpg__WEBPACK_IMPORTED_MODULE_33__);
+/* harmony import */ var _static_image_songsImages_karinaStanek_jpg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../static/image/songsImages/karinaStanek.jpg */ "./static/image/songsImages/karinaStanek.jpg");
+/* harmony import */ var _static_image_songsImages_karinaStanek_jpg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_karinaStanek_jpg__WEBPACK_IMPORTED_MODULE_34__);
+/* harmony import */ var _static_image_songsImages_krzysztofKrawczyk_jpg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../static/image/songsImages/krzysztofKrawczyk.jpg */ "./static/image/songsImages/krzysztofKrawczyk.jpg");
+/* harmony import */ var _static_image_songsImages_krzysztofKrawczyk_jpg__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_krzysztofKrawczyk_jpg__WEBPACK_IMPORTED_MODULE_35__);
+/* harmony import */ var _static_image_songsImages_lobuzy_jpg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../static/image/songsImages/lobuzy.jpg */ "./static/image/songsImages/lobuzy.jpg");
+/* harmony import */ var _static_image_songsImages_lobuzy_jpg__WEBPACK_IMPORTED_MODULE_36___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_lobuzy_jpg__WEBPACK_IMPORTED_MODULE_36__);
+/* harmony import */ var _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../static/image/songsImages/lombard.jpg */ "./static/image/songsImages/lombard.jpg");
+/* harmony import */ var _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_37___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_37__);
+/* harmony import */ var _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../static/image/songsImages/marcus.jpg */ "./static/image/songsImages/marcus.jpg");
+/* harmony import */ var _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_38__);
+/* harmony import */ var _static_image_songsImages_marylaRodowicz_jpg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../static/image/songsImages/marylaRodowicz.jpg */ "./static/image/songsImages/marylaRodowicz.jpg");
+/* harmony import */ var _static_image_songsImages_marylaRodowicz_jpg__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_marylaRodowicz_jpg__WEBPACK_IMPORTED_MODULE_39__);
+/* harmony import */ var _static_image_songsImages_masters_jpg__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../static/image/songsImages/masters.jpg */ "./static/image/songsImages/masters.jpg");
+/* harmony import */ var _static_image_songsImages_masters_jpg__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_masters_jpg__WEBPACK_IMPORTED_MODULE_40__);
+/* harmony import */ var _static_image_songsImages_mig_jpg__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../static/image/songsImages/mig.jpg */ "./static/image/songsImages/mig.jpg");
+/* harmony import */ var _static_image_songsImages_mig_jpg__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_mig_jpg__WEBPACK_IMPORTED_MODULE_41__);
+/* harmony import */ var _static_image_songsImages_pawelDomagala_jpg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../static/image/songsImages/pawelDomagala.jpg */ "./static/image/songsImages/pawelDomagala.jpg");
+/* harmony import */ var _static_image_songsImages_pawelDomagala_jpg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_pawelDomagala_jpg__WEBPACK_IMPORTED_MODULE_42__);
+/* harmony import */ var _static_image_songsImages_perfect_jpg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../static/image/songsImages/perfect.jpg */ "./static/image/songsImages/perfect.jpg");
+/* harmony import */ var _static_image_songsImages_perfect_jpg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_perfect_jpg__WEBPACK_IMPORTED_MODULE_43__);
+/* harmony import */ var _static_image_songsImages_piekniIMlodzi_jpg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../static/image/songsImages/piekniIMlodzi.jpg */ "./static/image/songsImages/piekniIMlodzi.jpg");
+/* harmony import */ var _static_image_songsImages_piekniIMlodzi_jpg__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_piekniIMlodzi_jpg__WEBPACK_IMPORTED_MODULE_44__);
+/* harmony import */ var _static_image_songsImages_piersi_jpg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../static/image/songsImages/piersi.jpg */ "./static/image/songsImages/piersi.jpg");
+/* harmony import */ var _static_image_songsImages_piersi_jpg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_piersi_jpg__WEBPACK_IMPORTED_MODULE_45__);
+/* harmony import */ var _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../static/image/songsImages/poparzeniKawaTrzy.jpg */ "./static/image/songsImages/poparzeniKawaTrzy.jpg");
+/* harmony import */ var _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_46__);
+/* harmony import */ var _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../static/image/songsImages/powerPLay.jpg */ "./static/image/songsImages/powerPLay.jpg");
+/* harmony import */ var _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_47__);
+/* harmony import */ var _static_image_songsImages_ronnieFerrari_jpg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../static/image/songsImages/ronnieFerrari.jpg */ "./static/image/songsImages/ronnieFerrari.jpg");
+/* harmony import */ var _static_image_songsImages_ronnieFerrari_jpg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_ronnieFerrari_jpg__WEBPACK_IMPORTED_MODULE_48__);
+/* harmony import */ var _static_image_songsImages_skaldowie_jpg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../static/image/songsImages/skaldowie.jpg */ "./static/image/songsImages/skaldowie.jpg");
+/* harmony import */ var _static_image_songsImages_skaldowie_jpg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_skaldowie_jpg__WEBPACK_IMPORTED_MODULE_49__);
+/* harmony import */ var _static_image_songsImages_slawomir_jpg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../static/image/songsImages/slawomir.jpg */ "./static/image/songsImages/slawomir.jpg");
+/* harmony import */ var _static_image_songsImages_slawomir_jpg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_slawomir_jpg__WEBPACK_IMPORTED_MODULE_50__);
+/* harmony import */ var _static_image_songsImages_topGirls_jpg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../static/image/songsImages/topGirls.jpg */ "./static/image/songsImages/topGirls.jpg");
+/* harmony import */ var _static_image_songsImages_topGirls_jpg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_topGirls_jpg__WEBPACK_IMPORTED_MODULE_51__);
+/* harmony import */ var _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../static/image/songsImages/urszula.jpg */ "./static/image/songsImages/urszula.jpg");
+/* harmony import */ var _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_52__);
+/* harmony import */ var _static_image_songsImages_veegas_jpg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../static/image/songsImages/veegas.jpg */ "./static/image/songsImages/veegas.jpg");
+/* harmony import */ var _static_image_songsImages_veegas_jpg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_veegas_jpg__WEBPACK_IMPORTED_MODULE_53__);
+/* harmony import */ var _static_image_songsImages_wilki_jpg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../static/image/songsImages/wilki.jpg */ "./static/image/songsImages/wilki.jpg");
+/* harmony import */ var _static_image_songsImages_wilki_jpg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_wilki_jpg__WEBPACK_IMPORTED_MODULE_54__);
+/* harmony import */ var _static_image_songsImages_wojciechGasowski_jpg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../static/image/songsImages/wojciechGasowski.jpg */ "./static/image/songsImages/wojciechGasowski.jpg");
+/* harmony import */ var _static_image_songsImages_wojciechGasowski_jpg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_wojciechGasowski_jpg__WEBPACK_IMPORTED_MODULE_55__);
+/* harmony import */ var _static_image_songsImages_zbigniewWodecki_jpg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../static/image/songsImages/zbigniewWodecki.jpg */ "./static/image/songsImages/zbigniewWodecki.jpg");
+/* harmony import */ var _static_image_songsImages_zbigniewWodecki_jpg__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_static_image_songsImages_zbigniewWodecki_jpg__WEBPACK_IMPORTED_MODULE_56__);
 
 
 
@@ -3975,17 +4037,79 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const SONGS_IMAGES = {
-  DefaultSongImage: _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_22___default.a,
-  DAJ_TO_GLOSNIEJ: _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_20___default.a,
-  marcus: _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_17___default.a,
-  powerPLay: _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_18___default.a,
-  poparzeniKawaTrzy: _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_16___default.a,
-  urszula: _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_19___default.a,
-  Fanatic: _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_21___default.a,
-  lombard: _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_23___default.a,
+  abba: _static_image_songsImages_abba_jpg__WEBPACK_IMPORTED_MODULE_16___default.a,
+  afterParty: _static_image_songsImages_afterParty_jpg__WEBPACK_IMPORTED_MODULE_17___default.a,
+  akcent: _static_image_songsImages_akcent_jpg__WEBPACK_IMPORTED_MODULE_18___default.a,
+  aniaWyszkoni: _static_image_songsImages_aniaWyszkoni_jpg__WEBPACK_IMPORTED_MODULE_19___default.a,
+  boys: _static_image_songsImages_boys_jpg__WEBPACK_IMPORTED_MODULE_20___default.a,
+  budkaSuflera: _static_image_songsImages_budkaSuflera_jpeg__WEBPACK_IMPORTED_MODULE_23___default.a,
+  brathanki: _static_image_songsImages_brathanki_jpg__WEBPACK_IMPORTED_MODULE_21___default.a,
+  buble: _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_22___default.a,
   czadoman: _static_image_songsImages_czadoman_jpg__WEBPACK_IMPORTED_MODULE_24___default.a,
-  buble: _static_image_songsImages_buble_jpg__WEBPACK_IMPORTED_MODULE_25___default.a
+  DAJ_TO_GLOSNIEJ: _static_image_songsImages_dajToGlosniej_jpg__WEBPACK_IMPORTED_MODULE_25___default.a,
+  DefaultSongImage: _static_image_songsImages_defaultSongImage_jpg__WEBPACK_IMPORTED_MODULE_26___default.a,
+  electricLightOrchestra: _static_image_songsImages_electricLightOrchestra_jpg__WEBPACK_IMPORTED_MODULE_27___default.a,
+  elenaGheorghe: _static_image_songsImages_elenaGheorghe_jpg__WEBPACK_IMPORTED_MODULE_28___default.a,
+  enej: _static_image_songsImages_enej_jpg__WEBPACK_IMPORTED_MODULE_29___default.a,
+  Fanatic: _static_image_songsImages_fanatic_jpg__WEBPACK_IMPORTED_MODULE_30___default.a,
+  freakyBoys: _static_image_songsImages_freakyBoys_jpg__WEBPACK_IMPORTED_MODULE_31___default.a,
+  irenaJarocka: _static_image_songsImages_irenaJarocka_jpg__WEBPACK_IMPORTED_MODULE_32___default.a,
+  jerzyPolomski: _static_image_songsImages_jerzyPolomski_jpg__WEBPACK_IMPORTED_MODULE_33___default.a,
+  karinaStanek: _static_image_songsImages_karinaStanek_jpg__WEBPACK_IMPORTED_MODULE_34___default.a,
+  krzysztofKrawczyk: _static_image_songsImages_krzysztofKrawczyk_jpg__WEBPACK_IMPORTED_MODULE_35___default.a,
+  lobuzy: _static_image_songsImages_lobuzy_jpg__WEBPACK_IMPORTED_MODULE_36___default.a,
+  lombard: _static_image_songsImages_lombard_jpg__WEBPACK_IMPORTED_MODULE_37___default.a,
+  marcus: _static_image_songsImages_marcus_jpg__WEBPACK_IMPORTED_MODULE_38___default.a,
+  marylaRodowicz: _static_image_songsImages_marylaRodowicz_jpg__WEBPACK_IMPORTED_MODULE_39___default.a,
+  masters: _static_image_songsImages_masters_jpg__WEBPACK_IMPORTED_MODULE_40___default.a,
+  mig: _static_image_songsImages_mig_jpg__WEBPACK_IMPORTED_MODULE_41___default.a,
+  pawelDomagala: _static_image_songsImages_pawelDomagala_jpg__WEBPACK_IMPORTED_MODULE_42___default.a,
+  perfect: _static_image_songsImages_perfect_jpg__WEBPACK_IMPORTED_MODULE_43___default.a,
+  piekniIMlodzi: _static_image_songsImages_piekniIMlodzi_jpg__WEBPACK_IMPORTED_MODULE_44___default.a,
+  piersi: _static_image_songsImages_piersi_jpg__WEBPACK_IMPORTED_MODULE_45___default.a,
+  poparzeniKawaTrzy: _static_image_songsImages_poparzeniKawaTrzy_jpg__WEBPACK_IMPORTED_MODULE_46___default.a,
+  powerPLay: _static_image_songsImages_powerPLay_jpg__WEBPACK_IMPORTED_MODULE_47___default.a,
+  ronnieFerrari: _static_image_songsImages_ronnieFerrari_jpg__WEBPACK_IMPORTED_MODULE_48___default.a,
+  skaldowie: _static_image_songsImages_skaldowie_jpg__WEBPACK_IMPORTED_MODULE_49___default.a,
+  slawomir: _static_image_songsImages_slawomir_jpg__WEBPACK_IMPORTED_MODULE_50___default.a,
+  topGirls: _static_image_songsImages_topGirls_jpg__WEBPACK_IMPORTED_MODULE_51___default.a,
+  urszula: _static_image_songsImages_urszula_jpg__WEBPACK_IMPORTED_MODULE_52___default.a,
+  veegas: _static_image_songsImages_veegas_jpg__WEBPACK_IMPORTED_MODULE_53___default.a,
+  wilki: _static_image_songsImages_wilki_jpg__WEBPACK_IMPORTED_MODULE_54___default.a,
+  wojciechGasowski: _static_image_songsImages_wojciechGasowski_jpg__WEBPACK_IMPORTED_MODULE_55___default.a,
+  zbigniewWodecki: _static_image_songsImages_zbigniewWodecki_jpg__WEBPACK_IMPORTED_MODULE_56___default.a
 };
 const IMAGE_1 = _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0___default.a;
 const IMAGE_2 = _static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1___default.a;
@@ -4338,6 +4462,72 @@ module.exports = __webpack_require__.p + "static/image/photo_4_small.jpg";
 
 /***/ }),
 
+/***/ "./static/image/songsImages/abba.jpg":
+/*!*******************************************!*\
+  !*** ./static/image/songsImages/abba.jpg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/abba.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/afterParty.jpg":
+/*!*************************************************!*\
+  !*** ./static/image/songsImages/afterParty.jpg ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/afterParty.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/akcent.jpg":
+/*!*********************************************!*\
+  !*** ./static/image/songsImages/akcent.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/akcent.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/aniaWyszkoni.jpg":
+/*!***************************************************!*\
+  !*** ./static/image/songsImages/aniaWyszkoni.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/aniaWyszkoni.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/boys.jpg":
+/*!*******************************************!*\
+  !*** ./static/image/songsImages/boys.jpg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/boys.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/brathanki.jpg":
+/*!************************************************!*\
+  !*** ./static/image/songsImages/brathanki.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/brathanki.jpg";
+
+/***/ }),
+
 /***/ "./static/image/songsImages/buble.jpg":
 /*!********************************************!*\
   !*** ./static/image/songsImages/buble.jpg ***!
@@ -4346,6 +4536,17 @@ module.exports = __webpack_require__.p + "static/image/photo_4_small.jpg";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/image/songsImages/buble.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/budkaSuflera.jpeg":
+/*!****************************************************!*\
+  !*** ./static/image/songsImages/budkaSuflera.jpeg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/budkaSuflera.jpeg";
 
 /***/ }),
 
@@ -4382,6 +4583,39 @@ module.exports = __webpack_require__.p + "static/image/songsImages/defaultSongIm
 
 /***/ }),
 
+/***/ "./static/image/songsImages/electricLightOrchestra.jpg":
+/*!*************************************************************!*\
+  !*** ./static/image/songsImages/electricLightOrchestra.jpg ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/electricLightOrchestra.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/elenaGheorghe.jpg":
+/*!****************************************************!*\
+  !*** ./static/image/songsImages/elenaGheorghe.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/elenaGheorghe.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/enej.jpg":
+/*!*******************************************!*\
+  !*** ./static/image/songsImages/enej.jpg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/enej.jpg";
+
+/***/ }),
+
 /***/ "./static/image/songsImages/fanatic.jpg":
 /*!**********************************************!*\
   !*** ./static/image/songsImages/fanatic.jpg ***!
@@ -4390,6 +4624,72 @@ module.exports = __webpack_require__.p + "static/image/songsImages/defaultSongIm
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/image/songsImages/fanatic.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/freakyBoys.jpg":
+/*!*************************************************!*\
+  !*** ./static/image/songsImages/freakyBoys.jpg ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/freakyBoys.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/irenaJarocka.jpg":
+/*!***************************************************!*\
+  !*** ./static/image/songsImages/irenaJarocka.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/irenaJarocka.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/jerzyPolomski.jpg":
+/*!****************************************************!*\
+  !*** ./static/image/songsImages/jerzyPolomski.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/jerzyPolomski.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/karinaStanek.jpg":
+/*!***************************************************!*\
+  !*** ./static/image/songsImages/karinaStanek.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/karinaStanek.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/krzysztofKrawczyk.jpg":
+/*!********************************************************!*\
+  !*** ./static/image/songsImages/krzysztofKrawczyk.jpg ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/krzysztofKrawczyk.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/lobuzy.jpg":
+/*!*********************************************!*\
+  !*** ./static/image/songsImages/lobuzy.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/lobuzy.jpg";
 
 /***/ }),
 
@@ -4415,6 +4715,83 @@ module.exports = __webpack_require__.p + "static/image/songsImages/marcus.jpg";
 
 /***/ }),
 
+/***/ "./static/image/songsImages/marylaRodowicz.jpg":
+/*!*****************************************************!*\
+  !*** ./static/image/songsImages/marylaRodowicz.jpg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/marylaRodowicz.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/masters.jpg":
+/*!**********************************************!*\
+  !*** ./static/image/songsImages/masters.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/masters.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/mig.jpg":
+/*!******************************************!*\
+  !*** ./static/image/songsImages/mig.jpg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/mig.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/pawelDomagala.jpg":
+/*!****************************************************!*\
+  !*** ./static/image/songsImages/pawelDomagala.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/pawelDomagala.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/perfect.jpg":
+/*!**********************************************!*\
+  !*** ./static/image/songsImages/perfect.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/perfect.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/piekniIMlodzi.jpg":
+/*!****************************************************!*\
+  !*** ./static/image/songsImages/piekniIMlodzi.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/piekniIMlodzi.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/piersi.jpg":
+/*!*********************************************!*\
+  !*** ./static/image/songsImages/piersi.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/piersi.jpg";
+
+/***/ }),
+
 /***/ "./static/image/songsImages/poparzeniKawaTrzy.jpg":
 /*!********************************************************!*\
   !*** ./static/image/songsImages/poparzeniKawaTrzy.jpg ***!
@@ -4437,6 +4814,50 @@ module.exports = __webpack_require__.p + "static/image/songsImages/powerPLay.jpg
 
 /***/ }),
 
+/***/ "./static/image/songsImages/ronnieFerrari.jpg":
+/*!****************************************************!*\
+  !*** ./static/image/songsImages/ronnieFerrari.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/ronnieFerrari.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/skaldowie.jpg":
+/*!************************************************!*\
+  !*** ./static/image/songsImages/skaldowie.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/skaldowie.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/slawomir.jpg":
+/*!***********************************************!*\
+  !*** ./static/image/songsImages/slawomir.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/slawomir.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/topGirls.jpg":
+/*!***********************************************!*\
+  !*** ./static/image/songsImages/topGirls.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/topGirls.jpg";
+
+/***/ }),
+
 /***/ "./static/image/songsImages/urszula.jpg":
 /*!**********************************************!*\
   !*** ./static/image/songsImages/urszula.jpg ***!
@@ -4445,6 +4866,50 @@ module.exports = __webpack_require__.p + "static/image/songsImages/powerPLay.jpg
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/image/songsImages/urszula.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/veegas.jpg":
+/*!*********************************************!*\
+  !*** ./static/image/songsImages/veegas.jpg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/veegas.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/wilki.jpg":
+/*!********************************************!*\
+  !*** ./static/image/songsImages/wilki.jpg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/wilki.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/wojciechGasowski.jpg":
+/*!*******************************************************!*\
+  !*** ./static/image/songsImages/wojciechGasowski.jpg ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/wojciechGasowski.jpg";
+
+/***/ }),
+
+/***/ "./static/image/songsImages/zbigniewWodecki.jpg":
+/*!******************************************************!*\
+  !*** ./static/image/songsImages/zbigniewWodecki.jpg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/image/songsImages/zbigniewWodecki.jpg";
 
 /***/ }),
 
@@ -4459,7 +4924,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/

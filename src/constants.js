@@ -19,29 +19,91 @@ import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
 
 //==============Songs images===============
 
-import poparzeniKawaTrzy from '../static/image/songsImages/poparzeniKawaTrzy.jpg';
-import marcus from '../static/image/songsImages/marcus.jpg';
-import powerPLay from '../static/image/songsImages/powerPLay.jpg';
-import urszula from '../static/image/songsImages/urszula.jpg';
-import dajToGlosniej from '../static/image/songsImages/dajToGlosniej.jpg';
-import fanatic from '../static/image/songsImages/fanatic.jpg';
-import DefaultSongImage from '../static/image/songsImages/defaultSongImage.jpg';
-import lombard from '../static/image/songsImages/lombard.jpg';
-import czadoman from '../static/image/songsImages/czadoman.jpg';
+import abba from '../static/image/songsImages/abba.jpg';
+import afterParty from '../static/image/songsImages/afterParty.jpg';
+import akcent from '../static/image/songsImages/akcent.jpg';
+import aniaWyszkoni from '../static/image/songsImages/aniaWyszkoni.jpg';
+import boys from '../static/image/songsImages/boys.jpg';
+import brathanki from '../static/image/songsImages/brathanki.jpg';
 import buble from '../static/image/songsImages/buble.jpg';
+import budkaSuflera from '../static/image/songsImages/budkaSuflera.jpeg';
+import czadoman from '../static/image/songsImages/czadoman.jpg';
+import dajToGlosniej from '../static/image/songsImages/dajToGlosniej.jpg';
+import DefaultSongImage from '../static/image/songsImages/defaultSongImage.jpg';
+import electricLightOrchestra from '../static/image/songsImages/electricLightOrchestra.jpg';
+import elenaGheorghe from '../static/image/songsImages/elenaGheorghe.jpg';
+import enej from '../static/image/songsImages/enej.jpg';
+import fanatic from '../static/image/songsImages/fanatic.jpg';
+import freakyBoys from '../static/image/songsImages/freakyBoys.jpg';
+import irenaJarocka from '../static/image/songsImages/irenaJarocka.jpg';
+import jerzyPolomski from '../static/image/songsImages/jerzyPolomski.jpg';
+import karinaStanek from '../static/image/songsImages/karinaStanek.jpg';
+import krzysztofKrawczyk from '../static/image/songsImages/krzysztofKrawczyk.jpg';
+import lobuzy from '../static/image/songsImages/lobuzy.jpg';
+import lombard from '../static/image/songsImages/lombard.jpg';
+import marcus from '../static/image/songsImages/marcus.jpg';
+import marylaRodowicz from '../static/image/songsImages/marylaRodowicz.jpg';
+import masters from '../static/image/songsImages/masters.jpg';
+import mig from '../static/image/songsImages/mig.jpg';
+import pawelDomagala from '../static/image/songsImages/pawelDomagala.jpg';
+import perfect from '../static/image/songsImages/perfect.jpg';
+import piekniIMlodzi from '../static/image/songsImages/piekniIMlodzi.jpg';
+import piersi from '../static/image/songsImages/piersi.jpg';
+import poparzeniKawaTrzy from '../static/image/songsImages/poparzeniKawaTrzy.jpg';
+import powerPLay from '../static/image/songsImages/powerPLay.jpg';
+import ronnieFerrari from '../static/image/songsImages/ronnieFerrari.jpg';
+import skaldowie from '../static/image/songsImages/skaldowie.jpg';
+import slawomir from '../static/image/songsImages/slawomir.jpg';
+import topGirls from '../static/image/songsImages/topGirls.jpg';
+import urszula from '../static/image/songsImages/urszula.jpg';
+import veegas from '../static/image/songsImages/veegas.jpg';
+import wilki from '../static/image/songsImages/wilki.jpg';
+import wojciechGasowski from '../static/image/songsImages/wojciechGasowski.jpg';
+import zbigniewWodecki from '../static/image/songsImages/zbigniewWodecki.jpg';
 
 
 export const SONGS_IMAGES = {
-  DefaultSongImage: DefaultSongImage,
-  DAJ_TO_GLOSNIEJ: dajToGlosniej,
-  marcus: marcus,
-  powerPLay: powerPLay,
-  poparzeniKawaTrzy: poparzeniKawaTrzy,
-  urszula: urszula,
-  Fanatic: fanatic,
-  lombard: lombard,
-  czadoman: czadoman,
+  abba: abba,
+  afterParty: afterParty,
+  akcent: akcent,
+  aniaWyszkoni: aniaWyszkoni,
+  boys: boys,
+  budkaSuflera: budkaSuflera,
+  brathanki: brathanki,
   buble: buble,
+  czadoman: czadoman,
+  DAJ_TO_GLOSNIEJ: dajToGlosniej,
+  DefaultSongImage: DefaultSongImage,
+  electricLightOrchestra: electricLightOrchestra,
+  elenaGheorghe: elenaGheorghe,
+  enej: enej,
+  Fanatic: fanatic,
+  freakyBoys: freakyBoys,
+  irenaJarocka: irenaJarocka,
+  jerzyPolomski: jerzyPolomski,
+  karinaStanek: karinaStanek,
+  krzysztofKrawczyk: krzysztofKrawczyk,
+  lobuzy: lobuzy,
+  lombard: lombard,
+  marcus: marcus,
+  marylaRodowicz: marylaRodowicz,
+  masters: masters,
+  mig: mig,
+  pawelDomagala: pawelDomagala,
+  perfect: perfect,
+  piekniIMlodzi: piekniIMlodzi,
+  piersi: piersi,
+  poparzeniKawaTrzy: poparzeniKawaTrzy,
+  powerPLay: powerPLay,
+  ronnieFerrari: ronnieFerrari,
+  skaldowie: skaldowie,
+  slawomir: slawomir,
+  topGirls: topGirls,
+  urszula: urszula,
+  veegas: veegas,
+  wilki: wilki,
+  wojciechGasowski: wojciechGasowski,
+  zbigniewWodecki: zbigniewWodecki,
 };
 
 export const IMAGE_1 = photo1;
