@@ -185,7 +185,7 @@ export const TRACK_LIST = [
   },
 
   {
-    name: 'Za tobą pójdę jak ba bal',
+    name: 'Za tobą pójdę jak na bal',
     mp3Name: 'ZaTobaPojdeJakNaBal',
     artist: 'Krzysztof Krawczyk',
     imgSrc: SONGS_IMAGES.krzysztofKrawczyk,

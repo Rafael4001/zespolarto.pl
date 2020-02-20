@@ -17,11 +17,6 @@ class TrackContainer extends Component {
     return this.props.media.isPlaying !== media.isPlaying
   }
 
-  _handlePlayPause = () => {
-    this.props.media.playPause()
-  }
-
-
   handlePlayClick = () => {
     this.props.onClickPlay();
     this.props.media.play()
@@ -30,12 +25,17 @@ class TrackContainer extends Component {
 
   render() {
     const {classes, track, actualPlayingTrackMp3Name, media} = this.props;
-
     const trackImage = track.imgSrc ? track.imgSrc : SONGS_IMAGES.DefaultSongImage;
 
     return (
-      <div className={classNames(classes.mainContainer, {[classes.activeBackground]: actualPlayingTrackMp3Name === track.name})}>
-        <div className={classes.songImage}>
+      <div className={classNames(
+        classes.mainContainer,
+        {[classes.activeBackground]: actualPlayingTrackMp3Name === track.mp3Name}
+      )}>
+        <div
+          className={classes.songImage}
+          onClick={(actualPlayingTrackMp3Name === track.mp3Name && media.isPlaying) ? media.pause : this.handlePlayClick}
+        >
           <Image imgSrc={trackImage}/>
         </div>
         {actualPlayingTrackMp3Name === track.mp3Name && media.isPlaying ?

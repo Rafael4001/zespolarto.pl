@@ -3848,10 +3848,6 @@ class TrackContainer extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
   constructor(...args) {
     super(...args);
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "_handlePlayPause", () => {
-      this.props.media.playPause();
-    });
-
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handlePlayClick", () => {
       this.props.onClickPlay();
       this.props.media.play();
@@ -3874,18 +3870,19 @@ class TrackContainer extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
     const trackImage = track.imgSrc ? track.imgSrc : _constants__WEBPACK_IMPORTED_MODULE_8__["SONGS_IMAGES"].DefaultSongImage;
     return __jsx("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(classes.mainContainer, {
-        [classes.activeBackground]: actualPlayingTrackMp3Name === track.name
+        [classes.activeBackground]: actualPlayingTrackMp3Name === track.mp3Name
       }),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 31
       },
       __self: this
     }, __jsx("div", {
       className: classes.songImage,
+      onClick: actualPlayingTrackMp3Name === track.mp3Name && media.isPlaying ? media.pause : this.handlePlayClick,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 35
       },
       __self: this
     }, __jsx(_Image__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -4001,7 +3998,8 @@ const styles = {
     width: '3rem',
     height: '3rem'
   },
-  activeBackground: {// backgroundColor: 'yellow',  //TODO naprawic tutaj BUGa z odtwarzaczem
+  activeBackground: {
+    backgroundColor: '#d81a1aeb'
   },
   trackName: {
     fontSize: '1.1rem'
@@ -4680,7 +4678,7 @@ const TRACK_LIST = [{
   artist: 'Veegas',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].veegas
 }, {
-  name: 'Za tobą pójdę jak ba bal',
+  name: 'Za tobą pójdę jak na bal',
   mp3Name: 'ZaTobaPojdeJakNaBal',
   artist: 'Krzysztof Krawczyk',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].krzysztofKrawczyk

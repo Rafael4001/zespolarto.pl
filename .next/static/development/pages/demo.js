@@ -66571,10 +66571,6 @@ function (_Component) {
 
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(TrackContainer)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "_handlePlayPause", function () {
-      _this.props.media.playPause();
-    });
-
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handlePlayClick", function () {
       _this.props.onClickPlay();
 
@@ -66600,17 +66596,18 @@ function (_Component) {
           media = _this$props.media;
       var trackImage = track.imgSrc ? track.imgSrc : _constants__WEBPACK_IMPORTED_MODULE_14__["SONGS_IMAGES"].DefaultSongImage;
       return __jsx("div", {
-        className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(classes.mainContainer, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])({}, classes.activeBackground, actualPlayingTrackMp3Name === track.name)),
+        className: classnames__WEBPACK_IMPORTED_MODULE_9___default()(classes.mainContainer, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])({}, classes.activeBackground, actualPlayingTrackMp3Name === track.mp3Name)),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 31
         },
         __self: this
       }, __jsx("div", {
         className: classes.songImage,
+        onClick: actualPlayingTrackMp3Name === track.mp3Name && media.isPlaying ? media.pause : this.handlePlayClick,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 35
         },
         __self: this
       }, __jsx(_Image__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -66727,7 +66724,8 @@ var styles = {
     width: '3rem',
     height: '3rem'
   },
-  activeBackground: {// backgroundColor: 'yellow',  //TODO naprawic tutaj BUGa z odtwarzaczem
+  activeBackground: {
+    backgroundColor: '#d81a1aeb'
   },
   trackName: {
     fontSize: '1.1rem'
@@ -67449,7 +67447,7 @@ var TRACK_LIST = [{
   artist: 'Veegas',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].veegas
 }, {
-  name: 'Za tobą pójdę jak ba bal',
+  name: 'Za tobą pójdę jak na bal',
   mp3Name: 'ZaTobaPojdeJakNaBal',
   artist: 'Krzysztof Krawczyk',
   imgSrc: _constants__WEBPACK_IMPORTED_MODULE_0__["SONGS_IMAGES"].krzysztofKrawczyk

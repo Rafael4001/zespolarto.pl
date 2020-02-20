@@ -5,7 +5,7 @@ import { COLORS } from "../../constants";
 
 
 const styles = {
-  mainContainer:{
+  mainContainer: {
     display: 'flex',
     alignItems: 'center',
     margin: '0.1rem',
@@ -13,27 +13,27 @@ const styles = {
     backgroundColor: `${COLORS.red.medium}`,
     color: "#FFF",
   },
-  myButton:{
+  myButton: {
     width: '1rem',
     padding: '0.1rem',
   },
-  buttonIcon:{
+  buttonIcon: {
     fontSize: '2rem',
     color: '#FFF',
   },
-  songImage:{
+  songImage: {
     display: 'flex',
     width: '3rem',
     height: '3rem',
   },
-  activeBackground:{
-    // backgroundColor: 'yellow',  //TODO naprawic tutaj BUGa z odtwarzaczem
+  activeBackground: {
+    backgroundColor: '#d81a1aeb',
   },
-  trackName:{
-  fontSize: '1.1rem',
+  trackName: {
+    fontSize: '1.1rem',
   },
-  trackArtistText:{
-  fontSize: '0.8rem',
+  trackArtistText: {
+    fontSize: '0.8rem',
     color: COLORS.grey.dark
   }
 };
