@@ -7,19 +7,7 @@ import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import EventBusyIcon from '@material-ui/icons/EventBusy';
 
 
-const STATUS = {
-  BUSY: "busy",
-  EMPTY: "empty",
-  RESERVATION: "reservation",
-  HOLIDAY: "holiday",
-  UNDEFINED: "undefined",
-};
-
-
-const empty = STATUS.EMPTY;
-const busy = STATUS.BUSY;
-const holiday = STATUS.HOLIDAY;
-
+import {STATUS} from '../../../src/constants'
 
 class CustomBodyOfMonth extends Component {
   state = {
@@ -39,11 +27,11 @@ class CustomBodyOfMonth extends Component {
 
     const getView = (status) => {
       switch (status) {
-        case busy:
+        case STATUS.BUSY:
           return (<div className={classNames(classes.info, classes.infoBusy,)}>{place}</div>);
-        case empty:
+        case STATUS.BUSY:
           return (<div className={classNames(classes.info, classes.infoEmpty,)}>BRAK</div>);
-        case holiday:
+        case STATUS.HOLIDAY:
           return (<div className={classNames(classes.info, classes.infoHoliday,)}>Wakacje</div>)
       }
     };

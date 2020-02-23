@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from './Image.style';","map":{"version":3,"sources":["C:/IT_projects_Edu-Lab/www.zespolarto.pl/src/components/Image/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,eAAxB","sourcesContent":["export { default } from './Image.style';\r\n"]},"metadata":{},"sourceType":"module"}

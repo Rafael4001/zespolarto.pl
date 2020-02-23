@@ -9,6 +9,7 @@ import YEAR_2021 from '../../termsJSON/terminy2021';
 
 import Months from "../../components/Months";
 import TabPanel from "./TabPanel/index";
+import { STATUS } from "../../constants";
 
 
 const YEAR_2020_TITLE_TEXT = "2020";
@@ -20,6 +21,10 @@ function a11yProps(index) {
     'aria-controls': `simple-tabpanel-${index}`,
   };
 }
+
+const howMuchTermsWithStatus = (element, status) => {
+  return element.status === status;
+};
 
 class Terms extends Component {
   state = {
@@ -34,22 +39,50 @@ class Terms extends Component {
   render() {
     const {classes} = this.props;
     const {value} = this.state;
+    const years = [
+      {
+        name: YEAR_2020_TITLE_TEXT,
+        details: YEAR_2020,
+      },
+      {
+        name: YEAR_2021_TITLE_TEXT,
+        details: YEAR_2021,
+      }
+    ];
+    const getWeddingsYearAmount = (yearDetails) => {
+      let allweeddings = 0;
+
+      yearDetails.map((month) => {
+        const weddingsAmount = month.days.filter(function(element) {
+          return howMuchTermsWithStatus(element, STATUS.BUSY)
+        });
+        allweeddings = allweeddings + weddingsAmount.length;
+      });
+
+      return allweeddings
+    };
+
 
     return (
       <div className={classes.root}>
         <AppBar position="fixed">
           <Tabs value={value} onChange={this.handleChange} aria-label="simple tabs example">
-            <Tab label={YEAR_2020_TITLE_TEXT} {...a11yProps(0)} />
-            <Tab label={YEAR_2021_TITLE_TEXT} {...a11yProps(1)} />
+            {years.map((year, id) => {
+              const label = `${year.name}__(${getWeddingsYearAmount(year.details)})`;
+
+              return (
+                <Tab key={year.name} label={label} {...a11yProps(id)} />
+              )
+            })}
           </Tabs>
         </AppBar>
 
-        <TabPanel value={value} index={0}>
-          <Months table={YEAR_2020}/>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <Months table={YEAR_2021}/>
-        </TabPanel>
+        {years.map((year, id) => (
+            <TabPanel key={id} value={value} index={id}>
+              <Months table={year.details}/>
+            </TabPanel>
+          )
+        )}
       </div>
     )
   }

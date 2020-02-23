@@ -182,3 +182,11 @@ export const MARGIN_TOP_UNDER_MENU= '4rem';
 export const SCREEN_SIZE={
   POINT_750: 750,
 };
+
+export const STATUS = {
+  BUSY: "busy",
+  EMPTY: "empty",
+  RESERVATION: "reservation",
+  HOLIDAY: "holiday",
+  UNDEFINED: "undefined",
+};
