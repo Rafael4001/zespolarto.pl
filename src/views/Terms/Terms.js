@@ -6,6 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 
 import YEAR_2020 from '../../termsJSON/terminy2020';
 import YEAR_2021 from '../../termsJSON/terminy2021';
+import YEAR_2022 from '../../termsJSON/terminy2022';
 
 import Months from "../../components/Months";
 import TabPanel from "./TabPanel/index";
@@ -14,6 +15,7 @@ import { STATUS } from "../../constants";
 
 const YEAR_2020_TITLE_TEXT = "2020";
 const YEAR_2021_TITLE_TEXT = "2021";
+const YEAR_2022_TITLE_TEXT = "2022";
 
 function a11yProps(index) {
   return {
@@ -47,6 +49,10 @@ class Terms extends Component {
       {
         name: YEAR_2021_TITLE_TEXT,
         details: YEAR_2021,
+      },
+      {
+        name: YEAR_2022_TITLE_TEXT,
+        details: YEAR_2022,
       }
     ];
     const getWeddingsYearAmount = (yearDetails) => {
@@ -68,7 +74,7 @@ class Terms extends Component {
         <AppBar position="fixed">
           <Tabs value={value} onChange={this.handleChange} aria-label="simple tabs example">
             {years.map((year, id) => {
-              const label = `${year.name}__(${getWeddingsYearAmount(year.details)})`;
+              const label = `${year.name}`;
 
               return (
                 <Tab key={year.name} label={label} {...a11yProps(id)} />
@@ -77,12 +83,15 @@ class Terms extends Component {
           </Tabs>
         </AppBar>
 
-        {years.map((year, id) => (
+        {years.map((year, id) => {
+          const weddingAmount = getWeddingsYearAmount(year.details);
+
+          return (
             <TabPanel key={id} value={value} index={id}>
-              <Months table={year.details}/>
+              <Months table={year.details} weddingAmount={weddingAmount}/>
             </TabPanel>
           )
-        )}
+        })}
       </div>
     )
   }

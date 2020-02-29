@@ -13,7 +13,7 @@ const howMuchTermsWithStatus = (element, status) => {
 };
 
 const Months = (props) => {
-  const {classes, table} = props;
+  const {classes, table, weddingAmount} = props;
 
   const getMonthsDays = (days) => (
     days.map((day) => <CustomBodyOfMonth key={day.day} {...day} />)
@@ -42,12 +42,15 @@ const Months = (props) => {
 
   return (
     <ul className={classes.monthContainer}>
+      Ilość wesel: {weddingAmount}
       {getMonths(table)}
     </ul>
   )
 };
 
-Months.defaultProps = {};
+Months.defaultProps = {
+  weddingAmount: 0,
+};
 
 Months.displayName = 'Months';
 

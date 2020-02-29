@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -676,7 +676,8 @@ const howMuchTermsWithStatus = (element, status) => {
 const Months = props => {
   const {
     classes,
-    table
+    table,
+    weddingAmount
   } = props;
 
   const getMonthsDays = days => days.map(day => __jsx(_CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -748,10 +749,12 @@ const Months = props => {
       lineNumber: 44
     },
     __self: undefined
-  }, getMonths(table));
+  }, "Ilo\u015B\u0107 wesel: ", weddingAmount, getMonths(table));
 };
 
-Months.defaultProps = {};
+Months.defaultProps = {
+  weddingAmount: 0
+};
 Months.displayName = 'Months';
 /* harmony default export */ __webpack_exports__["default"] = (Months);
 
@@ -786,7 +789,7 @@ const styles = {
     color: "#FFF"
   },
   monthContainer: {
-    margin: 0,
+    margin: '1rem 0',
     textDecoration: 'none',
     padding: 0
   },
@@ -1192,6 +1195,17 @@ module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"02.01.
 
 /***/ }),
 
+/***/ "./src/termsJSON/terminy2022.json":
+/*!****************************************!*\
+  !*** ./src/termsJSON/terminy2022.json ***!
+  \****************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"01.01.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"08.01.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.01.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.01.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"29.01.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Luty\",\"days\":[{\"day\":\"05.02.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.02.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.02.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.02.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Marzec\",\"days\":[{\"day\":\"05.03.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.03.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.03.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.03.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Kwiecień\",\"days\":[{\"day\":\"02.04.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"09.04.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"16.04.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"23.04.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.04.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Maj\",\"days\":[{\"day\":\"07.05.2022\",\"free\":false,\"place\":\"Bogucin\",\"hotel\":\"Dom weselny \\\"Kapama\\\"\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"yes\",\"blessingTime\":\"14.30\",\"weddingHour\":\"15.00\"},{\"day\":\"14.05.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"21.05.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.05.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Czerwiec\",\"days\":[{\"day\":\"04.06.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.06.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.06.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.06.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Lipiec\",\"days\":[{\"day\":\"02.07.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"09.07.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"16.07.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"23.07.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.07.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Sierpień\",\"days\":[{\"day\":\"06.08.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.08.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.08.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"27.08.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Wrzesień\",\"days\":[{\"day\":\"03.09.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"10.09.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"17.09.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.09.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Październik\",\"days\":[{\"day\":\"01.10.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"08.10.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.10.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.10.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"29.10.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Listopad\",\"days\":[{\"day\":\"05.11.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.11.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.11.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.11.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Grudzień\",\"days\":[{\"day\":\"03.12.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"10.12.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"17.12.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.12.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"31.12.2022\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]}]");
+
+/***/ }),
+
 /***/ "./src/views/Terms/TabPanel/TabPanel.js":
 /*!**********************************************!*\
   !*** ./src/views/Terms/TabPanel/TabPanel.js ***!
@@ -1324,9 +1338,11 @@ __webpack_require__.r(__webpack_exports__);
 var _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../termsJSON/terminy2020 */ "./src/termsJSON/terminy2020.json", 1);
 /* harmony import */ var _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../termsJSON/terminy2021 */ "./src/termsJSON/terminy2021.json");
 var _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../termsJSON/terminy2021 */ "./src/termsJSON/terminy2021.json", 1);
-/* harmony import */ var _components_Months__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/Months */ "./src/components/Months/index.js");
-/* harmony import */ var _TabPanel_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./TabPanel/index */ "./src/views/Terms/TabPanel/index.js");
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+/* harmony import */ var _termsJSON_terminy2022__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../termsJSON/terminy2022 */ "./src/termsJSON/terminy2022.json");
+var _termsJSON_terminy2022__WEBPACK_IMPORTED_MODULE_9___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../termsJSON/terminy2022 */ "./src/termsJSON/terminy2022.json", 1);
+/* harmony import */ var _components_Months__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/Months */ "./src/components/Months/index.js");
+/* harmony import */ var _TabPanel_index__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./TabPanel/index */ "./src/views/Terms/TabPanel/index.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
 
 
 var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\views\\Terms\\Terms.js";
@@ -1341,8 +1357,10 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
+
 const YEAR_2020_TITLE_TEXT = "2020";
 const YEAR_2021_TITLE_TEXT = "2021";
+const YEAR_2022_TITLE_TEXT = "2022";
 
 function a11yProps(index) {
   return {
@@ -1383,13 +1401,16 @@ class Terms extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
     }, {
       name: YEAR_2021_TITLE_TEXT,
       details: _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_8__
+    }, {
+      name: YEAR_2022_TITLE_TEXT,
+      details: _termsJSON_terminy2022__WEBPACK_IMPORTED_MODULE_9__
     }];
 
     const getWeddingsYearAmount = yearDetails => {
       let allweeddings = 0;
       yearDetails.map(month => {
         const weddingsAmount = month.days.filter(function (element) {
-          return howMuchTermsWithStatus(element, _constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].BUSY);
+          return howMuchTermsWithStatus(element, _constants__WEBPACK_IMPORTED_MODULE_12__["STATUS"].BUSY);
         });
         allweeddings = allweeddings + weddingsAmount.length;
       });
@@ -1400,14 +1421,14 @@ class Terms extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       className: classes.root,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
+        lineNumber: 73
       },
       __self: this
     }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
       position: "fixed",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 74
       },
       __self: this
     }, __jsx(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -1416,38 +1437,42 @@ class Terms extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       "aria-label": "simple tabs example",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 75
       },
       __self: this
     }, years.map((year, id) => {
-      const label = `${year.name}__(${getWeddingsYearAmount(year.details)})`;
+      const label = `${year.name}`;
       return __jsx(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         key: year.name,
         label: label
       }, a11yProps(id), {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 80
         },
         __self: this
       }));
-    }))), years.map((year, id) => __jsx(_TabPanel_index__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      key: id,
-      value: value,
-      index: id,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 81
-      },
-      __self: this
-    }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_9__["default"], {
-      table: year.details,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 82
-      },
-      __self: this
-    }))));
+    }))), years.map((year, id) => {
+      const weddingAmount = getWeddingsYearAmount(year.details);
+      return __jsx(_TabPanel_index__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        key: id,
+        value: value,
+        index: id,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 90
+        },
+        __self: this
+      }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        table: year.details,
+        weddingAmount: weddingAmount,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 91
+        },
+        __self: this
+      }));
+    }));
   }
 
 }
@@ -2134,7 +2159,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!************************************!*\
   !*** multi ./pages/blablaterms.js ***!
   \************************************/

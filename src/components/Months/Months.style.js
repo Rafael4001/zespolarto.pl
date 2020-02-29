@@ -18,7 +18,7 @@ const styles = ({
     color: "#FFF",
   },
   monthContainer: {
-    margin: 0,
+    margin: '1rem 0',
     textDecoration: 'none',
     padding: 0,
   },
