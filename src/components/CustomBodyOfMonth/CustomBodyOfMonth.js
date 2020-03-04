@@ -15,7 +15,13 @@ class CustomBodyOfMonth extends Component {
   };
 
   render() {
-    const {classes, place, status} = this.props;
+    const {
+      classes,
+      place,
+      status,
+      day,
+      description,
+    } = this.props;
 
 
     const classNameMain = classNames(classes.main, {
@@ -46,16 +52,6 @@ class CustomBodyOfMonth extends Component {
       }
     };
 
-
-    function toggleDetails(item) {
-      alert(item);
-      this.setState((state, props) => {
-        return {
-          showDetails: !state.showDetails
-        };
-      });
-    }
-
     const getDetails = () => (
       <div className={classes.rowInfo}>
         {(this.props.status === STATUS.BUSY || this.props.status === STATUS.HOLIDAY) &&
@@ -69,22 +65,17 @@ class CustomBodyOfMonth extends Component {
     );
 
     return (
-      <div
-        className={classNameMain}
-        // onClick={() => {
-        //   toggleDetails(this.props.day)
-        // }}
-      >
+      <div className={classNameMain}>
         <div className={classes.rowContainer}>
           <div className={classes.detailsMainContainer}>
             <div className={classes.termIconContainer}>
               {getIcon(this.props.status)}
-              <Typography type={"span"} className={classes.day}>{this.props.day}</Typography>
+              <Typography type={"span"} className={classes.day}>{day}</Typography>
             </div>
             {getDetails()}
-            <Typography type={"p"} className={classes.details}>{this.props.description}</Typography>
+            <Typography type={"p"} className={classes.details}>{description}</Typography>
           </div>
-          <div className={classes.statusContainer}>{getView(this.props.status)}</div>
+          <div className={classes.statusContainer}>{getView(status)}</div>
         </div>
         {this.props.children}
       </div>
