@@ -292,23 +292,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "classnames");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/EventAvailable */ "@material-ui/icons/EventAvailable");
-/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/CalendarToday */ "@material-ui/icons/CalendarToday");
-/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/EventBusy */ "@material-ui/icons/EventBusy");
-/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _src_constants__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../src/constants */ "./src/constants.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "classnames");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/EventAvailable */ "@material-ui/icons/EventAvailable");
+/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/CalendarToday */ "@material-ui/icons/CalendarToday");
+/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/EventBusy */ "@material-ui/icons/EventBusy");
+/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _src_constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../src/constants */ "./src/constants.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\CustomBodyOfMonth\\CustomBodyOfMonth.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -317,208 +317,217 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-class CustomBodyOfMonth extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
-  constructor(...args) {
-    super(...args);
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "state", {
-      showDetails: this.props.showDetails //Tutaj jest do poprawy architektura TODO
+const CustomBodyOfMonth = props => {
+  const {
+    classes,
+    day,
+    description,
+    hotel,
+    information,
+    place,
+    status,
+    weddingHour
+  } = props;
+  const classNameMain = classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.main, {
+    [classes.busy]: status === _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].BUSY,
+    [classes.holiday]: status === _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].HOLIDAY,
+    [classes.emptyContainer]: status === _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].EMPTY || _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].UNDEFINED
+  });
 
-    });
-  }
+  const getView = status => {
+    switch (status) {
+      case _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].BUSY:
+        return __jsx("div", {
+          className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.info, classes.infoBusy),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 36
+          },
+          __self: undefined
+        }, place);
 
-  render() {
-    const {
-      classes,
-      place,
-      status,
-      day,
-      description
-    } = this.props;
-    const classNameMain = classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.main, {
-      [classes.busy]: status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].BUSY,
-      [classes.holiday]: status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].HOLIDAY,
-      [classes.emptyContainer]: status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].EMPTY || _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].UNDEFINED
-    });
+      case _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].HOLIDAY:
+        return __jsx("div", {
+          className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.info, classes.infoHoliday),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 38
+          },
+          __self: undefined
+        }, "Wakacje");
+    }
+  };
 
-    const getView = status => {
-      switch (status) {
-        case _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].BUSY:
-          return __jsx("div", {
-            className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoBusy),
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 37
-            },
-            __self: this
-          }, place);
+  const getIcon = status => {
+    switch (status) {
+      case _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].BUSY:
+        return __jsx(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          classes: {
+            root: classes.icon
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 44
+          },
+          __self: undefined
+        });
 
-        case _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].BUSY:
-          return __jsx("div", {
-            className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoEmpty),
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 39
-            },
-            __self: this
-          }, "BRAK");
+      case _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].EMPTY:
+        return __jsx(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4___default.a, {
+          classes: {
+            root: classes.icon
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 46
+          },
+          __self: undefined
+        });
 
-        case _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].HOLIDAY:
-          return __jsx("div", {
-            className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoHoliday),
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 41
-            },
-            __self: this
-          }, "Wakacje");
-      }
-    };
+      case _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].HOLIDAY:
+        return __jsx(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_5___default.a, {
+          classes: {
+            root: classes.icon
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 48
+          },
+          __self: undefined
+        });
+    }
+  };
 
-    const getIcon = status => {
-      switch (status) {
-        case _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].BUSY:
-          return __jsx(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4___default.a, {
-            classes: {
-              root: classes.icon
-            },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 47
-            },
-            __self: this
-          });
+  const getDetails = () => __jsx("div", {
+    className: classes.rowInfo,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }, (status === _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].BUSY || status === _src_constants__WEBPACK_IMPORTED_MODULE_6__["STATUS"].HOLIDAY) && __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: undefined
+  }, hotel && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    type: "p",
+    className: classes.details,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: undefined
+  }, __jsx("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: undefined
+  }, "hotel: "), hotel), information && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    type: "p",
+    className: classes.details,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: undefined
+  }, __jsx("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: undefined
+  }, "informacje dodatkowe: "), information), weddingHour && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    type: "p",
+    className: classes.details,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: undefined
+  }, __jsx("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: undefined
+  }, "godz. slubu: "), weddingHour)));
 
-        case _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].EMPTY:
-          return __jsx(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5___default.a, {
-            classes: {
-              root: classes.icon
-            },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 49
-            },
-            __self: this
-          });
-
-        case _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].HOLIDAY:
-          return __jsx(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6___default.a, {
-            classes: {
-              root: classes.icon
-            },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 51
-            },
-            __self: this
-          });
-      }
-    };
-
-    const getDetails = () => __jsx("div", {
-      className: classes.rowInfo,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 56
-      },
-      __self: this
-    }, (this.props.status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].BUSY || this.props.status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].HOLIDAY) && __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58
-      },
-      __self: this
-    }, this.props.hotel && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "p",
-      className: classes.details,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59
-      },
-      __self: this
-    }, __jsx("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59
-      },
-      __self: this
-    }, "hotel: "), this.props.hotel), this.props.information && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "p",
-      className: classes.details,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 61
-      },
-      __self: this
-    }, __jsx("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 61
-      },
-      __self: this
-    }, "informacje dodatkowe: "), this.props.information)));
-
-    return __jsx("div", {
-      className: classNameMain,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 68
-      },
-      __self: this
-    }, __jsx("div", {
-      className: classes.rowContainer,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 69
-      },
-      __self: this
-    }, __jsx("div", {
-      className: classes.detailsMainContainer,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 70
-      },
-      __self: this
-    }, __jsx("div", {
-      className: classes.termIconContainer,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 71
-      },
-      __self: this
-    }, getIcon(this.props.status), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "span",
-      className: classes.day,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 73
-      },
-      __self: this
-    }, day)), getDetails(), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "p",
-      className: classes.details,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 76
-      },
-      __self: this
-    }, description)), __jsx("div", {
-      className: classes.statusContainer,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 78
-      },
-      __self: this
-    }, getView(status))), this.props.children);
-  }
-
-}
+  return __jsx("div", {
+    className: classNameMain,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: classes.rowContainer,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: classes.detailsMainContainer,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: classes.termIconContainer,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: undefined
+  }, getIcon(status), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    type: "span",
+    className: classes.day,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: undefined
+  }, day)), getDetails(), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    type: "p",
+    className: classes.details,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: undefined
+  }, description)), __jsx("div", {
+    className: classes.statusContainer,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: undefined
+  }, getView(status))));
+};
 
 CustomBodyOfMonth.defaultProps = {
+  day: '',
   description: '',
   hotel: '',
+  information: '',
   place: '',
-  information: ''
+  status: '',
+  weddingHour: ''
+};
+CustomBodyOfMonth.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.object.isRequired,
+  day: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  description: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  hotel: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  information: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  place: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  status: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
+  weddingHour: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string
 };
 CustomBodyOfMonth.displayName = 'CustomBodyOfMonth';
 /* harmony default export */ __webpack_exports__["default"] = (CustomBodyOfMonth);
@@ -1170,7 +1179,7 @@ const STATUS = {
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"04.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Luty\",\"days\":[{\"day\":\"01.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"08.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"29.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Marzec\",\"days\":[{\"day\":\"07.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"14.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"21.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Kwiecień\",\"days\":[{\"day\":\"04.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.04.2020\",\"free\":true,\"place\":\"Tyszowce\",\"hotel\":\"Orfeusz\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\"},{\"day\":\"25.04.2020\",\"free\":true,\"place\":\"Zamość\",\"hotel\":\"Hotel Koronny\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"Zamość\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"16.00\"}]},{\"name\":\"Maj\",\"days\":[{\"day\":\"01.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"02.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"03.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"09.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"16.05.2020\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"address\":\"ul. kolejowa\",\"status\":\"busy\"},{\"day\":\"23.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.05.2020\",\"free\":false,\"place\":\"Krasnobród\",\"hotel\":\"Karczma Zacisze\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"}]},{\"name\":\"Czerwiec\",\"days\":[{\"day\":\"06.06.2020\",\"free\":false,\"place\":\"Bogucin\",\"hotel\":\"Dwór Bogucin\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"11.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.06.2020\",\"free\":false,\"place\":\"Rozłopy (kolo Szczebrzeszyna)\",\"hotel\":\"Kamienny Zajazd\",\"address\":\"ul. Rozłopy 20\",\"status\":\"busy\"},{\"day\":\"27.06.2020\",\"free\":false,\"place\":\"Chełm\",\"hotel\":\"Dom weselny JAMBA\",\"address\":\"\",\"status\":\"busy\"}]},{\"name\":\"Lipiec\",\"days\":[{\"day\":\"04.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.07.2020\",\"free\":false,\"place\":\"Tomaszow Lub.\",\"hotel\":\"Zacisze\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"18.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.07.2020\",\"free\":false,\"place\":\"Zamość\",\"hotel\":\"Koronny\",\"address\":\"\",\"status\":\"busy\"}]},{\"name\":\"Sierpien\",\"days\":[{\"day\":\"01.08.2020\",\"free\":false,\"place\":\"Różaniec Pierwszy\",\"hotel\":\"Zajazd \\\"Gospoda\\\" \",\"address\":\"Różaniec Pierwszy 99A\",\"status\":\"busy\"},{\"day\":\"08.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.08.2020\",\"free\":false,\"place\":\"Wojciechów\",\"hotel\":\"Dom weselny \\\"Czerniecówka\\\"\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"29.08.2020\",\"free\":true,\"place\":\"Boruń\",\"hotel\":\"Dom weselny \\\"Sylwia\\\"\",\"status\":\"busy\"}]},{\"name\":\"Wrzesień\",\"days\":[{\"day\":\"05.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Październik\",\"days\":[{\"day\":\"03.10.2020\",\"free\":false,\"place\":\"Wysokie\",\"hotel\":\"Zajazd \\\"Alfred\\\"\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"10.10.2020\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"U Chłopa\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"17.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.10.2020\",\"free\":false,\"place\":\"Tyszowce\",\"hotel\":\"Szewska Pasja (sala na dole)\",\"address\":\"\",\"status\":\"busy\",\"description\":\"Szupek musi byc koniecznie na tym weselu-->p.młoda z Werbkowic\"},{\"day\":\"31.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Listopad\",\"days\":[{\"day\":\"07.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"14.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"21.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":5,\"day\":\"31.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Grudzień\",\"days\":[{\"day\":\"05.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]}]");
+module.exports = JSON.parse("[{\"name\":\"Styczeń\",\"days\":[{\"day\":\"04.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.01.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Luty\",\"days\":[{\"day\":\"01.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"08.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"29.02.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Marzec\",\"days\":[{\"day\":\"07.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"14.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"21.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.03.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Kwiecień\",\"days\":[{\"day\":\"04.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.04.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"18.04.2020\",\"free\":true,\"place\":\"Tyszowce\",\"hotel\":\"Orfeusz\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\"},{\"day\":\"25.04.2020\",\"free\":true,\"place\":\"Zamość\",\"hotel\":\"Hotel Koronny\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"Zamość\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"16.00\"}]},{\"name\":\"Maj\",\"days\":[{\"day\":\"01.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"02.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"03.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"holiday\"},{\"day\":\"09.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"16.05.2020\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"Gniecki\",\"address\":\"ul. kolejowa\",\"status\":\"busy\"},{\"day\":\"23.05.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"30.05.2020\",\"free\":false,\"place\":\"Krasnobród\",\"hotel\":\"Karczma Zacisze\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"}]},{\"name\":\"Czerwiec\",\"days\":[{\"day\":\"06.06.2020\",\"free\":false,\"place\":\"Bogucin\",\"hotel\":\"Dwór Bogucin\",\"weekDay\":6,\"status\":\"busy\",\"blessing\":\"noInfo\",\"blessingTime\":\"noInfo\",\"weddingHour\":\"noInfo\"},{\"day\":\"11.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"13.06.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"20.06.2020\",\"free\":false,\"place\":\"Rozłopy (kolo Szczebrzeszyna)\",\"hotel\":\"Kamienny Zajazd\",\"address\":\"ul. Rozłopy 20\",\"status\":\"busy\"},{\"day\":\"27.06.2020\",\"free\":false,\"place\":\"Chełm\",\"hotel\":\"Dom weselny JAMBA\",\"address\":\"\",\"status\":\"busy\"}]},{\"name\":\"Lipiec\",\"days\":[{\"day\":\"04.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"11.07.2020\",\"free\":false,\"place\":\"Tomaszow Lub.\",\"hotel\":\"Zacisze\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"18.07.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"25.07.2020\",\"free\":false,\"place\":\"Zamość\",\"hotel\":\"Koronny\",\"address\":\"\",\"status\":\"busy\"}]},{\"name\":\"Sierpien\",\"days\":[{\"day\":\"01.08.2020\",\"free\":false,\"place\":\"Różaniec Pierwszy\",\"hotel\":\"Zajazd \\\"Gospoda\\\" \",\"address\":\"Różaniec Pierwszy 99A\",\"status\":\"busy\"},{\"day\":\"08.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"15.08.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"22.08.2020\",\"free\":false,\"place\":\"Wojciechów\",\"hotel\":\"Dom weselny \\\"Czerniecówka\\\"\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"29.08.2020\",\"free\":true,\"place\":\"Boruń\",\"hotel\":\"Dom weselny \\\"Sylwia\\\"\",\"status\":\"busy\"}]},{\"name\":\"Wrzesień\",\"days\":[{\"day\":\"05.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.09.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Październik\",\"days\":[{\"day\":\"03.10.2020\",\"free\":false,\"place\":\"Wysokie\",\"hotel\":\"Zajazd \\\"Alfred\\\"\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"10.10.2020\",\"free\":false,\"place\":\"Hrubieszów\",\"hotel\":\"U Chłopa\",\"address\":\"\",\"status\":\"busy\"},{\"day\":\"17.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"24.10.2020\",\"free\":false,\"place\":\"Tyszowce\",\"hotel\":\"Szewska Pasja (sala na dole)\",\"address\":\"\",\"status\":\"busy\",\"information\":\"Szupek musi byc koniecznie na tym weselu-->p.młoda z Werbkowic\"},{\"day\":\"31.10.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Listopad\",\"days\":[{\"day\":\"07.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"14.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"21.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"28.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"id\":5,\"day\":\"31.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]},{\"name\":\"Grudzień\",\"days\":[{\"day\":\"05.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"12.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"19.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"},{\"day\":\"26.11.2020\",\"free\":true,\"place\":\"\",\"hotel\":\"\",\"status\":\"empty\"}]}]");
 
 /***/ }),
 
