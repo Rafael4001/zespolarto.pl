@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from './TabPanel.style';","map":{"version":3,"sources":["C:/IT_projects_Edu-Lab/www.zespolarto.pl/src/views/Terms/TabPanel/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,kBAAxB","sourcesContent":["export { default } from './TabPanel.style';\r\n"]},"metadata":{},"sourceType":"module"}
