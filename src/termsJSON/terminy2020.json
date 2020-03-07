@@ -306,17 +306,12 @@
       {
         "day": "15.08.2020",
         "free": true,
-        "place": "",
-        "hotel": "",
         "status": "empty"
       },
       {
         "day": "22.08.2020",
-        "free": false,
-        "place": "Wojciechów",
-        "hotel": "Dom weselny \"Czerniecówka\"",
-        "address": "",
-        "status": "busy"
+        "free": true,
+        "status": "empty"
       },
       {
         "day": "29.08.2020",
