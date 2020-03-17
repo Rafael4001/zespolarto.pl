@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { createMuiTheme } from '@material-ui/core/styles';\nconst theme = createMuiTheme({\n  palette: {\n    primary: {\n      light: '#2342D3',\n      main: '#425EE2',\n      dark: '#4A30E2'\n    }\n  }\n});\nexport default theme;","map":null,"metadata":{},"sourceType":"module"}

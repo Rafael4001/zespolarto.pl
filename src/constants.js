@@ -16,7 +16,6 @@ import galleryCardPhoto from '../static/image/GalleryCardPhoto.jpeg';
 import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
 
 
-
 //==============Songs images===============
 
 import abba from '../static/image/songsImages/abba.jpg';
@@ -63,47 +62,47 @@ import zbigniewWodecki from '../static/image/songsImages/zbigniewWodecki.jpg';
 
 
 export const SONGS_IMAGES = {
-  abba: abba,
-  afterParty: afterParty,
-  akcent: akcent,
-  aniaWyszkoni: aniaWyszkoni,
-  boys: boys,
-  budkaSuflera: budkaSuflera,
-  brathanki: brathanki,
-  buble: buble,
-  czadoman: czadoman,
-  DAJ_TO_GLOSNIEJ: dajToGlosniej,
-  DefaultSongImage: DefaultSongImage,
-  electricLightOrchestra: electricLightOrchestra,
-  elenaGheorghe: elenaGheorghe,
-  enej: enej,
-  Fanatic: fanatic,
-  freakyBoys: freakyBoys,
-  irenaJarocka: irenaJarocka,
-  jerzyPolomski: jerzyPolomski,
-  karinaStanek: karinaStanek,
-  krzysztofKrawczyk: krzysztofKrawczyk,
-  lobuzy: lobuzy,
-  lombard: lombard,
-  marcus: marcus,
-  marylaRodowicz: marylaRodowicz,
-  masters: masters,
-  mig: mig,
-  pawelDomagala: pawelDomagala,
-  perfect: perfect,
-  piekniIMlodzi: piekniIMlodzi,
-  piersi: piersi,
-  poparzeniKawaTrzy: poparzeniKawaTrzy,
-  powerPLay: powerPLay,
-  ronnieFerrari: ronnieFerrari,
-  skaldowie: skaldowie,
-  slawomir: slawomir,
-  topGirls: topGirls,
-  urszula: urszula,
-  veegas: veegas,
-  wilki: wilki,
-  wojciechGasowski: wojciechGasowski,
-  zbigniewWodecki: zbigniewWodecki,
+    abba: abba,
+    afterParty: afterParty,
+    akcent: akcent,
+    aniaWyszkoni: aniaWyszkoni,
+    boys: boys,
+    budkaSuflera: budkaSuflera,
+    brathanki: brathanki,
+    buble: buble,
+    czadoman: czadoman,
+    DAJ_TO_GLOSNIEJ: dajToGlosniej,
+    DefaultSongImage: DefaultSongImage,
+    electricLightOrchestra: electricLightOrchestra,
+    elenaGheorghe: elenaGheorghe,
+    enej: enej,
+    Fanatic: fanatic,
+    freakyBoys: freakyBoys,
+    irenaJarocka: irenaJarocka,
+    jerzyPolomski: jerzyPolomski,
+    karinaStanek: karinaStanek,
+    krzysztofKrawczyk: krzysztofKrawczyk,
+    lobuzy: lobuzy,
+    lombard: lombard,
+    marcus: marcus,
+    marylaRodowicz: marylaRodowicz,
+    masters: masters,
+    mig: mig,
+    pawelDomagala: pawelDomagala,
+    perfect: perfect,
+    piekniIMlodzi: piekniIMlodzi,
+    piersi: piersi,
+    poparzeniKawaTrzy: poparzeniKawaTrzy,
+    powerPLay: powerPLay,
+    ronnieFerrari: ronnieFerrari,
+    skaldowie: skaldowie,
+    slawomir: slawomir,
+    topGirls: topGirls,
+    urszula: urszula,
+    veegas: veegas,
+    wilki: wilki,
+    wojciechGasowski: wojciechGasowski,
+    zbigniewWodecki: zbigniewWodecki,
 };
 
 export const IMAGE_1 = photo1;
@@ -135,41 +134,41 @@ const OFERTA = 'Oferta';
 const KONTAKT = 'Kontakt';
 const KALENDARZ = 'Kalendarz';
 
-export const LINKS= {
-  HOME: {HREF: './', AS: './'},
-  DEMO: {HREF: './demo', AS: './demo'},
-  CONTACT: {HREF: './contact', AS: './contact'},
-  MEDIA: {HREF: './media', AS: './media'},
-  TERMS: {HREF: './terminy', AS: './terminy'},
+export const LINKS = {
+    HOME: {HREF: './', AS: './'},
+    DEMO: {HREF: './demo', AS: './demo'},
+    CONTACT: {HREF: './contact', AS: './contact'},
+    MEDIA: {HREF: './media', AS: './media'},
+    TERMS: {HREF: './terminy', AS: './terminy'},
 };
 
 export const MENU_ITEMS = [
-  {name: HOME, link: LINKS.HOME.HREF, as: LINKS.HOME.AS },
-  {name: DEMO, link: LINKS.DEMO.HREF, as: LINKS.DEMO.AS},
-  // {name: PHOTO, link: './photo'},
-  // {name: MEDIA, link: LINKS.MEDIA},
-  // {name: OFERTA, link: './oferta'},
-  // {name: KALENDARZ, link: './kalendarz'},
-  {name: KONTAKT, link: LINKS.CONTACT.HREF, as: LINKS.CONTACT.AS},
+    {name: HOME, link: LINKS.HOME.HREF, as: LINKS.HOME.AS},
+    {name: DEMO, link: LINKS.DEMO.HREF, as: LINKS.DEMO.AS},
+    // {name: PHOTO, link: './photo'},
+    // {name: MEDIA, link: LINKS.MEDIA},
+    // {name: OFERTA, link: './oferta'},
+    // {name: KALENDARZ, link: './kalendarz'},
+    {name: KONTAKT, link: LINKS.CONTACT.HREF, as: LINKS.CONTACT.AS},
 ];
 
 export const MENU_ITEM_WIDTH = 20;
 
 
 export const COLORS = {
-  grey: {
-    light: '#F2F2F2',
-    medium: '#F5F5F5',
-    dark: '#CFCFCF',
-    grey_1: '#91919117',
-  },
-  red: {
-    main: '#b41616',
-    medium: '#a81b1b',
-  },
-  blue: {
-    main: '#3B5897',
-  },
+    grey: {
+        light: '#F2F2F2',
+        medium: '#F5F5F5',
+        dark: '#CFCFCF',
+        grey_1: '#91919117',
+    },
+    red: {
+        main: '#b41616',
+        medium: '#a81b1b',
+    },
+    blue: {
+        main: '#3B5897',
+    },
 };
 
 export const FACEBOOK = '/static/image/facebook_logo.svg';
@@ -177,16 +176,16 @@ export const FACEBOOK = '/static/image/facebook_logo.svg';
 export const FACEBOOK_URL = 'https://www.facebook.com/Zesp%C3%B3%C5%82-ARTO-203075696487749/';
 export const RAFAL_CIESIELCZUK_LINKED_IN = 'https://www.linkedin.com/in/rafa%C5%82-ciesielczuk-33578391/';
 
-export const MARGIN_TOP_UNDER_MENU= '4rem';
+export const MARGIN_TOP_UNDER_MENU = '4rem';
 
-export const SCREEN_SIZE={
-  POINT_750: 750,
+export const SCREEN_SIZE = {
+    POINT_750: 750,
 };
 
 export const STATUS = {
-  BUSY: "busy",
-  EMPTY: "empty",
-  RESERVATION: "reservation",
-  HOLIDAY: "holiday",
-  UNDEFINED: "undefined",
+    BUSY: "busy",
+    EMPTY: "empty",
+    RESERVATION: "reservation",
+    HOLIDAY: "holiday",
+    UNDEFINED: "undefined",
 };
