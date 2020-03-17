@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { withStyles } from '@material-ui/core/styles';\nimport TabPanel from './TabPanel';\n\nconst styles = theme => ({\n  tabContainer: {\n    paddingTop: '2rem'\n  }\n});\n\nexport default withStyles(styles)(TabPanel);","map":null,"metadata":{},"sourceType":"module"}
