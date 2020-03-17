@@ -129,18 +129,16 @@
         "hotel": "Orfeusz",
         "weekDay": 6,
         "status": "busy",
-        "blessing": "noInfo"
+        "blessing": "noInfo",
+        "information": "pewnie będzie PRZEŁOŻONE"
       },
+
       {
         "day": "25.04.2020",
         "free": true,
-        "place": "Zamość",
-        "hotel": "Hotel Koronny",
-        "weekDay": 6,
-        "status": "busy",
-        "blessing": "Zamość",
-        "blessingTime": "noInfo",
-        "weddingHour": "16.00"
+        "place": "",
+        "hotel": "",
+        "status": "empty"
       }
     ]
   },
@@ -222,7 +220,19 @@
         "free": true,
         "place": "",
         "hotel": "",
-        "status": "empty"
+        "status": "holiday",
+        "information": "BOŻE CIAŁO"
+      },
+      {
+        "day": "12.06.2020",
+        "free": true,
+        "place": "Zamość",
+        "hotel": "Hotel Koronny",
+        "weekDay": 6,
+        "status": "busy",
+        "blessing": "Zamość",
+        "blessingTime": "noInfo",
+        "weddingHour": "16.00"
       },
       {
         "day": "13.06.2020",

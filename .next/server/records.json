@@ -25,15 +25,15 @@
   },
   "chunks": {
     "byName": {
-      "static\\QlM16CWNcf8EzDZBVljTh\\pages\\_app.js": 0,
-      "static\\QlM16CWNcf8EzDZBVljTh\\pages\\_document.js": 1,
-      "static\\QlM16CWNcf8EzDZBVljTh\\pages\\_error.js": 2,
-      "static\\QlM16CWNcf8EzDZBVljTh\\pages\\blablaterms.js": 3,
-      "static\\QlM16CWNcf8EzDZBVljTh\\pages\\contact.js": 4,
-      "static\\QlM16CWNcf8EzDZBVljTh\\pages\\demo.js": 5,
-      "static\\QlM16CWNcf8EzDZBVljTh\\pages\\index.js": 6,
-      "static\\QlM16CWNcf8EzDZBVljTh\\pages\\media.js": 7,
-      "static\\QlM16CWNcf8EzDZBVljTh\\pages\\photo.js": 8
+      "static\\bN7RVNl0Po4MX1RaGWFhq\\pages\\_app.js": 0,
+      "static\\bN7RVNl0Po4MX1RaGWFhq\\pages\\_document.js": 1,
+      "static\\bN7RVNl0Po4MX1RaGWFhq\\pages\\_error.js": 2,
+      "static\\bN7RVNl0Po4MX1RaGWFhq\\pages\\blablaterms.js": 3,
+      "static\\bN7RVNl0Po4MX1RaGWFhq\\pages\\contact.js": 4,
+      "static\\bN7RVNl0Po4MX1RaGWFhq\\pages\\demo.js": 5,
+      "static\\bN7RVNl0Po4MX1RaGWFhq\\pages\\index.js": 6,
+      "static\\bN7RVNl0Po4MX1RaGWFhq\\pages\\media.js": 7,
+      "static\\bN7RVNl0Po4MX1RaGWFhq\\pages\\photo.js": 8
     },
     "bySource": {},
     "usedIds": [
