@@ -1,0 +1,394 @@
+webpackHotUpdate("static\\development\\pages\\blablaterms.js",{
+
+/***/ "./src/termsJSON/terminy2021.js":
+/*!**************************************!*\
+  !*** ./src/termsJSON/terminy2021.js ***!
+  \**************************************/
+/*! exports provided: YEAR_2021 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YEAR_2021", function() { return YEAR_2021; });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
+
+var YEAR_2021 = [{
+  name: "Styczeń",
+  days: [{
+    day: "02.01.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "09.01.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "16.01.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "23.01.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "30.01.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Luty",
+  days: [{
+    day: "06.02.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "13.02.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "20.02.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "27.02.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Marzec",
+  days: [{
+    day: "06.03.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "13.03.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "20.03.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "27.03.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Kwiecień",
+  days: [{
+    day: "03.04.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "10.04.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "17.04.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "24.04.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Maj",
+  days: [{
+    day: "01.05.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].HOLIDAY
+  }, {
+    day: "08.05.2021",
+    free: false,
+    place: "Hrubieszów",
+    hotel: "Gniecki",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    "blessing": "noInfo",
+    "blessingTime": "noInfo",
+    weddingHour: "noInfo"
+  }, {
+    day: "15.05.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "22.05.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "29.05.2021",
+    free: false,
+    place: "Hrubieszów",
+    hotel: "Gniecki",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    "blessing": "noInfo",
+    "blessingTime": "noInfo",
+    weddingHour: "noInfo"
+  }]
+}, {
+  name: "Czerwiec",
+  days: [{
+    day: "05.06.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "12.06.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "19.06.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "26.06.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Lipiec",
+  days: [{
+    day: "03.07.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "10.07.2021",
+    free: false,
+    place: "Pawłów",
+    hotel: "Regent",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    "blessing": "noInfo",
+    "blessingTime": "noInfo",
+    weddingHour: "noInfo"
+  }, {
+    day: "17.07.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "24.07.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "31.07.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Sierpien",
+  days: [{
+    day: "07.08.2021",
+    free: false,
+    place: "Mircze",
+    hotel: "Jaśko",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    information: "Nie będzie Rafała i Darii",
+    "blessing": "noInfo",
+    "blessingTime": "noInfo",
+    weddingHour: "noInfo"
+  }, {
+    day: "14.08.2021",
+    free: false,
+    place: "",
+    hotel: "",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].HOLIDAY,
+    information: "zostawić koniecznie wolne",
+    "blessing": "noInfo",
+    "blessingTime": "noInfo",
+    weddingHour: "noInfo"
+  }, {
+    day: "21.08.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "28.08.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Wrzesień",
+  days: [{
+    day: "04.09.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "11.09.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "18.09.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "25.09.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Październik",
+  days: [{
+    day: "02.10.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "09.10.2021",
+    free: false,
+    place: "Hrubieszów",
+    hotel: "Gniecki",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    "blessing": "noInfo",
+    "blessingTime": "noInfo",
+    weddingHour: "noInfo"
+  }, {
+    day: "16.10.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "23.10.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "30.10.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Listopad",
+  days: [{
+    day: "06.11.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "13.11.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "20.11.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "27.11.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}, {
+  name: "Grudzień",
+  days: [{
+    day: "04.12.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "11.12.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "18.12.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "25.12.2021",
+    free: true,
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }]
+}];
+
+/***/ })
+
+})
+//# sourceMappingURL=blablaterms.js.ba6ec237ac76827b6f84.hot-update.js.map

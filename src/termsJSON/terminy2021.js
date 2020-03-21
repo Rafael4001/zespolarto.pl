@@ -1,4 +1,4 @@
-import { STATUS } from '../constants'
+import { STATUS, WEEK_DAY } from '../constants'
 
 
 export const YEAR_2021 = [
@@ -157,7 +157,7 @@ export const YEAR_2021 = [
                 free: false,
                 place: "Hrubieszów",
                 hotel: "Gniecki",
-                weekDay: 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 "blessing": "noInfo",
                 "blessingTime": "noInfo",
@@ -182,7 +182,7 @@ export const YEAR_2021 = [
                 free: false,
                 place: "Hrubieszów",
                 hotel: "Gniecki",
-                weekDay: 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 "blessing": "noInfo",
                 "blessingTime": "noInfo",
@@ -238,7 +238,7 @@ export const YEAR_2021 = [
                 free: false,
                 place: "Pawłów",
                 hotel: "Regent",
-                weekDay: 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 "blessing": "noInfo",
                 "blessingTime": "noInfo",
@@ -275,7 +275,7 @@ export const YEAR_2021 = [
                 free: false,
                 place: "Mircze",
                 hotel: "Jaśko",
-                weekDay: 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 information: "Nie będzie Rafała i Darii",
                 "blessing": "noInfo",
@@ -287,7 +287,7 @@ export const YEAR_2021 = [
                 free: false,
                 place: "",
                 hotel: "",
-                weekDay: 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.HOLIDAY,
                 information: "zostawić koniecznie wolne",
                 "blessing": "noInfo",
@@ -358,7 +358,7 @@ export const YEAR_2021 = [
                 free: false,
                 place: "Hrubieszów",
                 hotel: "Gniecki",
-                weekDay: 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 "blessing": "noInfo",
                 "blessingTime": "noInfo",

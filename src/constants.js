@@ -189,3 +189,13 @@ export const STATUS = {
     HOLIDAY: "holiday",
     UNDEFINED: "undefined",
 };
+
+export const WEEK_DAY = {
+    MONDAY: "poniedziałek",
+    TUESDAY: "wtorek",
+    WEDNESTDAY: "środa",
+    THURSDAY: "czwartek",
+    FRIDAY: "piątek",
+    SATUDRAY: "sobota",
+    SUNDAY: "niedziela",
+};

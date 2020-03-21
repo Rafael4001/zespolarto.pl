@@ -1,7 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 
 import CustomBodyOfMonth from './CustomBodyOfMonth';
-import { SCREEN_SIZE } from "../../constants";
 
 
 const styles = (theme) => ({
@@ -18,7 +17,6 @@ const styles = (theme) => ({
   },
 
   day: {
-    // padding: '0 0.5rem',
   },
 
   busy: {

@@ -1,4 +1,4 @@
-import { STATUS } from '../constants'
+import { STATUS, WEEK_DAY } from '../constants'
 
 
 export const YEAR_2022 = [
@@ -137,7 +137,7 @@ export const YEAR_2022 = [
                 day: "07.05.2022",
                 place: "Bogucin",
                 hotel: "Dom weselny \"Kapama\"",
-                "weekDay": 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 "blessing": "yes",
                 "blessingTime": "14.30",

@@ -50944,7 +50944,8 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
       information = props.information,
       place = props.place,
       status = props.status,
-      weddingHour = props.weddingHour;
+      weddingHour = props.weddingHour,
+      weekDay = props.weekDay;
   var classNameMain = classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.main, (_classNames = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames, classes.busy, status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].BUSY), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames, classes.holiday, status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].HOLIDAY), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames, classes.emptyContainer, status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].EMPTY || _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].UNDEFINED), _classNames));
 
   var getView = function getView(status) {
@@ -50954,7 +50955,7 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
           className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoBusy),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36
+            lineNumber: 37
           },
           __self: this
         }, place);
@@ -50964,7 +50965,7 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
           className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoHoliday),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 38
+            lineNumber: 39
           },
           __self: this
         }, "Wakacje");
@@ -50980,7 +50981,7 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 44
+            lineNumber: 45
           },
           __self: this
         });
@@ -50992,7 +50993,7 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 46
+            lineNumber: 47
           },
           __self: this
         });
@@ -51004,7 +51005,7 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 48
+            lineNumber: 49
           },
           __self: this
         });
@@ -51016,13 +51017,13 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
       className: classes.rowInfo,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 54
       },
       __self: this
     }, (status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].BUSY || status === _src_constants__WEBPACK_IMPORTED_MODULE_7__["STATUS"].HOLIDAY) && __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 56
       },
       __self: this
     }, hotel && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -51030,13 +51031,13 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
       className: classes.details,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 57
       },
       __self: this
     }, __jsx("strong", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 57
       },
       __self: this
     }, "hotel: "), hotel), information && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -51044,13 +51045,13 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
       className: classes.details,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 58
       },
       __self: this
     }, __jsx("strong", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 58
       },
       __self: this
     }, "informacje dodatkowe: "), information), weddingHour && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -51058,44 +51059,58 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
       className: classes.details,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 59
       },
       __self: this
     }, __jsx("strong", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 59
       },
       __self: this
-    }, "godz. slubu: "), weddingHour)));
+    }, "godz. slubu: "), weddingHour), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      type: "p",
+      className: classes.details,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60
+      },
+      __self: this
+    }, __jsx("strong", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60
+      },
+      __self: this
+    }, "dze\u0144 tygodnia: "), weekDay)));
   };
 
   return __jsx("div", {
     className: classNameMain,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 67
     },
     __self: this
   }, __jsx("div", {
     className: classes.rowContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 68
     },
     __self: this
   }, __jsx("div", {
     className: classes.detailsMainContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 69
     },
     __self: this
   }, __jsx("div", {
     className: classes.termIconContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 70
     },
     __self: this
   }, getIcon(status), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -51103,7 +51118,7 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
     className: classes.day,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 72
     },
     __self: this
   }, day)), getDetails(), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -51111,14 +51126,14 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(props) {
     className: classes.details,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 75
     },
     __self: this
   }, description)), __jsx("div", {
     className: classes.statusContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 77
     },
     __self: this
   }, getView(status))));
@@ -51131,7 +51146,8 @@ CustomBodyOfMonth.defaultProps = {
   information: '',
   place: '',
   status: '',
-  weddingHour: ''
+  weddingHour: '',
+  weekDay: _src_constants__WEBPACK_IMPORTED_MODULE_7__["WEEK_DAY"].SATUDRAY
 };
 CustomBodyOfMonth.propTypes = {
   classes: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.object.isRequired,
@@ -51141,7 +51157,8 @@ CustomBodyOfMonth.propTypes = {
   information: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
   place: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
   status: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
-  weddingHour: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string
+  weddingHour: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string,
+  weekDay: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.string
 };
 CustomBodyOfMonth.displayName = 'CustomBodyOfMonth';
 /* harmony default export */ __webpack_exports__["default"] = (CustomBodyOfMonth);
@@ -51160,8 +51177,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 /* harmony import */ var _CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CustomBodyOfMonth */ "./src/components/CustomBodyOfMonth/CustomBodyOfMonth.js");
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
-
 
 
 
@@ -51178,8 +51193,7 @@ var styles = function styles(theme) {
       paddingRight: '0.5rem',
       fontSize: '1.5rem'
     },
-    day: {// padding: '0 0.5rem',
-    },
+    day: {},
     busy: {
       backgroundColor: 'rgba(77,184,74,0.43)'
     },
@@ -51446,7 +51460,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************!*\
   !*** ./src/constants.js ***!
   \**************************/
-/*! exports provided: SONGS_IMAGES, IMAGE_1, IMAGE_2, IMAGE_3, IMAGE_4, LOGO, LOGO_ON_THE_FLOWERS, LOVERS, BRIDE, SMILE, MUSIC, INFO_ICON, LEAF, FACEBOOK_PAGE, LUBLIN_MAP, VIDEO_CARD_IMAGE, PHOTO_CARD_IMAGE, MAX_PAGE_WIDTH, LINKS, MENU_ITEMS, MENU_ITEM_WIDTH, COLORS, FACEBOOK, FACEBOOK_URL, RAFAL_CIESIELCZUK_LINKED_IN, MARGIN_TOP_UNDER_MENU, SCREEN_SIZE, STATUS */
+/*! exports provided: SONGS_IMAGES, IMAGE_1, IMAGE_2, IMAGE_3, IMAGE_4, LOGO, LOGO_ON_THE_FLOWERS, LOVERS, BRIDE, SMILE, MUSIC, INFO_ICON, LEAF, FACEBOOK_PAGE, LUBLIN_MAP, VIDEO_CARD_IMAGE, PHOTO_CARD_IMAGE, MAX_PAGE_WIDTH, LINKS, MENU_ITEMS, MENU_ITEM_WIDTH, COLORS, FACEBOOK, FACEBOOK_URL, RAFAL_CIESIELCZUK_LINKED_IN, MARGIN_TOP_UNDER_MENU, SCREEN_SIZE, STATUS, WEEK_DAY */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51479,6 +51493,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MARGIN_TOP_UNDER_MENU", function() { return MARGIN_TOP_UNDER_MENU; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SCREEN_SIZE", function() { return SCREEN_SIZE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "STATUS", function() { return STATUS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WEEK_DAY", function() { return WEEK_DAY; });
 /* harmony import */ var _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../static/image/photo_1.png */ "./static/image/photo_1.png");
 /* harmony import */ var _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../static/image/photo_2_small.jpg */ "./static/image/photo_2_small.jpg");
@@ -51787,6 +51802,15 @@ var STATUS = {
   HOLIDAY: "holiday",
   UNDEFINED: "undefined"
 };
+var WEEK_DAY = {
+  MONDAY: "poniedziałek",
+  TUESDAY: "wtorek",
+  WEDNESTDAY: "środa",
+  THURSDAY: "czwartek",
+  FRIDAY: "piątek",
+  SATUDRAY: "sobota",
+  SUNDAY: "niedziela"
+};
 
 /***/ }),
 
@@ -51892,7 +51916,7 @@ var YEAR_2020 = [{
     day: "18.04.2020",
     place: "Tyszowce",
     hotel: "Orfeusz",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "noInfo",
     information: "pewnie będzie PRZEŁOŻONE"
@@ -51908,16 +51932,19 @@ var YEAR_2020 = [{
     day: "01.05.2020",
     place: "",
     hotel: "",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].FRIDAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].HOLIDAY
   }, {
     day: "02.05.2020",
     place: "",
     hotel: "",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].HOLIDAY
   }, {
     day: "03.05.2020",
     place: "",
     hotel: "",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SUNDAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].HOLIDAY
   }, {
     day: "09.05.2020",
@@ -51926,10 +51953,10 @@ var YEAR_2020 = [{
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "16.05.2020",
-    place: "Hrubieszów",
-    hotel: "Gniecki",
-    address: "ul. kolejowa",
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY
+    place: "",
+    hotel: "",
+    address: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "23.05.2020",
     place: "",
@@ -51939,7 +51966,7 @@ var YEAR_2020 = [{
     day: "30.05.2020",
     place: "Krasnobród",
     hotel: "Karczma Zacisze",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "noInfo",
     "blessingTime": "noInfo",
@@ -51951,7 +51978,7 @@ var YEAR_2020 = [{
     day: "06.06.2020",
     place: "Bogucin",
     hotel: "Dwór Bogucin",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "noInfo",
     "blessingTime": "noInfo",
@@ -51960,13 +51987,14 @@ var YEAR_2020 = [{
     day: "11.06.2020",
     place: "",
     hotel: "",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].THURSDAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].HOLIDAY,
     information: "BOŻE CIAŁO"
   }, {
     day: "12.06.2020",
     place: "Zamość",
     hotel: "Hotel Koronny",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].FRIDAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "Zamość",
     "blessingTime": "noInfo",
@@ -52051,6 +52079,13 @@ var YEAR_2020 = [{
     place: "",
     hotel: "",
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+  }, {
+    day: "13.09.2020",
+    place: "Hrubieszów",
+    hotel: "Gniecki",
+    address: "ul. kolejowa",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SUNDAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY
   }, {
     day: "19.09.2020",
     place: "",
@@ -52289,7 +52324,7 @@ var YEAR_2021 = [{
     free: false,
     place: "Hrubieszów",
     hotel: "Gniecki",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "noInfo",
     "blessingTime": "noInfo",
@@ -52311,7 +52346,7 @@ var YEAR_2021 = [{
     free: false,
     place: "Hrubieszów",
     hotel: "Gniecki",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "noInfo",
     "blessingTime": "noInfo",
@@ -52357,7 +52392,7 @@ var YEAR_2021 = [{
     free: false,
     place: "Pawłów",
     hotel: "Regent",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "noInfo",
     "blessingTime": "noInfo",
@@ -52388,7 +52423,7 @@ var YEAR_2021 = [{
     free: false,
     place: "Mircze",
     hotel: "Jaśko",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     information: "Nie będzie Rafała i Darii",
     "blessing": "noInfo",
@@ -52399,7 +52434,7 @@ var YEAR_2021 = [{
     free: false,
     place: "",
     hotel: "",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].HOLIDAY,
     information: "zostawić koniecznie wolne",
     "blessing": "noInfo",
@@ -52458,7 +52493,7 @@ var YEAR_2021 = [{
     free: false,
     place: "Hrubieszów",
     hotel: "Gniecki",
-    weekDay: 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "noInfo",
     "blessingTime": "noInfo",
@@ -52660,7 +52695,7 @@ var YEAR_2022 = [{
     day: "07.05.2022",
     place: "Bogucin",
     hotel: "Dom weselny \"Kapama\"",
-    "weekDay": 6,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "yes",
     "blessingTime": "14.30",
@@ -53094,14 +53129,14 @@ function (_Component) {
         className: classes.root,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 74
         },
         __self: this
       }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_10__["default"], {
         position: "fixed",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 75
         },
         __self: this
       }, __jsx(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -53110,7 +53145,7 @@ function (_Component) {
         "aria-label": "simple tabs example",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 76
         },
         __self: this
       }, years.map(function (year, id) {
@@ -53121,7 +53156,7 @@ function (_Component) {
         }, a11yProps(id), {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 80
+            lineNumber: 81
           },
           __self: this
         }));
@@ -53133,7 +53168,7 @@ function (_Component) {
           index: id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 90
+            lineNumber: 91
           },
           __self: this
         }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -53141,7 +53176,7 @@ function (_Component) {
           weddingAmount: weddingAmount,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 91
+            lineNumber: 92
           },
           __self: this
         }));
@@ -53835,7 +53870,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblablaterms&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Cwww.zespolarto.pl%5Cpages%5Cblablaterms.js ***!
   \***************************************************************************************************************************************************/
@@ -53858,5 +53893,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blablaterms.js.map

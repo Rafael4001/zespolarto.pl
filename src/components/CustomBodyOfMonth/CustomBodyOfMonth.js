@@ -7,7 +7,7 @@ import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import EventBusyIcon from '@material-ui/icons/EventBusy';
 
 
-import { STATUS } from '../../../src/constants'
+import { STATUS, WEEK_DAY } from '../../../src/constants'
 import PropTypes from "prop-types";
 
 
@@ -21,6 +21,7 @@ const CustomBodyOfMonth = (props) => {
 		place,
 		status,
 		weddingHour,
+		weekDay,
 	} = props;
 
 	const classNameMain = classNames(classes.main, {
@@ -56,6 +57,7 @@ const CustomBodyOfMonth = (props) => {
 				{hotel && <Typography type={"p"} className={classes.details}><strong>hotel: </strong>{hotel}</Typography>}
 				{information && <Typography type={"p"} className={classes.details}><strong>informacje dodatkowe: </strong>{information}</Typography>}
 				{weddingHour && <Typography type={"p"} className={classes.details}><strong>godz. slubu: </strong>{weddingHour}</Typography>}
+				<Typography type={"p"} className={classes.details}><strong>dzeń tygodnia: </strong>{weekDay}</Typography>
 			</div>
 			}
 		</div>
@@ -86,6 +88,7 @@ CustomBodyOfMonth.defaultProps = {
 	place: '',
 	status: '',
 	weddingHour: '',
+	weekDay: WEEK_DAY.SATUDRAY,
 };
 
 CustomBodyOfMonth.propTypes = {
@@ -97,6 +100,7 @@ CustomBodyOfMonth.propTypes = {
 	place: PropTypes.string,
 	status: PropTypes.string,
 	weddingHour: PropTypes.string,
+	weekDay: PropTypes.string,
 };
 
 CustomBodyOfMonth.displayName = 'CustomBodyOfMonth';

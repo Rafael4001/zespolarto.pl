@@ -1,4 +1,4 @@
-import { STATUS } from '../constants'
+import { STATUS, WEEK_DAY } from '../constants'
 
 
 export const YEAR_2020 = [
@@ -114,7 +114,7 @@ export const YEAR_2020 = [
                 day: "18.04.2020",
                 place: "Tyszowce",
                 hotel: "Orfeusz",
-                weekDay: 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 "blessing": "noInfo",
                 information: "pewnie będzie PRZEŁOŻONE"
@@ -134,18 +134,21 @@ export const YEAR_2020 = [
                 day: "01.05.2020",
                 place: "",
                 hotel: "",
+                weekDay: WEEK_DAY.FRIDAY,
                 status: STATUS.HOLIDAY
             },
             {
                 day: "02.05.2020",
                 place: "",
                 hotel: "",
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.HOLIDAY
             },
             {
                 day: "03.05.2020",
                 place: "",
                 hotel: "",
+                weekDay: WEEK_DAY.SUNDAY,
                 status: STATUS.HOLIDAY
             },
             {
@@ -156,10 +159,10 @@ export const YEAR_2020 = [
             },
             {
                 day: "16.05.2020",
-                place: "Hrubieszów",
-                hotel: "Gniecki",
-                address: "ul. kolejowa",
-                status: STATUS.BUSY
+                place: "",
+                hotel: "",
+                address: "",
+                status: STATUS.EMPTY
             },
             {
                 day: "23.05.2020",
@@ -171,7 +174,7 @@ export const YEAR_2020 = [
                 day: "30.05.2020",
                 place: "Krasnobród",
                 hotel: "Karczma Zacisze",
-                weekDay: 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 "blessing": "noInfo",
                 "blessingTime": "noInfo",
@@ -186,7 +189,7 @@ export const YEAR_2020 = [
                 day: "06.06.2020",
                 place: "Bogucin",
                 hotel: "Dwór Bogucin",
-                weekDay: 6,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 "blessing": "noInfo",
                 "blessingTime": "noInfo",
@@ -196,6 +199,7 @@ export const YEAR_2020 = [
                 day: "11.06.2020",
                 place: "",
                 hotel: "",
+                weekDay: WEEK_DAY.THURSDAY,
                 status: STATUS.HOLIDAY,
                 information: "BOŻE CIAŁO"
             },
@@ -203,7 +207,7 @@ export const YEAR_2020 = [
                 day: "12.06.2020",
                 place: "Zamość",
                 hotel: "Hotel Koronny",
-                weekDay: 6,
+                weekDay: WEEK_DAY.FRIDAY,
                 status: STATUS.BUSY,
                 "blessing": "Zamość",
                 "blessingTime": "noInfo",
@@ -308,6 +312,14 @@ export const YEAR_2020 = [
                 place: "",
                 hotel: "",
                 status: STATUS.EMPTY
+            },
+            {
+                day: "13.09.2020",
+                place: "Hrubieszów",
+                hotel: "Gniecki",
+                address: "ul. kolejowa",
+                weekDay: WEEK_DAY.SUNDAY,
+                status: STATUS.BUSY
             },
             {
                 day: "19.09.2020",
