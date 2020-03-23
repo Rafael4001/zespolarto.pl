@@ -82,7 +82,8 @@ const styles = (theme) => ({
     marginRight: '0.2rem'
   },
   termIconContainer: {
-    display: 'flex',
+    display: 'grid',
+    gridTemplateColumns: '2rem 6rem 5.5rem 4rem',
     alignItems: 'center'
   }
 });

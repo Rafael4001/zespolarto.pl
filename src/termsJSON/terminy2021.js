@@ -150,7 +150,8 @@ export const YEAR_2021 = [
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.HOLIDAY
+                status: STATUS.HOLIDAY,
+                information: "weekend majowy"
             },
             {
                 day: "08.05.2021",
@@ -285,14 +286,9 @@ export const YEAR_2021 = [
             {
                 day: "14.08.2021",
                 free: false,
-                place: "",
-                hotel: "",
                 weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.HOLIDAY,
                 information: "zostawić koniecznie wolne",
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
             },
             {
                 day: "21.08.2021",

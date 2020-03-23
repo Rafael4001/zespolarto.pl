@@ -135,21 +135,24 @@ export const YEAR_2020 = [
                 place: "",
                 hotel: "",
                 weekDay: WEEK_DAY.FRIDAY,
-                status: STATUS.HOLIDAY
+                status: STATUS.HOLIDAY,
+                information: "weekend majowy"
             },
             {
                 day: "02.05.2020",
                 place: "",
                 hotel: "",
                 weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.HOLIDAY
+                status: STATUS.HOLIDAY,
+                information: "weekend majowy",
             },
             {
                 day: "03.05.2020",
                 place: "",
                 hotel: "",
                 weekDay: WEEK_DAY.SUNDAY,
-                status: STATUS.HOLIDAY
+                status: STATUS.HOLIDAY,
+                information: "weekend majowy"
             },
             {
                 day: "09.05.2020",
@@ -204,19 +207,10 @@ export const YEAR_2020 = [
                 information: "BOŻE CIAŁO"
             },
             {
-                day: "12.06.2020",
-                place: "Zamość",
-                hotel: "Hotel Koronny",
-                weekDay: WEEK_DAY.FRIDAY,
-                status: STATUS.BUSY,
-                "blessing": "Zamość",
-                "blessingTime": "noInfo",
-                weddingHour: "16.00"
-            },
-            {
                 day: "13.06.2020",
                 place: "",
                 hotel: "",
+                weekDay: WEEK_DAY.MONDAY,
                 status: STATUS.EMPTY
             },
             {
@@ -291,6 +285,17 @@ export const YEAR_2020 = [
                 status: STATUS.EMPTY
             },
             {
+                day: "28.08.2020",
+                place: "Zamość",
+                hotel: "Hotel Koronny",
+                weekDay: WEEK_DAY.FRIDAY,
+                status: STATUS.BUSY,
+                "blessing": "Zamość",
+                "blessingTime": "noInfo",
+                weddingHour: "16.00",
+                information: "przeniesione z 25.04.2020"
+            },
+            {
                 day: "29.08.2020",
                 place: "Boruń",
                 hotel: "Dom weselny \"Sylwia\"",
@@ -319,7 +324,9 @@ export const YEAR_2020 = [
                 hotel: "Gniecki",
                 address: "ul. kolejowa",
                 weekDay: WEEK_DAY.SUNDAY,
-                status: STATUS.BUSY
+                status: STATUS.BUSY,
+                information: "przeniesione z 16.05.2020"
+
             },
             {
                 day: "19.09.2020",
