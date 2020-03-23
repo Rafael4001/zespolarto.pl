@@ -210,7 +210,6 @@ export const YEAR_2020 = [
                 day: "13.06.2020",
                 place: "",
                 hotel: "",
-                weekDay: WEEK_DAY.MONDAY,
                 status: STATUS.EMPTY
             },
             {

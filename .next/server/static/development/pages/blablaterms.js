@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -516,40 +516,11 @@ const CustomBodyOfMonth = ({
       lineNumber: 77
     },
     __self: undefined
-  }, "(", weekDay, ")"), status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].EMPTY ? null : __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8___default.a, {
-    size: "small",
-    variant: "outlined",
-    color: "primary",
-    onClick: () => setIsDayExpanded(!isDayExpanded),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
-    },
-    __self: undefined
-  }, isDayExpanded ? __jsx(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_6___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: undefined
-  }) : __jsx(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: undefined
-  }))), __jsx(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_9___default.a, {
-    in: isDayExpanded,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89
-    },
-    __self: undefined
-  }, getDetails())), __jsx("div", {
+  }, "(", weekDay, ")")), getDetails()), __jsx("div", {
     className: classes.statusContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 81
     },
     __self: undefined
   }, getView(status))));
@@ -1410,7 +1381,6 @@ const YEAR_2020 = [{
     day: "13.06.2020",
     place: "",
     hotel: "",
-    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].MONDAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "20.06.2020",
@@ -3261,7 +3231,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!************************************!*\
   !*** multi ./pages/blablaterms.js ***!
   \************************************/

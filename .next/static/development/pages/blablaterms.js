@@ -51188,42 +51188,11 @@ var CustomBodyOfMonth = function CustomBodyOfMonth(_ref) {
       lineNumber: 77
     },
     __self: this
-  }, "(", weekDay, ")"), status === _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].EMPTY ? null : __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    size: "small",
-    variant: "outlined",
-    color: "primary",
-    onClick: function onClick() {
-      return setIsDayExpanded(!isDayExpanded);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
-    },
-    __self: this
-  }, isDayExpanded ? __jsx(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: this
-  }) : __jsx(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_8___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: this
-  }))), __jsx(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    in: isDayExpanded,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89
-    },
-    __self: this
-  }, getDetails())), __jsx("div", {
+  }, "(", weekDay, ")")), getDetails()), __jsx("div", {
     className: classes.statusContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 81
     },
     __self: this
   }, getView(status))));
@@ -52088,7 +52057,6 @@ var YEAR_2020 = [{
     day: "13.06.2020",
     place: "",
     hotel: "",
-    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].MONDAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "20.06.2020",
@@ -53963,7 +53931,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblablaterms&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Cwww.zespolarto.pl%5Cpages%5Cblablaterms.js ***!
   \***************************************************************************************************************************************************/
@@ -53986,5 +53954,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blablaterms.js.map

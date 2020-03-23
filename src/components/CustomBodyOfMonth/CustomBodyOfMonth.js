@@ -75,18 +75,8 @@ const CustomBodyOfMonth = ({
                         {getIcon(status)}
                         <Typography type={"span"} className={classes.day}>{day}</Typography>
                         <Typography type={"p"} className={classes.details}>({weekDay})</Typography>
-                        {
-                            status === STATUS.EMPTY ? null : <Button
-                                size="small"
-                                variant="outlined"
-                                color="primary"
-                                onClick={() => setIsDayExpanded(!isDayExpanded)}
-                            >
-                                {isDayExpanded ? <ExpandLess/> : <ExpandMore/>}
-                            </Button>
-                        }
                     </div>
-                    <Collapse in={isDayExpanded}>{getDetails()}</Collapse>
+                    {getDetails()}
                 </div>
                 <div className={classes.statusContainer}>{getView(status)}</div>
             </div>
