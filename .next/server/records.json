@@ -25,15 +25,15 @@
   },
   "chunks": {
     "byName": {
-      "static\\BWgJQuh00x3VTS4P5y5Kc\\pages\\_app.js": 0,
-      "static\\BWgJQuh00x3VTS4P5y5Kc\\pages\\_document.js": 1,
-      "static\\BWgJQuh00x3VTS4P5y5Kc\\pages\\_error.js": 2,
-      "static\\BWgJQuh00x3VTS4P5y5Kc\\pages\\blablaterms.js": 3,
-      "static\\BWgJQuh00x3VTS4P5y5Kc\\pages\\contact.js": 4,
-      "static\\BWgJQuh00x3VTS4P5y5Kc\\pages\\demo.js": 5,
-      "static\\BWgJQuh00x3VTS4P5y5Kc\\pages\\index.js": 6,
-      "static\\BWgJQuh00x3VTS4P5y5Kc\\pages\\media.js": 7,
-      "static\\BWgJQuh00x3VTS4P5y5Kc\\pages\\photo.js": 8
+      "static\\Ae_Uu95uIz1RE1Cmq7JPN\\pages\\_app.js": 0,
+      "static\\Ae_Uu95uIz1RE1Cmq7JPN\\pages\\_document.js": 1,
+      "static\\Ae_Uu95uIz1RE1Cmq7JPN\\pages\\_error.js": 2,
+      "static\\Ae_Uu95uIz1RE1Cmq7JPN\\pages\\blablaterms.js": 3,
+      "static\\Ae_Uu95uIz1RE1Cmq7JPN\\pages\\contact.js": 4,
+      "static\\Ae_Uu95uIz1RE1Cmq7JPN\\pages\\demo.js": 5,
+      "static\\Ae_Uu95uIz1RE1Cmq7JPN\\pages\\index.js": 6,
+      "static\\Ae_Uu95uIz1RE1Cmq7JPN\\pages\\media.js": 7,
+      "static\\Ae_Uu95uIz1RE1Cmq7JPN\\pages\\photo.js": 8
     },
     "bySource": {},
     "usedIds": [

@@ -24,8 +24,6 @@ const CustomBodyOfMonth = ({
                                weddingHour,
                                weekDay
                            }) => {
-    const [isDayExpanded, setIsDayExpanded] = useState(false);
-
     const classNameMain = classNames(classes.main, {
             [classes.busy]: status === STATUS.BUSY,
             [classes.holiday]: status === STATUS.HOLIDAY,
@@ -64,8 +62,6 @@ const CustomBodyOfMonth = ({
             }
         </div>
     );
-
-    console.log(status);
 
     return (
         <div className={classNameMain}>

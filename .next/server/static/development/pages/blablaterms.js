@@ -340,10 +340,6 @@ const CustomBodyOfMonth = ({
   weddingHour,
   weekDay
 }) => {
-  const {
-    0: isDayExpanded,
-    1: setIsDayExpanded
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const classNameMain = classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.main, {
     [classes.busy]: status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].BUSY,
     [classes.holiday]: status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].HOLIDAY,
@@ -357,7 +353,7 @@ const CustomBodyOfMonth = ({
           className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.info, classes.infoBusy),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 37
           },
           __self: undefined
         }, place);
@@ -367,7 +363,7 @@ const CustomBodyOfMonth = ({
           className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.info, classes.infoHoliday),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 41
+            lineNumber: 39
           },
           __self: undefined
         }, "Wakacje");
@@ -383,7 +379,7 @@ const CustomBodyOfMonth = ({
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 48
+            lineNumber: 46
           },
           __self: undefined
         });
@@ -395,7 +391,7 @@ const CustomBodyOfMonth = ({
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 50
+            lineNumber: 48
           },
           __self: undefined
         });
@@ -407,7 +403,7 @@ const CustomBodyOfMonth = ({
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 50
           },
           __self: undefined
         });
@@ -418,13 +414,13 @@ const CustomBodyOfMonth = ({
     className: classes.rowInfo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 55
     },
     __self: undefined
   }, (status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].BUSY || status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].HOLIDAY) && __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 57
     },
     __self: undefined
   }, hotel && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -432,13 +428,13 @@ const CustomBodyOfMonth = ({
     className: classes.details,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 58
     },
     __self: undefined
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 58
     },
     __self: undefined
   }, "hotel: "), hotel), weddingHour && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -446,13 +442,13 @@ const CustomBodyOfMonth = ({
     className: classes.details,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 59
     },
     __self: undefined
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 59
     },
     __self: undefined
   }, "godz. slubu: "), weddingHour), information && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -460,44 +456,43 @@ const CustomBodyOfMonth = ({
     className: classes.details,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 60
     },
     __self: undefined
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 60
     },
     __self: undefined
   }, "informacje dodatkowe: "), information)));
 
-  console.log(status);
   return __jsx("div", {
     className: classNameMain,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 67
     },
     __self: undefined
   }, __jsx("div", {
     className: classes.rowContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 68
     },
     __self: undefined
   }, __jsx("div", {
     className: classes.detailsMainContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 69
     },
     __self: undefined
   }, __jsx("div", {
     className: classes.termIconContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 70
     },
     __self: undefined
   }, getIcon(status), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -505,7 +500,7 @@ const CustomBodyOfMonth = ({
     className: classes.day,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 72
     },
     __self: undefined
   }, day), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -513,14 +508,14 @@ const CustomBodyOfMonth = ({
     className: classes.details,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 73
     },
     __self: undefined
   }, "(", weekDay, ")")), getDetails()), __jsx("div", {
     className: classes.statusContainer,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 77
     },
     __self: undefined
   }, getView(status))));
@@ -633,7 +628,7 @@ const styles = theme => ({
   },
   termIconContainer: {
     display: 'grid',
-    gridTemplateColumns: '2rem 6rem 5.5rem 4rem',
+    gridTemplateColumns: '1.5rem 5.3125rem 5.5rem',
     alignItems: 'center'
   }
 });
@@ -1303,7 +1298,7 @@ const YEAR_2020 = [{
     weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
     "blessing": "noInfo",
-    information: "pewnie będzie PRZEŁOŻONE"
+    information: "pewnie będzie przełożone"
   }, {
     day: "25.04.2020",
     place: "",
@@ -1384,10 +1379,11 @@ const YEAR_2020 = [{
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "20.06.2020",
-    place: "Rozłopy (kolo Szczebrzeszyna)",
+    place: "Rozłopy",
     hotel: "Kamienny Zajazd",
     address: "ul. Rozłopy 20",
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    information: 'koło Szczebrzeszyna'
   }, {
     day: "27.06.2020",
     place: "Chełm",

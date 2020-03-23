@@ -64,6 +64,7 @@ const styles = (theme) => ({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+
   },
   detailsMainContainer: {
     display: 'flex',
@@ -83,7 +84,7 @@ const styles = (theme) => ({
   },
   termIconContainer: {
     display: 'grid',
-    gridTemplateColumns: '2rem 6rem 5.5rem 4rem',
+    gridTemplateColumns: '1.5rem 5.3125rem 5.5rem',
     alignItems: 'center'
   }
 });
