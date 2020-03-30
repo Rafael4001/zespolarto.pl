@@ -11,17 +11,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "./
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/create.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "./node_modules/core-js/library/fn/object/create.js");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -44,17 +33,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype-of */ "./node_modules/core-js/library/fn/object/get-prototype-of.js");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
 /*!********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
@@ -63,110 +41,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./node_modules/core-js/library/fn/object/keys.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ "./node_modules/core-js/library/fn/object/set-prototype-of.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/symbol */ "./node_modules/core-js/library/fn/symbol/index.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/symbol/iterator */ "./node_modules/core-js/library/fn/symbol/iterator.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js ***!
-  \**********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _assertThisInitialized; });
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _classCallCheck; });
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js ***!
-  \************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _createClass; });
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
-/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-
-    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
 
 /***/ }),
 
@@ -229,63 +103,6 @@ function _extends() {
   };
 
   return _extends.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _getPrototypeOf; });
-/* harmony import */ var _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js");
-/* harmony import */ var _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/set-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js");
-/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_1___default.a ? _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default.a : function _getPrototypeOf(o) {
-    return o.__proto__ || _core_js_object_get_prototype_of__WEBPACK_IMPORTED_MODULE_0___default()(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js ***!
-  \*********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inherits; });
-/* harmony import */ var _core_js_object_create__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/create */ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js");
-/* harmony import */ var _core_js_object_create__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_create__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./setPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js");
-
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = _core_js_object_create__WEBPACK_IMPORTED_MODULE_0___default()(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__["default"])(subClass, superClass);
 }
 
 /***/ }),
@@ -358,85 +175,24 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js ***!
-  \**************************************************************************************/
+/***/ "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js ***!
+  \*********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _possibleConstructorReturn; });
-/* harmony import */ var _helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../helpers/esm/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js");
-/* harmony import */ var _assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayLikeToArray; });
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
 
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (Object(_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(call) === "object" || typeof call === "function")) {
-    return call;
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
   }
 
-  return Object(_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__["default"])(self);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
-/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/set-prototype-of */ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js");
-/* harmony import */ var _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0__);
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = _core_js_object_set_prototype_of__WEBPACK_IMPORTED_MODULE_0___default.a || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _typeof; });
-/* harmony import */ var _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
-/* harmony import */ var _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_symbol__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
-/* harmony import */ var _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_symbol__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-function _typeof2(obj) { if (typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && typeof _core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default.a === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && obj.constructor === _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a && obj !== _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
-function _typeof(obj) {
-  if (typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && _typeof2(_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_0___default.a) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a === "function" && obj.constructor === _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a && obj !== _core_js_symbol__WEBPACK_IMPORTED_MODULE_1___default.a.prototype ? "symbol" : _typeof2(obj);
-    };
-  }
-
-  return _typeof(obj);
+  return arr2;
 }
 
 /***/ }),
@@ -467,14 +223,10 @@ function _arrayWithHoles(arr) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithoutHoles; });
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
-      arr2[i] = arr[i];
-    }
+/* harmony import */ var _arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayLikeToArray */ "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js");
 
-    return arr2;
-  }
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return Object(_arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(arr);
 }
 
 /***/ }),
@@ -679,7 +431,7 @@ function _inheritsLoose(subClass, superClass) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArray; });
 function _iterableToArray(iter) {
-  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
 }
 
 /***/ }),
@@ -695,10 +447,7 @@ function _iterableToArray(iter) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArrayLimit; });
 function _iterableToArrayLimit(arr, i) {
-  if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
-    return;
-  }
-
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
   var _n = true;
   var _d = false;
@@ -737,7 +486,7 @@ function _iterableToArrayLimit(arr, i) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableRest; });
 function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
 /***/ }),
@@ -753,7 +502,7 @@ function _nonIterableRest() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableSpread; });
 function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance");
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
 /***/ }),
@@ -875,12 +624,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _slicedToArray; });
 /* harmony import */ var _arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js");
 /* harmony import */ var _iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArrayLimit */ "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js");
-/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js");
+/* harmony import */ var _unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./unsupportedIterableToArray */ "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js");
+/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js");
+
 
 
 
 function _slicedToArray(arr, i) {
-  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_3__["default"])();
 }
 
 /***/ }),
@@ -897,12 +648,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _toArray; });
 /* harmony import */ var _arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js");
 /* harmony import */ var _iterableToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js");
-/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js");
+/* harmony import */ var _unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./unsupportedIterableToArray */ "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js");
+/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js");
+
 
 
 
 function _toArray(arr) {
-  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || Object(_unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(arr) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_3__["default"])();
 }
 
 /***/ }),
@@ -919,12 +672,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _toConsumableArray; });
 /* harmony import */ var _arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js");
 /* harmony import */ var _iterableToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js");
-/* harmony import */ var _nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js");
+/* harmony import */ var _unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./unsupportedIterableToArray */ "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js");
+/* harmony import */ var _nonIterableSpread__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js");
+
 
 
 
 function _toConsumableArray(arr) {
-  return Object(_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || Object(_nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  return Object(_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || Object(_unsupportedIterableToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(arr) || Object(_nonIterableSpread__WEBPACK_IMPORTED_MODULE_3__["default"])();
 }
 
 /***/ }),
@@ -953,6 +708,29 @@ function _typeof(obj) {
   }
 
   return _typeof(obj);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _unsupportedIterableToArray; });
+/* harmony import */ var _arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayLikeToArray */ "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js");
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return Object(_arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(n);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return Object(_arrayLikeToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(o, minLen);
 }
 
 /***/ }),
@@ -1116,7 +894,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var AppBar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function AppBar(props, ref) {
+var AppBar = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function AppBar(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$color = props.color,
@@ -1125,13 +903,11 @@ var AppBar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Ap
       position = _props$position === void 0 ? 'fixed' : _props$position,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "color", "position"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Paper__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Paper__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     square: true,
     component: "header",
     elevation: 4,
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["position".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(position))], classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], className, {
-      fixed: 'mui-fixed'
-    }[position]),
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["position".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(position))], classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], className, position === 'fixed' && 'mui-fixed'),
     ref: ref
   }, other));
 });
@@ -1280,11 +1056,11 @@ function useLoaded(_ref) {
   var src = _ref.src,
       srcSet = _ref.srcSet;
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
       loaded = _React$useState[0],
       setLoaded = _React$useState[1];
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (!src && !srcSet) {
       return undefined;
     }
@@ -1318,7 +1094,7 @@ function useLoaded(_ref) {
   return loaded;
 }
 
-var Avatar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Avatar(props, ref) {
+var Avatar = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Avatar(props, ref) {
   var alt = props.alt,
       childrenProp = props.children,
       classes = props.classes,
@@ -1343,7 +1119,7 @@ var Avatar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Av
   var hasImgNotFailing = hasImg && loaded !== 'error';
 
   if (hasImgNotFailing) {
-    children = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    children = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("img", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       alt: alt,
       src: src,
       srcSet: srcSet,
@@ -1355,12 +1131,12 @@ var Avatar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Av
   } else if (hasImg && alt) {
     children = alt[0];
   } else {
-    children = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_Person__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    children = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_Person__WEBPACK_IMPORTED_MODULE_6__["default"], {
       className: classes.fallback
     });
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes.system, classes[variant], className, !hasImgNotFailing && classes.colorDefault),
     ref: ref
   }, other), children);
@@ -1492,7 +1268,7 @@ var styles = {
     backgroundColor: 'transparent'
   }
 };
-var Backdrop = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Backdrop(props, ref) {
+var Backdrop = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Backdrop(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -1502,10 +1278,10 @@ var Backdrop = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       transitionDuration = props.transitionDuration,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "invisible", "open", "transitionDuration"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Fade__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Fade__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     in: open,
     timeout: transitionDuration
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, invisible && classes.invisible),
     "aria-hidden": true,
     ref: ref
@@ -1764,7 +1540,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Badge = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Badge(props, ref) {
+var Badge = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Badge(props, ref) {
   var _props$anchorOrigin = props.anchorOrigin,
       anchorOrigin = _props$anchorOrigin === void 0 ? {
     vertical: 'top',
@@ -1801,13 +1577,11 @@ var Badge = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Bad
     displayValue = badgeContent > max ? "".concat(max, "+") : badgeContent;
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ComponentProp, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](ComponentProp, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     ref: ref
-  }, other), children, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.badge, classes["".concat(anchorOrigin.horizontal).concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(anchorOrigin.vertical), "}")], classes["anchorOrigin".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(anchorOrigin.vertical)).concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(anchorOrigin.horizontal)).concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(overlap))], color !== 'default' && classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], invisible && classes.invisible, {
-      dot: classes.dot
-    }[variant])
+  }, other), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.badge, classes["".concat(anchorOrigin.horizontal).concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(anchorOrigin.vertical), "}")], classes["anchorOrigin".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(anchorOrigin.vertical)).concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(anchorOrigin.horizontal)).concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(overlap))], color !== 'default' && classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], invisible && classes.invisible, variant === 'dot' && classes.dot)
   }, displayValue));
 });
  true ? Badge.propTypes = {
@@ -1941,7 +1715,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var BottomNavigation = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function BottomNavigation(props, ref) {
+var BottomNavigation = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function BottomNavigation(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -1953,11 +1727,11 @@ var BottomNavigation = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
       value = props.value,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "component", "onChange", "showLabels", "value"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.map(children, function (child, childIndex) {
-    if (!react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(child)) {
+  }, other), react__WEBPACK_IMPORTED_MODULE_2__["Children"].map(children, function (child, childIndex) {
+    if (!react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](child)) {
       return null;
     }
 
@@ -1968,7 +1742,7 @@ var BottomNavigation = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
     }
 
     var childValue = child.props.value === undefined ? childIndex : child.props.value;
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(child, {
+    return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](child, {
       selected: childValue === value,
       showLabel: child.props.showLabel !== undefined ? child.props.showLabel : showLabels,
       value: childValue,
@@ -2126,7 +1900,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var BottomNavigationAction = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function BottomNavigationAction(props, ref) {
+var BottomNavigationAction = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function BottomNavigationAction(props, ref) {
   var classes = props.classes,
       className = props.className,
       icon = props.icon,
@@ -2148,14 +1922,14 @@ var BottomNavigationAction = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwar
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     ref: ref,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, selected ? classes.selected : !showLabel && classes.iconOnly),
     focusRipple: true,
     onClick: handleChange
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: classes.wrapper
-  }, icon, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, icon, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.label, selected ? classes.selected : !showLabel && classes.iconOnly)
   }, label)));
 });
@@ -2298,6 +2072,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
 /* harmony import */ var _styles_colorManipulator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/colorManipulator */ "./node_modules/@material-ui/core/esm/styles/colorManipulator.js");
 /* harmony import */ var _internal_svg_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../internal/svg-icons/MoreHoriz */ "./node_modules/@material-ui/core/esm/internal/svg-icons/MoreHoriz.js");
+/* harmony import */ var _ButtonBase__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ButtonBase */ "./node_modules/@material-ui/core/esm/ButtonBase/index.js");
+
 
 
 
@@ -2309,16 +2085,12 @@ __webpack_require__.r(__webpack_exports__);
 var styles = function styles(theme) {
   return {
     root: {
-      display: 'flex'
-    },
-    icon: {
-      width: 24,
-      height: 16,
+      display: 'flex',
+      marginLeft: theme.spacing(0.5),
+      marginRight: theme.spacing(0.5),
       backgroundColor: theme.palette.grey[100],
       color: theme.palette.grey[700],
       borderRadius: 2,
-      marginLeft: theme.spacing(0.5),
-      marginRight: theme.spacing(0.5),
       cursor: 'pointer',
       '&:hover, &:focus': {
         backgroundColor: theme.palette.grey[200]
@@ -2327,6 +2099,10 @@ var styles = function styles(theme) {
         boxShadow: theme.shadows[0],
         backgroundColor: Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_5__["emphasize"])(theme.palette.grey[200], 0.12)
       }
+    },
+    icon: {
+      width: 24,
+      height: 16
     }
   };
 };
@@ -2339,9 +2115,11 @@ function BreadcrumbCollapsed(props) {
   var classes = props.classes,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: classes.root
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    component: "li",
+    className: classes.root,
+    focusRipple: true
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: classes.icon
   }));
 }
@@ -2401,9 +2179,7 @@ var styles = {
     flexWrap: 'wrap',
     alignItems: 'center',
     padding: 0,
-    // Reset
     margin: 0,
-    // Reset
     listStyle: 'none'
   },
 
@@ -2422,7 +2198,7 @@ var styles = {
 function insertSeparators(items, className, separator) {
   return items.reduce(function (acc, current, index) {
     if (index < items.length - 1) {
-      acc = acc.concat(current, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("li", {
+      acc = acc.concat(current, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("li", {
         "aria-hidden": true,
         key: "separator-".concat(index),
         className: className
@@ -2435,12 +2211,14 @@ function insertSeparators(items, className, separator) {
   }, []);
 }
 
-var Breadcrumbs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Breadcrumbs(props, ref) {
+var Breadcrumbs = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function Breadcrumbs(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
       _props$component = props.component,
       Component = _props$component === void 0 ? 'nav' : _props$component,
+      _props$expandText = props.expandText,
+      expandText = _props$expandText === void 0 ? 'Show path' : _props$expandText,
       _props$itemsAfterColl = props.itemsAfterCollapse,
       itemsAfterCollapse = _props$itemsAfterColl === void 0 ? 1 : _props$itemsAfterColl,
       _props$itemsBeforeCol = props.itemsBeforeCollapse,
@@ -2449,9 +2227,9 @@ var Breadcrumbs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functi
       maxItems = _props$maxItems === void 0 ? 8 : _props$maxItems,
       _props$separator = props.separator,
       separator = _props$separator === void 0 ? '/' : _props$separator,
-      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, ["children", "classes", "className", "component", "itemsAfterCollapse", "itemsBeforeCollapse", "maxItems", "separator"]);
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, ["children", "classes", "className", "component", "expandText", "itemsAfterCollapse", "itemsBeforeCollapse", "maxItems", "separator"]);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3__["useState"](false),
       expanded = _React$useState[0],
       setExpanded = _React$useState[1];
 
@@ -2470,32 +2248,33 @@ var Breadcrumbs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functi
       return allItems;
     }
 
-    return [].concat(Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(allItems.slice(0, itemsBeforeCollapse)), [react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_BreadcrumbCollapsed__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    return [].concat(Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(allItems.slice(0, itemsBeforeCollapse)), [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_BreadcrumbCollapsed__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      "aria-label": expandText,
       key: "ellipsis",
       onClick: handleClickExpand
     })], Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(allItems.slice(allItems.length - itemsAfterCollapse, allItems.length)));
   };
 
-  var allItems = react__WEBPACK_IMPORTED_MODULE_3___default.a.Children.toArray(children).filter(function (child) {
+  var allItems = react__WEBPACK_IMPORTED_MODULE_3__["Children"].toArray(children).filter(function (child) {
     if (true) {
       if (Object(react_is__WEBPACK_IMPORTED_MODULE_4__["isFragment"])(child)) {
         console.error(["Material-UI: the Breadcrumbs component doesn't accept a Fragment as a child.", 'Consider providing an array instead.'].join('\n'));
       }
     }
 
-    return react__WEBPACK_IMPORTED_MODULE_3___default.a.isValidElement(child);
+    return react__WEBPACK_IMPORTED_MODULE_3__["isValidElement"](child);
   }).map(function (child, index) {
-    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("li", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("li", {
       className: classes.li,
       key: "child-".concat(index)
     }, child);
   });
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     ref: ref,
     component: Component,
     color: "textSecondary",
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.root, className)
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("ol", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("ol", {
     className: classes.ol
   }, insertSeparators(expanded || maxItems && allItems.length <= maxItems ? allItems : renderItemsBeforeAndAfter(allItems), classes.separator, separator)));
 });
@@ -2522,6 +2301,13 @@ var Breadcrumbs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functi
    * By default, it maps the variant to a good default headline component.
    */
   component: prop_types__WEBPACK_IMPORTED_MODULE_5___default.a.elementType,
+
+  /**
+   * Override the default label for the expand button.
+   *
+   * For localization purposes, you can use the provided [translations](/guides/localization/).
+   */
+  expandText: prop_types__WEBPACK_IMPORTED_MODULE_5___default.a.string,
 
   /**
    * If max items is exceeded, the number of items to show after the ellipsis.
@@ -2668,7 +2454,7 @@ var styles = function styles(theme) {
       padding: '5px 15px',
       border: "1px solid ".concat(theme.palette.type === 'light' ? 'rgba(0, 0, 0, 0.23)' : 'rgba(255, 255, 255, 0.23)'),
       '&$disabled': {
-        border: "1px solid ".concat(theme.palette.action.disabled)
+        border: "1px solid ".concat(theme.palette.action.disabledBackground)
       }
     },
 
@@ -2877,7 +2663,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Button = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Button(props, ref) {
+var Button = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Button(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -2904,13 +2690,13 @@ var Button = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Bu
       variant = _props$variant === void 0 ? 'text' : _props$variant,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["children", "classes", "className", "color", "component", "disabled", "disableElevation", "disableFocusRipple", "endIcon", "focusVisibleClassName", "fullWidth", "size", "startIcon", "type", "variant"]);
 
-  var startIcon = startIconProp && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  var startIcon = startIconProp && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.startIcon, classes["iconSize".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(size))])
   }, startIconProp);
-  var endIcon = endIconProp && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  var endIcon = endIconProp && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.endIcon, classes["iconSize".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(size))])
   }, endIconProp);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes[variant], className, color === 'inherit' ? classes.colorInherit : color !== 'default' && classes["".concat(variant).concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(color))], size !== 'medium' && [classes["".concat(variant, "Size").concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(size))], classes["size".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(size))]], disableElevation && classes.disableElevation, disabled && classes.disabled, fullWidth && classes.fullWidth),
     component: component,
     disabled: disabled,
@@ -2918,7 +2704,7 @@ var Button = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Bu
     focusVisibleClassName: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.focusVisible, focusVisibleClassName),
     ref: ref,
     type: type
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: classes.label
   }, startIcon, children, endIcon));
 });
@@ -3128,7 +2914,7 @@ var styles = {
  * It contains a load of style reset and some focus/ripple logic.
  */
 
-var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ButtonBase(props, ref) {
+var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ButtonBase(props, ref) {
   var action = props.action,
       buttonRefProp = props.buttonRef,
       _props$centerRipple = props.centerRipple,
@@ -3167,16 +2953,16 @@ var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
       type = _props$type === void 0 ? 'button' : _props$type,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["action", "buttonRef", "centerRipple", "children", "classes", "className", "component", "disabled", "disableRipple", "disableTouchRipple", "focusRipple", "focusVisibleClassName", "onBlur", "onClick", "onFocus", "onFocusVisible", "onKeyDown", "onKeyUp", "onMouseDown", "onMouseLeave", "onMouseUp", "onTouchEnd", "onTouchMove", "onTouchStart", "onDragLeave", "tabIndex", "TouchRippleProps", "type"]);
 
-  var buttonRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var buttonRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
 
   function getButtonNode() {
     // #StrictMode ready
-    return react_dom__WEBPACK_IMPORTED_MODULE_4___default.a.findDOMNode(buttonRef.current);
+    return react_dom__WEBPACK_IMPORTED_MODULE_4__["findDOMNode"](buttonRef.current);
   }
 
-  var rippleRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var rippleRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
       focusVisible = _React$useState[0],
       setFocusVisible = _React$useState[1];
 
@@ -3189,7 +2975,7 @@ var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
       onBlurVisible = _useIsFocusVisible.onBlurVisible,
       focusVisibleRef = _useIsFocusVisible.ref;
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useImperativeHandle(action, function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useImperativeHandle"](action, function () {
     return {
       focusVisible: function focusVisible() {
         setFocusVisible(true);
@@ -3197,7 +2983,7 @@ var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
       }
     };
   }, []);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (focusVisible && focusRipple && !disableRipple) {
       rippleRef.current.pulsate();
     }
@@ -3246,11 +3032,7 @@ var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
     }
   }, false);
   var handleFocus = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_8__["default"])(function (event) {
-    if (disabled) {
-      return;
-    } // Fix for https://github.com/facebook/react/issues/7769
-
-
+    // Fix for https://github.com/facebook/react/issues/7769
     if (!buttonRef.current) {
       buttonRef.current = event.currentTarget;
     }
@@ -3277,7 +3059,7 @@ var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
    */
 
 
-  var keydownRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(false);
+  var keydownRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](false);
   var handleKeyDown = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_8__["default"])(function (event) {
     // Check if key is already down to avoid repeats being counted as multiple activations
     if (focusRipple && !keydownRef.current && focusVisible && rippleRef.current && event.key === ' ') {
@@ -3288,12 +3070,16 @@ var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
       });
     }
 
+    if (event.target === event.currentTarget && isNonNativeButton() && event.key === ' ') {
+      event.preventDefault();
+    }
+
     if (onKeyDown) {
       onKeyDown(event);
     } // Keyboard accessibility for non interactive elements
 
 
-    if (event.target === event.currentTarget && isNonNativeButton() && event.key === 'Enter') {
+    if (event.target === event.currentTarget && isNonNativeButton() && event.key === 'Enter' && !disabled) {
       event.preventDefault();
 
       if (onClick) {
@@ -3317,12 +3103,8 @@ var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
     } // Keyboard accessibility for non interactive elements
 
 
-    if (event.target === event.currentTarget && isNonNativeButton() && event.key === ' ' && !event.defaultPrevented) {
-      event.preventDefault();
-
-      if (onClick) {
-        onClick(event);
-      }
+    if (onClick && event.target === event.currentTarget && isNonNativeButton() && event.key === ' ' && !event.defaultPrevented) {
+      onClick(event);
     }
   });
   var ComponentProp = component;
@@ -3347,7 +3129,7 @@ var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
   var handleUserRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_7__["default"])(buttonRefProp, ref);
   var handleOwnRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_7__["default"])(focusVisibleRef, buttonRef);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_7__["default"])(handleUserRef, handleOwnRef);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ComponentProp, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](ComponentProp, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className, focusVisible && [classes.focusVisible, focusVisibleClassName], disabled && classes.disabled),
     onBlur: handleBlur,
     onClick: onClick,
@@ -3363,10 +3145,14 @@ var ButtonBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
     onTouchStart: handleTouchStart,
     ref: handleRef,
     tabIndex: disabled ? -1 : tabIndex
-  }, buttonProps, other), children, !disableRipple && !disabled ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_NoSsr__WEBPACK_IMPORTED_MODULE_10__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_TouchRipple__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, buttonProps, other), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_NoSsr__WEBPACK_IMPORTED_MODULE_10__["default"], null, !disableRipple && !disabled ?
+  /*#__PURE__*/
+
+  /* TouchRipple is only needed client-side, x2 boost on the server. */
+  react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_TouchRipple__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     ref: rippleRef,
     center: centerRipple
-  }, TouchRippleProps))) : null);
+  }, TouchRippleProps)) : null));
 });
  true ? ButtonBase.propTypes = {
   /**
@@ -3557,7 +3343,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect : react__WEBPACK_IMPORTED_MODULE_0___default.a.useLayoutEffect;
+var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__["useEffect"] : react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"];
 /**
  * @ignore - internal component.
  */
@@ -3574,7 +3360,7 @@ function Ripple(props) {
       onExited = _props$onExited === void 0 ? function () {} : _props$onExited,
       timeout = props.timeout;
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__["useState"](false),
       leaving = _React$useState[0],
       setLeaving = _React$useState[1];
 
@@ -3601,10 +3387,10 @@ function Ripple(props) {
 
     return undefined;
   }, [handleExited, inProp, timeout]);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
     className: rippleClassName,
     style: rippleStyles
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", {
     className: childClassName
   }));
 }
@@ -3781,46 +3567,46 @@ var styles = function styles(theme) {
  * TODO v5: Make private
  */
 
-var TouchRipple = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function TouchRipple(props, ref) {
+var TouchRipple = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function TouchRipple(props, ref) {
   var _props$center = props.center,
       centerProp = _props$center === void 0 ? false : _props$center,
       classes = props.classes,
       className = props.className,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, ["center", "classes", "className"]);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState([]),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3__["useState"]([]),
       ripples = _React$useState[0],
       setRipples = _React$useState[1];
 
-  var nextKey = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(0);
-  var rippleCallback = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(null);
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  var nextKey = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](0);
+  var rippleCallback = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](null);
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     if (rippleCallback.current) {
       rippleCallback.current();
       rippleCallback.current = null;
     }
   }, [ripples]); // Used to filter out mouse emulated events on mobile.
 
-  var ignoringMouseDown = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(false); // We use a timer in order to only show the ripples for touch "click" like events.
+  var ignoringMouseDown = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](false); // We use a timer in order to only show the ripples for touch "click" like events.
   // We don't want to display the ripple for touch scroll events.
 
-  var startTimer = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(null); // This is the hook called once the previous timeout is ready.
+  var startTimer = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](null); // This is the hook called once the previous timeout is ready.
 
-  var startTimerCommit = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(null);
-  var container = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(null);
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  var startTimerCommit = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](null);
+  var container = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](null);
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     return function () {
       clearTimeout(startTimer.current);
     };
   }, []);
-  var startCommit = react__WEBPACK_IMPORTED_MODULE_3___default.a.useCallback(function (params) {
+  var startCommit = react__WEBPACK_IMPORTED_MODULE_3__["useCallback"](function (params) {
     var pulsate = params.pulsate,
         rippleX = params.rippleX,
         rippleY = params.rippleY,
         rippleSize = params.rippleSize,
         cb = params.cb;
     setRipples(function (oldRipples) {
-      return [].concat(Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(oldRipples), [react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Ripple__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      return [].concat(Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(oldRipples), [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_Ripple__WEBPACK_IMPORTED_MODULE_8__["default"], {
         key: nextKey.current,
         classes: classes,
         timeout: DURATION,
@@ -3833,7 +3619,7 @@ var TouchRipple = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functi
     nextKey.current += 1;
     rippleCallback.current = cb;
   }, [classes]);
-  var start = react__WEBPACK_IMPORTED_MODULE_3___default.a.useCallback(function () {
+  var start = react__WEBPACK_IMPORTED_MODULE_3__["useCallback"](function () {
     var event = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var cb = arguments.length > 2 ? arguments[2] : undefined;
@@ -3922,12 +3708,12 @@ var TouchRipple = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functi
       });
     }
   }, [centerProp, startCommit]);
-  var pulsate = react__WEBPACK_IMPORTED_MODULE_3___default.a.useCallback(function () {
+  var pulsate = react__WEBPACK_IMPORTED_MODULE_3__["useCallback"](function () {
     start({}, {
       pulsate: true
     });
   }, [start]);
-  var stop = react__WEBPACK_IMPORTED_MODULE_3___default.a.useCallback(function (event, cb) {
+  var stop = react__WEBPACK_IMPORTED_MODULE_3__["useCallback"](function (event, cb) {
     clearTimeout(startTimer.current); // The touch interaction occurs too quickly.
     // We still want to show ripple effect.
 
@@ -3951,17 +3737,17 @@ var TouchRipple = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functi
     });
     rippleCallback.current = cb;
   }, []);
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useImperativeHandle(ref, function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useImperativeHandle"](ref, function () {
     return {
       pulsate: pulsate,
       start: start,
       stop: stop
     };
   }, [pulsate, start, stop]);
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("span", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.root, className),
     ref: container
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_5__["TransitionGroup"], {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react_transition_group__WEBPACK_IMPORTED_MODULE_5__["TransitionGroup"], {
     component: null,
     exit: true
   }, ripples));
@@ -3987,7 +3773,7 @@ var TouchRipple = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functi
 /* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_7__["default"])(styles, {
   flip: false,
   name: 'MuiTouchRipple'
-})(react__WEBPACK_IMPORTED_MODULE_3___default.a.memo(TouchRipple)));
+})(react__WEBPACK_IMPORTED_MODULE_3__["memo"](TouchRipple)));
 
 /***/ }),
 
@@ -4206,7 +3992,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var ButtonGroup = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ButtonGroup(props, ref) {
+var ButtonGroup = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ButtonGroup(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -4231,16 +4017,12 @@ var ButtonGroup = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "color", "component", "disabled", "disableFocusRipple", "disableRipple", "fullWidth", "orientation", "size", "variant"]);
 
   var buttonClassName = Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.grouped, classes["grouped".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(orientation))], classes["grouped".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(variant))], classes["grouped".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(variant)).concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(orientation))], classes["grouped".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(variant)).concat(color !== 'default' ? Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color) : '')], disabled && classes.disabled);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     role: "group",
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className, fullWidth && classes.fullWidth, {
-      contained: classes.contained
-    }[variant], {
-      vertical: classes.vertical
-    }[orientation]),
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className, fullWidth && classes.fullWidth, variant === 'contained' && classes.contained, orientation === 'vertical' && classes.vertical),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.map(children, function (child) {
-    if (!react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(child)) {
+  }, other), react__WEBPACK_IMPORTED_MODULE_2__["Children"].map(children, function (child) {
+    if (!react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](child)) {
       return null;
     }
 
@@ -4250,7 +4032,7 @@ var ButtonGroup = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
       }
     }
 
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(child, {
+    return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](child, {
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(buttonClassName, child.props.className),
       disabled: child.props.disabled || disabled,
       color: child.props.color || color,
@@ -4381,20 +4163,25 @@ var styles = {
     overflow: 'hidden'
   }
 };
-var Card = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Card(props, ref) {
+var Card = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Card(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$raised = props.raised,
       raised = _props$raised === void 0 ? false : _props$raised,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "raised"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Paper__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Paper__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     elevation: raised ? 8 : 1,
     ref: ref
   }, other));
 });
  true ? Card.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component.
    */
@@ -4404,7 +4191,7 @@ var Card = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Card
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -4500,18 +4287,18 @@ var styles = function styles(theme) {
     }
   };
 };
-var CardActionArea = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function CardActionArea(props, ref) {
+var CardActionArea = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function CardActionArea(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
       focusVisibleClassName = props.focusVisibleClassName,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "focusVisibleClassName"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     focusVisibleClassName: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(focusVisibleClassName, classes.focusVisible),
     ref: ref
-  }, other), children, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other), children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: classes.focusHighlight
   }));
 });
@@ -4598,19 +4385,24 @@ var styles = {
     }
   }
 };
-var CardActions = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function CardActions(props, ref) {
+var CardActions = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function CardActions(props, ref) {
   var _props$disableSpacing = props.disableSpacing,
       disableSpacing = _props$disableSpacing === void 0 ? false : _props$disableSpacing,
       classes = props.classes,
       className = props.className,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["disableSpacing", "classes", "className"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, !disableSpacing && classes.spacing),
     ref: ref
   }, other));
 });
  true ? CardActions.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component.
    */
@@ -4620,7 +4412,7 @@ var CardActions = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -4687,14 +4479,14 @@ var styles = {
     }
   }
 };
-var CardContent = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function CardContent(props, ref) {
+var CardContent = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function CardContent(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
       Component = _props$component === void 0 ? 'div' : _props$component,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     ref: ref
   }, other));
@@ -4803,7 +4595,7 @@ var styles = {
   /* Styles applied to the subheader Typography element. */
   subheader: {}
 };
-var CardHeader = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function CardHeader(props, ref) {
+var CardHeader = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function CardHeader(props, ref) {
   var action = props.action,
       avatar = props.avatar,
       classes = props.classes,
@@ -4821,7 +4613,7 @@ var CardHeader = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
   var title = titleProp;
 
   if (title != null && title.type !== _Typography__WEBPACK_IMPORTED_MODULE_6__["default"] && !disableTypography) {
-    title = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    title = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       variant: avatar ? 'body2' : 'h5',
       className: classes.title,
       component: "span",
@@ -4832,7 +4624,7 @@ var CardHeader = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
   var subheader = subheaderProp;
 
   if (subheader != null && subheader.type !== _Typography__WEBPACK_IMPORTED_MODULE_6__["default"] && !disableTypography) {
-    subheader = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    subheader = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       variant: avatar ? 'body2' : 'body1',
       className: classes.subheader,
       color: "textSecondary",
@@ -4841,14 +4633,14 @@ var CardHeader = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
     }, subheaderTypographyProps), subheader);
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     ref: ref
-  }, other), avatar && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, other), avatar && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: classes.avatar
-  }, avatar), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, avatar), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: classes.content
-  }, title, subheader), action && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, title, subheader), action && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: classes.action
   }, action));
 });
@@ -4979,7 +4771,7 @@ var styles = {
   }
 };
 var MEDIA_COMPONENTS = ['video', 'audio', 'picture', 'iframe', 'img'];
-var CardMedia = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function CardMedia(props, ref) {
+var CardMedia = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function CardMedia(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -4994,7 +4786,7 @@ var CardMedia = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
   var composedStyle = !isMediaComponent && image ? Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     backgroundImage: "url(\"".concat(image, "\")")
   }, style) : style;
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, isMediaComponent && classes.media, "picture img".indexOf(Component) !== -1 && classes.img),
     ref: ref,
     style: composedStyle,
@@ -5006,8 +4798,8 @@ var CardMedia = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
    * The content of the component.
    */
   children: Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_6__["chainPropTypes"])(prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node, function (props) {
-    if (!props.children && !props.image && !props.src) {
-      return new Error('Material-UI: either `children`, `image` or `src` prop must be specified.');
+    if (!props.children && !props.image && !props.src && !props.component) {
+      return new Error('Material-UI: either `children`, `image`, `src` or `component` prop must be specified.');
     }
 
     return null;
@@ -5160,10 +4952,10 @@ var styles = function styles(theme) {
     }
   };
 };
-var defaultCheckedIcon = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_CheckBox__WEBPACK_IMPORTED_MODULE_8__["default"], null);
-var defaultIcon = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_CheckBoxOutlineBlank__WEBPACK_IMPORTED_MODULE_7__["default"], null);
-var defaultIndeterminateIcon = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_IndeterminateCheckBox__WEBPACK_IMPORTED_MODULE_10__["default"], null);
-var Checkbox = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Checkbox(props, ref) {
+var defaultCheckedIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_CheckBox__WEBPACK_IMPORTED_MODULE_8__["default"], null);
+var defaultIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_CheckBoxOutlineBlank__WEBPACK_IMPORTED_MODULE_7__["default"], null);
+var defaultIndeterminateIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_IndeterminateCheckBox__WEBPACK_IMPORTED_MODULE_10__["default"], null);
+var Checkbox = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Checkbox(props, ref) {
   var _props$checkedIcon = props.checkedIcon,
       checkedIcon = _props$checkedIcon === void 0 ? defaultCheckedIcon : _props$checkedIcon,
       classes = props.classes,
@@ -5180,7 +4972,7 @@ var Checkbox = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       size = _props$size === void 0 ? 'medium' : _props$size,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["checkedIcon", "classes", "color", "icon", "indeterminate", "indeterminateIcon", "inputProps", "size"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_SwitchBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_SwitchBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     type: "checkbox",
     classes: {
       root: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(color))], indeterminate && classes.indeterminate),
@@ -5191,10 +4983,10 @@ var Checkbox = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
     inputProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       'data-indeterminate': indeterminate
     }, inputProps),
-    icon: react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(indeterminate ? indeterminateIcon : icon, {
+    icon: react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](indeterminate ? indeterminateIcon : icon, {
       fontSize: size === 'small' ? 'small' : 'default'
     }),
-    checkedIcon: react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(indeterminate ? indeterminateIcon : checkedIcon, {
+    checkedIcon: react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](indeterminate ? indeterminateIcon : checkedIcon, {
       fontSize: size === 'small' ? 'small' : 'default'
     }),
     ref: ref
@@ -5285,12 +5077,8 @@ var Checkbox = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
   size: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['small', 'medium']),
 
   /**
-   * The input component prop `type`.
-   */
-  type: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
-
-  /**
    * The value of the component. The DOM API casts this to a string.
+   * The browser uses "on" as the default value.
    */
   value: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any
 } : undefined;
@@ -5633,7 +5421,7 @@ var styles = function styles(theme) {
  * Chips represent complex entities in small blocks, such as a contact.
  */
 
-var Chip = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Chip(props, ref) {
+var Chip = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Chip(props, ref) {
   var avatarProp = props.avatar,
       classes = props.classes,
       className = props.className,
@@ -5648,14 +5436,15 @@ var Chip = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Chip
       label = props.label,
       onClick = props.onClick,
       onDelete = props.onDelete,
+      onKeyDown = props.onKeyDown,
       onKeyUp = props.onKeyUp,
       _props$size = props.size,
       size = _props$size === void 0 ? 'medium' : _props$size,
       _props$variant = props.variant,
       variant = _props$variant === void 0 ? 'default' : _props$variant,
-      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["avatar", "classes", "className", "clickable", "color", "component", "deleteIcon", "disabled", "icon", "label", "onClick", "onDelete", "onKeyUp", "size", "variant"]);
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["avatar", "classes", "className", "clickable", "color", "component", "deleteIcon", "disabled", "icon", "label", "onClick", "onDelete", "onKeyDown", "onKeyUp", "size", "variant"]);
 
-  var chipRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var chipRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_8__["default"])(chipRef, ref);
 
   var handleDeleteIconClick = function handleDeleteIconClick(event) {
@@ -5664,6 +5453,22 @@ var Chip = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Chip
 
     if (onDelete) {
       onDelete(event);
+    }
+  };
+
+  var isDeleteKeyboardEvent = function isDeleteKeyboardEvent(keyboardEvent) {
+    return keyboardEvent.key === 'Backspace' || keyboardEvent.key === 'Delete';
+  };
+
+  var handleKeyDown = function handleKeyDown(event) {
+    if (isDeleteKeyboardEvent(event)) {
+      // will be handled in keyUp, otherwise some browsers
+      // might init navigation
+      event.preventDefault();
+    }
+
+    if (onKeyDown) {
+      onKeyDown(event);
     }
   };
 
@@ -5677,11 +5482,9 @@ var Chip = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Chip
       return;
     }
 
-    var key = event.key;
-
-    if (onDelete && (key === 'Backspace' || key === 'Delete')) {
+    if (onDelete && isDeleteKeyboardEvent(event)) {
       onDelete(event);
-    } else if (key === 'Escape' && chipRef.current) {
+    } else if (event.key === 'Escape' && chipRef.current) {
       chipRef.current.blur();
     }
   };
@@ -5696,10 +5499,10 @@ var Chip = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Chip
 
   if (onDelete) {
     var customClasses = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(color !== 'default' && (variant === "default" ? classes["deleteIconColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_10__["default"])(color))] : classes["deleteIconOutlinedColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_10__["default"])(color))]), small && classes.deleteIconSmall);
-    deleteIcon = deleteIconProp && react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(deleteIconProp) ? react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(deleteIconProp, {
+    deleteIcon = deleteIconProp && react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](deleteIconProp) ? react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](deleteIconProp, {
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(deleteIconProp.props.className, classes.deleteIcon, customClasses),
       onClick: handleDeleteIconClick
-    }) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_Cancel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_Cancel__WEBPACK_IMPORTED_MODULE_5__["default"], {
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.deleteIcon, customClasses),
       onClick: handleDeleteIconClick
     });
@@ -5707,16 +5510,16 @@ var Chip = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Chip
 
   var avatar = null;
 
-  if (avatarProp && react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(avatarProp)) {
-    avatar = react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(avatarProp, {
+  if (avatarProp && react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](avatarProp)) {
+    avatar = react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](avatarProp, {
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.avatar, avatarProp.props.className, small && classes.avatarSmall, color !== 'default' && classes["avatarColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_10__["default"])(color))])
     });
   }
 
   var icon = null;
 
-  if (iconProp && react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(iconProp)) {
-    icon = react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(iconProp, {
+  if (iconProp && react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](iconProp)) {
+    icon = react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](iconProp, {
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.icon, iconProp.props.className, small && classes.iconSmall, color !== 'default' && classes["iconColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_10__["default"])(color))])
     });
   }
@@ -5727,18 +5530,19 @@ var Chip = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Chip
     }
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     role: clickable || onDelete ? 'button' : undefined,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, color !== 'default' && [classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_10__["default"])(color))], clickable && classes["clickableColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_10__["default"])(color))], onDelete && classes["deletableColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_10__["default"])(color))]], variant !== "default" && [classes.outlined, {
-      primary: classes.outlinedPrimary,
-      secondary: classes.outlinedSecondary
+      'primary': classes.outlinedPrimary,
+      'secondary': classes.outlinedSecondary
     }[color]], disabled && classes.disabled, small && classes.sizeSmall, clickable && classes.clickable, onDelete && classes.deletable),
     "aria-disabled": disabled ? true : undefined,
     tabIndex: clickable || onDelete ? 0 : undefined,
     onClick: onClick,
+    onKeyDown: handleKeyDown,
     onKeyUp: handleKeyUp,
     ref: handleRef
-  }, moreProps, other), avatar || icon, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, moreProps, other), avatar || icon, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.label, small && classes.labelSmall)
   }, label), deleteIcon);
 });
@@ -5990,7 +5794,7 @@ var styles = function styles(theme) {
  * attribute to `true` on that region until it has finished loading.
  */
 
-var CircularProgress = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function CircularProgress(props, ref) {
+var CircularProgress = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function CircularProgress(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$color = props.color,
@@ -6026,10 +5830,10 @@ var CircularProgress = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
     }
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, color !== 'inherit' && classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_7__["default"])(color))], {
-      indeterminate: classes.indeterminate,
-      static: classes.static
+      'indeterminate': classes.indeterminate,
+      'static': classes.static
     }[variant]),
     style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       width: size,
@@ -6037,13 +5841,13 @@ var CircularProgress = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
     }, rootStyle, {}, style),
     ref: ref,
     role: "progressbar"
-  }, rootProps, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("svg", {
+  }, rootProps, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("svg", {
     className: classes.svg,
     viewBox: "".concat(SIZE / 2, " ").concat(SIZE / 2, " ").concat(SIZE, " ").concat(SIZE)
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("circle", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("circle", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.circle, disableShrink && classes.circleDisableShrink, {
-      indeterminate: classes.circleIndeterminate,
-      static: classes.circleStatic
+      'indeterminate': classes.circleIndeterminate,
+      'static': classes.circleStatic
     }[variant]),
     style: circleStyle,
     cx: SIZE,
@@ -6172,17 +5976,17 @@ function mapEventPropToEvent(eventProp) {
  */
 
 
-var ClickAwayListener = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function ClickAwayListener(props, ref) {
+var ClickAwayListener = react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"](function ClickAwayListener(props, ref) {
   var children = props.children,
       _props$mouseEvent = props.mouseEvent,
       mouseEvent = _props$mouseEvent === void 0 ? 'onClick' : _props$mouseEvent,
       _props$touchEvent = props.touchEvent,
       touchEvent = _props$touchEvent === void 0 ? 'onTouchEnd' : _props$touchEvent,
       onClickAway = props.onClickAway;
-  var movedRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(false);
-  var nodeRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(null);
-  var mountedRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(false);
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+  var movedRef = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](false);
+  var nodeRef = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](null);
+  var mountedRef = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](false);
+  react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
     mountedRef.current = true;
     return function () {
       mountedRef.current = false;
@@ -6190,9 +5994,9 @@ var ClickAwayListener = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(
   }, []);
   var handleNodeRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_4__["default"])(nodeRef, ref); // can be removed once we drop support for non ref forwarding class components
 
-  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useCallback(function (instance) {
+  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_0__["useCallback"](function (instance) {
     // #StrictMode ready
-    Object(_utils_setRef__WEBPACK_IMPORTED_MODULE_5__["default"])(handleNodeRef, react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(instance));
+    Object(_utils_setRef__WEBPACK_IMPORTED_MODULE_5__["default"])(handleNodeRef, react_dom__WEBPACK_IMPORTED_MODULE_1__["findDOMNode"](instance));
   }, [handleNodeRef]);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_4__["default"])(children.ref, handleOwnRef);
   var handleClickAway = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_6__["default"])(function (event) {
@@ -6225,10 +6029,10 @@ var ClickAwayListener = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(
       onClickAway(event);
     }
   });
-  var handleTouchMove = react__WEBPACK_IMPORTED_MODULE_0___default.a.useCallback(function () {
+  var handleTouchMove = react__WEBPACK_IMPORTED_MODULE_0__["useCallback"](function () {
     movedRef.current = true;
   }, []);
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
     if (touchEvent !== false) {
       var mappedTouchEvent = mapEventPropToEvent(touchEvent);
       var doc = Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_3__["default"])(nodeRef.current);
@@ -6242,7 +6046,7 @@ var ClickAwayListener = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(
 
     return undefined;
   }, [handleClickAway, handleTouchMove, touchEvent]);
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
     if (mouseEvent !== false) {
       var mappedMouseEvent = mapEventPropToEvent(mouseEvent);
       var doc = Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_3__["default"])(nodeRef.current);
@@ -6254,7 +6058,7 @@ var ClickAwayListener = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(
 
     return undefined;
   }, [handleClickAway, mouseEvent]);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(children, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"](children, {
     ref: handleRef
   }));
 });
@@ -6375,7 +6179,7 @@ var styles = function styles(theme) {
  * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
  */
 
-var Collapse = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Collapse(props, ref) {
+var Collapse = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Collapse(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -6395,11 +6199,11 @@ var Collapse = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "collapsedHeight", "component", "in", "onEnter", "onEntered", "onEntering", "onExit", "onExiting", "style", "timeout"]);
 
   var theme = Object(_styles_useTheme__WEBPACK_IMPORTED_MODULE_9__["default"])();
-  var timer = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef();
-  var wrapperRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
-  var autoTransitionDuration = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef();
+  var timer = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]();
+  var wrapperRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
+  var autoTransitionDuration = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]();
   var collapsedHeight = typeof collapsedHeightProp === 'number' ? "".concat(collapsedHeightProp, "px") : collapsedHeightProp;
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     return function () {
       clearTimeout(timer.current);
     };
@@ -6488,7 +6292,7 @@ var Collapse = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_5__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_transition_group__WEBPACK_IMPORTED_MODULE_5__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     in: inProp,
     onEnter: handleEnter,
     onEntered: handleEntered,
@@ -6498,24 +6302,29 @@ var Collapse = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
     addEndListener: addEndListener,
     timeout: timeout === 'auto' ? null : timeout
   }, other), function (state, childProps) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.container, className, {
-        entered: classes.entered,
-        exited: !inProp && collapsedHeight === '0px' && classes.hidden
+        'entered': classes.entered,
+        'exited': !inProp && collapsedHeight === '0px' && classes.hidden
       }[state]),
       style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         minHeight: collapsedHeight
       }, style),
       ref: ref
-    }, childProps), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, childProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
       className: classes.wrapper,
       ref: wrapperRef
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
       className: classes.wrapperInner
     }, children)));
   });
 });
  true ? Collapse.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content node to be collapsed.
    */
@@ -6525,7 +6334,7 @@ var Collapse = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * @ignore
@@ -6535,7 +6344,7 @@ var Collapse = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
   /**
    * The height of the container when collapsed.
    */
-  collapsedHeight: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number]),
+  collapsedHeight: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string]),
 
   /**
    * The component used for the root node.
@@ -6584,10 +6393,11 @@ var Collapse = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
    *
    * Set to 'auto' to automatically calculate transition time based on height.
    */
-  timeout: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape({
+  timeout: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['auto']), prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
     enter: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
     exit: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number
-  }), prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['auto'])])
+  })])
 } : undefined;
 Collapse.muiSupportAuto = true;
 /* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
@@ -6649,7 +6459,8 @@ var styles = function styles(theme) {
       boxSizing: 'border-box',
       marginRight: 'auto',
       paddingLeft: theme.spacing(2),
-      paddingRight: theme.spacing(2)
+      paddingRight: theme.spacing(2),
+      display: 'block'
     }, theme.breakpoints.up('sm'), {
       paddingLeft: theme.spacing(3),
       paddingRight: theme.spacing(3)
@@ -6700,7 +6511,7 @@ var styles = function styles(theme) {
     })
   };
 };
-var Container = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Container(props, ref) {
+var Container = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function Container(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
@@ -6713,7 +6524,7 @@ var Container = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function
       maxWidth = _props$maxWidth === void 0 ? 'lg' : _props$maxWidth,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component", "disableGutters", "fixed", "maxWidth"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className, fixed && classes.fixed, disableGutters && classes.disableGutters, maxWidth !== false && classes["maxWidth".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_7__["default"])(String(maxWidth)))]),
     ref: ref
   }, other));
@@ -6784,51 +6595,59 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/CssBaseline/CssBaseline.js ***!
   \***********************************************************************/
-/*! exports provided: default */
+/*! exports provided: html, body, styles, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "html", function() { return html; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "body", function() { return body; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_makeStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/makeStyles */ "./node_modules/@material-ui/core/esm/styles/makeStyles.js");
+/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
 /* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/index.js");
 
 
 
 
 
-var useStyles = Object(_styles_makeStyles__WEBPACK_IMPORTED_MODULE_3__["default"])(function (theme) {
+var html = {
+  WebkitFontSmoothing: 'antialiased',
+  // Antialiasing.
+  MozOsxFontSmoothing: 'grayscale',
+  // Antialiasing.
+  // Change from `box-sizing: content-box` so that `width`
+  // is not affected by `padding` or `border`.
+  boxSizing: 'border-box'
+};
+var body = function body(theme) {
+  return Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    color: theme.palette.text.primary
+  }, theme.typography.body2, {
+    backgroundColor: theme.palette.background.default,
+    '@media print': {
+      // Save printer ink.
+      backgroundColor: theme.palette.common.white
+    }
+  });
+};
+var styles = function styles(theme) {
   return {
     '@global': {
-      html: {
-        WebkitFontSmoothing: 'antialiased',
-        // Antialiasing.
-        MozOsxFontSmoothing: 'grayscale',
-        // Antialiasing.
-        // Change from `box-sizing: content-box` so that `width`
-        // is not affected by `padding` or `border`.
-        boxSizing: 'border-box'
-      },
+      html: html,
       '*, *::before, *::after': {
         boxSizing: 'inherit'
       },
       'strong, b': {
-        fontWeight: 'bolder'
+        fontWeight: theme.typography.fontWeightBold
       },
       body: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-        margin: 0,
-        // Remove the margin in all browsers.
-        color: theme.palette.text.primary
-      }, theme.typography.body2, {
-        backgroundColor: theme.palette.background.default,
-        '@media print': {
-          // Save printer ink.
-          backgroundColor: theme.palette.common.white
-        },
+        margin: 0
+      }, body(theme), {
         // Add support for document.body.requestFullScreen().
         // Other elements, if background transparent, are not supported.
         '&::backdrop': {
@@ -6837,25 +6656,32 @@ var useStyles = Object(_styles_makeStyles__WEBPACK_IMPORTED_MODULE_3__["default"
       })
     }
   };
-}, {
-  name: 'MuiCssBaseline'
-});
+};
 /**
  * Kickstart an elegant, consistent, and simple baseline to build upon.
  */
 
 function CssBaseline(props) {
+  /* eslint-disable no-unused-vars */
   var _props$children = props.children,
-      children = _props$children === void 0 ? null : _props$children;
-  useStyles();
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, children);
+      children = _props$children === void 0 ? null : _props$children,
+      classes = props.classes;
+  /* eslint-enable no-unused-vars */
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"](react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, children);
 }
 
  true ? CssBaseline.propTypes = {
   /**
    * You can wrap a node.
    */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node,
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object
 } : undefined;
 
 if (true) {
@@ -6863,7 +6689,9 @@ if (true) {
   CssBaseline['propTypes' + ''] = Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_4__["exactProp"])(CssBaseline.propTypes);
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (CssBaseline);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_3__["default"])(styles, {
+  name: 'MuiCssBaseline'
+})(CssBaseline));
 
 /***/ }),
 
@@ -7064,7 +6892,7 @@ var defaultTransitionDuration = {
  * Dialogs are overlaid modal paper based components with a backdrop.
  */
 
-var Dialog = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Dialog(props, ref) {
+var Dialog = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function Dialog(props, ref) {
   var BackdropProps = props.BackdropProps,
       children = props.children,
       classes = props.classes,
@@ -7104,7 +6932,7 @@ var Dialog = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Di
       ariaLabelledby = props['aria-labelledby'],
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["BackdropProps", "children", "classes", "className", "disableBackdropClick", "disableEscapeKeyDown", "fullScreen", "fullWidth", "maxWidth", "onBackdropClick", "onClose", "onEnter", "onEntered", "onEntering", "onEscapeKeyDown", "onExit", "onExited", "onExiting", "open", "PaperComponent", "PaperProps", "scroll", "TransitionComponent", "transitionDuration", "TransitionProps", "aria-describedby", "aria-labelledby"]);
 
-  var mouseDownTarget = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef();
+  var mouseDownTarget = react__WEBPACK_IMPORTED_MODULE_3__["useRef"]();
 
   var handleMouseDown = function handleMouseDown(event) {
     mouseDownTarget.current = event.target;
@@ -7133,7 +6961,7 @@ var Dialog = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Di
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Modal__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_Modal__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
     BackdropComponent: _Backdrop__WEBPACK_IMPORTED_MODULE_9__["default"],
     BackdropProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -7146,7 +6974,7 @@ var Dialog = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Di
     onClose: onClose,
     open: open,
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     appear: true,
     in: open,
     timeout: transitionDuration,
@@ -7157,11 +6985,11 @@ var Dialog = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Di
     onExiting: onExiting,
     onExited: onExited,
     role: "none presentation"
-  }, TransitionProps), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, TransitionProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.container, classes["scroll".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_7__["default"])(scroll))]),
     onClick: handleBackdropClick,
     onMouseDown: handleMouseDown
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(PaperComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](PaperComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     elevation: 24,
     role: "dialog",
     "aria-describedby": ariaDescribedby,
@@ -7171,6 +6999,11 @@ var Dialog = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Di
   }), children))));
 });
  true ? Dialog.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The id(s) of the element(s) that describe the dialog.
    */
@@ -7189,13 +7022,13 @@ var Dialog = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Di
   /**
    * Dialog children, usually the included sub-components.
    */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node.isRequired,
+  children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node,
 
   /**
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * @ignore
@@ -7229,7 +7062,7 @@ var Dialog = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Di
    * The dialog width grows with the size of the screen.
    * Set to `false` to disable `maxWidth`.
    */
-  maxWidth: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['xs', 'sm', 'md', 'lg', 'xl', false]),
+  maxWidth: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['lg', 'md', 'sm', 'xl', 'xs', false]),
 
   /**
    * Callback fired when the backdrop is clicked.
@@ -7311,6 +7144,7 @@ var Dialog = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Di
    * You may specify a single timeout for all transitions, or individually with an object.
    */
   transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
     enter: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
     exit: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number
   })]),
@@ -7383,19 +7217,24 @@ var styles = {
     }
   }
 };
-var DialogActions = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function DialogActions(props, ref) {
+var DialogActions = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function DialogActions(props, ref) {
   var _props$disableSpacing = props.disableSpacing,
       disableSpacing = _props$disableSpacing === void 0 ? false : _props$disableSpacing,
       classes = props.classes,
       className = props.className,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["disableSpacing", "classes", "className"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, !disableSpacing && classes.spacing),
     ref: ref
   }, other));
 });
  true ? DialogActions.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component.
    */
@@ -7405,7 +7244,7 @@ var DialogActions = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(func
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -7486,19 +7325,24 @@ var styles = function styles(theme) {
     }
   };
 };
-var DialogContent = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function DialogContent(props, ref) {
+var DialogContent = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function DialogContent(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$dividers = props.dividers,
       dividers = _props$dividers === void 0 ? false : _props$dividers,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "dividers"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, dividers && classes.dividers),
     ref: ref
   }, other));
 });
  true ? DialogContent.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component.
    */
@@ -7508,7 +7352,7 @@ var DialogContent = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(func
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -7570,8 +7414,8 @@ var styles = {
     marginBottom: 12
   }
 };
-var DialogContentText = react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef(function DialogContentText(props, ref) {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+var DialogContentText = react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"](function DialogContentText(props, ref) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     component: "p",
     variant: "body1",
     color: "textSecondary",
@@ -7646,7 +7490,7 @@ var styles = {
     flex: '0 0 auto'
   }
 };
-var DialogTitle = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function DialogTitle(props, ref) {
+var DialogTitle = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function DialogTitle(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -7654,25 +7498,30 @@ var DialogTitle = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
       disableTypography = _props$disableTypogra === void 0 ? false : _props$disableTypogra,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "disableTypography"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     ref: ref
-  }, other), disableTypography ? children : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, other), disableTypography ? children : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
     component: "h2",
     variant: "h6"
   }, children));
 });
  true ? DialogTitle.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component.
    */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node.isRequired,
+  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
 
   /**
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -7782,7 +7631,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Divider = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Divider(props, ref) {
+var Divider = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Divider(props, ref) {
   var _props$absolute = props.absolute,
       absolute = _props$absolute === void 0 ? false : _props$absolute,
       classes = props.classes,
@@ -7801,10 +7650,8 @@ var Divider = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function D
       variant = _props$variant === void 0 ? 'fullWidth' : _props$variant,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["absolute", "classes", "className", "component", "flexItem", "light", "orientation", "role", "variant"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, variant !== 'fullWidth' && classes[variant], absolute && classes.absolute, flexItem && classes.flexItem, light && classes.light, {
-      vertical: classes.vertical
-    }[orientation]),
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, variant !== 'fullWidth' && classes[variant], absolute && classes.absolute, flexItem && classes.flexItem, light && classes.light, orientation === 'vertical' && classes.vertical),
     role: role,
     ref: ref
   }, other));
@@ -7833,7 +7680,8 @@ var Divider = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function D
   component: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.elementType,
 
   /**
-   * If `true`, the divider will apply adapt to a parent flex container.
+   * If `true`, a vertical divider will have the correct height when used in flex container.
+   * (By default, a vertical divider will have a calculated height of `0px` if it is the child of a flex container.)
    */
   flexItem: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.bool,
 
@@ -8025,7 +7873,7 @@ var defaultTransitionDuration = {
  * when `variant="temporary"` is set.
  */
 
-var Drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Drawer(props, ref) {
+var Drawer = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Drawer(props, ref) {
   var _props$anchor = props.anchor,
       anchorProp = _props$anchor === void 0 ? 'left' : _props$anchor,
       BackdropProps = props.BackdropProps,
@@ -8055,12 +7903,12 @@ var Drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Dr
   // We use this state is order to skip the appear transition during the
   // initial mount of the component.
 
-  var mounted = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(false);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  var mounted = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](false);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     mounted.current = true;
   }, []);
   var anchor = getAnchor(theme, anchorProp);
-  var drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Paper__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  var drawer = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Paper__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     elevation: variant === 'temporary' ? elevation : 0,
     square: true
   }, PaperProps, {
@@ -8068,13 +7916,13 @@ var Drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Dr
   }), children);
 
   if (variant === 'permanent') {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes.docked, className),
       ref: ref
     }, other), drawer);
   }
 
-  var slidingDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Slide__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  var slidingDrawer = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Slide__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     in: open,
     direction: oppositeDirection[anchor],
     timeout: transitionDuration,
@@ -8082,14 +7930,14 @@ var Drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Dr
   }, SlideProps), drawer);
 
   if (variant === 'persistent') {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes.docked, className),
       ref: ref
     }, other), slidingDrawer);
   } // variant === temporary
 
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Modal__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Modal__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     BackdropProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, BackdropProps, {}, BackdropPropsProp, {
       transitionDuration: transitionDuration
     }),
@@ -8101,10 +7949,15 @@ var Drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Dr
   }, other, ModalProps), slidingDrawer);
 });
  true ? Drawer.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * Side from which the drawer will appear.
    */
-  anchor: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['left', 'top', 'right', 'bottom']),
+  anchor: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['bottom', 'left', 'right', 'top']),
 
   /**
    * @ignore
@@ -8120,7 +7973,7 @@ var Drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Dr
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -8164,6 +8017,7 @@ var Drawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Dr
    * You may specify a single timeout for all transitions, or individually with an object.
    */
   transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
     enter: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
     exit: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number
   })]),
@@ -8309,7 +8163,7 @@ var styles = function styles(theme) {
     disabled: {}
   };
 };
-var ExpansionPanel = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function ExpansionPanel(props, ref) {
+var ExpansionPanel = react__WEBPACK_IMPORTED_MODULE_4__["forwardRef"](function ExpansionPanel(props, ref) {
   var childrenProp = props.children,
       classes = props.classes,
       className = props.className,
@@ -8335,7 +8189,7 @@ var ExpansionPanel = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(fun
       expanded = _useControlled2[0],
       setExpandedState = _useControlled2[1];
 
-  var handleChange = react__WEBPACK_IMPORTED_MODULE_4___default.a.useCallback(function (event) {
+  var handleChange = react__WEBPACK_IMPORTED_MODULE_4__["useCallback"](function (event) {
     setExpandedState(!expanded);
 
     if (onChange) {
@@ -8343,28 +8197,28 @@ var ExpansionPanel = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(fun
     }
   }, [expanded, onChange, setExpandedState]);
 
-  var _React$Children$toArr = react__WEBPACK_IMPORTED_MODULE_4___default.a.Children.toArray(childrenProp),
+  var _React$Children$toArr = react__WEBPACK_IMPORTED_MODULE_4__["Children"].toArray(childrenProp),
       _React$Children$toArr2 = Object(_babel_runtime_helpers_esm_toArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$Children$toArr),
       summary = _React$Children$toArr2[0],
       children = _React$Children$toArr2.slice(1);
 
-  var contextValue = react__WEBPACK_IMPORTED_MODULE_4___default.a.useMemo(function () {
+  var contextValue = react__WEBPACK_IMPORTED_MODULE_4__["useMemo"](function () {
     return {
       expanded: expanded,
       disabled: disabled,
       toggle: handleChange
     };
   }, [expanded, disabled, handleChange]);
-  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_Paper__WEBPACK_IMPORTED_MODULE_10__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](_Paper__WEBPACK_IMPORTED_MODULE_10__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_7__["default"])(classes.root, className, expanded && classes.expanded, disabled && classes.disabled, !square && classes.rounded),
     ref: ref,
     square: square
-  }, other), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_ExpansionPanelContext__WEBPACK_IMPORTED_MODULE_12__["default"].Provider, {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](_ExpansionPanelContext__WEBPACK_IMPORTED_MODULE_12__["default"].Provider, {
     value: contextValue
-  }, summary), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, summary), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     in: expanded,
     timeout: "auto"
-  }, TransitionProps), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+  }, TransitionProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("div", {
     "aria-labelledby": summary.props.id,
     id: summary.props['aria-controls'],
     role: "region"
@@ -8375,13 +8229,13 @@ var ExpansionPanel = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(fun
    * The content of the expansion panel.
    */
   children: Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_8__["chainPropTypes"])(prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.node.isRequired, function (props) {
-    var summary = react__WEBPACK_IMPORTED_MODULE_4___default.a.Children.toArray(props.children)[0];
+    var summary = react__WEBPACK_IMPORTED_MODULE_4__["Children"].toArray(props.children)[0];
 
     if (Object(react_is__WEBPACK_IMPORTED_MODULE_5__["isFragment"])(summary)) {
       return new Error("Material-UI: the ExpansionPanel doesn't accept a Fragment as a child. " + 'Consider providing an array instead.');
     }
 
-    if (!react__WEBPACK_IMPORTED_MODULE_4___default.a.isValidElement(summary)) {
+    if (!react__WEBPACK_IMPORTED_MODULE_4__["isValidElement"](summary)) {
       return new Error('Material-UI: expected the first child of ExpansionPanel to be a valid element.');
     }
 
@@ -8462,7 +8316,7 @@ __webpack_require__.r(__webpack_exports__);
  * @type {React.Context<{} | {expanded: boolean, disabled: boolean, toggle: () => void}>}
  */
 
-var ExpansionPanelContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({});
+var ExpansionPanelContext = react__WEBPACK_IMPORTED_MODULE_0__["createContext"]({});
 
 if (true) {
   ExpansionPanelContext.displayName = 'ExpansionPanelContext';
@@ -8528,29 +8382,34 @@ var styles = {
     }
   }
 };
-var ExpansionPanelActions = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ExpansionPanelActions(props, ref) {
+var ExpansionPanelActions = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ExpansionPanelActions(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$disableSpacing = props.disableSpacing,
       disableSpacing = _props$disableSpacing === void 0 ? false : _props$disableSpacing,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "disableSpacing"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, !disableSpacing && classes.spacing),
     ref: ref
   }, other));
 });
  true ? ExpansionPanelActions.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component.
    */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node.isRequired,
+  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
 
   /**
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -8615,27 +8474,32 @@ var styles = {
     padding: '8px 24px 24px'
   }
 };
-var ExpansionPanelDetails = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ExpansionPanelDetails(props, ref) {
+var ExpansionPanelDetails = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ExpansionPanelDetails(props, ref) {
   var classes = props.classes,
       className = props.className,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     ref: ref
   }, other));
 });
  true ? ExpansionPanelDetails.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the expansion panel details.
    */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node.isRequired,
+  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
 
   /**
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -8757,7 +8621,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var ExpansionPanelSummary = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ExpansionPanelSummary(props, ref) {
+var ExpansionPanelSummary = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ExpansionPanelSummary(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -8768,7 +8632,7 @@ var ExpansionPanelSummary = react__WEBPACK_IMPORTED_MODULE_2___default.a.forward
       onFocusVisible = props.onFocusVisible,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "expandIcon", "IconButtonProps", "onBlur", "onClick", "onFocusVisible"]);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
       focusedState = _React$useState[0],
       setFocusedState = _React$useState[1];
 
@@ -8788,7 +8652,7 @@ var ExpansionPanelSummary = react__WEBPACK_IMPORTED_MODULE_2___default.a.forward
     }
   };
 
-  var _React$useContext = react__WEBPACK_IMPORTED_MODULE_2___default.a.useContext(_ExpansionPanel_ExpansionPanelContext__WEBPACK_IMPORTED_MODULE_8__["default"]),
+  var _React$useContext = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_ExpansionPanel_ExpansionPanelContext__WEBPACK_IMPORTED_MODULE_8__["default"]),
       _React$useContext$dis = _React$useContext.disabled,
       disabled = _React$useContext$dis === void 0 ? false : _React$useContext$dis,
       expanded = _React$useContext.expanded,
@@ -8804,7 +8668,7 @@ var ExpansionPanelSummary = react__WEBPACK_IMPORTED_MODULE_2___default.a.forward
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     focusRipple: false,
     disableRipple: true,
     disabled: disabled,
@@ -8815,9 +8679,9 @@ var ExpansionPanelSummary = react__WEBPACK_IMPORTED_MODULE_2___default.a.forward
     onBlur: handleBlur,
     onClick: handleChange,
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.content, expanded && classes.expanded)
-  }, children), expandIcon && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, children), expandIcon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_IconButton__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.expandIcon, expanded && classes.expanded),
     edge: "end",
     component: "div",
@@ -8938,9 +8802,6 @@ var styles = function styles(theme) {
       },
       color: theme.palette.getContrastText(theme.palette.grey[300]),
       backgroundColor: theme.palette.grey[300],
-      '&$focusVisible': {
-        boxShadow: theme.shadows[6]
-      },
       '&:hover': {
         backgroundColor: theme.palette.grey.A100,
         // Reset on touch devices, it doesn't add specificity
@@ -8951,6 +8812,9 @@ var styles = function styles(theme) {
           backgroundColor: theme.palette.action.disabledBackground
         },
         textDecoration: 'none'
+      },
+      '&$focusVisible': {
+        boxShadow: theme.shadows[6]
       },
       '&$disabled': {
         color: theme.palette.action.disabled,
@@ -9042,7 +8906,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Fab = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Fab(props, ref) {
+var Fab = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Fab(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -9061,18 +8925,18 @@ var Fab = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Fab(p
       variant = _props$variant === void 0 ? 'round' : _props$variant,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["children", "classes", "className", "color", "component", "disabled", "disableFocusRipple", "focusVisibleClassName", "size", "variant"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, variant !== "round" && classes.extended, size !== 'large' && classes["size".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_7__["default"])(size))], disabled && classes.disabled, {
-      primary: classes.primary,
-      secondary: classes.secondary,
-      inherit: classes.colorInherit
+      'primary': classes.primary,
+      'secondary': classes.secondary,
+      'inherit': classes.colorInherit
     }[color]),
     component: component,
     disabled: disabled,
     focusRipple: !disableFocusRipple,
     focusVisibleClassName: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.focusVisible, focusVisibleClassName),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: classes.label
   }, children));
 });
@@ -9215,7 +9079,7 @@ var defaultTimeout = {
  * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
  */
 
-var Fade = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Fade(props, ref) {
+var Fade = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Fade(props, ref) {
   var children = props.children,
       inProp = props.in,
       onEnter = props.onEnter,
@@ -9260,14 +9124,14 @@ var Fade = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Fade
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_4__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_transition_group__WEBPACK_IMPORTED_MODULE_4__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     appear: true,
     in: inProp,
     onEnter: handleEnter,
     onExit: handleExit,
     timeout: timeout
   }, other), function (state, childProps) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         opacity: 0,
         visibility: state === 'exited' && !inProp ? 'hidden' : undefined
@@ -9277,6 +9141,11 @@ var Fade = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Fade
   });
 });
  true ? Fade.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * A single child content element.
    */
@@ -9307,6 +9176,7 @@ var Fade = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Fade
    * You may specify a single timeout for all transitions, or individually with an object.
    */
   timeout: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
     enter: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
     exit: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number
   })])
@@ -9518,7 +9388,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var FilledInput = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function FilledInput(props, ref) {
+var FilledInput = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function FilledInput(props, ref) {
   var disableUnderline = props.disableUnderline,
       classes = props.classes,
       _props$fullWidth = props.fullWidth,
@@ -9531,7 +9401,7 @@ var FilledInput = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
       type = _props$type === void 0 ? 'text' : _props$type,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["disableUnderline", "classes", "fullWidth", "inputComponent", "multiline", "type"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_InputBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_InputBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     classes: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, classes, {
       root: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, !disableUnderline && classes.underline),
       underline: null
@@ -9755,8 +9625,6 @@ var styles = {
     padding: 0,
     margin: 0,
     border: 0,
-    zIndex: 0,
-    // Fix blur label text issue
     verticalAlign: 'top' // Fix alignment issue on Safari.
 
   },
@@ -9802,7 +9670,7 @@ var styles = {
  * ⚠️Only one input can be used within a FormControl.
  */
 
-var FormControl = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function FormControl(props, ref) {
+var FormControl = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function FormControl(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -9827,13 +9695,13 @@ var FormControl = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
       variant = _props$variant === void 0 ? 'standard' : _props$variant,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "color", "component", "disabled", "error", "fullWidth", "hiddenLabel", "margin", "required", "size", "variant"]);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(function () {
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](function () {
     // We need to iterate through the children and find the Input in order
     // to fully support server-side rendering.
     var initialAdornedStart = false;
 
     if (children) {
-      react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.forEach(children, function (child) {
+      react__WEBPACK_IMPORTED_MODULE_2__["Children"].forEach(children, function (child) {
         if (!Object(_utils_isMuiElement__WEBPACK_IMPORTED_MODULE_8__["default"])(child, ['Input', 'Select'])) {
           return;
         }
@@ -9851,13 +9719,13 @@ var FormControl = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
       adornedStart = _React$useState[0],
       setAdornedStart = _React$useState[1];
 
-  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(function () {
+  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_2__["useState"](function () {
     // We need to iterate through the children and find the Input in order
     // to fully support server-side rendering.
     var initialFilled = false;
 
     if (children) {
-      react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.forEach(children, function (child) {
+      react__WEBPACK_IMPORTED_MODULE_2__["Children"].forEach(children, function (child) {
         if (!Object(_utils_isMuiElement__WEBPACK_IMPORTED_MODULE_8__["default"])(child, ['Input', 'Select'])) {
           return;
         }
@@ -9873,7 +9741,7 @@ var FormControl = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
       filled = _React$useState2[0],
       setFilled = _React$useState2[1];
 
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
       focused = _React$useState3[0],
       setFocused = _React$useState3[1];
 
@@ -9885,7 +9753,7 @@ var FormControl = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
 
   if (true) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    var registeredInput = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(false);
+    var registeredInput = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](false);
 
     registerEffect = function registerEffect() {
       if (registeredInput.current) {
@@ -9899,10 +9767,10 @@ var FormControl = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
     };
   }
 
-  var onFilled = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+  var onFilled = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function () {
     setFilled(true);
   }, []);
-  var onEmpty = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+  var onEmpty = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function () {
     setFilled(false);
   }, []);
   var childContext = {
@@ -9928,9 +9796,9 @@ var FormControl = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
     required: required,
     variant: variant
   };
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_FormControlContext__WEBPACK_IMPORTED_MODULE_9__["default"].Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_FormControlContext__WEBPACK_IMPORTED_MODULE_9__["default"].Provider, {
     value: childContext
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, margin !== 'none' && classes["margin".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_7__["default"])(margin))], fullWidth && classes.fullWidth),
     ref: ref
   }, other), children));
@@ -10028,14 +9896,14 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-var FormControlContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext();
+var FormControlContext = react__WEBPACK_IMPORTED_MODULE_0__["createContext"]();
 
 if (true) {
   FormControlContext.displayName = 'FormControlContext';
 }
 
 function useFormControl() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext(FormControlContext);
+  return react__WEBPACK_IMPORTED_MODULE_0__["useContext"](FormControlContext);
 }
 /* harmony default export */ __webpack_exports__["default"] = (FormControlContext);
 
@@ -10106,7 +9974,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function useFormControl() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext(_FormControlContext__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  return react__WEBPACK_IMPORTED_MODULE_0__["useContext"](_FormControlContext__WEBPACK_IMPORTED_MODULE_1__["default"]);
 }
 
 /***/ }),
@@ -10197,7 +10065,7 @@ var styles = function styles(theme) {
  * Use this component if you want to display an extra label.
  */
 
-var FormControlLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function FormControlLabel(props, ref) {
+var FormControlLabel = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function FormControlLabel(props, ref) {
   var checked = props.checked,
       classes = props.classes,
       className = props.className,
@@ -10231,10 +10099,10 @@ var FormControlLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
       controlProps[key] = props[key];
     }
   });
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("label", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, labelPlacement !== 'end' && classes["labelPlacement".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_9__["default"])(labelPlacement))], disabled && classes.disabled),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(control, controlProps), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, other), react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](control, controlProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
     component: "span",
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.label, disabled && classes.disabled)
   }, label));
@@ -10364,19 +10232,24 @@ var styles = {
  * For the `Radio`, you should be using the `RadioGroup` component instead of this one.
  */
 
-var FormGroup = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function FormGroup(props, ref) {
+var FormGroup = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function FormGroup(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$row = props.row,
       row = _props$row === void 0 ? false : _props$row,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "row"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, row && classes.row),
     ref: ref
   }, other));
 });
  true ? FormGroup.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component.
    */
@@ -10386,7 +10259,7 @@ var FormGroup = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -10492,7 +10365,7 @@ var styles = function styles(theme) {
     required: {}
   };
 };
-var FormHelperText = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function FormHelperText(props, ref) {
+var FormHelperText = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function FormHelperText(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -10513,13 +10386,13 @@ var FormHelperText = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fun
     muiFormControl: muiFormControl,
     states: ['variant', 'margin', 'disabled', 'error', 'filled', 'focused', 'required']
   });
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, (fcs.variant === 'filled' || fcs.variant === 'outlined') && classes.contained, className, fcs.disabled && classes.disabled, fcs.error && classes.error, fcs.filled && classes.filled, fcs.focused && classes.focused, fcs.required && classes.required, {
-      dense: classes.marginDense
-    }[fcs.margin]),
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, (fcs.variant === 'filled' || fcs.variant === 'outlined') && classes.contained, className, fcs.disabled && classes.disabled, fcs.error && classes.error, fcs.filled && classes.filled, fcs.focused && classes.focused, fcs.required && classes.required, fcs.margin === 'dense' && classes.marginDense),
     ref: ref
-  }, other), children === ' ' ? // eslint-disable-next-line react/no-danger
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other), children === ' ' ?
+  /*#__PURE__*/
+  // eslint-disable-next-line react/no-danger
+  react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     dangerouslySetInnerHTML: {
       __html: '&#8203;'
     }
@@ -10687,7 +10560,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var FormLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function FormLabel(props, ref) {
+var FormLabel = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function FormLabel(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -10707,10 +10580,10 @@ var FormLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
     muiFormControl: muiFormControl,
     states: ['color', 'required', 'focused', 'disabled', 'error', 'filled']
   });
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_7__["default"])(fcs.color || 'primary'))], className, fcs.disabled && classes.disabled, fcs.error && classes.error, fcs.filled && classes.filled, fcs.focused && classes.focused, fcs.required && classes.required),
     ref: ref
-  }, other), children, fcs.required && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other), children, fcs.required && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.asterisk, fcs.error && classes.error)
   }, "\u2009", '*'));
 });
@@ -10937,7 +10810,7 @@ var styles = function styles(theme) {
       flexDirection: 'column-reverse'
     },
 
-    /* Styles applied to the root element if `direction="rwo-reverse"`. */
+    /* Styles applied to the root element if `direction="row-reverse"`. */
     'direction-xs-row-reverse': {
       flexDirection: 'row-reverse'
     },
@@ -11027,7 +10900,7 @@ var styles = function styles(theme) {
     return accumulator;
   }, {}));
 };
-var Grid = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Grid(props, ref) {
+var Grid = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Grid(props, ref) {
   var _props$alignContent = props.alignContent,
       alignContent = _props$alignContent === void 0 ? 'stretch' : _props$alignContent,
       _props$alignItems = props.alignItems,
@@ -11063,7 +10936,7 @@ var Grid = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Grid
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["alignContent", "alignItems", "classes", "className", "component", "container", "direction", "item", "justify", "lg", "md", "sm", "spacing", "wrap", "xl", "xs", "zeroMinWidth"]);
 
   var className = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classNameProp, container && [classes.container, spacing !== 0 && classes["spacing-xs-".concat(String(spacing))]], item && classes.item, zeroMinWidth && classes.zeroMinWidth, direction !== 'row' && classes["direction-xs-".concat(String(direction))], wrap !== 'wrap' && classes["wrap-xs-".concat(String(wrap))], alignItems !== 'stretch' && classes["align-items-xs-".concat(String(alignItems))], alignContent !== 'stretch' && classes["align-content-xs-".concat(String(alignContent))], justify !== 'flex-start' && classes["justify-xs-".concat(String(justify))], xs !== false && classes["grid-xs-".concat(String(xs))], sm !== false && classes["grid-sm-".concat(String(sm))], md !== false && classes["grid-md-".concat(String(md))], lg !== false && classes["grid-lg-".concat(String(lg))], xl !== false && classes["grid-xl-".concat(String(xl))]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     className: className,
     ref: ref
   }, other));
@@ -11255,7 +11128,7 @@ var styles = {
 
   }
 };
-var GridList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function GridList(props, ref) {
+var GridList = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function GridList(props, ref) {
   var _props$cellHeight = props.cellHeight,
       cellHeight = _props$cellHeight === void 0 ? 180 : _props$cellHeight,
       children = props.children,
@@ -11270,14 +11143,14 @@ var GridList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       style = props.style,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["cellHeight", "children", "classes", "className", "cols", "component", "spacing", "style"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
     ref: ref,
     style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       margin: -spacing / 2
     }, style)
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.map(children, function (child) {
-    if (!react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(child)) {
+  }, other), react__WEBPACK_IMPORTED_MODULE_2__["Children"].map(children, function (child) {
+    if (!react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](child)) {
       return null;
     }
 
@@ -11289,7 +11162,7 @@ var GridList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
 
     var childCols = child.props.cols || 1;
     var childRows = child.props.rows || 1;
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(child, {
+    return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](child, {
       style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         width: "".concat(100 / cols * childCols, "%"),
         height: cellHeight === 'auto' ? 'auto' : cellHeight * childRows + spacing,
@@ -11461,7 +11334,7 @@ function ensureImageCover(imgEl, classes) {
   }
 }
 
-var GridListTile = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function GridListTile(props, ref) {
+var GridListTile = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function GridListTile(props, ref) {
   // cols rows default values are for docs only
   var children = props.children,
       classes = props.classes,
@@ -11474,11 +11347,11 @@ var GridListTile = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(funct
       rows = _props$rows === void 0 ? 1 : _props$rows,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "cols", "component", "rows"]);
 
-  var imgRef = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(null);
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  var imgRef = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](null);
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     ensureImageCover(imgRef.current, classes);
   });
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     var handleResize = Object(_utils_debounce__WEBPACK_IMPORTED_MODULE_6__["default"])(function () {
       fit(imgRef.current, classes);
     });
@@ -11488,18 +11361,18 @@ var GridListTile = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(funct
       window.removeEventListener('resize', handleResize);
     };
   }, [classes]);
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", {
     className: classes.tile
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.Children.map(children, function (child) {
-    if (!react__WEBPACK_IMPORTED_MODULE_3___default.a.isValidElement(child)) {
+  }, react__WEBPACK_IMPORTED_MODULE_3__["Children"].map(children, function (child) {
+    if (!react__WEBPACK_IMPORTED_MODULE_3__["isValidElement"](child)) {
       return null;
     }
 
     if (child.type === 'img' || Object(_utils_isMuiElement__WEBPACK_IMPORTED_MODULE_8__["default"])(child, ['Image'])) {
-      return react__WEBPACK_IMPORTED_MODULE_3___default.a.cloneElement(child, {
+      return react__WEBPACK_IMPORTED_MODULE_3__["cloneElement"](child, {
         ref: imgRef
       });
     }
@@ -11663,7 +11536,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var GridListTileBar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function GridListTileBar(props, ref) {
+var GridListTileBar = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function GridListTileBar(props, ref) {
   var actionIcon = props.actionIcon,
       _props$actionPosition = props.actionPosition,
       actionPosition = _props$actionPosition === void 0 ? 'right' : _props$actionPosition,
@@ -11676,25 +11549,28 @@ var GridListTileBar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["actionIcon", "actionPosition", "classes", "className", "subtitle", "title", "titlePosition"]);
 
   var actionPos = actionIcon && actionPosition;
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, titlePosition === 'top' ? classes.titlePositionTop : classes.titlePositionBottom, subtitle && classes.rootSubtitle),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.titleWrap, {
-      left: classes.titleWrapActionPosLeft,
-      right: classes.titleWrapActionPosRight
+      'left': classes.titleWrapActionPosLeft,
+      'right': classes.titleWrapActionPosRight
     }[actionPos])
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: classes.title
-  }, title), subtitle ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, title), subtitle ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: classes.subtitle
-  }, subtitle) : null), actionIcon ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.actionIcon, {
-      left: classes.actionIconActionPosLeft
-    }[actionPos])
+  }, subtitle) : null), actionIcon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.actionIcon, actionPos === 'left' && classes.actionIconActionPosLeft)
   }, actionIcon) : null);
 });
  true ? GridListTileBar.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * An IconButton element to be used as secondary action target
    * (primary action target is the tile itself).
@@ -11710,7 +11586,7 @@ var GridListTileBar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -11730,7 +11606,7 @@ var GridListTileBar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
   /**
    * Position of the title bar.
    */
-  titlePosition: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['top', 'bottom'])
+  titlePosition: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['bottom', 'top'])
 } : undefined;
 /* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_5__["default"])(styles, {
   name: 'MuiGridListTileBar'
@@ -11802,7 +11678,7 @@ var styles = {
  * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
  */
 
-var Grow = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Grow(props, ref) {
+var Grow = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Grow(props, ref) {
   var children = props.children,
       inProp = props.in,
       onEnter = props.onEnter,
@@ -11812,8 +11688,8 @@ var Grow = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Grow
       timeout = _props$timeout === void 0 ? 'auto' : _props$timeout,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "in", "onEnter", "onExit", "style", "timeout"]);
 
-  var timer = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef();
-  var autoTimeout = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef();
+  var timer = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]();
+  var autoTimeout = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]();
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_7__["default"])(children.ref, ref);
   var theme = Object(_styles_useTheme__WEBPACK_IMPORTED_MODULE_5__["default"])();
 
@@ -11891,12 +11767,12 @@ var Grow = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Grow
     }
   };
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     return function () {
       clearTimeout(timer.current);
     };
   }, []);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_4__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_transition_group__WEBPACK_IMPORTED_MODULE_4__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     appear: true,
     in: inProp,
     onEnter: handleEnter,
@@ -11904,7 +11780,7 @@ var Grow = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Grow
     addEndListener: addEndListener,
     timeout: timeout === 'auto' ? null : timeout
   }, other), function (state, childProps) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         opacity: 0,
         transform: getScale(0.75),
@@ -11915,6 +11791,11 @@ var Grow = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Grow
   });
 });
  true ? Grow.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * A single child content element.
    */
@@ -11946,10 +11827,11 @@ var Grow = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Grow
    *
    * Set to 'auto' to automatically calculate transition time based on height.
    */
-  timeout: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.shape({
+  timeout: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['auto']), prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
     enter: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
     exit: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number
-  }), prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['auto'])])
+  })])
 } : undefined;
 Grow.muiSupportAuto = true;
 /* harmony default export */ __webpack_exports__["default"] = (Grow);
@@ -12025,7 +11907,7 @@ function Hidden(props) {
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["implementation", "lgDown", "lgUp", "mdDown", "mdUp", "smDown", "smUp", "xlDown", "xlUp", "xsDown", "xsUp"]);
 
   if (implementation === 'js') {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_HiddenJs__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_HiddenJs__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       lgDown: lgDown,
       lgUp: lgUp,
       mdDown: mdDown,
@@ -12039,7 +11921,7 @@ function Hidden(props) {
     }, other));
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_HiddenCss__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_HiddenCss__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     lgDown: lgDown,
     lgUp: lgUp,
     mdDown: mdDown,
@@ -12233,7 +12115,7 @@ function HiddenCss(props) {
     });
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: clsx.join(' ')
   }, children);
 }
@@ -12585,7 +12467,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Icon = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Icon(props, ref) {
+var Icon = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Icon(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$color = props.color,
@@ -12596,7 +12478,7 @@ var Icon = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Icon
       fontSize = _props$fontSize === void 0 ? 'default' : _props$fontSize,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "color", "component", "fontSize"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])('material-icons', classes.root, className, color !== 'inherit' && classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], fontSize !== 'default' && classes["fontSize".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(fontSize))]),
     "aria-hidden": true,
     ref: ref
@@ -12786,7 +12668,7 @@ var styles = function styles(theme) {
  * regarding the available icon options.
  */
 
-var IconButton = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function IconButton(props, ref) {
+var IconButton = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function IconButton(props, ref) {
   var _props$edge = props.edge,
       edge = _props$edge === void 0 ? false : _props$edge,
       children = props.children,
@@ -12802,18 +12684,16 @@ var IconButton = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
       size = _props$size === void 0 ? 'medium' : _props$size,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["edge", "children", "classes", "className", "color", "disabled", "disableFocusRipple", "size"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, color !== 'default' && classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_9__["default"])(color))], disabled && classes.disabled, {
-      small: classes["size".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_9__["default"])(size))]
-    }[size], {
-      start: classes.edgeStart,
-      end: classes.edgeEnd
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, color !== 'default' && classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_9__["default"])(color))], disabled && classes.disabled, size === "small" && classes["size".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_9__["default"])(size))], {
+      'start': classes.edgeStart,
+      'end': classes.edgeEnd
     }[edge]),
     centerRipple: true,
     focusRipple: !disableFocusRipple,
     disabled: disabled,
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: classes.label
   }, children));
 });
@@ -12822,8 +12702,8 @@ var IconButton = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
    * The icon element.
    */
   children: Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_5__["chainPropTypes"])(prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node, function (props) {
-    var found = react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.toArray(props.children).some(function (child) {
-      return react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(child) && child.props.onClick;
+    var found = react__WEBPACK_IMPORTED_MODULE_2__["Children"].toArray(props.children).some(function (child) {
+      return react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](child) && child.props.onClick;
     });
 
     if (found) {
@@ -13035,7 +12915,7 @@ var styles = function styles(theme) {
     inputTypeSearch: {}
   };
 };
-var Input = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Input(props, ref) {
+var Input = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Input(props, ref) {
   var disableUnderline = props.disableUnderline,
       classes = props.classes,
       _props$fullWidth = props.fullWidth,
@@ -13048,7 +12928,7 @@ var Input = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Inp
       type = _props$type === void 0 ? 'text' : _props$type,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["disableUnderline", "classes", "fullWidth", "inputComponent", "multiline", "type"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_InputBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_InputBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     classes: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, classes, {
       root: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, !disableUnderline && classes.underline),
       underline: null
@@ -13296,7 +13176,7 @@ var styles = {
   /* Styles applied if the adornment is used inside <FormControl margin="dense" />. */
   marginDense: {}
 };
-var InputAdornment = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function InputAdornment(props, ref) {
+var InputAdornment = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function InputAdornment(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -13325,19 +13205,15 @@ var InputAdornment = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fun
     variant = muiFormControl.variant;
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_FormControl_FormControlContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_FormControl_FormControlContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
     value: null
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, disablePointerEvents && classes.disablePointerEvents, muiFormControl.hiddenLabel && classes.hiddenLabel, {
-      filled: classes.filled
-    }[variant], {
-      start: classes.positionStart,
-      end: classes.positionEnd
-    }[position], {
-      dense: classes.marginDense
-    }[muiFormControl.margin]),
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, disablePointerEvents && classes.disablePointerEvents, muiFormControl.hiddenLabel && classes.hiddenLabel, variant === 'filled' && classes.filled, {
+      'start': classes.positionStart,
+      'end': classes.positionEnd
+    }[position], muiFormControl.margin === 'dense' && classes.marginDense),
     ref: ref
-  }, other), typeof children === 'string' && !disableTypography ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, other), typeof children === 'string' && !disableTypography ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
     color: "textSecondary"
   }, children) : children));
 });
@@ -13626,14 +13502,14 @@ var styles = function styles(theme) {
     inputHiddenLabel: {}
   };
 };
-var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect : react__WEBPACK_IMPORTED_MODULE_2___default.a.useLayoutEffect;
+var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2__["useEffect"] : react__WEBPACK_IMPORTED_MODULE_2__["useLayoutEffect"];
 /**
  * `InputBase` contains as few styles as possible.
  * It aims to be a simple building block for creating an input.
  * It contains a load of style reset and some state logic.
  */
 
-var InputBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function InputBase(props, ref) {
+var InputBase = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function InputBase(props, ref) {
   var ariaDescribedby = props['aria-describedby'],
       autoComplete = props.autoComplete,
       autoFocus = props.autoFocus,
@@ -13676,11 +13552,11 @@ var InputBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
 
   var value = inputPropsProp.value != null ? inputPropsProp.value : valueProp;
 
-  var _React$useRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(value != null),
+  var _React$useRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](value != null),
       isControlled = _React$useRef.current;
 
-  var inputRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef();
-  var handleInputRefWarning = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (instance) {
+  var inputRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]();
+  var handleInputRefWarning = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (instance) {
     if (true) {
       if (instance && !(instance instanceof HTMLInputElement) && !instance.focus) {
         console.error(['Material-UI: you have provided a `inputComponent` to the input component', 'that does not correctly handle the `inputRef` prop.', 'Make sure the `inputRef` prop is called with a HTMLInputElement.'].join('\n'));
@@ -13691,7 +13567,7 @@ var InputBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
   var handleInputRefProp = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_10__["default"])(inputRefProp, handleInputPropsRefProp);
   var handleInputRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_10__["default"])(inputRef, handleInputRefProp);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
       focused = _React$useState[0],
       setFocused = _React$useState[1];
 
@@ -13699,7 +13575,7 @@ var InputBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
 
   if (true) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+    react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
       if (muiFormControl) {
         return muiFormControl.registerEffect();
       }
@@ -13716,7 +13592,7 @@ var InputBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
   fcs.focused = muiFormControl ? muiFormControl.focused : focused; // The blur won't fire when the disabled state is set on a focused input.
   // We need to book keep the focused state manually.
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (!muiFormControl && disabled && focused) {
       setFocused(false);
 
@@ -13727,7 +13603,7 @@ var InputBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
   }, [muiFormControl, disabled, focused, onBlur]);
   var onFilled = muiFormControl && muiFormControl.onFilled;
   var onEmpty = muiFormControl && muiFormControl.onEmpty;
-  var checkDirty = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (obj) {
+  var checkDirty = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (obj) {
     if (Object(_utils__WEBPACK_IMPORTED_MODULE_12__["isFilled"])(obj)) {
       if (onFilled) {
         onFilled();
@@ -13812,7 +13688,7 @@ var InputBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
   // or auto filled by the browser before the hydration (for SSR).
 
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     checkDirty(inputRef.current);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -13864,20 +13740,18 @@ var InputBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
     });
   };
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (muiFormControl) {
       muiFormControl.setAdornedStart(Boolean(startAdornment));
     }
   }, [muiFormControl, startAdornment]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_9__["default"])(fcs.color || 'primary'))], className, fcs.disabled && classes.disabled, fcs.error && classes.error, fullWidth && classes.fullWidth, fcs.focused && classes.focused, muiFormControl && classes.formControl, multiline && classes.multiline, startAdornment && classes.adornedStart, endAdornment && classes.adornedEnd, {
-      dense: classes.marginDense
-    }[fcs.margin]),
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_9__["default"])(fcs.color || 'primary'))], className, fcs.disabled && classes.disabled, fcs.error && classes.error, fullWidth && classes.fullWidth, fcs.focused && classes.focused, muiFormControl && classes.formControl, multiline && classes.multiline, startAdornment && classes.adornedStart, endAdornment && classes.adornedEnd, fcs.margin === 'dense' && classes.marginDense),
     onClick: handleClick,
     ref: ref
-  }, other), startAdornment, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_FormControl_FormControlContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
+  }, other), startAdornment, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_FormControl_FormControlContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
     value: null
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(InputComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](InputComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     "aria-invalid": fcs.error,
     "aria-describedby": ariaDescribedby,
     autoComplete: autoComplete,
@@ -13895,11 +13769,7 @@ var InputBase = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
     onKeyDown: onKeyDown,
     onKeyUp: onKeyUp
   }, inputProps, {
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.input, inputPropsProp.className, fcs.disabled && classes.disabled, multiline && classes.inputMultiline, fcs.hiddenLabel && classes.inputHiddenLabel, startAdornment && classes.inputAdornedStart, endAdornment && classes.inputAdornedEnd, {
-      search: classes.inputTypeSearch
-    }[type], {
-      dense: classes.inputMarginDense
-    }[fcs.margin]),
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.input, inputPropsProp.className, fcs.disabled && classes.disabled, multiline && classes.inputMultiline, fcs.hiddenLabel && classes.inputHiddenLabel, startAdornment && classes.inputAdornedStart, endAdornment && classes.inputAdornedEnd, type === 'search' && classes.inputTypeSearch, fcs.margin === 'dense' && classes.inputMarginDense),
     onBlur: handleBlur,
     onChange: handleChange,
     onFocus: handleFocus
@@ -14273,7 +14143,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var InputLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function InputLabel(props, ref) {
+var InputLabel = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function InputLabel(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$disableAnimati = props.disableAnimation,
@@ -14295,13 +14165,11 @@ var InputLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
     muiFormControl: muiFormControl,
     states: ['margin', 'variant']
   });
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_FormLabel__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_FormLabel__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     "data-shrink": shrink,
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, muiFormControl && classes.formControl, !disableAnimation && classes.animated, shrink && classes.shrink, {
-      dense: classes.marginDense
-    }[fcs.margin], {
-      filled: classes.filled,
-      outlined: classes.outlined
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, muiFormControl && classes.formControl, !disableAnimation && classes.animated, shrink && classes.shrink, fcs.margin === 'dense' && classes.marginDense, {
+      'filled': classes.filled,
+      'outlined': classes.outlined
     }[fcs.variant]),
     classes: {
       focused: classes.focused,
@@ -14602,7 +14470,7 @@ var styles = function styles(theme) {
  * attribute to `true` on that region until it has finished loading.
  */
 
-var LinearProgress = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function LinearProgress(props, ref) {
+var LinearProgress = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function LinearProgress(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$color = props.color,
@@ -14649,35 +14517,40 @@ var LinearProgress = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fun
     }
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color))], className, {
-      determinate: classes.determinate,
-      indeterminate: classes.indeterminate,
-      buffer: classes.buffer,
-      query: classes.query
+      'determinate': classes.determinate,
+      'indeterminate': classes.indeterminate,
+      'buffer': classes.buffer,
+      'query': classes.query
     }[variant]),
     role: "progressbar"
   }, rootProps, {
     ref: ref
-  }, other), variant === 'buffer' ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, other), variant === 'buffer' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.dashed, classes["dashedColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color))])
-  }) : null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.bar, classes["barColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color))], (variant === 'indeterminate' || variant === 'query') && classes.bar1Indeterminate, {
-      determinate: classes.bar1Determinate,
-      buffer: classes.bar1Buffer
+      'determinate': classes.bar1Determinate,
+      'buffer': classes.bar1Buffer
     }[variant]),
     style: inlineStyles.bar1
-  }), variant === 'determinate' ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }), variant === 'determinate' ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.bar, (variant === 'indeterminate' || variant === 'query') && classes.bar2Indeterminate, variant === 'buffer' ? [classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color))], classes.bar2Buffer] : classes["barColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color))]),
     style: inlineStyles.bar2
   }));
 });
  true ? LinearProgress.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -14705,7 +14578,7 @@ var LinearProgress = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fun
    * The variant to use.
    * Use indeterminate or query when there is no progress value.
    */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['determinate', 'indeterminate', 'buffer', 'query'])
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['buffer', 'determinate', 'indeterminate', 'query'])
 } : undefined;
 /* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
   name: 'MuiLinearProgress'
@@ -14819,7 +14692,7 @@ var styles = {
   /* Pseudo-class applied to the root element if the link is keyboard focused. */
   focusVisible: {}
 };
-var Link = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Link(props, ref) {
+var Link = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Link(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$color = props.color,
@@ -14840,7 +14713,7 @@ var Link = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Link
       onBlurVisible = _useIsFocusVisible.onBlurVisible,
       focusVisibleRef = _useIsFocusVisible.ref;
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
       focusVisible = _React$useState[0],
       setFocusVisible = _React$useState[1];
 
@@ -14867,10 +14740,8 @@ var Link = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Link
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_10__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["underline".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(underline))], className, focusVisible && classes.focusVisible, {
-      button: classes.button
-    }[component]),
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_10__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["underline".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(underline))], className, focusVisible && classes.focusVisible, component === 'button' && classes.button),
     classes: TypographyClasses,
     color: color,
     component: component,
@@ -14900,7 +14771,7 @@ var Link = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Link
   /**
    * The color of the link.
    */
-  color: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['default', 'error', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary']),
+  color: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['initial', 'inherit', 'primary', 'secondary', 'textPrimary', 'textSecondary', 'error']),
 
   /**
    * The component used for the root node.
@@ -15004,7 +14875,7 @@ var styles = {
     paddingTop: 0
   }
 };
-var List = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function List(props, ref) {
+var List = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function List(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -15017,14 +14888,14 @@ var List = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function List
       subheader = props.subheader,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "component", "dense", "disablePadding", "subheader"]);
 
-  var context = react__WEBPACK_IMPORTED_MODULE_2___default.a.useMemo(function () {
+  var context = react__WEBPACK_IMPORTED_MODULE_2__["useMemo"](function () {
     return {
       dense: dense
     };
   }, [dense]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ListContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ListContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
     value: context
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, dense && classes.dense, !disablePadding && classes.padding, subheader && classes.subheader),
     ref: ref
   }, other), subheader, children));
@@ -15091,7 +14962,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-var ListContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({});
+var ListContext = react__WEBPACK_IMPORTED_MODULE_0__["createContext"]({});
 
 if (true) {
   ListContext.displayName = 'ListContext';
@@ -15239,12 +15110,12 @@ var styles = function styles(theme) {
     selected: {}
   };
 };
-var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect : react__WEBPACK_IMPORTED_MODULE_2___default.a.useLayoutEffect;
+var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2__["useEffect"] : react__WEBPACK_IMPORTED_MODULE_2__["useLayoutEffect"];
 /**
  * Uses an additional container component if `ListItemSecondaryAction` is the last child.
  */
 
-var ListItem = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ListItem(props, ref) {
+var ListItem = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ListItem(props, ref) {
   var _props$alignItems = props.alignItems,
       alignItems = _props$alignItems === void 0 ? 'center' : _props$alignItems,
       _props$autoFocus = props.autoFocus,
@@ -15275,12 +15146,12 @@ var ListItem = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       selected = _props$selected === void 0 ? false : _props$selected,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["alignItems", "autoFocus", "button", "children", "classes", "className", "component", "ContainerComponent", "ContainerProps", "dense", "disabled", "disableGutters", "divider", "focusVisibleClassName", "selected"]);
 
-  var context = react__WEBPACK_IMPORTED_MODULE_2___default.a.useContext(_List_ListContext__WEBPACK_IMPORTED_MODULE_10__["default"]);
+  var context = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_List_ListContext__WEBPACK_IMPORTED_MODULE_10__["default"]);
   var childContext = {
     dense: dense || context.dense || false,
     alignItems: alignItems
   };
-  var listItemRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var listItemRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
   useEnhancedEffect(function () {
     if (autoFocus) {
       if (listItemRef.current) {
@@ -15290,11 +15161,11 @@ var ListItem = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       }
     }
   }, [autoFocus]);
-  var children = react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.toArray(childrenProp);
+  var children = react__WEBPACK_IMPORTED_MODULE_2__["Children"].toArray(childrenProp);
   var hasSecondaryAction = children.length && Object(_utils_isMuiElement__WEBPACK_IMPORTED_MODULE_8__["default"])(children[children.length - 1], ['ListItemSecondaryAction']);
-  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (instance) {
+  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (instance) {
     // #StrictMode ready
-    listItemRef.current = react_dom__WEBPACK_IMPORTED_MODULE_11___default.a.findDOMNode(instance);
+    listItemRef.current = react_dom__WEBPACK_IMPORTED_MODULE_11__["findDOMNode"](instance);
   }, []);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_9__["default"])(handleOwnRef, ref);
 
@@ -15323,17 +15194,17 @@ var ListItem = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       }
     }
 
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_List_ListContext__WEBPACK_IMPORTED_MODULE_10__["default"].Provider, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_List_ListContext__WEBPACK_IMPORTED_MODULE_10__["default"].Provider, {
       value: childContext
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ContainerComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](ContainerComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.container, ContainerClassName),
       ref: handleRef
-    }, ContainerProps), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, componentProps, children), children.pop()));
+    }, ContainerProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, componentProps, children), children.pop()));
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_List_ListContext__WEBPACK_IMPORTED_MODULE_10__["default"].Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_List_ListContext__WEBPACK_IMPORTED_MODULE_10__["default"].Provider, {
     value: childContext
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     ref: handleRef
   }, componentProps), children));
 });
@@ -15360,7 +15231,7 @@ var ListItem = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
    * be the last child.
    */
   children: Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_5__["chainPropTypes"])(prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node, function (props) {
-    var children = react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.toArray(props.children); // React.Children.toArray(props.children).findLastIndex(isListItemSecondaryAction)
+    var children = react__WEBPACK_IMPORTED_MODULE_2__["Children"].toArray(props.children); // React.Children.toArray(props.children).findLastIndex(isListItemSecondaryAction)
 
     var secondaryActionIndex = -1;
 
@@ -15503,18 +15374,23 @@ var styles = {
  * A simple wrapper to apply `List` styles to an `Avatar`.
  */
 
-var ListItemAvatar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ListItemAvatar(props, ref) {
+var ListItemAvatar = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ListItemAvatar(props, ref) {
   var classes = props.classes,
       className = props.className,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className"]);
 
-  var context = react__WEBPACK_IMPORTED_MODULE_2___default.a.useContext(_List_ListContext__WEBPACK_IMPORTED_MODULE_6__["default"]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  var context = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_List_ListContext__WEBPACK_IMPORTED_MODULE_6__["default"]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, context.alignItems === 'flex-start' && classes.alignItemsFlexStart),
     ref: ref
   }, other));
 });
  true ? ListItemAvatar.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component – normally `Avatar`.
    */
@@ -15524,7 +15400,7 @@ var ListItemAvatar = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fun
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -15599,18 +15475,23 @@ var styles = function styles(theme) {
  * A simple wrapper to apply `List` styles to an `Icon` or `SvgIcon`.
  */
 
-var ListItemIcon = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ListItemIcon(props, ref) {
+var ListItemIcon = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ListItemIcon(props, ref) {
   var classes = props.classes,
       className = props.className,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className"]);
 
-  var context = react__WEBPACK_IMPORTED_MODULE_2___default.a.useContext(_List_ListContext__WEBPACK_IMPORTED_MODULE_6__["default"]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  var context = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_List_ListContext__WEBPACK_IMPORTED_MODULE_6__["default"]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, context.alignItems === 'flex-start' && classes.alignItemsFlexStart),
     ref: ref
   }, other));
 });
  true ? ListItemIcon.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component, normally `Icon`, `SvgIcon`,
    * or a `@material-ui/icons` SVG icon element.
@@ -15621,7 +15502,7 @@ var ListItemIcon = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(funct
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -15687,17 +15568,22 @@ var styles = {
  * Must be used as the last child of ListItem to function properly.
  */
 
-var ListItemSecondaryAction = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ListItemSecondaryAction(props, ref) {
+var ListItemSecondaryAction = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ListItemSecondaryAction(props, ref) {
   var classes = props.classes,
       className = props.className,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     ref: ref
   }, other));
 });
  true ? ListItemSecondaryAction.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component, normally an `IconButton` or selection control.
    */
@@ -15707,7 +15593,7 @@ var ListItemSecondaryAction = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwa
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -15794,7 +15680,7 @@ var styles = {
   /* Styles applied to the secondary `Typography` component. */
   secondary: {}
 };
-var ListItemText = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ListItemText(props, ref) {
+var ListItemText = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ListItemText(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -15808,37 +15694,44 @@ var ListItemText = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(funct
       secondaryTypographyProps = props.secondaryTypographyProps,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "disableTypography", "inset", "primary", "primaryTypographyProps", "secondary", "secondaryTypographyProps"]);
 
-  var _React$useContext = react__WEBPACK_IMPORTED_MODULE_2___default.a.useContext(_List_ListContext__WEBPACK_IMPORTED_MODULE_7__["default"]),
+  var _React$useContext = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_List_ListContext__WEBPACK_IMPORTED_MODULE_7__["default"]),
       dense = _React$useContext.dense;
 
   var primary = primaryProp != null ? primaryProp : children;
 
   if (primary != null && primary.type !== _Typography__WEBPACK_IMPORTED_MODULE_6__["default"] && !disableTypography) {
-    primary = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    primary = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       variant: dense ? 'body2' : 'body1',
       className: classes.primary,
-      component: "span"
+      component: "span",
+      display: "block"
     }, primaryTypographyProps), primary);
   }
 
   var secondary = secondaryProp;
 
   if (secondary != null && secondary.type !== _Typography__WEBPACK_IMPORTED_MODULE_6__["default"] && !disableTypography) {
-    secondary = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    secondary = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       variant: "body2",
       className: classes.secondary,
-      color: "textSecondary"
+      color: "textSecondary",
+      display: "block"
     }, secondaryTypographyProps), secondary);
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, dense && classes.dense, inset && classes.inset, primary && secondary && classes.multiline),
     ref: ref
   }, other), primary, secondary);
 });
  true ? ListItemText.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
-   * Alias for the `primary` property.
+   * Alias for the `primary` prop.
    */
   children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
 
@@ -15846,7 +15739,7 @@ var ListItemText = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(funct
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -15980,7 +15873,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var ListSubheader = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function ListSubheader(props, ref) {
+var ListSubheader = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function ListSubheader(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$color = props.color,
@@ -15995,7 +15888,7 @@ var ListSubheader = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(func
       inset = _props$inset === void 0 ? false : _props$inset,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "color", "component", "disableGutters", "disableSticky", "inset"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, color !== 'default' && classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], inset && classes.inset, !disableSticky && classes.sticky, !disableGutters && classes.gutters),
     ref: ref
   }, other));
@@ -16128,7 +16021,7 @@ var styles = {
     outline: 0
   }
 };
-var Menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Menu(props, ref) {
+var Menu = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Menu(props, ref) {
   var _props$autoFocus = props.autoFocus,
       autoFocus = _props$autoFocus === void 0 ? true : _props$autoFocus,
       children = props.children,
@@ -16151,8 +16044,8 @@ var Menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Menu
 
   var theme = Object(_styles_useTheme__WEBPACK_IMPORTED_MODULE_11__["default"])();
   var autoFocusItem = autoFocus && !disableAutoFocusItem && open;
-  var menuListActionsRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
-  var contentAnchorRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var menuListActionsRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
+  var contentAnchorRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
 
   var getContentAnchorEl = function getContentAnchorEl() {
     return contentAnchorRef.current;
@@ -16188,8 +16081,8 @@ var Menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Menu
   // to check if there is a `selected` item. We're looking for the last `selected`
   // item and use the first valid item as a fallback
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.map(children, function (child, index) {
-    if (!react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(child)) {
+  react__WEBPACK_IMPORTED_MODULE_2__["Children"].map(children, function (child, index) {
+    if (!react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](child)) {
       return;
     }
 
@@ -16207,12 +16100,12 @@ var Menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Menu
       }
     }
   });
-  var items = react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.map(children, function (child, index) {
+  var items = react__WEBPACK_IMPORTED_MODULE_2__["Children"].map(children, function (child, index) {
     if (index === activeItemIndex) {
-      return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(child, {
+      return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](child, {
         ref: function ref(instance) {
           // #StrictMode ready
-          contentAnchorRef.current = react_dom__WEBPACK_IMPORTED_MODULE_9___default.a.findDOMNode(instance);
+          contentAnchorRef.current = react_dom__WEBPACK_IMPORTED_MODULE_9__["findDOMNode"](instance);
           Object(_utils_setRef__WEBPACK_IMPORTED_MODULE_10__["default"])(child.ref, instance);
         }
       });
@@ -16220,7 +16113,7 @@ var Menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Menu
 
     return child;
   });
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Popover__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Popover__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     getContentAnchorEl: getContentAnchorEl,
     classes: PopoverClasses,
     onClose: onClose,
@@ -16235,7 +16128,7 @@ var Menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Menu
     open: open,
     ref: ref,
     transitionDuration: transitionDuration
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_MenuList__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_MenuList__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     onKeyDown: handleListKeyDown,
     actions: menuListActionsRef,
     autoFocus: autoFocus && (activeItemIndex === -1 || disableAutoFocusItem),
@@ -16246,10 +16139,15 @@ var Menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Menu
   }), items));
 });
  true ? Menu.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The DOM element used to set the position of the menu.
    */
-  anchorEl: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func]),
+  anchorEl: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.instanceOf(typeof Element === 'undefined' ? Object : Element)]),
 
   /**
    * If `true` (Default) will focus the `[role="menu"]` if no focusable child is found. Disabled
@@ -16268,7 +16166,7 @@ var Menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Menu
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * When opening the menu will not focus the active item but the `[role="menu"]`
@@ -16339,10 +16237,11 @@ var Menu = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Menu
   /**
    * The length of the transition in `ms`, or 'auto'
    */
-  transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape({
+  transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['auto']), prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
     enter: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
     exit: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number
-  }), prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['auto'])]),
+  })]),
 
   /**
    * The variant to use. Use `menu` to prevent selected items from impacting the initial focus
@@ -16428,7 +16327,7 @@ var styles = function styles(theme) {
     })
   };
 };
-var MenuItem = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function MenuItem(props, ref) {
+var MenuItem = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function MenuItem(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
@@ -16447,7 +16346,7 @@ var MenuItem = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
     tabIndex = tabIndexProp !== undefined ? tabIndexProp : -1;
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ListItem__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_ListItem__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
     button: true,
     role: role,
     tabIndex: tabIndex,
@@ -16619,7 +16518,7 @@ function textCriteriaMatches(nextFocus, textCriteria) {
   return text.indexOf(textCriteria.keys.join('')) === 0;
 }
 
-function moveFocus(list, currentFocus, disableListWrap, traversalFunction, textCriteria) {
+function moveFocus(list, currentFocus, disableListWrap, disabledItemsFocusable, traversalFunction, textCriteria) {
   var wrappedOnce = false;
   var nextFocus = traversalFunction(list, currentFocus, currentFocus ? disableListWrap : false);
 
@@ -16627,33 +16526,34 @@ function moveFocus(list, currentFocus, disableListWrap, traversalFunction, textC
     // Prevent infinite loop.
     if (nextFocus === list.firstChild) {
       if (wrappedOnce) {
-        return false;
+        return;
       }
 
       wrappedOnce = true;
-    } // Move to the next element.
+    } // Same logic as useAutocomplete.js
 
 
-    if (!nextFocus.hasAttribute('tabindex') || nextFocus.disabled || nextFocus.getAttribute('aria-disabled') === 'true' || !textCriteriaMatches(nextFocus, textCriteria)) {
+    var nextFocusDisabled = disabledItemsFocusable ? false : nextFocus.disabled || nextFocus.getAttribute('aria-disabled') === 'true';
+
+    if (!nextFocus.hasAttribute('tabindex') || !textCriteriaMatches(nextFocus, textCriteria) || nextFocusDisabled) {
+      // Move to the next element.
       nextFocus = traversalFunction(list, nextFocus, disableListWrap);
     } else {
       nextFocus.focus();
-      return true;
+      return;
     }
   }
-
-  return false;
 }
 
-var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect : react__WEBPACK_IMPORTED_MODULE_2___default.a.useLayoutEffect;
+var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2__["useEffect"] : react__WEBPACK_IMPORTED_MODULE_2__["useLayoutEffect"];
 /**
- * A permanently displayed menu following https://www.w3.org/TR/wai-aria-practices/#menubutton
+ * A permanently displayed menu following https://www.w3.org/TR/wai-aria-practices/#menubutton.
  * It's exposed to help customization of the [`Menu`](/api/menu/) component. If you
  * use it separately you need to move focus into the component manually. Once
  * the focus is placed inside the component it is fully keyboard accessible.
  */
 
-var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function MenuList(props, ref) {
+var MenuList = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function MenuList(props, ref) {
   var actions = props.actions,
       _props$autoFocus = props.autoFocus,
       autoFocus = _props$autoFocus === void 0 ? false : _props$autoFocus,
@@ -16661,15 +16561,17 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       autoFocusItem = _props$autoFocusItem === void 0 ? false : _props$autoFocusItem,
       children = props.children,
       className = props.className,
-      onKeyDown = props.onKeyDown,
+      _props$disabledItemsF = props.disabledItemsFocusable,
+      disabledItemsFocusable = _props$disabledItemsF === void 0 ? false : _props$disabledItemsF,
       _props$disableListWra = props.disableListWrap,
       disableListWrap = _props$disableListWra === void 0 ? false : _props$disableListWra,
+      onKeyDown = props.onKeyDown,
       _props$variant = props.variant,
       variant = _props$variant === void 0 ? 'selectedMenu' : _props$variant,
-      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["actions", "autoFocus", "autoFocusItem", "children", "className", "onKeyDown", "disableListWrap", "variant"]);
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["actions", "autoFocus", "autoFocusItem", "children", "className", "disabledItemsFocusable", "disableListWrap", "onKeyDown", "variant"]);
 
-  var listRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
-  var textCriteriaRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef({
+  var listRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
+  var textCriteriaRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]({
     keys: [],
     repeating: true,
     previousKeyMatched: true,
@@ -16680,7 +16582,7 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       listRef.current.focus();
     }
   }, [autoFocus]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useImperativeHandle(actions, function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useImperativeHandle"](actions, function () {
     return {
       adjustStyleForScrollbar: function adjustStyleForScrollbar(containerElement, theme) {
         // Let's ignore that piece of logic if users are already overriding the width
@@ -16713,16 +16615,16 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
     if (key === 'ArrowDown') {
       // Prevent scroll of the page
       event.preventDefault();
-      moveFocus(list, currentFocus, disableListWrap, nextItem);
+      moveFocus(list, currentFocus, disableListWrap, disabledItemsFocusable, nextItem);
     } else if (key === 'ArrowUp') {
       event.preventDefault();
-      moveFocus(list, currentFocus, disableListWrap, previousItem);
+      moveFocus(list, currentFocus, disableListWrap, disabledItemsFocusable, previousItem);
     } else if (key === 'Home') {
       event.preventDefault();
-      moveFocus(list, null, disableListWrap, nextItem);
+      moveFocus(list, null, disableListWrap, disabledItemsFocusable, nextItem);
     } else if (key === 'End') {
       event.preventDefault();
-      moveFocus(list, null, disableListWrap, previousItem);
+      moveFocus(list, null, disableListWrap, disabledItemsFocusable, previousItem);
     } else if (key.length === 1) {
       var criteria = textCriteriaRef.current;
       var lowerKey = key.toLowerCase();
@@ -16743,7 +16645,7 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       criteria.keys.push(lowerKey);
       var keepFocusOnCurrent = currentFocus && !criteria.repeating && textCriteriaMatches(currentFocus, criteria);
 
-      if (criteria.previousKeyMatched && (keepFocusOnCurrent || moveFocus(list, currentFocus, false, nextItem, criteria))) {
+      if (criteria.previousKeyMatched && (keepFocusOnCurrent || moveFocus(list, currentFocus, false, disabledItemsFocusable, nextItem, criteria))) {
         event.preventDefault();
       } else {
         criteria.previousKeyMatched = false;
@@ -16755,9 +16657,9 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
     }
   };
 
-  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (instance) {
+  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (instance) {
     // #StrictMode ready
-    listRef.current = react_dom__WEBPACK_IMPORTED_MODULE_5___default.a.findDOMNode(instance);
+    listRef.current = react_dom__WEBPACK_IMPORTED_MODULE_5__["findDOMNode"](instance);
   }, []);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_9__["default"])(handleOwnRef, ref);
   /**
@@ -16770,8 +16672,8 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
   // to check if there is a `selected` item. We're looking for the last `selected`
   // item and use the first valid item as a fallback
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.forEach(children, function (child, index) {
-    if (!react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(child)) {
+  react__WEBPACK_IMPORTED_MODULE_2__["Children"].forEach(children, function (child, index) {
+    if (!react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](child)) {
       return;
     }
 
@@ -16789,7 +16691,7 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       }
     }
   });
-  var items = react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.map(children, function (child, index) {
+  var items = react__WEBPACK_IMPORTED_MODULE_2__["Children"].map(children, function (child, index) {
     if (index === activeItemIndex) {
       var newChildProps = {};
 
@@ -16801,14 +16703,12 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
         newChildProps.tabIndex = 0;
       }
 
-      if (newChildProps !== null) {
-        return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(child, newChildProps);
-      }
+      return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](child, newChildProps);
     }
 
     return child;
   });
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_List__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_List__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     role: "menu",
     ref: handleRef,
     className: className,
@@ -16817,21 +16717,19 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
   }, other), items);
 });
  true ? MenuList.propTypes = {
-  /**
-   * @ignore
-   */
-  actions: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape({
-    current: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object
-  }),
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
 
   /**
-   * If `true`, will focus the `[role="menu"]` container and move into tab order
+   * If `true`, will focus the `[role="menu"]` container and move into tab order.
    */
   autoFocus: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
 
   /**
    * If `true`, will focus the first menuitem if `variant="menu"` or selected item
-   * if `variant="selectedMenu"`
+   * if `variant="selectedMenu"`.
    */
   autoFocusItem: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
 
@@ -16844,6 +16742,11 @@ var MenuList = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
    * @ignore
    */
   className: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
+
+  /**
+   * If `true`, will allow focus on disabled items.
+   */
+  disabledItemsFocusable: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
 
   /**
    * If `true`, the menu items will not wrap focus.
@@ -16972,7 +16875,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var MobileStepper = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function MobileStepper(props, ref) {
+var MobileStepper = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function MobileStepper(props, ref) {
   var _props$activeStep = props.activeStep,
       activeStep = _props$activeStep === void 0 ? 0 : _props$activeStep,
       backButton = props.backButton,
@@ -16987,25 +16890,30 @@ var MobileStepper = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(func
       variant = _props$variant === void 0 ? 'dots' : _props$variant,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, ["activeStep", "backButton", "classes", "className", "LinearProgressProps", "nextButton", "position", "steps", "variant"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Paper__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_Paper__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     square: true,
     elevation: 0,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, classes["position".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(position))], className),
     ref: ref
-  }, other), backButton, variant === 'text' && react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, activeStep + 1, " / ", steps), variant === 'dots' && react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, other), backButton, variant === 'text' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](react__WEBPACK_IMPORTED_MODULE_3__["Fragment"], null, activeStep + 1, " / ", steps), variant === 'dots' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", {
     className: classes.dots
   }, Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(new Array(steps)).map(function (_, index) {
-    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", {
       key: index,
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.dot, index === activeStep && classes.dotActive)
     });
-  })), variant === 'progress' && react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_LinearProgress__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  })), variant === 'progress' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_LinearProgress__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: classes.progress,
     variant: "determinate",
     value: Math.ceil(activeStep / (steps - 1) * 100)
   }, LinearProgressProps)), nextButton);
 });
  true ? MobileStepper.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * Set the active step (zero based index).
    * Defines which dot is highlighted when the variant is 'dots'.
@@ -17021,7 +16929,7 @@ var MobileStepper = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(func
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * @ignore
@@ -17041,7 +16949,7 @@ var MobileStepper = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(func
   /**
    * Set the positioning type.
    */
-  position: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['bottom', 'top', 'static']),
+  position: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['bottom', 'static', 'top']),
 
   /**
    * The total steps.
@@ -17051,7 +16959,7 @@ var MobileStepper = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(func
   /**
    * The variant to use.
    */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['text', 'dots', 'progress'])
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['dots', 'progress', 'text'])
 } : undefined;
 /* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
   name: 'MuiMobileStepper'
@@ -17123,7 +17031,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function getContainer(container) {
   container = typeof container === 'function' ? container() : container;
-  return react_dom__WEBPACK_IMPORTED_MODULE_3___default.a.findDOMNode(container);
+  return react_dom__WEBPACK_IMPORTED_MODULE_3__["findDOMNode"](container);
 }
 
 function getHasTransition(props) {
@@ -17165,7 +17073,7 @@ var styles = function styles(theme) {
  * This component shares many concepts with [react-overlays](https://react-bootstrap.github.io/react-overlays/#modals).
  */
 
-var Modal = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Modal(inProps, ref) {
+var Modal = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Modal(inProps, ref) {
   var theme = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_5__["useTheme"])();
   var props = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_5__["getThemeProps"])({
     name: 'MuiModal',
@@ -17207,13 +17115,13 @@ var Modal = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Mod
       open = props.open,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["BackdropComponent", "BackdropProps", "children", "closeAfterTransition", "container", "disableAutoFocus", "disableBackdropClick", "disableEnforceFocus", "disableEscapeKeyDown", "disablePortal", "disableRestoreFocus", "disableScrollLock", "hideBackdrop", "keepMounted", "manager", "onBackdropClick", "onClose", "onEscapeKeyDown", "onRendered", "open"]);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(true),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](true),
       exited = _React$useState[0],
       setExited = _React$useState[1];
 
-  var modal = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef({});
-  var mountNodeRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
-  var modalRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var modal = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]({});
+  var mountNodeRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
+  var modalRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_10__["default"])(modalRef, ref);
   var hasTransition = getHasTransition(props);
 
@@ -17243,7 +17151,7 @@ var Modal = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Mod
       handleMounted();
     }
   });
-  var isTopModal = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+  var isTopModal = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function () {
     return manager.isTopModal(getModal());
   }, [manager]);
   var handlePortalRef = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_11__["default"])(function (node) {
@@ -17263,15 +17171,15 @@ var Modal = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Mod
       Object(_ModalManager__WEBPACK_IMPORTED_MODULE_13__["ariaHidden"])(modalRef.current, true);
     }
   });
-  var handleClose = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+  var handleClose = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function () {
     manager.remove(getModal());
   }, [manager]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     return function () {
       handleClose();
     };
   }, [handleClose]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (open) {
       handleOpen();
     } else if (!hasTransition || !closeAfterTransition) {
@@ -17347,27 +17255,27 @@ var Modal = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Mod
     childProps.onExited = Object(_utils_createChainedFunction__WEBPACK_IMPORTED_MODULE_9__["default"])(handleExited, children.props.onExited);
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Portal__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Portal__WEBPACK_IMPORTED_MODULE_8__["default"], {
     ref: handlePortalRef,
     container: container,
     disablePortal: disablePortal
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     ref: handleRef,
     onKeyDown: handleKeyDown,
     role: "presentation"
   }, other, {
     style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, inlineStyle.root, {}, !open && exited ? inlineStyle.hidden : {}, {}, other.style)
-  }), hideBackdrop ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BackdropComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }), hideBackdrop ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](BackdropComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     open: open,
     onClick: handleBackdropClick
-  }, BackdropProps)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_TrapFocus__WEBPACK_IMPORTED_MODULE_14__["default"], {
+  }, BackdropProps)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_TrapFocus__WEBPACK_IMPORTED_MODULE_14__["default"], {
     disableEnforceFocus: disableEnforceFocus,
     disableAutoFocus: disableAutoFocus,
     disableRestoreFocus: disableRestoreFocus,
     getDoc: getDoc,
     isEnabled: isTopModal,
     open: open
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(children, childProps))));
+  }, react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](children, childProps))));
 });
  true ? Modal.propTypes = {
   /**
@@ -17650,9 +17558,7 @@ function getHiddenSiblings(container) {
  */
 
 
-var ModalManager =
-/*#__PURE__*/
-function () {
+var ModalManager = /*#__PURE__*/function () {
   function ModalManager() {
     Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, ModalManager);
 
@@ -17811,13 +17717,13 @@ var styles = {
  * @ignore - internal component.
  */
 
-var SimpleBackdrop = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function SimpleBackdrop(props, ref) {
+var SimpleBackdrop = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function SimpleBackdrop(props, ref) {
   var _props$invisible = props.invisible,
       invisible = _props$invisible === void 0 ? false : _props$invisible,
       open = props.open,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["invisible", "open"]);
 
-  return open ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     "aria-hidden": true,
     ref: ref
   }, other, {
@@ -17878,20 +17784,20 @@ function TrapFocus(props) {
       getDoc = props.getDoc,
       isEnabled = props.isEnabled,
       open = props.open;
-  var ignoreNextEnforceFocus = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef();
-  var sentinelStart = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(null);
-  var sentinelEnd = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(null);
-  var nodeToRestore = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef();
-  var rootRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(null); // can be removed once we drop support for non ref forwarding class components
+  var ignoreNextEnforceFocus = react__WEBPACK_IMPORTED_MODULE_0__["useRef"]();
+  var sentinelStart = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](null);
+  var sentinelEnd = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](null);
+  var nodeToRestore = react__WEBPACK_IMPORTED_MODULE_0__["useRef"]();
+  var rootRef = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](null); // can be removed once we drop support for non ref forwarding class components
 
-  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useCallback(function (instance) {
+  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_0__["useCallback"](function (instance) {
     // #StrictMode ready
-    rootRef.current = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(instance);
+    rootRef.current = react_dom__WEBPACK_IMPORTED_MODULE_1__["findDOMNode"](instance);
   }, []);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_4__["default"])(children.ref, handleOwnRef); // ⚠️ You may rely on React.useMemo as a performance optimization, not as a semantic guarantee.
   // https://reactjs.org/docs/hooks-reference.html#usememo
 
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useMemo(function () {
+  react__WEBPACK_IMPORTED_MODULE_0__["useMemo"](function () {
     if (!open || typeof window === 'undefined') {
       return;
     }
@@ -17899,7 +17805,7 @@ function TrapFocus(props) {
     nodeToRestore.current = getDoc().activeElement;
   }, [open]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
     if (!open) {
       return;
     }
@@ -17977,13 +17883,13 @@ function TrapFocus(props) {
       }
     };
   }, [disableAutoFocus, disableEnforceFocus, disableRestoreFocus, isEnabled, open]);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     tabIndex: 0,
     ref: sentinelStart,
     "data-test": "sentinelStart"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(children, {
+  }), react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"](children, {
     ref: handleRef
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     tabIndex: 0,
     ref: sentinelEnd,
     "data-test": "sentinelEnd"
@@ -18206,9 +18112,12 @@ var styles = function styles(theme) {
       right: 0,
       top: 'calc(50% - 12px)',
       // Center vertically
+      pointerEvents: 'none',
+      // Don't block pointer events on the select under the icon.
       color: theme.palette.action.active,
-      pointerEvents: 'none' // Don't block pointer events on the select under the icon.
-
+      '&$disabled': {
+        color: theme.palette.action.disabled
+      }
     },
 
     /* Styles applied to the icon component if the popup is open. */
@@ -18227,12 +18136,12 @@ var styles = function styles(theme) {
     }
   };
 };
-var defaultInput = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Input__WEBPACK_IMPORTED_MODULE_9__["default"], null);
+var defaultInput = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Input__WEBPACK_IMPORTED_MODULE_9__["default"], null);
 /**
  * An alternative to `<Select native />` with a much smaller bundle size footprint.
  */
 
-var NativeSelect = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function NativeSelect(props, ref) {
+var NativeSelect = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function NativeSelect(props, ref) {
   var children = props.children,
       classes = props.classes,
       _props$IconComponent = props.IconComponent,
@@ -18249,7 +18158,7 @@ var NativeSelect = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(funct
     muiFormControl: muiFormControl,
     states: ['variant']
   });
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(input, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](input, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     // Most of the logic is implemented in `NativeSelectInput`.
     // The `Select` component is a simple API wrapper to expose something better to play with.
     inputComponent: _NativeSelectInput__WEBPACK_IMPORTED_MODULE_4__["default"],
@@ -18264,6 +18173,11 @@ var NativeSelect = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(funct
   }, other));
 });
  true ? NativeSelect.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The option elements to populate the select with.
    * Can be some `<option>` elements.
@@ -18274,7 +18188,7 @@ var NativeSelect = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(funct
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * The icon that displays the arrow.
@@ -18307,7 +18221,7 @@ var NativeSelect = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(funct
   /**
    * The variant to use.
    */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['standard', 'outlined', 'filled'])
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['filled', 'outlined', 'standard'])
 } : undefined;
 NativeSelect.muiName = 'Select';
 /* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_5__["default"])(styles, {
@@ -18345,7 +18259,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-var NativeSelectInput = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function NativeSelectInput(props, ref) {
+var NativeSelectInput = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function NativeSelectInput(props, ref) {
   var classes = props.classes,
       className = props.className,
       disabled = props.disabled,
@@ -18355,13 +18269,13 @@ var NativeSelectInput = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(
       variant = _props$variant === void 0 ? 'standard' : _props$variant,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "disabled", "IconComponent", "inputRef", "variant"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("select", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, // TODO v5: merge root and select
     classes.select, classes[variant], className, disabled && classes.disabled),
     disabled: disabled,
     ref: inputRef || ref
-  }, other)), props.multiple ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(IconComponent, {
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.icon, classes["icon".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(variant))])
+  }, other)), props.multiple ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](IconComponent, {
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.icon, classes["icon".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(variant))], disabled && classes.disabled)
   }));
 });
  true ? NativeSelectInput.propTypes = {
@@ -18463,7 +18377,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var useEnhancedEffect = typeof window !== 'undefined' && "development" !== 'test' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect;
+var useEnhancedEffect = typeof window !== 'undefined' && "development" !== 'test' ? react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_0__["useEffect"];
 /**
  * NoSsr purposely removes components from the subject of Server Side Rendering (SSR).
  *
@@ -18481,7 +18395,7 @@ function NoSsr(props) {
       _props$fallback = props.fallback,
       fallback = _props$fallback === void 0 ? null : _props$fallback;
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__["useState"](false),
       mountedState = _React$useState[0],
       setMountedState = _React$useState[1];
 
@@ -18490,20 +18404,25 @@ function NoSsr(props) {
       setMountedState(true);
     }
   }, [defer]);
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
     if (defer) {
       setMountedState(true);
     }
   }, [defer]); // We need the Fragment here to force react-docgen to recognise NoSsr as a component.
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, mountedState ? children : fallback);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, mountedState ? children : fallback);
 }
 
  true ? NoSsr.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * You can wrap a node.
    */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node.isRequired,
+  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
 
   /**
    * If `true`, the component will not only prevent server-side rendering.
@@ -18617,9 +18536,10 @@ var styles = function styles(theme) {
         duration: 50,
         easing: theme.transitions.easing.easeOut
       }),
-      '& span': {
+      '& > span': {
         paddingLeft: 5,
-        paddingRight: 5
+        paddingRight: 5,
+        display: 'inline-block'
       }
     },
 
@@ -18638,7 +18558,7 @@ var styles = function styles(theme) {
  * @ignore - internal component.
  */
 
-var NotchedOutline = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function NotchedOutline(props, ref) {
+var NotchedOutline = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function NotchedOutline(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -18652,14 +18572,14 @@ var NotchedOutline = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(fun
   var align = theme.direction === 'rtl' ? 'right' : 'left';
 
   if (label !== undefined) {
-    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("fieldset", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("fieldset", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
       "aria-hidden": true,
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
       ref: ref,
       style: style
-    }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("legend", {
+    }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("legend", {
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.legendLabelled, notched && classes.legendNotched)
-    }, label ? react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, label) : react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
+    }, label ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("span", null, label) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("span", {
       dangerouslySetInnerHTML: {
         __html: '&#8203;'
       }
@@ -18667,12 +18587,12 @@ var NotchedOutline = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(fun
   }
 
   var labelWidth = labelWidthProp > 0 ? labelWidthProp * 0.75 + 8 : 0.01;
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("fieldset", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("fieldset", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     "aria-hidden": true,
     style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])(Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, "padding".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(align)), 8), style),
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("legend", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("legend", {
     className: classes.legend,
     style: {
       // IE 11: fieldset with legend does not render
@@ -18680,7 +18600,7 @@ var NotchedOutline = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(fun
       // by always having a legend rendered
       width: notched ? labelWidth : 0.01
     }
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("span", {
     dangerouslySetInnerHTML: {
       __html: '&#8203;'
     }
@@ -18862,7 +18782,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var OutlinedInput = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function OutlinedInput(props, ref) {
+var OutlinedInput = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function OutlinedInput(props, ref) {
   var classes = props.classes,
       _props$fullWidth = props.fullWidth,
       fullWidth = _props$fullWidth === void 0 ? false : _props$fullWidth,
@@ -18878,9 +18798,9 @@ var OutlinedInput = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(func
       type = _props$type === void 0 ? 'text' : _props$type,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "fullWidth", "inputComponent", "label", "labelWidth", "multiline", "notched", "type"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_InputBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_InputBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     renderSuffix: function renderSuffix(state) {
-      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_NotchedOutline__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_NotchedOutline__WEBPACK_IMPORTED_MODULE_7__["default"], {
         className: classes.notchedOutline,
         label: label,
         labelWidth: labelWidth,
@@ -19129,7 +19049,7 @@ var styles = function styles(theme) {
     }
   }, elevations);
 };
-var Paper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Paper(props, ref) {
+var Paper = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Paper(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
@@ -19148,12 +19068,17 @@ var Paper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Pap
     }
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, variant === 'outlined' ? classes.outlined : classes["elevation".concat(elevation)], !square && classes.rounded),
     ref: ref
   }, other));
 });
  true ? Paper.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The content of the component.
    */
@@ -19163,7 +19088,7 @@ var Paper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Pap
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -19328,7 +19253,7 @@ var styles = {
     outline: 0
   }
 };
-var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Popover(props, ref) {
+var Popover = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Popover(props, ref) {
   var action = props.action,
       anchorEl = props.anchorEl,
       _props$anchorOrigin = props.anchorOrigin,
@@ -19370,10 +19295,10 @@ var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function P
       TransitionProps = _props$TransitionProp === void 0 ? {} : _props$TransitionProp,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["action", "anchorEl", "anchorOrigin", "anchorPosition", "anchorReference", "children", "classes", "className", "container", "elevation", "getContentAnchorEl", "marginThreshold", "onEnter", "onEntered", "onEntering", "onExit", "onExited", "onExiting", "open", "PaperProps", "transformOrigin", "TransitionComponent", "transitionDuration", "TransitionProps"]);
 
-  var paperRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(); // Returns the top/left offset of the position
+  var paperRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](); // Returns the top/left offset of the position
   // to attach to on the anchor element (or body if none is provided)
 
-  var getAnchorOffset = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (contentAnchorOffset) {
+  var getAnchorOffset = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (contentAnchorOffset) {
     if (anchorReference === 'anchorPosition') {
       if (true) {
         if (!anchorPosition) {
@@ -19405,7 +19330,7 @@ var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function P
     };
   }, [anchorEl, anchorOrigin.horizontal, anchorOrigin.vertical, anchorPosition, anchorReference]); // Returns the vertical offset of inner content to anchor the transform on if provided
 
-  var getContentAnchorOffset = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (element) {
+  var getContentAnchorOffset = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (element) {
     var contentAnchorOffset = 0;
 
     if (getContentAnchorEl && anchorReference === 'anchorEl') {
@@ -19428,14 +19353,14 @@ var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function P
   }, [anchorOrigin.vertical, anchorReference, getContentAnchorEl]); // Return the base transform origin using the element
   // and taking the content anchor offset into account if in use
 
-  var getTransformOrigin = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (elemRect) {
+  var getTransformOrigin = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (elemRect) {
     var contentAnchorOffset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
     return {
       vertical: getOffsetTop(elemRect, transformOrigin.vertical) + contentAnchorOffset,
       horizontal: getOffsetLeft(elemRect, transformOrigin.horizontal)
     };
   }, [transformOrigin.horizontal, transformOrigin.vertical]);
-  var getPositioningStyle = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (element) {
+  var getPositioningStyle = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (element) {
     // Check if the parent has requested anchoring on an inner content node
     var contentAnchorOffset = getContentAnchorOffset(element);
     var elemRect = {
@@ -19502,7 +19427,7 @@ var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function P
       transformOrigin: getTransformOriginValue(elemTransformOrigin)
     };
   }, [anchorEl, anchorReference, getAnchorOffset, getContentAnchorOffset, getTransformOrigin, marginThreshold]);
-  var setPositioningStyles = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+  var setPositioningStyles = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function () {
     var element = paperRef.current;
 
     if (!element) {
@@ -19530,23 +19455,23 @@ var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function P
     setPositioningStyles();
   };
 
-  var handlePaperRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (instance) {
+  var handlePaperRef = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (instance) {
     // #StrictMode ready
-    paperRef.current = react_dom__WEBPACK_IMPORTED_MODULE_4___default.a.findDOMNode(instance);
+    paperRef.current = react_dom__WEBPACK_IMPORTED_MODULE_4__["findDOMNode"](instance);
   }, []);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (open) {
       setPositioningStyles();
     }
   });
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useImperativeHandle(action, function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useImperativeHandle"](action, function () {
     return open ? {
       updatePosition: function updatePosition() {
         setPositioningStyles();
       }
     } : null;
   }, [open, setPositioningStyles]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (!open) {
       return undefined;
     }
@@ -19557,7 +19482,7 @@ var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function P
     window.addEventListener('resize', handleResize);
     return function () {
       handleResize.clear();
-      window.removeEventListener('rezise', handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, [open, setPositioningStyles]);
   var transitionDuration = transitionDurationProp;
@@ -19570,7 +19495,7 @@ var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function P
 
 
   var container = containerProp || (anchorEl ? Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_8__["default"])(getAnchorEl(anchorEl)).body : undefined);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Modal__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Modal__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     container: container,
     open: open,
     ref: ref,
@@ -19578,7 +19503,7 @@ var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function P
       invisible: true
     },
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.root, className)
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     appear: true,
     in: open,
     onEnter: onEnter,
@@ -19589,7 +19514,7 @@ var Popover = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function P
     timeout: transitionDuration
   }, TransitionProps, {
     onEntering: Object(_utils_createChainedFunction__WEBPACK_IMPORTED_MODULE_10__["default"])(handleEntering, TransitionProps.onEntering)
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Paper__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Paper__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     elevation: elevation,
     ref: handlePaperRef
   }, PaperProps, {
@@ -19870,13 +19795,13 @@ function getAnchorEl(anchorEl) {
   return typeof anchorEl === 'function' ? anchorEl() : anchorEl;
 }
 
-var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2___default.a.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect;
+var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_2__["useEffect"];
 var defaultPopperOptions = {};
 /**
  * Poppers rely on the 3rd party library [Popper.js](https://github.com/FezVrasta/popper.js) for positioning.
  */
 
-var Popper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Popper(props, ref) {
+var Popper = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Popper(props, ref) {
   var anchorEl = props.anchorEl,
       children = props.children,
       container = props.container,
@@ -19895,19 +19820,19 @@ var Popper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Po
       transition = _props$transition === void 0 ? false : _props$transition,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["anchorEl", "children", "container", "disablePortal", "keepMounted", "modifiers", "open", "placement", "popperOptions", "popperRef", "transition"]);
 
-  var tooltipRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var tooltipRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
   var ownRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_10__["default"])(tooltipRef, ref);
-  var popperRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var popperRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
   var handlePopperRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_10__["default"])(popperRef, popperRefProp);
-  var handlePopperRefRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(handlePopperRef);
+  var handlePopperRefRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](handlePopperRef);
   useEnhancedEffect(function () {
     handlePopperRefRef.current = handlePopperRef;
   }, [handlePopperRef]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useImperativeHandle(popperRefProp, function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useImperativeHandle"](popperRefProp, function () {
     return popperRef.current;
   }, []);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(true),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](true),
       exited = _React$useState[0],
       setExited = _React$useState[1];
 
@@ -19918,16 +19843,16 @@ var Popper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Po
    * modifiers.flip is essentially a flip for controlled/uncontrolled behavior
    */
 
-  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(rtlPlacement),
+  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_2__["useState"](rtlPlacement),
       placement = _React$useState2[0],
       setPlacement = _React$useState2[1];
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (popperRef.current) {
       popperRef.current.update();
     }
   });
-  var handleOpen = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+  var handleOpen = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function () {
     if (!tooltipRef.current || !anchorEl || !open) {
       return;
     }
@@ -19971,7 +19896,7 @@ var Popper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Po
     }));
     handlePopperRefRef.current(popper);
   }, [anchorEl, disablePortal, modifiers, open, rtlPlacement, popperOptions]);
-  var handleRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (node) {
+  var handleRef = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (node) {
     Object(_utils_setRef__WEBPACK_IMPORTED_MODULE_9__["default"])(ownRef, node);
     handleOpen();
   }, [ownRef, handleOpen]);
@@ -19994,16 +19919,16 @@ var Popper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Po
     handleClose();
   };
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     // Let's update the popper position.
     handleOpen();
   }, [handleOpen]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     return function () {
       handleClose();
     };
   }, []);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (!open && !transition) {
       // Otherwise handleExited will call this.
       handleClose();
@@ -20026,10 +19951,10 @@ var Popper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Po
     };
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Portal__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Portal__WEBPACK_IMPORTED_MODULE_7__["default"], {
     disablePortal: disablePortal,
     container: container
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     ref: handleRef,
     role: "tooltip"
   }, other, {
@@ -20181,27 +20106,27 @@ __webpack_require__.r(__webpack_exports__);
 function getContainer(container) {
   container = typeof container === 'function' ? container() : container; // #StrictMode ready
 
-  return react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(container);
+  return react_dom__WEBPACK_IMPORTED_MODULE_1__["findDOMNode"](container);
 }
 
-var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect;
+var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_0__["useEffect"];
 /**
  * Portals provide a first-class way to render children into a DOM node
  * that exists outside the DOM hierarchy of the parent component.
  */
 
-var Portal = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function Portal(props, ref) {
+var Portal = react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"](function Portal(props, ref) {
   var children = props.children,
       container = props.container,
       _props$disablePortal = props.disablePortal,
       disablePortal = _props$disablePortal === void 0 ? false : _props$disablePortal,
       onRendered = props.onRendered;
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__["useState"](null),
       mountNode = _React$useState[0],
       setMountNode = _React$useState[1];
 
-  var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_5__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.isValidElement(children) ? children.ref : null, ref);
+  var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_5__["default"])(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"](children) ? children.ref : null, ref);
   useEnhancedEffect(function () {
     if (!disablePortal) {
       setMountNode(getContainer(container) || document.body);
@@ -20224,8 +20149,8 @@ var Portal = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function Po
   }, [onRendered, mountNode, disablePortal]);
 
   if (disablePortal) {
-    if (react__WEBPACK_IMPORTED_MODULE_0___default.a.isValidElement(children)) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(children, {
+    if (react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"](children)) {
+      return react__WEBPACK_IMPORTED_MODULE_0__["cloneElement"](children, {
         ref: handleRef
       });
     }
@@ -20233,7 +20158,7 @@ var Portal = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function Po
     return children;
   }
 
-  return mountNode ? react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.createPortal(children, mountNode) : mountNode;
+  return mountNode ? react_dom__WEBPACK_IMPORTED_MODULE_1__["createPortal"](children, mountNode) : mountNode;
 });
  true ? Portal.propTypes = {
   // ----------------------------- Warning --------------------------------
@@ -20252,7 +20177,7 @@ var Portal = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function Po
    * By default, it uses the body of the top-level document object,
    * so it's simply `document.body` most of the time.
    */
-  container: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component), prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(typeof Element === 'undefined' ? Object : Element)]),
+  container: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(react__WEBPACK_IMPORTED_MODULE_0__["Component"]), prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(typeof Element === 'undefined' ? Object : Element)]),
 
   /**
    * Disable the portal behavior.
@@ -20379,11 +20304,11 @@ var styles = function styles(theme) {
     }
   };
 };
-var defaultCheckedIcon = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_RadioButtonIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
+var defaultCheckedIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_RadioButtonIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
   checked: true
 });
-var defaultIcon = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_RadioButtonIcon__WEBPACK_IMPORTED_MODULE_7__["default"], null);
-var Radio = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Radio(props, ref) {
+var defaultIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_RadioButtonIcon__WEBPACK_IMPORTED_MODULE_7__["default"], null);
+var Radio = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Radio(props, ref) {
   var checkedProp = props.checked,
       classes = props.classes,
       _props$color = props.color,
@@ -20409,13 +20334,13 @@ var Radio = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Rad
     }
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_SwitchBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_SwitchBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     color: color,
     type: "radio",
-    icon: react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(defaultIcon, {
+    icon: react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](defaultIcon, {
       fontSize: size === 'small' ? 'small' : 'default'
     }),
-    checkedIcon: react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(defaultCheckedIcon, {
+    checkedIcon: react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](defaultCheckedIcon, {
       fontSize: size === 'small' ? 'small' : 'default'
     }),
     classes: {
@@ -20507,11 +20432,6 @@ var Radio = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Rad
   size: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['small', 'medium']),
 
   /**
-   * The input component prop `type`.
-   */
-  type: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
-
-  /**
    * The value of the component. The DOM API casts this to a string.
    */
   value: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any
@@ -20579,11 +20499,11 @@ function RadioButtonIcon(props) {
   var checked = props.checked,
       classes = props.classes,
       fontSize = props.fontSize;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, checked && classes.checked)
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_internal_svg_icons_RadioButtonUnchecked__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_internal_svg_icons_RadioButtonUnchecked__WEBPACK_IMPORTED_MODULE_3__["default"], {
     fontSize: fontSize
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_internal_svg_icons_RadioButtonChecked__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_internal_svg_icons_RadioButtonChecked__WEBPACK_IMPORTED_MODULE_4__["default"], {
     fontSize: fontSize,
     className: classes.layer
   }));
@@ -20658,15 +20578,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var RadioGroup = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function RadioGroup(props, ref) {
+var RadioGroup = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function RadioGroup(props, ref) {
   var actions = props.actions,
       children = props.children,
-      name = props.name,
+      nameProp = props.name,
       valueProp = props.value,
       onChange = props.onChange,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, ["actions", "children", "name", "value", "onChange"]);
 
-  var rootRef = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(null);
+  var rootRef = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](null);
 
   var _useControlled = Object(_utils_useControlled__WEBPACK_IMPORTED_MODULE_7__["default"])({
     controlled: valueProp,
@@ -20677,7 +20597,7 @@ var RadioGroup = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functio
       value = _useControlled2[0],
       setValue = _useControlled2[1];
 
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useImperativeHandle(actions, function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useImperativeHandle"](actions, function () {
     return {
       focus: function focus() {
         var input = rootRef.current.querySelector('input:not(:disabled):checked');
@@ -20702,24 +20622,33 @@ var RadioGroup = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functio
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_RadioGroupContext__WEBPACK_IMPORTED_MODULE_8__["default"].Provider, {
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3__["useState"](),
+      defaultName = _React$useState[0],
+      setDefaultName = _React$useState[1];
+
+  var name = nameProp || defaultName;
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
+    // Fallback to this default name when possible.
+    // Use the random value for client-side rendering only.
+    // We can't use it server-side.
+    setDefaultName("mui-radiogroup-".concat(Math.round(Math.random() * 1e5)));
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_RadioGroupContext__WEBPACK_IMPORTED_MODULE_8__["default"].Provider, {
     value: {
       name: name,
       onChange: handleChange,
       value: value
     }
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_FormGroup__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_FormGroup__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     role: "radiogroup",
     ref: handleRef
   }, other), children));
 });
  true ? RadioGroup.propTypes = {
-  /**
-   * @ignore
-   */
-  actions: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape({
-    current: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object
-  }),
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
 
   /**
    * The content of the component.
@@ -20729,17 +20658,13 @@ var RadioGroup = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functio
   /**
    * The default `input` element value. Use when the component is not controlled.
    */
-  defaultValue: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.any,
+  defaultValue: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string), prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string]),
 
   /**
    * The name used to reference the value of the control.
+   * If you don't provide this prop, it falls back to a randomly generated name.
    */
   name: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
-
-  /**
-   * @ignore
-   */
-  onBlur: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
 
   /**
    * Callback fired when a radio button is selected.
@@ -20748,11 +20673,6 @@ var RadioGroup = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functio
    * You can pull out the new value by accessing `event.target.value` (string).
    */
   onChange: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
-
-  /**
-   * @ignore
-   */
-  onKeyDown: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
 
   /**
    * Value of the selected radio button. The DOM API casts this to a string.
@@ -20779,7 +20699,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-var RadioGroupContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext();
+var RadioGroupContext = react__WEBPACK_IMPORTED_MODULE_0__["createContext"]();
 
 if (true) {
   RadioGroupContext.displayName = 'RadioGroupContext';
@@ -20825,7 +20745,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function useRadioGroup() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext(_RadioGroupContext__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  return react__WEBPACK_IMPORTED_MODULE_0__["useContext"](_RadioGroupContext__WEBPACK_IMPORTED_MODULE_1__["default"]);
 }
 
 /***/ }),
@@ -20856,6 +20776,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+function _createSuper(Derived) { return function () { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
@@ -20895,27 +20820,27 @@ __webpack_require__.r(__webpack_exports__);
  * ```
  */
 
-var RootRef =
-/*#__PURE__*/
-function (_React$Component) {
+var RootRef = /*#__PURE__*/function (_React$Component) {
   Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(RootRef, _React$Component);
+
+  var _super = _createSuper(RootRef);
 
   function RootRef() {
     Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, RootRef);
 
-    return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(RootRef).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(RootRef, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.ref = react_dom__WEBPACK_IMPORTED_MODULE_6___default.a.findDOMNode(this);
+      this.ref = react_dom__WEBPACK_IMPORTED_MODULE_6__["findDOMNode"](this);
       Object(_utils_setRef__WEBPACK_IMPORTED_MODULE_9__["default"])(this.props.rootRef, this.ref);
     }
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate(prevProps) {
-      var ref = react_dom__WEBPACK_IMPORTED_MODULE_6___default.a.findDOMNode(this);
+      var ref = react_dom__WEBPACK_IMPORTED_MODULE_6__["findDOMNode"](this);
 
       if (prevProps.rootRef !== this.props.rootRef || this.ref !== ref) {
         if (prevProps.rootRef !== this.props.rootRef) {
@@ -20940,7 +20865,7 @@ function (_React$Component) {
   }]);
 
   return RootRef;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
  true ? RootRef.propTypes = {
   /**
@@ -21022,11 +20947,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var styles = _NativeSelect_NativeSelect__WEBPACK_IMPORTED_MODULE_11__["styles"];
 
-var _ref = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Input__WEBPACK_IMPORTED_MODULE_10__["default"], null);
+var _ref = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Input__WEBPACK_IMPORTED_MODULE_10__["default"], null);
 
-var _ref2 = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_FilledInput__WEBPACK_IMPORTED_MODULE_13__["default"], null);
+var _ref2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_FilledInput__WEBPACK_IMPORTED_MODULE_13__["default"], null);
 
-var Select = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Select(props, ref) {
+var Select = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Select(props, ref) {
   var _props$autoWidth = props.autoWidth,
       autoWidth = _props$autoWidth === void 0 ? false : _props$autoWidth,
       children = props.children,
@@ -21066,13 +20991,13 @@ var Select = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Se
   var variant = fcs.variant || variantProps;
   var InputComponent = input || {
     standard: _ref,
-    outlined: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_OutlinedInput__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    outlined: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_OutlinedInput__WEBPACK_IMPORTED_MODULE_14__["default"], {
       label: label,
       labelWidth: labelWidth
     }),
     filled: _ref2
   }[variant];
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(InputComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](InputComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     // Most of the logic is implemented in `SelectInput`.
     // The `Select` component is a simple API wrapper to expose something better to play with.
     inputComponent: inputComponent,
@@ -21108,6 +21033,11 @@ var Select = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Se
   }, other));
 });
  true ? Select.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * If `true`, the width of the popover will automatically be set according to the items inside the
    * menu, otherwise it will be at least the width of the select input.
@@ -21126,7 +21056,7 @@ var Select = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Se
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * The default element value. Use when the component is not controlled.
@@ -21163,7 +21093,7 @@ var Select = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Se
   inputProps: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
-   * See [OutlinedLabel#label](/api/outlined-input/#props)
+   * See [OutlinedInput#label](/api/outlined-input/#props)
    */
   label: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.node,
 
@@ -21174,7 +21104,7 @@ var Select = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Se
   labelId: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
 
   /**
-   * See OutlinedLabel#label
+   * See [OutlinedInput#label](/api/outlined-input/#props)
    */
   labelWidth: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
 
@@ -21251,7 +21181,7 @@ var Select = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Se
   /**
    * The variant to use.
    */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['standard', 'outlined', 'filled'])
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['filled', 'outlined', 'standard'])
 } : undefined;
 Select.muiName = 'Select';
 /* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_8__["default"])(styles, {
@@ -21319,7 +21249,7 @@ function isEmpty(display) {
  */
 
 
-var SelectInput = react__WEBPACK_IMPORTED_MODULE_5___default.a.forwardRef(function SelectInput(props, ref) {
+var SelectInput = react__WEBPACK_IMPORTED_MODULE_5__["forwardRef"](function SelectInput(props, ref) {
   var autoFocus = props.autoFocus,
       autoWidth = props.autoWidth,
       children = props.children,
@@ -21362,25 +21292,25 @@ var SelectInput = react__WEBPACK_IMPORTED_MODULE_5___default.a.forwardRef(functi
       value = _useControlled2[0],
       setValue = _useControlled2[1];
 
-  var inputRef = react__WEBPACK_IMPORTED_MODULE_5___default.a.useRef(null);
+  var inputRef = react__WEBPACK_IMPORTED_MODULE_5__["useRef"](null);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_5___default.a.useState(null),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_5__["useState"](null),
       displayNode = _React$useState[0],
       setDisplayNode = _React$useState[1];
 
-  var _React$useRef = react__WEBPACK_IMPORTED_MODULE_5___default.a.useRef(openProp != null),
+  var _React$useRef = react__WEBPACK_IMPORTED_MODULE_5__["useRef"](openProp != null),
       isOpenControlled = _React$useRef.current;
 
-  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_5___default.a.useState(),
+  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_5__["useState"](),
       menuMinWidthState = _React$useState2[0],
       setMenuMinWidthState = _React$useState2[1];
 
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_5___default.a.useState(false),
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_5__["useState"](false),
       openState = _React$useState3[0],
       setOpenState = _React$useState3[1];
 
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_13__["default"])(ref, inputRefProp);
-  react__WEBPACK_IMPORTED_MODULE_5___default.a.useImperativeHandle(handleRef, function () {
+  react__WEBPACK_IMPORTED_MODULE_5__["useImperativeHandle"](handleRef, function () {
     return {
       focus: function focus() {
         displayNode.focus();
@@ -21389,7 +21319,7 @@ var SelectInput = react__WEBPACK_IMPORTED_MODULE_5___default.a.forwardRef(functi
       value: value
     };
   }, [displayNode, value]);
-  react__WEBPACK_IMPORTED_MODULE_5___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_5__["useEffect"](function () {
     if (autoFocus && displayNode) {
       displayNode.focus();
     }
@@ -21411,8 +21341,11 @@ var SelectInput = react__WEBPACK_IMPORTED_MODULE_5___default.a.forwardRef(functi
   };
 
   var handleMouseDown = function handleMouseDown(event) {
-    if (event.button !== 0) // ignore everything but left-click
-      return; // Hijack the default focus behavior.
+    // Ignore everything but left-click
+    if (event.button !== 0) {
+      return;
+    } // Hijack the default focus behavior.
+
 
     event.preventDefault();
     displayNode.focus();
@@ -21509,8 +21442,8 @@ var SelectInput = react__WEBPACK_IMPORTED_MODULE_5___default.a.forwardRef(functi
     }
   }
 
-  var items = react__WEBPACK_IMPORTED_MODULE_5___default.a.Children.map(children, function (child) {
-    if (!react__WEBPACK_IMPORTED_MODULE_5___default.a.isValidElement(child)) {
+  var items = react__WEBPACK_IMPORTED_MODULE_5__["Children"].map(children, function (child) {
+    if (!react__WEBPACK_IMPORTED_MODULE_5__["isValidElement"](child)) {
       return null;
     }
 
@@ -21546,7 +21479,7 @@ var SelectInput = react__WEBPACK_IMPORTED_MODULE_5___default.a.forwardRef(functi
       foundMatch = true;
     }
 
-    return react__WEBPACK_IMPORTED_MODULE_5___default.a.cloneElement(child, {
+    return react__WEBPACK_IMPORTED_MODULE_5__["cloneElement"](child, {
       'aria-selected': selected ? 'true' : undefined,
       onClick: handleItemClick(child),
       onKeyUp: function onKeyUp(event) {
@@ -21574,9 +21507,9 @@ var SelectInput = react__WEBPACK_IMPORTED_MODULE_5___default.a.forwardRef(functi
 
   if (true) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    react__WEBPACK_IMPORTED_MODULE_5___default.a.useEffect(function () {
+    react__WEBPACK_IMPORTED_MODULE_5__["useEffect"](function () {
       if (!foundMatch && !multiple && value !== '') {
-        var values = react__WEBPACK_IMPORTED_MODULE_5___default.a.Children.toArray(children).map(function (child) {
+        var values = react__WEBPACK_IMPORTED_MODULE_5__["Children"].toArray(children).map(function (child) {
           return child.props.value;
         });
         console.warn(["Material-UI: you have provided an out-of-range value `".concat(value, "` for the select ").concat(name ? "(name=\"".concat(name, "\") ") : '', "component."), "Consider providing a value that matches one of the available options or ''.", "The available values are ".concat(values.filter(function (x) {
@@ -21608,7 +21541,7 @@ var SelectInput = react__WEBPACK_IMPORTED_MODULE_5___default.a.forwardRef(functi
   }
 
   var buttonId = SelectDisplayProps.id || (name ? "mui-component-select-".concat(name) : undefined);
-  return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__["createElement"](react__WEBPACK_IMPORTED_MODULE_5__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_8__["default"])(classes.root, // TODO v5: merge root and select
     classes.select, classes.selectMenu, classes[variant], className, disabled && classes.disabled),
     ref: setDisplayNode,
@@ -21624,20 +21557,22 @@ var SelectInput = react__WEBPACK_IMPORTED_MODULE_5___default.a.forwardRef(functi
   }, SelectDisplayProps, {
     // The id is required for proper a11y
     id: buttonId
-  }), isEmpty(display) ? // eslint-disable-next-line react/no-danger
-  react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+  }), isEmpty(display) ?
+  /*#__PURE__*/
+  // eslint-disable-next-line react/no-danger
+  react__WEBPACK_IMPORTED_MODULE_5__["createElement"]("span", {
     dangerouslySetInnerHTML: {
       __html: '&#8203;'
     }
-  }) : display), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }) : display), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__["createElement"]("input", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     value: Array.isArray(value) ? value.join(',') : value,
     name: name,
     ref: inputRef,
     type: "hidden",
     autoFocus: autoFocus
-  }, other)), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(IconComponent, {
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_8__["default"])(classes.icon, classes["icon".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_9__["default"])(variant))], open && classes.iconOpen)
-  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Menu_Menu__WEBPACK_IMPORTED_MODULE_11__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, other)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__["createElement"](IconComponent, {
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_8__["default"])(classes.icon, classes["icon".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_9__["default"])(variant))], open && classes.iconOpen, disabled && classes.disabled)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__["createElement"](_Menu_Menu__WEBPACK_IMPORTED_MODULE_11__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     id: "menu-".concat(name || ''),
     anchorEl: displayNode,
     open: open,
@@ -21927,7 +21862,7 @@ var defaultTimeout = {
  * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
  */
 
-var Slide = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Slide(props, ref) {
+var Slide = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Slide(props, ref) {
   var children = props.children,
       _props$direction = props.direction,
       direction = _props$direction === void 0 ? 'down' : _props$direction,
@@ -21942,14 +21877,14 @@ var Slide = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Sli
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "direction", "in", "onEnter", "onEntering", "onExit", "onExited", "style", "timeout"]);
 
   var theme = Object(_styles_useTheme__WEBPACK_IMPORTED_MODULE_9__["default"])();
-  var childrenRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var childrenRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
   /**
    * used in cloneElement(children, { ref: handleRef })
    */
 
-  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (instance) {
+  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (instance) {
     // #StrictMode ready
-    childrenRef.current = react_dom__WEBPACK_IMPORTED_MODULE_4___default.a.findDOMNode(instance);
+    childrenRef.current = react_dom__WEBPACK_IMPORTED_MODULE_4__["findDOMNode"](instance);
   }, []);
   var handleRefIntermediary = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_8__["default"])(children.ref, handleOwnRef);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_8__["default"])(handleRefIntermediary, ref);
@@ -22018,12 +21953,12 @@ var Slide = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Sli
     }
   };
 
-  var updatePosition = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+  var updatePosition = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function () {
     if (childrenRef.current) {
       setTranslateValue(direction, childrenRef.current);
     }
   }, [direction]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     // Skip configuration where the position is screen size invariant.
     if (inProp || direction === 'down' || direction === 'right') {
       return undefined;
@@ -22040,14 +21975,14 @@ var Slide = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Sli
       window.removeEventListener('resize', handleResize);
     };
   }, [direction, inProp]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (!inProp) {
       // We need to update the position of the drawer when the direction change and
       // when it's hidden.
       updatePosition();
     }
   }, [inProp, updatePosition]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_6__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_transition_group__WEBPACK_IMPORTED_MODULE_6__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     onEnter: handleEnter,
     onEntering: handleEntering,
     onExit: handleExit,
@@ -22056,7 +21991,7 @@ var Slide = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Sli
     in: inProp,
     timeout: timeout
   }, other), function (state, childProps) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       ref: handleRef,
       style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         visibility: state === 'exited' && !inProp ? 'hidden' : undefined
@@ -22553,7 +22488,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Slider(props, ref) {
+var Slider = react__WEBPACK_IMPORTED_MODULE_4__["forwardRef"](function Slider(props, ref) {
   var ariaLabel = props['aria-label'],
       ariaLabelledby = props['aria-labelledby'],
       ariaValuetext = props['aria-valuetext'],
@@ -22598,15 +22533,15 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["aria-label", "aria-labelledby", "aria-valuetext", "classes", "className", "color", "component", "defaultValue", "disabled", "getAriaLabel", "getAriaValueText", "marks", "max", "min", "name", "onChange", "onChangeCommitted", "onMouseDown", "orientation", "scale", "step", "ThumbComponent", "track", "value", "ValueLabelComponent", "valueLabelDisplay", "valueLabelFormat"]);
 
   var theme = Object(_styles_useTheme__WEBPACK_IMPORTED_MODULE_9__["default"])();
-  var touchId = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef(); // We can't use the :active browser pseudo-classes.
+  var touchId = react__WEBPACK_IMPORTED_MODULE_4__["useRef"](); // We can't use the :active browser pseudo-classes.
   // - The active state isn't triggered when clicking on the rail.
   // - The active state isn't transfered when inversing a range slider.
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_4___default.a.useState(-1),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_4__["useState"](-1),
       active = _React$useState[0],
       setActive = _React$useState[1];
 
-  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_4___default.a.useState(-1),
+  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_4__["useState"](-1),
       open = _React$useState2[0],
       setOpen = _React$useState2[1];
 
@@ -22620,7 +22555,7 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
       setValueState = _useControlled2[1];
 
   var range = Array.isArray(valueDerived);
-  var instanceRef = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef();
+  var instanceRef = react__WEBPACK_IMPORTED_MODULE_4__["useRef"]();
   var values = range ? Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_3__["default"])(valueDerived).sort(asc) : [valueDerived];
   values = values.map(function (value) {
     return clamp(value, min, max);
@@ -22640,11 +22575,11 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
       onBlurVisible = _useIsFocusVisible.onBlurVisible,
       focusVisibleRef = _useIsFocusVisible.ref;
 
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_4___default.a.useState(-1),
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_4__["useState"](-1),
       focusVisible = _React$useState3[0],
       setFocusVisible = _React$useState3[1];
 
-  var sliderRef = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef();
+  var sliderRef = react__WEBPACK_IMPORTED_MODULE_4__["useRef"]();
   var handleFocusRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_14__["default"])(focusVisibleRef, sliderRef);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_14__["default"])(ref, handleFocusRef);
   var handleFocus = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_13__["default"])(function (event) {
@@ -22762,7 +22697,7 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
       onChangeCommitted(event, newValue);
     }
   });
-  var previousIndex = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef();
+  var previousIndex = react__WEBPACK_IMPORTED_MODULE_4__["useRef"]();
   var axis = orientation;
 
   if (theme.direction === 'rtl' && orientation !== "vertical") {
@@ -22928,7 +22863,7 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
     doc.addEventListener('touchmove', handleTouchMove);
     doc.addEventListener('touchend', handleTouchEnd);
   });
-  react__WEBPACK_IMPORTED_MODULE_4___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_4__["useEffect"](function () {
     var slider = sliderRef.current;
     slider.addEventListener('touchstart', handleTouchStart);
     var doc = Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_12__["default"])(slider);
@@ -22976,22 +22911,18 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
 
   var trackStyle = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, axisProps[axis].offset(trackOffset), {}, axisProps[axis].leap(trackLeap));
 
-  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
     ref: handleRef,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.root, classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_15__["default"])(color))], className, disabled && classes.disabled, marks.length > 0 && marks.some(function (mark) {
       return mark.label;
-    }) && classes.marked, track === false && classes.trackFalse, {
-      vertical: classes.vertical
-    }[orientation], {
-      inverted: classes.trackInverted
-    }[track]),
+    }) && classes.marked, track === false && classes.trackFalse, orientation === 'vertical' && classes.vertical, track === 'inverted' && classes.trackInverted),
     onMouseDown: handleMouseDown
-  }, other), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("span", {
     className: classes.rail
-  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("span", {
     className: classes.track,
     style: trackStyle
-  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("input", {
     value: values.join(','),
     name: name,
     type: "hidden"
@@ -23006,12 +22937,12 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
       markActive = track === 'normal' && (range ? mark.value >= values[0] && mark.value <= values[values.length - 1] : mark.value <= values[0]) || track === 'inverted' && (range ? mark.value <= values[0] || mark.value >= values[values.length - 1] : mark.value >= values[0]);
     }
 
-    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](react__WEBPACK_IMPORTED_MODULE_4__["Fragment"], {
       key: mark.value
-    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("span", {
       style: style,
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.mark, markActive && classes.markActive)
-    }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("span", {
       "aria-hidden": true,
       style: style,
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.markLabel, markActive && classes.markLabelActive)
@@ -23019,7 +22950,7 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
   }), values.map(function (value, index) {
     var percent = valueToPercent(value, min, max);
     var style = axisProps[axis].offset(percent);
-    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ValueLabelComponent, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](ValueLabelComponent, {
       key: index,
       valueLabelFormat: valueLabelFormat,
       valueLabelDisplay: valueLabelDisplay,
@@ -23028,7 +22959,7 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
       index: index,
       open: open === index || active === index || valueLabelDisplay === 'on',
       disabled: disabled
-    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(ThumbComponent, {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](ThumbComponent, {
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.thumb, classes["thumbColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_15__["default"])(color))], active === index && classes.active, disabled && classes.disabled, focusVisible === index && classes.focusVisible),
       tabIndex: disabled ? null : 0,
       role: "slider",
@@ -23158,7 +23089,7 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
    * Callback function that is fired when the slider's value changed.
    *
    * @param {object} event The event source of the callback.
-   * @param {any} value The new value.
+   * @param {number | number[]} value The new value.
    */
   onChange: prop_types__WEBPACK_IMPORTED_MODULE_5___default.a.func,
 
@@ -23166,7 +23097,7 @@ var Slider = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Sl
    * Callback function that is fired when the `mouseup` is triggered.
    *
    * @param {object} event The event source of the callback.
-   * @param {any} value The new value.
+   * @param {number | number[]} value The new value.
    */
   onChangeCommitted: prop_types__WEBPACK_IMPORTED_MODULE_5___default.a.func,
 
@@ -23319,13 +23250,13 @@ function ValueLabel(props) {
     return children;
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.cloneElement(children, {
+  return react__WEBPACK_IMPORTED_MODULE_1__["cloneElement"](children, {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(children.props.className, (open || valueLabelDisplay === 'on') && classes.open, classes.thumb)
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("span", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.offset, className)
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("span", {
     className: classes.circle
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"]("span", {
     className: classes.label
   }, value))));
 }
@@ -23461,7 +23392,7 @@ var styles = function styles(theme) {
     }, bottom3, {}, left3)))
   };
 };
-var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Snackbar(props, ref) {
+var Snackbar = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function Snackbar(props, ref) {
   var action = props.action,
       _props$anchorOrigin = props.anchorOrigin;
   _props$anchorOrigin = _props$anchorOrigin === void 0 ? {
@@ -23502,9 +23433,9 @@ var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
       TransitionProps = props.TransitionProps,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["action", "anchorOrigin", "autoHideDuration", "children", "classes", "className", "ClickAwayListenerProps", "ContentProps", "disableWindowBlurListener", "message", "onClose", "onEnter", "onEntered", "onEntering", "onExit", "onExited", "onExiting", "onMouseEnter", "onMouseLeave", "open", "resumeHideDuration", "TransitionComponent", "transitionDuration", "TransitionProps"]);
 
-  var timerAutoHide = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef();
+  var timerAutoHide = react__WEBPACK_IMPORTED_MODULE_3__["useRef"]();
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState(true),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3__["useState"](true),
       exited = _React$useState[0],
       setExited = _React$useState[1];
 
@@ -23523,7 +23454,7 @@ var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
       handleClose(null, 'timeout');
     }, autoHideDurationParam);
   });
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     if (open) {
       setAutoHideTimer(autoHideDuration);
     }
@@ -23540,7 +23471,7 @@ var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
   // or when the window is shown back.
 
 
-  var handleResume = react__WEBPACK_IMPORTED_MODULE_3___default.a.useCallback(function () {
+  var handleResume = react__WEBPACK_IMPORTED_MODULE_3__["useCallback"](function () {
     if (autoHideDuration != null) {
       setAutoHideTimer(resumeHideDuration != null ? resumeHideDuration : autoHideDuration * 0.5);
     }
@@ -23576,7 +23507,7 @@ var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
     setExited(false);
   };
 
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     if (!disableWindowBlurListener && open) {
       window.addEventListener('focus', handleResume);
       window.addEventListener('blur', handlePause);
@@ -23593,14 +23524,14 @@ var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
     return null;
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ClickAwayListener__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_ClickAwayListener__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
     onClickAway: handleClickAway
-  }, ClickAwayListenerProps), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+  }, ClickAwayListenerProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, classes["anchorOrigin".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_10__["default"])(vertical)).concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_10__["default"])(horizontal))], className),
     onMouseEnter: handleMouseEnter,
     onMouseLeave: handleMouseLeave,
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
     appear: true,
     in: open,
     onEnter: Object(_utils_createChainedFunction__WEBPACK_IMPORTED_MODULE_11__["default"])(handleEnter, onEnter),
@@ -23611,12 +23542,17 @@ var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
     onExiting: onExiting,
     timeout: transitionDuration,
     direction: vertical === 'top' ? 'down' : 'up'
-  }, TransitionProps), children || react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_SnackbarContent__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+  }, TransitionProps), children || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_SnackbarContent__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
     message: message,
     action: action
   }, ContentProps)))));
 });
  true ? Snackbar.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The action to display. It renders after the message, at the end of the snackbar.
    */
@@ -23626,8 +23562,8 @@ var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
    * The anchor of the `Snackbar`.
    */
   anchorOrigin: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape({
-    horizontal: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['left', 'center', 'right']).isRequired,
-    vertical: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['top', 'bottom']).isRequired
+    horizontal: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['center', 'left', 'right']).isRequired,
+    vertical: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['bottom', 'top']).isRequired
   }),
 
   /**
@@ -23647,7 +23583,7 @@ var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * @ignore
@@ -23758,6 +23694,7 @@ var Snackbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
    * You may specify a single timeout for all transitions, or individually with an object.
    */
   transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
     enter: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
     exit: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number
   })]),
@@ -23854,7 +23791,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var SnackbarContent = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function SnackbarContent(props, ref) {
+var SnackbarContent = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function SnackbarContent(props, ref) {
   var action = props.action,
       classes = props.classes,
       className = props.className,
@@ -23863,19 +23800,24 @@ var SnackbarContent = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(fu
       role = _props$role === void 0 ? 'alert' : _props$role,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["action", "classes", "className", "message", "role"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Paper__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_Paper__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
     role: role,
     square: true,
     elevation: 6,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", {
     className: classes.message
-  }, message), action ? react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, message), action ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", {
     className: classes.action
   }, action) : null);
 });
  true ? SnackbarContent.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * The action to display. It renders after the message, at the end of the snackbar.
    */
@@ -23885,7 +23827,7 @@ var SnackbarContent = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(fu
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * @ignore
@@ -23973,7 +23915,7 @@ var styles = {
   /* Pseudo-class applied to the root element if `completed={true}`. */
   completed: {}
 };
-var Step = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Step(props, ref) {
+var Step = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Step(props, ref) {
   var _props$active = props.active,
       active = _props$active === void 0 ? false : _props$active,
       alternativeLabel = props.alternativeLabel,
@@ -23992,18 +23934,18 @@ var Step = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Step
       orientation = props.orientation,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["active", "alternativeLabel", "children", "classes", "className", "completed", "connector", "disabled", "expanded", "index", "last", "orientation"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, classes[orientation], className, alternativeLabel && classes.alternativeLabel, completed && classes.completed),
     ref: ref
-  }, other), connector && alternativeLabel && index !== 0 && react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(connector, {
+  }, other), connector && alternativeLabel && index !== 0 && react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](connector, {
     orientation: orientation,
     alternativeLabel: alternativeLabel,
     index: index,
     active: active,
     completed: completed,
     disabled: disabled
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.map(children, function (child) {
-    if (!react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(child)) {
+  }), react__WEBPACK_IMPORTED_MODULE_2__["Children"].map(children, function (child) {
+    if (!react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](child)) {
       return null;
     }
 
@@ -24013,7 +23955,7 @@ var Step = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Step
       }
     }
 
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(child, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](child, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       active: active,
       alternativeLabel: alternativeLabel,
       completed: completed,
@@ -24026,16 +23968,15 @@ var Step = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Step
   }));
 });
  true ? Step.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * Sets the step as active. Is passed to child components.
    */
   active: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
-
-  /**
-   * @ignore
-   * Set internally by Stepper when it's supplied with the alternativeLabel property.
-   */
-  alternativeLabel: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
 
   /**
    * Should be `Step` sub-components such as `StepLabel`, `StepContent`.
@@ -24046,7 +23987,7 @@ var Step = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Step
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object,
 
   /**
    * @ignore
@@ -24059,12 +24000,6 @@ var Step = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Step
   completed: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
 
   /**
-   * @ignore
-   * Passed down from Stepper if alternativeLabel is also set.
-   */
-  connector: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.element,
-
-  /**
    * Mark the step as disabled, will also disable the button if
    * `StepButton` is a child of `Step`. Is passed to child components.
    */
@@ -24073,23 +24008,7 @@ var Step = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Step
   /**
    * Expand the step.
    */
-  expanded: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
-
-  /**
-   * @ignore
-   * Used internally for numbering.
-   */
-  index: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number,
-
-  /**
-   * @ignore
-   */
-  last: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
-
-  /**
-   * @ignore
-   */
-  orientation: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['horizontal', 'vertical'])
+  expanded: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
 } : undefined;
 /* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
   name: 'MuiStep'
@@ -24167,7 +24086,7 @@ var styles = {
     color: 'rgba(0, 0, 0, 0.3)'
   }
 };
-var StepButton = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function StepButton(props, ref) {
+var StepButton = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function StepButton(props, ref) {
   var active = props.active,
       alternativeLabel = props.alternativeLabel,
       children = props.children,
@@ -24191,8 +24110,8 @@ var StepButton = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
     optional: optional,
     orientation: orientation
   };
-  var child = Object(_utils_isMuiElement__WEBPACK_IMPORTED_MODULE_8__["default"])(children, ['StepLabel']) ? react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(children, childProps) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_StepLabel__WEBPACK_IMPORTED_MODULE_7__["default"], childProps, children);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  var child = Object(_utils_isMuiElement__WEBPACK_IMPORTED_MODULE_8__["default"])(children, ['StepLabel']) ? react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](children, childProps) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_StepLabel__WEBPACK_IMPORTED_MODULE_7__["default"], childProps, children);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     disabled: disabled,
     TouchRippleProps: {
       className: classes.touchRipple
@@ -24368,7 +24287,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var StepConnector = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function StepConnector(props, ref) {
+var StepConnector = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function StepConnector(props, ref) {
   var active = props.active,
       _props$alternativeLab = props.alternativeLabel,
       alternativeLabel = _props$alternativeLab === void 0 ? false : _props$alternativeLab,
@@ -24381,10 +24300,10 @@ var StepConnector = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(func
       orientation = _props$orientation === void 0 ? 'horizontal' : _props$orientation,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["active", "alternativeLabel", "classes", "className", "completed", "disabled", "index", "orientation"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes[orientation], className, alternativeLabel && classes.alternativeLabel, active && classes.active, completed && classes.completed, disabled && classes.disabled),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.line, orientation === 'vertical' ? classes.lineVertical : classes.lineHorizontal)
   }));
 });
@@ -24501,7 +24420,7 @@ var styles = function styles(theme) {
     transition: {}
   };
 };
-var StepContent = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function StepContent(props, ref) {
+var StepContent = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function StepContent(props, ref) {
   var active = props.active,
       alternativeLabel = props.alternativeLabel,
       children = props.children,
@@ -24531,10 +24450,10 @@ var StepContent = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functi
     transitionDuration = undefined;
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, last && classes.last),
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     in: active || expanded,
     className: classes.transition,
     timeout: transitionDuration,
@@ -24701,13 +24620,13 @@ var styles = function styles(theme) {
   };
 };
 
-var _ref = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("circle", {
+var _ref = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("circle", {
   cx: "12",
   cy: "12",
   r: "12"
 });
 
-var StepIcon = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function StepIcon(props, ref) {
+var StepIcon = react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"](function StepIcon(props, ref) {
   var _props$completed = props.completed,
       completed = _props$completed === void 0 ? false : _props$completed,
       icon = props.icon,
@@ -24721,23 +24640,23 @@ var StepIcon = react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(function 
     var className = Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, active && classes.active, error && classes.error, completed && classes.completed);
 
     if (error) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_internal_svg_icons_Warning__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_internal_svg_icons_Warning__WEBPACK_IMPORTED_MODULE_4__["default"], {
         className: className,
         ref: ref
       });
     }
 
     if (completed) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_internal_svg_icons_CheckCircle__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_internal_svg_icons_CheckCircle__WEBPACK_IMPORTED_MODULE_3__["default"], {
         className: className,
         ref: ref
       });
     }
 
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SvgIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_SvgIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
       className: className,
       ref: ref
-    }, _ref, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("text", {
+    }, _ref, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("text", {
       className: classes.text,
       x: "12",
       y: "16",
@@ -24896,7 +24815,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var StepLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function StepLabel(props, ref) {
+var StepLabel = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function StepLabel(props, ref) {
   var _props$active = props.active,
       active = _props$active === void 0 ? false : _props$active,
       _props$alternativeLab = props.alternativeLabel,
@@ -24926,19 +24845,19 @@ var StepLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
     StepIconComponent = _StepIcon__WEBPACK_IMPORTED_MODULE_7__["default"];
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes[orientation], className, disabled && classes.disabled, alternativeLabel && classes.alternativeLabel, error && classes.error),
     ref: ref
-  }, other), icon || StepIconComponent ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other), icon || StepIconComponent ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.iconContainer, alternativeLabel && classes.alternativeLabel)
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(StepIconComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](StepIconComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     completed: completed,
     active: active,
     error: error,
     icon: icon
-  }, StepIconProps))) : null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, StepIconProps))) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: classes.labelContainer
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_6__["default"], {
     variant: "body2",
     component: "span",
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.label, alternativeLabel && classes.alternativeLabel, completed && classes.completed, active && classes.active, error && classes.error),
@@ -25097,8 +25016,8 @@ var styles = {
     alignItems: 'flex-start'
   }
 };
-var defaultConnector = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_StepConnector__WEBPACK_IMPORTED_MODULE_7__["default"], null);
-var Stepper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Stepper(props, ref) {
+var defaultConnector = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_StepConnector__WEBPACK_IMPORTED_MODULE_7__["default"], null);
+var Stepper = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Stepper(props, ref) {
   var _props$activeStep = props.activeStep,
       activeStep = _props$activeStep === void 0 ? 0 : _props$activeStep,
       _props$alternativeLab = props.alternativeLabel,
@@ -25114,10 +25033,10 @@ var Stepper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function S
       orientation = _props$orientation === void 0 ? 'horizontal' : _props$orientation,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["activeStep", "alternativeLabel", "children", "classes", "className", "connector", "nonLinear", "orientation"]);
 
-  var connector = react__WEBPACK_IMPORTED_MODULE_2___default.a.isValidElement(connectorProp) ? react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(connectorProp, {
+  var connector = react__WEBPACK_IMPORTED_MODULE_2__["isValidElement"](connectorProp) ? react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](connectorProp, {
     orientation: orientation
   }) : null;
-  var childrenArray = react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.toArray(children);
+  var childrenArray = react__WEBPACK_IMPORTED_MODULE_2__["Children"].toArray(children);
   var steps = childrenArray.map(function (step, index) {
     var controlProps = {
       alternativeLabel: alternativeLabel,
@@ -25140,11 +25059,11 @@ var Stepper = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function S
       state.disabled = true;
     }
 
-    return [!alternativeLabel && connector && index !== 0 && react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(connector, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return [!alternativeLabel && connector && index !== 0 && react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](connector, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       key: index
-    }, state)), react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(step, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, controlProps, {}, state, {}, step.props))];
+    }, state)), react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](step, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, controlProps, {}, state, {}, step.props))];
   });
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Paper__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Paper__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     square: true,
     elevation: 0,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes[orientation], className, alternativeLabel && classes.alternativeLabel),
@@ -25300,7 +25219,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var SvgIcon = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function SvgIcon(props, ref) {
+var SvgIcon = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function SvgIcon(props, ref) {
   var children = props.children,
       classes = props.classes,
       className = props.className,
@@ -25316,15 +25235,15 @@ var SvgIcon = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function S
       viewBox = _props$viewBox === void 0 ? '0 0 24 24' : _props$viewBox,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "classes", "className", "color", "component", "fontSize", "htmlColor", "titleAccess", "viewBox"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, color !== 'inherit' && classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], fontSize !== 'default' && classes["fontSize".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(fontSize))]),
     focusable: "false",
     viewBox: viewBox,
     color: htmlColor,
-    "aria-hidden": titleAccess ? null : 'true',
-    role: titleAccess ? 'img' : 'presentation',
+    "aria-hidden": titleAccess ? undefined : 'true',
+    role: titleAccess ? 'img' : undefined,
     ref: ref
-  }, other), children, titleAccess ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", null, titleAccess) : null);
+  }, other), children, titleAccess ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("title", null, titleAccess) : null);
 });
  true ? SvgIcon.propTypes = {
   // ----------------------------- Warning --------------------------------
@@ -25477,14 +25396,14 @@ var styles = function styles(theme) {
  * @ignore - internal component.
  */
 
-var SwipeArea = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function SwipeArea(props, ref) {
+var SwipeArea = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function SwipeArea(props, ref) {
   var anchor = props.anchor,
       classes = props.classes,
       className = props.className,
       width = props.width,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, ["anchor", "classes", "className", "width"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, classes["anchor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_7__["default"])(anchor))], className),
     ref: ref,
     style: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({}, Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_8__["isHorizontal"])(anchor) ? 'width' : 'height', width)
@@ -25528,8 +25447,8 @@ var SwipeArea = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reset", function() { return reset; });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -25537,14 +25456,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/index.js");
-/* harmony import */ var _Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Drawer/Drawer */ "./node_modules/@material-ui/core/esm/Drawer/Drawer.js");
-/* harmony import */ var _utils_ownerDocument__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/ownerDocument */ "./node_modules/@material-ui/core/esm/utils/ownerDocument.js");
-/* harmony import */ var _utils_useEventCallback__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/useEventCallback */ "./node_modules/@material-ui/core/esm/utils/useEventCallback.js");
-/* harmony import */ var _styles_transitions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/transitions */ "./node_modules/@material-ui/core/esm/styles/transitions.js");
-/* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@material-ui/core/esm/styles/useTheme.js");
-/* harmony import */ var _transitions_utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../transitions/utils */ "./node_modules/@material-ui/core/esm/transitions/utils.js");
-/* harmony import */ var _NoSsr__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../NoSsr */ "./node_modules/@material-ui/core/esm/NoSsr/index.js");
-/* harmony import */ var _SwipeArea__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./SwipeArea */ "./node_modules/@material-ui/core/esm/SwipeableDrawer/SwipeArea.js");
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/styles */ "./node_modules/@material-ui/core/node_modules/@material-ui/styles/esm/index.js");
+/* harmony import */ var _Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Drawer/Drawer */ "./node_modules/@material-ui/core/esm/Drawer/Drawer.js");
+/* harmony import */ var _utils_ownerDocument__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/ownerDocument */ "./node_modules/@material-ui/core/esm/utils/ownerDocument.js");
+/* harmony import */ var _utils_useEventCallback__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/useEventCallback */ "./node_modules/@material-ui/core/esm/utils/useEventCallback.js");
+/* harmony import */ var _styles_transitions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/transitions */ "./node_modules/@material-ui/core/esm/styles/transitions.js");
+/* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@material-ui/core/esm/styles/useTheme.js");
+/* harmony import */ var _transitions_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../transitions/utils */ "./node_modules/@material-ui/core/esm/transitions/utils.js");
+/* harmony import */ var _NoSsr__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../NoSsr */ "./node_modules/@material-ui/core/esm/NoSsr/index.js");
+/* harmony import */ var _SwipeArea__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./SwipeArea */ "./node_modules/@material-ui/core/esm/SwipeableDrawer/SwipeArea.js");
+
 
 
 
@@ -25654,11 +25575,17 @@ function findNativeHandler(_ref) {
 
 var disableSwipeToOpenDefault = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
 var transitionDurationDefault = {
-  enter: _styles_transitions__WEBPACK_IMPORTED_MODULE_9__["duration"].enteringScreen,
-  exit: _styles_transitions__WEBPACK_IMPORTED_MODULE_9__["duration"].leavingScreen
+  enter: _styles_transitions__WEBPACK_IMPORTED_MODULE_10__["duration"].enteringScreen,
+  exit: _styles_transitions__WEBPACK_IMPORTED_MODULE_10__["duration"].leavingScreen
 };
-var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2___default.a.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect;
-var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function SwipeableDrawer(props, ref) {
+var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_2__["useEffect"];
+var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function SwipeableDrawer(inProps, ref) {
+  var theme = Object(_styles_useTheme__WEBPACK_IMPORTED_MODULE_11__["default"])();
+  var props = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_6__["getThemeProps"])({
+    name: 'MuiSwipeableDrawer',
+    props: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, inProps),
+    theme: theme
+  });
   var _props$anchor = props.anchor,
       anchor = _props$anchor === void 0 ? 'left' : _props$anchor,
       _props$disableBackdro = props.disableBackdropTransition,
@@ -25676,7 +25603,7 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
   _props$ModalProps = _props$ModalProps === void 0 ? {} : _props$ModalProps;
 
   var BackdropProps = _props$ModalProps.BackdropProps,
-      ModalPropsProp = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_props$ModalProps, ["BackdropProps"]),
+      ModalPropsProp = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_props$ModalProps, ["BackdropProps"]),
       onClose = props.onClose,
       onOpen = props.onOpen,
       open = props.open,
@@ -25689,36 +25616,34 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
       transitionDuration = _props$transitionDura === void 0 ? transitionDurationDefault : _props$transitionDura,
       _props$variant = props.variant,
       variant = _props$variant === void 0 ? 'temporary' : _props$variant,
-      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["anchor", "disableBackdropTransition", "disableDiscovery", "disableSwipeToOpen", "hideBackdrop", "hysteresis", "minFlingVelocity", "ModalProps", "onClose", "onOpen", "open", "PaperProps", "SwipeAreaProps", "swipeAreaWidth", "transitionDuration", "variant"]);
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["anchor", "disableBackdropTransition", "disableDiscovery", "disableSwipeToOpen", "hideBackdrop", "hysteresis", "minFlingVelocity", "ModalProps", "onClose", "onOpen", "open", "PaperProps", "SwipeAreaProps", "swipeAreaWidth", "transitionDuration", "variant"]);
 
-  var theme = Object(_styles_useTheme__WEBPACK_IMPORTED_MODULE_10__["default"])();
-
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
       maybeSwiping = _React$useState[0],
       setMaybeSwiping = _React$useState[1];
 
-  var swipeInstance = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef({
+  var swipeInstance = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]({
     isSwiping: null
   });
-  var swipeAreaRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef();
-  var backdropRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef();
-  var paperRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef();
-  var touchDetected = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(false); // Ref for transition duration based on / to match swipe speed
+  var swipeAreaRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]();
+  var backdropRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]();
+  var paperRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]();
+  var touchDetected = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](false); // Ref for transition duration based on / to match swipe speed
 
-  var calculatedDurationRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(); // Use a ref so the open value used is always up to date inside useCallback.
+  var calculatedDurationRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](); // Use a ref so the open value used is always up to date inside useCallback.
 
   useEnhancedEffect(function () {
     calculatedDurationRef.current = null;
   }, [open]);
-  var setPosition = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (translate) {
+  var setPosition = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (translate) {
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var _options$mode = options.mode,
         mode = _options$mode === void 0 ? null : _options$mode,
         _options$changeTransi = options.changeTransition,
         changeTransition = _options$changeTransi === void 0 ? true : _options$changeTransi;
-    var anchorRtl = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__["getAnchor"])(theme, anchor);
+    var anchorRtl = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__["getAnchor"])(theme, anchor);
     var rtlTranslateMultiplier = ['right', 'bottom'].indexOf(anchorRtl) !== -1 ? 1 : -1;
-    var horizontalSwipe = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__["isHorizontal"])(anchor);
+    var horizontalSwipe = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__["isHorizontal"])(anchor);
     var transform = horizontalSwipe ? "translate(".concat(rtlTranslateMultiplier * translate, "px, 0)") : "translate(0, ".concat(rtlTranslateMultiplier * translate, "px)");
     var drawerStyle = paperRef.current.style;
     drawerStyle.webkitTransform = transform;
@@ -25726,7 +25651,7 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
     var transition = '';
 
     if (mode) {
-      transition = theme.transitions.create('all', Object(_transitions_utils__WEBPACK_IMPORTED_MODULE_11__["getTransitionProps"])({
+      transition = theme.transitions.create('all', Object(_transitions_utils__WEBPACK_IMPORTED_MODULE_12__["getTransitionProps"])({
         timeout: transitionDuration
       }, {
         mode: mode
@@ -25748,7 +25673,7 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
       }
     }
   }, [anchor, disableBackdropTransition, hideBackdrop, theme, transitionDuration]);
-  var handleBodyTouchEnd = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_8__["default"])(function (event) {
+  var handleBodyTouchEnd = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_9__["default"])(function (event) {
     if (!touchDetected.current) {
       return;
     }
@@ -25763,8 +25688,8 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
     }
 
     swipeInstance.current.isSwiping = null;
-    var anchorRtl = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__["getAnchor"])(theme, anchor);
-    var horizontal = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__["isHorizontal"])(anchor);
+    var anchorRtl = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__["getAnchor"])(theme, anchor);
+    var horizontal = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__["isHorizontal"])(anchor);
     var current;
 
     if (horizontal) {
@@ -25805,7 +25730,7 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
       });
     }
   });
-  var handleBodyTouchMove = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_8__["default"])(function (event) {
+  var handleBodyTouchMove = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_9__["default"])(function (event) {
     // the ref may be null when a parent component updates while swiping
     if (!paperRef.current || !touchDetected.current) {
       return;
@@ -25816,8 +25741,8 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
       return;
     }
 
-    var anchorRtl = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__["getAnchor"])(theme, anchor);
-    var horizontalSwipe = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__["isHorizontal"])(anchor);
+    var anchorRtl = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__["getAnchor"])(theme, anchor);
+    var horizontalSwipe = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__["isHorizontal"])(anchor);
     var currentX = calculateCurrentX(anchorRtl, event.touches);
     var currentY = calculateCurrentY(anchorRtl, event.touches);
 
@@ -25920,7 +25845,7 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
 
     setPosition(translate);
   });
-  var handleBodyTouchStart = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_8__["default"])(function (event) {
+  var handleBodyTouchStart = Object(_utils_useEventCallback__WEBPACK_IMPORTED_MODULE_9__["default"])(function (event) {
     // We are not supposed to handle this touch move.
     // Example of use case: ignore the event if there is a Slider.
     if (event.defaultPrevented) {
@@ -25937,8 +25862,8 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
       return;
     }
 
-    var anchorRtl = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__["getAnchor"])(theme, anchor);
-    var horizontalSwipe = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__["isHorizontal"])(anchor);
+    var anchorRtl = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__["getAnchor"])(theme, anchor);
+    var horizontalSwipe = Object(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__["isHorizontal"])(anchor);
     var currentX = calculateCurrentX(anchorRtl, event.touches);
     var currentY = calculateCurrentY(anchorRtl, event.touches);
 
@@ -25975,9 +25900,9 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
     swipeInstance.current.paperHit = false;
     touchDetected.current = true;
   });
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (variant === 'temporary') {
-      var doc = Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_7__["default"])(paperRef.current);
+      var doc = Object(_utils_ownerDocument__WEBPACK_IMPORTED_MODULE_8__["default"])(paperRef.current);
       doc.addEventListener('touchstart', handleBodyTouchStart);
       doc.addEventListener('touchmove', handleBodyTouchMove, {
         passive: false
@@ -25994,7 +25919,7 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
 
     return undefined;
   }, [variant, handleBodyTouchStart, handleBodyTouchMove, handleBodyTouchEnd]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     return function () {
       // We need to release the lock.
       if (nodeThatClaimedTheSwipe === swipeInstance.current) {
@@ -26002,38 +25927,34 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
       }
     };
   }, []);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (!open) {
       setMaybeSwiping(false);
     }
   }, [open]);
-  var handleBackdropRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (instance) {
+  var handleBackdropRef = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function (instance) {
     // #StrictMode ready
-    backdropRef.current = react_dom__WEBPACK_IMPORTED_MODULE_4___default.a.findDOMNode(instance);
+    backdropRef.current = react_dom__WEBPACK_IMPORTED_MODULE_4__["findDOMNode"](instance);
   }, []);
-  var handlePaperRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function (instance) {
-    // #StrictMode ready
-    paperRef.current = react_dom__WEBPACK_IMPORTED_MODULE_4___default.a.findDOMNode(instance);
-  }, []);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Drawer_Drawer__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     open: variant === 'temporary' && maybeSwiping ? true : open,
     variant: variant,
-    ModalProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-      BackdropProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, BackdropProps, {
+    ModalProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+      BackdropProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, BackdropProps, {
         ref: handleBackdropRef
       })
     }, ModalPropsProp),
-    PaperProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, PaperProps, {
-      style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    PaperProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, PaperProps, {
+      style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
         pointerEvents: variant === 'temporary' && !open ? 'none' : ''
       }, PaperProps.style),
-      ref: handlePaperRef
+      ref: paperRef
     }),
     anchor: anchor,
     transitionDuration: calculatedDurationRef.current || transitionDuration,
     onClose: onClose,
     ref: ref
-  }, other)), !disableSwipeToOpen && variant === 'temporary' && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_NoSsr__WEBPACK_IMPORTED_MODULE_12__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_SwipeArea__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, other)), !disableSwipeToOpen && variant === 'temporary' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_NoSsr__WEBPACK_IMPORTED_MODULE_13__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_SwipeArea__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     anchor: anchor,
     ref: swipeAreaRef,
     width: swipeAreaWidth
@@ -26123,7 +26044,7 @@ var SwipeableDrawer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
   }),
 
   /**
-   * Props applied to the swipe area element.
+   * The element is used to intercept the touch events on the edge.
    */
   SwipeAreaProps: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
@@ -26349,7 +26270,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Switch = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Switch(props, ref) {
+var Switch = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Switch(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$color = props.color,
@@ -26360,17 +26281,15 @@ var Switch = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Sw
       size = _props$size === void 0 ? 'medium' : _props$size,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "color", "edge", "size"]);
 
-  var icon = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  var icon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: classes.thumb
   });
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, {
-      start: classes.edgeStart,
-      end: classes.edgeEnd
-    }[edge], {
-      small: classes["size".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(size))]
-    }[size])
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_SwitchBase__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      'start': classes.edgeStart,
+      'end': classes.edgeEnd
+    }[edge], size === "small" && classes["size".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(size))])
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_SwitchBase__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     type: "checkbox",
     icon: icon,
     checkedIcon: icon,
@@ -26381,7 +26300,7 @@ var Switch = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Sw
       disabled: classes.disabled
     },
     ref: ref
-  }, other)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+  }, other)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", {
     className: classes.track
   }));
 });
@@ -26481,6 +26400,7 @@ var Switch = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Sw
 
   /**
    * The value of the component. The DOM API casts this to a string.
+   * The browser uses "on" as the default value.
    */
   value: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any
 } : undefined;
@@ -26630,7 +26550,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Tab = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tab(props, ref) {
+var Tab = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function Tab(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$disabled = props.disabled,
@@ -26661,7 +26581,7 @@ var Tab = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tab(p
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
     focusRipple: !disableFocusRipple,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, classes["textColor".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(textColor))], className, disabled && classes.disabled, selected && classes.selected, label && icon && classes.labelIcon, fullWidth && classes.fullWidth, wrapped && classes.wrapped),
     ref: ref,
@@ -26669,7 +26589,7 @@ var Tab = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tab(p
     "aria-selected": selected,
     disabled: disabled,
     onClick: handleChange
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("span", {
     className: classes.wrapper
   }, icon, label), indicator);
 });
@@ -26830,7 +26750,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Table = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Table(props, ref) {
+var Table = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Table(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
@@ -26843,16 +26763,16 @@ var Table = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Tab
       stickyHeader = _props$stickyHeader === void 0 ? false : _props$stickyHeader,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["classes", "className", "component", "padding", "size", "stickyHeader"]);
 
-  var table = react__WEBPACK_IMPORTED_MODULE_2___default.a.useMemo(function () {
+  var table = react__WEBPACK_IMPORTED_MODULE_2__["useMemo"](function () {
     return {
       padding: padding,
       size: size,
       stickyHeader: stickyHeader
     };
   }, [padding, size, stickyHeader]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_TableContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_TableContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
     value: table
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     ref: ref,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, stickyHeader && classes.stickyHeader)
   }, other)));
@@ -26919,7 +26839,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-var TableContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext();
+var TableContext = react__WEBPACK_IMPORTED_MODULE_0__["createContext"]();
 
 if (true) {
   TableContext.displayName = 'TableContext';
@@ -26945,7 +26865,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-var Tablelvl2Context = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext();
+var Tablelvl2Context = react__WEBPACK_IMPORTED_MODULE_0__["createContext"]();
 
 if (true) {
   Tablelvl2Context.displayName = 'Tablelvl2Context';
@@ -27006,16 +26926,16 @@ var styles = {
 var tablelvl2 = {
   variant: 'body'
 };
-var TableBody = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TableBody(props, ref) {
+var TableBody = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TableBody(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
       Component = _props$component === void 0 ? 'tbody' : _props$component,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
     value: tablelvl2
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     ref: ref
   }, other)));
@@ -27204,7 +27124,7 @@ var styles = function styles(theme) {
  * or otherwise a `<td>` element.
  */
 
-var TableCell = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TableCell(props, ref) {
+var TableCell = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TableCell(props, ref) {
   var _props$align = props.align,
       align = _props$align === void 0 ? 'inherit' : _props$align,
       classes = props.classes,
@@ -27217,8 +27137,8 @@ var TableCell = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
       variantProp = props.variant,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(props, ["align", "classes", "className", "component", "padding", "scope", "size", "sortDirection", "variant"]);
 
-  var table = react__WEBPACK_IMPORTED_MODULE_2___default.a.useContext(_Table_TableContext__WEBPACK_IMPORTED_MODULE_8__["default"]);
-  var tablelvl2 = react__WEBPACK_IMPORTED_MODULE_2___default.a.useContext(_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_9__["default"]);
+  var table = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_Table_TableContext__WEBPACK_IMPORTED_MODULE_8__["default"]);
+  var tablelvl2 = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_9__["default"]);
   var Component;
 
   if (component) {
@@ -27242,23 +27162,26 @@ var TableCell = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
     ariaSort = sortDirection === 'asc' ? 'ascending' : 'descending';
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     ref: ref,
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes[variant], className, align !== 'inherit' && classes["align".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(align))], padding !== 'default' && classes["padding".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(padding))], size !== 'medium' && classes["size".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(size))], {
-      head: table && table.stickyHeader && classes.stickyHeader
-    }[variant]),
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes[variant], className, align !== 'inherit' && classes["align".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(align))], padding !== 'default' && classes["padding".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(padding))], size !== 'medium' && classes["size".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(size))], variant === 'head' && table && table.stickyHeader && classes.stickyHeader),
     "aria-sort": ariaSort,
     scope: scope
   }, other));
 });
  true ? TableCell.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * Set the text-align on the table cell content.
    *
    * Monetary or generally number fields **should be right aligned** as that allows
    * you to add them up quickly in your head without having to worry about decimals.
    */
-  align: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['inherit', 'left', 'center', 'right', 'justify']),
+  align: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['center', 'inherit', 'justify', 'left', 'right']),
 
   /**
    * The table cell contents.
@@ -27269,7 +27192,7 @@ var TableCell = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
    * Override or extend the styles applied to the component.
    * See [CSS API](#css) below for more details.
    */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object,
 
   /**
    * @ignore
@@ -27286,7 +27209,7 @@ var TableCell = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
    * Sets the padding applied to the cell.
    * By default, the Table parent component set the value (`default`).
    */
-  padding: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['default', 'checkbox', 'none']),
+  padding: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['checkbox', 'default', 'none']),
 
   /**
    * Set scope attribute.
@@ -27297,7 +27220,7 @@ var TableCell = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
    * Specify the size of the cell.
    * By default, the Table parent component set the value (`medium`).
    */
-  size: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['small', 'medium']),
+  size: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['medium', 'small']),
 
   /**
    * Set aria-sort direction.
@@ -27308,7 +27231,7 @@ var TableCell = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
    * Specify the cell type.
    * By default, the TableHead, TableBody or TableFooter parent component set the value.
    */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['head', 'body', 'footer'])
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(['body', 'footer', 'head'])
 } : undefined;
 /* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_5__["default"])(styles, {
   name: 'MuiTableCell'
@@ -27363,14 +27286,14 @@ var styles = {
     overflowX: 'auto'
   }
 };
-var TableContainer = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TableContainer(props, ref) {
+var TableContainer = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TableContainer(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
       Component = _props$component === void 0 ? 'div' : _props$component,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     ref: ref,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className)
   }, other));
@@ -27455,16 +27378,16 @@ var styles = {
 var tablelvl2 = {
   variant: 'footer'
 };
-var TableFooter = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TableFooter(props, ref) {
+var TableFooter = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TableFooter(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
       Component = _props$component === void 0 ? 'tfoot' : _props$component,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
     value: tablelvl2
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     ref: ref
   }, other)));
@@ -27549,16 +27472,16 @@ var styles = {
 var tablelvl2 = {
   variant: 'head'
 };
-var TableHead = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TableHead(props, ref) {
+var TableHead = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TableHead(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
       Component = _props$component === void 0 ? 'thead' : _props$component,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
     value: tablelvl2
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     ref: ref
   }, other)));
@@ -27727,7 +27650,7 @@ var defaultRowsPerPageOptions = [10, 25, 50, 100];
  * A `TableCell` based component for placing inside `TableFooter` for pagination.
  */
 
-var TablePagination = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TablePagination(props, ref) {
+var TablePagination = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TablePagination(props, ref) {
   var _props$ActionsCompone = props.ActionsComponent,
       ActionsComponent = _props$ActionsCompone === void 0 ? _TablePaginationActions__WEBPACK_IMPORTED_MODULE_13__["default"] : _props$ActionsCompone,
       backIconButtonProps = props.backIconButtonProps,
@@ -27763,35 +27686,35 @@ var TablePagination = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
   }
 
   var MenuItemComponent = SelectProps.native ? 'option' : _MenuItem__WEBPACK_IMPORTED_MODULE_8__["default"];
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className),
     colSpan: colSpan,
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Toolbar__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Toolbar__WEBPACK_IMPORTED_MODULE_11__["default"], {
     className: classes.toolbar
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
     className: classes.spacer
-  }), rowsPerPageOptions.length > 1 && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }), rowsPerPageOptions.length > 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_12__["default"], {
     color: "inherit",
     variant: "body2",
     className: classes.caption
-  }, labelRowsPerPage), rowsPerPageOptions.length > 1 && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Select__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, labelRowsPerPage), rowsPerPageOptions.length > 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Select__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     classes: {
       select: classes.select,
       icon: classes.selectIcon
     },
-    input: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_InputBase__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    input: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_InputBase__WEBPACK_IMPORTED_MODULE_7__["default"], {
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.input, classes.selectRoot)
     }),
     value: rowsPerPage,
     onChange: onChangeRowsPerPage
   }, SelectProps), rowsPerPageOptions.map(function (rowsPerPageOption) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(MenuItemComponent, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](MenuItemComponent, {
       className: classes.menuItem,
       key: rowsPerPageOption.value ? rowsPerPageOption.value : rowsPerPageOption,
       value: rowsPerPageOption.value ? rowsPerPageOption.value : rowsPerPageOption
     }, rowsPerPageOption.label ? rowsPerPageOption.label : rowsPerPageOption);
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Typography__WEBPACK_IMPORTED_MODULE_12__["default"], {
     color: "inherit",
     variant: "body2",
     className: classes.caption
@@ -27800,7 +27723,7 @@ var TablePagination = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
     to: count !== -1 ? Math.min(count, (page + 1) * rowsPerPage) : (page + 1) * rowsPerPage,
     count: count,
     page: page
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ActionsComponent, {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](ActionsComponent, {
     className: classes.actions,
     backIconButtonProps: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       title: backIconButtonText,
@@ -27865,15 +27788,15 @@ var TablePagination = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
   count: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number.isRequired,
 
   /**
-   * Customize the displayed rows label.
+   * Customize the displayed rows label. Invoked with a `{ from, to, count, page }`
+   * object.
    *
    * For localization purposes, you can use the provided [translations](/guides/localization/).
    */
   labelDisplayedRows: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func,
 
   /**
-   * Customize the rows per page label. Invoked with a `{ from, to, count, page }`
-   * object.
+   * Customize the rows per page label.
    *
    * For localization purposes, you can use the provided [translations](/guides/localization/).
    */
@@ -27913,6 +27836,11 @@ var TablePagination = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
     var count = props.count,
         page = props.page,
         rowsPerPage = props.rowsPerPage;
+
+    if (count === -1) {
+      return null;
+    }
+
     var newLastPage = Math.max(0, Math.ceil(count / rowsPerPage) - 1);
 
     if (page < 0 || page > newLastPage) {
@@ -27975,15 +27903,15 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-var _ref = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_5__["default"], null);
+var _ref = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_5__["default"], null);
 
-var _ref2 = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_4__["default"], null);
+var _ref2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_4__["default"], null);
 
-var _ref3 = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_4__["default"], null);
+var _ref3 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_4__["default"], null);
 
-var _ref4 = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_5__["default"], null);
+var _ref4 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_5__["default"], null);
 
-var TablePaginationActions = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TablePaginationActions(props, ref) {
+var TablePaginationActions = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TablePaginationActions(props, ref) {
   var backIconButtonProps = props.backIconButtonProps,
       count = props.count,
       nextIconButtonProps = props.nextIconButtonProps,
@@ -28002,13 +27930,13 @@ var TablePaginationActions = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwar
     onChangePage(event, page + 1);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     onClick: handleBackButtonClick,
     disabled: page === 0,
     color: "inherit"
-  }, backIconButtonProps), theme.direction === 'rtl' ? _ref : _ref2), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, backIconButtonProps), theme.direction === 'rtl' ? _ref : _ref2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_IconButton__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     onClick: handleNextButtonClick,
     disabled: count !== -1 ? page >= Math.ceil(count / rowsPerPage) - 1 : false,
     color: "inherit"
@@ -28108,7 +28036,7 @@ var styles = function styles(theme) {
       '&$hover:hover': {
         backgroundColor: theme.palette.action.hover
       },
-      '&$selected,&$selected:hover': {
+      '&$selected, &$selected:hover': {
         backgroundColor: Object(_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_7__["fade"])(theme.palette.secondary.main, theme.palette.action.selectedOpacity)
       }
     },
@@ -28131,7 +28059,7 @@ var styles = function styles(theme) {
  * based on the material table element parent (head, body, etc).
  */
 
-var TableRow = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TableRow(props, ref) {
+var TableRow = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TableRow(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
@@ -28142,12 +28070,12 @@ var TableRow = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function 
       selected = _props$selected === void 0 ? false : _props$selected,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component", "hover", "selected"]);
 
-  var tablelvl2 = react__WEBPACK_IMPORTED_MODULE_2___default.a.useContext(_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_6__["default"]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  var tablelvl2 = react__WEBPACK_IMPORTED_MODULE_2__["useContext"](_Table_Tablelvl2Context__WEBPACK_IMPORTED_MODULE_6__["default"]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     ref: ref,
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, tablelvl2 && {
-      head: classes.head,
-      footer: classes.footer
+      'head': classes.head,
+      'footer': classes.footer
     }[tablelvl2.variant], hover && classes.hover, selected && classes.selected)
   }, other));
 });
@@ -28294,7 +28222,7 @@ var styles = function styles(theme) {
  * A button based label for placing inside `TableCell` for column sorting.
  */
 
-var TableSortLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TableSortLabel(props, ref) {
+var TableSortLabel = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TableSortLabel(props, ref) {
   var _props$active = props.active,
       active = _props$active === void 0 ? false : _props$active,
       children = props.children,
@@ -28308,12 +28236,12 @@ var TableSortLabel = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fun
       IconComponent = _props$IconComponent === void 0 ? _internal_svg_icons_ArrowDownward__WEBPACK_IMPORTED_MODULE_5__["default"] : _props$IconComponent,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["active", "children", "classes", "className", "direction", "hideSortIcon", "IconComponent"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, active && classes.active),
     component: "span",
     disableRipple: true,
     ref: ref
-  }, other), children, hideSortIcon && !active ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(IconComponent, {
+  }, other), children, hideSortIcon && !active ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](IconComponent, {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.icon, classes["iconDirection".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_8__["default"])(direction))])
   }));
 });
@@ -28415,14 +28343,14 @@ function ScrollbarSize(props) {
   var onChange = props.onChange,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["onChange"]);
 
-  var scrollbarHeight = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef();
-  var nodeRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var scrollbarHeight = react__WEBPACK_IMPORTED_MODULE_2__["useRef"]();
+  var nodeRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
 
   var setMeasurements = function setMeasurements() {
     scrollbarHeight.current = nodeRef.current.offsetHeight - nodeRef.current.clientHeight;
   };
 
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     var handleResize = Object(_utils_debounce__WEBPACK_IMPORTED_MODULE_4__["default"])(function () {
       var prevHeight = scrollbarHeight.current;
       setMeasurements();
@@ -28437,11 +28365,11 @@ function ScrollbarSize(props) {
       window.removeEventListener('resize', handleResize);
     };
   }, [onChange]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     setMeasurements();
     onChange(scrollbarHeight.current);
   }, [onChange]);
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     style: styles,
     ref: nodeRef
   }, other));
@@ -28504,17 +28432,15 @@ var styles = function styles(theme) {
  * @ignore - internal component.
  */
 
-var TabIndicator = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TabIndicator(props, ref) {
+var TabIndicator = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TabIndicator(props, ref) {
   var classes = props.classes,
       className = props.className,
       color = props.color,
       orientation = props.orientation,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "color", "orientation"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], className, {
-      vertical: classes.vertical
-    }[orientation]),
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("span", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], className, orientation === 'vertical' && classes.vertical),
     ref: ref
   }, other));
 });
@@ -28596,15 +28522,15 @@ var styles = {
  * @ignore - internal component.
  */
 
-var _ref = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_5__["default"], {
+var _ref = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_KeyboardArrowLeft__WEBPACK_IMPORTED_MODULE_5__["default"], {
   fontSize: "small"
 });
 
-var _ref2 = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_internal_svg_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_6__["default"], {
+var _ref2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_internal_svg_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_6__["default"], {
   fontSize: "small"
 });
 
-var TabScrollButton = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TabScrollButton(props, ref) {
+var TabScrollButton = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TabScrollButton(props, ref) {
   var classes = props.classes,
       classNameProp = props.className,
       direction = props.direction,
@@ -28612,17 +28538,15 @@ var TabScrollButton = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(fu
       visible = props.visible,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "direction", "orientation", "visible"]);
 
-  var className = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classNameProp, {
-    vertical: classes.vertical
-  }[orientation]);
+  var className = Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, classNameProp, orientation === 'vertical' && classes.vertical);
 
   if (!visible) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("div", {
       className: className
     });
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ButtonBase__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_ButtonBase__WEBPACK_IMPORTED_MODULE_8__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     component: "div",
     className: className,
     ref: ref,
@@ -28686,7 +28610,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/index.js");
 /* harmony import */ var _utils_debounce__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/debounce */ "./node_modules/@material-ui/core/esm/utils/debounce.js");
 /* harmony import */ var _utils_ownerWindow__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/ownerWindow */ "./node_modules/@material-ui/core/esm/utils/ownerWindow.js");
-/* harmony import */ var normalize_scroll_left__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! normalize-scroll-left */ "./node_modules/normalize-scroll-left/esm/main.js");
+/* harmony import */ var _utils_scrollLeft__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/scrollLeft */ "./node_modules/@material-ui/core/esm/utils/scrollLeft.js");
 /* harmony import */ var _internal_animate__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../internal/animate */ "./node_modules/@material-ui/core/esm/internal/animate.js");
 /* harmony import */ var _ScrollbarSize__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ScrollbarSize */ "./node_modules/@material-ui/core/esm/Tabs/ScrollbarSize.js");
 /* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
@@ -28781,7 +28705,7 @@ var styles = function styles(theme) {
     indicator: {}
   };
 };
-var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs(props, ref) {
+var Tabs = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function Tabs(props, ref) {
   var action = props.action,
       _props$centered = props.centered,
       centered = _props$centered === void 0 ? false : _props$centered,
@@ -28824,22 +28748,22 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
     }
   }
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState(false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3__["useState"](false),
       mounted = _React$useState[0],
       setMounted = _React$useState[1];
 
-  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState({}),
+  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_3__["useState"]({}),
       indicatorStyle = _React$useState2[0],
       setIndicatorStyle = _React$useState2[1];
 
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState({
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_3__["useState"]({
     start: false,
     end: false
   }),
       displayScroll = _React$useState3[0],
       setDisplayScroll = _React$useState3[1];
 
-  var _React$useState4 = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState({
+  var _React$useState4 = react__WEBPACK_IMPORTED_MODULE_3__["useState"]({
     overflow: 'hidden',
     marginBottom: null
   }),
@@ -28847,8 +28771,8 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
       setScrollerStyle = _React$useState4[1];
 
   var valueToIndex = new Map();
-  var tabsRef = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(null);
-  var childrenWrapperRef = react__WEBPACK_IMPORTED_MODULE_3___default.a.useRef(null);
+  var tabsRef = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](null);
+  var childrenWrapperRef = react__WEBPACK_IMPORTED_MODULE_3__["useRef"](null);
 
   var getTabsMeta = function getTabsMeta() {
     var tabsNode = tabsRef.current;
@@ -28861,7 +28785,7 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
         clientWidth: tabsNode.clientWidth,
         scrollLeft: tabsNode.scrollLeft,
         scrollTop: tabsNode.scrollTop,
-        scrollLeftNormalized: Object(normalize_scroll_left__WEBPACK_IMPORTED_MODULE_10__["getNormalizedScrollLeft"])(tabsNode, theme.direction),
+        scrollLeftNormalized: Object(_utils_scrollLeft__WEBPACK_IMPORTED_MODULE_10__["getNormalizedScrollLeft"])(tabsNode, theme.direction),
         scrollWidth: tabsNode.scrollWidth,
         top: rect.top,
         bottom: rect.bottom,
@@ -28880,7 +28804,7 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
 
         if (true) {
           if (!tab) {
-            console.error(["Material-UI: the value provided `".concat(value, "` to the Tabs component is invalid."), 'None of the Tabs children have this value.', valueToIndex.keys ? "You can provide one of the following values: ".concat(Array.from(valueToIndex.keys()).join(', '), ".") : null].join('\n'));
+            console.error(["Material-UI: the value provided to the Tabs component is invalid.", "None of the Tabs' children match with `".concat(value, "`."), valueToIndex.keys ? "You can provide one of the following values: ".concat(Array.from(valueToIndex.keys()).join(', '), ".") : null].join('\n'));
           }
         }
 
@@ -28938,7 +28862,7 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
     } else {
       scrollValue += delta * (isRtl ? -1 : 1); // Fix for Edge
 
-      scrollValue *= isRtl && Object(normalize_scroll_left__WEBPACK_IMPORTED_MODULE_10__["detectScrollType"])() === 'reverse' ? -1 : 1;
+      scrollValue *= isRtl && Object(_utils_scrollLeft__WEBPACK_IMPORTED_MODULE_10__["detectScrollType"])() === 'reverse' ? -1 : 1;
     }
 
     scroll(scrollValue);
@@ -28952,7 +28876,7 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
     moveTabsScroll(tabsRef.current[clientSize]);
   };
 
-  var handleScrollbarSizeChange = react__WEBPACK_IMPORTED_MODULE_3___default.a.useCallback(function (scrollbarHeight) {
+  var handleScrollbarSizeChange = react__WEBPACK_IMPORTED_MODULE_3__["useCallback"](function (scrollbarHeight) {
     setScrollerStyle({
       overflow: null,
       marginBottom: -scrollbarHeight
@@ -28961,20 +28885,20 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
 
   var getConditionalElements = function getConditionalElements() {
     var conditionalElements = {};
-    conditionalElements.scrollbarSizeListener = scrollable ? react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ScrollbarSize__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    conditionalElements.scrollbarSizeListener = scrollable ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_ScrollbarSize__WEBPACK_IMPORTED_MODULE_12__["default"], {
       className: classes.scrollable,
       onChange: handleScrollbarSizeChange
     }) : null;
     var scrollButtonsActive = displayScroll.start || displayScroll.end;
     var showScrollButtons = scrollable && (scrollButtons === 'auto' && scrollButtonsActive || scrollButtons === 'desktop' || scrollButtons === 'on');
-    conditionalElements.scrollButtonStart = showScrollButtons ? react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(ScrollButtonComponent, {
+    conditionalElements.scrollButtonStart = showScrollButtons ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](ScrollButtonComponent, {
       orientation: orientation,
       direction: isRtl ? 'right' : 'left',
       onClick: handleStartScrollClick,
       visible: displayScroll.start,
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.scrollButtons, scrollButtons !== 'on' && classes.scrollButtonsDesktop)
     }) : null;
-    conditionalElements.scrollButtonEnd = showScrollButtons ? react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(ScrollButtonComponent, {
+    conditionalElements.scrollButtonEnd = showScrollButtons ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](ScrollButtonComponent, {
       orientation: orientation,
       direction: isRtl ? 'left' : 'right',
       onClick: handleEndScrollClick,
@@ -29019,7 +28943,7 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
         showStartScroll = scrollTop > 1;
         showEndScroll = scrollTop < scrollHeight - clientHeight - 1;
       } else {
-        var scrollLeft = Object(normalize_scroll_left__WEBPACK_IMPORTED_MODULE_10__["getNormalizedScrollLeft"])(tabsRef.current, theme.direction); // use 1 for the potential rounding error with browser zooms.
+        var scrollLeft = Object(_utils_scrollLeft__WEBPACK_IMPORTED_MODULE_10__["getNormalizedScrollLeft"])(tabsRef.current, theme.direction); // use 1 for the potential rounding error with browser zooms.
 
         showStartScroll = isRtl ? scrollLeft < scrollWidth - clientWidth - 1 : scrollLeft > 1;
         showEndScroll = !isRtl ? scrollLeft < scrollWidth - clientWidth - 1 : scrollLeft > 1;
@@ -29033,7 +28957,7 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
       }
     }
   });
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     var handleResize = Object(_utils_debounce__WEBPACK_IMPORTED_MODULE_8__["default"])(function () {
       updateIndicatorState();
       updateScrollButtonState();
@@ -29045,31 +28969,31 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
       win.removeEventListener('resize', handleResize);
     };
   }, [updateIndicatorState, updateScrollButtonState]);
-  var handleTabsScroll = react__WEBPACK_IMPORTED_MODULE_3___default.a.useCallback(Object(_utils_debounce__WEBPACK_IMPORTED_MODULE_8__["default"])(function () {
+  var handleTabsScroll = react__WEBPACK_IMPORTED_MODULE_3__["useCallback"](Object(_utils_debounce__WEBPACK_IMPORTED_MODULE_8__["default"])(function () {
     updateScrollButtonState();
   }));
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     return function () {
       handleTabsScroll.clear();
     };
   }, [handleTabsScroll]);
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     setMounted(true);
   }, []);
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     updateIndicatorState();
     updateScrollButtonState();
   });
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useEffect"](function () {
     scrollSelectedIntoView();
   }, [scrollSelectedIntoView, indicatorStyle]);
-  react__WEBPACK_IMPORTED_MODULE_3___default.a.useImperativeHandle(action, function () {
+  react__WEBPACK_IMPORTED_MODULE_3__["useImperativeHandle"](action, function () {
     return {
       updateIndicator: updateIndicatorState,
       updateScrollButtons: updateScrollButtonState
     };
   }, [updateIndicatorState, updateScrollButtonState]);
-  var indicator = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_TabIndicator__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  var indicator = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_TabIndicator__WEBPACK_IMPORTED_MODULE_14__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: classes.indicator,
     orientation: orientation,
     color: indicatorColor
@@ -29077,8 +29001,8 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
     style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, indicatorStyle, {}, TabIndicatorProps.style)
   }));
   var childIndex = 0;
-  var children = react__WEBPACK_IMPORTED_MODULE_3___default.a.Children.map(childrenProp, function (child) {
-    if (!react__WEBPACK_IMPORTED_MODULE_3___default.a.isValidElement(child)) {
+  var children = react__WEBPACK_IMPORTED_MODULE_3__["Children"].map(childrenProp, function (child) {
+    if (!react__WEBPACK_IMPORTED_MODULE_3__["isValidElement"](child)) {
       return null;
     }
 
@@ -29092,7 +29016,7 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
     valueToIndex.set(childValue, childIndex);
     var selected = childValue === value;
     childIndex += 1;
-    return react__WEBPACK_IMPORTED_MODULE_3___default.a.cloneElement(child, {
+    return react__WEBPACK_IMPORTED_MODULE_3__["cloneElement"](child, {
       fullWidth: variant === 'fullWidth',
       indicator: selected && !mounted && indicator,
       selected: selected,
@@ -29102,15 +29026,15 @@ var Tabs = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Tabs
     });
   });
   var conditionalElements = getConditionalElements();
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.root, className, vertical && classes.vertical),
     ref: ref
-  }, other), conditionalElements.scrollButtonStart, conditionalElements.scrollbarSizeListener, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, other), conditionalElements.scrollButtonStart, conditionalElements.scrollbarSizeListener, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.scroller, scrollable ? classes.scrollable : classes.fixed),
     style: scrollerStyle,
     ref: tabsRef,
     onScroll: handleTabsScroll
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("div", {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_6__["default"])(classes.flexContainer, vertical && classes.flexContainerVertical, centered && !scrollable && classes.centered),
     ref: childrenWrapperRef,
     role: "tablist"
@@ -29319,7 +29243,7 @@ var styles = {
  * - using the underlying components directly as shown in the demos
  */
 
-var TextField = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TextField(props, ref) {
+var TextField = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TextField(props, ref) {
   var autoComplete = props.autoComplete,
       _props$autoFocus = props.autoFocus,
       autoFocus = _props$autoFocus === void 0 ? false : _props$autoFocus,
@@ -29377,7 +29301,9 @@ var TextField = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
       InputMore.notched = InputLabelProps.shrink;
     }
 
-    InputMore.label = label ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, label, required && "\xA0*") : label;
+    if (label) {
+      InputMore.label = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, label, required && "\xA0*");
+    }
   }
 
   if (select) {
@@ -29392,7 +29318,7 @@ var TextField = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
   var helperTextId = helperText && id ? "".concat(id, "-helper-text") : undefined;
   var inputLabelId = label && id ? "".concat(id, "-label") : undefined;
   var InputComponent = variantComponent[variant];
-  var InputElement = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(InputComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  var InputElement = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](InputComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     "aria-describedby": helperTextId,
     autoComplete: autoComplete,
     autoFocus: autoFocus,
@@ -29412,7 +29338,7 @@ var TextField = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
     placeholder: placeholder,
     inputProps: inputProps
   }, InputMore, InputProps));
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_FormControl__WEBPACK_IMPORTED_MODULE_10__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_FormControl__WEBPACK_IMPORTED_MODULE_10__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className),
     disabled: disabled,
     error: error,
@@ -29422,16 +29348,16 @@ var TextField = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function
     required: required,
     color: color,
     variant: variant
-  }, other), label && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_InputLabel__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, other), label && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_InputLabel__WEBPACK_IMPORTED_MODULE_9__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     htmlFor: id,
     id: inputLabelId
-  }, InputLabelProps), label), select ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Select__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, InputLabelProps), label), select ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_Select__WEBPACK_IMPORTED_MODULE_12__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     "aria-describedby": helperTextId,
     id: id,
     labelId: inputLabelId,
     value: value,
     input: InputElement
-  }, SelectProps), children) : InputElement, helperText && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_FormHelperText__WEBPACK_IMPORTED_MODULE_11__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, SelectProps), children) : InputElement, helperText && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](_FormHelperText__WEBPACK_IMPORTED_MODULE_11__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     id: helperTextId
   }, FormHelperTextProps), helperText));
 });
@@ -29672,7 +29598,7 @@ function getStyleValue(computedStyle, property) {
   return parseInt(computedStyle[property], 10) || 0;
 }
 
-var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2___default.a.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect;
+var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_2__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_2__["useEffect"];
 var styles = {
   /* Styles applied to the shadow textarea element. */
   shadow: {
@@ -29689,7 +29615,7 @@ var styles = {
     transform: 'translateZ(0)'
   }
 };
-var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function TextareaAutosize(props, ref) {
+var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function TextareaAutosize(props, ref) {
   var onChange = props.onChange,
       rows = props.rows,
       rowsMax = props.rowsMax,
@@ -29701,18 +29627,19 @@ var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
 
   var rowsMin = rows || rowsMinProp;
 
-  var _React$useRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(value != null),
+  var _React$useRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](value != null),
       isControlled = _React$useRef.current;
 
-  var inputRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var inputRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_5__["default"])(ref, inputRef);
-  var shadowRef = react__WEBPACK_IMPORTED_MODULE_2___default.a.useRef(null);
+  var shadowRef = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](null);
+  var renders = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](0);
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState({}),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({}),
       state = _React$useState[0],
       setState = _React$useState[1];
 
-  var syncHeight = react__WEBPACK_IMPORTED_MODULE_2___default.a.useCallback(function () {
+  var syncHeight = react__WEBPACK_IMPORTED_MODULE_2__["useCallback"](function () {
     var input = inputRef.current;
     var computedStyle = window.getComputedStyle(input);
     var inputShallow = shadowRef.current;
@@ -29742,20 +29669,28 @@ var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
     var outerHeightStyle = outerHeight + (boxSizing === 'border-box' ? padding + border : 0);
     var overflow = Math.abs(outerHeight - innerHeight) <= 1;
     setState(function (prevState) {
-      // Need a large enough different to update the height.
+      // Need a large enough difference to update the height.
       // This prevents infinite rendering loop.
-      if (outerHeightStyle > 0 && Math.abs((prevState.outerHeightStyle || 0) - outerHeightStyle) > 1 || prevState.overflow !== overflow) {
+      if (renders.current < 20 && (outerHeightStyle > 0 && Math.abs((prevState.outerHeightStyle || 0) - outerHeightStyle) > 1 || prevState.overflow !== overflow)) {
+        renders.current += 1;
         return {
           overflow: overflow,
           outerHeightStyle: outerHeightStyle
         };
       }
 
+      if (true) {
+        if (renders.current === 20) {
+          console.error(['Material-UI: too many re-renders. The layout is unstable.', 'TextareaAutosize limits the number of renders to prevent an infinite loop.'].join('\n'));
+        }
+      }
+
       return prevState;
     });
   }, [rowsMax, rowsMin, props.placeholder]);
-  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     var handleResize = Object(_utils_debounce__WEBPACK_IMPORTED_MODULE_4__["default"])(function () {
+      renders.current = 0;
       syncHeight();
     });
     window.addEventListener('resize', handleResize);
@@ -29767,8 +29702,13 @@ var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
   useEnhancedEffect(function () {
     syncHeight();
   });
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    renders.current = 0;
+  }, [value]);
 
   var handleChange = function handleChange(event) {
+    renders.current = 0;
+
     if (!isControlled) {
       syncHeight();
     }
@@ -29778,7 +29718,7 @@ var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("textarea", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("textarea", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     value: value,
     onChange: handleChange,
     ref: handleRef // Apply the rows prop to get a "correct" first SSR paint
@@ -29786,11 +29726,11 @@ var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
     rows: rowsMin,
     style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       height: state.outerHeightStyle,
-      // Need a large enough different to allow scrolling.
+      // Need a large enough difference to allow scrolling.
       // This prevents infinite rendering loop.
       overflow: state.overflow ? 'hidden' : null
     }, style)
-  }, other)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("textarea", {
+  }, other)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"]("textarea", {
     "aria-hidden": true,
     className: props.className,
     readOnly: true,
@@ -29800,6 +29740,11 @@ var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
   }));
 });
  true ? TextareaAutosize.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * @ignore
    */
@@ -29820,17 +29765,17 @@ var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
    *
    * @deprecated
    */
-  rows: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number]),
+  rows: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string]),
 
   /**
    * Maximum number of rows to display.
    */
-  rowsMax: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number]),
+  rowsMax: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string]),
 
   /**
    * Minimum number of rows to display.
    */
-  rowsMin: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number]),
+  rowsMin: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string]),
 
   /**
    * @ignore
@@ -29840,7 +29785,7 @@ var TextareaAutosize = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(f
   /**
    * @ignore
    */
-  value: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any
+  value: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string), prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string])
 } : undefined;
 /* harmony default export */ __webpack_exports__["default"] = (TextareaAutosize);
 
@@ -29915,7 +29860,7 @@ var styles = function styles(theme) {
     }
   };
 };
-var Toolbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function Toolbar(props, ref) {
+var Toolbar = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function Toolbar(props, ref) {
   var classes = props.classes,
       className = props.className,
       _props$component = props.component,
@@ -29926,7 +29871,7 @@ var Toolbar = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function T
       variant = _props$variant === void 0 ? 'regular' : _props$variant,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component", "disableGutters", "variant"]);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, classes[variant], className, !disableGutters && classes.gutters),
     ref: ref
   }, other));
@@ -30206,7 +30151,7 @@ function testReset() {
   hystersisOpen = false;
   clearTimeout(hystersisTimer);
 }
-var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function Tooltip(props, ref) {
+var Tooltip = react__WEBPACK_IMPORTED_MODULE_4__["forwardRef"](function Tooltip(props, ref) {
   var _props$arrow = props.arrow,
       arrow = _props$arrow === void 0 ? false : _props$arrow,
       children = props.children,
@@ -30218,7 +30163,9 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
       _props$disableTouchLi = props.disableTouchListener,
       disableTouchListener = _props$disableTouchLi === void 0 ? false : _props$disableTouchLi,
       _props$enterDelay = props.enterDelay,
-      enterDelay = _props$enterDelay === void 0 ? 0 : _props$enterDelay,
+      enterDelay = _props$enterDelay === void 0 ? 100 : _props$enterDelay,
+      _props$enterNextDelay = props.enterNextDelay,
+      enterNextDelay = _props$enterNextDelay === void 0 ? 0 : _props$enterNextDelay,
       _props$enterTouchDela = props.enterTouchDelay,
       enterTouchDelay = _props$enterTouchDela === void 0 ? 700 : _props$enterTouchDela,
       idProp = props.id,
@@ -30238,23 +30185,23 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
       _props$TransitionComp = props.TransitionComponent,
       TransitionComponent = _props$TransitionComp === void 0 ? _Grow__WEBPACK_IMPORTED_MODULE_12__["default"] : _props$TransitionComp,
       TransitionProps = props.TransitionProps,
-      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, ["arrow", "children", "classes", "disableFocusListener", "disableHoverListener", "disableTouchListener", "enterDelay", "enterTouchDelay", "id", "interactive", "leaveDelay", "leaveTouchDelay", "onClose", "onOpen", "open", "placement", "PopperProps", "title", "TransitionComponent", "TransitionProps"]);
+      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, ["arrow", "children", "classes", "disableFocusListener", "disableHoverListener", "disableTouchListener", "enterDelay", "enterNextDelay", "enterTouchDelay", "id", "interactive", "leaveDelay", "leaveTouchDelay", "onClose", "onOpen", "open", "placement", "PopperProps", "title", "TransitionComponent", "TransitionProps"]);
 
   var theme = Object(_styles_useTheme__WEBPACK_IMPORTED_MODULE_18__["default"])();
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_4___default.a.useState(),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_4__["useState"](),
       childNode = _React$useState[0],
       setChildNode = _React$useState[1];
 
-  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_4___default.a.useState(null),
+  var _React$useState2 = react__WEBPACK_IMPORTED_MODULE_4__["useState"](null),
       arrowRef = _React$useState2[0],
       setArrowRef = _React$useState2[1];
 
-  var ignoreNonTouchEvents = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef(false);
-  var closeTimer = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef();
-  var enterTimer = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef();
-  var leaveTimer = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef();
-  var touchTimer = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef();
+  var ignoreNonTouchEvents = react__WEBPACK_IMPORTED_MODULE_4__["useRef"](false);
+  var closeTimer = react__WEBPACK_IMPORTED_MODULE_4__["useRef"]();
+  var enterTimer = react__WEBPACK_IMPORTED_MODULE_4__["useRef"]();
+  var leaveTimer = react__WEBPACK_IMPORTED_MODULE_4__["useRef"]();
+  var touchTimer = react__WEBPACK_IMPORTED_MODULE_4__["useRef"]();
 
   var _useControlled = Object(_utils_useControlled__WEBPACK_IMPORTED_MODULE_17__["default"])({
     controlled: openProp,
@@ -30269,23 +30216,23 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
 
   if (true) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    var _React$useRef = react__WEBPACK_IMPORTED_MODULE_4___default.a.useRef(openProp !== undefined),
+    var _React$useRef = react__WEBPACK_IMPORTED_MODULE_4__["useRef"](openProp !== undefined),
         isControlled = _React$useRef.current; // eslint-disable-next-line react-hooks/rules-of-hooks
 
 
-    react__WEBPACK_IMPORTED_MODULE_4___default.a.useEffect(function () {
+    react__WEBPACK_IMPORTED_MODULE_4__["useEffect"](function () {
       if (childNode && childNode.disabled && !isControlled && title !== '' && childNode.tagName.toLowerCase() === 'button') {
         console.error(['Material-UI: you are providing a disabled `button` child to the Tooltip component.', 'A disabled element does not fire events.', "Tooltip needs to listen to the child element's events to display the title.", '', 'Add a simple wrapper element, such as a `span`.'].join('\n'));
       }
     }, [title, childNode, isControlled]);
   }
 
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_4___default.a.useState(),
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_4__["useState"](),
       defaultId = _React$useState3[0],
       setDefaultId = _React$useState3[1];
 
   var id = idProp || defaultId;
-  react__WEBPACK_IMPORTED_MODULE_4___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_4__["useEffect"](function () {
     if (!open || defaultId) {
       return;
     } // Fallback to this default id when possible.
@@ -30295,7 +30242,7 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
 
     setDefaultId("mui-tooltip-".concat(Math.round(Math.random() * 1e5)));
   }, [open, defaultId]);
-  react__WEBPACK_IMPORTED_MODULE_4___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_4__["useEffect"](function () {
     return function () {
       clearTimeout(closeTimer.current);
       clearTimeout(enterTimer.current);
@@ -30317,35 +30264,38 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
     }
   };
 
-  var handleEnter = function handleEnter(event) {
-    var childrenProps = children.props;
+  var handleEnter = function handleEnter() {
+    var forward = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+    return function (event) {
+      var childrenProps = children.props;
 
-    if (event.type === 'mouseover' && childrenProps.onMouseOver && event.currentTarget === childNode) {
-      childrenProps.onMouseOver(event);
-    }
+      if (event.type === 'mouseover' && childrenProps.onMouseOver && forward) {
+        childrenProps.onMouseOver(event);
+      }
 
-    if (ignoreNonTouchEvents.current && event.type !== 'touchstart') {
-      return;
-    } // Remove the title ahead of time.
-    // We don't want to wait for the next render commit.
-    // We would risk displaying two tooltips at the same time (native + this one).
+      if (ignoreNonTouchEvents.current && event.type !== 'touchstart') {
+        return;
+      } // Remove the title ahead of time.
+      // We don't want to wait for the next render commit.
+      // We would risk displaying two tooltips at the same time (native + this one).
 
 
-    if (childNode) {
-      childNode.removeAttribute('title');
-    }
+      if (childNode) {
+        childNode.removeAttribute('title');
+      }
 
-    clearTimeout(enterTimer.current);
-    clearTimeout(leaveTimer.current);
+      clearTimeout(enterTimer.current);
+      clearTimeout(leaveTimer.current);
 
-    if (enterDelay && !hystersisOpen) {
-      event.persist();
-      enterTimer.current = setTimeout(function () {
+      if (enterDelay || hystersisOpen && enterNextDelay) {
+        event.persist();
+        enterTimer.current = setTimeout(function () {
+          handleOpen(event);
+        }, hystersisOpen ? enterNextDelay : enterDelay);
+      } else {
         handleOpen(event);
-      }, enterDelay);
-    } else {
-      handleOpen(event);
-    }
+      }
+    };
   };
 
   var _useIsFocusVisible = Object(_utils_focusVisible__WEBPACK_IMPORTED_MODULE_16__["useIsFocusVisible"])(),
@@ -30353,7 +30303,7 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
       onBlurVisible = _useIsFocusVisible.onBlurVisible,
       focusVisibleRef = _useIsFocusVisible.ref;
 
-  var _React$useState4 = react__WEBPACK_IMPORTED_MODULE_4___default.a.useState(false),
+  var _React$useState4 = react__WEBPACK_IMPORTED_MODULE_4__["useState"](false),
       childIsFocusVisible = _React$useState4[0],
       setChildIsFocusVisible = _React$useState4[1];
 
@@ -30364,32 +30314,34 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
     }
   };
 
-  var handleFocus = function handleFocus(event) {
-    // Workaround for https://github.com/facebook/react/issues/7769
-    // The autoFocus of React might trigger the event before the componentDidMount.
-    // We need to account for this eventuality.
-    if (!childNode) {
-      setChildNode(event.currentTarget);
-    }
+  var handleFocus = function handleFocus() {
+    var forward = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+    return function (event) {
+      // Workaround for https://github.com/facebook/react/issues/7769
+      // The autoFocus of React might trigger the event before the componentDidMount.
+      // We need to account for this eventuality.
+      if (!childNode) {
+        setChildNode(event.currentTarget);
+      }
 
-    if (isFocusVisible(event)) {
-      setChildIsFocusVisible(true);
-      handleEnter(event);
-    }
+      if (isFocusVisible(event)) {
+        setChildIsFocusVisible(true);
+        handleEnter()(event);
+      }
 
-    var childrenProps = children.props;
+      var childrenProps = children.props;
 
-    if (childrenProps.onFocus && event.currentTarget === childNode) {
-      childrenProps.onFocus(event);
-    }
+      if (childrenProps.onFocus && forward) {
+        childrenProps.onFocus(event);
+      }
+    };
   };
 
   var handleClose = function handleClose(event) {
     clearTimeout(hystersisTimer);
     hystersisTimer = setTimeout(function () {
       hystersisOpen = false;
-    }, 500); // Use 500 ms per https://github.com/reach/reach-ui/blob/3b5319027d763a3082880be887d7a29aee7d3afc/packages/tooltip/src/index.js#L214
-
+    }, 800 + leaveDelay);
     setOpenState(false);
 
     if (onClose) {
@@ -30402,27 +30354,30 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
     }, theme.transitions.duration.shortest);
   };
 
-  var handleLeave = function handleLeave(event) {
-    var childrenProps = children.props;
+  var handleLeave = function handleLeave() {
+    var forward = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+    return function (event) {
+      var childrenProps = children.props;
 
-    if (event.type === 'blur') {
-      if (childrenProps.onBlur && event.currentTarget === childNode) {
-        childrenProps.onBlur(event);
+      if (event.type === 'blur') {
+        if (childrenProps.onBlur && forward) {
+          childrenProps.onBlur(event);
+        }
+
+        handleBlur();
       }
 
-      handleBlur(event);
-    }
+      if (event.type === 'mouseleave' && childrenProps.onMouseLeave && event.currentTarget === childNode) {
+        childrenProps.onMouseLeave(event);
+      }
 
-    if (event.type === 'mouseleave' && childrenProps.onMouseLeave && event.currentTarget === childNode) {
-      childrenProps.onMouseLeave(event);
-    }
-
-    clearTimeout(enterTimer.current);
-    clearTimeout(leaveTimer.current);
-    event.persist();
-    leaveTimer.current = setTimeout(function () {
-      handleClose(event);
-    }, leaveDelay);
+      clearTimeout(enterTimer.current);
+      clearTimeout(leaveTimer.current);
+      event.persist();
+      leaveTimer.current = setTimeout(function () {
+        handleClose(event);
+      }, leaveDelay);
+    };
   };
 
   var handleTouchStart = function handleTouchStart(event) {
@@ -30438,7 +30393,7 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
     clearTimeout(touchTimer.current);
     event.persist();
     touchTimer.current = setTimeout(function () {
-      handleEnter(event);
+      handleEnter()(event);
     }, enterTouchDelay);
   };
 
@@ -30458,9 +30413,9 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
   var handleUseRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_14__["default"])(setChildNode, ref);
   var handleFocusRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_14__["default"])(focusVisibleRef, handleUseRef); // can be removed once we drop support for non ref forwarding class components
 
-  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_4___default.a.useCallback(function (instance) {
+  var handleOwnRef = react__WEBPACK_IMPORTED_MODULE_4__["useCallback"](function (instance) {
     // #StrictMode ready
-    Object(_utils_setRef__WEBPACK_IMPORTED_MODULE_15__["default"])(handleFocusRef, react_dom__WEBPACK_IMPORTED_MODULE_5___default.a.findDOMNode(instance));
+    Object(_utils_setRef__WEBPACK_IMPORTED_MODULE_15__["default"])(handleFocusRef, react_dom__WEBPACK_IMPORTED_MODULE_5__["findDOMNode"](instance));
   }, [handleFocusRef]);
   var handleRef = Object(_utils_useForkRef__WEBPACK_IMPORTED_MODULE_14__["default"])(children.ref, handleOwnRef); // There is no point in displaying an empty tooltip.
 
@@ -30482,63 +30437,68 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_7__["default"])(other.className, children.props.className)
   });
 
+  var interactiveWrapperListeners = {};
+
   if (!disableTouchListener) {
     childrenProps.onTouchStart = handleTouchStart;
     childrenProps.onTouchEnd = handleTouchEnd;
   }
 
   if (!disableHoverListener) {
-    childrenProps.onMouseOver = handleEnter;
-    childrenProps.onMouseLeave = handleLeave;
+    childrenProps.onMouseOver = handleEnter();
+    childrenProps.onMouseLeave = handleLeave();
+
+    if (interactive) {
+      interactiveWrapperListeners.onMouseOver = handleEnter(false);
+      interactiveWrapperListeners.onMouseLeave = handleLeave(false);
+    }
   }
 
   if (!disableFocusListener) {
-    childrenProps.onFocus = handleFocus;
-    childrenProps.onBlur = handleLeave;
-  }
+    childrenProps.onFocus = handleFocus();
+    childrenProps.onBlur = handleLeave();
 
-  var interactiveWrapperListeners = interactive ? {
-    onMouseOver: childrenProps.onMouseOver,
-    onMouseLeave: childrenProps.onMouseLeave,
-    onFocus: childrenProps.onFocus,
-    onBlur: childrenProps.onBlur
-  } : {};
+    if (interactive) {
+      interactiveWrapperListeners.onFocus = handleFocus(false);
+      interactiveWrapperListeners.onBlur = handleLeave(false);
+    }
+  }
 
   if (true) {
     if (children.props.title) {
       console.error(['Material-UI: you have provided a `title` prop to the child of <Tooltip />.', "Remove this title prop `".concat(children.props.title, "` or the Tooltip component.")].join('\n'));
     }
-  } // Avoid the creation of a new Popper.js instance at each render.
+  }
 
-
-  var popperOptions = react__WEBPACK_IMPORTED_MODULE_4___default.a.useMemo(function () {
-    return {
-      modifiers: {
-        arrow: {
-          enabled: Boolean(arrowRef),
-          element: arrowRef
+  var mergedPopperProps = react__WEBPACK_IMPORTED_MODULE_4__["useMemo"](function () {
+    return Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_8__["deepmerge"])({
+      popperOptions: {
+        modifiers: {
+          arrow: {
+            enabled: Boolean(arrowRef),
+            element: arrowRef
+          }
         }
       }
-    };
-  }, [arrowRef]);
-  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_4___default.a.cloneElement(children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    }, PopperProps);
+  }, [arrowRef, PopperProps]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](react__WEBPACK_IMPORTED_MODULE_4__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_4__["cloneElement"](children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     ref: handleRef
-  }, childrenProps)), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_Popper__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, childrenProps)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](_Popper__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_7__["default"])(classes.popper, interactive && classes.popperInteractive, arrow && classes.popperArrow),
     placement: placement,
     anchorEl: childNode,
     open: childNode ? open : false,
     id: childrenProps['aria-describedby'],
-    transition: true,
-    popperOptions: popperOptions
-  }, interactiveWrapperListeners, PopperProps), function (_ref) {
+    transition: true
+  }, interactiveWrapperListeners, mergedPopperProps), function (_ref) {
     var placementInner = _ref.placement,
         TransitionPropsInner = _ref.TransitionProps;
-    return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"](TransitionComponent, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       timeout: theme.transitions.duration.shorter
-    }, TransitionPropsInner, TransitionProps), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+    }, TransitionPropsInner, TransitionProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("div", {
       className: Object(clsx__WEBPACK_IMPORTED_MODULE_7__["default"])(classes.tooltip, classes["tooltipPlacement".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_11__["default"])(placementInner.split('-')[0]))], ignoreNonTouchEvents.current && classes.touch, arrow && classes.tooltipArrow)
-    }, title, arrow ? react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
+    }, title, arrow ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__["createElement"]("span", {
       className: classes.arrow,
       ref: setArrowRef
     }) : null));
@@ -30581,6 +30541,11 @@ var Tooltip = react__WEBPACK_IMPORTED_MODULE_4___default.a.forwardRef(function T
    * This prop won't impact the enter touch delay (`enterTouchDelay`).
    */
   enterDelay: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.number,
+
+  /**
+   * The number of milliseconds to wait before showing the tooltip when one was already recently opened.
+   */
+  enterNextDelay: prop_types__WEBPACK_IMPORTED_MODULE_6___default.a.number,
 
   /**
    * The number of milliseconds a user must touch the element before showing the tooltip.
@@ -30847,7 +30812,7 @@ var defaultVariantMapping = {
   body1: 'p',
   body2: 'p'
 };
-var Typography = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Typography(props, ref) {
+var Typography = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Typography(props, ref) {
   var _props$align = props.align,
       align = _props$align === void 0 ? 'inherit' : _props$align,
       classes = props.classes,
@@ -30870,7 +30835,7 @@ var Typography = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(functio
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["align", "classes", "className", "color", "component", "display", "gutterBottom", "noWrap", "paragraph", "variant", "variantMapping"]);
 
   var Component = component || (paragraph ? 'p' : variantMapping[variant] || defaultVariantMapping[variant]) || 'span';
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.root, className, variant !== 'inherit' && classes[variant], color !== 'initial' && classes["color".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(color))], noWrap && classes.noWrap, gutterBottom && classes.gutterBottom, paragraph && classes.paragraph, align !== 'inherit' && classes["align".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(align))], display !== 'initial' && classes["display".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_6__["default"])(display))]),
     ref: ref
   }, other));
@@ -31014,7 +30979,7 @@ var defaultTimeout = {
  * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
  */
 
-var Zoom = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Zoom(props, ref) {
+var Zoom = react__WEBPACK_IMPORTED_MODULE_2__["forwardRef"](function Zoom(props, ref) {
   var children = props.children,
       inProp = props.in,
       onEnter = props.onEnter,
@@ -31059,14 +31024,14 @@ var Zoom = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Zoom
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_4__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__["createElement"](react_transition_group__WEBPACK_IMPORTED_MODULE_4__["Transition"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     appear: true,
     in: inProp,
     onEnter: handleEnter,
     onExit: handleExit,
     timeout: timeout
   }, other), function (state, childProps) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.cloneElement(children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return react__WEBPACK_IMPORTED_MODULE_2__["cloneElement"](children, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       style: Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         transform: 'scale(0)',
         visibility: state === 'exited' && !inProp ? 'hidden' : undefined
@@ -31076,6 +31041,11 @@ var Zoom = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Zoom
   });
 });
  true ? Zoom.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
   /**
    * A single child content element.
    */
@@ -31106,6 +31076,7 @@ var Zoom = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function Zoom
    * You may specify a single timeout for all transitions, or individually with an object.
    */
   timeout: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
     enter: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number,
     exit: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number
   })])
@@ -31794,7 +31765,7 @@ var yellow = {
 /*!*****************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/index.js ***!
   \*****************************************************/
-/*! exports provided: colors, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, easing, duration, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider, AppBar, Avatar, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, styleFunction, Breadcrumbs, Button, ButtonBase, ButtonGroup, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, ExpansionPanelSummary, Fab, Fade, FilledInput, FormControl, useFormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, Grid, GridList, GridListTile, GridListTileBar, Grow, Hidden, Icon, IconButton, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Paper, Popover, Popper, Portal, Radio, RadioGroup, useRadioGroup, RootRef, Select, Slide, Slider, Snackbar, SnackbarContent, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper, SvgIcon, SwipeableDrawer, Switch, Tab, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, Toolbar, Tooltip, Typography, useMediaQuery, useScrollTrigger, withMobileDialog, withWidth, Zoom, isWidthUp, isWidthDown */
+/*! exports provided: colors, createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider, AppBar, Avatar, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, ExpansionPanelSummary, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, Grid, GridList, GridListTile, GridListTileBar, Grow, Hidden, Icon, IconButton, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, NativeSelect, NoSsr, OutlinedInput, Paper, Popover, Popper, Portal, Radio, RadioGroup, RootRef, Select, Slide, Slider, Snackbar, SnackbarContent, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper, SvgIcon, SwipeableDrawer, Switch, Tab, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, Toolbar, Tooltip, Typography, useMediaQuery, useScrollTrigger, withMobileDialog, withWidth, Zoom, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, easing, duration, styleFunction, useFormControl, ModalManager, useRadioGroup, isWidthUp, isWidthDown */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31802,6 +31773,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _colors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./colors */ "./node_modules/@material-ui/core/esm/colors/index.js");
 /* harmony reexport (module object) */ __webpack_require__.d(__webpack_exports__, "colors", function() { return _colors__WEBPACK_IMPORTED_MODULE_0__; });
 /* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createMuiTheme", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["createMuiTheme"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createStyles", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["createStyles"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "makeStyles", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "responsiveFontSizes", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["responsiveFontSizes"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "styled", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["styled"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "useTheme", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["useTheme"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "withStyles", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["withStyles"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "withTheme", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["withTheme"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createGenerateClassName", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["createGenerateClassName"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "jssPreset", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["jssPreset"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServerStyleSheets", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["ServerStyleSheets"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StylesProvider", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["StylesProvider"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MuiThemeProvider", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["MuiThemeProvider"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ThemeProvider", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"]; });
+
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "hexToRgb", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["hexToRgb"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "rgbToHex", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["rgbToHex"]; });
@@ -31824,37 +31823,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "lighten", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["lighten"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createMuiTheme", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["createMuiTheme"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createStyles", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["createStyles"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "makeStyles", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "responsiveFontSizes", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["responsiveFontSizes"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "styled", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["styled"]; });
-
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "easing", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["easing"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "duration", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["duration"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "useTheme", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["useTheme"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "withStyles", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["withStyles"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "withTheme", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["withTheme"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createGenerateClassName", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["createGenerateClassName"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "jssPreset", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["jssPreset"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServerStyleSheets", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["ServerStyleSheets"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StylesProvider", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["StylesProvider"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MuiThemeProvider", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["MuiThemeProvider"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ThemeProvider", function() { return _styles__WEBPACK_IMPORTED_MODULE_1__["ThemeProvider"]; });
 
 /* harmony import */ var _AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AppBar */ "./node_modules/@material-ui/core/esm/AppBar/index.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AppBar", function() { return _AppBar__WEBPACK_IMPORTED_MODULE_2__["default"]; });
@@ -32213,7 +32184,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Zoom__WEBPACK_IMPORTED_MODULE_116__ = __webpack_require__(/*! ./Zoom */ "./node_modules/@material-ui/core/esm/Zoom/index.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Zoom", function() { return _Zoom__WEBPACK_IMPORTED_MODULE_116__["default"]; });
 
-/* empty/unused harmony star reexport *//** @license Material-UI v4.9.2
+/* empty/unused harmony star reexport *//** @license Material-UI v4.9.8
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -32512,7 +32483,7 @@ var styles = {
  * @ignore - internal component.
  */
 
-var SwitchBase = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function SwitchBase(props, ref) {
+var SwitchBase = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function SwitchBase(props, ref) {
   var autoFocus = props.autoFocus,
       checkedProp = props.checked,
       checkedIcon = props.checkedIcon,
@@ -32584,7 +32555,7 @@ var SwitchBase = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functio
   }
 
   var hasLabelFor = type === 'checkbox' || type === 'radio';
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_IconButton__WEBPACK_IMPORTED_MODULE_10__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](_IconButton__WEBPACK_IMPORTED_MODULE_10__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     component: "span",
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className, checked && classes.checked, disabled && classes.disabled),
     disabled: disabled,
@@ -32593,7 +32564,7 @@ var SwitchBase = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(functio
     onFocus: handleFocus,
     onBlur: handleBlur,
     ref: ref
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"]("input", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     autoFocus: autoFocus,
     checked: checkedProp,
     defaultChecked: defaultChecked,
@@ -32805,7 +32776,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
 }), 'ArrowDownward'));
 
@@ -32829,7 +32800,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M7 10l5 5 5-5z"
 }), 'ArrowDropDown'));
 
@@ -32853,7 +32824,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
 }), 'Cancel'));
 
@@ -32877,7 +32848,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
 }), 'CheckBox'));
 
@@ -32901,7 +32872,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
 }), 'CheckBoxOutlineBlank'));
 
@@ -32925,7 +32896,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm-2 17l-5-5 1.4-1.4 3.6 3.6 7.6-7.6L19 8l-9 9z"
 }), 'CheckCircle'));
 
@@ -32949,7 +32920,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
 }), 'IndeterminateCheckBox'));
 
@@ -32973,7 +32944,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
 }), 'KeyboardArrowLeft'));
 
@@ -32997,7 +32968,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
 }), 'KeyboardArrowRight'));
 
@@ -33021,7 +32992,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
 }), 'MoreHoriz'));
 
@@ -33045,7 +33016,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
 }), 'Person'));
 
@@ -33069,7 +33040,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
 }), 'RadioButtonChecked'));
 
@@ -33093,7 +33064,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
 }), 'RadioButtonUnchecked'));
 
@@ -33117,7 +33088,7 @@ __webpack_require__.r(__webpack_exports__);
  * @ignore - internal component.
  */
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+/* harmony default export */ __webpack_exports__["default"] = (Object(_createSvgIcon__WEBPACK_IMPORTED_MODULE_1__["default"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
   d: "M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
 }), 'Warning'));
 
@@ -33141,8 +33112,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function createSvgIcon(path, displayName) {
-  var Component = react__WEBPACK_IMPORTED_MODULE_1___default.a.memo(react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef(function (props, ref) {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SvgIcon__WEBPACK_IMPORTED_MODULE_2__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+  var Component = react__WEBPACK_IMPORTED_MODULE_1__["memo"](react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"](function (props, ref) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"](_SvgIcon__WEBPACK_IMPORTED_MODULE_2__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
       ref: ref
     }), path);
   }));
@@ -33779,7 +33750,11 @@ var light = {
     // The color of a disabled action.
     disabled: 'rgba(0, 0, 0, 0.26)',
     // The background color of a disabled action.
-    disabledBackground: 'rgba(0, 0, 0, 0.12)'
+    disabledBackground: 'rgba(0, 0, 0, 0.12)',
+    disabledOpacity: 0.38,
+    focus: 'rgba(0, 0, 0, 0.12)',
+    focusOpacity: 0.12,
+    activatedOpacity: 0.12
   }
 };
 var dark = {
@@ -33802,7 +33777,11 @@ var dark = {
     selected: 'rgba(255, 255, 255, 0.16)',
     selectedOpacity: 0.16,
     disabled: 'rgba(255, 255, 255, 0.3)',
-    disabledBackground: 'rgba(255, 255, 255, 0.12)'
+    disabledBackground: 'rgba(255, 255, 255, 0.12)',
+    disabledOpacity: 0.38,
+    focus: 'rgba(255, 255, 255, 0.12)',
+    focusOpacity: 0.12,
+    activatedOpacity: 0.24
   }
 };
 
@@ -33867,10 +33846,6 @@ function createPalette(palette) {
 
 
   function getContrastText(background) {
-    if (!background) {
-      throw new TypeError("Material-UI: missing background argument in getContrastText(".concat(background, ")."));
-    }
-
     var contrastText = Object(_colorManipulator__WEBPACK_IMPORTED_MODULE_11__["getContrastRatio"])(background, dark.text.primary) >= contrastThreshold ? dark.text.primary : light.text.primary;
 
     if (true) {
@@ -33884,7 +33859,7 @@ function createPalette(palette) {
     return contrastText;
   }
 
-  function augmentColor(color) {
+  var augmentColor = function augmentColor(color) {
     var mainShade = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
     var lightShade = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 300;
     var darkShade = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 700;
@@ -33894,10 +33869,12 @@ function createPalette(palette) {
       color.main = color[mainShade];
     }
 
-    if (true) {
-      if (!color.main) {
-        throw new Error(['Material-UI: the color provided to augmentColor(color) is invalid.', "The color object needs to have a `main` property or a `".concat(mainShade, "` property.")].join('\n'));
-      }
+    if (!color.main) {
+      throw new Error(['Material-UI: the color provided to augmentColor(color) is invalid.', "The color object needs to have a `main` property or a `".concat(mainShade, "` property.")].join('\n'));
+    }
+
+    if (typeof color.main !== 'string') {
+      throw new Error(['Material-UI: the color provided to augmentColor(color) is invalid.', "`color.main` should be a string, but `".concat(JSON.stringify(color.main), "` was provided instead."), '', 'Did you intend to use one of the following approaches?', '', 'import { green } from "@material-ui/core/colors";', '', 'const theme1 = createMuiTheme({ palette: {', '  primary: green,', '} });', '', 'const theme2 = createMuiTheme({ palette: {', '  primary: { main: green[500] },', '} });'].join('\n'));
     }
 
     addLightOrDark(color, 'light', lightShade, tonalOffset);
@@ -33908,7 +33885,7 @@ function createPalette(palette) {
     }
 
     return color;
-  }
+  };
 
   var types = {
     dark: dark,
@@ -33967,6 +33944,8 @@ function createPalette(palette) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return createSpacing; });
+/* harmony import */ var _material_ui_system__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/system */ "./node_modules/@material-ui/system/esm/index.js");
+
 var warnOnce;
 function createSpacing() {
   var spacingInput = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 8;
@@ -33974,31 +33953,14 @@ function createSpacing() {
   // Already transformed.
   if (spacingInput.mui) {
     return spacingInput;
-  } // All components align to an 8dp square baseline grid for mobile, tablet, and desktop.
-  // https://material.io/design/layout/understanding-layout.html#pixel-density
+  } // Material Design layouts are visually balanced. Most measurements align to an 8dp grid applied, which aligns both spacing and the overall layout.
+  // Smaller components, such as icons and type, can align to a 4dp grid.
+  // https://material.io/design/layout/understanding-layout.html#usage
 
 
-  var transform;
-
-  if (typeof spacingInput === 'function') {
-    transform = spacingInput;
-  } else {
-    if (true) {
-      if (typeof spacingInput !== 'number') {
-        console.error(["Material-UI: the `theme.spacing` value (".concat(spacingInput, ") is invalid."), 'It should be a number or a function.'].join('\n'));
-      }
-    }
-
-    transform = function transform(factor) {
-      if (true) {
-        if (typeof factor !== 'number') {
-          console.error("Expected spacing argument to be a number, got ".concat(factor));
-        }
-      }
-
-      return spacingInput * factor;
-    };
-  }
+  var transform = Object(_material_ui_system__WEBPACK_IMPORTED_MODULE_0__["createUnarySpacing"])({
+    spacing: spacingInput
+  });
 
   var spacing = function spacing() {
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
@@ -34189,16 +34151,71 @@ function createTypography(palette, typography) {
 /*!***************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/cssUtils.js ***!
   \***************************************************************/
-/*! exports provided: alignProperty, fontGrid, responsiveProperty */
+/*! exports provided: isUnitless, getUnit, toUnitless, convertLength, alignProperty, fontGrid, responsiveProperty */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isUnitless", function() { return isUnitless; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUnit", function() { return getUnit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toUnitless", function() { return toUnitless; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "convertLength", function() { return convertLength; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "alignProperty", function() { return alignProperty; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fontGrid", function() { return fontGrid; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "responsiveProperty", function() { return responsiveProperty; });
 /* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 
+function isUnitless(value) {
+  return String(parseFloat(value)).length === String(value).length;
+} // Ported from Compass
+// https://github.com/Compass/compass/blob/master/core/stylesheets/compass/typography/_units.scss
+// Emulate the sass function "unit"
+
+function getUnit(input) {
+  return String(input).match(/[\d.\-+]*\s*(.*)/)[1] || '';
+} // Emulate the sass function "unitless"
+
+function toUnitless(length) {
+  return parseFloat(length);
+} // Convert any CSS <length> or <percentage> value to any another.
+// From https://github.com/KyleAMathews/convert-css-length
+
+function convertLength(baseFontSize) {
+  return function (length, toUnit) {
+    var fromUnit = getUnit(length); // Optimize for cases where `from` and `to` units are accidentally the same.
+
+    if (fromUnit === toUnit) {
+      return length;
+    } // Convert input length to pixels.
+
+
+    var pxLength = toUnitless(length);
+
+    if (fromUnit !== 'px') {
+      if (fromUnit === 'em') {
+        pxLength = toUnitless(length) * toUnitless(baseFontSize);
+      } else if (fromUnit === 'rem') {
+        pxLength = toUnitless(length) * toUnitless(baseFontSize);
+        return length;
+      }
+    } // Convert length in pixels to the output unit
+
+
+    var outputLength = pxLength;
+
+    if (toUnit !== 'px') {
+      if (toUnit === 'em') {
+        outputLength = pxLength / toUnitless(baseFontSize);
+      } else if (toUnit === 'rem') {
+        outputLength = pxLength / toUnitless(baseFontSize);
+      } else {
+        return length;
+      }
+    }
+
+    return parseFloat(outputLength.toFixed(5)) + toUnit;
+  };
+}
 function alignProperty(_ref) {
   var size = _ref.size,
       grid = _ref.grid;
@@ -34296,7 +34313,7 @@ var defaultTheme = Object(_createMuiTheme__WEBPACK_IMPORTED_MODULE_0__["default"
 /*!************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/index.js ***!
   \************************************************************/
-/*! exports provided: hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, easing, duration, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider */
+/*! exports provided: createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, easing, duration */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34418,15 +34435,8 @@ function makeStyles(stylesOrCreator) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return responsiveFontSizes; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var convert_css_length__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! convert-css-length */ "./node_modules/convert-css-length/dist/index.esm.js");
-/* harmony import */ var _cssUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cssUtils */ "./node_modules/@material-ui/core/esm/styles/cssUtils.js");
+/* harmony import */ var _cssUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cssUtils */ "./node_modules/@material-ui/core/esm/styles/cssUtils.js");
 
-
-
-
-function isUnitless(value) {
-  return String(parseFloat(value)).length === String(value).length;
-}
 
 function responsiveFontSizes(themeInput) {
   var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -34445,7 +34455,7 @@ function responsiveFontSizes(themeInput) {
   var typography = theme.typography; // Convert between css lengths e.g. em->px or px->rem
   // Set the baseFontSize for your project. Defaults to 16px (also the browser default).
 
-  var convert = Object(convert_css_length__WEBPACK_IMPORTED_MODULE_1__["default"])(typography.htmlFontSize);
+  var convert = Object(_cssUtils__WEBPACK_IMPORTED_MODULE_1__["convertLength"])(typography.htmlFontSize);
   var breakpointValues = breakpoints.map(function (x) {
     return theme.breakpoints.values[x];
   });
@@ -34461,11 +34471,11 @@ function responsiveFontSizes(themeInput) {
     var minFontSize = 1 + (maxFontSize - 1) / factor;
     var lineHeight = style.lineHeight;
 
-    if (!isUnitless(lineHeight) && !disableAlign) {
+    if (!Object(_cssUtils__WEBPACK_IMPORTED_MODULE_1__["isUnitless"])(lineHeight) && !disableAlign) {
       throw new Error(["Material-UI: unsupported non-unitless line height with grid alignment.", 'Use unitless line heights instead.'].join('\n'));
     }
 
-    if (!isUnitless(lineHeight)) {
+    if (!Object(_cssUtils__WEBPACK_IMPORTED_MODULE_1__["isUnitless"])(lineHeight)) {
       // make it unitless
       lineHeight = parseFloat(convert(lineHeight, 'rem')) / parseFloat(remFontSize);
     }
@@ -34474,9 +34484,9 @@ function responsiveFontSizes(themeInput) {
 
     if (!disableAlign) {
       transform = function transform(value) {
-        return Object(_cssUtils__WEBPACK_IMPORTED_MODULE_2__["alignProperty"])({
+        return Object(_cssUtils__WEBPACK_IMPORTED_MODULE_1__["alignProperty"])({
           size: value,
-          grid: Object(_cssUtils__WEBPACK_IMPORTED_MODULE_2__["fontGrid"])({
+          grid: Object(_cssUtils__WEBPACK_IMPORTED_MODULE_1__["fontGrid"])({
             pixels: 4,
             lineHeight: lineHeight,
             htmlFontSize: typography.htmlFontSize
@@ -34485,7 +34495,7 @@ function responsiveFontSizes(themeInput) {
       };
     }
 
-    typography[variant] = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, style, {}, Object(_cssUtils__WEBPACK_IMPORTED_MODULE_2__["responsiveProperty"])({
+    typography[variant] = Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, style, {}, Object(_cssUtils__WEBPACK_IMPORTED_MODULE_1__["responsiveProperty"])({
       cssProperty: 'fontSize',
       min: minFontSize,
       max: maxFontSize,
@@ -34695,11 +34705,21 @@ function formatMs(milliseconds) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return useTheme; });
 /* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/styles */ "./node_modules/@material-ui/core/node_modules/@material-ui/styles/esm/index.js");
-/* harmony import */ var _defaultTheme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./defaultTheme */ "./node_modules/@material-ui/core/esm/styles/defaultTheme.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _defaultTheme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./defaultTheme */ "./node_modules/@material-ui/core/esm/styles/defaultTheme.js");
+
 
 
 function useTheme() {
-  return Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_0__["useTheme"])() || _defaultTheme__WEBPACK_IMPORTED_MODULE_1__["default"];
+  var theme = Object(_material_ui_styles__WEBPACK_IMPORTED_MODULE_0__["useTheme"])() || _defaultTheme__WEBPACK_IMPORTED_MODULE_2__["default"];
+
+  if (true) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    react__WEBPACK_IMPORTED_MODULE_1___default.a.useDebugValue(theme);
+  }
+
+  return theme;
 }
 
 /***/ }),
@@ -34866,7 +34886,7 @@ function useMediaQuery(queryInput) {
       _props$options$ssrMat = _props$options.ssrMatchMedia,
       ssrMatchMedia = _props$options$ssrMat === void 0 ? null : _props$options$ssrMat;
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(function () {
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_1__["useState"](function () {
     if (noSsr && supportMatchMedia) {
       return matchMedia(query).matches;
     }
@@ -34882,7 +34902,7 @@ function useMediaQuery(queryInput) {
       match = _React$useState[0],
       setMatch = _React$useState[1];
 
-  react__WEBPACK_IMPORTED_MODULE_1___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_1__["useEffect"](function () {
     var active = true;
 
     if (!supportMatchMedia) {
@@ -34907,6 +34927,15 @@ function useMediaQuery(queryInput) {
       queryList.removeListener(updateMatch);
     };
   }, [query, matchMedia, supportMatchMedia]);
+
+  if (true) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    react__WEBPACK_IMPORTED_MODULE_1__["useDebugValue"]({
+      query: query,
+      match: match
+    });
+  }
+
   return match;
 }
 
@@ -34975,15 +35004,15 @@ function useScrollTrigger() {
       target = _options$target === void 0 ? defaultTarget : _options$target,
       other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(options, ["getTrigger", "target"]);
 
-  var store = react__WEBPACK_IMPORTED_MODULE_1___default.a.useRef();
+  var store = react__WEBPACK_IMPORTED_MODULE_1__["useRef"]();
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(function () {
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_1__["useState"](function () {
     return getTrigger(null, store, other);
   }),
       trigger = _React$useState[0],
       setTrigger = _React$useState[1];
 
-  react__WEBPACK_IMPORTED_MODULE_1___default.a.useEffect(function () {
+  react__WEBPACK_IMPORTED_MODULE_1__["useEffect"](function () {
     var handleScroll = function handleScroll(event) {
       setTrigger(getTrigger(event, store, other));
     };
@@ -35268,13 +35297,19 @@ function handleBlurVisible() {
 }
 
 function useIsFocusVisible() {
-  var ref = react__WEBPACK_IMPORTED_MODULE_0___default.a.useCallback(function (instance) {
-    var node = react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.findDOMNode(instance);
+  var ref = react__WEBPACK_IMPORTED_MODULE_0__["useCallback"](function (instance) {
+    var node = react_dom__WEBPACK_IMPORTED_MODULE_1__["findDOMNode"](instance);
 
     if (node != null) {
       prepare(node.ownerDocument);
     }
   }, []);
+
+  if (true) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    react__WEBPACK_IMPORTED_MODULE_0__["useDebugValue"](isFocusVisible);
+  }
+
   return {
     isFocusVisible: isFocusVisible,
     onBlurVisible: handleBlurVisible,
@@ -35325,7 +35360,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 function isMuiElement(element, muiNames) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.isValidElement(element) && muiNames.indexOf(element.type.muiName) !== -1;
+  return react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"](element) && muiNames.indexOf(element.type.muiName) !== -1;
 }
 
 /***/ }),
@@ -35395,6 +35430,85 @@ function requirePropFactory(componentNameInError) {
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/esm/utils/scrollLeft.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/core/esm/utils/scrollLeft.js ***!
+  \****************************************************************/
+/*! exports provided: detectScrollType, getNormalizedScrollLeft */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectScrollType", function() { return detectScrollType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getNormalizedScrollLeft", function() { return getNormalizedScrollLeft; });
+// Source from https://github.com/alitaheri/normalize-scroll-left
+var cachedType;
+/**
+ * Based on the jquery plugin https://github.com/othree/jquery.rtl-scroll-type
+ *
+ * Types of scrollLeft, assiming scrollWidth=100 and direction is rtl.
+ *
+ * Browser        | Type          | <- Most Left | Most Right -> | Initial
+ * -------------- | ------------- | ------------ | ------------- | -------
+ * WebKit         | default       | 0            | 100           | 100
+ * Firefox/Opera  | negative      | -100         | 0             | 0
+ * IE/Edge        | reverse       | 100          | 0             | 0
+ */
+
+function detectScrollType() {
+  if (cachedType) {
+    return cachedType;
+  }
+
+  var dummy = document.createElement('div');
+  dummy.appendChild(document.createTextNode('ABCD'));
+  dummy.dir = 'rtl';
+  dummy.style.fontSize = '14px';
+  dummy.style.width = '4px';
+  dummy.style.height = '1px';
+  dummy.style.position = 'absolute';
+  dummy.style.top = '-1000px';
+  dummy.style.overflow = 'scroll';
+  document.body.appendChild(dummy);
+  cachedType = 'reverse';
+
+  if (dummy.scrollLeft > 0) {
+    cachedType = 'default';
+  } else {
+    dummy.scrollLeft = 1;
+
+    if (dummy.scrollLeft === 0) {
+      cachedType = 'negative';
+    }
+  }
+
+  document.body.removeChild(dummy);
+  return cachedType;
+} // Based on https://stackoverflow.com/a/24394376
+
+function getNormalizedScrollLeft(element, direction) {
+  var scrollLeft = element.scrollLeft; // Perform the calculations only when direction is rtl to avoid messing up the ltr bahavior
+
+  if (direction !== 'rtl') {
+    return scrollLeft;
+  }
+
+  var type = detectScrollType();
+
+  switch (type) {
+    case 'negative':
+      return element.scrollWidth - element.clientWidth + scrollLeft;
+
+    case 'reverse':
+      return element.scrollWidth - element.clientWidth - scrollLeft;
+
+    default:
+      return scrollLeft;
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/esm/utils/setRef.js":
 /*!************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/utils/setRef.js ***!
@@ -35459,33 +35573,33 @@ function useControlled(_ref) {
       defaultProp = _ref.default,
       name = _ref.name;
 
-  var _React$useRef = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(controlled !== undefined),
+  var _React$useRef = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](controlled !== undefined),
       isControlled = _React$useRef.current;
 
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(defaultProp),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__["useState"](defaultProp),
       valueState = _React$useState[0],
       setValue = _React$useState[1];
 
   var value = isControlled ? controlled : valueState;
 
   if (true) {
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+    react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
       if (isControlled !== (controlled !== undefined)) {
         console.error(["Material-UI: A component is changing ".concat(isControlled ? 'a ' : 'an un', "controlled ").concat(name, " to be ").concat(isControlled ? 'un' : '', "controlled."), 'Elements should not switch from uncontrolled to controlled (or vice versa).', "Decide between using a controlled or uncontrolled ".concat(name, " ") + 'element for the lifetime of the component.', 'More info: https://fb.me/react-controlled-components'].join('\n'));
       }
     }, [controlled]);
 
-    var _React$useRef2 = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(defaultProp),
+    var _React$useRef2 = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](defaultProp),
         defaultValue = _React$useRef2.current;
 
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+    react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
       if (defaultValue !== defaultProp) {
         console.error(["Material-UI: A component is changing the default value of an uncontrolled ".concat(name, " after being initialized. ") + "To suppress this warning opt to use a controlled ".concat(name, ".")].join('\n'));
       }
     }, [JSON.stringify(defaultProp)]);
   }
 
-  var setValueIfUncontrolled = react__WEBPACK_IMPORTED_MODULE_0___default.a.useCallback(function (newValue) {
+  var setValueIfUncontrolled = react__WEBPACK_IMPORTED_MODULE_0__["useCallback"](function (newValue) {
     if (!isControlled) {
       setValue(newValue);
     }
@@ -35508,7 +35622,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect;
+var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_0__["useEffect"];
 /**
  * https://github.com/facebook/react/issues/14099#issuecomment-440013892
  *
@@ -35516,11 +35630,11 @@ var useEnhancedEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_
  */
 
 function useEventCallback(fn) {
-  var ref = react__WEBPACK_IMPORTED_MODULE_0___default.a.useRef(fn);
+  var ref = react__WEBPACK_IMPORTED_MODULE_0__["useRef"](fn);
   useEnhancedEffect(function () {
     ref.current = fn;
   });
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.useCallback(function () {
+  return react__WEBPACK_IMPORTED_MODULE_0__["useCallback"](function () {
     return (0, ref.current).apply(void 0, arguments);
   }, []);
 }
@@ -35548,7 +35662,7 @@ function useForkRef(refA, refB) {
    * This means react will call the old forkRef with `null` and the new forkRef
    * with the ref. Cleanup naturally emerges from this behavior
    */
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.useMemo(function () {
+  return react__WEBPACK_IMPORTED_MODULE_0__["useMemo"](function () {
     if (refA == null && refB == null) {
       return null;
     }
@@ -35610,7 +35724,7 @@ var withMobileDialog = function withMobileDialog() {
         breakpoint = _options$breakpoint === void 0 ? 'sm' : _options$breakpoint;
 
     function WithMobileDialog(props) {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         fullScreen: Object(_withWidth__WEBPACK_IMPORTED_MODULE_3__["isWidthDown"])(breakpoint, props.width)
       }, props));
     }
@@ -35703,7 +35817,7 @@ var isWidthDown = function isWidthDown(breakpoint, width) {
 
   return _styles_createBreakpoints__WEBPACK_IMPORTED_MODULE_9__["keys"].indexOf(width) < _styles_createBreakpoints__WEBPACK_IMPORTED_MODULE_9__["keys"].indexOf(breakpoint);
 };
-var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_3___default.a.useEffect : react__WEBPACK_IMPORTED_MODULE_3___default.a.useLayoutEffect;
+var useEnhancedEffect = typeof window === 'undefined' ? react__WEBPACK_IMPORTED_MODULE_3__["useEffect"] : react__WEBPACK_IMPORTED_MODULE_3__["useLayoutEffect"];
 
 var withWidth = function withWidth() {
   var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -35727,7 +35841,7 @@ var withWidth = function withWidth() {
           width = _getThemeProps.width,
           other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_getThemeProps, ["initialWidth", "width"]);
 
-      var _React$useState = react__WEBPACK_IMPORTED_MODULE_3___default.a.useState(false),
+      var _React$useState = react__WEBPACK_IMPORTED_MODULE_3__["useState"](false),
           mountedState = _React$useState[0],
           setMountedState = _React$useState[1];
 
@@ -35764,7 +35878,7 @@ var withWidth = function withWidth() {
         return null;
       }
 
-      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, more);
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](Component, more);
     }
 
      true ? WithWidth.propTypes = {
@@ -35812,6 +35926,7 @@ var withWidth = function withWidth() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ServerStyleSheets; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
@@ -35828,9 +35943,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ServerStyleSheets =
-/*#__PURE__*/
-function () {
+var ServerStyleSheets = /*#__PURE__*/function () {
   function ServerStyleSheets() {
     var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
@@ -35875,7 +35988,7 @@ function () {
   return ServerStyleSheets;
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (ServerStyleSheets);
+
 
 /***/ }),
 
@@ -35906,6 +36019,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sheetsManager", function() { return sheetsManager; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StylesContext", function() { return StylesContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return StylesProvider; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -35948,7 +36062,6 @@ if (true) {
 }
 
 var injectFirstNode;
-
 function StylesProvider(props) {
   var children = props.children,
       _props$injectFirst = props.injectFirst,
@@ -35998,7 +36111,6 @@ function StylesProvider(props) {
     value: context
   }, children);
 }
-
  true ? StylesProvider.propTypes = {
   /**
    * Your component tree.
@@ -36065,8 +36177,6 @@ function StylesProvider(props) {
 if (true) {
    true ? StylesProvider.propTypes = Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_4__["exactProp"])(StylesProvider.propTypes) : undefined;
 }
-
-/* harmony default export */ __webpack_exports__["default"] = (StylesProvider);
 
 /***/ }),
 
@@ -36350,11 +36460,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getStylesCreator; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 /* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/index.js");
 /* harmony import */ var _noopTheme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./noopTheme */ "./node_modules/@material-ui/core/node_modules/@material-ui/styles/esm/getStylesCreator/noopTheme.js");
-
 
 
 
@@ -36408,8 +36518,6 @@ function getStylesCreator(stylesOrCreator) {
   };
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (getStylesCreator);
-
 /***/ }),
 
 /***/ "./node_modules/@material-ui/core/node_modules/@material-ui/styles/esm/getStylesCreator/index.js":
@@ -36452,6 +36560,7 @@ var noopTheme = {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getThemeProps; });
 /* eslint-disable no-restricted-syntax */
 function getThemeProps(params) {
   var theme = params.theme,
@@ -36475,8 +36584,6 @@ function getThemeProps(params) {
 
   return props;
 }
-
-/* harmony default export */ __webpack_exports__["default"] = (getThemeProps);
 
 /***/ }),
 
@@ -36551,7 +36658,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "withThemeCreator", function() { return _withTheme__WEBPACK_IMPORTED_MODULE_13__["withThemeCreator"]; });
 
-/** @license Material-UI v4.9.0
+/** @license Material-UI v4.9.6
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -36624,6 +36731,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return jssPreset; });
 /* harmony import */ var jss_plugin_rule_value_function__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jss-plugin-rule-value-function */ "./node_modules/jss-plugin-rule-value-function/dist/jss-plugin-rule-value-function.esm.js");
 /* harmony import */ var jss_plugin_global__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jss-plugin-global */ "./node_modules/jss-plugin-global/dist/jss-plugin-global.esm.js");
 /* harmony import */ var jss_plugin_nested__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jss-plugin-nested */ "./node_modules/jss-plugin-nested/dist/jss-plugin-nested.esm.js");
@@ -36647,8 +36755,6 @@ function jssPreset() {
     typeof window === 'undefined' ? null : Object(jss_plugin_vendor_prefixer__WEBPACK_IMPORTED_MODULE_5__["default"])(), Object(jss_plugin_props_sort__WEBPACK_IMPORTED_MODULE_6__["default"])()]
   };
 }
-
-/* harmony default export */ __webpack_exports__["default"] = (jssPreset);
 
 /***/ }),
 
@@ -36711,6 +36817,7 @@ function increment() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return makeStyles; });
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -36975,8 +37082,6 @@ function makeStyles(stylesOrCreator) {
   };
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (makeStyles);
-
 /***/ }),
 
 /***/ "./node_modules/@material-ui/core/node_modules/@material-ui/styles/esm/makeStyles/multiKeyStore.js":
@@ -37038,9 +37143,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return mergeClasses; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _material_ui_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/utils */ "./node_modules/@material-ui/utils/esm/index.js");
-
 
 
 function mergeClasses() {
@@ -37080,8 +37185,6 @@ function mergeClasses() {
   return nextClasses;
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (mergeClasses);
-
 /***/ }),
 
 /***/ "./node_modules/@material-ui/core/node_modules/@material-ui/styles/esm/styled/index.js":
@@ -37109,6 +37212,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return styled; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -37274,8 +37378,6 @@ function styled(Component) {
   return componentCreator;
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (styled);
-
 /***/ }),
 
 /***/ "./node_modules/@material-ui/core/node_modules/@material-ui/styles/esm/useTheme/ThemeContext.js":
@@ -37423,9 +37525,12 @@ var withStyles = function withStyles(stylesOrCreator) {
     var WithStyles = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function WithStyles(props, ref) {
       var classesProp = props.classes,
           innerRef = props.innerRef,
-          other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "innerRef"]);
+          other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "innerRef"]); // The wrapper receives only user supplied props, which could be a subset of
+      // the actual props Component might receive due to merging with defaultProps.
+      // So copying it here would give us the same result in the wrapper as well.
 
-      var classes = useStyles(props);
+
+      var classes = useStyles(Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, Component.defaultProps, {}, props));
       var theme;
       var more = other;
 
@@ -37474,11 +37579,7 @@ var withStyles = function withStyles(stylesOrCreator) {
         //     'Refs are now automatically forwarded to the inner component.',
         // );
       })
-    } : undefined; // The wrapper receives only user supplied props, which could be a subset of
-    // the actual props Component might receive due to merging with defaultProps.
-    // So copying it here would give us the same result in the wrapper as well.
-
-    WithStyles.defaultProps = Component.defaultProps;
+    } : undefined;
 
     if (true) {
       WithStyles.displayName = "WithStyles(".concat(Object(_material_ui_utils__WEBPACK_IMPORTED_MODULE_5__["getDisplayName"])(Component), ")");
@@ -38286,7 +38387,7 @@ var grid = Object(_compose__WEBPACK_IMPORTED_MODULE_1__["default"])(gridGap, gri
 /*!*******************************************************!*\
   !*** ./node_modules/@material-ui/system/esm/index.js ***!
   \*******************************************************/
-/*! exports provided: borders, border, borderTop, borderRight, borderBottom, borderLeft, borderColor, borderRadius, breakpoints, compose, css, display, flexbox, flexBasis, flexDirection, flexWrap, justifyContent, alignItems, alignContent, order, flex, flexGrow, flexShrink, alignSelf, justifyItems, justifySelf, grid, gridGap, gridColumnGap, gridRowGap, gridColumn, gridRow, gridAutoFlow, gridAutoColumns, gridAutoRows, gridTemplateColumns, gridTemplateRows, gridTemplateAreas, gridArea, palette, color, bgcolor, positions, position, zIndex, top, right, bottom, left, shadows, sizing, width, maxWidth, minWidth, height, maxHeight, minHeight, sizeWidth, sizeHeight, spacing, style, typography, fontFamily, fontSize, fontStyle, fontWeight, letterSpacing, lineHeight, textAlign */
+/*! exports provided: borders, breakpoints, compose, css, display, flexbox, grid, palette, positions, shadows, sizing, spacing, style, typography, border, borderTop, borderRight, borderBottom, borderLeft, borderColor, borderRadius, flexBasis, flexDirection, flexWrap, justifyContent, alignItems, alignContent, order, flex, flexGrow, flexShrink, alignSelf, justifyItems, justifySelf, gridGap, gridColumnGap, gridRowGap, gridColumn, gridRow, gridAutoFlow, gridAutoColumns, gridAutoRows, gridTemplateColumns, gridTemplateRows, gridTemplateAreas, gridArea, color, bgcolor, position, zIndex, top, right, bottom, left, width, maxWidth, minWidth, height, maxHeight, minHeight, sizeWidth, sizeHeight, boxSizing, createUnarySpacing, fontFamily, fontSize, fontStyle, fontWeight, letterSpacing, lineHeight, textAlign */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38420,8 +38521,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "sizeHeight", function() { return _sizing__WEBPACK_IMPORTED_MODULE_10__["sizeHeight"]; });
 
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "boxSizing", function() { return _sizing__WEBPACK_IMPORTED_MODULE_10__["boxSizing"]; });
+
 /* harmony import */ var _spacing__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./spacing */ "./node_modules/@material-ui/system/esm/spacing.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "spacing", function() { return _spacing__WEBPACK_IMPORTED_MODULE_11__["default"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createUnarySpacing", function() { return _spacing__WEBPACK_IMPORTED_MODULE_11__["createUnarySpacing"]; });
 
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./style */ "./node_modules/@material-ui/system/esm/style.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "style", function() { return _style__WEBPACK_IMPORTED_MODULE_12__["default"]; });
@@ -38443,11 +38548,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "textAlign", function() { return _typography__WEBPACK_IMPORTED_MODULE_13__["textAlign"]; });
 
-/** @license Material-UI v4.9.1
+/** @license Material-UI v4.9.6
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
+
 
 
 
@@ -38633,7 +38739,7 @@ var boxShadow = Object(_style__WEBPACK_IMPORTED_MODULE_0__["default"])({
 /*!********************************************************!*\
   !*** ./node_modules/@material-ui/system/esm/sizing.js ***!
   \********************************************************/
-/*! exports provided: width, maxWidth, minWidth, height, maxHeight, minHeight, sizeWidth, sizeHeight, default */
+/*! exports provided: width, maxWidth, minWidth, height, maxHeight, minHeight, sizeWidth, sizeHeight, boxSizing, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38646,6 +38752,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "minHeight", function() { return minHeight; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sizeWidth", function() { return sizeWidth; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sizeHeight", function() { return sizeHeight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "boxSizing", function() { return boxSizing; });
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style */ "./node_modules/@material-ui/system/esm/style.js");
 /* harmony import */ var _compose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./compose */ "./node_modules/@material-ui/system/esm/compose.js");
 
@@ -38689,7 +38796,10 @@ var sizeHeight = Object(_style__WEBPACK_IMPORTED_MODULE_0__["default"])({
   cssProperty: 'height',
   transform: transform
 });
-var sizing = Object(_compose__WEBPACK_IMPORTED_MODULE_1__["default"])(width, maxWidth, minWidth, height, maxHeight, minHeight);
+var boxSizing = Object(_style__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  prop: 'boxSizing'
+});
+var sizing = Object(_compose__WEBPACK_IMPORTED_MODULE_1__["default"])(width, maxWidth, minWidth, height, maxHeight, minHeight, boxSizing);
 /* harmony default export */ __webpack_exports__["default"] = (sizing);
 
 /***/ }),
@@ -38698,11 +38808,12 @@ var sizing = Object(_compose__WEBPACK_IMPORTED_MODULE_1__["default"])(width, max
 /*!*********************************************************!*\
   !*** ./node_modules/@material-ui/system/esm/spacing.js ***!
   \*********************************************************/
-/*! exports provided: default */
+/*! exports provided: createUnarySpacing, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createUnarySpacing", function() { return createUnarySpacing; });
 /* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
 /* harmony import */ var _responsivePropType__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./responsivePropType */ "./node_modules/@material-ui/system/esm/responsivePropType.js");
 /* harmony import */ var _breakpoints__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./breakpoints */ "./node_modules/@material-ui/system/esm/breakpoints.js");
@@ -38756,12 +38867,17 @@ var getCssProperties = Object(_memoize__WEBPACK_IMPORTED_MODULE_4__["default"])(
   }) : [property + direction];
 });
 var spacingKeys = ['m', 'mt', 'mr', 'mb', 'ml', 'mx', 'my', 'p', 'pt', 'pr', 'pb', 'pl', 'px', 'py', 'margin', 'marginTop', 'marginRight', 'marginBottom', 'marginLeft', 'marginX', 'marginY', 'padding', 'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft', 'paddingX', 'paddingY'];
-
-function getTransformer(theme) {
+function createUnarySpacing(theme) {
   var themeSpacing = theme.spacing || 8;
 
   if (typeof themeSpacing === 'number') {
     return function (abs) {
+      if (true) {
+        if (typeof abs !== 'number') {
+          console.error("@material-ui/system: expected spacing argument to be a number, got ".concat(abs, "."));
+        }
+      }
+
       return themeSpacing * abs;
     };
   }
@@ -38821,7 +38937,7 @@ function getStyleFromPropValue(cssProperties, transformer) {
 
 function spacing(props) {
   var theme = props.theme;
-  var transformer = getTransformer(theme);
+  var transformer = createUnarySpacing(theme);
   return Object.keys(props).map(function (prop) {
     // Using a hash computation over an array iteration could be faster, but with only 28 items,
     // it's doesn't worth the bundle size.
@@ -38995,19 +39111,19 @@ function chainPropTypes(propType1, propType2) {
 /*!**********************************************************!*\
   !*** ./node_modules/@material-ui/utils/esm/deepmerge.js ***!
   \**********************************************************/
-/*! exports provided: isObject, default */
+/*! exports provided: isPlainObject, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isObject", function() { return isObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlainObject", function() { return isPlainObject; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return deepmerge; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 
 
-function isObject(item) {
-  return item && Object(_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_1__["default"])(item) === 'object' && !Array.isArray(item);
+function isPlainObject(item) {
+  return item && Object(_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_1__["default"])(item) === 'object' && item.constructor === Object;
 }
 function deepmerge(target, source) {
   var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {
@@ -39015,14 +39131,14 @@ function deepmerge(target, source) {
   };
   var output = options.clone ? Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, target) : target;
 
-  if (isObject(target) && isObject(source)) {
+  if (isPlainObject(target) && isPlainObject(source)) {
     Object.keys(source).forEach(function (key) {
       // Avoid prototype pollution
       if (key === '__proto__') {
         return;
       }
 
-      if (isObject(source[key]) && key in target) {
+      if (isPlainObject(source[key]) && key in target) {
         output[key] = deepmerge(target[key], source[key], options);
       } else {
         output[key] = source[key];
@@ -39257,6 +39373,9 @@ function getDisplayName(Component) {
       case react_is__WEBPACK_IMPORTED_MODULE_1__["ForwardRef"]:
         return getWrappedName(Component, Component.render, 'ForwardRef');
 
+      case react_is__WEBPACK_IMPORTED_MODULE_1__["Memo"]:
+        return getWrappedName(Component, Component.type, 'memo');
+
       default:
         return undefined;
     }
@@ -39300,7 +39419,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _refType__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./refType */ "./node_modules/@material-ui/utils/esm/refType.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "refType", function() { return _refType__WEBPACK_IMPORTED_MODULE_7__["default"]; });
 
-/** @license Material-UI v4.7.1
+/** @license Material-UI v4.9.6
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -39460,21 +39579,6 @@ function toVal(mix) {
 
 /***/ }),
 
-/***/ "./node_modules/convert-css-length/dist/index.esm.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/convert-css-length/dist/index.esm.js ***!
-  \***********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var e=function(e){return parseFloat(e)};/* harmony default export */ __webpack_exports__["default"] = (function(r){return null==r&&(r=r),function(n,t,i,f){null==i&&(i=r),null==f&&(f=i);var l=String(n).match(/[\d.\-\+]*\s*(.*)/)[1]||"";if(l===t)return n;var u=e(n);if("px"!==l)if("em"===l)u=e(n)*e(i);else if("rem"===l)u=e(n)*e(r);else{if("ex"!==l)return n;u=e(n)*e(i)*2}var a=u;if("px"!==t)if("em"===t)a=u/e(f);else if("rem"===t)a=u/e(r);else{if("ex"!==t)return n;a=u/e(f)/2}return parseFloat(a.toFixed(5))+t}});
-//# sourceMappingURL=index.esm.js.map
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/fn/object/assign.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/assign.js ***!
@@ -39484,22 +39588,6 @@ var e=function(e){return parseFloat(e)};/* harmony default export */ __webpack_e
 
 __webpack_require__(/*! ../../modules/es6.object.assign */ "./node_modules/core-js/library/modules/es6.object.assign.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.assign;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/create.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/create.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.create */ "./node_modules/core-js/library/modules/es6.object.create.js");
-var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
-module.exports = function create(P, D) {
-  return $Object.create(P, D);
-};
 
 
 /***/ }),
@@ -39533,19 +39621,6 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/fn/object/get-prototype-of.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/get-prototype-of.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.get-prototype-of */ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getPrototypeOf;
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/fn/object/keys.js":
 /*!********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/keys.js ***!
@@ -39555,49 +39630,6 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 __webpack_require__(/*! ../../modules/es6.object.keys */ "./node_modules/core-js/library/modules/es6.object.keys.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.keys;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/set-prototype-of.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/set-prototype-of.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.set-prototype-of */ "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.setPrototypeOf;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/symbol/index.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/symbol/index.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.symbol */ "./node_modules/core-js/library/modules/es6.symbol.js");
-__webpack_require__(/*! ../../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
-__webpack_require__(/*! ../../modules/es7.symbol.async-iterator */ "./node_modules/core-js/library/modules/es7.symbol.async-iterator.js");
-__webpack_require__(/*! ../../modules/es7.symbol.observable */ "./node_modules/core-js/library/modules/es7.symbol.observable.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Symbol;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/symbol/iterator.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/symbol/iterator.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
-__webpack_require__(/*! ../../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
-module.exports = __webpack_require__(/*! ../../modules/_wks-ext */ "./node_modules/core-js/library/modules/_wks-ext.js").f('iterator');
 
 
 /***/ }),
@@ -39613,18 +39645,6 @@ module.exports = function (it) {
   if (typeof it != 'function') throw TypeError(it + ' is not a function!');
   return it;
 };
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_add-to-unscopables.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_add-to-unscopables.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function () { /* empty */ };
 
 
 /***/ }),
@@ -40045,138 +40065,6 @@ module.exports = function (it) {
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/_iter-create.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_iter-create.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var create = __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/library/modules/_object-create.js");
-var descriptor = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
-var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ "./node_modules/core-js/library/modules/_set-to-string-tag.js");
-var IteratorPrototype = {};
-
-// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-__webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js")(IteratorPrototype, __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator'), function () { return this; });
-
-module.exports = function (Constructor, NAME, next) {
-  Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
-  setToStringTag(Constructor, NAME + ' Iterator');
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iter-define.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_iter-define.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var LIBRARY = __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js");
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var redefine = __webpack_require__(/*! ./_redefine */ "./node_modules/core-js/library/modules/_redefine.js");
-var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
-var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
-var $iterCreate = __webpack_require__(/*! ./_iter-create */ "./node_modules/core-js/library/modules/_iter-create.js");
-var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ "./node_modules/core-js/library/modules/_set-to-string-tag.js");
-var getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ "./node_modules/core-js/library/modules/_object-gpo.js");
-var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator');
-var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
-var FF_ITERATOR = '@@iterator';
-var KEYS = 'keys';
-var VALUES = 'values';
-
-var returnThis = function () { return this; };
-
-module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED) {
-  $iterCreate(Constructor, NAME, next);
-  var getMethod = function (kind) {
-    if (!BUGGY && kind in proto) return proto[kind];
-    switch (kind) {
-      case KEYS: return function keys() { return new Constructor(this, kind); };
-      case VALUES: return function values() { return new Constructor(this, kind); };
-    } return function entries() { return new Constructor(this, kind); };
-  };
-  var TAG = NAME + ' Iterator';
-  var DEF_VALUES = DEFAULT == VALUES;
-  var VALUES_BUG = false;
-  var proto = Base.prototype;
-  var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = $native || getMethod(DEFAULT);
-  var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
-  var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
-  var methods, key, IteratorPrototype;
-  // Fix native
-  if ($anyNative) {
-    IteratorPrototype = getPrototypeOf($anyNative.call(new Base()));
-    if (IteratorPrototype !== Object.prototype && IteratorPrototype.next) {
-      // Set @@toStringTag to native iterators
-      setToStringTag(IteratorPrototype, TAG, true);
-      // fix for some old engines
-      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
-    }
-  }
-  // fix Array#{values, @@iterator}.name in V8 / FF
-  if (DEF_VALUES && $native && $native.name !== VALUES) {
-    VALUES_BUG = true;
-    $default = function values() { return $native.call(this); };
-  }
-  // Define iterator
-  if ((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])) {
-    hide(proto, ITERATOR, $default);
-  }
-  // Plug for library
-  Iterators[NAME] = $default;
-  Iterators[TAG] = returnThis;
-  if (DEFAULT) {
-    methods = {
-      values: DEF_VALUES ? $default : getMethod(VALUES),
-      keys: IS_SET ? $default : getMethod(KEYS),
-      entries: $entries
-    };
-    if (FORCED) for (key in methods) {
-      if (!(key in proto)) redefine(proto, key, methods[key]);
-    } else $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
-  }
-  return methods;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iter-step.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_iter-step.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function (done, value) {
-  return { value: value, done: !!done };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iterators.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_iterators.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {};
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/_library.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/modules/_library.js ***!
@@ -40493,30 +40381,6 @@ exports.f = Object.getOwnPropertySymbols;
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/_object-gpo.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-gpo.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
-var IE_PROTO = __webpack_require__(/*! ./_shared-key */ "./node_modules/core-js/library/modules/_shared-key.js")('IE_PROTO');
-var ObjectProto = Object.prototype;
-
-module.exports = Object.getPrototypeOf || function (O) {
-  O = toObject(O);
-  if (has(O, IE_PROTO)) return O[IE_PROTO];
-  if (typeof O.constructor == 'function' && O instanceof O.constructor) {
-    return O.constructor.prototype;
-  } return O instanceof Object ? ObjectProto : null;
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/_object-keys-internal.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-keys-internal.js ***!
@@ -40627,42 +40491,6 @@ module.exports = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/libr
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/_set-proto.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_set-proto.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Works with __proto__ only. Old v8 can't work with null proto objects.
-/* eslint-disable no-proto */
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var check = function (O, proto) {
-  anObject(O);
-  if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
-};
-module.exports = {
-  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-    function (test, buggy, set) {
-      try {
-        set = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js")(Function.call, __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/library/modules/_object-gopd.js").f(Object.prototype, '__proto__').set, 2);
-        set(test, []);
-        buggy = !(test instanceof Array);
-      } catch (e) { buggy = true; }
-      return function setPrototypeOf(O, proto) {
-        check(O, proto);
-        if (buggy) O.__proto__ = proto;
-        else set(O, proto);
-        return O;
-      };
-    }({}, false) : undefined),
-  check: check
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/_set-to-string-tag.js":
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_set-to-string-tag.js ***!
@@ -40716,34 +40544,6 @@ var store = global[SHARED] || (global[SHARED] = {});
   mode: __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js") ? 'pure' : 'global',
   copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
 });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_string-at.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_string-at.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/library/modules/_to-integer.js");
-var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
-// true  -> String#at
-// false -> String#codePointAt
-module.exports = function (TO_STRING) {
-  return function (that, pos) {
-    var s = String(defined(that));
-    var i = toInteger(pos);
-    var l = s.length;
-    var a, b;
-    if (i < 0 || i >= l) return TO_STRING ? '' : undefined;
-    a = s.charCodeAt(i);
-    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
-      ? TO_STRING ? s.charAt(i) : a
-      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
-  };
-};
 
 
 /***/ }),
@@ -40926,52 +40726,6 @@ $exports.store = store;
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.array.iterator.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.array.iterator.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var addToUnscopables = __webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/library/modules/_add-to-unscopables.js");
-var step = __webpack_require__(/*! ./_iter-step */ "./node_modules/core-js/library/modules/_iter-step.js");
-var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-
-// 22.1.3.4 Array.prototype.entries()
-// 22.1.3.13 Array.prototype.keys()
-// 22.1.3.29 Array.prototype.values()
-// 22.1.3.30 Array.prototype[@@iterator]()
-module.exports = __webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/library/modules/_iter-define.js")(Array, 'Array', function (iterated, kind) {
-  this._t = toIObject(iterated); // target
-  this._i = 0;                   // next index
-  this._k = kind;                // kind
-// 22.1.5.2.1 %ArrayIteratorPrototype%.next()
-}, function () {
-  var O = this._t;
-  var kind = this._k;
-  var index = this._i++;
-  if (!O || index >= O.length) {
-    this._t = undefined;
-    return step(1);
-  }
-  if (kind == 'keys') return step(0, index);
-  if (kind == 'values') return step(0, O[index]);
-  return step(0, [index, O[index]]);
-}, 'values');
-
-// argumentsList[@@iterator] is %ArrayProto_values% (9.4.4.6, 9.4.4.7)
-Iterators.Arguments = Iterators.Array;
-
-addToUnscopables('keys');
-addToUnscopables('values');
-addToUnscopables('entries');
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/es6.object.assign.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
@@ -40987,20 +40741,6 @@ $export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_ob
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.object.create.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.create.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-$export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/library/modules/_object-create.js") });
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/es6.object.define-property.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.define-property.js ***!
@@ -41011,26 +40751,6 @@ $export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
 $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.get-prototype-of.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.9 Object.getPrototypeOf(O)
-var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
-var $getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ "./node_modules/core-js/library/modules/_object-gpo.js");
-
-__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getPrototypeOf', function () {
-  return function getPrototypeOf(it) {
-    return $getPrototypeOf(toObject(it));
-  };
-});
 
 
 /***/ }),
@@ -41050,60 +40770,6 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules
   return function keys(it) {
     return $keys(toObject(it));
   };
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.set-prototype-of.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.3.19 Object.setPrototypeOf(O, proto)
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-$export($export.S, 'Object', { setPrototypeOf: __webpack_require__(/*! ./_set-proto */ "./node_modules/core-js/library/modules/_set-proto.js").set });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.to-string.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.to-string.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.string.iterator.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.string.iterator.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var $at = __webpack_require__(/*! ./_string-at */ "./node_modules/core-js/library/modules/_string-at.js")(true);
-
-// 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/library/modules/_iter-define.js")(String, 'String', function (iterated) {
-  this._t = String(iterated); // target
-  this._i = 0;                // next index
-// 21.1.5.2.1 %StringIteratorPrototype%.next()
-}, function () {
-  var O = this._t;
-  var index = this._i;
-  var point;
-  if (index >= O.length) return { value: undefined, done: true };
-  point = $at(O, index);
-  this._i += point.length;
-  return { value: point, done: false };
 });
 
 
@@ -41363,60 +41029,6 @@ setToStringTag($Symbol, 'Symbol');
 setToStringTag(Math, 'Math', true);
 // 24.3.3 JSON[@@toStringTag]
 setToStringTag(global.JSON, 'JSON', true);
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.symbol.async-iterator.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es7.symbol.async-iterator.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ./_wks-define */ "./node_modules/core-js/library/modules/_wks-define.js")('asyncIterator');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.symbol.observable.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es7.symbol.observable.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ./_wks-define */ "./node_modules/core-js/library/modules/_wks-define.js")('observable');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/web.dom.iterable.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/web.dom.iterable.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ./es6.array.iterator */ "./node_modules/core-js/library/modules/es6.array.iterator.js");
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
-var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
-var TO_STRING_TAG = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('toStringTag');
-
-var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
-  'DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,' +
-  'MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,' +
-  'SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,' +
-  'TextTrackList,TouchList').split(',');
-
-for (var i = 0; i < DOMIterables.length; i++) {
-  var NAME = DOMIterables[i];
-  var Collection = global[NAME];
-  var proto = Collection && Collection.prototype;
-  if (proto && !proto[TO_STRING_TAG]) hide(proto, TO_STRING_TAG, NAME);
-  Iterators[NAME] = Iterators.Array;
-}
 
 
 /***/ }),
@@ -42498,12 +42110,10 @@ function iterate(prop, value, options) {
       }
     }
   } else if (typeof value === 'number') {
-    if (options[prop]) {
-      return "" + value + options[prop];
-    }
+    var unit = options[prop] || units[prop];
 
-    if (units[prop]) {
-      return typeof units[prop] === 'function' ? units[prop](value).toString() : "" + value + units[prop];
+    if (unit) {
+      return typeof unit === 'function' ? unit(value).toString() : "" + value + unit;
     }
 
     return value.toString();
@@ -42924,7 +42534,9 @@ function jssPropsSort() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jss */ "./node_modules/jss/dist/jss.esm.js");
+/* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-warning */ "./node_modules/tiny-warning/dist/tiny-warning.esm.js");
+/* harmony import */ var jss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jss */ "./node_modules/jss/dist/jss.esm.js");
+
 
 
 var now = Date.now();
@@ -42934,7 +42546,7 @@ function functionPlugin() {
   return {
     onCreateRule: function onCreateRule(name, decl, options) {
       if (typeof decl !== 'function') return null;
-      var rule = Object(jss__WEBPACK_IMPORTED_MODULE_0__["createRule"])(name, {}, options);
+      var rule = Object(jss__WEBPACK_IMPORTED_MODULE_1__["createRule"])(name, {}, options);
       rule[fnRuleNs] = decl;
       return rule;
     },
@@ -42966,13 +42578,22 @@ function functionPlugin() {
         // Empty object will remove all currently defined props
         // in case function rule returns a falsy value.
         styleRule.style = fnRule(data) || {};
+
+        if (true) {
+          for (var prop in styleRule.style) {
+            if (typeof styleRule.style[prop] === 'function') {
+               true ? Object(tiny_warning__WEBPACK_IMPORTED_MODULE_0__["default"])(false, '[JSS] Function values inside function rules are not supported.') : undefined;
+              break;
+            }
+          }
+        }
       }
 
       var fnValues = styleRule[fnValuesNs]; // If we have a fn values map, it is a rule with function values.
 
       if (fnValues) {
-        for (var prop in fnValues) {
-          styleRule.prop(prop, fnValues[prop](data), options);
+        for (var _prop in fnValues) {
+          styleRule.prop(_prop, fnValues[_prop](data), options);
         }
       }
     }
@@ -43737,21 +43358,22 @@ function () {
       var str = '';
 
       for (var index = 0; index < this.style.length; index++) {
-        str += toCss(this.key, this.style[index]);
+        str += toCss(this.at, this.style[index]);
         if (this.style[index + 1]) str += '\n';
       }
 
       return str;
     }
 
-    return toCss(this.key, this.style, options);
+    return toCss(this.at, this.style, options);
   };
 
   return FontFaceRule;
 }();
+var keyRegExp$2 = /@font-face/;
 var pluginFontFaceRule = {
   onCreateRule: function onCreateRule(key, style, options) {
-    return key === '@font-face' ? new FontFaceRule(key, style, options) : null;
+    return keyRegExp$2.test(key) ? new FontFaceRule(key, style, options) : null;
   }
 };
 
@@ -45032,7 +44654,7 @@ var Jss =
 function () {
   function Jss(options) {
     this.id = instanceCounter++;
-    this.version = "10.0.4";
+    this.version = "10.1.1";
     this.plugins = new PluginsRegistry();
     this.options = {
       id: {
@@ -45308,10 +44930,10 @@ var index = create();
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblablaterms&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Cwww.zespolarto.pl%5Cpages%5Cblablaterms.js!./":
-/*!***********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblablaterms&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Cwww.zespolarto.pl%5Cpages%5Cblablaterms.js ***!
-  \***********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblablaterms&absolutePagePath=D%3A%5CIT_projects%5Czespolarto.pl%5Cpages%5Cblablaterms.js!./":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblablaterms&absolutePagePath=D%3A%5CIT_projects%5Czespolarto.pl%5Cpages%5Cblablaterms.js ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -45331,140 +44953,14 @@ var index = create();
 
 /***/ }),
 
-/***/ "./node_modules/next/node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ "./node_modules/normalize-scroll-left/esm/main.js":
-/*!********************************************************!*\
-  !*** ./node_modules/normalize-scroll-left/esm/main.js ***!
-  \********************************************************/
-/*! exports provided: _setScrollType, detectScrollType, getNormalizedScrollLeft, setNormalizedScrollLeft */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_setScrollType", function() { return _setScrollType; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectScrollType", function() { return detectScrollType; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getNormalizedScrollLeft", function() { return getNormalizedScrollLeft; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setNormalizedScrollLeft", function() { return setNormalizedScrollLeft; });
-// Based on https://github.com/react-bootstrap/dom-helpers/blob/master/src/util/inDOM.js
-var inDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
-var cachedType;
-function _setScrollType(type) {
-    cachedType = type;
-}
-// Based on the jquery plugin https://github.com/othree/jquery.rtl-scroll-type
-function detectScrollType() {
-    if (cachedType) {
-        return cachedType;
-    }
-    if (!inDOM || !window.document.body) {
-        return 'indeterminate';
-    }
-    var dummy = window.document.createElement('div');
-    dummy.appendChild(document.createTextNode('ABCD'));
-    dummy.dir = 'rtl';
-    dummy.style.fontSize = '14px';
-    dummy.style.width = '4px';
-    dummy.style.height = '1px';
-    dummy.style.position = 'absolute';
-    dummy.style.top = '-1000px';
-    dummy.style.overflow = 'scroll';
-    document.body.appendChild(dummy);
-    cachedType = 'reverse';
-    if (dummy.scrollLeft > 0) {
-        cachedType = 'default';
-    }
-    else {
-        dummy.scrollLeft = 1;
-        if (dummy.scrollLeft === 0) {
-            cachedType = 'negative';
-        }
-    }
-    document.body.removeChild(dummy);
-    return cachedType;
-}
-// Based on https://stackoverflow.com/a/24394376
-function getNormalizedScrollLeft(element, direction) {
-    var scrollLeft = element.scrollLeft;
-    // Perform the calculations only when direction is rtl to avoid messing up the ltr bahavior
-    if (direction !== 'rtl') {
-        return scrollLeft;
-    }
-    var type = detectScrollType();
-    if (type === 'indeterminate') {
-        return Number.NaN;
-    }
-    switch (type) {
-        case 'negative':
-            return element.scrollWidth - element.clientWidth + scrollLeft;
-        case 'reverse':
-            return element.scrollWidth - element.clientWidth - scrollLeft;
-    }
-    return scrollLeft;
-}
-function setNormalizedScrollLeft(element, scrollLeft, direction) {
-    // Perform the calculations only when direction is rtl to avoid messing up the ltr bahavior
-    if (direction !== 'rtl') {
-        element.scrollLeft = scrollLeft;
-        return;
-    }
-    var type = detectScrollType();
-    if (type === 'indeterminate') {
-        return;
-    }
-    switch (type) {
-        case 'negative':
-            element.scrollLeft = element.clientWidth - element.scrollWidth + scrollLeft;
-            break;
-        case 'reverse':
-            element.scrollLeft = element.scrollWidth - element.clientWidth - scrollLeft;
-            break;
-        default:
-            element.scrollLeft = scrollLeft;
-            break;
-    }
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_129a35c7ec57967eb265 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_129a35c7ec57967eb265 */ "dll-reference dll_129a35c7ec57967eb265"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -48094,18 +47590,18 @@ Popper.Defaults = Defaults;
 /* harmony default export */ __webpack_exports__["default"] = (Popper);
 //# sourceMappingURL=popper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../next/node_modules/webpack/buildin/global.js */ "./node_modules/next/node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_129a35c7ec57967eb265 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_129a35c7ec57967eb265 */ "dll-reference dll_129a35c7ec57967eb265"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -48740,23 +48236,23 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_129a35c7ec57967eb265 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_129a35c7ec57967eb265 */ "dll-reference dll_129a35c7ec57967eb265"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_129a35c7ec57967eb265 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_129a35c7ec57967eb265 */ "dll-reference dll_129a35c7ec57967eb265"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -48768,7 +48264,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.12.0
+/** @license React v16.13.1
  * react-is.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -48784,8 +48280,6 @@ module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8
 if (true) {
   (function() {
 'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
 
 // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 // nor polyfill, then a plain number is used for performance.
@@ -48806,69 +48300,15 @@ var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
 var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
 var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
 var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
 var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
 var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
 var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
 
 function isValidElementType(type) {
   return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE);
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
 }
-
-/**
- * Forked from fbjs/warning:
- * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
- *
- * Only change is we use console.warn instead of console.error,
- * and do nothing when 'console' is not supported.
- * This really simplifies the code.
- * ---
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-var lowPriorityWarningWithoutStack = function () {};
-
-{
-  var printWarning = function (format) {
-    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-
-    if (typeof console !== 'undefined') {
-      console.warn(message);
-    }
-
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  lowPriorityWarningWithoutStack = function (condition, format) {
-    if (format === undefined) {
-      throw new Error('`lowPriorityWarningWithoutStack(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-
-    if (!condition) {
-      for (var _len2 = arguments.length, args = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(void 0, [format].concat(args));
-    }
-  };
-}
-
-var lowPriorityWarningWithoutStack$1 = lowPriorityWarningWithoutStack;
 
 function typeOf(object) {
   if (typeof object === 'object' && object !== null) {
@@ -48930,8 +48370,9 @@ var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecat
 function isAsyncMode(object) {
   {
     if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true;
-      lowPriorityWarningWithoutStack$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
     }
   }
 
@@ -48974,7 +48415,6 @@ function isSuspense(object) {
   return typeOf(object) === REACT_SUSPENSE_TYPE;
 }
 
-exports.typeOf = typeOf;
 exports.AsyncMode = AsyncMode;
 exports.ConcurrentMode = ConcurrentMode;
 exports.ContextConsumer = ContextConsumer;
@@ -48988,7 +48428,6 @@ exports.Portal = Portal;
 exports.Profiler = Profiler;
 exports.StrictMode = StrictMode;
 exports.Suspense = Suspense;
-exports.isValidElementType = isValidElementType;
 exports.isAsyncMode = isAsyncMode;
 exports.isConcurrentMode = isConcurrentMode;
 exports.isContextConsumer = isContextConsumer;
@@ -49002,6 +48441,8 @@ exports.isPortal = isPortal;
 exports.isProfiler = isProfiler;
 exports.isStrictMode = isStrictMode;
 exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
   })();
 }
 
@@ -50899,12 +50340,12 @@ var classNamesShape =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_01f9a3fa864a7b7414d8 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_129a35c7ec57967eb265 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_01f9a3fa864a7b7414d8 */ "dll-reference dll_01f9a3fa864a7b7414d8"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_129a35c7ec57967eb265 */ "dll-reference dll_129a35c7ec57967eb265"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -50941,6 +50382,37 @@ function warning(condition, message) {
 
 /***/ }),
 
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
 /***/ "./pages/blablaterms.js":
 /*!******************************!*\
   !*** ./pages/blablaterms.js ***!
@@ -50965,30 +50437,28 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
-/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/EventAvailable */ "./node_modules/@material-ui/icons/EventAvailable.js");
-/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/CalendarToday */ "./node_modules/@material-ui/icons/CalendarToday.js");
-/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/EventBusy */ "./node_modules/@material-ui/icons/EventBusy.js");
-/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/ExpandLess */ "./node_modules/@material-ui/icons/ExpandLess.js");
-/* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/ExpandMore */ "./node_modules/@material-ui/icons/ExpandMore.js");
-/* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
-/* harmony import */ var _material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Collapse */ "./node_modules/@material-ui/core/esm/Collapse/index.js");
-/* harmony import */ var _src_constants__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../src/constants */ "./src/constants.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_12__);
-
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\CustomBodyOfMonth\\CustomBodyOfMonth.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/EventAvailable */ "./node_modules/@material-ui/icons/EventAvailable.js");
+/* harmony import */ var _material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/CalendarToday */ "./node_modules/@material-ui/icons/CalendarToday.js");
+/* harmony import */ var _material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/EventBusy */ "./node_modules/@material-ui/icons/EventBusy.js");
+/* harmony import */ var _material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/ExpandLess */ "./node_modules/@material-ui/icons/ExpandLess.js");
+/* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/ExpandMore */ "./node_modules/@material-ui/icons/ExpandMore.js");
+/* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Collapse */ "./node_modules/@material-ui/core/esm/Collapse/index.js");
+/* harmony import */ var _src_constants__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../src/constants */ "./src/constants.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
+var _jsxFileName = "D:\\IT_projects\\zespolarto.pl\\src\\components\\CustomBodyOfMonth\\CustomBodyOfMonth.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -51002,193 +50472,214 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-var CustomBodyOfMonth = function CustomBodyOfMonth(_ref) {
-  var _classNames;
+const CustomBodyOfMonth = ({
+  classes,
+  day,
+  hotel,
+  information,
+  place,
+  status,
+  weddingHour,
+  weekDay
+}) => {
+  const classNameMain = classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.main, {
+    [classes.busy]: status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].BUSY,
+    [classes.holiday]: status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].HOLIDAY,
+    [classes.emptyContainer]: status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].EMPTY || _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].UNDEFINED
+  });
 
-  var classes = _ref.classes,
-      day = _ref.day,
-      hotel = _ref.hotel,
-      information = _ref.information,
-      place = _ref.place,
-      status = _ref.status,
-      weddingHour = _ref.weddingHour,
-      weekDay = _ref.weekDay;
-  var classNameMain = classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.main, (_classNames = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames, classes.busy, status === _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].BUSY), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames, classes.holiday, status === _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].HOLIDAY), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames, classes.emptyContainer, status === _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].EMPTY || _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].UNDEFINED), _classNames));
-
-  var getView = function getView(status) {
+  const getView = status => {
     switch (status) {
-      case _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].BUSY:
+      case _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].BUSY:
         return __jsx("div", {
-          className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoBusy),
+          className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.info, classes.infoBusy),
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 37
-          },
-          __self: this
+            lineNumber: 37,
+            columnNumber: 25
+          }
         }, place);
 
-      case _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].HOLIDAY:
+      case _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].HOLIDAY:
         return __jsx("div", {
-          className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes.info, classes.infoHoliday),
+          className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.info, classes.infoHoliday),
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
-          },
-          __self: this
+            lineNumber: 39,
+            columnNumber: 25
+          }
         }, "Wakacje");
     }
   };
 
-  var getIcon = function getIcon(status) {
+  const getIcon = status => {
     switch (status) {
-      case _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].BUSY:
-        return __jsx(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      case _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].BUSY:
+        return __jsx(_material_ui_icons_EventAvailable__WEBPACK_IMPORTED_MODULE_3___default.a, {
           classes: {
             root: classes.icon
           },
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 46
-          },
-          __self: this
+            lineNumber: 46,
+            columnNumber: 24
+          }
         });
 
-      case _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].EMPTY:
-        return __jsx(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      case _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].EMPTY:
+        return __jsx(_material_ui_icons_CalendarToday__WEBPACK_IMPORTED_MODULE_4___default.a, {
           classes: {
             root: classes.icon
           },
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 48
-          },
-          __self: this
+            lineNumber: 48,
+            columnNumber: 24
+          }
         });
 
-      case _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].HOLIDAY:
-        return __jsx(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      case _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].HOLIDAY:
+        return __jsx(_material_ui_icons_EventBusy__WEBPACK_IMPORTED_MODULE_5___default.a, {
           classes: {
             root: classes.icon
           },
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 50
-          },
-          __self: this
+            lineNumber: 50,
+            columnNumber: 24
+          }
         });
     }
   };
 
-  var getDetails = function getDetails() {
-    return __jsx("div", {
-      className: classes.rowInfo,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 55
-      },
-      __self: this
-    }, (status === _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].BUSY || status === _src_constants__WEBPACK_IMPORTED_MODULE_11__["STATUS"].HOLIDAY) && __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 57
-      },
-      __self: this
-    }, hotel && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      type: "p",
-      className: classes.details,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58
-      },
-      __self: this
-    }, __jsx("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58
-      },
-      __self: this
-    }, "hotel: "), hotel), weddingHour && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      type: "p",
-      className: classes.details,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59
-      },
-      __self: this
-    }, __jsx("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59
-      },
-      __self: this
-    }, "godz. slubu: "), weddingHour), information && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      type: "p",
-      className: classes.details,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 60
-      },
-      __self: this
-    }, __jsx("strong", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 60
-      },
-      __self: this
-    }, "informacje dodatkowe: "), information)));
-  };
+  const getDetails = () => __jsx("div", {
+    className: classes.rowInfo,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 9
+    }
+  }, (status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].BUSY || status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].HOLIDAY) && __jsx("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 13
+    }
+  }, hotel && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    type: "p",
+    className: classes.details,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 27
+    }
+  }, __jsx("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 78
+    }
+  }, "hotel: "), hotel), weddingHour && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    type: "p",
+    className: classes.details,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 33
+    }
+  }, __jsx("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 84
+    }
+  }, "godz. slubu: "), weddingHour), information && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    type: "p",
+    className: classes.details,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 33
+    }
+  }, __jsx("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 84
+    }
+  }, "informacje dodatkowe: "), information)));
 
   return __jsx("div", {
     className: classNameMain,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: this
+      lineNumber: 67,
+      columnNumber: 9
+    }
   }, __jsx("div", {
     className: classes.rowContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: this
+      lineNumber: 68,
+      columnNumber: 13
+    }
   }, __jsx("div", {
     className: classes.detailsMainContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
+      lineNumber: 69,
+      columnNumber: 17
+    }
   }, __jsx("div", {
     className: classes.termIconContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }, getIcon(status), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      lineNumber: 70,
+      columnNumber: 21
+    }
+  }, getIcon(status), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
     type: "span",
     className: classes.day,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, day), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      lineNumber: 72,
+      columnNumber: 25
+    }
+  }, day), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
     type: "p",
     className: classes.details,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
+      lineNumber: 73,
+      columnNumber: 25
+    }
   }, "(", weekDay, ")")), getDetails()), __jsx("div", {
     className: classes.statusContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
+      lineNumber: 77,
+      columnNumber: 17
+    }
   }, getView(status))));
 };
 
@@ -51200,18 +50691,18 @@ CustomBodyOfMonth.defaultProps = {
   place: '',
   status: '',
   weddingHour: '',
-  weekDay: _src_constants__WEBPACK_IMPORTED_MODULE_11__["WEEK_DAY"].SATUDRAY
+  weekDay: _src_constants__WEBPACK_IMPORTED_MODULE_10__["WEEK_DAY"].SATUDRAY
 };
 CustomBodyOfMonth.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.object.isRequired,
-  day: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.string,
-  description: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.string,
-  hotel: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.string,
-  information: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.string,
-  place: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.string,
-  status: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.string,
-  weddingHour: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.string,
-  weekDay: prop_types__WEBPACK_IMPORTED_MODULE_12___default.a.string
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.object.isRequired,
+  day: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string,
+  description: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string,
+  hotel: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string,
+  information: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string,
+  place: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string,
+  status: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string,
+  weddingHour: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string,
+  weekDay: prop_types__WEBPACK_IMPORTED_MODULE_11___default.a.string
 };
 CustomBodyOfMonth.displayName = 'CustomBodyOfMonth';
 /* harmony default export */ __webpack_exports__["default"] = (CustomBodyOfMonth);
@@ -51227,86 +50718,83 @@ CustomBodyOfMonth.displayName = 'CustomBodyOfMonth';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
-/* harmony import */ var _CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CustomBodyOfMonth */ "./src/components/CustomBodyOfMonth/CustomBodyOfMonth.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CustomBodyOfMonth */ "./src/components/CustomBodyOfMonth/CustomBodyOfMonth.js");
 
 
 
-
-var styles = function styles(theme) {
-  return {
-    main: {
-      fontSize: '1.2rem',
-      padding: '0.35rem',
-      border: 'solid #ddd 0.001rem'
-    },
-    number: {
-      color: '#aeaeae',
-      paddingRight: '0.5rem',
-      fontSize: '1.5rem'
-    },
-    day: {},
-    busy: {
-      backgroundColor: 'rgba(77,184,74,0.43)'
-    },
-    emptyContainer: {},
-    holiday: {
-      backgroundColor: '#5bc0de',
-      color: 'white'
-    },
-    infoEmpty: {
-      backgroundColor: '#ff747e'
-    },
-    info: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
-      fontSize: '0.9rem',
-      borderRadius: '0.5rem',
-      padding: '0.1rem 0.4rem',
-      textAlign: 'right'
-    }, theme.breakpoints.up('sm'), {
+const styles = theme => ({
+  main: {
+    fontSize: '1.2rem',
+    padding: '0.35rem',
+    border: 'solid #ddd 0.001rem'
+  },
+  number: {
+    color: '#aeaeae',
+    paddingRight: '0.5rem',
+    fontSize: '1.5rem'
+  },
+  day: {},
+  busy: {
+    backgroundColor: 'rgba(77,184,74,0.43)'
+  },
+  emptyContainer: {},
+  holiday: {
+    backgroundColor: '#5bc0de',
+    color: 'white'
+  },
+  infoEmpty: {
+    backgroundColor: '#ff747e'
+  },
+  info: {
+    fontSize: '0.9rem',
+    borderRadius: '0.5rem',
+    padding: '0.1rem 0.4rem',
+    textAlign: 'right',
+    [theme.breakpoints.up('sm')]: {
       marginRight: '1rem'
-    }),
-    infoBusy: {
-      backgroundColor: '#55c7bd'
-    },
-    infoHoliday: {
-      backgroundColor: 'white',
-      color: 'black'
-    },
-    details: {
-      fontSize: '0.7rem',
-      margin: '0.2rem'
-    },
-    rowContainer: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-between'
-    },
-    detailsMainContainer: {
-      display: 'flex',
-      flexDirection: 'column'
-    },
-    statusContainer: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    },
-    rowInfo: {
-      fontSize: '0.7rem'
-    },
-    icon: {
-      fontSize: '1.2rem',
-      marginRight: '0.2rem'
-    },
-    termIconContainer: {
-      display: 'grid',
-      gridTemplateColumns: '1.5rem 5.3125rem 5.5rem',
-      alignItems: 'center'
     }
-  };
-};
+  },
+  infoBusy: {
+    backgroundColor: '#55c7bd'
+  },
+  infoHoliday: {
+    backgroundColor: 'white',
+    color: 'black'
+  },
+  details: {
+    fontSize: '0.7rem',
+    margin: '0.2rem'
+  },
+  rowContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  detailsMainContainer: {
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  statusContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  rowInfo: {
+    fontSize: '0.7rem'
+  },
+  icon: {
+    fontSize: '1.2rem',
+    marginRight: '0.2rem'
+  },
+  termIconContainer: {
+    display: 'grid',
+    gridTemplateColumns: '1.5rem 5.3125rem 5.5rem',
+    alignItems: 'center'
+  }
+});
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["withStyles"])(styles)(_CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__["default"]));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
 /***/ }),
 
@@ -51343,7 +50831,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\Months\\Months.js";
+var _jsxFileName = "D:\\IT_projects\\zespolarto.pl\\src\\components\\Months\\Months.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -51351,90 +50839,92 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-var howMuchTermsWithStatus = function howMuchTermsWithStatus(element, status) {
+const howMuchTermsWithStatus = (element, status) => {
   return element.status === status;
 };
 
-var Months = function Months(props) {
-  var classes = props.classes,
-      table = props.table,
-      weddingAmount = props.weddingAmount;
+const Months = props => {
+  const classes = props.classes,
+        table = props.table,
+        weddingAmount = props.weddingAmount;
 
-  var getMonthsDays = function getMonthsDays(days) {
-    return days.map(function (day) {
-      return __jsx(_CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-        key: day.day
-      }, day, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: this
-      }));
-    });
-  };
+  const getMonthsDays = days => days.map(day => __jsx(_CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    key: day.day
+  }, day, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 23
+    }
+  })));
 
-  var getMonths = function getMonths(months) {
-    return months.map(function (month, id) {
-      var weddingsAmount = month.days.filter(function (element) {
-        return howMuchTermsWithStatus(element, _constants__WEBPACK_IMPORTED_MODULE_5__["STATUS"].BUSY);
-      });
-      return __jsx("li", {
-        key: month.name,
-        className: classes.dayContainer,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, __jsx("div", {
-        className: classes.monthNameContainer,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
-      }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-        className: classes.monthNumber,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        },
-        __self: this
-      }, id + 1, " "), __jsx(_material_ui_icons_CalendarViewDay__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        classes: {
-          root: classes.icon
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
-      }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-        className: classes.monthName,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }, month.name, " "), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-        className: classes.weddingsAmount,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34
-        },
-        __self: this
-      }, " (", weddingsAmount.length, ")")), getMonthsDays(month.days));
+  const getMonths = months => months.map((month, id) => {
+    const weddingsAmount = month.days.filter(function (element) {
+      return howMuchTermsWithStatus(element, _constants__WEBPACK_IMPORTED_MODULE_5__["STATUS"].BUSY);
     });
-  };
+    return __jsx("li", {
+      key: month.name,
+      className: classes.dayContainer,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 9
+      }
+    }, __jsx("div", {
+      className: classes.monthNameContainer,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 11
+      }
+    }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      className: classes.monthNumber,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 13
+      }
+    }, id + 1, " "), __jsx(_material_ui_icons_CalendarViewDay__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      classes: {
+        root: classes.icon
+      },
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 13
+      }
+    }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      className: classes.monthName,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 13
+      }
+    }, month.name, " "), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      className: classes.weddingsAmount,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34,
+        columnNumber: 13
+      }
+    }, " (", weddingsAmount.length, ")")), getMonthsDays(month.days));
+  });
 
   return __jsx("ul", {
     className: classes.monthContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
+      lineNumber: 44,
+      columnNumber: 5
+    }
   }, "Ilo\u015B\u0107 wesel: ", weddingAmount, getMonths(table));
 };
 
@@ -51459,7 +50949,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Months__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Months */ "./src/components/Months/Months.js");
 
 
-var styles = {
+const styles = {
   monthNameContainer: {
     display: 'flex',
     alignItems: 'baseline',
@@ -51720,7 +51210,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var SONGS_IMAGES = {
+const SONGS_IMAGES = {
   abba: _static_image_songsImages_abba_jpg__WEBPACK_IMPORTED_MODULE_16___default.a,
   afterParty: _static_image_songsImages_afterParty_jpg__WEBPACK_IMPORTED_MODULE_17___default.a,
   akcent: _static_image_songsImages_akcent_jpg__WEBPACK_IMPORTED_MODULE_18___default.a,
@@ -51763,31 +51253,31 @@ var SONGS_IMAGES = {
   wojciechGasowski: _static_image_songsImages_wojciechGasowski_jpg__WEBPACK_IMPORTED_MODULE_55___default.a,
   zbigniewWodecki: _static_image_songsImages_zbigniewWodecki_jpg__WEBPACK_IMPORTED_MODULE_56___default.a
 };
-var IMAGE_1 = _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0___default.a;
-var IMAGE_2 = _static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1___default.a;
-var IMAGE_3 = _static_image_photo_3_small_jpg__WEBPACK_IMPORTED_MODULE_2___default.a;
-var IMAGE_4 = _static_image_photo_4_small_jpg__WEBPACK_IMPORTED_MODULE_3___default.a;
-var LOGO = _static_image_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a;
-var LOGO_ON_THE_FLOWERS = _static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5___default.a;
-var LOVERS = _static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6___default.a;
-var BRIDE = _static_image_icons_bride_svg__WEBPACK_IMPORTED_MODULE_7___default.a;
-var SMILE = _static_image_icons_smile_svg__WEBPACK_IMPORTED_MODULE_8___default.a;
-var MUSIC = _static_image_icons_music_svg__WEBPACK_IMPORTED_MODULE_9___default.a;
-var INFO_ICON = _static_image_icons_info_icon_svg__WEBPACK_IMPORTED_MODULE_10___default.a;
-var LEAF = _static_image_icons_leaf_svg__WEBPACK_IMPORTED_MODULE_11___default.a;
-var FACEBOOK_PAGE = _static_image_icons_facebookPage_svg__WEBPACK_IMPORTED_MODULE_12___default.a;
-var LUBLIN_MAP = _static_image_WojLubelskie_jpg__WEBPACK_IMPORTED_MODULE_13___default.a;
-var VIDEO_CARD_IMAGE = _static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15___default.a;
-var PHOTO_CARD_IMAGE = _static_image_GalleryCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_14___default.a;
-var MAX_PAGE_WIDTH = '80rem';
-var HOME = 'Home';
-var PHOTO = 'Zdjęcia';
-var MEDIA = 'Media';
-var DEMO = 'Demo';
-var OFERTA = 'Oferta';
-var KONTAKT = 'Kontakt';
-var KALENDARZ = 'Kalendarz';
-var LINKS = {
+const IMAGE_1 = _static_image_photo_1_png__WEBPACK_IMPORTED_MODULE_0___default.a;
+const IMAGE_2 = _static_image_photo_2_small_jpg__WEBPACK_IMPORTED_MODULE_1___default.a;
+const IMAGE_3 = _static_image_photo_3_small_jpg__WEBPACK_IMPORTED_MODULE_2___default.a;
+const IMAGE_4 = _static_image_photo_4_small_jpg__WEBPACK_IMPORTED_MODULE_3___default.a;
+const LOGO = _static_image_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a;
+const LOGO_ON_THE_FLOWERS = _static_image_LogoWKwiatach_342x300_nowe_png__WEBPACK_IMPORTED_MODULE_5___default.a;
+const LOVERS = _static_image_lovers_small_png__WEBPACK_IMPORTED_MODULE_6___default.a;
+const BRIDE = _static_image_icons_bride_svg__WEBPACK_IMPORTED_MODULE_7___default.a;
+const SMILE = _static_image_icons_smile_svg__WEBPACK_IMPORTED_MODULE_8___default.a;
+const MUSIC = _static_image_icons_music_svg__WEBPACK_IMPORTED_MODULE_9___default.a;
+const INFO_ICON = _static_image_icons_info_icon_svg__WEBPACK_IMPORTED_MODULE_10___default.a;
+const LEAF = _static_image_icons_leaf_svg__WEBPACK_IMPORTED_MODULE_11___default.a;
+const FACEBOOK_PAGE = _static_image_icons_facebookPage_svg__WEBPACK_IMPORTED_MODULE_12___default.a;
+const LUBLIN_MAP = _static_image_WojLubelskie_jpg__WEBPACK_IMPORTED_MODULE_13___default.a;
+const VIDEO_CARD_IMAGE = _static_image_videoCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_15___default.a;
+const PHOTO_CARD_IMAGE = _static_image_GalleryCardPhoto_jpeg__WEBPACK_IMPORTED_MODULE_14___default.a;
+const MAX_PAGE_WIDTH = '80rem';
+const HOME = 'Home';
+const PHOTO = 'Zdjęcia';
+const MEDIA = 'Media';
+const DEMO = 'Demo';
+const OFERTA = 'Oferta';
+const KONTAKT = 'Kontakt';
+const KALENDARZ = 'Kalendarz';
+const LINKS = {
   HOME: {
     HREF: './',
     AS: './'
@@ -51809,7 +51299,7 @@ var LINKS = {
     AS: './terminy'
   }
 };
-var MENU_ITEMS = [{
+const MENU_ITEMS = [{
   name: HOME,
   link: LINKS.HOME.HREF,
   as: LINKS.HOME.AS
@@ -51826,8 +51316,8 @@ var MENU_ITEMS = [{
   link: LINKS.CONTACT.HREF,
   as: LINKS.CONTACT.AS
 }];
-var MENU_ITEM_WIDTH = 20;
-var COLORS = {
+const MENU_ITEM_WIDTH = 20;
+const COLORS = {
   grey: {
     light: '#F2F2F2',
     medium: '#F5F5F5',
@@ -51842,21 +51332,21 @@ var COLORS = {
     main: '#3B5897'
   }
 };
-var FACEBOOK = '/static/image/facebook_logo.svg';
-var FACEBOOK_URL = 'https://www.facebook.com/Zesp%C3%B3%C5%82-ARTO-203075696487749/';
-var RAFAL_CIESIELCZUK_LINKED_IN = 'https://www.linkedin.com/in/rafa%C5%82-ciesielczuk-33578391/';
-var MARGIN_TOP_UNDER_MENU = '4rem';
-var SCREEN_SIZE = {
+const FACEBOOK = '/static/image/facebook_logo.svg';
+const FACEBOOK_URL = 'https://www.facebook.com/Zesp%C3%B3%C5%82-ARTO-203075696487749/';
+const RAFAL_CIESIELCZUK_LINKED_IN = 'https://www.linkedin.com/in/rafa%C5%82-ciesielczuk-33578391/';
+const MARGIN_TOP_UNDER_MENU = '4rem';
+const SCREEN_SIZE = {
   POINT_750: 750
 };
-var STATUS = {
+const STATUS = {
   BUSY: "busy",
   EMPTY: "empty",
   RESERVATION: "reservation",
   HOLIDAY: "holiday",
   UNDEFINED: "undefined"
 };
-var WEEK_DAY = {
+const WEEK_DAY = {
   MONDAY: "poniedziałek",
   TUESDAY: "wtorek",
   WEDNESTDAY: "środa",
@@ -51880,7 +51370,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YEAR_2020", function() { return YEAR_2020; });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
 
-var YEAR_2020 = [{
+const YEAR_2020 = [{
   name: "Styczeń",
   days: [{
     day: "04.01.2020",
@@ -51968,12 +51458,9 @@ var YEAR_2020 = [{
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "18.04.2020",
-    place: "Tyszowce",
-    hotel: "Orfeusz",
-    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
-    "blessing": "noInfo",
-    information: "pewnie będzie przełożone"
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "25.04.2020",
     place: "",
@@ -52257,7 +51744,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YEAR_2021", function() { return YEAR_2021; });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
 
-var YEAR_2021 = [{
+const YEAR_2021 = [{
   name: "Styczeń",
   days: [{
     day: "02.01.2021",
@@ -52435,10 +51922,12 @@ var YEAR_2021 = [{
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "26.06.2021",
-    free: true,
-    place: "",
-    hotel: "",
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+    place: "Tyszowce",
+    hotel: "Orfeusz",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    "blessing": "noInfo",
+    information: "wesele z dnia 18.04.2020r."
   }]
 }, {
   name: "Lipiec",
@@ -52643,7 +52132,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YEAR_2022", function() { return YEAR_2022; });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
 
-var YEAR_2022 = [{
+const YEAR_2022 = [{
   name: "Styczeń",
   days: [{
     day: "01.01.2022",
@@ -52970,18 +52459,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
 
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\views\\Terms\\TabPanel\\TabPanel.js";
+var _jsxFileName = "D:\\IT_projects\\zespolarto.pl\\src\\views\\Terms\\TabPanel\\TabPanel.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
 
-var TabPanel = function TabPanel(props) {
-  var children = props.children,
-      value = props.value,
-      index = props.index,
-      classes = props.classes,
-      other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "value", "index", "classes"]);
+const TabPanel = props => {
+  const children = props.children,
+        value = props.value,
+        index = props.index,
+        classes = props.classes,
+        other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["children", "value", "index", "classes"]);
 
   return __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     component: "div",
@@ -52990,18 +52479,20 @@ var TabPanel = function TabPanel(props) {
     id: "simple-tabpanel-".concat(index),
     "aria-labelledby": "simple-tab-".concat(index)
   }, other, {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
+      lineNumber: 11,
+      columnNumber: 5
+    }
   }), value === index && __jsx("div", {
     className: classes.tabContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
+      lineNumber: 19,
+      columnNumber: 27
+    }
   }, children));
 };
 
@@ -53029,13 +52520,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var styles = function styles(theme) {
-  return {
-    tabContainer: {
-      paddingTop: '2rem'
-    }
-  };
-};
+const styles = theme => ({
+  tabContainer: {
+    paddingTop: '2rem'
+  }
+});
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_TabPanel__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
@@ -53067,36 +52556,24 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/AppBar */ "./node_modules/@material-ui/core/esm/AppBar/index.js");
-/* harmony import */ var _material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Tab */ "./node_modules/@material-ui/core/esm/Tab/index.js");
-/* harmony import */ var _material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/Tabs */ "./node_modules/@material-ui/core/esm/Tabs/index.js");
-/* harmony import */ var _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../termsJSON/terminy2020 */ "./src/termsJSON/terminy2020.js");
-/* harmony import */ var _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../termsJSON/terminy2021 */ "./src/termsJSON/terminy2021.js");
-/* harmony import */ var _termsJSON_terminy2022__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../termsJSON/terminy2022 */ "./src/termsJSON/terminy2022.js");
-/* harmony import */ var _components_Months__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../components/Months */ "./src/components/Months/index.js");
-/* harmony import */ var _TabPanel_index__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./TabPanel/index */ "./src/views/Terms/TabPanel/index.js");
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/AppBar */ "./node_modules/@material-ui/core/esm/AppBar/index.js");
+/* harmony import */ var _material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Tab */ "./node_modules/@material-ui/core/esm/Tab/index.js");
+/* harmony import */ var _material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Tabs */ "./node_modules/@material-ui/core/esm/Tabs/index.js");
+/* harmony import */ var _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../termsJSON/terminy2020 */ "./src/termsJSON/terminy2020.js");
+/* harmony import */ var _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../termsJSON/terminy2021 */ "./src/termsJSON/terminy2021.js");
+/* harmony import */ var _termsJSON_terminy2022__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../termsJSON/terminy2022 */ "./src/termsJSON/terminy2022.js");
+/* harmony import */ var _components_Months__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/Months */ "./src/components/Months/index.js");
+/* harmony import */ var _TabPanel_index__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./TabPanel/index */ "./src/views/Terms/TabPanel/index.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
 
 
-
-
-
-
-
-
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\views\\Terms\\Terms.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
+var _jsxFileName = "D:\\IT_projects\\zespolarto.pl\\src\\views\\Terms\\Terms.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
@@ -53108,9 +52585,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 
 
 
-var YEAR_2020_TITLE_TEXT = "2020";
-var YEAR_2021_TITLE_TEXT = "2021";
-var YEAR_2022_TITLE_TEXT = "2022";
+const YEAR_2020_TITLE_TEXT = "2020";
+const YEAR_2021_TITLE_TEXT = "2021";
+const YEAR_2022_TITLE_TEXT = "2022";
 
 function a11yProps(index) {
   return {
@@ -53119,133 +52596,119 @@ function a11yProps(index) {
   };
 }
 
-var howMuchTermsWithStatus = function howMuchTermsWithStatus(element, status) {
+const howMuchTermsWithStatus = (element, status) => {
   return element.status === status;
 };
 
-var Terms =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Terms, _Component);
+class Terms extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
+  constructor(...args) {
+    super(...args);
 
-  function Terms() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Terms);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Terms)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "state", {
       value: 0
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleChange", function (event, newValue) {
-      _this.setState({
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "handleChange", (event, newValue) => {
+      this.setState({
         value: newValue
       });
     });
-
-    return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Terms, [{
-    key: "render",
-    value: function render() {
-      var classes = this.props.classes;
-      var value = this.state.value;
-      var years = [{
-        name: YEAR_2020_TITLE_TEXT,
-        details: _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_13__["YEAR_2020"]
-      }, {
-        name: YEAR_2021_TITLE_TEXT,
-        details: _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_14__["YEAR_2021"]
-      }, {
-        name: YEAR_2022_TITLE_TEXT,
-        details: _termsJSON_terminy2022__WEBPACK_IMPORTED_MODULE_15__["YEAR_2022"]
-      }];
+  render() {
+    const classes = this.props.classes;
+    const value = this.state.value;
+    const years = [{
+      name: YEAR_2020_TITLE_TEXT,
+      details: _termsJSON_terminy2020__WEBPACK_IMPORTED_MODULE_7__["YEAR_2020"]
+    }, {
+      name: YEAR_2021_TITLE_TEXT,
+      details: _termsJSON_terminy2021__WEBPACK_IMPORTED_MODULE_8__["YEAR_2021"]
+    }, {
+      name: YEAR_2022_TITLE_TEXT,
+      details: _termsJSON_terminy2022__WEBPACK_IMPORTED_MODULE_9__["YEAR_2022"]
+    }];
 
-      var getWeddingsYearAmount = function getWeddingsYearAmount(yearDetails) {
-        var allweeddings = 0;
-        yearDetails.map(function (month) {
-          var weddingsAmount = month.days.filter(function (element) {
-            return howMuchTermsWithStatus(element, _constants__WEBPACK_IMPORTED_MODULE_18__["STATUS"].BUSY);
-          });
-          allweeddings = allweeddings + weddingsAmount.length;
+    const getWeddingsYearAmount = yearDetails => {
+      let allweeddings = 0;
+      yearDetails.map(month => {
+        const weddingsAmount = month.days.filter(function (element) {
+          return howMuchTermsWithStatus(element, _constants__WEBPACK_IMPORTED_MODULE_12__["STATUS"].BUSY);
         });
-        return allweeddings;
-      };
+        allweeddings = allweeddings + weddingsAmount.length;
+      });
+      return allweeddings;
+    };
 
-      return __jsx("div", {
-        className: classes.root,
+    return __jsx("div", {
+      className: classes.root,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74,
+        columnNumber: 13
+      }
+    }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      position: "fixed",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75,
+        columnNumber: 17
+      }
+    }, __jsx(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      value: value,
+      onChange: this.handleChange,
+      "aria-label": "simple tabs example",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 21
+      }
+    }, years.map((year, id) => {
+      const label = "".concat(year.name);
+      return __jsx(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        key: year.name,
+        label: label
+      }, a11yProps(id), {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
-        },
-        __self: this
-      }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        position: "fixed",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 75
-        },
-        __self: this
-      }, __jsx(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        value: value,
-        onChange: this.handleChange,
-        "aria-label": "simple tabs example",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 76
-        },
-        __self: this
-      }, years.map(function (year, id) {
-        var label = "".concat(year.name);
-        return __jsx(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_11__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-          key: year.name,
-          label: label
-        }, a11yProps(id), {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 81
-          },
-          __self: this
-        }));
-      }))), years.map(function (year, id) {
-        var weddingAmount = getWeddingsYearAmount(year.details);
-        return __jsx(_TabPanel_index__WEBPACK_IMPORTED_MODULE_17__["default"], {
-          key: id,
-          value: value,
-          index: id,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 91
-          },
-          __self: this
-        }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_16__["default"], {
-          table: year.details,
-          weddingAmount: weddingAmount,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 92
-          },
-          __self: this
-        }));
+          lineNumber: 81,
+          columnNumber: 33
+        }
       }));
-    }
-  }]);
+    }))), years.map((year, id) => {
+      const weddingAmount = getWeddingsYearAmount(year.details);
+      return __jsx(_TabPanel_index__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        key: id,
+        value: value,
+        index: id,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 91,
+          columnNumber: 25
+        }
+      }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        table: year.details,
+        weddingAmount: weddingAmount,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92,
+          columnNumber: 29
+        }
+      }));
+    }));
+  }
 
-  return Terms;
-}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
+}
 
 ;
 Terms.propTypes = {
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.object.isRequired
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired
 };
 Terms.displayName = 'Terms';
 /* harmony default export */ __webpack_exports__["default"] = (Terms);
@@ -53266,18 +52729,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var styles = function styles(theme) {
-  return {
-    root: {
-      flexGrow: 1,
-      backgroundColor: theme.palette.background.paper,
-      padding: 0
-    },
-    tabContainer: {
-      paddingTop: '2rem'
-    }
-  };
-};
+const styles = theme => ({
+  root: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.background.paper,
+    padding: 0
+  },
+  tabContainer: {
+    paddingTop: '2rem'
+  }
+});
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["withStyles"])(styles)(_Terms__WEBPACK_IMPORTED_MODULE_1__["default"]));
 
@@ -53927,25 +53388,25 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblablaterms&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Cwww.zespolarto.pl%5Cpages%5Cblablaterms.js ***!
-  \***************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblablaterms&absolutePagePath=D%3A%5CIT_projects%5Czespolarto.pl%5Cpages%5Cblablaterms.js ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblablaterms&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Cwww.zespolarto.pl%5Cpages%5Cblablaterms.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblablaterms&absolutePagePath=C%3A%5CIT_projects_Edu-Lab%5Cwww.zespolarto.pl%5Cpages%5Cblablaterms.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblablaterms&absolutePagePath=D%3A%5CIT_projects%5Czespolarto.pl%5Cpages%5Cblablaterms.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblablaterms&absolutePagePath=D%3A%5CIT_projects%5Czespolarto.pl%5Cpages%5Cblablaterms.js!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_01f9a3fa864a7b7414d8":
+/***/ "dll-reference dll_129a35c7ec57967eb265":
 /*!*******************************************!*\
-  !*** external "dll_01f9a3fa864a7b7414d8" ***!
+  !*** external "dll_129a35c7ec57967eb265" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_01f9a3fa864a7b7414d8;
+module.exports = dll_129a35c7ec57967eb265;
 
 /***/ })
 

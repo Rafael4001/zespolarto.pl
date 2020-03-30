@@ -112,12 +112,9 @@ export const YEAR_2020 = [
             },
             {
                 day: "18.04.2020",
-                place: "Tyszowce",
-                hotel: "Orfeusz",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                information: "pewnie będzie przełożone"
+                place: "",
+                hotel: "",
+                status: STATUS.EMPTY
             },
             {
                 day: "25.04.2020",

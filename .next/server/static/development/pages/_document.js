@@ -1427,7 +1427,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\pages\\_document.js";
+var _jsxFileName = "D:\\IT_projects\\zespolarto.pl\\pages\\_document.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 
 function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -1445,98 +1445,111 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_9___default.a {
     return __jsx("html", {
       lang: "pl",
       dir: "ltr",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
+        lineNumber: 11,
+        columnNumber: 7
+      }
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_9__["Head"], {
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
+        lineNumber: 12,
+        columnNumber: 7
+      }
     }, __jsx("meta", {
       charSet: "utf-8",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
+        lineNumber: 16,
+        columnNumber: 9
+      }
     }), __jsx("meta", {
       name: "theme-color",
       content: _config_theme__WEBPACK_IMPORTED_MODULE_11__["default"].palette.primary.main,
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
+        lineNumber: 18,
+        columnNumber: 9
+      }
     }), __jsx("meta", {
       name: "viewport",
       content: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
-      },
-      __self: this
+        lineNumber: 20,
+        columnNumber: 9
+      }
     }), __jsx("meta", {
       name: "google",
       value: "notranslate",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
-      },
-      __self: this
+        lineNumber: 24,
+        columnNumber: 9
+      }
     }), __jsx("link", {
       href: "https://fonts.googleapis.com/css?family=Parisienne&display=swap",
       rel: "stylesheet",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
-      },
-      __self: this
+        lineNumber: 26,
+        columnNumber: 9
+      }
     }), __jsx("link", {
       href: "https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap",
       rel: "stylesheet",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: this
+        lineNumber: 27,
+        columnNumber: 9
+      }
     }), __jsx("link", {
       href: "https://fonts.googleapis.com/css?family=Baskervville&display=swap",
       rel: "stylesheet",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
-      },
-      __self: this
+        lineNumber: 28,
+        columnNumber: 9
+      }
     }), __jsx("link", {
       href: "https://fonts.googleapis.com/css?family=Open+Sans:400i&display=swap",
       rel: "stylesheet",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
+        lineNumber: 29,
+        columnNumber: 9
+      }
     })), __jsx("body", {
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
-      },
-      __self: this
+        lineNumber: 35,
+        columnNumber: 7
+      }
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], {
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
-      },
-      __self: this
+        lineNumber: 37,
+        columnNumber: 7
+      }
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], {
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
-      },
-      __self: this
+        lineNumber: 38,
+        columnNumber: 7
+      }
     })));
   }
 
@@ -1570,11 +1583,12 @@ MyDocument.getInitialProps = async ctx => {
 
   ctx.renderPage = () => originalRenderPage({
     enhanceApp: App => props => sheets.collect(__jsx(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_7__["default"])({}, props, {
+      __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
-      },
-      __self: undefined
+        lineNumber: 74,
+        columnNumber: 50
+      }
     })))
   });
 
@@ -1583,11 +1597,12 @@ MyDocument.getInitialProps = async ctx => {
     // Styles fragment is rendered after the app and page rendering finish.
     styles: [__jsx(react__WEBPACK_IMPORTED_MODULE_8__["Fragment"], {
       key: "styles",
+      __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83
-      },
-      __self: undefined
+        lineNumber: 83,
+        columnNumber: 7
+      }
     }, initialProps.styles)]
   });
 };

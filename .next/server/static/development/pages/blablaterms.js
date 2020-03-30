@@ -315,7 +315,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_constants__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../src/constants */ "./src/constants.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\CustomBodyOfMonth\\CustomBodyOfMonth.js";
+var _jsxFileName = "D:\\IT_projects\\zespolarto.pl\\src\\components\\CustomBodyOfMonth\\CustomBodyOfMonth.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -351,21 +351,23 @@ const CustomBodyOfMonth = ({
       case _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].BUSY:
         return __jsx("div", {
           className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.info, classes.infoBusy),
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 37
-          },
-          __self: undefined
+            lineNumber: 37,
+            columnNumber: 25
+          }
         }, place);
 
       case _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].HOLIDAY:
         return __jsx("div", {
           className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(classes.info, classes.infoHoliday),
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
-          },
-          __self: undefined
+            lineNumber: 39,
+            columnNumber: 25
+          }
         }, "Wakacje");
     }
   };
@@ -377,11 +379,12 @@ const CustomBodyOfMonth = ({
           classes: {
             root: classes.icon
           },
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 46
-          },
-          __self: undefined
+            lineNumber: 46,
+            columnNumber: 24
+          }
         });
 
       case _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].EMPTY:
@@ -389,11 +392,12 @@ const CustomBodyOfMonth = ({
           classes: {
             root: classes.icon
           },
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 48
-          },
-          __self: undefined
+            lineNumber: 48,
+            columnNumber: 24
+          }
         });
 
       case _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].HOLIDAY:
@@ -401,123 +405,139 @@ const CustomBodyOfMonth = ({
           classes: {
             root: classes.icon
           },
+          __self: undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 50
-          },
-          __self: undefined
+            lineNumber: 50,
+            columnNumber: 24
+          }
         });
     }
   };
 
   const getDetails = () => __jsx("div", {
     className: classes.rowInfo,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: undefined
+      lineNumber: 55,
+      columnNumber: 9
+    }
   }, (status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].BUSY || status === _src_constants__WEBPACK_IMPORTED_MODULE_10__["STATUS"].HOLIDAY) && __jsx("div", {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: undefined
+      lineNumber: 57,
+      columnNumber: 13
+    }
   }, hotel && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     type: "p",
     className: classes.details,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: undefined
+      lineNumber: 58,
+      columnNumber: 27
+    }
   }, __jsx("strong", {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: undefined
+      lineNumber: 58,
+      columnNumber: 78
+    }
   }, "hotel: "), hotel), weddingHour && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     type: "p",
     className: classes.details,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: undefined
+      lineNumber: 59,
+      columnNumber: 33
+    }
   }, __jsx("strong", {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: undefined
+      lineNumber: 59,
+      columnNumber: 84
+    }
   }, "godz. slubu: "), weddingHour), information && __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     type: "p",
     className: classes.details,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: undefined
+      lineNumber: 60,
+      columnNumber: 33
+    }
   }, __jsx("strong", {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: undefined
+      lineNumber: 60,
+      columnNumber: 84
+    }
   }, "informacje dodatkowe: "), information)));
 
   return __jsx("div", {
     className: classNameMain,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: undefined
+      lineNumber: 67,
+      columnNumber: 9
+    }
   }, __jsx("div", {
     className: classes.rowContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: undefined
+      lineNumber: 68,
+      columnNumber: 13
+    }
   }, __jsx("div", {
     className: classes.detailsMainContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: undefined
+      lineNumber: 69,
+      columnNumber: 17
+    }
   }, __jsx("div", {
     className: classes.termIconContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: undefined
+      lineNumber: 70,
+      columnNumber: 21
+    }
   }, getIcon(status), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     type: "span",
     className: classes.day,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: undefined
+      lineNumber: 72,
+      columnNumber: 25
+    }
   }, day), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     type: "p",
     className: classes.details,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: undefined
+      lineNumber: 73,
+      columnNumber: 25
+    }
   }, "(", weekDay, ")")), getDetails()), __jsx("div", {
     className: classes.statusContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: undefined
+      lineNumber: 77,
+      columnNumber: 17
+    }
   }, getView(status))));
 };
 
@@ -671,7 +691,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\components\\Months\\Months.js";
+var _jsxFileName = "D:\\IT_projects\\zespolarto.pl\\src\\components\\Months\\Months.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -693,11 +713,12 @@ const Months = props => {
   const getMonthsDays = days => days.map(day => __jsx(_CustomBodyOfMonth__WEBPACK_IMPORTED_MODULE_2__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     key: day.day
   }, day, {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
+      lineNumber: 19,
+      columnNumber: 23
+    }
   })));
 
   const getMonths = months => months.map((month, id) => {
@@ -707,58 +728,65 @@ const Months = props => {
     return __jsx("li", {
       key: month.name,
       className: classes.dayContainer,
+      __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: undefined
+        lineNumber: 29,
+        columnNumber: 9
+      }
     }, __jsx("div", {
       className: classes.monthNameContainer,
+      __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: undefined
+        lineNumber: 30,
+        columnNumber: 11
+      }
     }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
       className: classes.monthNumber,
+      __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
-      },
-      __self: undefined
+        lineNumber: 31,
+        columnNumber: 13
+      }
     }, id + 1, " "), __jsx(_material_ui_icons_CalendarViewDay__WEBPACK_IMPORTED_MODULE_3___default.a, {
       classes: {
         root: classes.icon
       },
+      __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
-      },
-      __self: undefined
+        lineNumber: 32,
+        columnNumber: 13
+      }
     }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
       className: classes.monthName,
+      __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
-      },
-      __self: undefined
+        lineNumber: 33,
+        columnNumber: 13
+      }
     }, month.name, " "), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
       className: classes.weddingsAmount,
+      __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
-      },
-      __self: undefined
+        lineNumber: 34,
+        columnNumber: 13
+      }
     }, " (", weddingsAmount.length, ")")), getMonthsDays(month.days));
   });
 
   return __jsx("ul", {
     className: classes.monthContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: undefined
+      lineNumber: 44,
+      columnNumber: 5
+    }
   }, "Ilo\u015B\u0107 wesel: ", weddingAmount, getMonths(table));
 };
 
@@ -1293,12 +1321,9 @@ const YEAR_2020 = [{
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "18.04.2020",
-    place: "Tyszowce",
-    hotel: "Orfeusz",
-    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
-    "blessing": "noInfo",
-    information: "pewnie będzie przełożone"
+    place: "",
+    hotel: "",
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "25.04.2020",
     place: "",
@@ -1760,10 +1785,12 @@ const YEAR_2021 = [{
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "26.06.2021",
-    free: true,
-    place: "",
-    hotel: "",
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+    place: "Tyszowce",
+    hotel: "Orfeusz",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    "blessing": "noInfo",
+    information: "wesele z dnia 18.04.2020r."
   }]
 }, {
   name: "Lipiec",
@@ -2296,7 +2323,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__);
 
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\views\\Terms\\TabPanel\\TabPanel.js";
+var _jsxFileName = "D:\\IT_projects\\zespolarto.pl\\src\\views\\Terms\\TabPanel\\TabPanel.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -2318,18 +2345,20 @@ const TabPanel = props => {
     id: `simple-tabpanel-${index}`,
     "aria-labelledby": `simple-tab-${index}`
   }, other, {
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
+      lineNumber: 11,
+      columnNumber: 5
+    }
   }), value === index && __jsx("div", {
     className: classes.tabContainer,
+    __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: undefined
+      lineNumber: 19,
+      columnNumber: 27
+    }
   }, children));
 };
 
@@ -2413,7 +2442,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
 
 
-var _jsxFileName = "C:\\IT_projects_Edu-Lab\\www.zespolarto.pl\\src\\views\\Terms\\Terms.js";
+var _jsxFileName = "D:\\IT_projects\\zespolarto.pl\\src\\views\\Terms\\Terms.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -2487,38 +2516,42 @@ class Terms extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
 
     return __jsx("div", {
       className: classes.root,
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
-      },
-      __self: this
+        lineNumber: 74,
+        columnNumber: 13
+      }
     }, __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_4___default.a, {
       position: "fixed",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
-      },
-      __self: this
+        lineNumber: 75,
+        columnNumber: 17
+      }
     }, __jsx(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_6___default.a, {
       value: value,
       onChange: this.handleChange,
       "aria-label": "simple tabs example",
+      __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76
-      },
-      __self: this
+        lineNumber: 76,
+        columnNumber: 21
+      }
     }, years.map((year, id) => {
       const label = `${year.name}`;
       return __jsx(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_5___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         key: year.name,
         label: label
       }, a11yProps(id), {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
-        },
-        __self: this
+          lineNumber: 81,
+          columnNumber: 33
+        }
       }));
     }))), years.map((year, id) => {
       const weddingAmount = getWeddingsYearAmount(year.details);
@@ -2526,19 +2559,21 @@ class Terms extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         key: id,
         value: value,
         index: id,
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
-        },
-        __self: this
+          lineNumber: 91,
+          columnNumber: 25
+        }
       }, __jsx(_components_Months__WEBPACK_IMPORTED_MODULE_10__["default"], {
         table: year.details,
         weddingAmount: weddingAmount,
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
-        },
-        __self: this
+          lineNumber: 92,
+          columnNumber: 29
+        }
       }));
     }));
   }
@@ -3234,7 +3269,7 @@ module.exports = __webpack_require__.p + "static/image/videoCardPhoto.jpeg";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\IT_projects_Edu-Lab\www.zespolarto.pl\pages\blablaterms.js */"./pages/blablaterms.js");
+module.exports = __webpack_require__(/*! D:\IT_projects\zespolarto.pl\pages\blablaterms.js */"./pages/blablaterms.js");
 
 
 /***/ }),

@@ -2397,58 +2397,54 @@ function tryApplyUpdates() {
 }
 
 function _tryApplyUpdates() {
-  _tryApplyUpdates = (0, _asyncToGenerator2.default)(
-  /*#__PURE__*/
-  _regeneratorRuntime.mark(function _callee() {
+  _tryApplyUpdates = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regeneratorRuntime.mark(function _callee() {
     var res, _data, curPage, pageUpdated;
 
     return _regeneratorRuntime.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            if (!(!isUpdateAvailable() || !canApplyUpdates())) {
-              _context.next = 2;
-              break;
-            }
-
-            return _context.abrupt("return");
-
-          case 2:
-            _context.prev = 2;
-            _context.next = 5;
-            return (0, _unfetch.default)("" + hotUpdatePath + curHash + ".hot-update.json");
-
-          case 5:
-            res = _context.sent;
-            _context.next = 8;
-            return res.json();
-
-          case 8:
-            _data = _context.sent;
-            curPage = page === '/' ? 'index' : page;
-            pageUpdated = (0, _keys.default)(_data.c).some(function (mod) {
-              return mod.indexOf("pages" + (curPage.substr(0, 1) === '/' ? curPage : "/" + curPage)) !== -1 || mod.indexOf(("pages" + (curPage.substr(0, 1) === '/' ? curPage : "/" + curPage)).replace(/\//g, '\\')) !== -1;
-            });
-
-            if (pageUpdated) {
-              document.location.reload(true);
-            } else {
-              curHash = mostRecentHash;
-            }
-
-            _context.next = 18;
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          if (!(!isUpdateAvailable() || !canApplyUpdates())) {
+            _context.next = 2;
             break;
+          }
 
-          case 14:
-            _context.prev = 14;
-            _context.t0 = _context["catch"](2);
-            console.error('Error occurred checking for update', _context.t0);
+          return _context.abrupt("return");
+
+        case 2:
+          _context.prev = 2;
+          _context.next = 5;
+          return (0, _unfetch.default)("" + hotUpdatePath + curHash + ".hot-update.json");
+
+        case 5:
+          res = _context.sent;
+          _context.next = 8;
+          return res.json();
+
+        case 8:
+          _data = _context.sent;
+          curPage = page === '/' ? 'index' : page;
+          pageUpdated = (0, _keys.default)(_data.c).some(mod => {
+            return mod.indexOf("pages" + (curPage.substr(0, 1) === '/' ? curPage : "/" + curPage)) !== -1 || mod.indexOf(("pages" + (curPage.substr(0, 1) === '/' ? curPage : "/" + curPage)).replace(/\//g, '\\')) !== -1;
+          });
+
+          if (pageUpdated) {
             document.location.reload(true);
+          } else {
+            curHash = mostRecentHash;
+          }
 
-          case 18:
-          case "end":
-            return _context.stop();
-        }
+          _context.next = 18;
+          break;
+
+        case 14:
+          _context.prev = 14;
+          _context.t0 = _context["catch"](2);
+          console.error('Error occurred checking for update', _context.t0);
+          document.location.reload(true);
+
+        case 18:
+        case "end":
+          return _context.stop();
       }
     }, _callee, null, [[2, 14]]);
   }));
@@ -2457,8 +2453,8 @@ function _tryApplyUpdates() {
 
 (0, _eventsource.getEventSourceWrapper)({
   path: assetPrefix + "/_next/webpack-hmr"
-}).addMessageListener(function (event) {
-  if (event.data === "\uD83D\uDC93") {
+}).addMessageListener(event => {
+  if (event.data === '\uD83D\uDC93') {
     return;
   }
 
@@ -2479,9 +2475,7 @@ function _tryApplyUpdates() {
     console.warn('Invalid HMR message: ' + event.data + '\n' + ex);
   }
 });
-(0, _onDemandEntriesUtils.setupPing)(assetPrefix, function () {
-  return page;
-});
+(0, _onDemandEntriesUtils.setupPing)(assetPrefix, () => page);
 
 /***/ }),
 
@@ -2535,9 +2529,7 @@ function EventSourceWrapper(options) {
     }
 
     if (event.data.indexOf('action') !== -1) {
-      eventCallbacks.forEach(function (cb) {
-        return cb(event);
-      });
+      eventCallbacks.forEach(cb => cb(event));
     }
   }
 
@@ -2548,7 +2540,7 @@ function EventSourceWrapper(options) {
   }
 
   return {
-    close: function close() {
+    close: () => {
       clearTimeout(timer);
       source.close();
     },
@@ -2561,7 +2553,7 @@ function EventSourceWrapper(options) {
 function getEventSourceWrapper(options) {
   if (!options.ondemand) {
     return {
-      addMessageListener: function addMessageListener(cb) {
+      addMessageListener: cb => {
         eventCallbacks.push(cb);
       }
     };
@@ -3574,7 +3566,7 @@ function setupPing(assetPrefix, pathnameFn, retry) {
     timeout: 5000,
     ondemand: 1
   });
-  evtSource.addMessageListener(function (event) {
+  evtSource.addMessageListener(event => {
     if (event.data.indexOf('{') === -1) return;
 
     try {
@@ -3585,7 +3577,7 @@ function setupPing(assetPrefix, pathnameFn, retry) {
         // So, we need to make sure it exists before reloading.
         (0, _unfetch.default)(location.href, {
           credentials: 'same-origin'
-        }).then(function (pageRes) {
+        }).then(pageRes => {
           if (pageRes.status === 200) {
             location.reload();
           }
@@ -3738,7 +3730,7 @@ var runtime = (function (exports) {
     return { __await: arg };
   };
 
-  function AsyncIterator(generator) {
+  function AsyncIterator(generator, PromiseImpl) {
     function invoke(method, arg, resolve, reject) {
       var record = tryCatch(generator[method], generator, arg);
       if (record.type === "throw") {
@@ -3749,14 +3741,14 @@ var runtime = (function (exports) {
         if (value &&
             typeof value === "object" &&
             hasOwn.call(value, "__await")) {
-          return Promise.resolve(value.__await).then(function(value) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
             invoke("next", value, resolve, reject);
           }, function(err) {
             invoke("throw", err, resolve, reject);
           });
         }
 
-        return Promise.resolve(value).then(function(unwrapped) {
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
           // When a yielded Promise is resolved, its final value becomes
           // the .value of the Promise<{value,done}> result for the
           // current iteration.
@@ -3774,7 +3766,7 @@ var runtime = (function (exports) {
 
     function enqueue(method, arg) {
       function callInvokeWithMethodAndArg() {
-        return new Promise(function(resolve, reject) {
+        return new PromiseImpl(function(resolve, reject) {
           invoke(method, arg, resolve, reject);
         });
       }
@@ -3814,9 +3806,12 @@ var runtime = (function (exports) {
   // Note that simple async functions are implemented on top of
   // AsyncIterator objects; they just return a Promise for the value of
   // the final result produced by the iterator.
-  exports.async = function(innerFn, outerFn, self, tryLocsList) {
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
     var iter = new AsyncIterator(
-      wrap(innerFn, outerFn, self, tryLocsList)
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
     );
 
     return exports.isGeneratorFunction(outerFn)

@@ -217,11 +217,13 @@ export const YEAR_2021 = [
             },
             {
                 day: "26.06.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            }
+                place: "Tyszowce",
+                hotel: "Orfeusz",
+                weekDay: WEEK_DAY.SATUDRAY,
+                status: STATUS.BUSY,
+                "blessing": "noInfo",
+                information: "wesele z dnia 18.04.2020r."
+            },
         ]
     },
     {
