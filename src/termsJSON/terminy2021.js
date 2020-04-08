@@ -304,7 +304,16 @@ export const YEAR_2021 = [
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                weekDay: WEEK_DAY.SATUDRAY,
+                status: STATUS.HOLIDAY,
+            },
+            {
+                day: "29.08.2021",
+                free: true,
+                weekDay: WEEK_DAY.SUNDAY,
+                status: STATUS.BUSY,
+                place: "Boruń",
+                hotel: "Dom weselny \"Sylwia\"",
             }
         ]
     },

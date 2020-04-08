@@ -294,10 +294,8 @@ export const YEAR_2020 = [
             },
             {
                 day: "29.08.2020",
-                place: "Boruń",
-                hotel: "Dom weselny \"Sylwia\"",
-                status: STATUS.BUSY
-            }
+                status: STATUS.EMPTY
+            },
         ]
     },
     {
