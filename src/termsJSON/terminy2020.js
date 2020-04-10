@@ -172,13 +172,7 @@ export const YEAR_2020 = [
             },
             {
                 day: "30.05.2020",
-                place: "Krasnobród",
-                hotel: "Karczma Zacisze",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
+                status: STATUS.EMPTY,
             }
         ]
     },
@@ -327,7 +321,18 @@ export const YEAR_2020 = [
                 day: "19.09.2020",
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+            },
+            {
+                day: "20.09.2020",
+                place: "Krasnobród",
+                hotel: "Karczma Zacisze",
+                weekDay: WEEK_DAY.SUNDAY,
+                status: STATUS.BUSY,
+                "blessing": "tak",
+                "blessingTime": "noInfo",
+                weddingHour: "noInfo",
+                information: "przeniesione z 30.05.2020",
             },
             {
                 day: "26.09.2020",

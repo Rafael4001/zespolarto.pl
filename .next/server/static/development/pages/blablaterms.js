@@ -1371,13 +1371,7 @@ const YEAR_2020 = [{
     status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }, {
     day: "30.05.2020",
-    place: "Krasnobród",
-    hotel: "Karczma Zacisze",
-    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
-    "blessing": "noInfo",
-    "blessingTime": "noInfo",
-    weddingHour: "noInfo"
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }]
 }, {
   name: "Czerwiec",
@@ -1472,9 +1466,7 @@ const YEAR_2020 = [{
     information: "przeniesione z 25.04.2020"
   }, {
     day: "29.08.2020",
-    place: "Boruń",
-    hotel: "Dom weselny \"Sylwia\"",
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
   }]
 }, {
   name: "Wrzesień",
@@ -1500,7 +1492,17 @@ const YEAR_2020 = [{
     day: "19.09.2020",
     place: "",
     hotel: "",
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].HOLIDAY
+  }, {
+    day: "20.09.2020",
+    place: "Krasnobród",
+    hotel: "Karczma Zacisze",
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SUNDAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    "blessing": "tak",
+    "blessingTime": "noInfo",
+    weddingHour: "noInfo",
+    information: "przeniesione z 30.05.2020"
   }, {
     day: "26.09.2020",
     place: "",
@@ -1859,7 +1861,15 @@ const YEAR_2021 = [{
     free: true,
     place: "",
     hotel: "",
-    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].EMPTY
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SATUDRAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].HOLIDAY
+  }, {
+    day: "29.08.2021",
+    free: true,
+    weekDay: _constants__WEBPACK_IMPORTED_MODULE_0__["WEEK_DAY"].SUNDAY,
+    status: _constants__WEBPACK_IMPORTED_MODULE_0__["STATUS"].BUSY,
+    place: "Boruń",
+    hotel: "Dom weselny \"Sylwia\""
   }]
 }, {
   name: "Wrzesień",
