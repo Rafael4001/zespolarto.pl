@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 import PlayerCustomized from './PlayerCustomized'
-import { COLORS, } from "../../constants";
+import { COLORS } from "../../colors";
 
 
 const styles = (theme) => (

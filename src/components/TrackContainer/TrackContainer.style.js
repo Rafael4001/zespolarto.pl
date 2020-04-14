@@ -1,7 +1,7 @@
 import { withStyles } from '@material-ui/core/styles';
 
 import TrackContainer from './TrackContainer'
-import { COLORS } from "../../constants";
+import { COLORS } from "../../colors";
 
 
 const styles = {

@@ -7,12 +7,13 @@ import Lovers from '../static/image/lovers_small.png';
 import Bride from '../static/image/icons/bride.svg';
 import Smile from '../static/image/icons/smile.svg';
 import Music from '../static/image/icons/music.svg';
-import Info_Icon from '../static/image/icons/info_icon.svg';
 import leaf from '../static/image/icons/leaf.svg';
-import facebookPage from '../static/image/icons/facebookPage.svg';
 import lublinMap from '../static/image/WojLubelskie.jpg';
 import galleryCardPhoto from '../static/image/GalleryCardPhoto.jpeg';
 import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
+
+
+//making icons as font https://icomoon.io/app/#/select
 
 
 //==============Songs images===============
@@ -113,9 +114,7 @@ export const LOVERS = Lovers;
 export const BRIDE = Bride;
 export const SMILE = Smile;
 export const MUSIC = Music;
-export const INFO_ICON = Info_Icon;
 export const LEAF = leaf;
-export const FACEBOOK_PAGE = facebookPage;
 export const LUBLIN_MAP = lublinMap;
 export const VIDEO_CARD_IMAGE = videoCardPhoto;
 export const PHOTO_CARD_IMAGE = galleryCardPhoto;
@@ -153,23 +152,7 @@ export const MENU_ITEMS = [
 export const MENU_ITEM_WIDTH = 20;
 
 
-export const COLORS = {
-    grey: {
-        light: '#F2F2F2',
-        medium: '#F5F5F5',
-        dark: '#CFCFCF',
-        grey_1: '#91919117',
-    },
-    red: {
-        main: '#b41616',
-        medium: '#a81b1b',
-    },
-    blue: {
-        main: '#3B5897',
-    },
-};
-
-export const FACEBOOK = '/static/image/facebook_logo.svg';
+export const FACEBOOK_ICON = '/static/image/icons/facebookWhite.svg';
 
 export const FACEBOOK_URL = 'https://www.facebook.com/Zesp%C3%B3%C5%82-ARTO-203075696487749/';
 export const RAFAL_CIESIELCZUK_LINKED_IN = 'https://www.linkedin.com/in/rafa%C5%82-ciesielczuk-33578391/';

@@ -1,7 +1,7 @@
 import { withStyles } from '@material-ui/core/styles';
 
 import MenuItem from './MenuItem'
-import { COLORS } from "../../constants";
+import { COLORS } from "../../colors";
 
 
 const styles = (theme) => ({

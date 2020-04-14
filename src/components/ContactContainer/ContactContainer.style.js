@@ -1,7 +1,9 @@
 import { withStyles } from '@material-ui/core/styles';
-import ContactContainer from './ContactContainer'
-import { COLORS, MARGIN_TOP_UNDER_MENU, SCREEN_SIZE } from "../../constants";
 
+import ContactContainer from './ContactContainer'
+
+import { MARGIN_TOP_UNDER_MENU, SCREEN_SIZE } from "../../constants";
+import { COLORS } from '../../colors'
 
 const styles = (theme) => ({
   mainContainer: {
