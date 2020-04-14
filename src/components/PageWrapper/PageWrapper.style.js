@@ -4,7 +4,7 @@ import { MAX_PAGE_WIDTH } from "../../constants";
 
 const styles = (theme) => ({
   pageWrapperOuter: {
-    width: '100%',
+    // width: '100%',
     minHeight: '100vh',
     display: 'flex',
     justifyContent: 'center',
@@ -16,8 +16,8 @@ const styles = (theme) => ({
     },
   },
   pageWrapperInner: {
-    width: '100%',
-    maxWidth: '80rem',
+    // width: '100%',
+    maxWidth: MAX_PAGE_WIDTH,
     margin: '0 auto',
   },
   menuHomepage: {

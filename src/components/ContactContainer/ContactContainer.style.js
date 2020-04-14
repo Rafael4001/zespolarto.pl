@@ -11,36 +11,34 @@ const styles = (theme) => ({
       textDecoration: 'none',
       color: `#000`,
     },
-
     display: 'flex',
     flexDirection: 'column',
-    marginTop: MARGIN_TOP_UNDER_MENU,
 
 
     [theme.breakpoints.up('sm')]: {
-      marginTop: 0,
-    },
-
-    [theme.breakpoints.up('md')]: {
-      marginTop: 0,
       display: 'grid',
-      gridGap: '1rem',
       gridTemplateColumns: '1fr 1fr',
     },
-
   },
   subContainer: {
     display: 'grid',
-    gridGap: '1rem 0.5rem',
-    gridTemplateColumns: '3.5rem 1.5rem 1fr',
-    margin: '0.6rem 1rem'
+    gridGap: '0.300rem 0',
+    gridTemplateColumns: '2rem 4rem 1fr',
+    margin: '0.375rem'
   },
   PhoneIcon: {
     color: '#000',
   },
+  contactDetailsContainer: {},
   textContactPage: {
-    fontSize: '1.2rem',
-    fontWeight: 300,
+    fontFamily: '\'Baskervville\',serif',
+
+    '&:focus': {
+      outline: 'none',
+    },
+  },
+  textContactPageBold: {
+    fontWeight: 'bold',
     fontFamily: '\'Baskervville\',serif',
 
     '&:focus': {
@@ -56,17 +54,14 @@ const styles = (theme) => ({
     fontSize: '1.2rem',
     fontWeight: 300,
     fontFamily: "Poppins",
+    alignItems: 'center',
 
     '&:focus': {
       outline: 'none',
     },
   },
   photoContainer: {
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-      // display: 'flex',
-      // justifyContent: 'center',
-    }
+    width: '100%',
   },
   contactContainer: {
     display: 'flex',
@@ -83,26 +78,17 @@ const styles = (theme) => ({
   },
   photo: {
     width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      padding: '1.5rem',
-    },
-    [theme.breakpoints.up('md')]: {
-      width: '90%',
-    }
   },
   dataContainer: {
     display: 'flex',
-    flexDirection: 'column-reverse',
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginTop: '1rem',
 
     [theme.breakpoints.up('sm')]: {
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
-      justifyContent: 'flex-end',
+      alignItems: 'normal',
+      padding: '0 0 0 3rem',
     },
-    [theme.breakpoints.up('md')]: {
-      display: 'flex',
-      flexDirection: 'column',
-    }
   },
   photoLoversContainer: {
     display: 'flex',
@@ -120,19 +106,25 @@ const styles = (theme) => ({
     alignItems: 'center',
   },
   FacebookMainContainer: {
-    margin: '2rem 0',
     display: 'flex',
     flexDirection: "column",
-    backgroundColor: `${COLORS.grey.grey_1}`
-  },
-  FacebookContainer: {
-    display: 'flex',
-    flexDirection: "column",
+    backgroundColor: `${COLORS.grey.grey_1}`,
+    width: '100%',
     alignItems: 'center',
+    padding: '0.5rem 0',
+    borderTop: 'solid 1px #E0E0E0',
+
+    [theme.breakpoints.up('sm')]: {
+      margin: '1rem 0',
+      flexDirection: "row-reverse",
+      justifyContent: 'center',
+    }
+
   },
+
   facebookIcon: {
     marginTop: '1rem',
-    fontSize: '4rem',
+    fontSize: '3rem',
   },
   facebookPageIcon: {
     width: '6rem',
@@ -141,6 +133,7 @@ const styles = (theme) => ({
     display: 'grid',
     gridTemplateColumns: '3fr 1fr',
     alignItems: 'center',
+
     // justifyContent: '3fr 1fr',
   },
   lublinMapContainer: {
@@ -169,23 +162,23 @@ const styles = (theme) => ({
   },
   photoMap: {
     width: '100%',
-    // maxWidth: '30rem',
   },
-  photoMapContainer: {
-    padding: '1rem',
+  mapDetailsTextContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
   text: {
-    fontSize: '1.1rem',
     fontFamily: '\'Baskervville\',serif',
+    padding: '1rem 2rem',
   },
-  tileContainer: {
-    display: 'flex',
-    alignItems: 'flex-end',
-  },
+
   titleLublinMap: {
-    textAlign: 'end',
-    fontSize: '1.5rem',
-    fontFamily: '\'Baskervville\',serif',
+    textAlign: 'center',
+    fontSize: '1.875rem',
+    fontWeight: 'bold',
+    fontFamily: 'Parisienne',
+    marginBottom: '1rem',
 
     [theme.breakpoints.up('sm')]: {
       fontSize: '2.2rem',

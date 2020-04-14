@@ -38,7 +38,7 @@ const styles = (theme) => ({
   logoMobile: {
     width: '3rem',
     height: '3rem',
-    margin: '1rem',
+    margin: '0.125rem 0.5rem',
     borderRadius: '100%',
   },
   menuWeb: {
@@ -50,17 +50,12 @@ const styles = (theme) => ({
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%',
+    backgroundColor: COLORS.white.main,
 
     [theme.breakpoints.up('md')]: {
       display: 'none',
     },
   },
-  burgerButtonIcon: {
-    height: '2rem',
-    width: '2rem',
-    color: `${COLORS.red.main}`,
-  },
-
 });
 
 export default withStyles(styles)(MenuComponent);

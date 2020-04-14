@@ -2,13 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from "prop-types";
 
 import classNames from "classnames";
-import Divider from "@material-ui/core/Divider";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
 import Typography from '@material-ui/core/Typography';
-import { FACEBOOK_URL, IMAGE_4, LINKS, LOVERS, LUBLIN_MAP } from "../../constants";
-import Link from "next/link";
+import { FACEBOOK_URL, IMAGE_4, LUBLIN_MAP } from "../../constants";
 
 
 class ContactContainer extends Component {
@@ -26,80 +24,65 @@ class ContactContainer extends Component {
             />
           </div>
 
-          <div className={classes.contactContainer}>
-            <div>
-              <Typography className={classes.contactTextContainer}>Kontakt</Typography>
-            </div>
-          </div>
 
           <div className={classes.dataContainer}>
-            {/*<div className={classes.photoLoversContainer}>*/}
-            {/*  <img*/}
-            {/*    src={LOVERS}*/}
-            {/*    alt={'Arto_LOVERS'}*/}
-            {/*    className={classes.photoLovers}*/}
-            {/*  />*/}
-            {/*</div>*/}
+            <Typography className={classes.contactTextContainer}>Kontakt</Typography>
 
-            <div>
-              <div className={classNames(classes.subContainer, classes.textContactPage)}>
-                <Typography className={classes.textContactPage}>e-mail</Typography>
-                <div className={classes.emailIconContainer}>
-                  <MailOutlineIcon className={classes.textContactPage}/>
-                </div>
-                <a href="mailto:zespolarto@gmail.com?subject = Feedback&body = Message">zespolarto@gmail.com</a>
+            <div className={classNames(classes.subContainer, classes.textContactPage)}>
+              <div className={classes.emailIconContainer}>
+                <MailOutlineIcon className={classes.textContactPage}/>
               </div>
+              <Typography className={classes.textContactPageBold}>e-mail</Typography>
+              <a href="mailto:zespolarto@gmail.com?subject = Feedback&body = Message">zespolarto@gmail.com</a>
+            </div>
 
-              <Divider/>
+            <div className={classNames(classes.subContainer, classes.textContactPage)}>
+              <PhoneIcon className={classes.PhoneIcon}/>
+              <Typography className={classes.textContactPageBold}>Rafał</Typography>
+              <a className={classes.phoneNumberText} href="tel:+48661204475">661 204 475</a>
+            </div>
 
+            <div className={classNames(classes.subContainer, classes.textContactPage)}>
+              <PhoneIcon className={classes.PhoneIcon}/>
+              <Typography className={classes.textContactPageBold}>Adrian</Typography>
+              <a className={classes.phoneNumberText} href="tel:+48796642598">796 642 598</a>
+            </div>
+
+            <div className={classNames(classes.FacebookMainContainer)}>
               <div>
-                <div className={classNames(classes.subContainer, classes.textContactPage)}>
-                  <Typography className={classes.textContactPage}>Rafał</Typography>
-                  <PhoneIcon className={classes.PhoneIcon}/>
-                  <a className={classes.phoneNumberText} href="tel:+48661204475">661 204 475</a>
-                </div>
-                <div className={classNames(classes.subContainer, classes.textContactPage)}>
-                  <Typography className={classes.textContactPage}>Adrian</Typography>
-                  <PhoneIcon className={classes.PhoneIcon}/>
-                  <a className={classes.phoneNumberText} href="tel:+48796642598">796 642 598</a>
-                </div>
+                <Typography className={classes.textContactPage}>Chcesz poznać nas lepiej?</Typography>
+                <Typography className={classes.textContactPageBold}>Zobacz nasz funpage na facebooku</Typography>
+              </div>
+              <div className={classes.emailIconContainer}>
+                <a target={'_blank'} href={FACEBOOK_URL}>
+                  <FacebookIcon style={{color: '#3b5998'}} className={classes.facebookIcon}/>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div className={classNames(classes.FacebookMainContainer)}>
-          <div className={classNames(classes.FacebookContainer)}>
-            <Typography className={classes.textContactPage}>Chcesz poznać nas lepiej?</Typography>
-            <Typography className={classes.textContactPage}>Zobacz nasz funpage na facebooku</Typography>
-            <div className={classes.emailIconContainer}>
-              <a target={'_blank'} href={FACEBOOK_URL}>
-                <FacebookIcon style={{color: '#3b5998'}} className={classes.facebookIcon}/>
-              </a>
-            </div>
-          </div>
-        </div>
+
 
         <div>
           <div className={this.props.classes.mainContainerMap}>
-            <div className={classes.photoMapContainer}>
+            <div className={classes.mapDetailsTextContainer}>
+              <div>
+                <Typography classes={{root: classes.titleLublinMap}}>Gramy w województwie lubelskim</Typography>
+              </div>
+              <Typography classes={{root: classes.text,}}>
+                Zespól pochodzi z malowniczej miejscowości Werbkowice
+                ale możesz nas usłyszeć w całym województwie lubelskim.
+              </Typography>
+            </div>
+
+            <div>
               <img
                 src={LUBLIN_MAP}
                 alt={'Lubelskie 1'}
                 className={classes.photoMap}
               />
             </div>
-            <div>
-              <div className={classes.tileContainer}>
-                <Typography classes={{root: classes.titleLublinMap,}}>Gramy w województwie lubelskim</Typography>
-              </div>
-              <Divider/>
-              <Typography classes={{root: classes.text,}}>
-                Zespól pochodzi z malowniczej miejscowości Werbkowice
-                ale możesz nas usłyszeć w całym województwie lubelskim.
-              </Typography>
-            </div>
           </div>
-          <Divider/>
         </div>
       </div>
     )

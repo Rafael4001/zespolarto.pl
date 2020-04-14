@@ -14,20 +14,10 @@ import MyMenuItem from "../../MenuItem/MenuItem.style";
 //TODO to trzeba poprawic bo sie wiesza
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  mainContainerMenu: {
     display: 'flex',
   },
-  paper: {
-    marginRight: theme.spacing(2),
-  },
 
-  buttonBurgerMenu: {
-    height: '4rem',
-    margin: '1rem',
-    width: 'auto',
-    boxShadow: `1px 0 5px 1px rgb(0,0,0,0.2)`,
-    borderRadius: '100%',
-  },
 }));
 
 const getMenuItems = () => (
@@ -46,7 +36,7 @@ export default function MenuListComposition() {
   };
 
   const handleClose = event => {
-    if(anchorRef.current && anchorRef.current.contains(event.target)) {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }
 
@@ -54,7 +44,7 @@ export default function MenuListComposition() {
   };
 
   function handleListKeyDown(event) {
-    if(event.key === 'Tab') {
+    if (event.key === 'Tab') {
       event.preventDefault();
       setOpen(false);
     }
@@ -63,7 +53,7 @@ export default function MenuListComposition() {
   // return focus to the button when we transitioned from !open -> open
   const prevOpen = React.useRef(open);
   React.useEffect(() => {
-    if(prevOpen.current === true && open === false) {
+    if (prevOpen.current === true && open === false) {
       anchorRef.current.focus();
     }
 
@@ -71,18 +61,18 @@ export default function MenuListComposition() {
   }, [open]);
 
   return (
-    <div className={classes.root}>
-      <div>
-        <Button
-          ref={anchorRef}
-          aria-controls={open ? 'menu-list-grow' : undefined}
-          aria-haspopup="true"
-          onClick={handleToggle}
-          className={classes.buttonBurgerMenu}
-        >
-          <MenuIcon/>
-        </Button>
-      </div>
+    <div className={classes.mainContainerMenu}>
+      <Button
+        ref={anchorRef}
+        aria-controls={open ? 'menu-list-grow' : undefined}
+        aria-haspopup="true"
+        onClick={handleToggle}
+        // classes={{text: {padding: '2rem'}}}
+      >
+        <MenuIcon
+        fontSize={'large'}
+        />
+      </Button>
 
       <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
         {({TransitionProps, placement}) => (
