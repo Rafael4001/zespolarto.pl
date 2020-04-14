@@ -7,7 +7,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
 import Typography from '@material-ui/core/Typography';
-import {  FACEBOOK_URL, IMAGE_4, LOVERS, LUBLIN_MAP } from "../../constants";
+import { FACEBOOK_URL, IMAGE_4, LINKS, LOVERS, LUBLIN_MAP } from "../../constants";
+import Link from "next/link";
 
 
 class ContactContainer extends Component {
@@ -17,13 +18,18 @@ class ContactContainer extends Component {
     return (
       <div>
         <div className={classes.mainContainer}>
-
           <div className={classes.photoContainer}>
             <img
               src={IMAGE_4}
               alt={'Arto_photo_4'}
               className={classes.photo}
             />
+          </div>
+
+          <div className={classes.contactContainer}>
+            <div>
+              <Typography className={classes.contactTextContainer}>Kontakt</Typography>
+            </div>
           </div>
 
           <div className={classes.dataContainer}>

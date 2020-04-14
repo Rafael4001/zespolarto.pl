@@ -108,9 +108,13 @@ const styles = (theme) => ({
   allRightsReservedContainer: {
     display: 'flex',
     justifyContent: 'space-between',
-    fontSize: '0.75rem',
+    fontSize: '0.5rem',
     fontWeight: 100,
     padding: ' 0.625rem 0',
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '0.75rem',
+    },
 
     '& a': {
       textDecoration: 'none',

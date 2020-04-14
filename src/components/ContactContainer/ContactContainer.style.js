@@ -63,17 +63,27 @@ const styles = (theme) => ({
   },
   photoContainer: {
     [theme.breakpoints.down('sm')]: {
-      display: 'flex',
-      justifyContent: 'center',
+      width: '100%',
+      // display: 'flex',
+      // justifyContent: 'center',
     }
   },
-
+  contactContainer: {
+    display: 'flex',
+    padding: '1rem 0',
+    fontWeight: 'bold',
+    justifyContent: 'center',
+  },
+  contactTextContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    fontSize: '2.3125rem',
+    fontFamily: 'Parisienne',
+  },
   photo: {
-    width: '80%',
-    padding: '0.5rem',
-    border: `solid 1px ${COLORS.grey.dark}`,
-
-
+    // width: '80%',
+    width: '100%',
     [theme.breakpoints.up('sm')]: {
       padding: '1.5rem',
     },
@@ -104,8 +114,7 @@ const styles = (theme) => ({
     }
   },
   photoLovers: {
-    width: '10rem',
-    padding: '1rem',
+    height: '12rem',
   },
   emailIconContainer: {
     display: 'flex',
