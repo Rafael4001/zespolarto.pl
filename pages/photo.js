@@ -1,3 +1,3 @@
-import photo from '../src/views/photo';
+import Photo from '../src/views/photo';
 
-export default photo;
+export default Photo;
