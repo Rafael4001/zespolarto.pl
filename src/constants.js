@@ -48,7 +48,7 @@ import perfect from '../static/image/songsImages/perfect.jpg';
 import piekniIMlodzi from '../static/image/songsImages/piekniIMlodzi.jpg';
 import piersi from '../static/image/songsImages/piersi.jpg';
 import poparzeniKawaTrzy from '../static/image/songsImages/poparzeniKawaTrzy.jpg';
-import powerPLay from '../static/image/songsImages/powerPLay.jpg';
+import powerPlay from '../static/image/songsImages/powerPlay.jpg';
 import ronnieFerrari from '../static/image/songsImages/ronnieFerrari.jpg';
 import skaldowie from '../static/image/songsImages/skaldowie.jpg';
 import slawomir from '../static/image/songsImages/slawomir.jpg';
@@ -92,7 +92,7 @@ export const SONGS_IMAGES = {
     piekniIMlodzi: piekniIMlodzi,
     piersi: piersi,
     poparzeniKawaTrzy: poparzeniKawaTrzy,
-    powerPLay: powerPLay,
+    powerPlay: powerPlay,
     ronnieFerrari: ronnieFerrari,
     skaldowie: skaldowie,
     slawomir: slawomir,
