@@ -33,13 +33,13 @@ class ContactContainer extends Component {
           </div>
 
           <div className={classes.dataContainer}>
-            <div className={classes.photoLoversContainer}>
-              <img
-                src={LOVERS}
-                alt={'Arto_LOVERS'}
-                className={classes.photoLovers}
-              />
-            </div>
+            {/*<div className={classes.photoLoversContainer}>*/}
+            {/*  <img*/}
+            {/*    src={LOVERS}*/}
+            {/*    alt={'Arto_LOVERS'}*/}
+            {/*    className={classes.photoLovers}*/}
+            {/*  />*/}
+            {/*</div>*/}
 
             <div>
               <div className={classNames(classes.subContainer, classes.textContactPage)}>

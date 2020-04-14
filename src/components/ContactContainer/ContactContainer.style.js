@@ -82,7 +82,6 @@ const styles = (theme) => ({
     fontFamily: 'Parisienne',
   },
   photo: {
-    // width: '80%',
     width: '100%',
     [theme.breakpoints.up('sm')]: {
       padding: '1.5rem',
