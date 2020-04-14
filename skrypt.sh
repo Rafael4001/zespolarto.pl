@@ -1,4 +1,5 @@
 #!/bin/bash
 git pull
-yarn install
-pm2 restart nextjs
+npm install
+npm run build
+pm2 restart next
