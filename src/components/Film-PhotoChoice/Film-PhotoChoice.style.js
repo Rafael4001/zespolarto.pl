@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 import FilmPhotoChoice from './Film-PhotoChoice'
-import { COLORS } from "../../constants";
+import { COLORS } from "../../colors";
 
 
 const radiusCorner = '1.5rem';
