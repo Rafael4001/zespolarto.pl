@@ -68,7 +68,7 @@ class TrackContainer extends Component {
 TrackContainer.propTypes = {
   classes: PropTypes.object.isRequired,
   track: PropTypes.object.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClickPlay: PropTypes.func.isRequired,
   actualPlayingTrackMp3Name: PropTypes.string,
 };
 
