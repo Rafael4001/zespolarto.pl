@@ -2,7 +2,7 @@ import photo1 from '../static/image/photo_1.png';
 import photo2 from '../static/image/photo_2_small.jpg';
 import photo3 from '../static/image/photo_3_small.jpg';
 import photo4 from '../static/image/photo_4_small.jpg';
-import LogoOnTheFlowers from '../static/image/LogoWKwiatach_342x300_nowe.png';
+import LogoOnTheFlowers from '../static/image/LogoWKwiatach342x300.png';
 import Lovers from '../static/image/lovers_small.png';
 import Bride from '../static/image/icons/bride.svg';
 import Smile from '../static/image/icons/smile.svg';
@@ -15,8 +15,6 @@ import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
 
 //making icons as font https://icomoon.io/app/#/select
 
-
-//==============Songs images===============
 
 import abba from '../static/image/songsImages/abba.jpg';
 import afterParty from '../static/image/songsImages/afterParty.jpg';

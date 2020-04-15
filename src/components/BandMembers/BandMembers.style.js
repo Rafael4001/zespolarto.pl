@@ -7,17 +7,21 @@ const styles = (theme)=>({
   mainContainer: {
     display: 'grid',
     gridTemplateColumns: '1fr',
-    padding: '1rem',
 
     [theme.breakpoints.up(SCREEN_SIZE.POINT_750)]: {
       gridTemplateColumns: '1fr 1fr',
+      padding: '1rem',
     },
   },
   photo: {
     width: '100%',
   },
   photoContainer: {
-    padding: '1rem',
+
+    [theme.breakpoints.up(SCREEN_SIZE.POINT_750)]: {
+      padding: '1rem',
+    },
+
   },
   memberContainer: {
     paddingLeft: '0.5rem',
@@ -25,12 +29,11 @@ const styles = (theme)=>({
     gridTemplateColumns: 'minmax(2rem, 5rem) 1rem auto',
 
   },
-  text: {
-    fontSize: '1.1rem',
-    fontFamily: '\'Baskervville\',serif',
+  descriptionBandMembers: {
+    padding: '0.5rem',
   },
   textName: {
-    fontSize: '1.1rem',
+    fontSize: '1rem',
     fontFamily: '\'Baskervville\',serif',
   },
   quotationContainer: {

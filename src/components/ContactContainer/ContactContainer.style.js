@@ -27,6 +27,7 @@ const styles = (theme) => ({
     margin: '0.375rem 0',
     gridTemplateColumns: '2rem 4rem 1fr',
     fontFamily: '\'Baskervville\',serif',
+    alignItems: 'center',
 
     '&:focus': {
       outline: 'none',

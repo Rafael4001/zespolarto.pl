@@ -12,11 +12,9 @@ const styles = (theme) => ({
     width: '100%',
     alignItems: 'center',
     paddingBottom: '1rem',
-    marginTop: MARGIN_TOP_UNDER_MENU,
 
     [theme.breakpoints.up('sm')]: {
       gridTemplateColumns: '1fr 1.5fr',
-      marginTop: 0,
     },
   },
   logoContainer: {
@@ -48,7 +46,6 @@ const styles = (theme) => ({
     fontSize: '2rem',
     fontFamily: 'Parisienne',
     fontWeight: 500,
-    // color: 'radial-gradient(circle at 100px 100px, #5cabff, #000)',
 
     [theme.breakpoints.up('md')]: {
       fontSize: '3rem',

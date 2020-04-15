@@ -34,10 +34,10 @@ class BandMembers extends Component {
 
     const getMembers = (bandMembers) => (
       bandMembers.map((member) => (
-        <div className={classes.memberContainer}>
+        <div key={member.name} className={classes.memberContainer}>
           <Typography classes={{root: classes.textName,}}><strong>{member.name}</strong></Typography>
           <Typography classes={{root: classes.textName,}}><strong> - </strong></Typography>
-          <Typography classes={{root: classes.text,}}>{member.description}</Typography>
+          <Typography classes={{root: classes.textName}}>{member.description}</Typography>
         </div>
       ))
     );
@@ -53,13 +53,13 @@ class BandMembers extends Component {
             />
           </div>
 
-          <div>
+          <div className={classes.descriptionBandMembers}>
             <div className={classes.quotationContainer}>
               <Typography classes={{root: classes.quotation,}}>"Takt jest muzyką duszy."</Typography>
               <Typography classes={{root: classes.author,}}>-Anita Daniel</Typography>
             </div>
             <Divider/>
-            <Typography classes={{root: classes.text,}}>Skład zespołu:</Typography>
+            <Typography classes={{root: classes.textName,}}>Skład zespołu:</Typography>
             {getMembers(BAND_MEMBERS)}
           </div>
         </div>
