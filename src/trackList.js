@@ -36,7 +36,7 @@ export const TRACK_LIST = [
     name: 'Miła ma',
     mp3Name: 'mila_ma',
     artist: 'Power Play',
-    imgSrc: SONGS_IMAGES.powerPLay,
+    imgSrc: SONGS_IMAGES.powerPlay,
   },
   {
     name: 'Miłość w Zakopanem',
@@ -109,7 +109,7 @@ export const TRACK_LIST = [
     name: 'Co tu się dzieje',
     mp3Name: 'CoTuSieDzieje',
     artist: 'Power Play',
-    imgSrc: SONGS_IMAGES.powerPLay,
+    imgSrc: SONGS_IMAGES.powerPlay,
   },
   {
     name: 'Cała sala śpiewa z nami',
@@ -127,7 +127,7 @@ export const TRACK_LIST = [
     name: 'Co ma być to będzie',
     mp3Name: 'CoMaBycToBedzie',
     artist: 'Power Play',
-    imgSrc: SONGS_IMAGES.powerPLay,
+    imgSrc: SONGS_IMAGES.powerPlay,
   },
   {
     name: 'Czarownica',
@@ -145,7 +145,7 @@ export const TRACK_LIST = [
     name: 'Kochaj mnie',
     mp3Name: 'KochajMnie',
     artist: 'Power Play',
-    imgSrc: SONGS_IMAGES.powerPLay,
+    imgSrc: SONGS_IMAGES.powerPlay,
   },
   {
     name: 'Do białego rana',
@@ -200,7 +200,7 @@ export const TRACK_LIST = [
     name: 'Lubisz to',
     mp3Name: 'LubiszTo',
     artist: 'Power Play',
-    imgSrc: SONGS_IMAGES.powerPLay,
+    imgSrc: SONGS_IMAGES.powerPlay,
   },
   {
     name: "Mamma mia He's italiano",
@@ -236,7 +236,7 @@ export const TRACK_LIST = [
     name: "Najpiękne",
     mp3Name: 'Najpiekne',
     artist: 'Power Play',
-    imgSrc: SONGS_IMAGES.powerPLay,
+    imgSrc: SONGS_IMAGES.powerPlay,
   },
   {
     name: "Nie chce spać",

@@ -10,7 +10,7 @@ const styles = (theme) => ({
     width: '100%',
     justifyContent: 'space-between',
     alignItems: 'center',
-    boxShadow: `0 3px 6px -6px #000`,
+    boxShadow: `0 0.1875rem 0.25rem -0.375rem #000`,
     margin: '0 0 0.1rem 0'
   },
   menuContainer: {
@@ -51,6 +51,7 @@ const styles = (theme) => ({
     justifyContent: 'space-between',
     width: '100%',
     backgroundColor: COLORS.white.main,
+    boxShadow: `0 0.1875rem 0.25rem -0.375rem #000`,
 
     [theme.breakpoints.up('md')]: {
       display: 'none',

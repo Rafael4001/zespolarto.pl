@@ -3,14 +3,12 @@ import PropTypes from "prop-types";
 
 import PageWrapper from '../../components/PageWrapper';
 import ContactContainer from "../../components/ContactContainer";
-import Footer from "../../components/Footer";
 
 
 
-const Contact = (props) => (
+const Contact = () => (
   <PageWrapper>
     <ContactContainer/>
-    <Footer/>
   </PageWrapper>
 );
 

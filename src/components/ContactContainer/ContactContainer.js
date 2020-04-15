@@ -29,31 +29,29 @@ class ContactContainer extends Component {
             <Typography className={classes.contactTextContainer}>Kontakt</Typography>
 
             <div className={classNames(classes.subContainer, classes.textContactPage)}>
-              <div className={classes.emailIconContainer}>
-                <MailOutlineIcon className={classes.textContactPage}/>
-              </div>
-              <Typography className={classes.textContactPageBold}>e-mail</Typography>
-              <a href="mailto:zespolarto@gmail.com?subject = Feedback&body = Message">zespolarto@gmail.com</a>
+              <MailOutlineIcon className={classes.emailIconContainer}/>
+              <Typography className={classNames(classes.textContactPageBold, classes.textSizeClass)}>e-mail</Typography>
+              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="mailto:zespolarto@gmail.com?subject = Feedback&body = Message">zespolarto@gmail.com</a>
             </div>
 
             <div className={classNames(classes.subContainer, classes.textContactPage)}>
-              <PhoneIcon className={classes.PhoneIcon}/>
-              <Typography className={classes.textContactPageBold}>Rafał</Typography>
-              <a className={classes.phoneNumberText} href="tel:+48661204475">661 204 475</a>
+              <PhoneIcon className={classes.emailIconContainer}/>
+              <Typography className={classNames(classes.textContactPageBold, classes.textSizeClass)}>Rafał</Typography>
+              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="tel:+48661204475">661 204 475</a>
             </div>
 
             <div className={classNames(classes.subContainer, classes.textContactPage)}>
-              <PhoneIcon className={classes.PhoneIcon}/>
-              <Typography className={classes.textContactPageBold}>Adrian</Typography>
-              <a className={classes.phoneNumberText} href="tel:+48796642598">796 642 598</a>
+              <PhoneIcon className={classes.emailIconContainer}/>
+              <Typography className={classNames(classes.textContactPageBold, classes.textSizeClass)}>Adrian</Typography>
+              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="tel:+48796642598">796 642 598</a>
             </div>
 
             <div className={classNames(classes.FacebookMainContainer)}>
-              <div>
+              <div className={classes.textContactContainer}>
                 <Typography className={classes.textContactPage}>Chcesz poznać nas lepiej?</Typography>
                 <Typography className={classes.textContactPageBold}>Zobacz nasz funpage na facebooku</Typography>
               </div>
-              <div className={classes.emailIconContainer}>
+              <div className={classes.facebookIconContainer}>
                 <a target={'_blank'} href={FACEBOOK_URL}>
                   <FacebookIcon style={{color: '#3b5998'}} className={classes.facebookIcon}/>
                 </a>
@@ -63,25 +61,23 @@ class ContactContainer extends Component {
         </div>
 
 
-        <div>
-          <div className={this.props.classes.mainContainerMap}>
-            <div className={classes.mapDetailsTextContainer}>
-              <div>
-                <Typography classes={{root: classes.titleLublinMap}}>Gramy w województwie lubelskim</Typography>
-              </div>
-              <Typography classes={{root: classes.text,}}>
-                Zespól pochodzi z malowniczej miejscowości Werbkowice
-                ale możesz nas usłyszeć w całym województwie lubelskim.
-              </Typography>
-            </div>
-
+        <div className={this.props.classes.mainContainerMap}>
+          <div className={classes.mapDetailsTextContainer}>
             <div>
-              <img
-                src={LUBLIN_MAP}
-                alt={'Lubelskie 1'}
-                className={classes.photoMap}
-              />
+              <Typography classes={{root: classes.titleLublinMap}}>Gramy w województwie lubelskim</Typography>
             </div>
+            <Typography classes={{root: classes.textMapDescription,}}>
+              Zespól pochodzi z malowniczej miejscowości Werbkowice
+              ale możesz nas usłyszeć w całym województwie lubelskim.
+            </Typography>
+          </div>
+
+          <div className={classes.mapContainer}>
+            <imgm
+              src={LUBLIN_MAP}
+              alt={'Lubelskie 1'}
+              className={classes.photoMap}
+            />
           </div>
         </div>
       </div>

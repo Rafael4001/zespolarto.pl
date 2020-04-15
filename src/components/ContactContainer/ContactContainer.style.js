@@ -2,7 +2,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 import ContactContainer from './ContactContainer'
 
-import { MARGIN_TOP_UNDER_MENU, SCREEN_SIZE } from "../../constants";
+import { SCREEN_SIZE } from "../../constants";
 import { COLORS } from '../../colors'
 
 const styles = (theme) => ({
@@ -18,23 +18,52 @@ const styles = (theme) => ({
     [theme.breakpoints.up('sm')]: {
       display: 'grid',
       gridTemplateColumns: '1fr 1fr',
+      marginBottom: '2rem',
     },
   },
   subContainer: {
     display: 'grid',
     gridGap: '0.300rem 0',
+    margin: '0.375rem 0',
     gridTemplateColumns: '2rem 4rem 1fr',
-    margin: '0.375rem'
-  },
-  PhoneIcon: {
-    color: '#000',
-  },
-  contactDetailsContainer: {},
-  textContactPage: {
     fontFamily: '\'Baskervville\',serif',
 
     '&:focus': {
       outline: 'none',
+    },
+
+    [theme.breakpoints.up('sm')]: {
+      gridTemplateColumns: '1.5rem 2.5rem 5rem',
+      margin: '0.125rem 0',
+      fontSize: '0.7rem',
+    },
+    [theme.breakpoints.up('md')]: {
+      gridTemplateColumns: '2rem 4rem 1fr',
+      fontSize: '1.2rem',
+    },
+
+  },
+  PhoneIcon: {
+    color: '#000',
+  },
+  textContactContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+
+    [theme.breakpoints.up('sm')]: {
+      alignItems: 'normal',
+    },
+  },
+  textContactPage: {
+    fontFamily: '\'Baskervville\',serif',
+    fontSize: '1rem',
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '0.7rem',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1rem',
     },
   },
   textContactPageBold: {
@@ -44,17 +73,30 @@ const styles = (theme) => ({
     '&:focus': {
       outline: 'none',
     },
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '0.7rem',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1rem',
+    },
   },
-  titleTextContactPage: {
-    fontSize: '2.2rem',
-    fontFamily: 'Parisienne',
-    display: 'flex',
-  },
-  phoneNumberText: {
+  textSizeClass: {
     fontSize: '1.2rem',
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '0.7rem',
+    },
+
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1.2rem',
+    },
+  },
+  detailsTextContent: {
     fontWeight: 300,
     fontFamily: "Poppins",
     alignItems: 'center',
+    display: 'flex',
 
     '&:focus': {
       outline: 'none',
@@ -63,18 +105,20 @@ const styles = (theme) => ({
   photoContainer: {
     width: '100%',
   },
-  contactContainer: {
-    display: 'flex',
-    padding: '1rem 0',
-    fontWeight: 'bold',
-    justifyContent: 'center',
-  },
   contactTextContainer: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     fontSize: '2.3125rem',
     fontFamily: 'Parisienne',
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '1.5rem',
+    },
+
+    [theme.breakpoints.up('md')]: {
+      fontSize: '2.3125rem',
+    },
   },
   photo: {
     width: '100%',
@@ -84,26 +128,35 @@ const styles = (theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     marginTop: '1rem',
+    justifyContent: 'flex-end',
 
     [theme.breakpoints.up('sm')]: {
+      marginTop: 0,
       alignItems: 'normal',
-      padding: '0 0 0 3rem',
+      padding: '0 0 0 2rem',
     },
-  },
-  photoLoversContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-
-    [theme.breakpoints.up('md')]: {
-      justifyContent: 'flex-end',
-    }
-  },
-  photoLovers: {
-    height: '12rem',
   },
   emailIconContainer: {
     display: 'flex',
     alignItems: 'center',
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '1rem',
+    },
+
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1.2rem',
+    },
+  },
+  facebookIconContainer: {
+    marginTop: '1rem',
+    display: 'flex',
+    alignItems: 'center',
+
+    [theme.breakpoints.up('sm')]: {
+      marginTop: 0,
+      marginRight: '0.5rem',
+    }
   },
   FacebookMainContainer: {
     display: 'flex',
@@ -113,28 +166,28 @@ const styles = (theme) => ({
     alignItems: 'center',
     padding: '0.5rem 0',
     borderTop: 'solid 1px #E0E0E0',
+    borderBottom: 'solid 1px #E0E0E0',
+    margin: '1rem 0 0 0',
 
     [theme.breakpoints.up('sm')]: {
-      margin: '1rem 0',
       flexDirection: "row-reverse",
       justifyContent: 'center',
+      padding: '0.0125rem',
+      borderBottom: 'none',
+      marginTop: '0.625rem',
     }
 
   },
 
   facebookIcon: {
-    marginTop: '1rem',
     fontSize: '3rem',
-  },
-  facebookPageIcon: {
-    width: '6rem',
-  },
-  facebookFaceIconContainer: {
-    display: 'grid',
-    gridTemplateColumns: '3fr 1fr',
-    alignItems: 'center',
 
-    // justifyContent: '3fr 1fr',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '2rem',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '3rem',
+    },
   },
   lublinMapContainer: {
     display: 'grid',
@@ -145,30 +198,33 @@ const styles = (theme) => ({
       gridTemplateColumns: '1fr 1fr',
     },
   },
-  lublinMap: {
-    width: '100%',
-    padding: '1rem',
-  },
-
-//  --------------------------
   mainContainerMap: {
     display: 'grid',
     gridTemplateColumns: '1fr',
-    padding: '1rem',
+    marginBottom: '0.25rem',
 
-    [theme.breakpoints.up(SCREEN_SIZE.POINT_750)]: {
+    [theme.breakpoints.up('sm')]: {
       gridTemplateColumns: '1fr 1fr',
     },
   },
+  mapContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
   photoMap: {
     width: '100%',
+    maxWidth: '20rem',
+
+    [theme.breakpoints.up('sm')]: {
+      maxWidth: 'none',
+    },
   },
   mapDetailsTextContainer: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
   },
-  text: {
+  textMapDescription: {
     fontFamily: '\'Baskervville\',serif',
     padding: '1rem 2rem',
   },
@@ -178,10 +234,10 @@ const styles = (theme) => ({
     fontSize: '1.875rem',
     fontWeight: 'bold',
     fontFamily: 'Parisienne',
-    marginBottom: '1rem',
+    padding: '1rem 0.125rem',
 
     [theme.breakpoints.up('sm')]: {
-      fontSize: '2.2rem',
+      fontSize: '2.1rem',
     },
   },
 });

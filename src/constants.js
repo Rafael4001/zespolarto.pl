@@ -149,8 +149,6 @@ export const MENU_ITEMS = [
     {name: KONTAKT, link: LINKS.CONTACT.HREF, as: LINKS.CONTACT.AS},
 ];
 
-export const MENU_ITEM_WIDTH = 20;
-
 
 export const FACEBOOK_ICON = '/static/image/icons/facebookWhite.svg';
 

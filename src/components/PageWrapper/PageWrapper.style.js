@@ -16,7 +16,7 @@ const styles = (theme) => ({
     },
   },
   pageWrapperInner: {
-    // width: '100%',
+    width: '100%',
     maxWidth: MAX_PAGE_WIDTH,
     margin: '0 auto',
   },

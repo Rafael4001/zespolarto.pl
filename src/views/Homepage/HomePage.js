@@ -8,11 +8,10 @@ import BandMembers from "../../components/BandMembers";
 import PlayedWeddingInformationContainer from "../../components/PlayedWeddingInformationContainer";
 import OpinionsContainer from "../../components/OpinionsContainer";
 import ContactContainer from "../../components/ContactContainer";
-import Footer from "../../components/Footer";
 import PropTypes from "prop-types";
 
 
-const Homepage = (props) => (
+const Homepage = () => (
   <PageWrapper>
     <HomepageMainPhoto/>
     <DescriptionBlock/>
@@ -21,7 +20,6 @@ const Homepage = (props) => (
     {/*<PlayedWeddingInformationContainer/>*/}
     {/*<OpinionsContainer/>*/}
     {/*<ContactContainer/>*/}
-    <Footer/>
   </PageWrapper>
 );
 
