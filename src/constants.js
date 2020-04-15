@@ -12,6 +12,13 @@ export const LUBLIN_MAP = '../static/image/WojLubelskie.jpg';
 export const PHOTO_CARD_IMAGE ='../static/image/GalleryCardPhoto.jpeg';
 export const VIDEO_CARD_IMAGE ='../static/image/videoCardPhoto.jpeg';
 
+export const FAVICON = {
+    appleTouch : '../static/image/favicon_io/apple-touch-icon.png',
+    favicon16x16 : '../static/image/favicon_io/favicon-16x16.png',
+    favicon32x32 : '../static/image/favicon_io/favicon-32x32.png',
+    siteWebManifest : '../static/image/favicon_io/site.webmanifest',
+    safari : '../static/image/favicon_io/safari-pinned-tab.svg',
+}
 
 //making icons as font https://icomoon.io/app/#/select
 
