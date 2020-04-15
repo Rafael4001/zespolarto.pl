@@ -1,16 +1,16 @@
-import photo1 from '../static/image/photo_1.png';
-import photo2 from '../static/image/photo_2_small.jpg';
-import photo3 from '../static/image/photo_3_small.jpg';
-import photo4 from '../static/image/photo_4_small.jpg';
-import LogoOnTheFlowers from '../static/image/LogoWKwiatach342x300.png';
-import Lovers from '../static/image/lovers_small.png';
-import Bride from '../static/image/icons/bride.svg';
-import Smile from '../static/image/icons/smile.svg';
-import Music from '../static/image/icons/music.svg';
-import leaf from '../static/image/icons/leaf.svg';
-import lublinMap from '../static/image/WojLubelskie.jpg';
-import galleryCardPhoto from '../static/image/GalleryCardPhoto.jpeg';
-import videoCardPhoto from '../static/image/videoCardPhoto.jpeg';
+export const IMAGE_1 = '../static/image/photo_1.png';
+export const IMAGE_2 ='../static/image/photo_2_small.jpg';
+export const IMAGE_3 ='../static/image/photo_3_small.jpg';
+export const IMAGE_4='../static/image/photo_4_small.jpg';
+export const LOGO_ON_THE_FLOWERS  = '../static/image/LogoWKwiatach342x300.png';
+export const LOVERS = '../static/image/lovers_small.png';
+export const BRIDE = '../static/image/icons/bride.svg';
+export const SMILE ='../static/image/icons/smile.svg';
+export const MUSIC ='../static/image/icons/music.svg';
+export const LEAF ='../static/image/icons/leaf.svg';
+export const LUBLIN_MAP = '../static/image/WojLubelskie.jpg';
+export const PHOTO_CARD_IMAGE ='../static/image/GalleryCardPhoto.jpeg';
+export const VIDEO_CARD_IMAGE ='../static/image/videoCardPhoto.jpeg';
 
 
 //making icons as font https://icomoon.io/app/#/select
@@ -102,21 +102,6 @@ export const SONGS_IMAGES = {
     wojciechGasowski: wojciechGasowski,
     zbigniewWodecki: zbigniewWodecki,
 };
-
-export const IMAGE_1 = photo1;
-export const IMAGE_2 = photo2;
-export const IMAGE_3 = photo3;
-export const IMAGE_4 = photo4;
-export const LOGO_ON_THE_FLOWERS = LogoOnTheFlowers;
-export const LOVERS = Lovers;
-export const BRIDE = Bride;
-export const SMILE = Smile;
-export const MUSIC = Music;
-export const LEAF = leaf;
-export const LUBLIN_MAP = lublinMap;
-export const VIDEO_CARD_IMAGE = videoCardPhoto;
-export const PHOTO_CARD_IMAGE = galleryCardPhoto;
-
 
 export const MAX_PAGE_WIDTH = '80rem';
 
