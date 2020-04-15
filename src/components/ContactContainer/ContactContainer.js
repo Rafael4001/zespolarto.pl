@@ -73,7 +73,7 @@ class ContactContainer extends Component {
           </div>
 
           <div className={classes.mapContainer}>
-            <imgm
+            <img
               src={LUBLIN_MAP}
               alt={'Lubelskie 1'}
               className={classes.photoMap}
@@ -88,8 +88,6 @@ class ContactContainer extends Component {
 ContactContainer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-
-ContactContainer.defaultProps = {};
 
 ContactContainer.displayName = 'ContactContainer';
 
