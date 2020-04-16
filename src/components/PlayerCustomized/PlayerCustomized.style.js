@@ -95,7 +95,7 @@ const styles = (theme) => (
       flexDirection: 'column',
       alignItems: 'center',
       padding: '1rem',
-      position: 'fixed',
+      // position: 'fixed',
       top: '2rem',
       backgroundColor: `${COLORS.white.main}`,
 
