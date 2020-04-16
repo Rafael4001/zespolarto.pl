@@ -1,4 +1,4 @@
 #!/bin/bash
 git pull origin master
 npm run build
-pm2 restart next
+pm2 restart arto
