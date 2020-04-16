@@ -11,6 +11,7 @@ export const COLORS = {
     grey_1: '#91919117',
   },
   red: {
+    light: '#a77171',
     main: '#b41616',
     medium: '#a81b1b',
   },

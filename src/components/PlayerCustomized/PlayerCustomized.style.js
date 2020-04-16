@@ -8,8 +8,8 @@ const styles = (theme) => (
     mainContainer: {
       display: 'flex',
       flexDirection: 'column',
-      marginTop: '1rem',
       marginBottom: '1rem',
+      // position: 'relative',
 
       [theme.breakpoints.up('sm')]: {
         marginTop: '2rem',
@@ -18,6 +18,10 @@ const styles = (theme) => (
         gridGap: '1rem',
       }
 
+    },
+    currentSong: {
+      fontFamily: '\'Baskervville\',serif',
+      padding: '0.5rem',
     },
     main: {
       backgroundColor: '#f5f5f5',
@@ -70,7 +74,10 @@ const styles = (theme) => (
         maxHeight: '30rem',
       }
     },
-    trackList: {
+    trackListContainer: {
+      // position: 'fixed',
+      // height: 150,
+
       [theme.breakpoints.up('sm')]: {
         overflowY: 'auto',
         height: '80vh',
@@ -87,8 +94,11 @@ const styles = (theme) => (
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-
       padding: '1rem',
+      position: 'fixed',
+      top: '2rem',
+      backgroundColor: `${COLORS.white.main}`,
+
 
       [theme.breakpoints.up('sm')]: {
         border: `solid 1px ${COLORS.grey.dark}`,

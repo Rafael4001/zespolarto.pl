@@ -140,42 +140,33 @@ class PlayerCustomized extends Component {
 
     return (
       <Media ref={c => (this.media = c)}>
-        <div className={classes.mainContainer}>
-          <div className={classes.albumImageContainer}>
-            <div className={classes.songImageContainer}>
-              <Image
-                imgSrc={this.state.actualSongImage}
-                className={classes.actualImage}
-              />
+        <div>
+          <div className={classes.mainContainer}>
+            <div className={classes.albumImageContainer}>
+              <Typography className={classes.currentSong}>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
+              <PlayPause/>
+              <div className={classes.seekBarContainer}>
+                <div className={classes.playerTime}><CurrentTime/>/<Duration/></div>
+                <div className={classes.seekBar}><SeekBar style={{width: '100%'}}/></div>
+              </div>
+              <div className={classes.actualSongPlayer}>
+                <Player
+                  ref={c => (this._player = c)}
+                  src={`/mp3/${this.state.actualPlayingTrackMp3Name}.mp3`}
+                  connectSource={this._connectSource}
+                  useAudioObject
+                  autoPlay={this.state.autoplay}
+                  isPlaying={this.state.isPlaying}
+                  onEnded={this.playNextSong}
+                />
+              </div>
             </div>
-            <Typography>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
 
-            <PlayPause/>
-            {/*<div className={classes.volumeContainer}>*/}
-            {/*  <div className={classes.volumeText}><VolumeUpIcon/></div>*/}
-            {/*  <Volume className={this.props.volume}/>*/}
-            {/*</div>*/}
-            <div className={classes.seekBarContainer}>
-              <div className={classes.playerTime}><CurrentTime/>/<Duration/></div>
-              <div className={classes.seekBar}><SeekBar style={{width: '100%'}}/></div>
+            <div className={classes.trackListContainer}>
+              {this.trackList()}
             </div>
-            <div className={classes.actualSongPlayer}>
-              <Player
-                ref={c => (this._player = c)}
-                src={`/mp3/${this.state.actualPlayingTrackMp3Name}.mp3`}
-                connectSource={this._connectSource}
-                useAudioObject
-                autoPlay={this.state.autoplay}
-                isPlaying={this.state.isPlaying}
-                onEnded={this.playNextSong}
-              />
-            </div>
+
           </div>
-
-          <div className={classes.trackList}>
-            {this.trackList()}
-          </div>
-
         </div>
       </Media>
 

@@ -9,17 +9,21 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     margin: '0.1rem',
-    padding: '0.1rem',
-    backgroundColor: `${COLORS.red.medium}`,
-    color: "#FFF",
+    padding: '0.375rem',
+    borderBottom: `solid 1px ${COLORS.grey.dark}`,
+    fontFamily: '\'Baskervville\',serif',
   },
   myButton: {
     width: '1rem',
     padding: '0.1rem',
   },
   buttonIcon: {
-    fontSize: '2rem',
-    color: '#FFF',
+    fontSize: '2.5rem',
+    color: `${COLORS.red.medium}`,
+    border: 'black',
+  },
+  buttonIconActiveSong: {
+    color: `${COLORS.white.main}`,
   },
   songImage: {
     display: 'flex',
@@ -27,14 +31,14 @@ const styles = {
     height: '3rem',
   },
   activeBackground: {
-    backgroundColor: '#d81a1aeb',
+    backgroundColor: `${COLORS.red.main}`,
+    color: `${COLORS.white.main}`
   },
   trackName: {
     fontSize: '1.1rem',
   },
   trackArtistText: {
     fontSize: '0.8rem',
-    color: COLORS.grey.dark
   }
 };
 

@@ -52,6 +52,7 @@ const styles = (theme) => ({
     width: '100%',
     backgroundColor: COLORS.white.main,
     boxShadow: `0 0.1875rem 0.25rem -0.375rem #000`,
+    borderBottom: `solid 0.0625rem ${COLORS.grey.light}`,
 
     [theme.breakpoints.up('md')]: {
       display: 'none',

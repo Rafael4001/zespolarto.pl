@@ -44,7 +44,10 @@ class TrackContainer extends Component {
             key={track.mp3Name}
             onClick={media.pause}
           >
-            <PauseCircleFilledIcon className={classes.buttonIcon}/>
+            <PauseCircleFilledIcon className={classNames(
+              classes.buttonIcon,
+              classes.buttonIconActiveSong
+            )}/>
           </Button>)
           :
           (<Button
@@ -52,7 +55,10 @@ class TrackContainer extends Component {
             key={track.mp3Name}
             onClick={this.handlePlayClick}
           >
-            <PlayCircleFilledIcon className={classes.buttonIcon}/>
+            <PlayCircleFilledIcon className={classNames(
+              classes.buttonIcon,
+              {[classes.buttonIconActiveSong]: actualPlayingTrackMp3Name === track.mp3Name}
+            )}/>
           </Button>)
         }
         <div>
