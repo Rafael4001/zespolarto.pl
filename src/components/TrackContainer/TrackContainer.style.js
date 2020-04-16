@@ -6,7 +6,8 @@ import { COLORS } from "../../colors";
 
 const styles = {
   mainContainer: {
-    display: 'flex',
+    display: 'grid',
+    gridTemplateColumns: '3rem 4rem 1fr',
     alignItems: 'center',
     margin: '0.1rem',
     padding: '0.375rem',

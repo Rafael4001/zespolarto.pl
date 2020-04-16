@@ -37,7 +37,7 @@ class Footer extends Component {
             </Link>
           </div>
 
-          <div>
+          <div className={classes.detailsContainerText}>
             <div className={classNames(classes.phoneContainer, classes.marginBottomContainer)}>
               <MailOutlineIcon className={classes.PhoneIcon}/>
               <Typography className={classes.footerText}>e-mail</Typography>
@@ -84,6 +84,6 @@ Footer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-Footer.displayName = 'ContactContainer';
+Footer.displayName = 'Footer';
 
 export default Footer

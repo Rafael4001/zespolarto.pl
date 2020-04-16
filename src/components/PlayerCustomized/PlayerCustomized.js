@@ -2,11 +2,8 @@ import React, { Component } from 'react'
 import { Media, Player, controls } from 'react-media-player'
 import PlayPause from '../../mp3Player/withMediaProps'
 import TrackContainer from "../TrackContainer";
-import { MUSIC, SONGS_IMAGES } from "../../constants";
-import VolumeUpIcon from '@material-ui/icons/VolumeUp';
-import AlbumIcon from '@material-ui/icons/Album';
+import { SONGS_IMAGES } from "../../constants";
 
-import Image from "../Image";
 import { Typography } from "@material-ui/core";
 import { TRACK_LIST } from "../../trackList";
 
@@ -140,32 +137,32 @@ class PlayerCustomized extends Component {
 
     return (
       <Media ref={c => (this.media = c)}>
-        <div>
-          <div className={classes.mainContainer}>
-            <div className={classes.albumImageContainer}>
-              <Typography className={classes.currentSong}>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
-              <PlayPause/>
-              <div className={classes.seekBarContainer}>
-                <div className={classes.playerTime}><CurrentTime/>/<Duration/></div>
-                <div className={classes.seekBar}><SeekBar style={{width: '100%'}}/></div>
-              </div>
-              <div className={classes.actualSongPlayer}>
-                <Player
-                  ref={c => (this._player = c)}
-                  src={`/mp3/${this.state.actualPlayingTrackMp3Name}.mp3`}
-                  connectSource={this._connectSource}
-                  useAudioObject
-                  autoPlay={this.state.autoplay}
-                  isPlaying={this.state.isPlaying}
-                  onEnded={this.playNextSong}
-                />
-              </div>
-            </div>
+        <div className={classes.mainContainer}>
+          <div className={classes.albumImageContainer}>
+            <Typography className={classes.contactTextContainer}>Demo</Typography>
 
-            <div className={classes.trackListContainer}>
-              {this.trackList()}
+            <Typography
+              className={classes.currentSong}>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
+            <PlayPause/>
+            <div className={classes.seekBarContainer}>
+              <div className={classes.playerTime}><CurrentTime/>/<Duration/></div>
+              <div className={classes.seekBar}><SeekBar style={{width: '100%'}}/></div>
             </div>
+            <div className={classes.actualSongPlayer}>
+              <Player
+                ref={c => (this._player = c)}
+                src={`/mp3/${this.state.actualPlayingTrackMp3Name}.mp3`}
+                connectSource={this._connectSource}
+                useAudioObject
+                autoPlay={this.state.autoplay}
+                isPlaying={this.state.isPlaying}
+                onEnded={this.playNextSong}
+              />
+            </div>
+          </div>
 
+          <div className={classes.trackListContainer}>
+            {this.trackList()}
           </div>
         </div>
       </Media>
@@ -173,5 +170,7 @@ class PlayerCustomized extends Component {
     )
   }
 }
+
+PlayerCustomized.displayName = 'PlayerCustomized';
 
 export default PlayerCustomized

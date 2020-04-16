@@ -1,19 +1,13 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-import Typography from "@material-ui/core/Typography";
-
 import PageWrapper from '../../components/PageWrapper';
 import PlayerCustomized from "../../components/PlayerCustomized";
 
 
 
-const Demo = ({classes}) => (
+const Demo = () => (
   <PageWrapper>
-    <div className={classes.titleContainer}>
-      <Typography className={classes.contactTextContainer}>Demo</Typography>
-    </div>
-
     <PlayerCustomized/>
   </PageWrapper>
 );

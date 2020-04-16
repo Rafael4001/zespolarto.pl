@@ -3,13 +3,13 @@ import { SONGS_IMAGES } from "./constants";
 
 export const TRACK_LIST = [
   {
-    name: 'Do Tańca Kawałek',
+    name: 'Do tańca kawałek',
     mp3Name: 'do_tanca_kawalek',
     artist: 'Poparzeni kawą trzy',
     imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
   },
   {
-    name: 'Kici Kici miał',
+    name: 'Kici kici miau',
     mp3Name: 'kici_kici_mial',
     artist: 'Marcus',
     imgSrc: SONGS_IMAGES.marcus,

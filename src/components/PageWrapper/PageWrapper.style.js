@@ -1,24 +1,22 @@
 import { withStyles } from '@material-ui/core/styles';
 import PageWrapper from './PageWrapper';
 import { MAX_PAGE_WIDTH } from "../../constants";
+import { COLORS } from "../../colors";
 
 const styles = (theme) => ({
   pageWrapperOuter: {
-    // width: '100%',
     minHeight: '100vh',
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     backgroundColor: theme.palette.common.white,
-    paddingTop: '6rem',
-
-    [theme.breakpoints.down('sm')]: {
-      paddingTop: '3rem',
-    },
-  },
-  pageWrapperInner: {
-    width: '100%',
+    paddingTop: '3rem',
     maxWidth: MAX_PAGE_WIDTH,
     margin: '0 auto',
+
+    [theme.breakpoints.up('md')]: {
+      paddingTop: '6rem',
+    },
   },
   menuHomepage: {
     position: 'fixed',
@@ -26,6 +24,7 @@ const styles = (theme) => ({
     zIndex: 10000,
     width: '100%',
     maxWidth: MAX_PAGE_WIDTH,
+    borderBottom: `solid 1px ${COLORS.grey.light}`,
 
     [theme.breakpoints.up('sm')]: {
       backgroundColor: '#FFF',

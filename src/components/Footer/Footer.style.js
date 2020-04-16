@@ -18,7 +18,6 @@ const styles = (theme) => ({
       textDecoration: 'none',
       color: `#FFF`,
     },
-    padding: '1.75rem 0',
     borderBottom: `0.0625rem solid ${COLORS.grey.dark_1}`,
     display: 'grid',
     gridTemplateColumns: '1fr',
@@ -26,6 +25,7 @@ const styles = (theme) => ({
     justifyItems: 'center',
 
     [theme.breakpoints.up('sm')]: {
+      padding: '0.5rem',
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -34,6 +34,7 @@ const styles = (theme) => ({
   socialMediaContainer: {
     background: COLORS.white.main,
     borderRadius: '100%',
+    marginBottom: '1rem',
   },
   facebookIcon: {
     width: '2.5rem',
@@ -56,6 +57,14 @@ const styles = (theme) => ({
     alignItems: 'center',
     fontSize: '2.3125rem',
     fontFamily: 'Parisienne',
+
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '1.8rem',
+    },
+
+    [theme.breakpoints.up('md')]: {
+      fontSize: '2.3125rem',
+    },
   },
   contactContainer: {
     display: 'flex',
@@ -88,7 +97,6 @@ const styles = (theme) => ({
     gridTemplateColumns: '2rem 4rem 1fr',
   },
   footerText: {
-    fontSize: '1.1rem',
     color: '#FFF',
     letterSpacing: '0.05rem',
     fontFamily: '\'Baskervville\',serif',
@@ -129,6 +137,9 @@ const styles = (theme) => ({
       color: COLORS.grey.dark_1,
     }
   },
+  detailsContainerText: {
+    flexGrow: '0.5',
+  }
 });
 
 export default withStyles(styles)(Footer);

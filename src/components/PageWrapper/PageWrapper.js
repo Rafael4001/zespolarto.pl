@@ -5,11 +5,11 @@ import Footer from "../Footer/Footer.style";
 
 const PageWrapper = ({classes, children}) => (
   <div className={classes.pageWrapperOuter}>
-    <div className={classes.menuHomepage}><MenuComponent/></div>
-    <div className={classes.pageWrapperInner}>
-      {children}
-      <Footer/>
+    <div className={classes.menuHomepage}>
+      <MenuComponent/>
     </div>
+    {children}
+    <Footer/>
   </div>
 );
 
