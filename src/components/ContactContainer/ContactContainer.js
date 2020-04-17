@@ -26,24 +26,30 @@ class ContactContainer extends Component {
 
 
           <div className={classes.dataContainer}>
-            <Typography className={classes.contactTextContainer}>Kontakt</Typography>
+            <Typography
+              className={classes.contactTextContainer}
+              variant="h2"
+            >Kontakt</Typography>
 
             <div className={classNames(classes.subContainer, classes.textContactPage)}>
               <MailOutlineIcon className={classes.emailIconContainer}/>
               <Typography className={classNames(classes.textContactPageBold, classes.textSizeClass)}>e-mail</Typography>
-              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="mailto:zespolarto@gmail.com?subject = Feedback&body = Message">zespolarto@gmail.com</a>
+              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)}
+                 href="mailto:zespolarto@gmail.com?subject = Feedback&body = Message">zespolarto@gmail.com</a>
             </div>
 
             <div className={classNames(classes.subContainer, classes.textContactPage)}>
               <PhoneIcon className={classes.emailIconContainer}/>
               <Typography className={classNames(classes.textContactPageBold, classes.textSizeClass)}>Rafał</Typography>
-              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="tel:+48661204475">661 204 475</a>
+              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="tel:+48661204475">661
+                204 475</a>
             </div>
 
             <div className={classNames(classes.subContainer, classes.textContactPage)}>
               <PhoneIcon className={classes.emailIconContainer}/>
               <Typography className={classNames(classes.textContactPageBold, classes.textSizeClass)}>Adrian</Typography>
-              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="tel:+48796642598">796 642 598</a>
+              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="tel:+48796642598">796
+                642 598</a>
             </div>
 
             <div className={classNames(classes.FacebookMainContainer)}>

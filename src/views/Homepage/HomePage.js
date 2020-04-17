@@ -1,18 +1,19 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
+import HomepageMeta from '../../components/HomepageMeta'
 import PageWrapper from '../../components/PageWrapper';
-
 import HomepageMainPhoto from '../../components/HomepageMainPhoto';
 import DescriptionBlock from "../../components/DescriptionBlock";
 import BandMembers from "../../components/BandMembers";
 import PlayedWeddingInformationContainer from "../../components/PlayedWeddingInformationContainer";
 import OpinionsContainer from "../../components/OpinionsContainer";
 import ContactContainer from "../../components/ContactContainer";
-import PropTypes from "prop-types";
 
 
 const Homepage = () => (
   <PageWrapper>
+    <HomepageMeta/>
     <HomepageMainPhoto/>
     <DescriptionBlock/>
     <BandMembers/>

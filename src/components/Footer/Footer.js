@@ -15,7 +15,7 @@ class Footer extends Component {
     const {classes} = this.props;
 
     return (
-      <div className={classes.footerContainer}>
+      <footer className={classes.footerContainer}>
         <div className={classes.mainContainer}>
           <div className={classes.logoContainer}>
             <Link href={LINKS.HOME.HREF}>
@@ -37,7 +37,7 @@ class Footer extends Component {
             </Link>
           </div>
 
-          <div className={classes.detailsContainerText}>
+          <address className={classes.detailsContainerText}>
             <div className={classNames(classes.phoneContainer, classes.marginBottomContainer)}>
               <MailOutlineIcon className={classes.PhoneIcon}/>
               <Typography className={classes.footerText}>e-mail</Typography>
@@ -57,7 +57,7 @@ class Footer extends Component {
                 <a className={classes.detailsContent} href="tel:+48796642598">796 642 598</a>
               </div>
             </div>
-          </div>
+          </address>
 
           <div className={classes.socialMediaContainer}>
             <a href={FACEBOOK_URL} target={'_blank'}>
@@ -75,7 +75,7 @@ class Footer extends Component {
                                                                 title="Freepik">Freepik</a> from <a
             href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
-      </div>
+      </footer>
     )
   }
 }

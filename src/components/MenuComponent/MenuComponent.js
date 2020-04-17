@@ -54,14 +54,14 @@ class MenuComponent extends Component {
     const {classes} = this.props;
 
     return (
-      <div>
+      <nav>
         <div className={classes.menuWeb}>
           {this.getWebMenu()}
         </div>
         <div className={classes.menuMobile}>
           {this.getMobileMenu()}
         </div>
-      </div>
+      </nav>
     )
   }
 }

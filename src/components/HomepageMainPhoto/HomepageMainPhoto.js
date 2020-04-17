@@ -16,7 +16,7 @@ class HomepageMainPhoto extends Component {
       <div>
         <div className={classes.mainContainer}>
 
-          <div className={this.props.classes.textContainer}>
+          <aside className={this.props.classes.textContainer}>
             <Typography classes={{root: this.props.classes.subTitle,}}>Twoje wesele...</Typography>
             <div className={classes.loversImageContainer}>
               <img
@@ -26,7 +26,7 @@ class HomepageMainPhoto extends Component {
               />
             </div>
             <Typography classes={{root: classNames(classes.subTitle, classes.subTitleLeft),}}>Nasza muzyka</Typography>
-          </div>
+          </aside>
 
           <div className={classes.photoContainer}>
             <img

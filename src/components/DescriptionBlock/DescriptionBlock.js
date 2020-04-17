@@ -13,7 +13,10 @@ class DescriptionBlock extends Component {
       <div>
         <div className={this.props.classes.mainContainer}>
           <div className={this.props.classes.titleContainer}>
-            <Typography classes={{root: classes.title}}>Arto</Typography>
+            <Typography
+              classes={{root: classes.title}}
+              variant="h1"
+            >Arto</Typography>
           </div>
 
           <div className={classes.text}>
