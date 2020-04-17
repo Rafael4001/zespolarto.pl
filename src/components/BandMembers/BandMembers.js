@@ -48,7 +48,7 @@ class BandMembers extends Component {
           <div className={classes.photoContainer}>
             <img
               src={IMAGE_2}
-              alt={'photo 1'}
+              alt={'zespół Arto'}
               className={classes.photo}
             />
           </div>

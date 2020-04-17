@@ -1,10 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
 
-const HomepageMeta = () => {
+import PropTypes from 'prop-types';
+
+const HomepageMeta = ({canonicalAddress}) => {
+
+
   return (
     <Head>
-      <title>Arto | zespół muzyczny</title>
+      <title>Arto | zespół muzyczny | oprawa muzyczna na wesele</title>
       <meta
         name="description"
         content="zespolarto.pl zespół muzyczny, muzyka rozrywkowa na każdą okazję."
@@ -21,17 +25,20 @@ const HomepageMeta = () => {
         property="og:description"
         content="
         zespolarto.pl to zespół muzyczny, wykonujący muzykę rozrywkową na żywo,
-        idealny wybór na oprawę muzyczną przyjęcia weselnego, bankietu lub imprezy firmowej.
-        Doskonała zabawa do białego rana."
+        idealny wybór na oprawę muzyczną na wesele, bankiet lub imprezę firmową.
+        Doskonała zabawa do białego rana.
+        "
       />
       <meta property="og:site_name" content="Arto"/>
 
-      <link rel="canonical" href="http://www.zespolarto.pl"/>
+      <link rel="canonical" href={`http://www.zespolarto.pl${canonicalAddress}`}/>
     </Head>
   );
 };
 
-HomepageMeta.propTypes = {};
+HomepageMeta.propTypes = {
+  canonicalAddress: PropTypes.string.isRequired,
+};
 
 HomepageMeta.displayName = 'HomepageMeta';
 

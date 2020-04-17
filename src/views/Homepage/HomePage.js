@@ -13,7 +13,7 @@ import ContactContainer from "../../components/ContactContainer";
 
 const Homepage = () => (
   <PageWrapper>
-    <HomepageMeta/>
+    <HomepageMeta canonicalAddress={''}/>
     <HomepageMainPhoto/>
     <DescriptionBlock/>
     <BandMembers/>
