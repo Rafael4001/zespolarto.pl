@@ -139,7 +139,10 @@ class PlayerCustomized extends Component {
       <Media ref={c => (this.media = c)}>
         <div className={classes.mainContainer}>
           <div className={classes.albumImageContainer}>
-            <Typography className={classes.contactTextContainer}>Demo</Typography>
+            <Typography
+              className={classes.contactTextContainer}
+              variant="H2"
+            >Demo</Typography>
 
             <Typography
               className={classes.currentSong}>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>

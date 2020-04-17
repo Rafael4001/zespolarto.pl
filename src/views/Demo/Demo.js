@@ -3,11 +3,13 @@ import PropTypes from "prop-types";
 
 import PageWrapper from '../../components/PageWrapper';
 import PlayerCustomized from "../../components/PlayerCustomized";
+import HomepageMeta from "../../components/HomepageMeta";
 
 
 
 const Demo = () => (
   <PageWrapper>
+    <HomepageMeta canonical={'/demo'}/>
     <PlayerCustomized/>
   </PageWrapper>
 );

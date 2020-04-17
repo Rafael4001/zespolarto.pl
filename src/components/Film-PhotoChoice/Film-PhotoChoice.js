@@ -17,7 +17,7 @@ class FilmPhotoChoice extends Component {
           <Typography classes={{root: classes.textHeader,}}>Tutaj ukryliśmy nasze wspomnienia... </Typography>
           <img
             src={LEAF}
-            alt={'leaf'}
+            alt={'liść'}
             className={classes.leaf_icon}
           />
         </div>

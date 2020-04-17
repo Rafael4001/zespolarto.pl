@@ -21,7 +21,7 @@ class HomepageMainPhoto extends Component {
             <div className={classes.loversImageContainer}>
               <img
                 src={LOVERS}
-                alt={'backgroundPhoto'}
+                alt={'lovers'}
                 className={classes.loversImageStyle}
               />
             </div>
@@ -31,7 +31,7 @@ class HomepageMainPhoto extends Component {
           <div className={classes.photoContainer}>
             <img
               src={IMAGE_1}
-              alt={'backgroundPhoto'}
+              alt={'zespół Arto'}
               className={classes.photo}
             />
           </div>

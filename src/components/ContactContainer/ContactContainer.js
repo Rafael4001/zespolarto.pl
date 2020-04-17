@@ -19,7 +19,7 @@ class ContactContainer extends Component {
           <div className={classes.photoContainer}>
             <img
               src={IMAGE_4}
-              alt={'Arto_photo_4'}
+              alt={'zespół arto'}
               className={classes.photo}
             />
           </div>
@@ -81,7 +81,7 @@ class ContactContainer extends Component {
           <div className={classes.mapContainer}>
             <img
               src={LUBLIN_MAP}
-              alt={'Lubelskie 1'}
+              alt={'województwo Lubelskie'}
               className={classes.photoMap}
             />
           </div>
