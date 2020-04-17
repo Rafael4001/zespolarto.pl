@@ -180,7 +180,6 @@ export const YEAR_2021 = [
             },
             {
                 day: "29.05.2021",
-                free: false,
                 place: "Hrubieszów",
                 hotel: "Gniecki",
                 weekDay: WEEK_DAY.SATUDRAY,
@@ -196,10 +195,13 @@ export const YEAR_2021 = [
         days: [
             {
                 day: "05.06.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
+                place: "Zwierzyniec",
+                hotel: "Sonata",
+                weekDay: WEEK_DAY.SATUDRAY,
+                status: STATUS.BUSY,
+                "blessing": "noInfo",
+                "blessingTime": "noInfo",
+                weddingHour: "noInfo"
             },
             {
                 day: "12.06.2021",
