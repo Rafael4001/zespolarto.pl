@@ -9,7 +9,7 @@ import { YEAR_2021 } from '../../termsJSON/terminy2021';
 import { YEAR_2022 } from '../../termsJSON/terminy2022';
 
 import Months from "../../components/Months";
-import TabPanel from "./TabPanel/index";
+import TabPanel from "./TabPanel";
 
 import { STATUS } from "../../constants";
 

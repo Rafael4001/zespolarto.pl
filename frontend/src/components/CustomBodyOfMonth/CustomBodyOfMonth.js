@@ -10,7 +10,7 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import Button from '@material-ui/core/Button';
 import Collapse from '@material-ui/core/Collapse';
 
-import { STATUS, WEEK_DAY } from '../../../src/constants'
+import { STATUS, WEEK_DAY } from '../../constants'
 import PropTypes from "prop-types";
 
 
