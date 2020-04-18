@@ -1,0 +1,17 @@
+version: "2"
+services:
+  backend:
+    image: node:10
+    working_dir: /backend
+    volumes:
+      - ./backend:/backend
+    ports: ["5000:5000"]
+    command: yarn run start:dev
+  frontend:
+    image: node:10
+    depends_on: ["backend"]
+    working_dir: /frontend
+    volumes:
+      - ./frontend:/frontend
+    ports: ["3000:3000"]
+    command: yarn run dev

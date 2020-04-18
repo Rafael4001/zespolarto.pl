@@ -18,6 +18,8 @@
   },
   "scripts": {
     "dev": "next",
+    "prestartProd": "yarn install",
+    "startProd": "npm run build && npm run start",
     "build": "next build",
     "export": "next build && next export",
     "start": "next start",

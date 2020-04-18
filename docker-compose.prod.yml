@@ -1,0 +1,49 @@
+version: "2"
+networks:
+  web:
+    external: true
+services:
+  backend:
+    networks:
+      - web
+    command: yarn run start
+    volumes:
+      - ./:/arto/
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:zespolarto.pl;PathPrefix:/api"
+      - "traefik.frontend.priority=2"
+      - "traefik.protocol=http"
+      - "traefik.port=5000"
+      - "traefik.docker.network=web"
+  frontend:
+    networks:
+      - web
+    ports: []
+    command: yarn run startProd
+    restart: always
+    volumes:
+      - ./:/arto/
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:zespolarto.pl,www.zespolarto.pl"
+      - "traefik.frontend.priority=1"
+      - "traefik.protocol=http"
+      - "traefik.port=3000"
+      - "traefik.docker.network=web"
+  traefik:
+    image: traefik
+    networks:
+      - web
+    labels:
+      - "traefik.docker.network=web"
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik-prod.toml:/traefik.toml
+      - ~/arto-acme.json:/acme.json
+    restart: always
