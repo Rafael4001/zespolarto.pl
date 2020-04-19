@@ -31,9 +31,3 @@ yarn-debug.log*
 yarn-error.log*
 
 .next/
-
-
-# compiled output
-backend/dist
-backend/node_modules
-.idea
