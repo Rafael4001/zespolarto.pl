@@ -5,5 +5,9 @@ sudo service nginx restart
 git pull origin master
 pm2 delete "be"
 pm2 delete "fe"
+cd frontend
 pm2 start npm --name "be" -- run start
+cd ..
+cd backend
 pm2 start npm --name "fe" -- run start
+cd ..
