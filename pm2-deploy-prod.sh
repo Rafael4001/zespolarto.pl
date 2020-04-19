@@ -9,5 +9,5 @@ cd backend
 pm2 start npm --name "be" -- run start
 cd ..
 cd frontend
-pm2 start npm --name "fe" -- run start
+pm2 start npm --name "fe" -- run startProd
 cd ..
