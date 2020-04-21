@@ -5,7 +5,7 @@ import { ReservationsModule } from "./reservations/reservations.module";
 @Module({
   imports: [
     MongooseModule.forRoot(
-      "mongodb+srv://arto:2t3tjtsqehw8QYJN@cluster0-kl2gt.mongodb.net/nest-js?retryWrites=true&w=majority",
+      "mongodb+srv://Rafal:9dkmUTqE3YhkZSsD@cluster0-u4efe.mongodb.net/weedingTerms?retryWrites=true&w=majority",
       { useUnifiedTopology: true, useNewUrlParser: true }
     ),
     ReservationsModule
