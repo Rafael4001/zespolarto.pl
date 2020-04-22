@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/styles": "^4.5.2",
     "classnames": "^2.2.6",
+    "formik": "^2.1.4",
     "material-ui-popup-state": "^1.5.1",
     "next": "9.3.4",
     "prop-types": "15.7.2",
@@ -14,7 +15,8 @@
     "react-motion-ui-pack": "^0.10.3",
     "react-player": "1.7.0",
     "react-scripts": "^3.4.1",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "yup": "^0.28.4"
   },
   "scripts": {
     "predev": "yarn install",
