@@ -4,8 +4,5 @@
         "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.yml up --remove-orphans",
         "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --remove-orphans",
         "docker:clear": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml down"
-    },
-    "dependencies": {
-        "axios": "^0.19.2"
     }
 }
