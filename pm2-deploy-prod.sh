@@ -7,9 +7,12 @@ sudo service nginx restart
 pm2 delete "be"
 pm2 delete "fe"
 cd backend
+yarn run build
 pm2 start npm --name "be" -- run startProd
 cd ..
 cd frontend
+yarn run build
 pm2 start npm --name "fe" -- run startProd
 cd ..
+sudo nginx -t
 sudo service nginx restart

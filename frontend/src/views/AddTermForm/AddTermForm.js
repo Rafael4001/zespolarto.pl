@@ -21,27 +21,21 @@ const validationSchemaYup = Yup.object().shape({
     .required("Must enter a name"),
 })
 
+const URL = "http://zespolarto.pl/api/reservations";  //server
+// const URL="https://cors-anywhere.herokuapp.com/http://zespolarto.pl/api/reservations";  //local
 
 const AddTermForm = ({classes}) => {
   const [data, setData] = useState([]);
 
   const getReservations = () => (
-    axios.get(
-      // 'https://cors-anywhere.herokuapp.com/http://zespolarto.pl/api/reservations',
-      'http://zespolarto.pl/api/reservations',
-      // 'https://cors-anywhere.herokuapp.com/http://localhost:5000/api/reservations',
-      // 'http://localhost:5000/api/reservations',
-    )
+    axios.get(URL)
       .then(result => {
         setData(result.data)
       })
   )
 
   const createReservation = async (title, city,) => {
-    await axios.post(
-      'https://cors-anywhere.herokuapp.com/http://zespolarto.pl/api/reservations',
-      // 'https://cors-anywhere.herokuapp.com/http://localhost:5000/api/reservations',
-      // 'http://localhost:5000/api/reservations',
+    await axios.post(URL,
       {
         title,
         city,
