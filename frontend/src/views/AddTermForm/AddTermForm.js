@@ -27,7 +27,8 @@ const AddTermForm = ({classes}) => {
 
   const getReservations = () => (
     axios.get(
-      'https://cors-anywhere.herokuapp.com/http://zespolarto.pl/api/reservations',
+      // 'https://cors-anywhere.herokuapp.com/http://zespolarto.pl/api/reservations',
+      'http://zespolarto.pl/api/reservations',
       // 'https://cors-anywhere.herokuapp.com/http://localhost:5000/api/reservations',
       // 'http://localhost:5000/api/reservations',
     )

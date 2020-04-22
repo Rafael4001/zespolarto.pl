@@ -12,3 +12,4 @@ cd ..
 cd frontend
 pm2 start npm --name "fe" -- run startProd
 cd ..
+sudo service nginx restart
