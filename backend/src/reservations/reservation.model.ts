@@ -5,9 +5,9 @@ export const ReservationSchema = new mongoose.Schema({
   weddingDate: {type: String, required: true},
   weddingAddress: {type: String, required: true},
   weddingHotelName: {type: String, required: true},
-  weddingHotelAddress: {type: String, required: true},
+  weddingHotelAddress: {type: String},
   weddingStatus: {type: String, required: true},
-  weddingAdditionalDetails: {type: String, required: true},
+  weddingAdditionalDetails: {type: String},
 });
 
 export class Reservation {

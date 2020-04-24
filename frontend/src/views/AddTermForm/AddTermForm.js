@@ -23,14 +23,25 @@ const AddTermForm = ({classes}) => {
   )
 
   const createReservation = async (values) => {
-    console.log('values', values)
+    const {
+      weddingDate,
+      weddingAddress,
+      weddingHotelName,
+      weddingHotelAddress,
+      weddingStatus,
+      weddingAdditionalDetails,
+    } = values
 
-    // await axios.post(API_URL,
-    //   {
-    //     title,
-    //     city,
-    //   }
-    // );
+    await axios.post(API_URL,
+      {
+        weddingDate,
+        weddingAddress,
+        weddingHotelName,
+        weddingHotelAddress,
+        weddingStatus,
+        weddingAdditionalDetails,
+      }
+    );
     getReservations();
   }
 
@@ -55,10 +66,6 @@ const AddTermForm = ({classes}) => {
 
   return (
     <>
-      {/*{data.map(item => (*/}
-      {/*  <div key={item._id}>{item.title}</div>*/}
-      {/*))}*/}
-
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchemaYup}
@@ -183,6 +190,13 @@ const AddTermForm = ({classes}) => {
           </form>
         )}
       </Formik>
+
+
+      -----------------------------------------
+      {data.map(item => (
+        <div key={item._id}>{item.title}</div>
+      ))}
+
 
       {/*<button*/}
       {/*  onClick={getReservations}*/}
