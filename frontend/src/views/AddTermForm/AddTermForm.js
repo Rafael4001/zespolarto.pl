@@ -1,46 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from "prop-types";
 import { Formik } from 'formik';
-import * as Yup from 'yup';
 import axios from 'axios';
 
+import { validationSchemaYup } from './AddTermValidation'
 
 import Error from '../../components/Error'
+import { API_URL } from "../../conf";
+import { STATUS_SELECT } from "../../constants";
 
 // instructions
 //https://www.youtube.com/watch?v=TxEVnaISj1w
-
-const validationSchemaYup = Yup.object().shape({
-  name: Yup.string()
-    .min(2, "must have a character")
-    .max(255, "Must be shorterr than 255")
-    .required("Must enter a name"),
-  email: Yup.string()
-    .email("must be a valid email address")
-    .max(255, "Must be shorterr than 255")
-    .required("Must enter a name"),
-})
-
-const URL = "http://zespolarto.pl/api/reservations";  //server
-// const URL="https://cors-anywhere.herokuapp.com/http://zespolarto.pl/api/reservations";  //local
 
 const AddTermForm = ({classes}) => {
   const [data, setData] = useState([]);
 
   const getReservations = () => (
-    axios.get(URL)
+    axios.get(API_URL)
       .then(result => {
         setData(result.data)
       })
   )
 
-  const createReservation = async (title, city,) => {
-    await axios.post(URL,
-      {
-        title,
-        city,
-      }
-    );
+  const createReservation = async (values) => {
+    console.log('values', values)
+
+    // await axios.post(API_URL,
+    //   {
+    //     title,
+    //     city,
+    //   }
+    // );
     getReservations();
   }
 
@@ -48,28 +38,34 @@ const AddTermForm = ({classes}) => {
     getReservations()
   }, []);
 
-  console.log(data)
+  console.log('data', data)
 
-  const onSubmit = () => {
-    createReservation('pierwszy tytul', 'Krasnobród')
+  const onSubmit = (values) => {
+    createReservation(values)
+  }
+
+  const initialValues = {
+    weddingDate: "",
+    weddingAddress: "",
+    weddingHotelName: "",
+    weddingHotelAddress: "",
+    weddingStatus: "",
   }
 
   return (
     <>
-      {data.map(item => (
-        <div key={item._id}>{item.title}</div>
-      ))}
+      {/*{data.map(item => (*/}
+      {/*  <div key={item._id}>{item.title}</div>*/}
+      {/*))}*/}
+
       <Formik
-        initialValues={{
-          name: "",
-          email: "",
-        }}
+        initialValues={initialValues}
         validationSchema={validationSchemaYup}
         onSubmit={(values, {setSubmitting, resetForm}) => {
-          console.log(values)
           // setSubmitting(true);
           // resetForm();
-          onSubmit()
+          onSubmit(values)
+          resetForm()
 
         }}
       >
@@ -85,34 +81,90 @@ const AddTermForm = ({classes}) => {
           <form onSubmit={handleSubmit}>
             {/*{JSON.stringify(values)}*/}
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Data wesela</label>
               <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="wpisz imie"
+                type="date"
+                name="weddingDate"
+                id="weddingDate"
+                placeholder="wpisz datę wesela"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.name}
-                className={touched.name && errors.name && classes.errorText}
+                value={values.weddingDate}
+                className={touched.weddingDate && errors.weddingDate && classes.errorText}
               />
-              <Error touched={touched.name} message={errors.name}/>
+              <Error touched={touched.weddingDate} message={errors.weddingDate}/>
             </div>
 
             <div>
-              <label htmlFor="Email">Email</label>
+              <label htmlFor="name">Miejscowość</label>
               <input
                 type="text"
-                name="email"
-                id="email"
-                placeholder="wpisz email"
+                name="weddingAddress"
+                id="weddingAddress"
+                placeholder="miejscowość"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.email}
-                className={touched.email && errors.email && classes.errorText}
+                value={values.weddingAddress}
+                className={touched.weddingAddress && errors.weddingAddress && classes.errorText}
               />
-              <Error touched={touched.email} message={errors.email}/>
+              <Error touched={touched.weddingAddress} message={errors.weddingAddress}/>
             </div>
+
+            <div>
+              <label htmlFor="name">Dom weselny</label>
+              <input
+                type="text"
+                name="weddingHotelName"
+                id="weddingHotelName"
+                placeholder="Nazwa domu weselnego"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.weddingHotelName}
+                className={touched.weddingHotelName && errors.weddingHotelName && classes.errorText}
+              />
+              <Error touched={touched.weddingHotelName} message={errors.weddingHotelName}/>
+            </div>
+
+            <div>
+              <label htmlFor="name">Dom weselny - adres</label>
+              <input
+                type="text"
+                name="weddingHotelAddress"
+                id="weddingHotelAddress"
+                placeholder="adres domu weselnego"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.weddingHotelAddress}
+                className={touched.weddingHotelAddress && errors.weddingHotelAddress && classes.errorText}
+              />
+              <Error touched={touched.weddingHotelAddress} message={errors.weddingHotelAddress}/>
+            </div>
+
+            <div>
+              <label htmlFor="name">Status terminu</label>
+              <select
+                id="weddingStatus"
+                name="weddingStatus"
+                // placeholder="status"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.weddingStatus}
+                className={touched.weddingStatus && errors.weddingStatus && classes.errorText}
+              >
+                {STATUS_SELECT.map(status=>(
+                  <option key={status.name} value={status.value}>{status.name}</option>
+                ))}
+              </select>
+              <Error touched={touched.weddingStatus} message={errors.weddingStatus}/>
+            </div>
+
+
+
+
+
+
+
+
 
             <div>
               <button

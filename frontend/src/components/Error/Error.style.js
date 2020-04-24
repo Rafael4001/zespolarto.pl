@@ -6,6 +6,7 @@ import Error from './Error'
 const styles = {
   errorMain: {
     color: 'red',
+    fontSize: '0.625rem'
   }
 };
 
