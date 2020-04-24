@@ -117,6 +117,7 @@ export const STATUS = {
 };
 
 export const STATUS_SELECT = [
+  {name: 'Wybierz status', value: ""},
   {name: 'Wolny', value: STATUS.EMPTY},
   {name: 'Zajęty', value: STATUS.BUSY},
   {name: 'Rezerwacja wstępna', value: STATUS.RESERVATION},

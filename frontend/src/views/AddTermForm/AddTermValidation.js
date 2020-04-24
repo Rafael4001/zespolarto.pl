@@ -16,9 +16,6 @@ export const validationSchemaYup = Yup.object().shape({
     .max(255, "Must be shorterr than 255")
     .required("pole jest wymagane"),
 
-  weddingHotelAddress: Yup.string()
-    .min(2, "required more then 2 signs")
-    .max(255, "Must be shorterr than 255")
+  weddingStatus: Yup.string()
     .required("pole jest wymagane"),
-
 })

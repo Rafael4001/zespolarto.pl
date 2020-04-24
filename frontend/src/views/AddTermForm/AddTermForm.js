@@ -38,7 +38,7 @@ const AddTermForm = ({classes}) => {
     getReservations()
   }, []);
 
-  console.log('data', data)
+  // console.log('data', data)
 
   const onSubmit = (values) => {
     createReservation(values)
@@ -50,6 +50,7 @@ const AddTermForm = ({classes}) => {
     weddingHotelName: "",
     weddingHotelAddress: "",
     weddingStatus: "",
+    weddingAdditionalDetails: "",
   }
 
   return (
@@ -126,7 +127,7 @@ const AddTermForm = ({classes}) => {
             </div>
 
             <div>
-              <label htmlFor="name">Dom weselny - adres</label>
+              <label htmlFor="name">Adres domu weselnego</label>
               <input
                 type="text"
                 name="weddingHotelAddress"
@@ -145,26 +146,32 @@ const AddTermForm = ({classes}) => {
               <select
                 id="weddingStatus"
                 name="weddingStatus"
-                // placeholder="status"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.weddingStatus}
                 className={touched.weddingStatus && errors.weddingStatus && classes.errorText}
               >
-                {STATUS_SELECT.map(status=>(
+                {STATUS_SELECT.map(status => (
                   <option key={status.name} value={status.value}>{status.name}</option>
                 ))}
               </select>
               <Error touched={touched.weddingStatus} message={errors.weddingStatus}/>
             </div>
 
-
-
-
-
-
-
-
+            <div>
+              <label htmlFor="name">Szczegóły dodatkowe</label>
+              <input
+                type="text"
+                name="weddingAdditionalDetails"
+                id="weddingAdditionalDetails"
+                placeholder="adres domu weselnego"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.weddingAdditionalDetails}
+                className={touched.weddingAdditionalDetails && errors.weddingAdditionalDetails && classes.errorText}
+              />
+              <Error touched={touched.weddingAdditionalDetails} message={errors.weddingAdditionalDetails}/>
+            </div>
 
             <div>
               <button
@@ -176,10 +183,12 @@ const AddTermForm = ({classes}) => {
           </form>
         )}
       </Formik>
-      <button
-        onClick={getReservations}
-      >pobierz
-      </button>
+
+      {/*<button*/}
+      {/*  onClick={getReservations}*/}
+      {/*>pobierz*/}
+      {/*</button>*/}
+
     </>
   )
 }
