@@ -6,7 +6,7 @@ import axios from 'axios';
 import { validationSchemaYup } from './AddTermValidation'
 
 import Error from '../../components/Error'
-import { API_URL } from "../../conf";
+import { API_URL } from "../../config";
 import { STATUS_SELECT } from "../../constants";
 
 // instructions
