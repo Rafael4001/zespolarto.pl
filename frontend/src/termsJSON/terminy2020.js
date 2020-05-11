@@ -205,11 +205,9 @@ export const YEAR_2020 = [
             },
             {
                 day: "20.06.2020",
-                place: "Rozłopy",
-                hotel: "Kamienny Zajazd",
-                address: "ul. Rozłopy 20",
-                status: STATUS.BUSY,
-                information: 'koło Szczebrzeszyna',
+                place: "",
+                hotel: "",
+                status: STATUS.EMPTY
             },
             {
                 day: "27.06.2020",
