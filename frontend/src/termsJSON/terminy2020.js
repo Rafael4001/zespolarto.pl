@@ -352,10 +352,9 @@ export const YEAR_2020 = [
             },
             {
                 day: "10.10.2020",
-                place: "Hrubieszów",
-                hotel: "U Chłopa",
-                address: "",
-                status: STATUS.BUSY
+                place: "",
+                hotel: "",
+                status: STATUS.EMPTY
             },
             {
                 day: "17.10.2020",
