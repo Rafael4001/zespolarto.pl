@@ -181,13 +181,9 @@ export const YEAR_2020 = [
         days: [
             {
                 day: "06.06.2020",
-                place: "Bogucin",
-                hotel: "Dwór Bogucin",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
+                place: "",
+                hotel: "",
+                status: STATUS.EMPTY
             },
             {
                 day: "11.06.2020",
