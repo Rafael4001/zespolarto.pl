@@ -194,6 +194,14 @@ export const YEAR_2021 = [
         name: "Czerwiec",
         days: [
             {
+                day: "03.06.2020",
+                place: "",
+                hotel: "",
+                weekDay: WEEK_DAY.THURSDAY,
+                status: STATUS.HOLIDAY,
+                information: "BOŻE CIAŁO"
+            },
+            {
                 day: "05.06.2021",
                 place: "Zwierzyniec",
                 hotel: "Sonata",
@@ -251,10 +259,14 @@ export const YEAR_2021 = [
             },
             {
                 day: "17.07.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
+                free: false,
+                place: "Modliborzyce",
+                hotel: "Osada Leśna Doboszówka",
+                weekDay: WEEK_DAY.SATUDRAY,
+                status: STATUS.BUSY,
+                "blessing": "noInfo",
+                "blessingTime": "noInfo",
+                weddingHour: "16.00"
             },
             {
                 day: "24.07.2021",

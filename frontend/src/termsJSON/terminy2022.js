@@ -221,9 +221,12 @@ export const YEAR_2022 = [
             },
             {
                 day: "30.07.2022",
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
+                place: "Mircze",
+                hotel: "Dom weselny Jaśko",
+                address: "",
+                status: STATUS.BUSY,
+                weddingHour: "17.00",
+
             }
         ]
     },
