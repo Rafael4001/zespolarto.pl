@@ -1,4 +1,4 @@
-import { STATUS, WEEK_DAY } from '../constants'
+import {STATUS, WEEK_DAY} from '../constants'
 
 
 export const YEAR_2022 = [
@@ -180,9 +180,11 @@ export const YEAR_2022 = [
             },
             {
                 day: "18.06.2022",
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
+                place: "Tyszowce",
+                hotel: "Dom weselny \"Orfeusz\"",
+                weekDay: WEEK_DAY.SATUDRAY,
+                status: STATUS.BUSY,
+                weddingHour: "brak"
             },
             {
                 day: "25.06.2022",
@@ -215,9 +217,11 @@ export const YEAR_2022 = [
             },
             {
                 day: "23.07.2022",
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
+                place: "Obsza",
+                hotel: "Dom weselny \"Pensjonat Roztocze\"",
+                address: "Obsza 138",
+                status: STATUS.BUSY,
+                weddingHour: "15.00",
             },
             {
                 day: "30.07.2022",
@@ -226,7 +230,6 @@ export const YEAR_2022 = [
                 address: "",
                 status: STATUS.BUSY,
                 weddingHour: "17.00",
-
             }
         ]
     },
