@@ -23,7 +23,7 @@ class PlayedWeddingInformationContainer extends Component {
                 className={classes.brideIcon}
               />
             </div>
-            <div classes={{root: classes.text,}}>
+            <div className={classes.text}>
               <p>Zaufało nam już <span className={classes.happyPairs}>ponad
                 <span className={classes.happyPairsTextNUmber}> 250 </span>
                 par młodych</span></p>
