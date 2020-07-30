@@ -184,7 +184,8 @@ export const YEAR_2022 = [
                 hotel: "Dom weselny \"Orfeusz\"",
                 weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
-                weddingHour: "brak"
+                // weddingHour: "brak",
+                information: "Rafał gra jako DJ na poprawinach na drugi dzien",
             },
             {
                 day: "25.06.2022",

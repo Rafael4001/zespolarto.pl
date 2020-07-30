@@ -294,7 +294,8 @@ export const YEAR_2021 = [
                 hotel: "Jaśko",
                 weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
-                information: "Nie będzie Rafała i Darii",
+                // information: "Nie będzie Rafała i Darii",
+                information: "",
                 "blessing": "noInfo",
                 "blessingTime": "noInfo",
                 weddingHour: "noInfo"
@@ -337,9 +338,12 @@ export const YEAR_2021 = [
             {
                 day: "04.09.2021",
                 free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
+                weekDay: WEEK_DAY.SUNDAY,
+                status: STATUS.BUSY,
+                place: "Hrubieszów",
+                hotel: "\"Browar Sulewski\"",
+                information: "panna Młoda z Werbkowic",
+                weddingHour: "16.00"
             },
             {
                 day: "11.09.2021",
