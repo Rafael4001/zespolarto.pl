@@ -17,8 +17,7 @@ const Homepage = () => (
     <HomepageMainPhoto/>
     <DescriptionBlock/>
     <BandMembers/>
-    {/*trzeba sie zastanowic czy dodaj to ponizej*/}
-    {/*<PlayedWeddingInformationContainer/>*/}
+    <PlayedWeddingInformationContainer/>
     {/*<OpinionsContainer/>*/}
     {/*<ContactContainer/>*/}
   </PageWrapper>
