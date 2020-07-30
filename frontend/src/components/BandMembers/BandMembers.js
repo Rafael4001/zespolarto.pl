@@ -20,7 +20,7 @@ const BAND_MEMBERS = [
     description: 'wokal, gitara basowa'
   },
   {
-    name: 'Tomasz',
+    name: 'Zbyszek',
     description: 'perkusja'
   },
 ];
