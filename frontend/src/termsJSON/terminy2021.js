@@ -151,7 +151,7 @@ export const YEAR_2021 = [
                 place: "",
                 hotel: "",
                 status: STATUS.HOLIDAY,
-                information: "weekend majowy"
+                information: "Ślub Piotrka Cz. = weekend majowy"
             },
             {
                 day: "08.05.2021",
@@ -307,12 +307,24 @@ export const YEAR_2021 = [
                 status: STATUS.HOLIDAY,
                 information: "zostawić koniecznie wolne",
             },
+            // {
+            //     day: "21.08.2021",
+            //     free: true,
+            //     place: "",
+            //     hotel: "",
+            //     status: STATUS.EMPTY
+            // },
             {
                 day: "21.08.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
+                free: false,
+                place: "Ruda Różaniecka",
+                hotel: "Karczma pod szczęśliwym karpiem",
+                weekDay: WEEK_DAY.SATUDRAY,
+                status: STATUS.BUSY,
+                information: "",
+                "blessing": "noInfo",
+                "blessingTime": "noInfo",
+                weddingHour: "noInfo"
             },
             {
                 day: "28.08.2021",
@@ -338,7 +350,7 @@ export const YEAR_2021 = [
             {
                 day: "04.09.2021",
                 free: true,
-                weekDay: WEEK_DAY.SUNDAY,
+                weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 place: "Hrubieszów",
                 hotel: "\"Browar Sulewski\"",
