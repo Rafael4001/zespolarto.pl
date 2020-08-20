@@ -169,14 +169,16 @@ export const YEAR_2021 = [
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "22.05.2021",
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "29.05.2021",
@@ -216,14 +218,16 @@ export const YEAR_2021 = [
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "19.06.2021",
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "26.06.2021",
@@ -244,7 +248,8 @@ export const YEAR_2021 = [
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "10.07.2021",
@@ -273,14 +278,16 @@ export const YEAR_2021 = [
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "31.07.2021",
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             }
         ]
     },
@@ -307,13 +314,6 @@ export const YEAR_2021 = [
                 status: STATUS.HOLIDAY,
                 information: "zostawić koniecznie wolne",
             },
-            // {
-            //     day: "21.08.2021",
-            //     free: true,
-            //     place: "",
-            //     hotel: "",
-            //     status: STATUS.EMPTY
-            // },
             {
                 day: "21.08.2021",
                 free: false,
@@ -333,6 +333,7 @@ export const YEAR_2021 = [
                 hotel: "",
                 weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "29.08.2021",
@@ -362,21 +363,24 @@ export const YEAR_2021 = [
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "18.09.2021",
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "25.09.2021",
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             }
         ]
     },
@@ -388,7 +392,8 @@ export const YEAR_2021 = [
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "09.10.2021",
@@ -406,21 +411,24 @@ export const YEAR_2021 = [
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "23.10.2021",
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             },
             {
                 day: "30.10.2021",
                 free: true,
                 place: "",
                 hotel: "",
-                status: STATUS.EMPTY
+                status: STATUS.HOLIDAY,
+                information: "zostawione wolne"
             }
         ]
     },
