@@ -322,7 +322,7 @@ export const YEAR_2020 = [
                 "blessing": "tak",
                 "blessingTime": "noInfo",
                 weddingHour: "noInfo",
-                information: "przeniesione z 30.05.2020",
+                information: `przeniesione z 30.05.2020, Nie będzie Zbyszka`,
             },
             {
                 day: "26.09.2020",
@@ -340,7 +340,8 @@ export const YEAR_2020 = [
                 place: "Wysokie",
                 hotel: "Zajazd \"Alfred\"",
                 address: "",
-                status: STATUS.BUSY
+                status: STATUS.BUSY,
+                information: `Nie będzie Zbyszka`,
             },
             {
                 day: "10.10.2020",
