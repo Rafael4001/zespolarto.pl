@@ -303,13 +303,9 @@ export const YEAR_2020 = [
             },
             {
                 day: "13.09.2020",
-                place: "Hrubieszów",
-                hotel: "Gniecki",
-                address: "ul. kolejowa",
-                weekDay: WEEK_DAY.SUNDAY,
-                status: STATUS.BUSY,
-                information: "przeniesione z 16.05.2020"
-
+                place: "",
+                hotel: "",
+                status: STATUS.EMPTY
             },
             {
                 day: "19.09.2020",
