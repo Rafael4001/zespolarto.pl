@@ -168,9 +168,13 @@ export const YEAR_2022 = [
         days: [
             {
                 day: "04.06.2022",
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
+                place: "Zwierzyniec",
+                hotel: "Sonata",
+                weekDay: WEEK_DAY.SATUDRAY,
+                status: STATUS.BUSY,
+                "blessing": "Nie ma",
+                "blessingTime": "---",
+                weddingHour: "17.00"
             },
             {
                 day: "11.06.2022",

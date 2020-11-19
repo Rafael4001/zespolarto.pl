@@ -205,13 +205,9 @@ export const YEAR_2021 = [
             },
             {
                 day: "05.06.2021",
-                place: "Zwierzyniec",
-                hotel: "Sonata",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
+                place: "",
+                hotel: "",
+                status: STATUS.EMPTY
             },
             {
                 day: "12.06.2021",
