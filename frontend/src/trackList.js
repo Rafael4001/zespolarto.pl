@@ -8,12 +8,12 @@ export const TRACK_LIST = [
     artist: 'Poparzeni kawą trzy',
     imgSrc: SONGS_IMAGES.poparzeniKawaTrzy,
   },
-  {
-    name: 'Kici kici miau',
-    mp3Name: 'kici_kici_mial',
-    artist: 'Marcus',
-    imgSrc: SONGS_IMAGES.marcus,
-  },
+  // {
+  //   name: 'Kici kici miau',
+  //   mp3Name: 'kici_kici_mial',
+  //   artist: 'Marcus',
+  //   imgSrc: SONGS_IMAGES.marcus,
+  // },
   {
     name: 'Konik na biegunach',
     mp3Name: 'konik_na_biegunach',
