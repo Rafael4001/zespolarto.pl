@@ -1,20 +1,19 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import PropTypes from "prop-types";
 import AppBar from '@material-ui/core/AppBar';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 
-import { YEAR_2020 } from '../../termsJSON/terminy2020';
-import { YEAR_2021 } from '../../termsJSON/terminy2021';
-import { YEAR_2022 } from '../../termsJSON/terminy2022';
+import {YEAR_2020} from '../../termsJSON/terminy2020';
+import {YEAR_2021} from '../../termsJSON/terminy2021';
+import {YEAR_2022} from '../../termsJSON/terminy2022';
 
 import Months from "../../components/Months";
 import TabPanel from "./TabPanel";
 
-import { STATUS } from "../../constants";
+import {STATUS} from "../../constants";
 
 
-const YEAR_2020_TITLE_TEXT = "2020";
 const YEAR_2021_TITLE_TEXT = "2021";
 const YEAR_2022_TITLE_TEXT = "2022";
 
@@ -44,10 +43,6 @@ class Terms extends Component {
         const {value} = this.state;
         const years = [
             {
-                name: YEAR_2020_TITLE_TEXT,
-                details: YEAR_2020,
-            },
-            {
                 name: YEAR_2021_TITLE_TEXT,
                 details: YEAR_2021,
             },
@@ -60,7 +55,7 @@ class Terms extends Component {
             let allweeddings = 0;
 
             yearDetails.map((month) => {
-                const weddingsAmount = month.days.filter(function(element) {
+                const weddingsAmount = month.days.filter(function (element) {
                     return howMuchTermsWithStatus(element, STATUS.BUSY)
                 });
                 allweeddings = allweeddings + weddingsAmount.length;

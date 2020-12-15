@@ -248,6 +248,17 @@ export const YEAR_2021 = [
                 information: "zostawione wolne"
             },
             {
+                day: "07.07.2021",
+                free: false,
+                place: "Tyszowce",
+                hotel: "Szewska Pasja (sala na dole)",
+                weekDay: WEEK_DAY.WEDNESTDAY,
+                status: STATUS.BUSY,
+                "blessing": "noInfo",
+                "blessingTime": "noInfo",
+                weddingHour: "noInfo"
+            },
+            {
                 day: "10.07.2021",
                 free: false,
                 place: "Pawłów",
