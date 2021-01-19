@@ -289,9 +289,11 @@ export const YEAR_2022 = [
       },
       {
         day: "17.09.2022",
+        free: true,
         place: "",
         hotel: "",
-        status: STATUS.EMPTY
+        status: STATUS.HOLIDAY,
+        information: "zostawione wolne, Darii nie będzię"
       },
       {
         day: "24.09.2022",
@@ -312,9 +314,14 @@ export const YEAR_2022 = [
       },
       {
         day: "08.10.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        place: "Hrubieszów",
+        hotel: "Gniecki",
+        weekDay: WEEK_DAY.SATUDRAY,
+        status: STATUS.BUSY,
+        "blessing": "noInfo",
+        "blessingTime": "noInfo",
+        weddingHour: "noInfo",
+        information: "przekładane z 29.05.2021"
       },
       {
         day: "15.10.2022",
