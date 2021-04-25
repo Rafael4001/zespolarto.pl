@@ -1,3 +1,5 @@
+export const passwordTerms='1235'
+
 export const IMAGE_1 = '../static/image/photo_1.png';
 export const IMAGE_2 = '../static/image/photo_2_small.jpg';
 export const IMAGE_3 = '../static/image/photo_3_small.jpg';

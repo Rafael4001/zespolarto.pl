@@ -1,10 +1,9 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import PropTypes from "prop-types";
 import AppBar from '@material-ui/core/AppBar';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 
-import {YEAR_2020} from '../../termsJSON/terminy2020';
 import {YEAR_2021} from '../../termsJSON/terminy2021';
 import {YEAR_2022} from '../../termsJSON/terminy2022';
 
@@ -18,84 +17,78 @@ const YEAR_2021_TITLE_TEXT = "2021";
 const YEAR_2022_TITLE_TEXT = "2022";
 
 function a11yProps(index) {
-    return {
-        id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
-    };
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
 }
 
 const howMuchTermsWithStatus = (element, status) => {
-    return element.status === status;
+  return element.status === status;
 };
 
-class Terms extends Component {
-    state = {
-        value: 0
-    };
+const Terms = ({classes}) => {
+  const [value, setValue] = useState(0);
 
-    handleChange = (event, newValue) => {
-        this.setState({value: newValue})
-    };
+  const handleChange = (event, newValue) => {
+    setValue(newValue)
+  };
+
+  const years = [
+    {
+      name: YEAR_2021_TITLE_TEXT,
+      details: YEAR_2021,
+    },
+    {
+      name: YEAR_2022_TITLE_TEXT,
+      details: YEAR_2022,
+    }
+  ];
+
+  const getWeddingsYearAmount = (yearDetails) => {
+    let allWeddings = 0;
+
+    yearDetails.map((month) => {
+      const weddingsAmount = month.days.filter(function (element) {
+        return howMuchTermsWithStatus(element, STATUS.BUSY)
+      });
+      allWeddings = allWeddings + weddingsAmount.length;
+    });
+
+    return allWeddings
+  };
 
 
-    render() {
-        const {classes} = this.props;
-        const {value} = this.state;
-        const years = [
-            {
-                name: YEAR_2021_TITLE_TEXT,
-                details: YEAR_2021,
-            },
-            {
-                name: YEAR_2022_TITLE_TEXT,
-                details: YEAR_2022,
-            }
-        ];
-        const getWeddingsYearAmount = (yearDetails) => {
-            let allweeddings = 0;
+  return (
+    <div className={classes.root}>
+      <AppBar position="fixed">
+        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+          {years.map((year, id) => {
+            const label = `${year.name}`;
 
-            yearDetails.map((month) => {
-                const weddingsAmount = month.days.filter(function (element) {
-                    return howMuchTermsWithStatus(element, STATUS.BUSY)
-                });
-                allweeddings = allweeddings + weddingsAmount.length;
-            });
+            return (
+              <Tab key={year.name} label={label} {...a11yProps(id)} />
+            )
+          })}
+        </Tabs>
+      </AppBar>
 
-            return allweeddings
-        };
-
+      {years.map((year, id) => {
+        const weddingAmount = getWeddingsYearAmount(year.details);
 
         return (
-            <div className={classes.root}>
-                <AppBar position="fixed">
-                    <Tabs value={value} onChange={this.handleChange} aria-label="simple tabs example">
-                        {years.map((year, id) => {
-                            const label = `${year.name}`;
-
-                            return (
-                                <Tab key={year.name} label={label} {...a11yProps(id)} />
-                            )
-                        })}
-                    </Tabs>
-                </AppBar>
-
-                {years.map((year, id) => {
-                    const weddingAmount = getWeddingsYearAmount(year.details);
-
-                    return (
-                        <TabPanel key={id} value={value} index={id}>
-                            <Months table={year.details} weddingAmount={weddingAmount}/>
-                        </TabPanel>
-                    )
-                })}
-            </div>
+          <TabPanel key={id} value={value} index={id}>
+            <Months table={year.details} weddingAmount={weddingAmount}/>
+          </TabPanel>
         )
-    }
+      })}
+    </div>
+  )
 };
 
 
 Terms.propTypes = {
-    classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 Terms.displayName = 'Terms';

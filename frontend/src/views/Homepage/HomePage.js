@@ -13,27 +13,28 @@ import ContactContainer from "../../components/ContactContainer";
 
 
 const Homepage = ({classes}) => {
-  const [isLoading, setIsLoading] = useState(true)
 
   return (
     <div>
-      {
-        isLoading &&
-          <div className={classes.loadingContainer}>
-            <CircularProgress color="secondary"/>
-            <span className={classes.loadingText}>Loading...</span>
-          </div>
-      }
+      {/*{*/}
+      {/*  isLoading &&*/}
+      {/*  <div className={classes.loadingContainer}>*/}
+      {/*    <CircularProgress color="secondary"/>*/}
+      {/*    <span className={classes.loadingText}>Loading...</span>*/}
+      {/*  </div>*/}
+      {/*}*/}
 
-      <PageWrapper>
-        <HomepageMeta canonicalAddress={''}/>
-        <HomepageMainPhoto setIsLoading={setIsLoading}/>
-        <DescriptionBlock/>
-        <BandMembers/>
-        <PlayedWeddingInformationContainer/>
-        {/*<OpinionsContainer/>*/}
-        {/*<ContactContainer/>*/}
-      </PageWrapper>
+      {/*<PageWrapper classes={isLoading && classes.hideCustom}>*/}
+
+        <PageWrapper>
+          <HomepageMeta canonicalAddress={''}/>
+          <HomepageMainPhoto />
+          <DescriptionBlock/>
+          <BandMembers/>
+          <PlayedWeddingInformationContainer/>
+          {/*<OpinionsContainer/>*/}
+          {/*<ContactContainer/>*/}
+        </PageWrapper>
     </div>
 
 

@@ -17,7 +17,6 @@ const styles = (theme) => ({
       marginTop: '1rem',
       color: `${COLORS.grey.dark}`
     }
-
   }
 );
 

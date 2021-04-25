@@ -1,3 +1,3 @@
-import Terms from '../src/views/Terms';
+import Terms from '../src/views/TermPage';
 
 export default Terms;
