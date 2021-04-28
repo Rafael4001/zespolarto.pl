@@ -155,14 +155,10 @@ export const YEAR_2021 = [
             },
             {
                 day: "08.05.2021",
-                free: false,
-                place: "Hrubieszów",
-                hotel: "Gniecki",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
+                free: true,
+                place: "",
+                hotel: "",
+                status: STATUS.EMPTY
             },
             {
                 day: "15.05.2021",
