@@ -359,6 +359,15 @@ export const YEAR_2021 = [
                 weddingHour: "16.00"
             },
             {
+                day: "10.09.2021",
+                free: true,
+                weekDay: WEEK_DAY.FRIDAY,
+                place: "",
+                hotel: "",
+                status: STATUS.HOLIDAY,
+                information: "Wesele Piotrka Czarneckiego"
+            },
+            {
                 day: "11.09.2021",
                 free: true,
                 place: "",
