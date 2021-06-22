@@ -254,8 +254,8 @@ export const YEAR_2021 = [
             {
                 day: "10.07.2021",
                 free: false,
-                place: "Pawłów",
-                hotel: "Regent",
+                place: "Pokrówka",
+                hotel: "Diana 1",
                 weekDay: WEEK_DAY.SATUDRAY,
                 status: STATUS.BUSY,
                 "blessing": "noInfo",
