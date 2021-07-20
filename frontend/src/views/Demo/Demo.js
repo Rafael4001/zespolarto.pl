@@ -9,7 +9,7 @@ import HomepageMeta from "../../components/HomepageMeta";
 
 const Demo = () => (
   <PageWrapper>
-    <HomepageMeta canonical={'/demo'}/>
+    <HomepageMeta canonicalAddress={'/demo'}/>
     <PlayerCustomized/>
   </PageWrapper>
 );

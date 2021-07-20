@@ -141,7 +141,7 @@ class PlayerCustomized extends Component {
           <div className={classes.albumImageContainer}>
             <Typography
               className={classes.contactTextContainer}
-              variant="H2"
+              variant="h2"
             >Demo</Typography>
 
             <Typography

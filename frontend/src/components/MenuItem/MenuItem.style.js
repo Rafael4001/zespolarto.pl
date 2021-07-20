@@ -1,7 +1,7 @@
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 
 import MenuItem from './MenuItem'
-import { COLORS } from "../../colors";
+import {COLORS} from "../../colors";
 
 
 const styles = (theme) => ({
@@ -33,7 +33,17 @@ const styles = (theme) => ({
     },
 
   },
-  text: {
+  navItem: {
+    border: 'none',
+    height: '3rem',
+    margin: '0.2rem 0.2rem',
+    display: 'flex',
+    outline: 'none',
+    padding: '0 2rem',
+    alignItems: 'center',
+    borderBottom: 'solid 1px #F2F2F2',
+    backgroundColor: '#fff',
+
     fontSize: '1.3rem',
     fontWeight: 300,
     fontFamily: '\'Baskervville\',serif',
@@ -41,6 +51,13 @@ const styles = (theme) => ({
     '&:focus': {
       outline: 'none',
     },
+    '&:hover': {
+      borderBottom: `solid ${COLORS.red.main} 1px`,
+    },
+  },
+  activeLink: {
+    color: COLORS.red.main,
+    borderBottom: `solid ${COLORS.red.main} 1px`,
   }
 });
 

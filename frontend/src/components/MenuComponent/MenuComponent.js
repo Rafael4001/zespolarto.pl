@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types";
 
-import MyMenuItem from '../MenuItem'
+import MenuItem from '../MenuItem'
 import { MENU_ITEMS, LOGO_ON_THE_FLOWERS } from '../../constants';
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ import MenuBurger from './MenuBurger'
 class MenuComponent extends Component {
   getMenuItems = () => (
     MENU_ITEMS.map(({name, link, as}) => (
-      <MyMenuItem key={name} title={name} href={link} as={as}/>
+      <MenuItem key={name} title={name} href={link} as={as}/>
     ))
   );
 
