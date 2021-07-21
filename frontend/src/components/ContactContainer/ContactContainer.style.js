@@ -162,7 +162,6 @@ const styles = (theme) => ({
   FacebookMainContainer: {
     display: 'flex',
     flexDirection: "column",
-    backgroundColor: `${COLORS.grey.grey_1}`,
     width: '100%',
     alignItems: 'center',
     padding: '0.5rem 0',

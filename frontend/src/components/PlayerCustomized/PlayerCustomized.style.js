@@ -111,7 +111,7 @@ const styles = (theme) => ({
     gridGap: '1rem',
   },
   seekBar: {
-    width: '100%'
+    width: '90%'
   },
   contactTextContainer: {
     flexDirection: 'row',
