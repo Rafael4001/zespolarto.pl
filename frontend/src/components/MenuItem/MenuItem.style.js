@@ -53,7 +53,8 @@ const styles = (theme) => ({
     },
     '&:hover': {
       borderBottom: `solid ${COLORS.red.main} 1px`,
-      transition: 'border-bottom 0.4s linear'
+      transition: 'border-bottom 0.4s linear',
+      cursor: 'pointer'
     },
   },
   activeLink: {
