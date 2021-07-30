@@ -331,9 +331,13 @@ export const YEAR_2022 = [
       },
       {
         day: "22.10.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        place: "Tyszowce",
+        hotel: "Szewska Pasja",
+        weekDay: WEEK_DAY.SATUDRAY,
+        status: STATUS.BUSY,
+        "blessing": "noInfo",
+        "blessingTime": "noInfo",
+        weddingHour: "noInfo",
       },
       {
         day: "29.10.2022",
