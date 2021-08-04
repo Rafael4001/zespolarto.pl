@@ -7,7 +7,8 @@
     "build": "next build",
     "build-export": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "startProd": "npm run build && npm run start"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.2",
