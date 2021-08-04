@@ -6,9 +6,7 @@ import Document,
   Main,
   NextScript,
 } from 'next/document'
-import theme from '../config/theme';
 import {FAVICON} from "../src/constants";
-// import { ServerStyleSheets } from '@material-ui/core/styles';
 import { ServerStyleSheet } from "styled-components";
 import { ServerStyleSheets } from "@material-ui/styles";
 

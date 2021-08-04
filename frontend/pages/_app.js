@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import {MuiThemeProvider} from '@material-ui/core/styles';
 import {StylesProvider} from "@material-ui/core/styles"
 import theme from '../config/theme'
 import {useEffect} from "react";
