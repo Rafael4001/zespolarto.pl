@@ -268,11 +268,11 @@ const StyledPlayerCustomized = styled(PlayerCustomized)`
   .mainContainer {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
     width: 100%;
 
     @media (min-width: ${SCREEN.M}) {
       margin-top: 2rem;
+      margin-bottom: 1rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
