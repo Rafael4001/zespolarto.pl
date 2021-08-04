@@ -78,7 +78,7 @@ const styles = (theme) => ({
     top: '10rem',
     height: '33rem',
     overflowY: 'scroll',
-    paddingTop: '10rem',
+    paddingTop: '10.5rem',
     boxShadow: `0 1px 13px 1px ${COLORS.grey.dark_1}`,
 
     [theme.breakpoints.up('sm')]: {
@@ -95,7 +95,8 @@ const styles = (theme) => ({
     backgroundColor: `${COLORS.white.main}`,
     borderBottom: `solid 1px ${COLORS.grey.dark}`,
     position: 'fixed',
-    top: `${MENU_MOBILE_HEIGHT}`,
+    top:  `${MENU_MOBILE_HEIGHT}`,
+    // top: '4rem', //`${MENU_MOBILE_HEIGHT}`,
     width: '100%',
     zIndex: 100,
 
@@ -119,6 +120,7 @@ const styles = (theme) => ({
     flexDirection: 'row',
     alignItems: 'center',
     fontSize: '2.3125rem',
+    paddingTop:'0.5rem',
     fontFamily: 'Parisienne',
   },
 });

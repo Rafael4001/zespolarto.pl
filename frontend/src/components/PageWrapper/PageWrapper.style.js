@@ -1,6 +1,6 @@
 import { withStyles } from '@material-ui/core/styles';
 import PageWrapper from './PageWrapper';
-import { MAX_PAGE_WIDTH } from "../../constants";
+import { MAX_PAGE_WIDTH , MENU_MOBILE_HEIGHT} from "../../constants";
 import { COLORS } from "../../colors";
 
 const styles = (theme) => ({
@@ -10,7 +10,7 @@ const styles = (theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     backgroundColor: theme.palette.common.white,
-    paddingTop: '3rem',
+    paddingTop: MENU_MOBILE_HEIGHT,
     maxWidth: MAX_PAGE_WIDTH,
     margin: '0 auto',
 
