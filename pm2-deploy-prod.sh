@@ -6,7 +6,7 @@ sudo nginx -t
 sudo service nginx restart
 pm2 delete "fe"
 cd frontend
-yarn upgrade
+#yarn upgrade
 yarn run build
 pm2 start npm --name "fe" -- run startProd
 cd ..
