@@ -1,3 +1,3 @@
-import Months from './Months.style';
+import Months from './Months';
 
 export default Months;

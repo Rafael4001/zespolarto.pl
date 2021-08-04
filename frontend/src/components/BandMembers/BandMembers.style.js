@@ -13,11 +13,7 @@ const styles = (theme)=>({
       padding: '1rem',
     },
   },
-  photo: {
-    width: '100%',
-  },
   photoContainer: {
-
     [theme.breakpoints.up(SCREEN_SIZE.POINT_750)]: {
       padding: '1rem',
     },

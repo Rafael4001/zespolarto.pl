@@ -1,15 +1,16 @@
-export const passwordTerms='1235'
+export const passwordTerms = '1235'
 
-export const IMAGE_1 = '../static/image/photo_1.png';
-export const IMAGE_2 = '../static/image/photo_2_small.jpg';
-export const IMAGE_3 = '../static/image/photo_3_small.jpg';
-export const IMAGE_4 = '../static/image/photo_4_small.jpg';
-export const LOGO_ON_THE_FLOWERS = '../static/image/LogoWKwiatach342x300.png';
-export const LOVERS = '../static/image/lovers_small_228x180.png';
+export const IMAGE_1 = '/static/image/photo_1.png';
+export const IMAGE_2 = '/static/image/photo_2_small.jpg';
+export const IMAGE_3 = '/static/image/photo_3_small.jpg';
+export const IMAGE_4 = '/static/image/photo_4_small.jpg';
+export const LOGO_ON_THE_FLOWERS = '/static/image/LogoWKwiatach342x300.png';
+export const LOVERS = '/static/image/lovers_small_228x180.png';
 export const BRIDE = '../static/image/icons/bride.svg';
-export const SMILE = '../static/image/icons/smile.svg';
+export const SMILE = '/static/image/icons/smile.svg';
 export const LEAF = '../static/image/icons/leaf.svg';
-export const LUBLIN_MAP = '../static/image/WojLubelskie.jpg';
+export const MORE = '/static/image/icons/more.png';
+export const LUBLIN_MAP = '/static/image/WojLubelskie.jpg';
 export const PHOTO_CARD_IMAGE = '../static/image/GalleryCardPhoto.jpeg';
 export const VIDEO_CARD_IMAGE = '../static/image/videoCardPhoto.jpeg';
 
@@ -25,47 +26,47 @@ export const FAVICON = {
 
 
 export const SONGS_IMAGES = {
-  DAJ_TO_GLOSNIEJ: '../static/image/songsImagesSmall/dajToGlosniej.jpg',
-  DefaultSongImage: '../static/image/songsImagesSmall/defaultSongImage.jpg',
-  Fanatic: '../static/image/songsImagesSmall/fanatic.jpg',
-  abba: '../static/image/songsImagesSmall/abba.jpg',
-  afterParty: '../static/image/songsImagesSmall/afterParty.jpg',
-  akcent: '../static/image/songsImagesSmall/akcent.jpg',
-  aniaWyszkoni: '../static/image/songsImagesSmall/aniaWyszkoni.jpg',
-  boys: '../static/image/songsImagesSmall/boys.jpg',
-  brathanki: '../static/image/songsImagesSmall/brathanki.jpg',
-  buble: '../static/image/songsImagesSmall/buble.jpg',
-  budkaSuflera: '../static/image/songsImagesSmall/budkaSuflera.jpeg',
-  czadoman: '../static/image/songsImagesSmall/czadoman.jpg',
-  electricLightOrchestra: '../static/image/songsImagesSmall/electricLightOrchestra.jpg',
-  elenaGheorghe: '../static/image/songsImagesSmall/elenaGheorghe.jpg',
-  enej: '../static/image/songsImagesSmall/enej.jpg',
-  freakyBoys: '../static/image/songsImagesSmall/freakyBoys.jpg',
-  irenaJarocka: '../static/image/songsImagesSmall/irenaJarocka.jpg',
-  jerzyPolomski: '../static/image/songsImagesSmall/jerzyPolomski.jpg',
-  karinaStanek: '../static/image/songsImagesSmall/karinaStanek.jpg',
-  krzysztofKrawczyk: '../static/image/songsImagesSmall/krzysztofKrawczyk.jpg',
-  lobuzy: '../static/image/songsImagesSmall/lobuzy.jpg',
-  lombard: '../static/image/songsImagesSmall/lombard.jpg',
-  marcus: '../static/image/songsImagesSmall/marcus.jpg',
-  marylaRodowicz: '../static/image/songsImagesSmall/marylaRodowicz.jpg',
-  masters: '../static/image/songsImagesSmall/masters.jpg',
-  mig: '../static/image/songsImagesSmall/mig.jpg',
-  pawelDomagala: '../static/image/songsImagesSmall/pawelDomagala.jpg',
-  perfect: '../static/image/songsImagesSmall/perfect.jpg',
-  piekniIMlodzi: '../static/image/songsImagesSmall/piekniIMlodzi.jpg',
-  piersi: '../static/image/songsImagesSmall/piersi.jpg',
-  poparzeniKawaTrzy: '../static/image/songsImagesSmall/poparzeniKawaTrzy.jpg',
-  powerPlay: '../static/image/songsImagesSmall/powerPlay.jpg',
-  ronnieFerrari: '../static/image/songsImagesSmall/ronnieFerrari.jpg',
-  skaldowie: '../static/image/songsImagesSmall/skaldowie.jpg',
-  slawomir: '../static/image/songsImagesSmall/slawomir.jpg',
-  topGirls: '../static/image/songsImagesSmall/topGirls.jpg',
-  urszula: '../static/image/songsImagesSmall/urszula.jpg',
-  veegas: '../static/image/songsImagesSmall/veegas.jpg',
-  wilki: '../static/image/songsImagesSmall/wilki.jpg',
-  wojciechGasowski: '../static/image/songsImagesSmall/wojciechGasowski.jpg',
-  zbigniewWodecki: '../static/image/songsImagesSmall/zbigniewWodecki.jpg',
+  DAJ_TO_GLOSNIEJ: '/static/image/songsImagesSmall/dajToGlosniej.jpg',
+  DefaultSongImage: '/static/image/songsImagesSmall/defaultSongImage.jpg',
+  Fanatic: '/static/image/songsImagesSmall/fanatic.jpg',
+  abba: '/static/image/songsImagesSmall/abba.jpg',
+  afterParty: '/static/image/songsImagesSmall/afterParty.jpg',
+  akcent: '/static/image/songsImagesSmall/akcent.jpg',
+  aniaWyszkoni: '/static/image/songsImagesSmall/aniaWyszkoni.jpg',
+  boys: '/static/image/songsImagesSmall/boys.jpg',
+  brathanki: '/static/image/songsImagesSmall/brathanki.jpg',
+  buble: '/static/image/songsImagesSmall/buble.jpg',
+  budkaSuflera: '/static/image/songsImagesSmall/budkaSuflera.jpeg',
+  czadoman: '/static/image/songsImagesSmall/czadoman.jpg',
+  electricLightOrchestra: '/static/image/songsImagesSmall/electricLightOrchestra.jpg',
+  elenaGheorghe: '/static/image/songsImagesSmall/elenaGheorghe.jpg',
+  enej: '/static/image/songsImagesSmall/enej.jpg',
+  freakyBoys: '/static/image/songsImagesSmall/freakyBoys.jpg',
+  irenaJarocka: '/static/image/songsImagesSmall/irenaJarocka.jpg',
+  jerzyPolomski: '/static/image/songsImagesSmall/jerzyPolomski.jpg',
+  karinaStanek: '/static/image/songsImagesSmall/karinaStanek.jpg',
+  krzysztofKrawczyk: '/static/image/songsImagesSmall/krzysztofKrawczyk.jpg',
+  lobuzy: '/static/image/songsImagesSmall/lobuzy.jpg',
+  lombard: '/static/image/songsImagesSmall/lombard.jpg',
+  marcus: '/static/image/songsImagesSmall/marcus.jpg',
+  marylaRodowicz: '/static/image/songsImagesSmall/marylaRodowicz.jpg',
+  masters: '/static/image/songsImagesSmall/masters.jpg',
+  mig: '/static/image/songsImagesSmall/mig.jpg',
+  pawelDomagala: '/static/image/songsImagesSmall/pawelDomagala.jpg',
+  perfect: '/static/image/songsImagesSmall/perfect.jpg',
+  piekniIMlodzi: '/static/image/songsImagesSmall/piekniIMlodzi.jpg',
+  piersi: '/static/image/songsImagesSmall/piersi.jpg',
+  poparzeniKawaTrzy: '/static/image/songsImagesSmall/poparzeniKawaTrzy.jpg',
+  powerPlay: '/static/image/songsImagesSmall/powerPlay.jpg',
+  ronnieFerrari: '/static/image/songsImagesSmall/ronnieFerrari.jpg',
+  skaldowie: '/static/image/songsImagesSmall/skaldowie.jpg',
+  slawomir: '/static/image/songsImagesSmall/slawomir.jpg',
+  topGirls: '/static/image/songsImagesSmall/topGirls.jpg',
+  urszula: '/static/image/songsImagesSmall/urszula.jpg',
+  veegas: '/static/image/songsImagesSmall/veegas.jpg',
+  wilki: '/static/image/songsImagesSmall/wilki.jpg',
+  wojciechGasowski: '/static/image/songsImagesSmall/wojciechGasowski.jpg',
+  zbigniewWodecki: '/static/image/songsImagesSmall/zbigniewWodecki.jpg',
 };
 
 export const MAX_PAGE_WIDTH = '80rem';
@@ -110,12 +111,16 @@ export const SCREEN_SIZE = {
   POINT_750: 750,
 };
 
+export const SCREEN = {
+  M: '768px',
+  L: '968px'
+}
+
 export const STATUS = {
   BUSY: "busy",
   EMPTY: "empty",
   RESERVATION: "reservation",
   HOLIDAY: "holiday",
-  UNDEFINED: "undefined",
 };
 
 export const STATUS_SELECT = [
@@ -127,11 +132,31 @@ export const STATUS_SELECT = [
 ];
 
 export const WEEK_DAY = {
+  SUNDAY: "niedziela",
   MONDAY: "poniedziałek",
   TUESDAY: "wtorek",
   WEDNESTDAY: "środa",
   THURSDAY: "czwartek",
   FRIDAY: "piątek",
   SATUDRAY: "sobota",
-  SUNDAY: "niedziela",
 };
+
+export const DAYS = Object.values(WEEK_DAY)
+
+export const WEEKDAYS_SHORT = ['Nd', 'Pn', 'Wt', 'Śr', 'Czw', 'Pt', 'So']
+export const MONTHS = [
+  'Styczeń',
+  'Luty',
+  'Marzec',
+  'Kwiecień',
+  'Maj',
+  'Czerwiec',
+  'Lipiec',
+  'Sierpień',
+  'Wrzesień',
+  'Październik',
+  'Listopad',
+  'Grudzień',
+]
+
+export const FIRST_DAY_OF_WEEK = 1;

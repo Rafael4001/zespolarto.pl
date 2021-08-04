@@ -5,6 +5,7 @@ import Divider from '@material-ui/core/Divider';
 
 import {IMAGE_1, LOVERS} from '../../constants'
 import Typography from "@material-ui/core/Typography";
+import Image from 'next/image'
 
 
 const HomepageMainPhoto = ({classes}) => (
@@ -13,24 +14,31 @@ const HomepageMainPhoto = ({classes}) => (
 
       <aside className={classes.textContainer}>
         <Typography classes={{root: classes.subTitle,}}>Twoje wesele...</Typography>
-        <div className={classes.loversImageContainer}>
-          <img
-            src={LOVERS}
-            alt={'lovers'}
-            className={classes.loversImageStyle}
-          />
+        <div className={classes.photoContainerMain}>
+          <div className={classes.loversImageContainer}>
+            <Image
+              src={LOVERS}
+              alt='lovers'
+              layout="responsive"
+              width={228}
+              height={180}
+            />
+          </div>
         </div>
         <Typography classes={{root: classNames(classes.subTitle, classes.subTitleLeft),}}>Nasza muzyka</Typography>
       </aside>
 
-      <div className={classes.photoContainer}>
-        <img
-          src={IMAGE_1}
-          alt={'zespół Arto'}
-          className={classes.photo}
-        />
+      <div className={classes.photoContainerMain}>
+        <div className={classes.photoContainer}>
+          <Image
+            src={IMAGE_1}
+            alt={'Arto music band'}
+            layout="responsive"
+            width={1000}
+            height={559}
+          />
+        </div>
       </div>
-
     </div>
     <Divider/>
   </div>

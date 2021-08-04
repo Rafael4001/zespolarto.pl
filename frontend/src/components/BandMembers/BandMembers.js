@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from "prop-types";
 
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import { IMAGE_2 } from "../../constants";
+import {IMAGE_2} from "../../constants";
+import Image from "next/image";
 
 
 const BAND_MEMBERS = [
@@ -26,49 +27,42 @@ const BAND_MEMBERS = [
 ];
 
 
-class BandMembers extends Component {
+const BandMembers = ({classes}) => {
+  const Members = ({bandMembers}) => bandMembers.map((member) => (
+    <div key={member.name} className={classes.memberContainer}>
+      <Typography classes={{root: classes.textName}}><strong>{member.name}</strong></Typography>
+      <Typography classes={{root: classes.textName}}><strong> - </strong></Typography>
+      <Typography classes={{root: classes.textName}}>{member.description}</Typography>
+    </div>
+  ));
 
-
-  render() {
-    const {classes} = this.props;
-
-    const getMembers = (bandMembers) => (
-      bandMembers.map((member) => (
-        <div key={member.name} className={classes.memberContainer}>
-          <Typography classes={{root: classes.textName,}}><strong>{member.name}</strong></Typography>
-          <Typography classes={{root: classes.textName,}}><strong> - </strong></Typography>
-          <Typography classes={{root: classes.textName}}>{member.description}</Typography>
+  return (
+    <div>
+      <div className={classes.mainContainer}>
+        <div className={classes.photoContainer}>
+          <Image
+            src={IMAGE_2}
+            alt={'zespół Arto'}
+            layout="responsive"
+            width={768}
+            height={319}
+          />
         </div>
-      ))
-    );
 
-    return (
-      <div>
-        <div className={this.props.classes.mainContainer}>
-          <div className={classes.photoContainer}>
-            <img
-              src={IMAGE_2}
-              alt={'zespół Arto'}
-              className={classes.photo}
-            />
+        <div className={classes.descriptionBandMembers}>
+          <div className={classes.quotationContainer}>
+            <Typography classes={{root: classes.quotation,}}>{`"Takt jest muzyką duszy."`}</Typography>
+            <Typography classes={{root: classes.author,}}>-Anita Daniel</Typography>
           </div>
-
-          <div className={classes.descriptionBandMembers}>
-            <div className={classes.quotationContainer}>
-              <Typography classes={{root: classes.quotation,}}>"Takt jest muzyką duszy."</Typography>
-              <Typography classes={{root: classes.author,}}>-Anita Daniel</Typography>
-            </div>
-            <Divider/>
-            <Typography classes={{root: classes.textName,}}>Skład zespołu:</Typography>
-            {getMembers(BAND_MEMBERS)}
-          </div>
+          <Divider/>
+          <Typography classes={{root: classes.textName,}}>Skład zespołu:</Typography>
+          <Members bandMembers={BAND_MEMBERS}/>
         </div>
-        <Divider/>
       </div>
-    )
-  }
+      <Divider/>
+    </div>
+  )
 }
-
 BandMembers.propTypes = {
   classes: PropTypes.object.isRequired,
 };

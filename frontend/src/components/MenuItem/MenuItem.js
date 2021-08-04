@@ -10,7 +10,7 @@ const MenuItem = ({classes, title, href, as}) => {
   const router = useRouter()
 
   return (
-    <Link href={href} as={as}>
+    <Link href={href} as={as} passHref>
       <Typography className={classNames(
         classes.navItem,
         {[classes.activeLink]: router.asPath === href}

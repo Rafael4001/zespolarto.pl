@@ -1,510 +1,288 @@
-import { STATUS, WEEK_DAY } from '../constants'
+import {STATUS, WEEK_DAY} from '../constants'
 
+
+//src/views/NewCalendar/DetailsOfTerm/index.js:13
 
 export const YEAR_2021 = [
-    {
-        name: "Styczeń",
-        days: [
-            {
-                day: "02.01.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "09.01.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "16.01.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "23.01.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "30.01.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            }
-        ]
-    },
-    {
-        name: "Luty",
-        days: [
-            {
-                day: "06.02.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "13.02.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "20.02.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "27.02.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            }
-        ]
-    },
-    {
-        name: "Marzec",
-        days: [
-            {
-                day: "06.03.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "13.03.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "20.03.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "27.03.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            }
-        ]
-    },
-    {
-        name: "Kwiecień",
-        days: [
-            {
-                day: "03.04.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "10.04.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "17.04.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "24.04.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            }
-        ]
-    },
-    {
-        name: "Maj",
-        days: [
+  {
+    name: "Styczeń",
+    days: [
+      {
+        day: "2021-01-02"
+      },
+      {
+        day: "2021-01-09"
+      },
+      {
+        day: "2021-01-16"
+      },
+      {
+        day: "2021-01-23"
+      },
+      {
+        day: "2021-01-30"
+      }
+    ]
+  },
+  {
+    name: "Luty",
+    days: [
+      {
+        day: "2021-02-06",
+      },
+      {
+        day: "2021-02-13",
+      },
+      {
+        day: "2021-02-20",
+      },
+      {
+        day: "2021-02-27",
+      }
+    ]
+  },
+  {
+    name: "Marzec",
+    days: [
+      {
+        day: "2021-03-06",
+      },
+      {
+        day: "2021-03-13",
+      },
+      {
+        day: "2021-03-20",
+      },
+      {
+        day: "2021-03-27",
+      }
+    ]
+  },
+  {
+    name: "Kwiecień",
+    days: [
+      {
+        day: "2021-04-03",
+      },
+      {
+        day: "2021-04-10",
+      },
+      {
+        day: "2021-04-17",
+      },
+      {
+        day: "2021-04-24",
+      }
+    ]
+  },
+  {
+    name: "Maj",
+    days: [
 
-            {
-                day: "01.05.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "Ślub Piotrka Cz. = weekend majowy"
-            },
-            {
-                day: "08.05.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "15.05.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "22.05.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "29.05.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            }
-        ]
-    },
-    {
-        name: "Czerwiec",
-        days: [
-            {
-                day: "03.06.2020",
-                place: "",
-                hotel: "",
-                weekDay: WEEK_DAY.THURSDAY,
-                status: STATUS.HOLIDAY,
-                information: "BOŻE CIAŁO"
-            },
-            {
-                day: "05.06.2021",
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "12.06.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "19.06.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "26.06.2021",
-                place: "Tyszowce",
-                hotel: "Orfeusz",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                information: "wesele z dnia 18.04.2020r."
-            },
-        ]
-    },
-    {
-        name: "Lipiec",
-        days: [
-            {
-                day: "03.07.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "07.07.2021",
-                free: false,
-                place: "Tyszowce",
-                hotel: "Szewska Pasja (sala na dole)",
-                weekDay: WEEK_DAY.WEDNESTDAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
-            },
-            {
-                day: "10.07.2021",
-                free: false,
-                place: "Pokrówka",
-                hotel: "Diana 1",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
-            },
-            {
-                day: "17.07.2021",
-                free: false,
-                place: "Modliborzyce",
-                hotel: "Osada Leśna Doboszówka",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "16.00"
-            },
-            {
-                day: "24.07.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "31.07.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            }
-        ]
-    },
-    {
-        name: "Sierpien",
-        days: [
-            {
-                day: "07.08.2021",
-                free: false,
-                place: "Mircze",
-                hotel: "Jaśko",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                // information: "Nie będzie Rafała i Darii",
-                information: "",
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
-            },
-            {
-                day: "14.08.2021",
-                free: false,
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.HOLIDAY,
-                information: "zostawić koniecznie wolne",
-            },
-            {
-                day: "21.08.2021",
-                free: false,
-                place: "Ruda Różaniecka",
-                hotel: "Karczma pod szczęśliwym karpiem",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                information: "",
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
-            },
-            {
-                day: "28.08.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "29.08.2021",
-                free: true,
-                weekDay: WEEK_DAY.SUNDAY,
-                status: STATUS.BUSY,
-                place: "Boruń",
-                hotel: "Dom weselny \"Sylwia\"",
-            }
-        ]
-    },
-    {
-        name: "Wrzesień",
-        days: [
-            {
-                day: "04.09.2021",
-                free: true,
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                place: "Hrubieszów",
-                hotel: "\"Browar Sulewski\"",
-                information: "panna Młoda z Werbkowic",
-                weddingHour: "16.00"
-            },
-            {
-                day: "10.09.2021",
-                free: true,
-                weekDay: WEEK_DAY.FRIDAY,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "Wesele Piotrka Czarneckiego"
-            },
-            {
-                day: "11.09.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "18.09.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "25.09.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            }
-        ]
-    },
-    {
-        name: "Październik",
-        days: [
-            {
-                day: "02.10.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "09.10.2021",
-                free: false,
-                place: "Hrubieszów",
-                hotel: "Gniecki",
-                weekDay: WEEK_DAY.SATUDRAY,
-                status: STATUS.BUSY,
-                "blessing": "noInfo",
-                "blessingTime": "noInfo",
-                weddingHour: "noInfo"
-            },
-            {
-                day: "16.10.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "23.10.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            },
-            {
-                day: "30.10.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.HOLIDAY,
-                information: "zostawione wolne"
-            }
-        ]
-    },
-    {
-        name: "Listopad",
-        days: [
-            {
-                day: "06.11.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "13.11.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "20.11.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "27.11.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            }
-        ]
-    },
-    {
-        name: "Grudzień",
-        days: [
-            {
-                day: "04.12.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "11.12.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "18.12.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            },
-            {
-                day: "25.12.2021",
-                free: true,
-                place: "",
-                hotel: "",
-                status: STATUS.EMPTY
-            }
-        ]
-    }
+      {
+        day: "2021-05-01",
+      },
+      {
+        day: "2021-05-08",
+      },
+      {
+        day: "2021-05-15",
+      },
+      {
+        day: "2021-05-22",
+      },
+      {
+        day: "2021-05-29",
+      }
+    ]
+  },
+  {
+    name: "Czerwiec",
+    days: [
+      {
+        day: "2020-06-03",
+        status: STATUS.HOLIDAY,
+        information: "BOŻE CIAŁO"
+      },
+      {
+        day: "2021-06-05",
+      },
+      {
+        day: "2021-06-12",
+      },
+      {
+        day: "2021-06-19",
+      },
+      {
+        day: "2021-06-26",
+        place: "Tyszowce",
+        hotel: "Orfeusz",
+        status: STATUS.BUSY,
+        information: "wesele z dnia 18.04.2020r."
+      },
+    ]
+  },
+  {
+    name: "Lipiec",
+    days: [
+      {
+        day: "2021-07-03",
+        place: "",
+        hotel: "",
+        status: STATUS.HOLIDAY,
+        information: "zostawione wolne"
+      },
+      {
+        day: "2021-07-07",
+        place: "Tyszowce",
+        hotel: "Szewska Pasja (sala na dole)",
+        status: STATUS.BUSY,
+      },
+      {
+        day: "2021-07-10",
+        place: "Pokrówka",
+        hotel: "Diana 1",
+        status: STATUS.BUSY,
+      },
+      {
+        day: "2021-07-17",
+        place: "Modliborzyce",
+        hotel: "Osada Leśna Doboszówka",
+        status: STATUS.BUSY,
+        weddingHour: "16.00"
+      },
+      {
+        day: "2021-07-24",
+        status: STATUS.HOLIDAY,
+        information: "zostawione wolne"
+      },
+      {
+        day: "2021-07-31",
+        status: STATUS.HOLIDAY,
+        information: "zostawione wolne"
+      }
+    ]
+  },
+  {
+    name: "Sierpien",
+    days: [
+      {
+        day: "2021-08-07",
+        place: "Mircze",
+        hotel: "Jaśko",
+        status: STATUS.BUSY,
+        information: "",
+      },
+      {
+        day: "2021-08-14",
+        status: STATUS.HOLIDAY,
+        information: "zostawić koniecznie wolne",
+      },
+      {
+        day: "2021-08-21",
+        place: "Ruda Różaniecka",
+        hotel: "Karczma pod szczęśliwym karpiem",
+        status: STATUS.BUSY,
+        information: "Rafał może nie być",
+      },
+      {
+        day: "2021-08-28",
+        status: STATUS.HOLIDAY,
+        information: "zostawione wolne"
+      },
+      {
+        day: "2021-08-29",
+        status: STATUS.BUSY,
+        place: "Boruń",
+        hotel: "Dom weselny \"Sylwia\"",
+      }
+    ]
+  },
+  {
+    name: "Wrzesień",
+    days: [
+      {
+        day: "2021-09-04",
+        status: STATUS.BUSY,
+        place: "Werbkowice",
+        hotel: "dom weselny - Karolina",
+        information: "panna Młoda z Werbkowic",
+        weddingHour: "16.00"
+      },
+      {
+        day: "2021-09-10",
+        status: STATUS.HOLIDAY,
+        information: "Wesele Piotrka Czarneckiego"
+      },
+      {
+        day: "2021-09-11",
+        status: STATUS.HOLIDAY,
+        information: "zostawione wolne"
+      },
+      {
+        day: "2021-09-18",
+      },
+      {
+        day: "2021-09-25",
+      }
+    ]
+  },
+  {
+    name: "Październik",
+    days: [
+      {
+        day: "2021-10-02",
+      },
+      {
+        day: "2021-10-09",
+        place: "Hrubieszów",
+        hotel: "Gniecki",
+        status: STATUS.BUSY,
+        information: "wesele Doroty"
+      },
+      {
+        day: "2021-10-16",
+      },
+      {
+        day: "2021-10-23",
+      },
+      {
+        day: "2021-10-30",
+      }
+    ]
+  },
+  {
+    name: "Listopad",
+    days: [
+      {
+        day: "2021-11-06",
+      },
+      {
+        day: "2021-11-13",
+      },
+      {
+        day: "2021-10-20",
+      },
+      {
+        day: "2021-11-27",
+      }
+    ]
+  },
+  {
+    name: "Grudzień",
+    days: [
+      {
+        day: "2021-12-04",
+      },
+      {
+        day: "2021-12-11",
+      },
+      {
+        day: "2021-12-18",
+      },
+      {
+        day: "2021-12-25",
+      }
+    ]
+  }
 ]

@@ -121,9 +121,9 @@ const styles = (theme) => ({
       fontSize: '2.3125rem',
     },
   },
-  photo: {
-    width: '100%',
-  },
+  // photo: {
+  //   width: '100%',
+  // },
   dataContainer: {
     display: 'flex',
     flexDirection: 'column',

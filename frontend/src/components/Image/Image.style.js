@@ -2,7 +2,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Image from './Image';
 
 
-const styles = (theme) => ({
+const styles = () => ({
   mainContainer: {
     width: '20rem',
   },

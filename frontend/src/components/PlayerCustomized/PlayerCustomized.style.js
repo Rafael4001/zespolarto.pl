@@ -5,19 +5,19 @@ import { MENU_MOBILE_HEIGHT } from "../../constants";
 
 
 const styles = (theme) => ({
-  mainContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginBottom: '1rem',
-    width: '100%',
-
-    [theme.breakpoints.up('sm')]: {
-      marginTop: '2rem',
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
-      gridGap: '1rem',
-    }
-  },
+  // mainContainer: {
+  //   display: 'flex',
+  //   flexDirection: 'column',
+  //   marginBottom: '1rem',
+  //   width: '100%',
+  //
+  //   [theme.breakpoints.up('sm')]: {
+  //     marginTop: '2rem',
+  //     display: 'grid',
+  //     gridTemplateColumns: '1fr 1fr',
+  //     gridGap: '1rem',
+  //   }
+  // },
   currentSong: {
     fontFamily: '\'Baskervville\',serif',
     padding: '0 0 0.5rem 0',
@@ -61,6 +61,7 @@ const styles = (theme) => ({
   playerTime: {
     display: 'flex',
     flexDirection: 'row',
+    paddingTop: '5px'
   },
   songImageContainer: {
     height: '10rem',
@@ -78,6 +79,7 @@ const styles = (theme) => ({
     height: '33rem',
     overflowY: 'scroll',
     paddingTop: '10rem',
+    boxShadow: `0 1px 13px 1px ${COLORS.grey.dark_1}`,
 
     [theme.breakpoints.up('sm')]: {
       paddingTop: 0,
@@ -89,7 +91,7 @@ const styles = (theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '0 0 1rem 0',
+    padding: '0 0.5rem 1rem 0.5rem',
     backgroundColor: `${COLORS.white.main}`,
     borderBottom: `solid 1px ${COLORS.grey.dark}`,
     position: 'fixed',
@@ -118,7 +120,7 @@ const styles = (theme) => ({
     alignItems: 'center',
     fontSize: '2.3125rem',
     fontFamily: 'Parisienne',
-  }
+  },
 });
 
 export default withStyles(styles)(PlayerCustomized);

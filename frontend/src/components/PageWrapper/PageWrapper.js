@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MenuComponent from "../MenuComponent/MenuComponent.style";
-import Footer from "../Footer/Footer.style";
+import Footer from "../Footer";
 
 const PageWrapper = ({classes, children}) => (
   <div className={classes.pageWrapperOuter}>

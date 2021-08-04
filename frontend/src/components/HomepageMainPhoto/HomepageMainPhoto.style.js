@@ -1,7 +1,7 @@
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 
 import HomepageMainPhoto from './HomepageMainPhoto'
-import { MARGIN_TOP_UNDER_MENU } from "../../constants";
+import {MARGIN_TOP_UNDER_MENU} from "../../constants";
 
 
 const styles = (theme) => ({
@@ -23,9 +23,7 @@ const styles = (theme) => ({
     justifyContent: 'center',
     flexDirection: 'column'
   },
-  photoContainer: {
-    zIndex: 10,
-  },
+
   logo: {
     position: 'absolute',
     top: '0.5rem',
@@ -55,20 +53,29 @@ const styles = (theme) => ({
     display: 'flex',
     justifyContent: 'flex-end',
   },
-  photo: {
-    width: '100%',
-  },
-  loversImageStyle: {
-    width: '6rem',
-    [theme.breakpoints.up('md')]: {
-      width: '10rem',
-    },
+
+  loversImageContainerMain: {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '6rem'
+
   },
   loversImageContainer: {
-    width: '100%',
+    position: "relative",
+    width: '6rem',
+
+    [theme.breakpoints.up('md')]: {
+      width: '11rem',
+    },
+  },
+  photoContainerMain: {
     display: 'flex',
     justifyContent: 'center',
   },
+  photoContainer: {
+    position: "relative",
+    width: '100%',
+  }
 });
 
 export default withStyles(styles)(HomepageMainPhoto);

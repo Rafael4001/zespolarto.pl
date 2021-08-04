@@ -6,34 +6,19 @@ export const YEAR_2022 = [
     name: "Styczeń",
     days: [
       {
-        day: "01.01.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-01-01"
       },
       {
-        day: "08.01.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-01-08"
       },
       {
-        day: "15.01.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-01-15"
       },
       {
-        day: "22.01.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-01-22"
       },
       {
-        day: "29.01.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-01-29"
       }
     ]
   },
@@ -41,28 +26,16 @@ export const YEAR_2022 = [
     name: "Luty",
     days: [
       {
-        day: "05.02.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-02-05"
       },
       {
-        day: "12.02.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-02-12"
       },
       {
-        day: "19.02.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-02-19"
       },
       {
-        day: "26.02.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-02-26"
       }
     ]
   },
@@ -70,28 +43,16 @@ export const YEAR_2022 = [
     name: "Marzec",
     days: [
       {
-        day: "05.03.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-03-05"
       },
       {
-        day: "12.03.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-03-12"
       },
       {
-        day: "19.03.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-03-19"
       },
       {
-        day: "26.03.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-03-26"
       }
     ]
   },
@@ -99,33 +60,19 @@ export const YEAR_2022 = [
     name: "Kwiecień",
     days: [
       {
-        day: "02.04.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-04-02",
       },
       {
-        day: "09.04.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-04-09",
       },
       {
-        day: "16.04.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-04-16",
       },
       {
-        day: "23.04.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-04-23",
       },
       {
-        day: "30.04.2022",
-        place: "",
-        hotel: "",
+        day: "2022-04-30",
         status: STATUS.HOLIDAY,
         information: "weekend majowy"
       }
@@ -135,35 +82,34 @@ export const YEAR_2022 = [
     name: "Maj",
     days: [
       {
-        day: "07.05.2022",
+        day: "2022-05-01",
+        status: STATUS.HOLIDAY,
+        information: "weekend majowy"
+      },
+      {
+        day: "2022-05-07",
         place: "Bogucin",
         hotel: "Dom weselny \"Kapama\"",
-        weekDay: WEEK_DAY.SATUDRAY,
         status: STATUS.BUSY,
         "blessing": "yes",
         "blessingTime": "14.30",
         weddingHour: "15.00"
       },
       {
-        day: "14.05.2022",
+        day: "2022-05-14",
         place: "Boruń",
         hotel: "Dom weselny \"Sylwia\"",
-        weekDay: WEEK_DAY.SATUDRAY,
         status: STATUS.BUSY,
         "blessing": "yes",
         "blessingTime": "14.30",
         weddingHour: "15.00 (Zamość)"
       },
       {
-        day: "21.05.2022",
-        place: "",
-        hotel: "",
+        day: "2022-05-21",
         status: STATUS.HOLIDAY
       },
       {
-        day: "28.05.2022",
-        place: "",
-        hotel: "",
+        day: "2022-05-28",
         status: STATUS.HOLIDAY
       }
     ]
@@ -172,35 +118,31 @@ export const YEAR_2022 = [
     name: "Czerwiec",
     days: [
       {
-        day: "04.06.2022",
+        day: "2022-06-04",
         place: "Zwierzyniec",
         hotel: "Sonata",
-        weekDay: WEEK_DAY.SATUDRAY,
         status: STATUS.BUSY,
         "blessing": "Nie ma",
-        "blessingTime": "---",
         weddingHour: "17.00"
       },
       {
-        day: "11.06.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-06-11",
       },
       {
-        day: "18.06.2022",
+        day: "2022-06-16",
+        status: STATUS.HOLIDAY,
+        information: "Boże Ciało"
+      },
+      {
+        day: "2022-06-18",
         place: "Tyszowce",
         hotel: "Dom weselny \"Orfeusz\"",
-        weekDay: WEEK_DAY.SATUDRAY,
         status: STATUS.BUSY,
         // weddingHour: "brak",
         information: "Rafał gra jako DJ na poprawinach na drugi dzien",
       },
       {
-        day: "25.06.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-06-25",
       }
     ]
   },
@@ -208,25 +150,17 @@ export const YEAR_2022 = [
     name: "Lipiec",
     days: [
       {
-        day: "02.07.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-07-02",
+
       },
       {
-        day: "09.07.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-07-09",
       },
       {
-        day: "16.07.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-07-16",
       },
       {
-        day: "23.07.2022",
+        day: "2022-07-23",
         place: "Obsza",
         hotel: "Dom weselny \"Pensjonat Roztocze\"",
         address: "Obsza 138",
@@ -234,7 +168,7 @@ export const YEAR_2022 = [
         weddingHour: "15.00",
       },
       {
-        day: "30.07.2022",
+        day: "2022-07-30",
         place: "Mircze",
         hotel: "Dom weselny Jaśko",
         address: "",
@@ -247,28 +181,16 @@ export const YEAR_2022 = [
     name: "Sierpień",
     days: [
       {
-        day: "06.08.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-08-06",
       },
       {
-        day: "13.08.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-08-13",
       },
       {
-        day: "20.08.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-08-20",
       },
       {
-        day: "27.08.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-08-27",
       }
     ]
   },
@@ -276,30 +198,18 @@ export const YEAR_2022 = [
     name: "Wrzesień",
     days: [
       {
-        day: "03.09.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-09-03",
       },
       {
-        day: "10.09.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-09-10",
       },
       {
-        day: "17.09.2022",
-        free: true,
-        place: "",
-        hotel: "",
+        day: "2022-09-17",
         status: STATUS.HOLIDAY,
         information: "zostawione wolne, Darii nie będzię"
       },
       {
-        day: "24.09.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-09-24",
       }
     ]
   },
@@ -307,43 +217,34 @@ export const YEAR_2022 = [
     name: "Październik",
     days: [
       {
-        day: "01.10.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-10-01",
       },
       {
-        day: "08.10.2022",
+        day: "2022-10-08",
         place: "Hrubieszów",
         hotel: "Gniecki",
         weekDay: WEEK_DAY.SATUDRAY,
         status: STATUS.BUSY,
-        "blessing": "noInfo",
-        "blessingTime": "noInfo",
-        weddingHour: "noInfo",
+        // "blessing": "noInfo",
+        // "blessingTime": "noInfo",
+        // weddingHour: "noInfo",
         information: "przekładane z 29.05.2021"
       },
       {
-        day: "15.10.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-10-15",
       },
       {
-        day: "22.10.2022",
+        day: "2022-10-22",
         place: "Tyszowce",
         hotel: "Szewska Pasja",
         weekDay: WEEK_DAY.SATUDRAY,
         status: STATUS.BUSY,
-        "blessing": "noInfo",
-        "blessingTime": "noInfo",
-        weddingHour: "noInfo",
+        // "blessing": "noInfo",
+        // "blessingTime": "noInfo",
+        // weddingHour: "noInfo",
       },
       {
-        day: "29.10.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-10-29",
       }
     ]
   },
@@ -351,28 +252,16 @@ export const YEAR_2022 = [
     name: "Listopad",
     days: [
       {
-        day: "05.11.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-11-05",
       },
       {
-        day: "12.11.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-11-12",
       },
       {
-        day: "19.11.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-11-19"
       },
       {
-        day: "26.11.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-11-26",
       }
     ]
   },
@@ -380,34 +269,19 @@ export const YEAR_2022 = [
     name: "Grudzień",
     days: [
       {
-        day: "03.12.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-12-03",
       },
       {
-        day: "10.12.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-12-10",
       },
       {
-        day: "17.12.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-12-17",
       },
       {
-        day: "24.12.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-12-24",
       },
       {
-        day: "31.12.2022",
-        place: "",
-        hotel: "",
-        status: STATUS.EMPTY
+        day: "2022-12-31",
       }
     ]
   }

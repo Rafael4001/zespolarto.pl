@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
-import { Media, Player, controls } from 'react-media-player'
+import React, {useState} from 'react'
+import styled from 'styled-components';
+import {Media, Player, controls} from 'react-media-player'
 import PlayPause from '../../mp3Player/withMediaProps'
 import TrackContainer from "../TrackContainer";
-import { SONGS_IMAGES } from "../../constants";
+import {SCREEN} from '../../constants'
 
-import { Typography } from "@material-ui/core";
-import { TRACK_LIST } from "../../trackList";
+
+import {Typography} from "@material-ui/core";
+import {TRACK_LIST} from "../../trackList";
+import {COLORS} from "../../colors";
 
 
 const {
@@ -67,77 +70,55 @@ class Panner {
 
 const tracks = TRACK_LIST;
 
-class PlayerCustomized extends Component {
-  state = {
-    actualPlayingTrackMp3Name: tracks[0].mp3Name,
-    autoplay: false,
-    isPlaying: false,
-    actualSongImage: '',
-    actualSongName: '',
+const PlayerCustomized = ({className, classes}) => {
+  const [actualPlayingTrackMp3Name, setActualPlayingTrackMp3Name] = useState(tracks[0].mp3Name)
+  const [autoplay, setAutoplay] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [actualSongName, setActualSongName] = useState("")
+
+
+  const connectSource = (source, audioContext) => {
+    const panner = new Panner({source, audioContext});
+    return panner.connect()
   };
 
-  componentDidMount() {
-    this.setState({
-      actualSongImage: tracks[0].imgSrc
-    })
+
+  const handleTrackClick = (track) => {
+    setActualPlayingTrackMp3Name(track.mp3Name)
+    setActualSongName(track.name)
+    setAutoplay(true)
+    setIsPlaying(true)
   }
 
 
-  _connectSource = (source, audioContext) => {
-    this.panner = new Panner({source, audioContext});
-    return this.panner.connect()
-  };
-
-
-  trackList = () => (
+  const getTrackList = () => (
     tracks.map(track => {
       return (
         <TrackContainer
           key={track.name}
           track={track}
-          actualPlayingTrackMp3Name={this.state.actualPlayingTrackMp3Name}
-          onClickPlay={() => {
-            return (
-              this.setState({
-                actualPlayingTrackMp3Name: track.mp3Name,
-                actualSongName: track.name,
-                autoplay: true,
-                isPlaying: true,
-                actualSongImage: track.imgSrc ? track.imgSrc : SONGS_IMAGES.DefaultSongImage,
-              })
-            )
-          }}
+          actualPlayingTrackMp3Name={actualPlayingTrackMp3Name}
+          onClickPlay={() => handleTrackClick(track)}
         />
       )
     })
   );
 
-  showWhatSongIsPlaying = (song) => {
-    return song.mp3Name === this.state.actualPlayingTrackMp3Name
-  };
+  const showWhatSongIsPlaying = (song) => song.mp3Name === actualPlayingTrackMp3Name;
 
 
-  playNextSong = () => {
-    const actualSongIndex = tracks.findIndex(this.showWhatSongIsPlaying);
+  const playNextSong = () => {
+    const actualSongIndex = tracks.findIndex(showWhatSongIsPlaying);
     const newSongIndex = actualSongIndex + 1;
     const nextSong = tracks[newSongIndex];
 
-    this.setState({
-      actualPlayingTrackMp3Name: nextSong.mp3Name,
-      actualSongName: nextSong.name,
-      autoplay: true,
-      isPlaying: true,
-      actualSongImage: nextSong.imgSrc ? nextSong.imgSrc : SONGS_IMAGES.DefaultSongImage,
-    })
+    handleTrackClick(nextSong)
   };
 
-
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <Media ref={c => (this.media = c)}>
-        <div className={classes.mainContainer}>
+  return (
+    <div className={className}>
+      <Media>
+        <div className="mainContainer">
           <div className={classes.albumImageContainer}>
             <Typography
               className={classes.contactTextContainer}
@@ -145,7 +126,7 @@ class PlayerCustomized extends Component {
             >Demo</Typography>
 
             <Typography
-              className={classes.currentSong}>{this.state.actualSongName ? this.state.actualSongName : 'Wybierz utwor'}</Typography>
+              className={classes.currentSong}>{actualSongName || 'Wybierz utwor'}</Typography>
             <PlayPause/>
             <div className={classes.seekBarContainer}>
               <div className={classes.playerTime}><CurrentTime/>/<Duration/></div>
@@ -153,27 +134,154 @@ class PlayerCustomized extends Component {
             </div>
             <div className={classes.actualSongPlayer}>
               <Player
-                ref={c => (this._player = c)}
-                src={`/mp3/${this.state.actualPlayingTrackMp3Name}.mp3`}
-                connectSource={this._connectSource}
+                src={`/mp3/${actualPlayingTrackMp3Name}.mp3`}
+                connectSource={connectSource}
                 useAudioObject
-                autoPlay={this.state.autoplay}
-                isPlaying={this.state.isPlaying}
-                onEnded={this.playNextSong}
+                autoPlay={autoplay}
+                isPlaying={isPlaying}
+                onEnded={playNextSong}
               />
             </div>
           </div>
 
           <div className={classes.trackListContainer}>
-            {this.trackList()}
+            {getTrackList()}
           </div>
         </div>
       </Media>
+    </div>
+  )
 
-    )
-  }
 }
+
+const StyledPlayerCustomized = styled(PlayerCustomized)`
+
+  input[type=range] {
+    width: 100%;
+    margin: 12.8px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    background: rgba(180, 22, 22, 0.2);
+    border: 1px solid #010101;
+    border-radius: 10px;
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -6px;
+    width: 18px;
+    height: 18px;
+    background: ${COLORS.red.main};
+    border: 1px solid ${COLORS.red.main};
+    border-radius: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+      // background: ${COLORS.red.main};
+    -webkit-appearance: none;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    //background: #965fc2;
+  }
+
+  //input[type=range]::-moz-range-track {
+  //  background: rgba(138, 77, 187, 0.6);
+  //  border: 0.2px solid #010101;
+  //  border-radius: 1.3px;
+  //  width: 100%;
+  //  height: 8.4px;
+  //  cursor: pointer;
+  //}
+
+  //input[type=range]::-moz-range-thumb {
+  //  width: 36px;
+  //  height: 34px;
+  //  background: #ffffff;
+  //  border: 5.2px solid #c8aaaf;
+  //  border-radius: 3px;
+  //  cursor: pointer;
+  //}
+
+  //input[type=range]::-ms-track {
+  //  background: transparent;
+  //  border-color: transparent;
+  //  border-width: 22.5px 0;
+  //  color: transparent;
+  //  width: 100%;
+  //  height: 8.4px;
+  //  cursor: pointer;
+  //}
+
+  //input[type=range]::-ms-fill-lower {
+  //  background: #cab6de;
+  //  border: 0.2px solid #010101;
+  //  border-radius: 2.6px;
+  //}
+
+  //input[type=range]::-ms-fill-upper {
+  //  background: rgba(138, 77, 187, 0.6);
+  //  border: 0.2px solid #010101;
+  //  border-radius: 2.6px;
+  //}
+
+  //input[type=range]::-ms-thumb {
+  //  width: 36px;
+  //  height: 34px;
+  //  background: #ffffff;
+  //  border: 5.2px solid #c8aaaf;
+  //  border-radius: 3px;
+  //  cursor: pointer;
+  //  margin-top: 0px;
+  //}
+
+  //input[type=range]:focus::-ms-fill-lower {
+  //  background: rgba(138, 77, 187, 0.6);
+  //}
+
+  //input[type=range]:focus::-ms-fill-upper {
+  //  background: #965fc2;
+  //}
+
+  ///*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  //how to remove the virtical space around the range input in IE*/
+  //@supports (-ms-ime-align:auto) {
+  //  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  //  input[type=range] {
+  //    margin: 0;
+  //    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  //  }
+  //}
+  //----------------------------------------------------------------------
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    @media (min-width: ${SCREEN.M}) {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+,
+`
 
 PlayerCustomized.displayName = 'PlayerCustomized';
 
-export default PlayerCustomized
+export default StyledPlayerCustomized

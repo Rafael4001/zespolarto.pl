@@ -23,6 +23,7 @@ const styles = (theme) => ({
     },
   },
   text: {
+    textAlign: 'center',
     fontSize: '1.1rem',
     fontFamily: '\'Baskervville\',serif',
   },

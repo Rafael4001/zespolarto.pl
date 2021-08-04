@@ -1,1 +1,1 @@
-export { default } from './HomePage.style';
+export { default } from './HomePage';

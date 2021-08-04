@@ -1,4 +1,4 @@
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import PlayedWeddingInformationContainer from './PlayedWeddingInformationContainer'
 
 
@@ -18,6 +18,8 @@ const styles = (theme) => ({
   },
   photoContainer: {
     padding: '1rem',
+    // position: "relative",
+    width: '100%',
 
     [theme.breakpoints.down('sm')]: {
       display: 'none',
@@ -26,10 +28,6 @@ const styles = (theme) => ({
   text: {
     fontSize: '1.1rem',
     fontFamily: '\'Baskervville\',serif',
-  },
-  cytat: {
-    fontSize: '1rem',
-    fontFamily: '\'Courgette\', cursive',
   },
   brideIcon: {
     width: '5rem',
@@ -45,6 +43,28 @@ const styles = (theme) => ({
   happyPairsTextNUmber: {
     fontSize: '2rem',
     fontFamily: 'Parisienne',
+  },
+  imageWrapperContainerMain: {
+    width: '100%',
+    padding: '1rem',
+  },
+  imageWrapperContainer: {
+    position: 'relative',
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  class1: {
+    position: "relative",
+    width: '100%',
+
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
+  },
+  class2: {
+    display: 'flex',
+    justifyContent: 'center',
   }
 });
 

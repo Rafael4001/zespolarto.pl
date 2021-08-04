@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import PropTypes from "prop-types";
 
 import classNames from "classnames";
@@ -6,7 +6,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
 import Typography from '@material-ui/core/Typography';
-import { FACEBOOK_URL, IMAGE_4, LUBLIN_MAP } from "../../constants";
+import {FACEBOOK_URL, IMAGE_4, LUBLIN_MAP} from "../../constants";
+import Image from 'next/image'
 
 
 class ContactContainer extends Component {
@@ -17,10 +18,13 @@ class ContactContainer extends Component {
       <div>
         <div className={classes.mainContainer}>
           <div className={classes.photoContainer}>
-            <img
+            <Image
               src={IMAGE_4}
               alt={'zespół arto'}
               className={classes.photo}
+              layout="responsive"
+              width={768}
+              height={428}
             />
           </div>
 
@@ -58,7 +62,11 @@ class ContactContainer extends Component {
                 <Typography className={classes.textContactPageBold}>Zobacz nasz funpage na facebooku</Typography>
               </div>
               <div className={classes.facebookIconContainer}>
-                <a target={'_blank'} href={FACEBOOK_URL}>
+                <a
+                  target={'_blank'}
+                  href={FACEBOOK_URL}
+                  rel="noreferrer"
+                >
                   <FacebookIcon style={{color: '#3b5998'}} className={classes.facebookIcon}/>
                 </a>
               </div>
@@ -78,12 +86,23 @@ class ContactContainer extends Component {
             </Typography>
           </div>
 
-          <div className={classes.mapContainer}>
-            <img
+          {/*<div className={classes.mapContainer}>*/}
+          <div className={classes.photoContainer}>
+
+            <Image
               src={LUBLIN_MAP}
               alt={'województwo Lubelskie'}
-              className={classes.photoMap}
+              className={classes.photo}
+              layout="responsive"
+              width={567}
+              height={551}
             />
+
+            {/*<img*/}
+            {/*  src={LUBLIN_MAP}*/}
+            {/*  alt={'województwo Lubelskie'}*/}
+            {/*  className={classes.photoMap}*/}
+            {/*/>*/}
           </div>
         </div>
       </div>

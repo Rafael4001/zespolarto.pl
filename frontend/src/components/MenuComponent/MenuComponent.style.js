@@ -1,8 +1,8 @@
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 
 import MenuComponent from './MenuComponent'
 
-import { COLORS } from "../../colors";
+import {COLORS} from "../../colors";
 
 
 const styles = (theme) => ({
@@ -19,10 +19,17 @@ const styles = (theme) => ({
     margin: '0 2rem 0 0'
   },
 
+  photoContainerMain: {
+    [theme.breakpoints.down('sm')]: {
+      width: '4rem'
+    },
+    width: '6rem'
+  },
   photoContainer: {
-    display: 'flex',
-    padding: '0.2rem 2rem',
-    justifyContent: 'center',
+    position: "relative",
+    width: '100%',
+    marginLeft: '2rem',
+    transition: '0.1s',
 
     '&:hover': {
       transition: '0.3s',
@@ -31,15 +38,17 @@ const styles = (theme) => ({
   },
 
   logoMobileContainer: {
+    position: "relative",
     display: 'flex',
     justifyContent: 'center',
+    width: '3rem',
   },
   photo: {
-    width: '6rem',
+    // width: '6rem',
   },
   logoMobile: {
     width: '3rem',
-    height: '3rem',
+    // height: '3rem',
     margin: '0.125rem 0.5rem',
     borderRadius: '100%',
   },
@@ -48,6 +57,7 @@ const styles = (theme) => ({
       display: 'none',
     },
   },
+  //TODO wywaloc to na dole
   menuMobile: {
     display: 'flex',
     justifyContent: 'space-between',

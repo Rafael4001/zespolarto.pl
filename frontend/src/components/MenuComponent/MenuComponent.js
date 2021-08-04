@@ -1,30 +1,36 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import PropTypes from "prop-types";
 
 import MenuItem from '../MenuItem'
-import { MENU_ITEMS, LOGO_ON_THE_FLOWERS } from '../../constants';
+import {MENU_ITEMS, LOGO_ON_THE_FLOWERS} from '../../constants';
 import Link from "next/link";
+import Image from 'next/image'
 
 import MenuBurger from './MenuBurger'
 
 
-class MenuComponent extends Component {
-  getMenuItems = () => (
+const MenuComponent = ({classes}) => {
+  const MenuItems = () => (
     MENU_ITEMS.map(({name, link, as}) => (
       <MenuItem key={name} title={name} href={link} as={as}/>
     ))
   );
 
-  getMobileMenu = () => {
+  const MobileMenu = () => {
     return (
-      <div className={this.props.classes.menuMobile}>
-        <Link href={'./'}>
-          <div className={this.props.classes.logoMobileContainer}>
-            <img
-              src={LOGO_ON_THE_FLOWERS}
-              alt={'photo 1'}
-              className={this.props.classes.logoMobile}
-            />
+      <div className={classes.mainContainer}>
+        <Link href={'./'} passHref>
+          <div className={classes.photoContainerMain}>
+            <div className={classes.photoContainer}>
+              <Image
+                src={LOGO_ON_THE_FLOWERS}
+                alt={'photo 1'}
+                layout="responsive"
+                width={342}
+                height={300}
+              />
+            </div>
+
           </div>
         </Link>
         <MenuBurger/>
@@ -33,37 +39,38 @@ class MenuComponent extends Component {
   };
 
 
-  getWebMenu = () => (
-    <div className={this.props.classes.mainContainer}>
-      <Link href={'./'}>
-        <div className={this.props.classes.photoContainer}>
-          <img
-            src={LOGO_ON_THE_FLOWERS}
-            alt={'photo 1'}
-            className={this.props.classes.photo}
-          />
+  const WebMenu = () => (
+    <div className={classes.mainContainer}>
+      <Link href={'./'} passHref>
+        <div className={classes.photoContainerMain}>
+          <div className={classes.photoContainer}>
+            <Image
+              src={LOGO_ON_THE_FLOWERS}
+              alt={'photo 1'}
+              layout="responsive"
+              width={342}
+              height={300}
+            />
+          </div>
+
         </div>
       </Link>
-      <div className={this.props.classes.menuContainer}>
-        {this.getMenuItems()}
+      <div className={classes.menuContainer}>
+        <MenuItems/>
       </div>
     </div>
   );
+  return (
+    <nav>
+      <div className={classes.menuWeb}>
+        <WebMenu/>
+      </div>
+      <div className={classes.menuMobile}>
+        <MobileMenu/>
+      </div>
+    </nav>
+  )
 
-  render() {
-    const {classes} = this.props;
-
-    return (
-      <nav>
-        <div className={classes.menuWeb}>
-          {this.getWebMenu()}
-        </div>
-        <div className={classes.menuMobile}>
-          {this.getMobileMenu()}
-        </div>
-      </nav>
-    )
-  }
 }
 
 MenuComponent.propTypes = {

@@ -4,7 +4,6 @@ cp my-app.conf /etc/nginx/conf.d
 cp redirect.conf /etc/nginx/conf.d
 sudo nginx -t
 sudo service nginx restart
-pm2 delete "be"
 pm2 delete "fe"
 cd frontend
 yarn run build

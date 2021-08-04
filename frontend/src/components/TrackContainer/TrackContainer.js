@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button";
 
 import { SONGS_IMAGES } from "../../constants";
 
-import Image from "../Image";
+import ImageCustom from "../Image";
 
 
 class TrackContainer extends Component {
@@ -36,7 +36,7 @@ class TrackContainer extends Component {
           className={classes.songImage}
           onClick={(actualPlayingTrackMp3Name === track.mp3Name && media.isPlaying) ? media.pause : this.handlePlayClick}
         >
-          <Image imgSrc={trackImage}/>
+          <ImageCustom imgSrc={trackImage} alt/>
         </div>
         {actualPlayingTrackMp3Name === track.mp3Name && media.isPlaying ?
           (<Button
@@ -63,7 +63,6 @@ class TrackContainer extends Component {
         }
         <div>
           <div className={classes.trackName}>{track.name}</div>
-
           <div className={classes.trackArtistText}>({track.artist && ` - ${track.artist}`})</div>
         </div>
       </div>

@@ -1,53 +1,41 @@
-import React, { Fragment } from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheets } from '@material-ui/core/styles';
+import {Fragment} from 'react';
+import Document,
+{
+  Html,
+  Head,
+  Main,
+  NextScript,
+} from 'next/document'
 import theme from '../config/theme';
-// import { initGTM, renderGTM } from '../src/utilities/analytics';
-import { FAVICON } from '../src/constants';
+import {FAVICON} from "../src/constants";
+import { ServerStyleSheets } from '@material-ui/core/styles';
+
 
 class MyDocument extends Document {
   render() {
     return (
-      <html lang="pl" dir="ltr">
-      <Head>
-        {/*{initGTM()}*/}
-        {/*<link rel="shortcut icon" type="image/x-icon" href={FAVICON} />*/}
-        {/*<link rel="icon" type="image/x-icon" href={FAVICON} />*/}
+      <Html lang="pl">
+        <Head>
+          <link rel="apple-touch-icon" sizes="180x180" href={FAVICON.appleTouch}/>
+          <link rel="icon" type="image/png" sizes="32x32" href={FAVICON.favicon32x32}/>
+          <link rel="icon" type="image/png" sizes="16x16" href={FAVICON.favicon16x16}/>
+          <link rel="mask-icon" href={FAVICON.safari} color="#5bbad5"/>
 
-        <link rel="apple-touch-icon" sizes="180x180" href={FAVICON.appleTouch}/>
-        <link rel="icon" type="image/png" sizes="32x32" href={FAVICON.favicon32x32}/>
-        <link rel="icon" type="image/png" sizes="16x16" href={FAVICON.favicon16x16}/>
-        <link rel="mask-icon" href={FAVICON.safari} color="#5bbad5"/>
-        <meta name="msapplication-TileColor" content="#da532c"/>
-        <meta name="theme-color" content="#ffffff"/>
-        <link rel="manifest" href={FAVICON.siteWebManifest}/>
+          <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i&display=swap" rel="stylesheet"/>
 
-        <meta charSet="utf-8"/>
-        {/* PWA primary color */}
-        <meta name="theme-color" content={theme.palette.primary.main}/>
-        {/* Use minimum-scale=1 to enable GPU rasterization */}
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-        />
-        <meta name="google" value="notranslate"/>
-
-        <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i&display=swap" rel="stylesheet"/>
-
-        {/*  na cytaty font
+          {/*  na cytaty font
       https://fonts.google.com/specimen/Sacramento
       */}
-      </Head>
-      <body>
-      {/*{renderGTM()}*/}
-      <Main/>
-      <NextScript/>
-      </body>
-      </html>
-    );
+        </Head>
+        <body>
+        <Main/>
+        <NextScript/>
+        </body>
+      </Html>
+    )
   }
 }
 

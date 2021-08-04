@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Contact from './Contact'
 
 
-const styles = (theme) => ({
+const styles = () => ({
   menuHomepage: {
     position: 'fixed',
     top: '0rem',
