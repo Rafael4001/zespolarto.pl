@@ -25,7 +25,6 @@ const Calendar = ({className}) => {
     <div className={className}>
       <div className="buttonsContainer">
 
-
         <Button
           variant={year.name === years.year2021.name ? "contained" : "outlined"}
           color="primary"
