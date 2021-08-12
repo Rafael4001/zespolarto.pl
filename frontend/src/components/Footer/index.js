@@ -18,7 +18,9 @@ const Footer = ({ className}) => (
       <div className="logoContainer">
         <Link href={LINKS.HOME.HREF} passHref>
           <a>
-            <Image width={45} height={40}
+            <Image
+              width={45}
+              height={40}
               src={LOGO_ON_THE_FLOWERS}
               alt={'logo zespolu Arto'}
               className="iconArto"
@@ -91,19 +93,18 @@ const Footer = ({ className}) => (
 )
 
 const StyledFooter = styled(Footer)`
-  padding: 1rem 1rem 0.2rem 1rem;
+  padding: 1rem 0 0.2rem 0;
   border-top: solid 1px ${COLORS.grey.dark_1}; 
 
   @media (min-width: ${SCREEN.M}) {
-    padding: 1rem;
+    padding: 0;
   }
-
+  
   .mainContainer {
     & a {
       text-decoration: none;
     }
 
-    //background-color: rebeccapurple;
     border-bottom: 0.0625rem solid ${COLORS.grey.dark_1};
     display: grid;
     grid-template-columns: 1fr;
@@ -196,7 +197,7 @@ const StyledFooter = styled(Footer)`
     justify-content: space-between;
     font-size: 0.5rem;
     font-weight: 100;
-    padding: 0.625rem 0;
+    padding: 0.625rem 0.5rem;
 
     @media (min-width: ${SCREEN.M}) {
       font-size: 0.75rem;

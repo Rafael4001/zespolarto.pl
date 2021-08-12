@@ -18,7 +18,7 @@ const styles = (theme) => ({
     [theme.breakpoints.up('sm')]: {
       display: 'grid',
       gridTemplateColumns: '1fr 1fr',
-      marginBottom: '2rem',
+      marginBottom: '1rem',
     },
   },
   subContainer: {
@@ -121,9 +121,6 @@ const styles = (theme) => ({
       fontSize: '2.3125rem',
     },
   },
-  // photo: {
-  //   width: '100%',
-  // },
   dataContainer: {
     display: 'flex',
     flexDirection: 'column',
@@ -202,6 +199,7 @@ const styles = (theme) => ({
     display: 'grid',
     gridTemplateColumns: '1fr',
     marginBottom: '0.25rem',
+    paddingTop: '1rem',
 
     [theme.breakpoints.up('sm')]: {
       gridTemplateColumns: '1fr 1fr',

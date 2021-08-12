@@ -8,6 +8,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import Typography from '@material-ui/core/Typography';
 import {FACEBOOK_URL, IMAGE_4, LUBLIN_MAP} from "../../constants";
 import Image from 'next/image'
+import Divider from '@material-ui/core/Divider';
 
 
 class ContactContainer extends Component {
@@ -25,6 +26,7 @@ class ContactContainer extends Component {
               layout="responsive"
               width={768}
               height={428}
+              loading="eager"
             />
           </div>
 
@@ -74,7 +76,7 @@ class ContactContainer extends Component {
           </div>
         </div>
 
-
+        <Divider/>
         <div className={this.props.classes.mainContainerMap}>
           <div className={classes.mapDetailsTextContainer}>
             <div>
