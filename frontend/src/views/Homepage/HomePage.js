@@ -8,7 +8,7 @@ import HomepageMainPhoto from '../../components/HomepageMainPhoto';
 import DescriptionBlock from "../../components/DescriptionBlock";
 import BandMembers from "../../components/BandMembers";
 import PlayedWeddingInformationContainer from "../../components/PlayedWeddingInformationContainer";
-// import OpinionsContainer from "../../components/OpinionsContainer";
+import OpinionsContainer from "../../components/OpinionsContainer";
 // import ContactContainer from "../../components/ContactContainer";
 
 
@@ -19,7 +19,7 @@ const Homepage = () => (
     <DescriptionBlock/>
     <BandMembers/>
     <PlayedWeddingInformationContainer/>
-    {/*<OpinionsContainer/>*/}
+    <OpinionsContainer/>
     {/*<ContactContainer/>*/}
   </PageWrapper>
 );

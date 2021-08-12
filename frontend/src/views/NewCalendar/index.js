@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import 'react-day-picker/lib/style.css';
 import MonthView from './MonthView'
 import styled from 'styled-components'
 import Button from '@material-ui/core/Button';
@@ -24,7 +23,6 @@ const Calendar = ({className}) => {
   return (
     <div className={className}>
       <div className="buttonsContainer">
-
         <Button
           variant={year.name === years.year2021.name ? "contained" : "outlined"}
           color="primary"

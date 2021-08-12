@@ -2,13 +2,12 @@ import styled from 'styled-components'
 import React, {useState} from "react";
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
-import {STATUS, WEEKDAYS_SHORT, MONTHS, FIRST_DAY_OF_WEEK, MORE} from "../../../constants";
+import {STATUS, WEEKDAYS_SHORT, MONTHS, FIRST_DAY_OF_WEEK} from "../../../constants";
 import classNames from 'classnames';
 import {COLORS} from "../../../colors";
 import moment from "moment";
 import Popover from '@material-ui/core/Popover';
 import DetailsOfTerm from '../DetailsOfTerm'
-// import Image from "next/image";
 
 
 const MonthView = ({className, year, month, index}) => {

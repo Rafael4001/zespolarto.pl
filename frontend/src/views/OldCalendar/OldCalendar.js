@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
-import PropTypes from "prop-types";
 import AppBar from '@material-ui/core/AppBar';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
-import moment from 'moment';
 import styled from 'styled-components'
 
 
@@ -14,7 +12,7 @@ import Months from "../../components/Months";
 import NewCalendar from "../../views/NewCalendar";
 import TabPanel from "./TabPanel";
 
-import {DAYS, daysArray, STATUS} from "../../constants";
+import {STATUS} from "../../constants";
 
 
 const YEAR_2021_TITLE_TEXT = "2021";
@@ -84,7 +82,7 @@ const OldCalendar = ({className}) => {
             <Months table={year.details} weddingAmount={weddingAmount}/>
           </TabPanel>)
       })}
-      <TabPanel  key={'NewCalendar'} value={value} index={years.length}>
+      <TabPanel key={'NewCalendar'} value={value} index={years.length}>
         <NewCalendar/>
       </TabPanel>
     </div>

@@ -13,7 +13,7 @@ export const LEAF = '../static/image/icons/leaf.svg';
 export const MORE = '/static/image/icons/more.png';
 export const LUBLIN_MAP = '/static/image/WojLubelskie.jpg';
 export const PHOTO_CARD_IMAGE = '../static/image/GalleryCardPhoto.jpeg';
-export const VIDEO_CARD_IMAGE = '../static/image/videoCardPhoto.jpeg';
+export const VIDEO_CARD_IMAGE = '/static/image/videoCardPhoto.jpeg';
 
 export const FAVICON = {
   appleTouch: '../static/image/favicon_io/apple-touch-icon.png',
