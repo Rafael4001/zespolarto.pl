@@ -26,7 +26,8 @@ class ContactContainer extends Component {
               layout="responsive"
               width={768}
               height={428}
-              loading="eager"
+              // loading="eager"
+              unoptimized={true}
             />
           </div>
 
@@ -77,6 +78,7 @@ class ContactContainer extends Component {
         </div>
 
         <Divider/>
+
         <div className={this.props.classes.mainContainerMap}>
           <div className={classes.mapDetailsTextContainer}>
             <div>

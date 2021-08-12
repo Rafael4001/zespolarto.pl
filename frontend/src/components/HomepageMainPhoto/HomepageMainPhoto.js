@@ -38,15 +38,8 @@ const HomepageMainPhoto = ({classes}) => (
             width={1000}
             height={559}
             placeholder={() => <div style={{backgroundColor: 'red'}}/>}
-            loading="eager"
+            unoptimized={true}
           />
-           {/*<img*/}
-           {/*  src={IMAGE_1}*/}
-           {/*  alt={'Arto music band'}*/}
-           {/*   layout="responsive"*/}
-           {/*   width={1000}*/}
-           {/*   height={559}*/}
-           {/*/>*/}
         </div>
       </div>
     </div>

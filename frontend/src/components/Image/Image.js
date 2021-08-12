@@ -7,11 +7,11 @@ const Image = (props) => {
 
   return (
     <ImageNext
-      blur={true}
       src={imgSrc}
       alt={'photo 1'}
       width={75}
       height={75}
+      unoptimized={true}
     />
   )
 };
