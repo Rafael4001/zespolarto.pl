@@ -12,7 +12,6 @@ const Image = (props) => {
       alt={'photo 1'}
       width={75}
       height={75}
-      loading="eager"
     />
   )
 };
