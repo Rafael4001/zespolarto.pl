@@ -1,1 +1,1 @@
-export { default } from './Image.style';
+export { default } from './Image';

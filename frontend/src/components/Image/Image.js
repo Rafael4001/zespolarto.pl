@@ -1,24 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames'
 import ImageNext from "next/image";
 
 const Image = (props) => {
-  const {imgSrc, classes} = props;
+  const {imgSrc} = props;
 
   return (
     <ImageNext
+      blur={true}
       src={imgSrc}
       alt={'photo 1'}
-      className={classNames(classes.image, props.className)}
       width={75}
       height={75}
+      loading="eager"
     />
   )
 };
 
 Image.propTypes = {
-  classes: PropTypes.object.isRequired,
   imgSrc: PropTypes.string.isRequired,
 };
 

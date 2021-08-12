@@ -17,6 +17,7 @@ const PlayedWeddingInformationContainer = ({classes}) => (
               alt={'smile'}
               width={75}
               height={75}
+              loading="eager"
             />
           </div>
 
