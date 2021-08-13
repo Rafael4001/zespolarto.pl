@@ -70,7 +70,6 @@ const OpinionsContainer = ({classes}) => {
             alt={'leaf'}
             width={30}
             height={30}
-            // unoptimized={true}
             className={classes.leaf_icon}
           />
           <div className={classes.quotationContainer}>
