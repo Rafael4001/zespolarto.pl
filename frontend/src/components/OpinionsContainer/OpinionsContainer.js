@@ -71,7 +71,7 @@ const OpinionsContainer = ({classes}) => (<div>
     dotListClass=""
     draggable
     focusOnSelect={false}
-    infinite
+    // infinite
     itemClass=""
     keyBoardControl
     minimumTouchDrag={80}
@@ -84,11 +84,11 @@ const OpinionsContainer = ({classes}) => (<div>
     swipeable
     // removeArrowOnDeviceType="mobile"
   >
-    {MARRIED_OPINIONS.map(item => <OpinionTale key={item.weddingDate} details={item}/>)}
+    {MARRIED_OPINIONS.slice(0, 6).map(item => <OpinionTale key={item.weddingDate} details={item}/>)}
   </Carousel>
   <div className={classes.buttonMoreContainer}>
     <Link href={LINKS.OPINIONS.HREF} passHref><Button variant="outlined"> <Typography
-      classes={{root: classes.moreOpinionsButton,}}>Zobacz więcej
+      classes={{root: classes.moreOpinionsButton}}>Zobacz więcej
       opinii</Typography></Button></Link>
   </div>
 </div>)

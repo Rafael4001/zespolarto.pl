@@ -85,6 +85,7 @@ const MEDIA = 'Media';
 const DEMO = 'Demo';
 const OFERTA = 'Oferta';
 const KONTAKT = 'Kontakt';
+const OPINIE = 'Opinie';
 const KALENDARZ = 'Kalendarz';
 
 export const LINKS = {
@@ -93,7 +94,7 @@ export const LINKS = {
   CONTACT: {HREF: '/contact', AS: '/contact'},
   MEDIA: {HREF: '/media', AS: '/media'},
   TERMS: {HREF: '/terminy', AS: '/terminy'},
-  OPINIONS: {HREF: '/opinions', AS: '/opinie'},
+  OPINIONS: {HREF: '/opinions', AS: '/opinions'},
 };
 
 export const MENU_ITEMS = [
@@ -103,6 +104,7 @@ export const MENU_ITEMS = [
   // {name: MEDIA, link: LINKS.MEDIA.HREF, as: LINKS.MEDIA.AS},
   // {name: OFERTA, link: './oferta'},
   // {name: KALENDARZ, link: './kalendarz'},
+  {name: OPINIE, link: LINKS.OPINIONS.HREF, as: LINKS.OPINIONS.AS},
   {name: KONTAKT, link: LINKS.CONTACT.HREF, as: LINKS.CONTACT.AS},
 ];
 

@@ -18,7 +18,7 @@ const OpinionTale = ({details, classes, more=true}) => {
           alt={picture}
           width={301}
           height={201}
-          // unoptimized={true}
+          unoptimized={true}
           className={classes.photoCard}
         />
       </div>
