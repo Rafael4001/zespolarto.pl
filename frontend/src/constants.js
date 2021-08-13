@@ -187,6 +187,13 @@ export const MARRIED_OPINIONS = [
       "Pozdrawiamy "
   },
   {
+    woman: 'Amanda',
+    man: 'Patryk',
+    picture: '/static/image/married/2020.06.27_Amanda_Patryk.jpg',
+    weddingDate: '27.07.2020',
+    opinion: "Dziękujemy Zespołowi Arto za tak wspaniałą zabawę! Jesteśmy bardzo zadowoleni i jak najbardziej polecamy ! W szczególności zachwycający i chwytający za serce jest głos wokalistki, która piosenką dla naszych rodziców wzruszyła wszystkich zebranych. Polecamy! :-)"
+  },
+  {
     woman: 'Joanna',
     man: 'Jakub',
     picture: '/static/image/married/2020.08.28_Joanna_Jakub.jpg',
@@ -269,13 +276,7 @@ export const MARRIED_OPINIONS = [
     opinion: "" +
       "Dziękujemy zespołowi Arto za wspaniałe wesele. Tańce, zabawy przy świetnej muzyce do białego  rana:) pełen profesjonalizm, piękny śpiew wokalistow na żywo!  oraz organizację calej zabawy. Gorąco polecam!! "
   },
-  {
-    woman: 'Amanda',
-    man: 'Patryk',
-    picture: '/static/image/married/2020.06.27_Amanda_Patryk.jpg',
-    weddingDate: '27.07.2020',
-    opinion: "Dziękujemy Zespołowi Arto za tak wspaniałą zabawę! Jesteśmy bardzo zadowoleni i jak najbardziej polecamy ! W szczególności zachwycający i chwytający za serce jest głos wokalistki, która piosenką dla naszych rodziców wzruszyła wszystkich zebranych. Polecamy! :-)"
-  },
+
   //--------------FEJKOWE ponizej----------------------------------
   // {
   //   woman: 'Monika',
