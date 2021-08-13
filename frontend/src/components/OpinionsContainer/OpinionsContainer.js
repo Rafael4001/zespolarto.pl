@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from "prop-types";
 import classNames from 'classnames';
-import {VIDEO_CARD_IMAGE, LEAF, LOVE_LETTER, MARRIED_OPINIONS} from "../../constants";
+import {LEAF, LOVE_LETTER, MARRIED_OPINIONS} from "../../constants";
 import Button from '@material-ui/core/Button';
+import Tooltip from '@material-ui/core/Tooltip';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -77,7 +78,9 @@ const OpinionsContainer = ({classes}) => {
             {man && woman && <Typography classes={{root: classes.names,}}>{man}</Typography>}
             {opinion && <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 40)}...</Typography>}
             <Typography classes={{root: classes.author,}}>{weddingDate}r.</Typography>
-            <Button><Typography classes={{root: classes.more,}}>więcej...</Typography></Button>
+            <Tooltip title={opinion}>
+              <Button><Typography classes={{root: classes.more,}}>więcej...</Typography></Button>
+            </Tooltip>
           </div>
         </div>
       </div>
@@ -128,7 +131,8 @@ const OpinionsContainer = ({classes}) => {
         {MARRIED_OPINIONS.map(item => Item(item))}
       </Carousel>
       <div className={classes.buttonMoreContainer}>
-        <Button variant="outlined" > <Typography classes={{root: classes.moreOpinionsButton,}}>Zobacz więcej opinii</Typography></Button>
+        <Button variant="outlined"> <Typography classes={{root: classes.moreOpinionsButton,}}>Zobacz więcej
+          opinii</Typography></Button>
       </div>
     </div>
   )
