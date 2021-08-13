@@ -75,7 +75,7 @@ const OpinionsContainer = ({classes}) => {
           <div className={classes.quotationContainer}>
             {man && woman && <Typography classes={{root: classes.names,}}>{woman} &</Typography>}
             {man && woman && <Typography classes={{root: classes.names,}}>{man}</Typography>}
-            {opinion && <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 20)}...</Typography>}
+            {opinion && <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 40)}...</Typography>}
             <Typography classes={{root: classes.author,}}>{weddingDate}r.</Typography>
             <Button><Typography classes={{root: classes.more,}}>więcej...</Typography></Button>
           </div>
@@ -128,7 +128,7 @@ const OpinionsContainer = ({classes}) => {
         {MARRIED_OPINIONS.map(item => Item(item))}
       </Carousel>
       <div className={classes.buttonMoreContainer}>
-        <Button variant="contained">Zobacz więcej opinii</Button>
+        <Button variant="outlined" > <Typography classes={{root: classes.moreOpinionsButton,}}>Zobacz więcej opinii</Typography></Button>
       </div>
     </div>
   )

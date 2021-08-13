@@ -63,6 +63,12 @@ const styles = () => ({
     textTransform: 'initial',
     fontWeight: 600
   },
+  moreOpinionsButton: {
+    fontSize: '1.2rem',
+    textTransform: 'initial',
+    fontWeight: 600,
+    fontFamily: '\'Baskervville\',serif',
+  },
   author: {
     fontSize: '0.8125rem',
     fontFamily: 'Parisienne',
