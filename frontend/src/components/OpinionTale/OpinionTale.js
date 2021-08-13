@@ -1,13 +1,13 @@
 import classNames from "classnames";
 import Image from "next/image";
-import {LEAF} from "../../constants";
+import {LEAF, LINKS} from "../../constants";
 import Typography from "@material-ui/core/Typography";
-import Tooltip from "@material-ui/core/Tooltip";
 import Button from "@material-ui/core/Button";
 import React from "react";
 import PropTypes from "prop-types";
+import Link from 'next/link'
 
-const OpinionTale = ({details, classes, more=true}) => {
+const OpinionTale = ({details, classes, more = true}) => {
   const {man, woman, picture, weddingDate, opinion} = details
 
   return (
@@ -39,9 +39,9 @@ const OpinionTale = ({details, classes, more=true}) => {
           <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 40)}...</Typography>}
           <Typography classes={{root: classes.author,}}>{weddingDate}r.</Typography>
           {more &&
-          <Tooltip title={opinion}>
+          <Link href={LINKS.OPINIONS.HREF} passHref>
             <Button><Typography classes={{root: classes.more}}>więcej...</Typography></Button>
-          </Tooltip>
+          </Link>
           }
         </div>
       </div>
