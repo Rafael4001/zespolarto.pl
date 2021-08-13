@@ -17,9 +17,10 @@ const styles = () => ({
     fontSize: '2rem',
     textAlign: 'center',
     margin: `15px`,
+    marginBottom: '1.5rem',
     fontFamily: 'Parisienne',
 
-    boxShadow: '0 10px 16px 0 rgb(0 0 0 / 20%)',
+    boxShadow: '0 6px 16px 0 rgb(0 0 0 / 20%)',
 
     '&:hover': {
       backgroundColor: `${COLORS.grey.light}`
