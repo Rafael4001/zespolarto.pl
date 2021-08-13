@@ -13,7 +13,7 @@ const styles = () => ({
 
   mediaCard: {
     border: `solid ${COLORS.grey.dark} 1px`,
-    borderRadius: `${radiusCorner} ${radiusCorner} 0 0`,
+    borderRadius: `0 ${radiusCorner} 0  ${radiusCorner}`,
     fontSize: '2rem',
     textAlign: 'center',
     margin: `15px`,
@@ -28,7 +28,7 @@ const styles = () => ({
   },
   photoCard: {
     width: '100%',
-    borderRadius: `${radiusCorner} ${radiusCorner} 0 0`,
+    borderRadius: `0 ${radiusCorner} 0 0`,
   },
   textContainer: {
     padding: '0.5rem',
@@ -67,7 +67,7 @@ const styles = () => ({
     fontFamily: 'Parisienne',
   },
   titleContainer: {
-    padding: '1.5rem 0',
+    padding: '1.5rem 1rem',
     fontSize: '2rem',
     display: 'flex',
     flexDirection: 'column',

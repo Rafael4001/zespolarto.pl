@@ -99,7 +99,7 @@ const OpinionsContainer = ({classes}) => {
           // unoptimized={true}
           // className={classes.leaf_icon}
         />
-        <span>Kilka słów od naszych przyjaciół</span>
+        <span>Kilka słów od naszych przyjaciół.</span>
 
       </div>
       <Carousel
