@@ -1,40 +1,17 @@
 import React from 'react'
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import PropTypes from "prop-types";
 import classNames from 'classnames';
-import {VIDEO_CARD_IMAGE} from "../../constants";
-// import {Carousel} from 'react-responsive-carousel'
+import {VIDEO_CARD_IMAGE, LEAF,  LOVE_LETTER} from "../../constants";
+import Button from '@material-ui/core/Button';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 
 import Typography from '@material-ui/core/Typography';
+import Image from "next/image";
 
-
-const OpinionsContainer = ({classes}) => {
-
-
-  const Item = () => (
-    <div className={classNames(classes.mediaCard)}>
-      <div>
-        <img
-          src={VIDEO_CARD_IMAGE}
-          alt={'photo_video'}
-          className={classes.photoCard}
-        />
-      </div>
-      <div className={classes.textContainer}>
-        <Typography classes={{root: classes.text,}}>FILMY</Typography>
-        <div className={classes.quotationContainer}>
-          <Typography classes={{root: classes.quotation,}}>"Jeden moment potrafi zmienić całe życie."</Typography>
-          <Typography classes={{root: classes.author,}}>-Anonim</Typography>
-        </div>
-      </div>
-    </div>
-  )
-
-const responsConfig={
+const responsConfig = {
   superLargeDesktop: {
     breakpoint: {
       max: 3000,
@@ -70,8 +47,61 @@ const responsConfig={
   }
 }
 
+
+const OpinionsContainer = ({classes}) => {
+
+  const man = 'Andrzej';
+  const woman = 'Anna';
+  const weddingDate = '12.05.2021';
+  const opinion = "Jeden moment potrafi zmienić całe życie. Jeden moment potrafi zmienić całe życie. Jeden moment potrafi zmienić całe życie. "
+
+
+  const Item = () => (
+    <div className={classNames(classes.mediaCard)}>
+      <div>
+        <Image
+          src={VIDEO_CARD_IMAGE}
+          alt={'opinion'}
+          width={301}
+          height={201}
+          // unoptimized={true}
+          className={classes.photoCard}
+        />
+      </div>
+      <div className={classes.textContainer}>
+        <Image
+          src={LEAF}
+          alt={'leaf'}
+          width={30}
+          height={30}
+          // unoptimized={true}
+          className={classes.leaf_icon}
+        />
+        <div className={classes.quotationContainer}>
+          {man && woman && <Typography classes={{root: classes.names,}}>{man} & {woman}</Typography>}
+          <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 20)}...</Typography>
+          <Typography classes={{root: classes.author,}}>{weddingDate}r.</Typography>
+          <Button><Typography classes={{root: classes.more,}}>więcej...</Typography></Button>
+        </div>
+      </div>
+    </div>
+  )
+
+
   return (
     <div>
+      <div className={classes.titleContainer}>
+        <Image
+          src={LOVE_LETTER}
+          alt={'poem'}
+          width={60}
+          height={88}
+          // unoptimized={true}
+          // className={classes.leaf_icon}
+        />
+        <span>Kilka słów od naszych przyjaciół</span>
+
+      </div>
       <Carousel
         additionalTransfrom={0}
         arrows
@@ -105,6 +135,9 @@ const responsConfig={
         <Item/>
         <Item/>
       </Carousel>
+      <div className={classes.buttonMoreContainer}>
+        <Button variant="contained">Zobacz więcej opinii</Button>
+      </div>
     </div>
   )
 }

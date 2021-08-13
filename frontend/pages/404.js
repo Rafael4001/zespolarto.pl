@@ -10,7 +10,7 @@ const NotFound = () => (
 
   }}>
     <h3>Ups...podana stronie nie istnieje</h3>
-    <Link href={'/'}><button><h3>Przejdź do strony głównej</h3></button></Link>
+    <Link href={'/'} passHref><button><h3>Przejdź do strony głównej</h3></button></Link>
   </div>
 )
 

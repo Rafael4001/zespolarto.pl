@@ -4,9 +4,13 @@ import {COLORS} from '../../colors'
 
 const radiusCorner = '1.5rem';
 
-export const TALE_WIDTH=272
+const styles = () => ({
+  buttonMoreContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    margin: '1rem 1rem',
+  },
 
-const styles = (theme) => ({
   mediaCard: {
     border: `solid ${COLORS.grey.dark} 1px`,
     borderRadius: `${radiusCorner} ${radiusCorner} 0 0`,
@@ -15,17 +19,12 @@ const styles = (theme) => ({
     margin: `15px`,
     fontFamily: 'Parisienne',
 
-    // boxShadow: '0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)',
     boxShadow: '0 10px 16px 0 rgb(0 0 0 / 20%)',
-    // boxShadow: '1px 10px 16px 0 rgb(84 47 47 / 12%)',
 
     '&:hover': {
       backgroundColor: `${COLORS.grey.light}`
     },
 
-    [theme.breakpoints.up('sm')]: {
-      // width: '22rem',
-    },
   },
   photoCard: {
     width: '100%',
@@ -40,20 +39,45 @@ const styles = (theme) => ({
     fontFamily: '\'Baskervville\',serif',
   },
 
+  names: {
+    margin: 'auto',
+    fontFamily: 'Parisienne',
+    fontSize: '1.8rem'
+  },
+
   quotationContainer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-end',
   },
   quotation: {
-    fontSize: '1.8rem',
+    fontSize: '1.2rem',
     fontFamily: 'Parisienne',
+    margin: 'auto'
+  },
+  more: {
+    fontSize: '1.2rem',
+    fontFamily: 'Parisienne',
+    margin: 'auto',
+    textTransform: 'initial',
+    fontWeight: 600
   },
   author: {
-    fontSize: '1rem',
+    fontSize: '0.8125rem',
     fontFamily: 'Parisienne',
   },
-
+  titleContainer: {
+    padding: '1.5rem 0',
+    fontSize: '2rem',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'Parisienne',
+  },
+  leaf_icon: {
+    width: '1.5rem',
+  },
 
 });
 

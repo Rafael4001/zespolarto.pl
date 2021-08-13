@@ -9,7 +9,9 @@ export const LOGO_ON_THE_FLOWERS = '/static/image/LogoWKwiatach342x300.png';
 
 export const BRIDE = '../static/image/icons/bride.svg';
 export const SMILE = '/static/image/icons/smile.svg';
-export const LEAF = '../static/image/icons/leaf.svg';
+export const LEAF = '/static/image/icons/leaf.svg';
+export const POEM = '/static/image/icons/poem.png';
+export const LOVE_LETTER = '/static/image/icons/love-letter.svg';
 export const MORE = '/static/image/icons/more.png';
 export const LUBLIN_MAP = '/static/image/WojLubelskie.jpg';
 export const PHOTO_CARD_IMAGE = '../static/image/GalleryCardPhoto.jpeg';
