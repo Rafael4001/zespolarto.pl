@@ -54,7 +54,7 @@ const styles = () => ({
   quotation: {
     fontSize: '1.2rem',
     fontFamily: 'Parisienne',
-    margin: 'auto'
+    margin: '0.5rem auto'
   },
   more: {
     fontSize: '1.2rem',

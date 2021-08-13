@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from "prop-types";
 import classNames from 'classnames';
-import {VIDEO_CARD_IMAGE, LEAF,  LOVE_LETTER} from "../../constants";
+import {VIDEO_CARD_IMAGE, LEAF, LOVE_LETTER, MARRIED_OPINIONS} from "../../constants";
 import Button from '@material-ui/core/Button';
 
 import Carousel from 'react-multi-carousel';
@@ -49,44 +49,42 @@ const responsConfig = {
 
 
 const OpinionsContainer = ({classes}) => {
+  const Item = (details) => {
+    const {man, woman, picture, weddingDate, opinion} = details
 
-  const man = 'Andrzej';
-  const woman = 'Anna';
-  const weddingDate = '12.05.2021';
-  const opinion = "Jeden moment potrafi zmienić całe życie. Jeden moment potrafi zmienić całe życie. Jeden moment potrafi zmienić całe życie. "
-
-
-  const Item = () => (
-    <div className={classNames(classes.mediaCard)}>
-      <div>
-        <Image
-          src={VIDEO_CARD_IMAGE}
-          alt={'opinion'}
-          width={301}
-          height={201}
-          // unoptimized={true}
-          className={classes.photoCard}
-        />
-      </div>
-      <div className={classes.textContainer}>
-        <Image
-          src={LEAF}
-          alt={'leaf'}
-          width={30}
-          height={30}
-          // unoptimized={true}
-          className={classes.leaf_icon}
-        />
-        <div className={classes.quotationContainer}>
-          {man && woman && <Typography classes={{root: classes.names,}}>{man} & {woman}</Typography>}
-          <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 20)}...</Typography>
-          <Typography classes={{root: classes.author,}}>{weddingDate}r.</Typography>
-          <Button><Typography classes={{root: classes.more,}}>więcej...</Typography></Button>
+    return (
+      <div className={classNames(classes.mediaCard)}>
+        <div>
+          <Image
+            src={picture}
+            alt={picture}
+            width={301}
+            height={201}
+            // unoptimized={true}
+            className={classes.photoCard}
+          />
+        </div>
+        <div className={classes.textContainer}>
+          <Image
+            src={LEAF}
+            alt={'leaf'}
+            width={30}
+            height={30}
+            // unoptimized={true}
+            className={classes.leaf_icon}
+          />
+          <div className={classes.quotationContainer}>
+            {man && woman && <Typography classes={{root: classes.names,}}>{woman} &</Typography>}
+            {man && woman && <Typography classes={{root: classes.names,}}>{man}</Typography>}
+            {opinion && <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 20)}...</Typography>}
+            <Typography classes={{root: classes.author,}}>{weddingDate}r.</Typography>
+            <Button><Typography classes={{root: classes.more,}}>więcej...</Typography></Button>
+          </div>
         </div>
       </div>
-    </div>
-  )
+    )
 
+  }
 
   return (
     <div>
@@ -128,12 +126,7 @@ const OpinionsContainer = ({classes}) => {
         swipeable
         // removeArrowOnDeviceType="mobile"
       >
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
+        {MARRIED_OPINIONS.map(item => Item(item))}
       </Carousel>
       <div className={classes.buttonMoreContainer}>
         <Button variant="contained">Zobacz więcej opinii</Button>

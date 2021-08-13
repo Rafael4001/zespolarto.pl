@@ -163,3 +163,57 @@ export const MONTHS = [
 ]
 
 export const FIRST_DAY_OF_WEEK = 1;
+
+
+export const MARRIED_OPINIONS = [
+  {
+    woman: 'Alicja',
+    man: 'Jan',
+    picture: '/static/image/married/Jan_Alicja.jpeg',
+    weddingDate: '15.04.2021',
+    opinion: 'Gorąco polecamy :), wszyscą są bardzo zadowoleni'
+  },
+  {
+    woman: 'Weronika',
+    man: 'Jakub',
+    picture: '/static/image/married/Jakub_Weronika.jpeg',
+    weddingDate: '14.06.2021',
+    opinion: 'Goście wspominają wesele do dzisiaj :) polecamy'
+  },
+  {
+    woman: 'Gabriela',
+    man: 'Jerzy',
+    picture: '/static/image/married/Gabriela_Jerzy.jpeg',
+    weddingDate: '08.06.2021',
+    opinion: 'Bardzo polecamy, my wybawiliśmy się super.'
+  },
+  {
+    woman: 'Monika',
+    man: 'Grzegorz',
+    picture: '/static/image/married/Monika_Grzegorz.jpeg',
+    weddingDate: '10.08.2020',
+    opinion: 'Jesteśmy bardzo zadowoleni, zespół Arto grał doskonale :)'
+  },
+  {
+    woman: 'Paulina',
+    man: 'Karol',
+    picture: '/static/image/married/Paulina_Karol.jpeg',
+    weddingDate: '10.08.2020',
+    opinion: 'Jesteśmy bardzo zadowoleni, zespół Arto grał doskonale :)'
+  },
+  {
+    woman: 'Ola',
+    man: 'Paweł',
+    picture: '/static/image/married/Ola_Pawel.jpeg',
+    weddingDate: '10.08.2020',
+    opinion: 'Ogromne Tak, polecamy i dziękujemy za świetną zabawę'
+  },
+  {
+    woman: 'Beata',
+    man: 'Tomasz',
+    picture: '/static/image/married/Beata_Tomasz.jpeg',
+    weddingDate: '10.08.2020',
+    opinion: 'Polecam, wszystko tak jak to sobie wymarzyliśmy'
+  },
+
+]
