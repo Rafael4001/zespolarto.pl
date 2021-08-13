@@ -1,15 +1,11 @@
-import {withStyles} from '@material-ui/core/styles';
-import OpinionsContainer from './OpinionsContainer'
-import {COLORS} from '../../colors'
+import { withStyles } from '@material-ui/core/styles';
+
+import OpinionTale from './OpinionTale'
 import {RADIUS_CORNER} from '../../constants'
+import {COLORS} from "../../colors";
+
 
 const styles = () => ({
-  buttonMoreContainer: {
-    display: 'flex',
-    justifyContent: 'center',
-    margin: '1rem 1rem',
-  },
-
   mediaCard: {
     border: `solid ${COLORS.grey.dark} 1px`,
     borderRadius: `0 ${RADIUS_CORNER} 0  ${RADIUS_CORNER}`,
@@ -18,8 +14,10 @@ const styles = () => ({
     margin: `15px`,
     marginBottom: '1.5rem',
     fontFamily: 'Parisienne',
-
     boxShadow: '0 6px 16px 0 rgb(0 0 0 / 20%)',
+
+    minWidth: '15rem',
+    maxWidth: '18rem',
 
     '&:hover': {
       backgroundColor: `${COLORS.grey.light}`
@@ -33,22 +31,18 @@ const styles = () => ({
   textContainer: {
     padding: '0.5rem',
   },
-  text: {
-    fontSize: '1.2rem',
-    fontWeight: 300,
-    fontFamily: '\'Baskervville\',serif',
+  leaf_icon: {
+    width: '1.5rem',
   },
-
-  names: {
-    margin: 'auto',
-    fontFamily: 'Parisienne',
-    fontSize: '1.8rem'
-  },
-
   quotationContainer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-end',
+  },
+  names: {
+    margin: 'auto',
+    fontFamily: 'Parisienne',
+    fontSize: '1.8rem'
   },
   quotation: {
     fontSize: '1.2rem',
@@ -62,29 +56,10 @@ const styles = () => ({
     textTransform: 'initial',
     fontWeight: 600
   },
-  moreOpinionsButton: {
-    fontSize: '1.2rem',
-    textTransform: 'initial',
-    fontWeight: 600,
-    fontFamily: '\'Baskervville\',serif',
-  },
   author: {
     fontSize: '0.8125rem',
     fontFamily: 'Parisienne',
   },
-  titleContainer: {
-    padding: '1.5rem 1rem',
-    fontSize: '2rem',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontFamily: 'Parisienne',
-  },
-  leaf_icon: {
-    width: '1.5rem',
-  },
-
 });
 
-export default withStyles(styles)(OpinionsContainer);
+export default withStyles(styles)(OpinionTale);

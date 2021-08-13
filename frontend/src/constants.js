@@ -1,5 +1,8 @@
 export const passwordTerms = '1235'
 
+export const RADIUS_CORNER = '1.5rem';
+
+
 export const IMAGE_1 = '/static/image/photo_1.png';
 export const IMAGE_2 = '/static/image/photo_2_small.jpg';
 export const IMAGE_3 = '/static/image/photo_3_small.jpg';
@@ -90,6 +93,7 @@ export const LINKS = {
   CONTACT: {HREF: '/contact', AS: '/contact'},
   MEDIA: {HREF: '/media', AS: '/media'},
   TERMS: {HREF: '/terminy', AS: '/terminy'},
+  OPINIONS: {HREF: '/opinions', AS: '/opinie'},
 };
 
 export const MENU_ITEMS = [
@@ -171,10 +175,11 @@ export const MARRIED_OPINIONS = [
     man: 'Dawid',
     picture: '/static/image/married/2017.10.21_Agata_Dawid.jpg',
     weddingDate: '21.10.2017',
-    opinion: "\"Wybierając zespół na wesele kierowaliśmy aby były to młode pełne energii osoby które potrafią pociągnąć " +
-      "do tańca młodzież w każdym wieku. Zespół Arto grał na weselu u mojego kolegi i od razu przypadł nam w gustu i gdzieś w " +
-      "głowie już był pomysł abyście to właśnie zagrali na naszym weselu. Tworzycie zgraną paczkę, świetnie bawicie gości, stosujecie " +
-      "się do wszelkich wskazówek, nie przeciągacie przerw a co za tym idzie parkiet jest zawsze pełny! Polecamy zespół bardzo gorąco kto wybierze " +
+    opinion: "\"Wybierając zespół na wesele kierowaliśmy się tym, aby były to młode pełne energii osoby, które potrafią pociągnąć " +
+      "do tańca młodzież w każdym wieku. " +
+      "\nZespół Arto grał na weselu u mojego kolegi i od razu przypadł nam do gustu i gdzieś w " +
+      "głowie już był pomysł abyście to właśnie Wy zagrali na naszym weselu. Tworzycie zgraną paczkę, świetnie bawicie gości, stosujecie " +
+      "się do wszelkich wskazówek, nie przeciągacie przerw a co za tym idzie parkiet jest zawsze pełny! \n\nPolecamy zespół bardzo gorąco kto wybierze " +
       "ten na pewno żałował nie będzie \"\n" +
       "Zadowolona młoda para\n" +
       "Pozdrawiamy "
@@ -261,14 +266,14 @@ export const MARRIED_OPINIONS = [
     weddingDate: '01.09.2018',
     opinion: "" +
       "Dziękujemy zespołowi Arto za wspaniałe wesele. Tańce, zabawy przy świetnej muzyce do białego  rana:) pełen profesjonalizm, piękny śpiew wokalistow na żywo!  oraz organizację calej zabawy. Gorąco polecam!! "
-  }
-  // {
-  //   woman: 'Amanda',
-  //   man: 'BRAK', // TODO
-  //   picture: '/static/image/married/2020.06.27_Amanda_.jpg',
-  //   weddingDate: '27.07.2020',
-  //   opinion: "Dziękujemy Zespołowi Arto za tak wspaniałą zabawę! Jesteśmy bardzo zadowoleni i jak najbardziej polecamy ! W szczególności zachwycający i chwytający za serce jest głos wokalistki, która piosenką dla naszych rodziców wzruszyła wszystkich zebranych. Polecamy! :-)"
-  // },
+  },
+  {
+    woman: 'Amanda',
+    man: 'Patryk',
+    picture: '/static/image/married/2020.06.27_Amanda_Patryk.jpg',
+    weddingDate: '27.07.2020',
+    opinion: "Dziękujemy Zespołowi Arto za tak wspaniałą zabawę! Jesteśmy bardzo zadowoleni i jak najbardziej polecamy ! W szczególności zachwycający i chwytający za serce jest głos wokalistki, która piosenką dla naszych rodziców wzruszyła wszystkich zebranych. Polecamy! :-)"
+  },
   //--------------FEJKOWE ponizej----------------------------------
   // {
   //   woman: 'Monika',
