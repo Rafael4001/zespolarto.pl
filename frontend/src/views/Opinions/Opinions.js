@@ -17,7 +17,9 @@ const Opinions = ({classes}) => {
   useEffect(() => {
     if (weddingDate) {
       const currentIndex = MARRIED_OPINIONS.findIndex((wedding) => wedding.weddingDate === weddingDate)
-      setCurrentImage(currentIndex)
+      if (currentIndex >= 0) {
+        setCurrentImage(currentIndex)
+      }
     }
   }, [weddingDate])
 
@@ -35,33 +37,41 @@ const Opinions = ({classes}) => {
 
   return (
     <PageWrapper>
-      <Image
-        src={LOVE_LETTER}
-        alt={'poem'}
-        width={60}
-        height={88}
-        // unoptimized={true}
-      />
-      <div className={classes.detailsContainer}>
-        <div className={classes.imageContainer}>
-          <Image
-            src={MARRIED_OPINIONS[currentImage].picture}
-            alt={MARRIED_OPINIONS[currentImage].picture}
-            width={602}
-            height={400}
-            layout="responsive"
-            unoptimized={true}
-          />
-        </div>
-        <div className={classes.textContainer}>
-          <h2>{MARRIED_OPINIONS[currentImage].woman} & {MARRIED_OPINIONS[currentImage].man}</h2>
-          <p>{MARRIED_OPINIONS[currentImage].opinion}</p>
-          <div className={classes.weddingDate}>
-            <Typography classes={{root: classes.author,}}>{MARRIED_OPINIONS[currentImage].weddingDate}r.</Typography>
+      {currentImage >= 0
+        ? <div>
+          <div className={classes.loveLetterIconContainer}>
+            <Image
+              src={LOVE_LETTER}
+              alt={'poem'}
+              width={60}
+              height={88}
+            />
+          </div>
+          <div className={classes.detailsContainer}>
+            <div className={classes.imageContainer}>
+              <Image
+                src={MARRIED_OPINIONS[currentImage].picture}
+                alt={MARRIED_OPINIONS[currentImage].picture}
+                width={602}
+                height={400}
+                layout="responsive"
+                unoptimized={true}
+              />
+            </div>
+            <div className={classes.textContainer}>
+              <h2>{MARRIED_OPINIONS[currentImage].woman} & {MARRIED_OPINIONS[currentImage].man}</h2>
+              <p>{MARRIED_OPINIONS[currentImage].opinion}</p>
+              <div className={classes.weddingDate}>
+                <Typography
+                  classes={{root: classes.author,}}>{MARRIED_OPINIONS[currentImage].weddingDate}r.</Typography>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        : <div className={classes.loveLetterIconContainer}>opinia o danym terminie przyjęcia NIE ISTNIEJE</div>
+      }
       <Divider/>
+
       {/*TODO to rozbic na idzielny komponent dla optymalizacji*/}
       <div className={classes.allOpinionTales}>
         {MARRIED_OPINIONS.map((item) =>

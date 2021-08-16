@@ -44,8 +44,13 @@ const styles = (theme) => ({
   weddingDate: {
     textAlign: 'right'
   },
-  imageContainer: {
+  imageContainer: {},
+  loveLetterIconContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '100%',
   }
+
 });
 
 export default withStyles(styles)(Opinions);

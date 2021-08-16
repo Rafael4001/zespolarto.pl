@@ -5,18 +5,14 @@ import {RADIUS_CORNER} from '../../constants'
 import {COLORS} from "../../colors";
 
 
-const styles = (theme) => ({
+const styles = () => ({
   mediaCardTaleMini: {
-    // [theme.breakpoints.down('sm')]: {
-    //   width: '10rem',
-    // },
     cursor: 'pointer',
     border: `solid ${COLORS.grey.dark} 1px`,
     borderRadius: `0 ${RADIUS_CORNER} 0  ${RADIUS_CORNER}`,
     textAlign: 'center',
     overflow: 'hidden',
     boxShadow: '0 6px 16px 0 rgb(0 0 0 / 20%)',
-    // width: '13rem',
     width: '100%',
     height: '100%',
     transition: '0.1s',
