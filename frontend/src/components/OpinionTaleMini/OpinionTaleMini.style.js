@@ -35,7 +35,8 @@ const styles = (theme) => ({
   names: {
     margin: 'auto',
     fontFamily: 'Parisienne',
-    fontSize: '1.4rem'
+    fontSize: '1.4rem',
+    padding: '0 4px',
   },
   weedingDateText: {
     fontSize: '0.8125rem',
