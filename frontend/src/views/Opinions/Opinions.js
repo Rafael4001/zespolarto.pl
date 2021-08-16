@@ -17,9 +17,7 @@ const Opinions = ({classes}) => {
   useEffect(() => {
     if (weddingDate) {
       const currentIndex = MARRIED_OPINIONS.findIndex((wedding) => wedding.weddingDate === weddingDate)
-      if (currentIndex >= 0) {
-        setCurrentImage(currentIndex)
-      }
+      setCurrentImage(currentIndex)
     }
   }, [weddingDate])
 
@@ -68,7 +66,8 @@ const Opinions = ({classes}) => {
             </div>
           </div>
         </div>
-        : <div className={classes.loveLetterIconContainer}>opinia o danym terminie przyjęcia NIE ISTNIEJE</div>
+        : <div className={classes.warningMessage}>opinia o danym terminie przyjęcia NIE ISTNIEJE, wybierz inną
+          opinię.</div>
       }
       <Divider/>
 

@@ -49,6 +49,13 @@ const styles = (theme) => ({
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
+  },
+  warningMessage: {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '100%',
+    margin: '1rem',
+    color: 'red'
   }
 
 });
