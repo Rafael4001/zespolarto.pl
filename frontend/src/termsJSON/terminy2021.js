@@ -1,7 +1,7 @@
 import {STATUS, WEEK_DAY} from '../constants'
 
 
-//src/views/NewCalendar/DetailsOfTerm/OpinionTale.js:13
+//src/views/NewCalendar/DetailsOfTerm/OpinionTaleMini.js:13
 
 export const YEAR_2021 = [
   {

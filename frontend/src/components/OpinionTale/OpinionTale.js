@@ -10,42 +10,48 @@ import Link from 'next/link'
 const OpinionTale = ({details, classes, more = true}) => {
   const {man, woman, picture, weddingDate, opinion} = details
 
+  const weddingDateUrlFormat = weddingDate.split('-')
+  const formatedWeddingDate = `${weddingDateUrlFormat[0]}.${weddingDateUrlFormat[1]}.${weddingDateUrlFormat[2]}`
+
+
   return (
-    <div className={classNames(classes.mediaCard)}>
-      <div>
-        <Image
-          src={picture}
-          alt={picture}
-          width={301}
-          height={201}
-          unoptimized={true}
-          className={classes.photoCard}
-        />
-      </div>
-      <div className={classes.textContainer}>
-        <Image
-          src={LEAF}
-          alt={'leaf'}
-          width={30}
-          height={30}
-          className={classes.leaf_icon}
-        />
-        <div className={classes.quotationContainer}>
-          {man && woman &&
-          <Typography classes={{root: classes.names}}>{woman} &</Typography>}
-          {man && woman &&
-          <Typography classes={{root: classes.names,}}>{man}</Typography>}
-          {opinion &&
-          <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 40)}...</Typography>}
-          <Typography classes={{root: classes.author,}}>{weddingDate}r.</Typography>
-          {more &&
-          <Link href={LINKS.OPINIONS.HREF} passHref>
-            <Button><Typography classes={{root: classes.more}}>więcej...</Typography></Button>
-          </Link>
-          }
+    // <Link href={LINKS.OPINIONS.HREF} passHref>
+      <div className={classNames(classes.mediaCard)}>
+        <div>
+          <Image
+            src={picture}
+            alt={picture}
+            width={301}
+            height={201}
+            // unoptimized={true}
+            className={classes.photoCard}
+          />
+        </div>
+        <div className={classes.textContainer}>
+          <Image
+            src={LEAF}
+            alt={'leaf'}
+            width={30}
+            height={30}
+            className={classes.leaf_icon}
+          />
+          <div className={classes.quotationContainer}>
+            {man && woman &&
+            <Typography classes={{root: classes.names}}>{woman} &</Typography>}
+            {man && woman &&
+            <Typography classes={{root: classes.names,}}>{man}</Typography>}
+            {opinion &&
+            <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 40)}...</Typography>}
+            <Typography classes={{root: classes.author,}}>{formatedWeddingDate}r.</Typography>
+            {more &&
+            <Link href={LINKS.OPINIONS.HREF} passHref>
+              <Button><Typography classes={{root: classes.more}}>więcej...</Typography></Button>
+            </Link>
+            }
+          </div>
         </div>
       </div>
-    </div>
+    // </Link>
   )
 }
 

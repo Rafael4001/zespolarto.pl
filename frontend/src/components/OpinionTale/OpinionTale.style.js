@@ -7,6 +7,7 @@ import {COLORS} from "../../colors";
 
 const styles = () => ({
   mediaCard: {
+    cursor: 'pointer',
     border: `solid ${COLORS.grey.dark} 1px`,
     borderRadius: `0 ${RADIUS_CORNER} 0  ${RADIUS_CORNER}`,
     fontSize: '2rem',

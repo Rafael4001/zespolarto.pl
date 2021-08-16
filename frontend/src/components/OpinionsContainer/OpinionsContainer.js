@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Image from "next/image";
 import OpinionTale from '../OpinionTale'
 import Link from 'next/link'
+import {useRouter} from "next/router";
 
 const responsConfig = {
   superLargeDesktop: {
@@ -46,52 +47,76 @@ const responsConfig = {
 }
 
 
-const OpinionsContainer = ({classes}) => (<div>
-  <div className={classes.titleContainer}>
-    <Image
-      src={LOVE_LETTER}
-      alt={'poem'}
-      width={60}
-      height={88}
-      // unoptimized={true}
-    />
-    <span>Kilka słów od naszych przyjaciół.</span>
+const OpinionsContainer = ({classes}) => {
+  const router = useRouter()
 
-  </div>
-  <Carousel
-    additionalTransfrom={0}
-    arrows
-    // autoPlay={true}
-    // autoPlaySpeed={2000}
-    // centerMode={true}
-    partialVisible={true}
-    className=""
-    centerMode={false}
-    containerClass="container-with-dots"
-    dotListClass=""
-    draggable
-    focusOnSelect={false}
-    // infinite
-    itemClass=""
-    keyBoardControl
-    minimumTouchDrag={80}
-    renderButtonGroupOutside={false}
-    renderDotsOutside={false}
-    responsive={responsConfig}
-    showDots={false}
-    sliderClass=""
-    slidesToSlide={1}
-    swipeable
-    // removeArrowOnDeviceType="mobile"
-  >
-    {MARRIED_OPINIONS.slice(0, 6).map(item => <OpinionTale key={item.weddingDate} details={item}/>)}
-  </Carousel>
-  <div className={classes.buttonMoreContainer}>
-    <Link href={LINKS.OPINIONS.HREF} passHref><Button variant="outlined"> <Typography
-      classes={{root: classes.moreOpinionsButton}}>Zobacz więcej
-      opinii</Typography></Button></Link>
-  </div>
-</div>)
+  const handleClick = (weddingDate) => {
+    router.push({
+      pathname: `${LINKS.OPINIONS.HREF}`,
+      query: {weddingDate}
+    })
+  }
+
+  return (
+    <div>
+      <div className={classes.titleContainer}>
+        <Image
+          src={LOVE_LETTER}
+          alt={'poem'}
+          width={60}
+          height={88}
+          // unoptimized={true}
+        />
+        <span>Kilka słów od naszych przyjaciół.</span>
+
+      </div>
+      <Carousel
+        additionalTransfrom={0}
+        arrows
+        // autoPlay={true}
+        // autoPlaySpeed={2000}
+        // centerMode={true}
+        partialVisible={true}
+        className=""
+        centerMode={false}
+        containerClass="container-with-dots"
+        dotListClass=""
+        draggable
+        focusOnSelect={false}
+        // infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={responsConfig}
+        showDots={false}
+        sliderClass=""
+        slidesToSlide={1}
+        swipeable
+        // removeArrowOnDeviceType="mobile"
+      >
+        {MARRIED_OPINIONS.slice(0, 6).map(item =>
+          <div key={item.weddingDate}
+               onClick={() => handleClick(item.weddingDate)}
+          >
+            <OpinionTale details={item}/>
+          </div>
+        )}
+      </Carousel>
+      <div className={classes.buttonMoreContainer}>
+        <Link href={LINKS.OPINIONS.HREF} passHref>
+          <Button variant="outlined">
+            <Typography
+              classes={{root: classes.moreOpinionsButton}}>Zobacz więcej
+              opinii</Typography>
+          </Button>
+        </Link>
+      </div>
+    </div>)
+}
+
+
 OpinionsContainer.propTypes = {
   classes: PropTypes.object.isRequired,
 };

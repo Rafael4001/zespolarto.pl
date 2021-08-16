@@ -1,19 +1,36 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import PropTypes from "prop-types";
 import PageWrapper from '../../components/PageWrapper';
-import {LOVE_LETTER, MARRIED_OPINIONS} from '../../constants'
-import OpinionTale from "../../components/OpinionTale/OpinionTale.style";
+import {LINKS, LOVE_LETTER, MARRIED_OPINIONS} from '../../constants'
+import OpinionTaleMini from "../../components/OpinionTaleMini";
 import Image from "next/image";
 import Divider from '@material-ui/core/Divider';
 import Typography from "@material-ui/core/Typography";
-
+import {useRouter} from 'next/router'
 
 const Opinions = ({classes}) => {
+  const router = useRouter()
+  const {weddingDate} = router.query
+
   const [currentImage, setCurrentImage] = useState(0)
 
-  const handleTileClick = (id) => {
-    setCurrentImage(id)
-    window.scrollTo(0, 0);
+  useEffect(() => {
+    if (weddingDate) {
+      const currentIndex = MARRIED_OPINIONS.findIndex((wedding) => wedding.weddingDate === weddingDate)
+      setCurrentImage(currentIndex)
+    }
+  }, [weddingDate])
+
+  //TODO ta fukcja sie powtarza-->zrobic z tego HOC-a
+  const handleClick = (weddingDate) => {
+    router.push({
+      pathname: `${LINKS.OPINIONS.HREF}`,
+      query: {weddingDate}
+    })
+  }
+
+  const handleTileClick = (weddingDate) => {
+    handleClick(weddingDate)
   }
 
   return (
@@ -45,12 +62,12 @@ const Opinions = ({classes}) => {
         </div>
       </div>
       <Divider/>
+      {/*TODO to rozbic na idzielny komponent dla optymalizacji*/}
       <div className={classes.allOpinionTales}>
-        {MARRIED_OPINIONS.map((item, index) =>
-          <div onClick={() => handleTileClick(index)}>
-            <OpinionTale
+        {MARRIED_OPINIONS.map((item) =>
+          <div key={item.weddingDate} onClick={() => handleTileClick(item.weddingDate)}>
+            <OpinionTaleMini
               more={false}
-              key={item.weddingDate}
               details={item}
             />
           </div>

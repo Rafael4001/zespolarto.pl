@@ -15,8 +15,23 @@ const styles = (theme) => ({
     },
   },
   allOpinionTales: {
-    display: 'flex',
-    flexWrap: 'wrap'
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gridGap: '0.5rem',
+    padding: '1rem',
+
+    [theme.breakpoints.up('sm')]: {
+      gridTemplateColumns: 'repeat(3, 1fr)'
+    },
+
+    [theme.breakpoints.up('md')]: {
+      gridTemplateColumns: 'repeat(4, 1fr)',
+    },
+
+    [theme.breakpoints.up('lg')]: {
+      gridTemplateColumns: 'repeat(5, 1fr)',
+    },
+
   },
   textContainer: {
     padding: '0 1rem 1rem 1rem ',
