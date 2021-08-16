@@ -21,6 +21,7 @@ const OpinionTaleMini = ({details, classes, more = true}) => {
           width={301}
           layout="responsive"
           height={201}
+          unoptimized={true}
         />
       </div>
       <div className={classes.leafIcon}>

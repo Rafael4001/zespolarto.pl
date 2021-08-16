@@ -45,7 +45,6 @@ const styles = (theme) => ({
     textAlign: 'right'
   },
   imageContainer: {
-    // boxShadow: '0 6px 16px 0 rgb(0 0 0 / 20%)',
   }
 });
 
