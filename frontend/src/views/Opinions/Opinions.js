@@ -53,7 +53,7 @@ const Opinions = ({classes}) => {
                 width={602}
                 height={400}
                 layout="responsive"
-                unoptimized={true}
+                // unoptimized={true}
               />
             </div>
             <div className={classes.textContainer}>
