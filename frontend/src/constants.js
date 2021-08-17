@@ -286,6 +286,13 @@ export const MARRIED_OPINIONS = [
     opinion: "" +
       "Dziękujemy zespołowi Arto za wspaniałe wesele. Tańce, zabawy przy świetnej muzyce do białego  rana:) pełen profesjonalizm, piękny śpiew wokalistow na żywo!  oraz organizację calej zabawy. Gorąco polecam!! "
   },
+  {
+    weddingDate: '30-09-2017',
+    woman: 'Magdalena',
+    man: 'Kamil',
+    picture: '/static/image/married/2017.09.30_Magdalena_Kamil.jpg',
+    opinion: "Kierując się wyborem zespołu kierowaliśmy się unikalnym wokalem, jakością i oryginalnym podejściem do Naszych potrzeb. Wybór padł na Zespół Arto i Nasze oczekiwana zostały spełnione. Świetny repertuar, bardzo dobra komunikacja i na koniec wielki efekt w postaci zadowolenia gości. Polecamy z całego serca i dziękujemy za tak świetna oprawę Naszego Wielkiego Dnia."
+  },
 
   //--------------FEJKOWE ponizej----------------------------------
   // {
