@@ -15,7 +15,6 @@ const OpinionTale = ({details, classes, more = true}) => {
 
 
   return (
-    // <Link href={LINKS.OPINIONS.HREF} passHref>
       <div className={classNames(classes.mediaCard)}>
         <div>
           <Image
@@ -23,7 +22,7 @@ const OpinionTale = ({details, classes, more = true}) => {
             alt={picture}
             width={301}
             height={201}
-            // unoptimized={true}
+            unoptimized={true}
             className={classes.photoCard}
           />
         </div>
@@ -34,6 +33,7 @@ const OpinionTale = ({details, classes, more = true}) => {
             width={30}
             height={30}
             className={classes.leaf_icon}
+            unoptimized={true}
           />
           <div className={classes.quotationContainer}>
             {man && woman &&
@@ -51,7 +51,6 @@ const OpinionTale = ({details, classes, more = true}) => {
           </div>
         </div>
       </div>
-    // </Link>
   )
 }
 

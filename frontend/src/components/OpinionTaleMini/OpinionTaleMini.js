@@ -30,6 +30,7 @@ const OpinionTaleMini = ({details, classes, more = true}) => {
           alt={'leaf'}
           width={30}
           height={30}
+          unoptimized={true}
         />
       </div>
       <Typography classes={{root: classes.names}}>{woman} & {man}</Typography>

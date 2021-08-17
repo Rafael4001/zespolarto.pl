@@ -43,6 +43,7 @@ const Opinions = ({classes}) => {
               alt={'poem'}
               width={60}
               height={88}
+              unoptimized={true}
             />
           </div>
           <div className={classes.detailsContainer}>
@@ -53,7 +54,7 @@ const Opinions = ({classes}) => {
                 width={602}
                 height={400}
                 layout="responsive"
-                // unoptimized={true}
+                unoptimized={true}
               />
             </div>
             <div className={classes.textContainer}>
