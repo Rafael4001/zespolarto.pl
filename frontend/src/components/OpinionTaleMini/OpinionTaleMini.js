@@ -5,12 +5,20 @@ import React from "react";
 import PropTypes from "prop-types";
 import {LEAF} from "../../constants";
 
-const OpinionTaleMini = ({details, classes, more = true}) => {
+
+export const getStaticProps = async(context)=>{
+  return{
+    props:{ contextInfo: 'contextInfo'}
+  }
+}
+
+const OpinionTaleMini = ({details, classes, more = true, contextInfo}) => {
   const {man, woman, picture, weddingDate, opinion} = details
+
+  console.log('contextInfo',contextInfo)
 
   const weddingDateUrlFormat = weddingDate.split('-')
   const formatedWeddingDate = `${weddingDateUrlFormat[0]}.${weddingDateUrlFormat[1]}.${weddingDateUrlFormat[2]}`
-
 
   return (
     <div className={classNames(classes.mediaCardTaleMini)}>

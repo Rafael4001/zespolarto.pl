@@ -225,16 +225,13 @@ export const MARRIED_OPINIONS = [
       'Sprawiliscie że ten dzień był absolutnie wyjątkowy! \n' +
       'Dziękujemy bardzo!'
   },
-  //TODO - Brak opinii
-  // {
-  //   woman: 'Magdalena',
-  //   man: 'Jarosław',
-  //   picture: '/static/image/married/2018.05.26_Magdalena_Jarosław.jpg',
-  //   weddingDate: '26.05.2018',
-  //   opinion: 'Do dziś słuchamy pochwał zadowolonych przyjaciół i rodziny, którzy byli zachwyceni Waszym zespołem i przecudownie się przy Was bawili.\n' +
-  //     'Sprawiliscie że ten dzień był absolutnie wyjątkowy! \n' +
-  //     'Dziękujemy bardzo!'
-  // },
+  {
+    woman: 'Magdalena',
+    man: 'Jarosław',
+    picture: '/static/image/married/2018.05.26_Magdalena_Jarosław_900x600.jpg',
+    weddingDate: '26-05-2018',
+    opinion: "Bardzo ładnie grają. Czyste głosy bez fałszowania. Goście dobrze bawili się przez całe wesele. Poza tym dobry kontakt z klientem i miła aparycja przekonała nas do współpracy. Gorąco polecamy"
+  },
   {
     weddingDate: '24-06-2017',
     woman: 'Monika',
@@ -293,35 +290,19 @@ export const MARRIED_OPINIONS = [
     picture: '/static/image/married/2017.09.30_Magdalena_Kamil.jpg',
     opinion: "Kierując się wyborem zespołu kierowaliśmy się unikalnym wokalem, jakością i oryginalnym podejściem do Naszych potrzeb. Wybór padł na Zespół Arto i Nasze oczekiwana zostały spełnione. Świetny repertuar, bardzo dobra komunikacja i na koniec wielki efekt w postaci zadowolenia gości. Polecamy z całego serca i dziękujemy za tak świetna oprawę Naszego Wielkiego Dnia."
   },
-
-  //--------------FEJKOWE ponizej----------------------------------
-  // {
-  //   woman: 'Monika',
-  //   man: 'Grzegorz',
-  //   picture: '/static/image/married/Monika_Grzegorz.jpeg',
-  //   weddingDate: '10.08.2020',
-  //   opinion: 'Jesteśmy bardzo zadowoleni, zespół Arto grał doskonale :)'
-  // },
-  // {
-  //   woman: 'Paulina',
-  //   man: 'Karol',
-  //   picture: '/static/image/married/Paulina_Karol.jpeg',
-  //   weddingDate: '10.08.2020',
-  //   opinion: 'Jesteśmy bardzo zadowoleni, zespół Arto grał doskonale :)'
-  // },
-  // {
-  //   woman: 'Ola',
-  //   man: 'Paweł',
-  //   picture: '/static/image/married/Ola_Pawel.jpeg',
-  //   weddingDate: '10.08.2020',
-  //   opinion: 'Ogromne Tak, polecamy i dziękujemy za świetną zabawę'
-  // },
-  // {
-  //   woman: 'Beata',
-  //   man: 'Tomasz',
-  //   picture: '/static/image/married/Beata_Tomasz.jpeg',
-  //   weddingDate: '10.08.2020',
-  //   opinion: 'Polecam, wszystko tak jak to sobie wymarzyliśmy'
-  // },
-
+  {
+    weddingDate: '26-06-2021',
+    woman: 'Ania',
+    man: 'Mateusz',
+    picture: '/static/image/married/2021.06.26_Ania_Mateusz_800x534.jpg',
+    opinion: "Wybraliśmy ten zespół przeglądając filmiki na jednym z portali weselnych. Słuchając ich nagrań, zostaliśmy pozytywnie zaskoczeni zarówno jakością wokalu jak i tym, że nie grają z playbacku (tak da się to wyłapać nawet na filmikach). Mimo, że u nikogo z naszych znajomych nie grali na weselu, postanowiliśmy ich wybrać tym bardziej, że nasz dzień ślubu był ostatnim wolnym terminem zespołu (a więc o czymś to też świadczy). Pierwsze spotkanie i podpisanie umowy upłynęło w bardzo miłej atmosferze, pełnej profesjonalizmu i wysokiej kultury. Zespół utrzymywał z nami stały kontakt w trakcie wprowadzania kolejnych restrykcji oraz znoszenia obostrzeń. Dzień ślubu odbył się jednak bez wesela (całkowity zakaz imprez okolicznościowych). My natomiast zorganizowaliśmy przyjęcie w późniejszym czasie, a zespół był na tyle wyrozumiały, że dopasował się do nowego terminu, który wypadł w środku tygodnia. \n" +
+      "\n" +
+      "Zespół bardzo ładnie połączył style tj. discopolo (który prosiliśmy aby został wpleciony w imprezę) i klasyczne, stare, piękne utwory. Każdy znalazł coś dla siebie. Nie robił długich przerw, a przede wszystkim nie robił długiej przerwy po zabawach oczepinowych. Dostosowywał tempo i rodzaje muzyki pod sytuacje i możliwości gości. Prowadzący byli bardzo dobrze zgrani z salą i ciepłymi posiłkami, co miało ogromne znaczenie dla ilości ludzi przy stołach i na parkiecie. \n" +
+      "\n" +
+      "Kwestia zabaw oczepinowych - i tu znowu wyrozumiałość! Zespół wysłał nam listę z propozycjami zabaw, wybraliśmy zupełnie inne - wyszukane w otchłani Internetu. Dla nich nie był to żaden problem, zrealizowali nasze pomysły profesjonalnie, co skutkowało wielkim zainteresowaniem wśród gości. Po weselu dostaliśmy wiele wiadomości od naszych znajomych, że wybraliśmy naprawdę bardzo dobry zespół. \n" +
+      "\n" +
+      "No i bardzo ważna sprawa, są zespołem, który nie telepie klienta po kieszeni jak Martyniuk za sylwestra z Dwójką. \n" +
+      "Potrafią docenić smak swojskiej kiełbasy :D \n" +
+      "Pozdrawiamy i dziękujemy raz jeszcze Ania i Mateusz.\""
+  },
 ]
