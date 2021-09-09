@@ -305,4 +305,10 @@ export const MARRIED_OPINIONS = [
       "Potrafią docenić smak swojskiej kiełbasy :D \n" +
       "Pozdrawiamy i dziękujemy raz jeszcze Ania i Mateusz.\""
   },
+  {
+    weddingDate: '13-06-2015',
+    woman: 'Natalia',
+    man: 'Tomasz',
+    picture: '/static/image/married/2015.06.13-Tomasz_Chyrycz_494x300.jpg',
+    opinion: "Jesteśmy bardzo zadowoleni z zespołu Arto, który poprowadził nasze wesele. Potrafią porwać do tańca wszystkich niezależnie od wieku. Oczepiny poprowadzili z przytupem, a goście płakali ze śmiechu. Widać olbrzymie doświadczenie zespołu i ich wspólną pasję to wszystko tworzy świetny skład, który jest w stanie sprostać wymaganiom nowożeńców i wszystkich gości. Z całego serca polecamy zespół Arto😀"  },
 ]
