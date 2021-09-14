@@ -291,10 +291,10 @@ export const MARRIED_OPINIONS = [
     opinion: "Kierując się wyborem zespołu kierowaliśmy się unikalnym wokalem, jakością i oryginalnym podejściem do Naszych potrzeb. Wybór padł na Zespół Arto i Nasze oczekiwana zostały spełnione. Świetny repertuar, bardzo dobra komunikacja i na koniec wielki efekt w postaci zadowolenia gości. Polecamy z całego serca i dziękujemy za tak świetna oprawę Naszego Wielkiego Dnia."
   },
   {
-    weddingDate: '26-06-2021',
+    weddingDate: '07-07-2021',
     woman: 'Ania',
     man: 'Mateusz',
-    picture: '/static/image/married/2021.06.26_Ania_Mateusz_800x534.jpg',
+    picture: '/static/image/married/2021.07.07_Ania_Mateusz_800x534.jpg',
     opinion: "Wybraliśmy ten zespół przeglądając filmiki na jednym z portali weselnych. Słuchając ich nagrań, zostaliśmy pozytywnie zaskoczeni zarówno jakością wokalu jak i tym, że nie grają z playbacku (tak da się to wyłapać nawet na filmikach). Mimo, że u nikogo z naszych znajomych nie grali na weselu, postanowiliśmy ich wybrać tym bardziej, że nasz dzień ślubu był ostatnim wolnym terminem zespołu (a więc o czymś to też świadczy). Pierwsze spotkanie i podpisanie umowy upłynęło w bardzo miłej atmosferze, pełnej profesjonalizmu i wysokiej kultury. Zespół utrzymywał z nami stały kontakt w trakcie wprowadzania kolejnych restrykcji oraz znoszenia obostrzeń. Dzień ślubu odbył się jednak bez wesela (całkowity zakaz imprez okolicznościowych). My natomiast zorganizowaliśmy przyjęcie w późniejszym czasie, a zespół był na tyle wyrozumiały, że dopasował się do nowego terminu, który wypadł w środku tygodnia. \n" +
       "\n" +
       "Zespół bardzo ładnie połączył style tj. discopolo (który prosiliśmy aby został wpleciony w imprezę) i klasyczne, stare, piękne utwory. Każdy znalazł coś dla siebie. Nie robił długich przerw, a przede wszystkim nie robił długiej przerwy po zabawach oczepinowych. Dostosowywał tempo i rodzaje muzyki pod sytuacje i możliwości gości. Prowadzący byli bardzo dobrze zgrani z salą i ciepłymi posiłkami, co miało ogromne znaczenie dla ilości ludzi przy stołach i na parkiecie. \n" +
@@ -310,5 +310,13 @@ export const MARRIED_OPINIONS = [
     woman: 'Natalia',
     man: 'Tomasz',
     picture: '/static/image/married/2015.06.13-Tomasz_Chyrycz_494x300.jpg',
-    opinion: "Jesteśmy bardzo zadowoleni z zespołu Arto, który poprowadził nasze wesele. Potrafią porwać do tańca wszystkich niezależnie od wieku. Oczepiny poprowadzili z przytupem, a goście płakali ze śmiechu. Widać olbrzymie doświadczenie zespołu i ich wspólną pasję to wszystko tworzy świetny skład, który jest w stanie sprostać wymaganiom nowożeńców i wszystkich gości. Z całego serca polecamy zespół Arto😀"  },
+    opinion: "Jesteśmy bardzo zadowoleni z zespołu Arto, który poprowadził nasze wesele. Potrafią porwać do tańca wszystkich niezależnie od wieku. Oczepiny poprowadzili z przytupem, a goście płakali ze śmiechu. Widać olbrzymie doświadczenie zespołu i ich wspólną pasję to wszystko tworzy świetny skład, który jest w stanie sprostać wymaganiom nowożeńców i wszystkich gości. Z całego serca polecamy zespół Arto😀"
+  },
+  {
+    weddingDate: '26-06-2021',
+    woman: 'Agnieszka',
+    man: 'Damian',
+    picture: '/static/image/married/2021.06.26_Agnieszka_Damian-800x553.JPG',
+    opinion: "SUPER ZESPÓŁ !!! Polecamy zespół ARTO każdemu kto szuka zespołu, który umie zabawić i rozweselić gości. Jesteśmy z was bardzo zadowoleni, goście również. Świetna muzyka, wesoły klimat, pełen profesjonalizm, nic dodać nic ująć. Świetny kontakt z zespołem."
+  },
 ]
