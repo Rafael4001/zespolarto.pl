@@ -88,12 +88,6 @@ export const YEAR_2022 = [
       },
       {
         day: "2022-05-07",
-        place: "Bogucin",
-        hotel: "Dom weselny \"Kapama\"",
-        status: STATUS.BUSY,
-        "blessing": "yes",
-        "blessingTime": "14.30",
-        weddingHour: "15.00"
       },
       {
         day: "2022-05-14",
