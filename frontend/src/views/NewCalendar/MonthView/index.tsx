@@ -1,39 +1,46 @@
 import styled from 'styled-components'
-import React, {useState} from "react";
-import DayPicker from 'react-day-picker';
-import 'react-day-picker/lib/style.css';
-import {STATUS, WEEKDAYS_SHORT, MONTHS, FIRST_DAY_OF_WEEK} from "../../../constants";
-import classNames from 'classnames';
-import {COLORS} from "../../../colors";
-import moment from "moment";
-import Popover from '@material-ui/core/Popover';
+import React, { FC, useState } from 'react'
+import DayPicker from 'react-day-picker'
+import 'react-day-picker/lib/style.css'
+import { STATUS, WEEKDAYS_SHORT, MONTHS, FIRST_DAY_OF_WEEK } from '../../../constants'
+import classNames from 'classnames'
+import { COLORS } from '../../../colors'
+import moment from 'moment'
+import Popover from '@material-ui/core/Popover'
 import DetailsOfTerm from '../DetailsOfTerm'
 
+import { IDay, IDetail, IYear } from '../../../types/types'
 
-const MonthView = ({className, year, month, index}) => {
+interface IMonthView {
+  className: string,
+  year: IYear,
+  month: IDetail,
+  index: number,
+}
+
+const MonthView: FC<IMonthView> = ({ className, year, month, index }) => {
   const [anchorEl, setAnchorEl] = useState(null)
-  const [currentDay, setCurrentDay] = useState({})
-  const open = Boolean(anchorEl);
-  const id = open ? 'simple-popover' : undefined;
+  const [currentDay, setCurrentDay] = useState({} as IDay)
+  const open = Boolean(anchorEl)
+  const id = open ? 'simple-popover' : undefined
 
-
-  const busyTerms = month.days.filter(item => item.status === STATUS.BUSY).map(item => item.day).map(item => new Date(item));
+  const busyTerms = month.days.filter(item => item.status === STATUS.BUSY).map(item => item.day).map(item => new Date(item))
   const holidays = month.days.filter(item => item.status === STATUS.HOLIDAY).map(item => item.day).map(item => new Date(item))
 
   const modifiers = {
     busy: busyTerms,
     holidays
-  };
+  }
 
   const handleClose = () => {
-    setAnchorEl(null);
-  };
+    setAnchorEl(null)
+  }
 
   const renderDay = (day) => {
     const currentDay = month.days.find(item => moment(item.day).format('YYYY-MM-DD') === moment(day).format('YYYY-MM-DD'))
     const handleDayClick = (event) => {
       setCurrentDay(currentDay)
-      setAnchorEl(event.currentTarget);
+      setAnchorEl(event.currentTarget)
     }
 
     return (
@@ -45,7 +52,7 @@ const MonthView = ({className, year, month, index}) => {
         <div className="dayNumber">{day.getDate()}</div>
         <div className="place">
           {currentDay?.status === STATUS.BUSY && currentDay.place}
-          {currentDay?.status === STATUS.HOLIDAY && "Wakacje"}
+          {currentDay?.status === STATUS.HOLIDAY && 'Wakacje'}
         </div>
       </div>
     )
@@ -63,7 +70,6 @@ const MonthView = ({className, year, month, index}) => {
         canChangeMonth={false}
       />
 
-      {/*{currentDay?.status === STATUS.BUSY && <Popover*/}
       <Popover
         id={id}
         open={open}
@@ -71,15 +77,15 @@ const MonthView = ({className, year, month, index}) => {
         onClose={handleClose}
         anchorOrigin={{
           vertical: 'bottom',
-          horizontal: 'center',
+          horizontal: 'center'
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'center',
+          horizontal: 'center'
         }}
       >
         <DetailsOfTerm currentDay={currentDay}/>
-      </Popover>    </div>
+      </Popover></div>
   )
 }
 
@@ -147,4 +153,3 @@ const StyledCalendar = styled(MonthView)`
 `
 
 export default StyledCalendar
-
