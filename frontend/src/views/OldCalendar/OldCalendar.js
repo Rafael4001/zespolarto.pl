@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import { YEAR_2021 } from '../../termsJSON/terminy2021'
 import { YEAR_2022 } from '../../termsJSON/terminy2022'
 
-import NewCalendar from '../../views/NewCalendar'
+import NewCalendar from '../NewCalendar'
 import TabPanel from './TabPanel'
 
 import { STATUS } from '../../constants'
