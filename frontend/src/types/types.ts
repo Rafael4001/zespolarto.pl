@@ -1,9 +1,11 @@
 export interface IDay {
+  blessingTime?: string,
   day: string,
   hotel?: string,
   information?: string,
   place?: string,
   status?: string,
+  weddingHour?: string,
 }
 
 export interface IDetail {
