@@ -1,15 +1,29 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import {passwordTerms} from '../constants'
 import styled from 'styled-components'
-import  OldCalendar from './OldCalendar'
+import OldCalendar from './OldCalendar'
+
+const UseFocus = () => {
+  const htmlElRef = useRef(null)
+  const setFocus = () => {
+    htmlElRef.current && htmlElRef.current.focus()
+  }
+
+  return [htmlElRef, setFocus]
+}
 
 const Terms = ({className}) => {
   const [pasValue, setPasValues] = useState('')
+  const [input1Ref, setInput1Focus] = UseFocus()
+
+
+  useEffect(() => {
+    setInput1Focus()
+  }, [])
 
   if (pasValue === passwordTerms) {
     return <OldCalendar/>
   }
-
 
   return (
     <div className={className}>
@@ -20,6 +34,7 @@ const Terms = ({className}) => {
           name="pasInput"
           value={pasValue}
           onChange={(event) => setPasValues(event.target.value)}
+          ref={input1Ref}
         />
       </div>
     </div>

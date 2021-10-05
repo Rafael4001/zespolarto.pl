@@ -38,9 +38,7 @@ const MonthView = ({className, year, month, index}) => {
 
     return (
       <div
-        className={classNames(className, 'dayContainer',
-          // {'class_name': true}
-        )}
+        className={classNames(className, 'dayContainer')}
         aria-describedby={id}
         onClick={currentDay && handleDayClick}
       >
@@ -141,6 +139,9 @@ const StyledCalendar = styled(MonthView)`
     color: black;
   }
 
+  .DayPicker-Month {
+    margin: 0.5rem 0.3rem;
+  }
 `
 
 export default StyledCalendar
