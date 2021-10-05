@@ -122,6 +122,7 @@ const StyledCalendar = styled(MonthView)`
   .DayPicker-Day--busy {
     background-color: #B2E0B1;
     font-size: 1.3rem;
+    cursor: pointer;
   }
 
   .DayPicker-Day--today {
@@ -131,6 +132,7 @@ const StyledCalendar = styled(MonthView)`
   .DayPicker-Day--holidays {
     background-color: #5bc0de;
     font-size: 1.3rem;
+    cursor: pointer;
   }
 
   .DayPicker-Weekday {
