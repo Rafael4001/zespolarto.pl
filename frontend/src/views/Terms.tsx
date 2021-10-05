@@ -1,7 +1,11 @@
-import React, {useState, useRef, useEffect} from 'react';
-import {passwordTerms} from '../constants'
+import React, { useState, useRef, useEffect, FC } from 'react'
+import { passwordTerms } from '../constants'
 import styled from 'styled-components'
 import OldCalendar from './OldCalendar'
+
+interface ITerms {
+  className: string
+}
 
 const UseFocus = () => {
   const htmlElRef = useRef(null)
@@ -12,12 +16,12 @@ const UseFocus = () => {
   return [htmlElRef, setFocus]
 }
 
-const Terms = ({className}) => {
+const Terms: FC<ITerms> = ({ className }) => {
   const [pasValue, setPasValues] = useState('')
   const [input1Ref, setInput1Focus] = UseFocus()
 
-
   useEffect(() => {
+    // @ts-ignore
     setInput1Focus()
   }, [])
 
@@ -48,6 +52,7 @@ const StyledTerms = styled(Terms)`
     align-content: center;
     padding: 1rem;
   }
+
   .pass-input {
     width: 100px;
     margin: 0 5px;
