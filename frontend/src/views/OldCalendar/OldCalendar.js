@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 import { YEAR_2021 } from '../../termsJSON/terminy2021'
 import { YEAR_2022 } from '../../termsJSON/terminy2022'
+import { YEAR_2023 } from '../../termsJSON/terminy2023'
 
 import NewCalendar from '../NewCalendar'
 import TabPanel from './TabPanel'
@@ -38,6 +39,10 @@ const OldCalendar = ({ className }) => {
     {
       name: 2022,
       details: YEAR_2022
+    },
+    {
+      name: 2023,
+      details: YEAR_2023
     }
   ]
 
