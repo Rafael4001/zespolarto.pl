@@ -1,6 +1,5 @@
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
 import PlayedWeddingInformationContainer from './PlayedWeddingInformationContainer'
-
 
 const styles = (theme) => ({
   mainContainer: {
@@ -9,12 +8,12 @@ const styles = (theme) => ({
     padding: '1rem',
 
     [theme.breakpoints.down('sm')]: {
-      gridTemplateColumns: '1fr',
-    },
+      gridTemplateColumns: '1fr'
+    }
   },
   photo: {
     width: '100%',
-    height: '100%',
+    height: '100%'
   },
   photoContainer: {
     padding: '1rem',
@@ -22,50 +21,50 @@ const styles = (theme) => ({
     width: '100%',
 
     [theme.breakpoints.down('sm')]: {
-      display: 'none',
-    },
+      display: 'none'
+    }
   },
   text: {
     fontSize: '1.1rem',
-    fontFamily: '\'Baskervville\',serif',
+    fontFamily: '\'Baskervville\',serif'
   },
   brideIcon: {
-    width: '5rem',
+    width: '5rem'
   },
   iconContainer: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   happyPairs: {
     fontSize: '1.5rem',
-    fontWeight: 700,
+    fontWeight: 700
   },
   happyPairsTextNUmber: {
     fontSize: '2rem',
-    fontFamily: 'Parisienne',
+    fontFamily: 'Parisienne'
   },
   imageWrapperContainerMain: {
     width: '100%',
-    padding: '1rem',
+    padding: '1rem'
   },
   imageWrapperContainer: {
     position: 'relative',
     width: '100%',
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   class1: {
-    position: "relative",
+    position: 'relative',
     width: '100%',
 
     [theme.breakpoints.down('sm')]: {
-      display: 'none',
-    },
+      display: 'none'
+    }
   },
   class2: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center'
   }
-});
+})
 
-export default withStyles(styles)(PlayedWeddingInformationContainer);
+export default withStyles(styles)(PlayedWeddingInformationContainer)

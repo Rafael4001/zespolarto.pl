@@ -1,2 +1,1 @@
-export { default } from './MenuItem.style';
-
+export { default } from './MenuItem.style'

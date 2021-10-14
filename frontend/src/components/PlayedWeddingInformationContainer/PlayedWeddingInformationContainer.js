@@ -1,12 +1,11 @@
 import React from 'react'
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
-import {SMILE, IMAGE_3} from "../../constants";
-import Divider from "@material-ui/core/Divider";
-import Image from "next/image";
+import { SMILE, IMAGE_3 } from '../../constants'
+import Divider from '@material-ui/core/Divider'
+import Image from 'next/image'
 
-
-const PlayedWeddingInformationContainer = ({classes}) => (
+const PlayedWeddingInformationContainer = ({ classes }) => (
   <div>
     <div className={classes.mainContainer}>
       <div className={classes.iconContainer}>
@@ -52,11 +51,11 @@ const PlayedWeddingInformationContainer = ({classes}) => (
 )
 
 PlayedWeddingInformationContainer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+  classes: PropTypes.object.isRequired
+}
 
-PlayedWeddingInformationContainer.defaultProps = {};
+PlayedWeddingInformationContainer.defaultProps = {}
 
-PlayedWeddingInformationContainer.displayName = 'PlayedWeddingInformationContainer';
+PlayedWeddingInformationContainer.displayName = 'PlayedWeddingInformationContainer'
 
 export default PlayedWeddingInformationContainer

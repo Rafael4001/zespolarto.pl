@@ -1,18 +1,17 @@
-import classNames from "classnames";
-import Image from "next/image";
-import {LEAF, LINKS} from "../../constants";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import React from "react";
-import PropTypes from "prop-types";
+import classNames from 'classnames'
+import Image from 'next/image'
+import { LEAF, LINKS } from '../../constants'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
+import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'next/link'
 
-const OpinionTale = ({details, classes, more = true}) => {
-  const {man, woman, picture, weddingDate, opinion} = details
+const OpinionTale = ({ details, classes, more = true }) => {
+  const { man, woman, picture, weddingDate, opinion } = details
 
   const weddingDateUrlFormat = weddingDate.split('-')
   const formatedWeddingDate = `${weddingDateUrlFormat[0]}.${weddingDateUrlFormat[1]}.${weddingDateUrlFormat[2]}`
-
 
   return (
       <div className={classNames(classes.mediaCard)}>
@@ -37,15 +36,15 @@ const OpinionTale = ({details, classes, more = true}) => {
           />
           <div className={classes.quotationContainer}>
             {man && woman &&
-            <Typography classes={{root: classes.names}}>{woman} &</Typography>}
+            <Typography classes={{ root: classes.names }}>{woman} &</Typography>}
             {man && woman &&
-            <Typography classes={{root: classes.names,}}>{man}</Typography>}
+            <Typography classes={{ root: classes.names }}>{man}</Typography>}
             {opinion &&
-            <Typography classes={{root: classes.quotation,}}>{opinion.slice(0, 40)}...</Typography>}
-            <Typography classes={{root: classes.author,}}>{formatedWeddingDate}r.</Typography>
+            <Typography classes={{ root: classes.quotation }}>{opinion.slice(0, 40)}...</Typography>}
+            <Typography classes={{ root: classes.author }}>{formatedWeddingDate}r.</Typography>
             {more &&
             <Link href={LINKS.OPINIONS.HREF} passHref>
-              <Button><Typography classes={{root: classes.more}}>więcej...</Typography></Button>
+              <Button><Typography classes={{ root: classes.more }}>więcej...</Typography></Button>
             </Link>
             }
           </div>
@@ -56,7 +55,8 @@ const OpinionTale = ({details, classes, more = true}) => {
 
 OpinionTale.propTypes = {
   classes: PropTypes.object.isRequired,
-  details: PropTypes.object
-};
+  details: PropTypes.object,
+  more: PropTypes.bool
+}
 
 export default OpinionTale

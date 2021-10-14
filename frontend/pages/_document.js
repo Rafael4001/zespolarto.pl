@@ -1,21 +1,21 @@
-import {Fragment} from 'react';
+import React, { Fragment } from 'react'
+
 import Document,
 {
   Html,
   Head,
   Main,
-  NextScript,
+  NextScript
 } from 'next/document'
-import {FAVICON} from "../src/constants";
-import { ServerStyleSheet } from "styled-components";
-import { ServerStyleSheets } from "@material-ui/styles";
-
+import { FAVICON } from '../src/constants'
+import { ServerStyleSheet } from 'styled-components'
+import { ServerStyleSheets } from '@material-ui/styles'
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const styledComponentsSheet = new ServerStyleSheet();
-    const materialSheets = new ServerStyleSheets();
-    const originalRenderPage = ctx.renderPage;
+  static async getInitialProps (ctx) {
+    const styledComponentsSheet = new ServerStyleSheet()
+    const materialSheets = new ServerStyleSheets()
+    const originalRenderPage = ctx.renderPage
 
     try {
       ctx.renderPage = () =>
@@ -24,9 +24,9 @@ class MyDocument extends Document {
             styledComponentsSheet.collectStyles(
               materialSheets.collect(<App {...props} />)
             )
-        });
+        })
 
-      const initialProps = await Document.getInitialProps(ctx);
+      const initialProps = await Document.getInitialProps(ctx)
       return {
         ...initialProps,
         styles: (
@@ -36,13 +36,13 @@ class MyDocument extends Document {
             {styledComponentsSheet.getStyleElement()}
           </Fragment>
         )
-      };
+      }
     } finally {
-      styledComponentsSheet.seal();
+      styledComponentsSheet.seal()
     }
   }
 
-  render() {
+  render () {
     return (
       <Html lang="pl">
         <Head>
@@ -115,4 +115,4 @@ class MyDocument extends Document {
 //   };
 // };
 
-export default MyDocument;
+export default MyDocument

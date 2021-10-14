@@ -1,7 +1,7 @@
-import { withStyles } from '@material-ui/core/styles';
-import PageWrapper from './PageWrapper';
-import { MAX_PAGE_WIDTH , MENU_MOBILE_HEIGHT} from "../../constants";
-import { COLORS } from "../../colors";
+import { withStyles } from '@material-ui/core/styles'
+import PageWrapper from './PageWrapper'
+import { MAX_PAGE_WIDTH, MENU_MOBILE_HEIGHT } from '../../constants'
+import { COLORS } from '../../colors'
 
 const styles = (theme) => ({
   pageWrapperOuter: {
@@ -15,8 +15,8 @@ const styles = (theme) => ({
     margin: '0 auto',
 
     [theme.breakpoints.up('md')]: {
-      paddingTop: '6rem',
-    },
+      paddingTop: '6rem'
+    }
   },
   menuHomepage: {
     position: 'fixed',
@@ -27,9 +27,9 @@ const styles = (theme) => ({
     borderBottom: `solid 1px ${COLORS.grey.light}`,
 
     [theme.breakpoints.up('sm')]: {
-      backgroundColor: '#FFF',
-    },
-  },
-});
+      backgroundColor: '#FFF'
+    }
+  }
+})
 
-export default withStyles(styles)(PageWrapper);
+export default withStyles(styles)(PageWrapper)

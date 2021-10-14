@@ -1,17 +1,16 @@
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
 import DescriptionBlock from './DescriptionBlock'
-
 
 const styles = (theme) => ({
   mainContainer: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    padding: '1rem 1rem',
+    padding: '1rem 1rem'
   },
   titleContainer: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   title: {
     fontSize: '4rem',
@@ -19,14 +18,14 @@ const styles = (theme) => ({
     fontWeight: 500,
 
     [theme.breakpoints.up('sm')]: {
-      fontSize: '6rem',
-    },
+      fontSize: '6rem'
+    }
   },
   text: {
     textAlign: 'center',
     fontSize: '1.1rem',
-    fontFamily: '\'Baskervville\',serif',
-  },
-});
+    fontFamily: '\'Baskervville\',serif'
+  }
+})
 
-export default withStyles(styles)(DescriptionBlock);
+export default withStyles(styles)(DescriptionBlock)

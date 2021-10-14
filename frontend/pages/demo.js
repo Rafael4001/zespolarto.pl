@@ -1,3 +1,3 @@
-import Demo from '../src/views/Demo';
+import Demo from '../src/views/Demo'
 
-export default Demo;
+export default Demo

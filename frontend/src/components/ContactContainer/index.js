@@ -1,2 +1,1 @@
-export { default } from './ContactContainer.style';
-
+export { default } from './ContactContainer.style'

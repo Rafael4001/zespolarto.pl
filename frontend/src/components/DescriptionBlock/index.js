@@ -1,2 +1,1 @@
-export { default } from './DescriptionBlock.style';
-
+export { default } from './DescriptionBlock.style'

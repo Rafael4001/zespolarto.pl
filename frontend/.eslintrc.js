@@ -19,8 +19,14 @@ module.exports = {
     'react',
     '@typescript-eslint'
   ],
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   rules: {
     'no-console': 2, // Remember, this means error!
     'no-use-before-define': 'off'
   }
+
 }

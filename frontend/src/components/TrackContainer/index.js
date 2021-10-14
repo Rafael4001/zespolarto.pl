@@ -1,2 +1,1 @@
-export { default } from './TrackContainer.style';
-
+export { default } from './TrackContainer.style'

@@ -1,2 +1,1 @@
-export { default } from './HomepageMainPhoto.style';
-
+export { default } from './HomepageMainPhoto.style'

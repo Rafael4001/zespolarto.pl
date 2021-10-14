@@ -1,13 +1,13 @@
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
 import OpinionsContainer from './OpinionsContainer'
-import {COLORS} from '../../colors'
-import {RADIUS_CORNER} from '../../constants'
+import { COLORS } from '../../colors'
+import { RADIUS_CORNER } from '../../constants'
 
 const styles = () => ({
   buttonMoreContainer: {
     display: 'flex',
     justifyContent: 'center',
-    margin: '1rem 1rem',
+    margin: '1rem 1rem'
   },
 
   mediaCard: {
@@ -15,7 +15,7 @@ const styles = () => ({
     borderRadius: `0 ${RADIUS_CORNER} 0  ${RADIUS_CORNER}`,
     fontSize: '2rem',
     textAlign: 'center',
-    margin: `15px`,
+    margin: '15px',
     marginBottom: '1.5rem',
     fontFamily: 'Parisienne',
 
@@ -23,20 +23,20 @@ const styles = () => ({
 
     '&:hover': {
       backgroundColor: `${COLORS.grey.light}`
-    },
+    }
 
   },
   photoCard: {
     width: '100%',
-    borderRadius: `0 ${RADIUS_CORNER} 0 0`,
+    borderRadius: `0 ${RADIUS_CORNER} 0 0`
   },
   textContainer: {
-    padding: '0.5rem',
+    padding: '0.5rem'
   },
   text: {
     fontSize: '1.2rem',
     fontWeight: 300,
-    fontFamily: '\'Baskervville\',serif',
+    fontFamily: '\'Baskervville\',serif'
   },
 
   names: {
@@ -48,7 +48,7 @@ const styles = () => ({
   quotationContainer: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'flex-end',
+    alignItems: 'flex-end'
   },
   quotation: {
     fontSize: '1.2rem',
@@ -66,11 +66,11 @@ const styles = () => ({
     fontSize: '1.2rem',
     textTransform: 'initial',
     fontWeight: 600,
-    fontFamily: '\'Baskervville\',serif',
+    fontFamily: '\'Baskervville\',serif'
   },
   author: {
     fontSize: '0.8125rem',
-    fontFamily: 'Parisienne',
+    fontFamily: 'Parisienne'
   },
   titleContainer: {
     padding: '1.5rem 1rem',
@@ -79,12 +79,12 @@ const styles = () => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    fontFamily: 'Parisienne',
+    fontFamily: 'Parisienne'
   },
   leaf_icon: {
-    width: '1.5rem',
-  },
+    width: '1.5rem'
+  }
 
-});
+})
 
-export default withStyles(styles)(OpinionsContainer);
+export default withStyles(styles)(OpinionsContainer)

@@ -1,2 +1,1 @@
-export { default } from './PlayedWeddingInformationContainer.style';
-
+export { default } from './PlayedWeddingInformationContainer.style'

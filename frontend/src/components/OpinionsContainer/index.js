@@ -1,2 +1,1 @@
-export { default } from './OpinionsContainer.style';
-
+export { default } from './OpinionsContainer.style'

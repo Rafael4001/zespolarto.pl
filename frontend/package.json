@@ -8,6 +8,7 @@
     "build-export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
+    "lint-fix": "next lint --fix",
     "startProd": "npm run build && npm run start"
   },
   "dependencies": {

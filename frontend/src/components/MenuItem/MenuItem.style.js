@@ -1,14 +1,13 @@
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
 
 import MenuItem from './MenuItem'
-import {COLORS} from "../../colors";
-
+import { COLORS } from '../../colors'
 
 const styles = (theme) => ({
   mainContainer: {
 
     [theme.breakpoints.down('sm')]: {
-      padding: '0 1rem',
+      padding: '0 1rem'
     },
 
     height: '3rem',
@@ -21,16 +20,15 @@ const styles = (theme) => ({
     borderBottom: `solid 1px ${COLORS.grey.light}`,
     outline: 'none',
 
-
     '&:hover': {
       transition: '0.7s',
       color: COLORS.red.main,
       borderBottom: `solid 1px ${COLORS.red.main}`,
-      outline: 'none',
+      outline: 'none'
     },
     '&:focus': {
-      outline: 'none',
-    },
+      outline: 'none'
+    }
 
   },
   navItem: {
@@ -49,18 +47,18 @@ const styles = (theme) => ({
     fontFamily: '\'Baskervville\',serif',
 
     '&:focus': {
-      outline: 'none',
+      outline: 'none'
     },
     '&:hover': {
       borderBottom: `solid ${COLORS.red.main} 1px`,
       transition: 'border-bottom 0.4s linear',
       cursor: 'pointer'
-    },
+    }
   },
   activeLink: {
     color: COLORS.red.main,
-    borderBottom: `solid ${COLORS.red.main} 1px`,
+    borderBottom: `solid ${COLORS.red.main} 1px`
   }
-});
+})
 
-export default withStyles(styles)(MenuItem);
+export default withStyles(styles)(MenuItem)

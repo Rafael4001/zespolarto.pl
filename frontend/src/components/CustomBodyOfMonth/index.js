@@ -1,3 +1,3 @@
-import CustomBodyOfMonth from './CustomBodyOfMonth.style';
+import CustomBodyOfMonth from './CustomBodyOfMonth.style'
 
-export default CustomBodyOfMonth;
+export default CustomBodyOfMonth

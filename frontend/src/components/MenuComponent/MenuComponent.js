@@ -1,20 +1,19 @@
-import React, {Component} from 'react'
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
 import MenuItem from '../MenuItem'
-import {MENU_ITEMS, LOGO_ON_THE_FLOWERS} from '../../constants';
-import Link from "next/link";
+import { MENU_ITEMS, LOGO_ON_THE_FLOWERS } from '../../constants'
+import Link from 'next/link'
 import Image from 'next/image'
 
 import MenuBurger from './MenuBurger'
 
-
-const MenuComponent = ({classes}) => {
+const MenuComponent = ({ classes }) => {
   const MenuItems = () => (
-    MENU_ITEMS.map(({name, link, as}) => (
+    MENU_ITEMS.map(({ name, link, as }) => (
       <MenuItem key={name} title={name} href={link} as={as}/>
     ))
-  );
+  )
 
   const MobileMenu = () => {
     return (
@@ -36,8 +35,7 @@ const MenuComponent = ({classes}) => {
         <MenuBurger/>
       </div>
     )
-  };
-
+  }
 
   const WebMenu = () => (
     <div className={classes.mainContainer}>
@@ -59,7 +57,7 @@ const MenuComponent = ({classes}) => {
         <MenuItems/>
       </div>
     </div>
-  );
+  )
   return (
     <nav>
       <div className={classes.menuWeb}>
@@ -70,15 +68,14 @@ const MenuComponent = ({classes}) => {
       </div>
     </nav>
   )
-
 }
 
 MenuComponent.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+  classes: PropTypes.object.isRequired
+}
 
-MenuComponent.defaultProps = {};
+MenuComponent.defaultProps = {}
 
-MenuComponent.displayName = 'MenuComponent';
+MenuComponent.displayName = 'MenuComponent'
 
 export default MenuComponent

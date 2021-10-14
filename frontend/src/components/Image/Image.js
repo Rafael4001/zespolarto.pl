@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ImageNext from "next/image";
+import React from 'react'
+import PropTypes from 'prop-types'
+import ImageNext from 'next/image'
 
 const Image = (props) => {
-  const {imgSrc} = props;
+  const { imgSrc } = props
 
   return (
     <ImageNext
@@ -14,12 +14,12 @@ const Image = (props) => {
       unoptimized={true}
     />
   )
-};
+}
 
 Image.propTypes = {
-  imgSrc: PropTypes.string.isRequired,
-};
+  imgSrc: PropTypes.string.isRequired
+}
 
-Image.displayName = 'Image';
+Image.displayName = 'Image'
 
-export default Image;
+export default Image

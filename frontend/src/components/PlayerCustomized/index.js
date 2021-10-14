@@ -1,2 +1,1 @@
-export { default } from './PlayerCustomized.style';
-
+export { default } from './PlayerCustomized.style'

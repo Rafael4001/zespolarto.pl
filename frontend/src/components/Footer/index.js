@@ -1,18 +1,16 @@
 import React from 'react'
-import PropTypes from "prop-types";
-import classNames from 'classnames';
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import Link from 'next/link'
-import styled from 'styled-components';
-import PhoneIcon from '@material-ui/icons/Phone';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import Typography from "@material-ui/core/Typography";
-import {COLORS} from '../../colors'
+import styled from 'styled-components'
+import PhoneIcon from '@material-ui/icons/Phone'
+import MailOutlineIcon from '@material-ui/icons/MailOutline'
+import Typography from '@material-ui/core/Typography'
+import { COLORS } from '../../colors'
 import Image from 'next/image'
-import {SCREEN, SCREEN_SIZE} from '../../constants'
+import { SCREEN, SCREEN_SIZE, FACEBOOK_URL, FACEBOOK_ICON, LOGO_ON_THE_FLOWERS, LINKS, RAFAL_CIESIELCZUK_LINKED_IN } from '../../constants'
 
-import {FACEBOOK_URL, FACEBOOK_ICON, LOGO_ON_THE_FLOWERS, LINKS, RAFAL_CIESIELCZUK_LINKED_IN} from "../../constants";
-
-const Footer = ({ className}) => (
+const Footer = ({ className }) => (
   <footer className={className}>
     <div className="mainContainer">
       <div className="logoContainer">
@@ -224,9 +222,9 @@ const StyledFooter = styled(Footer)`
 `
 
 Footer.propTypes = {
-  className: PropTypes.string.isRequired,
-};
+  className: PropTypes.string.isRequired
+}
 
-Footer.displayName = 'Footer';
+Footer.displayName = 'Footer'
 
 export default StyledFooter

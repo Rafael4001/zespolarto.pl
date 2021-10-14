@@ -1,36 +1,34 @@
 import React, { Component } from 'react'
-import PropTypes from "prop-types";
-import classNames from 'classnames';
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import { withMediaProps } from 'react-media-player'
 
-import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
-import PauseCircleFilledIcon from '@material-ui/icons/PauseCircleFilled';
-import Button from "@material-ui/core/Button";
+import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled'
+import PauseCircleFilledIcon from '@material-ui/icons/PauseCircleFilled'
+import Button from '@material-ui/core/Button'
 
-import { SONGS_IMAGES } from "../../constants";
+import { SONGS_IMAGES } from '../../constants'
 
-import ImageCustom from "../Image";
-
+import ImageCustom from '../Image'
 
 class TrackContainer extends Component {
-  shouldComponentUpdate({media}) {
+  shouldComponentUpdate ({ media }) {
     return this.props.media.isPlaying !== media.isPlaying
   }
 
   handlePlayClick = () => {
-    this.props.onClickPlay();
+    this.props.onClickPlay()
     this.props.media.play()
   };
 
-
-  render() {
-    const {classes, track, actualPlayingTrackMp3Name, media} = this.props;
-    const trackImage = track.imgSrc ? track.imgSrc : SONGS_IMAGES.DefaultSongImage;
+  render () {
+    const { classes, track, actualPlayingTrackMp3Name, media } = this.props
+    const trackImage = track.imgSrc ? track.imgSrc : SONGS_IMAGES.DefaultSongImage
 
     return (
       <div className={classNames(
         classes.mainContainer,
-        {[classes.activeBackground]: actualPlayingTrackMp3Name === track.mp3Name}
+        { [classes.activeBackground]: actualPlayingTrackMp3Name === track.mp3Name }
       )}>
         <div
           className={classes.songImage}
@@ -38,8 +36,8 @@ class TrackContainer extends Component {
         >
           <ImageCustom imgSrc={trackImage} alt/>
         </div>
-        {actualPlayingTrackMp3Name === track.mp3Name && media.isPlaying ?
-          (<Button
+        {actualPlayingTrackMp3Name === track.mp3Name && media.isPlaying
+          ? (<Button
             className={classes.myButton}
             key={track.mp3Name}
             onClick={media.pause}
@@ -49,15 +47,14 @@ class TrackContainer extends Component {
               classes.buttonIconActiveSong
             )}/>
           </Button>)
-          :
-          (<Button
+          : (<Button
             className={classes.myButton}
             key={track.mp3Name}
             onClick={this.handlePlayClick}
           >
             <PlayCircleFilledIcon className={classNames(
               classes.buttonIcon,
-              {[classes.buttonIconActiveSong]: actualPlayingTrackMp3Name === track.mp3Name}
+              { [classes.buttonIconActiveSong]: actualPlayingTrackMp3Name === track.mp3Name }
             )}/>
           </Button>)
         }
@@ -75,9 +72,9 @@ TrackContainer.propTypes = {
   track: PropTypes.object.isRequired,
   onClickPlay: PropTypes.func.isRequired,
   actualPlayingTrackMp3Name: PropTypes.string,
-};
+  media: PropTypes.any
+}
 
-TrackContainer.displayName = 'TrackContainer';
-
+TrackContainer.displayName = 'TrackContainer'
 
 export default withMediaProps(TrackContainer)

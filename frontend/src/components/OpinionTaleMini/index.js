@@ -1,1 +1,1 @@
-export { default } from './OpinionTaleMini.style';
+export { default } from './OpinionTaleMini.style'

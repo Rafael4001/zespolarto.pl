@@ -1,8 +1,5 @@
-import {withStyles} from '@material-ui/core/styles';
-
+import { withStyles } from '@material-ui/core/styles'
 import HomepageMainPhoto from './HomepageMainPhoto'
-import {MARGIN_TOP_UNDER_MENU} from "../../constants";
-
 
 const styles = (theme) => ({
 
@@ -14,8 +11,8 @@ const styles = (theme) => ({
     paddingBottom: '1rem',
 
     [theme.breakpoints.up('sm')]: {
-      gridTemplateColumns: '1fr 1.5fr',
-    },
+      gridTemplateColumns: '1fr 1.5fr'
+    }
   },
   logoContainer: {
     width: '100%',
@@ -29,7 +26,7 @@ const styles = (theme) => ({
     top: '0.5rem',
     width: '30rem',
     zIndex: 20,
-    marginLeft: '15rem',
+    marginLeft: '15rem'
   },
   textContainer: {
     backgroundColor: '#FFFFFF',
@@ -37,7 +34,7 @@ const styles = (theme) => ({
 
     [theme.breakpoints.down('xs')]: {
       display: 'none'
-    },
+    }
 
   },
   subTitle: {
@@ -46,12 +43,12 @@ const styles = (theme) => ({
     fontWeight: 500,
 
     [theme.breakpoints.up('md')]: {
-      fontSize: '3rem',
-    },
+      fontSize: '3rem'
+    }
   },
   subTitleLeft: {
     display: 'flex',
-    justifyContent: 'flex-end',
+    justifyContent: 'flex-end'
   },
 
   loversImageContainerMain: {
@@ -61,21 +58,21 @@ const styles = (theme) => ({
 
   },
   loversImageContainer: {
-    position: "relative",
+    position: 'relative',
     width: '6rem',
 
     [theme.breakpoints.up('md')]: {
-      width: '11rem',
-    },
+      width: '11rem'
+    }
   },
   photoContainerMain: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   photoContainer: {
-    position: "relative",
-    width: '100%',
+    position: 'relative',
+    width: '100%'
   }
-});
+})
 
-export default withStyles(styles)(HomepageMainPhoto);
+export default withStyles(styles)(HomepageMainPhoto)

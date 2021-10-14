@@ -1,19 +1,18 @@
-import React, {Component} from 'react'
-import PropTypes from "prop-types";
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import classNames from "classnames";
-import FacebookIcon from '@material-ui/icons/Facebook';
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import PhoneIcon from "@material-ui/icons/Phone";
-import Typography from '@material-ui/core/Typography';
-import {FACEBOOK_URL, IMAGE_4, LUBLIN_MAP} from "../../constants";
+import classNames from 'classnames'
+import FacebookIcon from '@material-ui/icons/Facebook'
+import MailOutlineIcon from '@material-ui/icons/MailOutline'
+import PhoneIcon from '@material-ui/icons/Phone'
+import Typography from '@material-ui/core/Typography'
+import { FACEBOOK_URL, IMAGE_4, LUBLIN_MAP } from '../../constants'
 import Image from 'next/image'
-import Divider from '@material-ui/core/Divider';
-
+import Divider from '@material-ui/core/Divider'
 
 class ContactContainer extends Component {
-  render() {
-    const {classes} = this.props;
+  render () {
+    const { classes } = this.props
 
     return (
       <div>
@@ -30,7 +29,6 @@ class ContactContainer extends Component {
               unoptimized={true}
             />
           </div>
-
 
           <div className={classes.dataContainer}>
             <Typography
@@ -70,7 +68,7 @@ class ContactContainer extends Component {
                   href={FACEBOOK_URL}
                   rel="noreferrer"
                 >
-                  <FacebookIcon style={{color: '#3b5998'}} className={classes.facebookIcon}/>
+                  <FacebookIcon style={{ color: '#3b5998' }} className={classes.facebookIcon}/>
                 </a>
               </div>
             </div>
@@ -82,15 +80,15 @@ class ContactContainer extends Component {
         <div className={this.props.classes.mainContainerMap}>
           <div className={classes.mapDetailsTextContainer}>
             <div>
-              <Typography classes={{root: classes.titleLublinMap}}>Gramy w województwie lubelskim</Typography>
+              <Typography classes={{ root: classes.titleLublinMap }}>Gramy w województwie lubelskim</Typography>
             </div>
-            <Typography classes={{root: classes.textMapDescription,}}>
+            <Typography classes={{ root: classes.textMapDescription }}>
               Zespól pochodzi z malowniczej miejscowości Werbkowice
               ale możesz nas usłyszeć w całym województwie lubelskim.
             </Typography>
           </div>
 
-          {/*<div className={classes.mapContainer}>*/}
+          {/* <div className={classes.mapContainer}> */}
           <div className={classes.photoContainer}>
 
             <Image
@@ -102,11 +100,11 @@ class ContactContainer extends Component {
               height={551}
             />
 
-            {/*<img*/}
-            {/*  src={LUBLIN_MAP}*/}
-            {/*  alt={'województwo Lubelskie'}*/}
-            {/*  className={classes.photoMap}*/}
-            {/*/>*/}
+            {/* <img */}
+            {/*  src={LUBLIN_MAP} */}
+            {/*  alt={'województwo Lubelskie'} */}
+            {/*  className={classes.photoMap} */}
+            {/* /> */}
           </div>
         </div>
       </div>
@@ -115,9 +113,9 @@ class ContactContainer extends Component {
 }
 
 ContactContainer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+  classes: PropTypes.object.isRequired
+}
 
-ContactContainer.displayName = 'ContactContainer';
+ContactContainer.displayName = 'ContactContainer'
 
 export default ContactContainer

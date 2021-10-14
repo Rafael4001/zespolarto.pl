@@ -1,9 +1,8 @@
-import {withStyles} from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
 
 import MenuComponent from './MenuComponent'
 
-import {COLORS} from "../../colors";
-
+import { COLORS } from '../../colors'
 
 const styles = (theme) => ({
   mainContainer: {
@@ -26,7 +25,7 @@ const styles = (theme) => ({
     width: '6rem'
   },
   photoContainer: {
-    position: "relative",
+    position: 'relative',
     width: '100%',
     marginLeft: '2rem',
     transition: '0.1s',
@@ -34,14 +33,14 @@ const styles = (theme) => ({
     '&:hover': {
       transition: '0.3s',
       transform: 'scale(1.04)'
-    },
+    }
   },
 
   logoMobileContainer: {
-    position: "relative",
+    position: 'relative',
     display: 'flex',
     justifyContent: 'center',
-    width: '3rem',
+    width: '3rem'
   },
   photo: {
     // width: '6rem',
@@ -50,14 +49,14 @@ const styles = (theme) => ({
     width: '3rem',
     // height: '3rem',
     margin: '0.125rem 0.5rem',
-    borderRadius: '100%',
+    borderRadius: '100%'
   },
   menuWeb: {
     [theme.breakpoints.down('sm')]: {
-      display: 'none',
-    },
+      display: 'none'
+    }
   },
-  //TODO wywaloc to na dole
+  // TODO wywaloc to na dole
   menuMobile: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -66,9 +65,9 @@ const styles = (theme) => ({
     boxShadow: `0 0.1875rem 0.25rem -0.375rem ${COLORS.black.main}`,
 
     [theme.breakpoints.up('md')]: {
-      display: 'none',
-    },
-  },
-});
+      display: 'none'
+    }
+  }
+})
 
-export default withStyles(styles)(MenuComponent);
+export default withStyles(styles)(MenuComponent)

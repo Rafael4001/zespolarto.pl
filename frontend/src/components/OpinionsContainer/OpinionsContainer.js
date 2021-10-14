@@ -1,14 +1,14 @@
 import React from 'react'
-import PropTypes from "prop-types";
-import {LINKS, LOVE_LETTER, MARRIED_OPINIONS} from "../../constants";
-import Button from '@material-ui/core/Button';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import Typography from '@material-ui/core/Typography';
-import Image from "next/image";
+import PropTypes from 'prop-types'
+import { LINKS, LOVE_LETTER, MARRIED_OPINIONS } from '../../constants'
+import Button from '@material-ui/core/Button'
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
+import Typography from '@material-ui/core/Typography'
+import Image from 'next/image'
 import OpinionTale from '../OpinionTale'
 import Link from 'next/link'
-import {useRouter} from "next/router";
+import { useRouter } from 'next/router'
 
 const responsConfig = {
   superLargeDesktop: {
@@ -46,14 +46,13 @@ const responsConfig = {
   }
 }
 
-
-const OpinionsContainer = ({classes}) => {
+const OpinionsContainer = ({ classes }) => {
   const router = useRouter()
 
   const handleClick = (weddingDate) => {
     router.push({
       pathname: `${LINKS.OPINIONS.HREF}`,
-      query: {weddingDate}
+      query: { weddingDate }
     })
   }
 
@@ -108,7 +107,7 @@ const OpinionsContainer = ({classes}) => {
         <Link href={LINKS.OPINIONS.HREF} passHref>
           <Button variant="outlined">
             <Typography
-              classes={{root: classes.moreOpinionsButton}}>Zobacz więcej
+              classes={{ root: classes.moreOpinionsButton }}>Zobacz więcej
               opinii</Typography>
           </Button>
         </Link>
@@ -116,11 +115,10 @@ const OpinionsContainer = ({classes}) => {
     </div>)
 }
 
-
 OpinionsContainer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+  classes: PropTypes.object.isRequired
+}
 
-OpinionsContainer.displayName = 'OpinionsContainer';
+OpinionsContainer.displayName = 'OpinionsContainer'
 
 export default OpinionsContainer

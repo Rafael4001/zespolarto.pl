@@ -1,9 +1,8 @@
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
 
 import OpinionTale from './OpinionTale'
-import {RADIUS_CORNER} from '../../constants'
-import {COLORS} from "../../colors";
-
+import { RADIUS_CORNER } from '../../constants'
+import { COLORS } from '../../colors'
 
 const styles = () => ({
   mediaCard: {
@@ -12,7 +11,7 @@ const styles = () => ({
     borderRadius: `0 ${RADIUS_CORNER} 0  ${RADIUS_CORNER}`,
     fontSize: '2rem',
     textAlign: 'center',
-    margin: `15px`,
+    margin: '15px',
     marginBottom: '1.5rem',
     fontFamily: 'Parisienne',
     boxShadow: '0 6px 16px 0 rgb(0 0 0 / 20%)',
@@ -22,23 +21,23 @@ const styles = () => ({
 
     '&:hover': {
       backgroundColor: `${COLORS.grey.light}`
-    },
+    }
 
   },
   photoCard: {
     width: '100%',
-    borderRadius: `0 ${RADIUS_CORNER} 0 0`,
+    borderRadius: `0 ${RADIUS_CORNER} 0 0`
   },
   textContainer: {
-    padding: '0.5rem',
+    padding: '0.5rem'
   },
   leaf_icon: {
-    width: '1.5rem',
+    width: '1.5rem'
   },
   quotationContainer: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'flex-end',
+    alignItems: 'flex-end'
   },
   names: {
     margin: 'auto',
@@ -59,8 +58,8 @@ const styles = () => ({
   },
   author: {
     fontSize: '0.8125rem',
-    fontFamily: 'Parisienne',
-  },
-});
+    fontFamily: 'Parisienne'
+  }
+})
 
-export default withStyles(styles)(OpinionTale);
+export default withStyles(styles)(OpinionTale)

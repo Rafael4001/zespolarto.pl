@@ -1,19 +1,18 @@
 import React from 'react'
-import PropTypes from "prop-types";
-import classNames from 'classnames';
-import Divider from '@material-ui/core/Divider';
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
+import Divider from '@material-ui/core/Divider'
 
-import {IMAGE_1, LOVERS} from '../../constants'
-import Typography from "@material-ui/core/Typography";
+import { IMAGE_1, LOVERS } from '../../constants'
+import Typography from '@material-ui/core/Typography'
 import Image from 'next/image'
 
-
-const HomepageMainPhoto = ({classes}) => (
+const HomepageMainPhoto = ({ classes }) => (
   <div>
     <div className={classes.mainContainer}>
 
       <aside className={classes.textContainer}>
-        <Typography classes={{root: classes.subTitle,}}>Twoje wesele...</Typography>
+        <Typography classes={{ root: classes.subTitle }}>Twoje wesele...</Typography>
         <div className={classes.photoContainerMain}>
           <div className={classes.loversImageContainer}>
             <Image
@@ -26,7 +25,7 @@ const HomepageMainPhoto = ({classes}) => (
             />
           </div>
         </div>
-        <Typography classes={{root: classNames(classes.subTitle, classes.subTitleLeft),}}>Nasza muzyka</Typography>
+        <Typography classes={{ root: classNames(classes.subTitle, classes.subTitleLeft) }}>Nasza muzyka</Typography>
       </aside>
 
       <div className={classes.photoContainerMain}>
@@ -37,7 +36,7 @@ const HomepageMainPhoto = ({classes}) => (
             layout="responsive"
             width={1000}
             height={559}
-            placeholder={() => <div style={{backgroundColor: 'red'}}/>}
+            placeholder={() => <div style={{ backgroundColor: 'red' }}/>}
             unoptimized={true}
           />
         </div>
@@ -48,11 +47,11 @@ const HomepageMainPhoto = ({classes}) => (
 )
 
 HomepageMainPhoto.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+  classes: PropTypes.object.isRequired
+}
 
-HomepageMainPhoto.defaultProps = {};
+HomepageMainPhoto.defaultProps = {}
 
-HomepageMainPhoto.displayName = 'HomepageMainPhoto';
+HomepageMainPhoto.displayName = 'HomepageMainPhoto'
 
 export default HomepageMainPhoto

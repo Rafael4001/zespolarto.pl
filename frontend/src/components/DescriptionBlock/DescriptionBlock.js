@@ -1,16 +1,15 @@
 import React from 'react'
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
+import Typography from '@material-ui/core/Typography'
+import Divider from '@material-ui/core/Divider'
 
-
-const DescriptionBlock = ({classes}) => (
+const DescriptionBlock = ({ classes }) => (
   <div>
     <div className={classes.mainContainer}>
       <div className={classes.titleContainer}>
         <Typography
-          classes={{root: classes.title}}
+          classes={{ root: classes.title }}
           variant="h1"
         >Arto</Typography>
       </div>
@@ -27,11 +26,11 @@ const DescriptionBlock = ({classes}) => (
 )
 
 DescriptionBlock.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+  classes: PropTypes.object.isRequired
+}
 
-DescriptionBlock.defaultProps = {};
+DescriptionBlock.defaultProps = {}
 
-DescriptionBlock.displayName = 'DescriptionBlock';
+DescriptionBlock.displayName = 'DescriptionBlock'
 
 export default DescriptionBlock

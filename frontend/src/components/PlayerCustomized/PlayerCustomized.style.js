@@ -1,8 +1,7 @@
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles'
 import PlayerCustomized from './PlayerCustomized'
-import { COLORS } from "../../colors";
-import { MENU_MOBILE_HEIGHT } from "../../constants";
-
+import { COLORS } from '../../colors'
+import { MENU_MOBILE_HEIGHT } from '../../constants'
 
 const styles = (theme) => ({
   // mainContainer: {
@@ -20,37 +19,37 @@ const styles = (theme) => ({
   // },
   currentSong: {
     fontFamily: '\'Baskervville\',serif',
-    padding: '0 0 0.5rem 0',
+    padding: '0 0 0.5rem 0'
   },
   main: {
     backgroundColor: '#f5f5f5',
     width: '80%',
 
     trackListStyle: {
-      listStyleType: 'none',
+      listStyleType: 'none'
     },
 
     trackListItem: {
       textDecoration: 'none',
-      margin: '2rem',
-    },
+      margin: '2rem'
+    }
   },
   volumeContainer: {
     fontSize: '1rem',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   volume: {
-    width: 50,
+    width: 50
   },
   volumeText: {
-    marginRight: '1rem',
+    marginRight: '1rem'
   },
   actualSongPlayer: {
     display: 'grid',
     gridTemplateColumns: '5rem 6rem 1fr 1fr',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   playerToolsContainer: {
     display: 'flex',
@@ -71,7 +70,7 @@ const styles = (theme) => ({
       width: 'auto',
       maxWidth: '30rem',
       height: 'auto',
-      maxHeight: '30rem',
+      maxHeight: '30rem'
     }
   },
   trackListContainer: {
@@ -84,8 +83,8 @@ const styles = (theme) => ({
     [theme.breakpoints.up('sm')]: {
       paddingTop: 0,
       overflowY: 'auto',
-      height: '80vh',
-    },
+      height: '80vh'
+    }
   },
   albumImageContainer: {
     display: 'flex',
@@ -95,15 +94,15 @@ const styles = (theme) => ({
     backgroundColor: `${COLORS.white.main}`,
     borderBottom: `solid 1px ${COLORS.grey.dark}`,
     position: 'fixed',
-    top:  `${MENU_MOBILE_HEIGHT}`,
+    top: `${MENU_MOBILE_HEIGHT}`,
     // top: '4rem', //`${MENU_MOBILE_HEIGHT}`,
     width: '100%',
     zIndex: 100,
 
     [theme.breakpoints.up('sm')]: {
-      border: `none`,
-      position: 'inherit',
-    },
+      border: 'none',
+      position: 'inherit'
+    }
 
   },
   seekBarContainer: {
@@ -111,7 +110,7 @@ const styles = (theme) => ({
     maxWidth: '30rem',
     display: 'grid',
     gridTemplateColumns: '4rem auto',
-    gridGap: '1rem',
+    gridGap: '1rem'
   },
   seekBar: {
     width: '90%'
@@ -120,9 +119,9 @@ const styles = (theme) => ({
     flexDirection: 'row',
     alignItems: 'center',
     fontSize: '2.3125rem',
-    paddingTop:'0.5rem',
-    fontFamily: 'Parisienne',
-  },
-});
+    paddingTop: '0.5rem',
+    fontFamily: 'Parisienne'
+  }
+})
 
-export default withStyles(styles)(PlayerCustomized);
+export default withStyles(styles)(PlayerCustomized)

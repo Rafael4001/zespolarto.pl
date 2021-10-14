@@ -1,2 +1,1 @@
-export { default } from './BandMembers.style';
-
+export { default } from './BandMembers.style'

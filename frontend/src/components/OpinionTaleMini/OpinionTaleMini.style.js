@@ -1,9 +1,7 @@
-import {withStyles} from '@material-ui/core/styles';
-
+import { withStyles } from '@material-ui/core/styles'
 import OpinionTale from './OpinionTaleMini'
-import {RADIUS_CORNER} from '../../constants'
-import {COLORS} from "../../colors";
-
+import { RADIUS_CORNER } from '../../constants'
+import { COLORS } from '../../colors'
 
 const styles = () => ({
   mediaCardTaleMini: {
@@ -20,7 +18,7 @@ const styles = () => ({
     '&:hover': {
       backgroundColor: `${COLORS.grey.light}`,
       transition: '0.2s'
-    },
+    }
   },
 
   quotationContainer: {
@@ -32,17 +30,17 @@ const styles = () => ({
     margin: 'auto',
     fontFamily: 'Parisienne',
     fontSize: '1.4rem',
-    padding: '0 4px',
+    padding: '0 4px'
   },
   weedingDateText: {
     fontSize: '0.8125rem',
-    fontFamily: 'Parisienne',
+    fontFamily: 'Parisienne'
   },
   leafIcon: {
     margin: 'auto',
     width: '21px',
     paddingTop: '4px'
   }
-});
+})
 
-export default withStyles(styles)(OpinionTale);
+export default withStyles(styles)(OpinionTale)

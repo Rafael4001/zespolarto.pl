@@ -1,21 +1,21 @@
-import classNames from "classnames";
-import Image from "next/image";
-import Typography from "@material-ui/core/Typography";
-import React from "react";
-import PropTypes from "prop-types";
-import {LEAF} from "../../constants";
+/* eslint-disable */
+import classNames from 'classnames'
+import Image from 'next/image'
+import Typography from '@material-ui/core/Typography'
+import React from 'react'
+import PropTypes from 'prop-types'
+import { LEAF } from '../../constants'
 
-
-export const getStaticProps = async(context)=>{
-  return{
-    props:{ contextInfo: 'contextInfo'}
+export const getStaticProps = async (context) => {
+  return {
+    props: { contextInfo: 'contextInfo' }
   }
 }
 
-const OpinionTaleMini = ({details, classes, more = true, contextInfo}) => {
-  const {man, woman, picture, weddingDate, opinion} = details
+const OpinionTaleMini = ({ details, classes, more = true, contextInfo }) => {
+  const { man, woman, picture, weddingDate, opinion } = details
 
-  console.log('contextInfo',contextInfo)
+  console.log('contextInfo', contextInfo)
 
   const weddingDateUrlFormat = weddingDate.split('-')
   const formatedWeddingDate = `${weddingDateUrlFormat[0]}.${weddingDateUrlFormat[1]}.${weddingDateUrlFormat[2]}`
@@ -41,9 +41,9 @@ const OpinionTaleMini = ({details, classes, more = true, contextInfo}) => {
           unoptimized={true}
         />
       </div>
-      <Typography classes={{root: classes.names}}>{woman} & {man}</Typography>
+      <Typography classes={{ root: classes.names }}>{woman} & {man}</Typography>
       <div className={classes.quotationContainer}>
-        {opinion && <Typography classes={{root: classes.weedingDateText,}}>{formatedWeddingDate}r.</Typography>}
+        {opinion && <Typography classes={{ root: classes.weedingDateText }}>{formatedWeddingDate}r.</Typography>}
       </div>
     </div>
   )
@@ -52,6 +52,6 @@ const OpinionTaleMini = ({details, classes, more = true, contextInfo}) => {
 OpinionTaleMini.propTypes = {
   classes: PropTypes.object.isRequired,
   details: PropTypes.object
-};
+}
 
 export default OpinionTaleMini

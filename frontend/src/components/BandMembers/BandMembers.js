@@ -1,11 +1,10 @@
 import React from 'react'
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import {IMAGE_2} from "../../constants";
-import Image from "next/image";
-
+import Typography from '@material-ui/core/Typography'
+import Divider from '@material-ui/core/Divider'
+import { IMAGE_2 } from '../../constants'
+import Image from 'next/image'
 
 const BAND_MEMBERS = [
   {
@@ -23,18 +22,17 @@ const BAND_MEMBERS = [
   {
     name: 'Zbyszek',
     description: 'perkusja'
-  },
-];
+  }
+]
 
-
-const BandMembers = ({classes}) => {
-  const Members = ({bandMembers}) => bandMembers.map((member) => (
+const BandMembers = ({ classes }) => {
+  const Members = ({ bandMembers }) => bandMembers.map((member) => (
     <div key={member.name} className={classes.memberContainer}>
-      <Typography classes={{root: classes.textName}}><strong>{member.name}</strong></Typography>
-      <Typography classes={{root: classes.textName}}><strong> - </strong></Typography>
-      <Typography classes={{root: classes.textName}}>{member.description}</Typography>
+      <Typography classes={{ root: classes.textName }}><strong>{member.name}</strong></Typography>
+      <Typography classes={{ root: classes.textName }}><strong> - </strong></Typography>
+      <Typography classes={{ root: classes.textName }}>{member.description}</Typography>
     </div>
-  ));
+  ))
 
   return (
     <div>
@@ -51,11 +49,11 @@ const BandMembers = ({classes}) => {
 
         <div className={classes.descriptionBandMembers}>
           <div className={classes.quotationContainer}>
-            <Typography classes={{root: classes.quotation,}}>{`"Takt jest muzyką duszy."`}</Typography>
-            <Typography classes={{root: classes.author,}}>-Anita Daniel</Typography>
+            <Typography classes={{ root: classes.quotation }}>{'"Takt jest muzyką duszy."'}</Typography>
+            <Typography classes={{ root: classes.author }}>-Anita Daniel</Typography>
           </div>
           <Divider/>
-          <Typography classes={{root: classes.textName,}}>Skład zespołu:</Typography>
+          <Typography classes={{ root: classes.textName }}>Skład zespołu:</Typography>
           <Members bandMembers={BAND_MEMBERS}/>
         </div>
       </div>
@@ -64,11 +62,11 @@ const BandMembers = ({classes}) => {
   )
 }
 BandMembers.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+  classes: PropTypes.object.isRequired
+}
 
-BandMembers.defaultProps = {};
+BandMembers.defaultProps = {}
 
-BandMembers.displayName = 'BandMembers';
+BandMembers.displayName = 'BandMembers'
 
 export default BandMembers
