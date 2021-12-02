@@ -54,13 +54,6 @@ const Footer = ({ className }) => (
               className="detailsContent"
               href="tel:+48661204475">661 204 475</a>
           </div>
-          <div className="phoneContainer">
-            <PhoneIcon/>
-            <Typography className="footerText">Adrian</Typography>
-            <a
-              className="detailsContent"
-              href="tel:+48796642598">796 642 598</a>
-          </div>
         </div>
       </address>
 

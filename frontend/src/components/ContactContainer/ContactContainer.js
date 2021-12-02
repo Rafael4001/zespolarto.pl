@@ -50,12 +50,12 @@ class ContactContainer extends Component {
                 204 475</a>
             </div>
 
-            <div className={classNames(classes.subContainer, classes.textContactPage)}>
-              <PhoneIcon className={classes.emailIconContainer}/>
-              <Typography className={classNames(classes.textContactPageBold, classes.textSizeClass)}>Adrian</Typography>
-              <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="tel:+48796642598">796
-                642 598</a>
-            </div>
+            {/* <div className={classNames(classes.subContainer, classes.textContactPage)}> */}
+            {/*  <PhoneIcon className={classes.emailIconContainer}/> */}
+            {/*  <Typography className={classNames(classes.textContactPageBold, classes.textSizeClass)}>Adrian</Typography> */}
+            {/*  <a className={classNames(classes.detailsTextContent, classes.textSizeClass)} href="tel:+48796642598">796 */}
+            {/*    642 598</a> */}
+            {/* </div> */}
 
             <div className={classNames(classes.FacebookMainContainer)}>
               <div className={classes.textContactContainer}>
