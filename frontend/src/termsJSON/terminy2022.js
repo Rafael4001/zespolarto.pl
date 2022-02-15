@@ -116,20 +116,6 @@ export const YEAR_2022 = [
     name: 'Październik',
     days: [
       {
-        day: '2022-10-01'
-      },
-      {
-        day: '2022-10-08',
-        place: 'Hrubieszów',
-        hotel: 'Gniecki',
-        weekDay: WEEK_DAY.SATUDRAY,
-        status: STATUS.BUSY,
-        // "blessing": "noInfo",
-        // "blessingTime": "noInfo",
-        // weddingHour: "noInfo",
-        information: 'przekładane z 29.05.2021'
-      },
-      {
         day: '2022-10-22',
         place: 'Tyszowce',
         hotel: 'Szewska Pasja',
